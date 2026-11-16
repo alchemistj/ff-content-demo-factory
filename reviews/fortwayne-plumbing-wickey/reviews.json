@@ -1,0 +1,702 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "fortwayne-plumbing-wickey",
+  "place": {
+    "name": "Wickey Plumbing LLC",
+    "placeId": "ChIJfRDGZy_0KYUR1Bto5wCrsR8",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Wickey%20Plumbing%20LLC&query_place_id=ChIJfRDGZy_0KYUR1Bto5wCrsR8",
+    "address": "",
+    "phone": "(260) 409-5128",
+    "rating": 4.9,
+    "totalReviewCount": 88
+  },
+  "pulledAt": "2026-11-16T04:09:13.898Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kQ1kxOTBkMnB6VmtwdVdHeHliRlJaZHpWWFMxRRAB",
+      "reviewer": "Jonah B.",
+      "rating": 2,
+      "text": "Very overpriced, I was shocked. My second quote was more than half the price. And then I started getting inundated with AI bot texts they kept sending me. I had to block the number to stop getting them.",
+      "publishedAt": "2026-10-30T18:25:19.604Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kQ1kxOTBkMnB6VmtwdVdHeHliRlJaZHpWWFMxRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOndCY190d2pzVkpuWGxybFRZdzVXS1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pnME5FaElWbVpQYTJNeGVsTnZNbXAzWVdGelJYYxAB",
+      "reviewer": "Kim W.",
+      "rating": 5,
+      "text": "I had a great experience from start to finish! Communication was prompt and professional, and the pricing was very reasonable. He was friendly, courteous, and respectful of my home, even taking the time to put on shoe covers before coming inside. He took the time to discuss everything with me and made the entire visit a pleasant experience. I really appreciate his professionalism and look forward to working with him again. Highly recommend!",
+      "publishedAt": "2026-10-23T14:19:21.408Z",
+      "ownerResponse": "Thank you for the wonderful feedback! We're thrilled to hear about your positive experience with our team. It's great to know that our professionalism and attention to detail made a difference during your service. We look forward to working with you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pnME5FaElWbVpQYTJNeGVsTnZNbXAzWVdGelJYYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjg0NEhIVmZPa2MxelNvMmp3YWFzRXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tkT1puazBlRWh2VkVoR1pGRjFWR3RWTmpWTlowRRAB",
+      "reviewer": "Kathy D.",
+      "rating": 5,
+      "text": "Zach was very polite and explained everything thoroughly to us before he started any work. We appreciate that he answered our numerous questions.",
+      "publishedAt": "2026-10-03T20:33:03.150Z",
+      "ownerResponse": "Thank you for the positive feedback! We're glad to hear that Zach provided you with thorough explanations and took the time to address all your questions. Customer satisfaction is our priority, and we appreciate your recognition of our team's efforts.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkT1puazBlRWh2VkVoR1pGRjFWR3RWTmpWTlowRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOkdOZnk0eEhvVEhGZFF1VGtVNjVNZ0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsbU9YVlRNRTFyV2w4eFRYRlhaM2hrT1dkUU1tYxAB",
+      "reviewer": "Tina S.",
+      "rating": 5,
+      "text": "I felt like, finally someone fixed the problem.<br>Did a great job, showed us pictures of what was wrong.  No one wants to lay in an attic on insulation to get the job done but this company did. Thanks!",
+      "publishedAt": "2026-10-01T12:57:59.361Z",
+      "ownerResponse": "Thank you for the positive feedback, Tina! We're glad to hear that our team was able to address your plumbing issue effectively and that you appreciated the thoroughness of the work. We know that some jobs can be challenging, and we're happy to go the extra mile for our customers. If you need any further assistance, don't hesitate to reach out!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsbU9YVlRNRTFyV2w4eFRYRlhaM2hrT1dkUU1tYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOllmOXVTME1rWl8xTXFXZ3hkOWdQMmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsVVZYbDVURmhWWlZsTlZHVXpUVzlxVlZaSGVFRRAB",
+      "reviewer": "Michael C.",
+      "rating": 5,
+      "text": "Great experience. They were able to come out first thing the next morning, quickly figured out the issue, and took care of it without trying to sell me on work I didn’t need. Zach was honest, helpful, and efficient, and the price was very fair. I really appreciated the straightforward service and would definitely use them again.",
+      "publishedAt": "2026-09-25T02:12:44.192Z",
+      "ownerResponse": "Thank you for the great feedback, Michael! We're glad to hear you had a positive experience and that our team was able to assist you efficiently. We always strive to provide honest and straightforward service, so it's wonderful to know that resonated with you. We look forward to serving you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsVVZYbDVURmhWWlZsTlZHVXpUVzlxVlZaSGVFRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOklUVXl5TFhVZVlNVGUzTW9qVVZHeEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKeGJIWldVek5hWDAxcU1IZHdRa0p5Wm5Gd2JuYxAB",
+      "reviewer": "Janet H.",
+      "rating": 5,
+      "text": "Professional and friendly. On time and explained things well. Highly recommend!",
+      "publishedAt": "2026-09-22T20:22:54.542Z",
+      "ownerResponse": "Thank you for your kind words, Janet! We're thrilled to hear that you had a positive experience with our team at Wickey Plumbing LLC. Your recommendation means a lot to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKeGJIWldVek5hWDAxcU1IZHdRa0p5Wm5Gd2JuYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOkJxbHZWUzNaX01qMHdwQkJyZnFwbnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xwTllXWnFUVkpoYWxWdWJ6aG1hRUl6TjBaQ2ExRRAB",
+      "reviewer": "Dorian N.",
+      "rating": 5,
+      "text": "Josh came out very professional worked with my schedule. Great work!",
+      "publishedAt": "2026-09-17T16:51:57.372Z",
+      "ownerResponse": "Thank you for the fantastic review, Dorian! We're glad to hear that Josh provided you with professional service and accommodated your schedule. We appreciate your feedback and look forward to helping you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwTllXWnFUVkpoYWxWdWJ6aG1hRUl6TjBaQ2ExRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOlpNYWZqTVJhalVubzhmaEIzN0ZCa1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GVWNHeE9aM3B4WldGTmQzaE5Uemc0VmxSR1RHYxAB",
+      "reviewer": "Joe W.",
+      "rating": 5,
+      "text": "Zach made everything easy, got the job done quickly, and charged less than I expected. On top of that, he was super nice to my kids. Overall great experience and I would recommend Wickey to anybody looking for a plumber.",
+      "publishedAt": "2026-09-17T12:25:51.187Z",
+      "ownerResponse": "Thank you for the wonderful feedback! We're thrilled to hear that Zach provided excellent service and made the experience enjoyable for your family. Your recommendation means a lot to us, and we appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GVWNHeE9aM3B4WldGTmQzaE5Uemc0VmxSR1RHYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmFUcGxOZ3pxZWFNd3hNTzg4VlRGTGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xOWlFUUlZjVVZ6Y1hCeFlXUmFZa2RNTnpWSlVtYxAB",
+      "reviewer": "Barbara C.",
+      "rating": 5,
+      "text": "Very responsive and detailed in work.",
+      "publishedAt": "2026-09-09T23:46:23.917Z",
+      "ownerResponse": "Thank you for your positive feedback! We’re glad to hear you found our team responsive and thorough in their work. Your satisfaction is important to us, and we appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOWlFUUlZjVVZ6Y1hCeFlXUmFZa2RNTnpWSlVtYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOlNZQTRVcUVzcXBxYWRaYkdMNzVJUmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkSVdVaEpkMDFPWmtaNFZuVk1kWG93WDNReFpGRRAB",
+      "reviewer": "Robert C.",
+      "rating": 5,
+      "text": "I called Wickey Plumbing to get a second opinion on a leak in my basement and they exceeded all expectations: promptness, communication, availability, price, quality of work. I'm happy to add a good plumber to my network now.",
+      "publishedAt": "2026-09-05T14:47:50.623Z",
+      "ownerResponse": "Thank you, Robert, for your wonderful feedback! We're glad to hear that we exceeded your expectations in every aspect. It's great to know that you found our services helpful and of high quality. We look forward to being a part of your network for any future plumbing needs!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkSVdVaEpkMDFPWmtaNFZuVk1kWG93WDNReFpGRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjdIWUhJd01OZkZ4VnVMdXowX3QxZFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21aalRVdDVPRU42T1cxb01EWlhjRlpuVEc5VmVWRRAB",
+      "reviewer": "Luis R.",
+      "rating": 5,
+      "text": "Really respectful and did the work quick and fast, will definitely use wickey plumbing again<br>Super satisfied with the work done and will definitely refer to family and friends",
+      "publishedAt": "2026-09-03T14:16:27.452Z",
+      "ownerResponse": "Thank you for your kind words, Luis. We're thrilled to hear that you were satisfied with our work. Your referrals mean a lot to us, and we look forward to assisting you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aalRVdDVPRU42T1cxb01EWlhjRlpuVEc5VmVWRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmZjTUt5OEN6OW1oMDZXcFZnTG9VeVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wS2MzaFhhbFp6VkhsclJERjRRMDAxZUZwWWVWRRAB",
+      "reviewer": "Bryan R.",
+      "rating": 5,
+      "text": "Give this place a call for ALL your plumbing needs.  I called and they were out same day for a water heater issue.  Got it fixed with no issues and could not have been more pleasant.  Very affordable too compared to anyone else I have used!!  No unnecessary sales pitch or work that didn’t apply.",
+      "publishedAt": "2026-09-02T15:31:35.460Z",
+      "ownerResponse": "Thank you for the wonderful review, Bryan! We're glad to hear that you had a positive experience with our service and that we could assist you promptly with your water heater issue. We strive to provide affordable and honest plumbing solutions to all our customers. If you need anything else in the future, don’t hesitate to reach out!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wS2MzaFhhbFp6VkhsclJERjRRMDAxZUZwWWVWRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmpKc3hXalZzVHlrRDF4Q001eFpYeVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ORllWbGZSMDVrUkRBell6aHdXbE5sV20wdFEwRRAB",
+      "reviewer": "Chad T.",
+      "rating": 5,
+      "text": "Extremely helpful and friendly service, he managed to work me in on short notice and helped fix my issue.",
+      "publishedAt": "2026-08-28T13:40:19.503Z",
+      "ownerResponse": "Thank you, Chad, for your positive feedback! We're glad to hear that you found our service helpful and friendly. It's always our goal to assist our customers in a timely manner. If you need anything else in the future, don't hesitate to reach out!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ORllWbGZSMDVrUkRBell6aHdXbE5sV20wdFEwRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmNFYVlfR05kRDAzYzhwWlNlWm0tQ0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21zek15MVRWV3BmZFhGc2RXUmhjemd6UjFBd1RHYxAB",
+      "reviewer": "Debra H.",
+      "rating": 5,
+      "text": "Josh came out the day after I called with a clog in the garage drain for the water softener. Everytime the water softener regenerated, my garage was flooded. He got that drain taken care of and then went on to unclog a drain in the middle of the garage that had been clogged for the 30 years that I’ve lived here. Yay!<br>He was so kind and professional. He is now my go to guy for any plumbing needs ! I took his cards and have handed them out to my neighbors.",
+      "publishedAt": "2026-08-27T14:53:03.441Z",
+      "ownerResponse": "Thank you for the wonderful feedback! We're thrilled to hear that Josh was able to resolve your plumbing issues and ensure your garage is back in great shape. It’s fantastic to know that you found him kind and professional. We appreciate your referrals and look forward to assisting you and your neighbors with any future plumbing needs!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21zek15MVRWV3BmZFhGc2RXUmhjemd6UjFBd1RHYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmszMy1TVWpfdXFsdWRhczgzR1AwTGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pVMmNXSTRXRlY1VG05U1QydGxMWE5JVG0wMmFuYxAB",
+      "reviewer": "Greg F.",
+      "rating": 5,
+      "text": "there was more to the issue we were having then originally thought.<br>he has quoted the fix and was reasonable so I am looking forward to him completing the job.  Zach is very knowledgeable and I appreciate his expertise.",
+      "publishedAt": "2026-08-27T13:13:09.300Z",
+      "ownerResponse": "Thank you for the review Greg!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pVMmNXSTRXRlY1VG05U1QydGxMWE5JVG0wMmFuYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjU2cWI4WFV5Tm9ST2tlLXNITm02anc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CV1gwdFZaWHB2VnpSaFNYcFlObTFGUVVsRVRtYxAB",
+      "reviewer": "Jennifer B.",
+      "rating": 5,
+      "text": "I appreciated the quick response to my needs. I feel the price for main on/off valve was a bit high. The bathtub handles I'm pleased with. When offered to replace spigot, I wanted it done but I felt it could have been offered at a much lower price. Otherwise happy with what got done. Thank you",
+      "publishedAt": "2026-08-26T13:38:41.875Z",
+      "ownerResponse": "Thank you for your feedback. We're glad to hear you were pleased with the quick response and the bathtub handles. We appreciate your thoughts on pricing and will take them into consideration as we strive to improve our services. If you have any further needs or questions, feel free to reach out. Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CV1gwdFZaWHB2VnpSaFNYcFlObTFGUVVsRVRtYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOnBWX0tVZXpvVzRhSXpYNm1FQUlETmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tOa2JWcDRWemt3YUVWTFpWTTJWSFUxUjBwamJsRRAB",
+      "reviewer": "Adele W.",
+      "rating": 5,
+      "text": "Josh came exactly when scheduled. He completed the job quickly. He was friendly and thorough.",
+      "publishedAt": "2026-08-25T18:31:51.265Z",
+      "ownerResponse": "Thank you, Adele, for your positive feedback! We're glad to hear that Josh provided you with prompt and thorough service. Your satisfaction is our priority!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOa2JWcDRWemt3YUVWTFpWTTJWSFUxUjBwamJsRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOkNkbVp4VzkwaEVLZVM2VHU1R0pjblE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kbVJFaG5XV3B2Vm5ScFNWazNOMnhJV0Y5R2VXYxAB",
+      "reviewer": "Stephanie V.",
+      "rating": 5,
+      "text": "Courteous, prompt, and reasonable",
+      "publishedAt": "2026-08-22T18:29:56.446Z",
+      "ownerResponse": "Thank you, Stephanie! We appreciate your positive feedback about our courteous service, promptness, and reasonable pricing. If you need any further assistance in the future, feel free to reach out!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kbVJFaG5XV3B2Vm5ScFNWazNOMnhJV0Y5R2VXYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmdmREhnWWpvVnRpSVk3N2xIWF9GeWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OTFVHcG1PR1ZGTkdSRVRpMDNSVTR4ZHkxWE9YYxAB",
+      "reviewer": "gary G.",
+      "rating": 5,
+      "text": "Zach did the repair needed on a toilet. He was on time, cost was fair. Would recommend for future plumbing repairs.",
+      "publishedAt": "2026-08-20T13:55:30.604Z",
+      "ownerResponse": "Thank you for the positive feedback, Gary! We're glad to hear that Zach was able to assist you effectively and that you found our services fair and reliable. We appreciate your recommendation and look forward to helping you with any future plumbing needs!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OTFVHcG1PR1ZGTkdSRVRpMDNSVTR4ZHkxWE9YYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOnNLUGpmOGVFNGRETi03RU4xdy1XOXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GNmFUVmFabWR1U25BMVZXcG5ZVTFxYzJGeGFrRRAB",
+      "reviewer": "Jennifer O.",
+      "rating": 5,
+      "text": "Tech professional, honest and gave us a great price",
+      "publishedAt": "2026-08-12T19:42:33.789Z",
+      "ownerResponse": "Thank you for your feedback, Jennifer! We're glad to hear that you had a positive experience with our technician and that you felt we provided great value. We appreciate your support and look forward to assisting you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GNmFUVmFabWR1U25BMVZXcG5ZVTFxYzJGeGFrRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmF6aTVaZmduSnA1VWpnYU1qc2FxakE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSVlRtRkdNVmRsYzIxUWVGQmpVSEJ2TkRZMWQxRRAB",
+      "reviewer": "Rob F.",
+      "rating": 5,
+      "text": "Did a fine job. Great communication too",
+      "publishedAt": "2026-08-12T17:14:14.231Z",
+      "ownerResponse": "Thank you, Rob! We're glad to hear you were satisfied with our service and communication. We appreciate your feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSVlRtRkdNVmRsYzIxUWVGQmpVSEJ2TkRZMWQxRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOlRVTmFGMVdlc21QeFBjUHBvNDY1d1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kek1UbExiVmRqWVRZd01GVndUamg0VTBKSU1FRRAB",
+      "reviewer": "Joy D.",
+      "rating": 5,
+      "text": "Wickey Plumbing was fast and efficient. Zach explained everything thoroughly and he did excellent work that left my house looking (and working) wonderfully. Highly recommend.",
+      "publishedAt": "2026-08-12T13:14:58.823Z",
+      "ownerResponse": "Thank you for the wonderful review, Joy! We’re thrilled to hear that Zach provided fast and thorough service. Your recommendation means a lot to us, and we look forward to assisting you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kek1UbExiVmRqWVRZd01GVndUamg0VTBKSU1FRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOndzMTlLbVdjYTYwMFVwTjh4U0JIMEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2twQlNWcGFhSHBLU1RGMmNsbElhazVDVFRacVVGRRAB",
+      "reviewer": "Kirsten G.",
+      "rating": 5,
+      "text": "I called on Wickey plumbing for an estimate. Picture of technician sent BEFORE visit for safety purposes - loved that! Zach was informative, professional, & courteous. I will call on WICKEY PLUMBING for my future needs. Thanks Zach and Wickey Plumbing!",
+      "publishedAt": "2026-08-11T13:24:59.090Z",
+      "ownerResponse": "Thank you for the positive feedback, Kirsten! We're glad to hear that you had a great experience with Zach and appreciated the safety measures we take. We look forward to assisting you with your plumbing needs in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twQlNWcGFhSHBLU1RGMmNsbElhazVDVFRacVVGRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOkpBSVpaaHpKSTF2cllIak5CTTZqUFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCS1VVOWhTbXB2WTFKSk1uZHBTRjk1TFVGUmJGRRAB",
+      "reviewer": "doug C.",
+      "rating": 5,
+      "text": "Retuned call promptly ...was on time and very efficient!<br>Customer friendly answering all questions with excellent explanations.",
+      "publishedAt": "2026-08-05T20:59:32.842Z",
+      "ownerResponse": "Thank you for your positive feedback, Doug! We're glad to hear that you appreciated our prompt communication and efficient service. Providing excellent customer support and clear explanations is important to us. We look forward to assisting you again in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCS1VVOWhTbXB2WTFKSk1uZHBTRjk1TFVGUmJGRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOlBKUU9hSmpvY1JJMndpSF95LUFRbFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0eGRFZEtjR1EwUzJST1NVUmllbFpSV1ZsNFMwRRAB",
+      "reviewer": "Roy G.",
+      "rating": 5,
+      "text": "Excellent service.",
+      "publishedAt": "2026-07-29T20:42:00.491Z",
+      "ownerResponse": "Thank you very much Roy for the 5-star review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0eGRFZEtjR1EwUzJST1NVUmllbFpSV1ZsNFMwRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOktxdEdKcGQ0S2ROSURielZRWVl4S0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OeFdVSkNXbkZQY1hKSWFtRnBVbmRDT1V0R05IYxAB",
+      "reviewer": "Warren W.",
+      "rating": 5,
+      "text": "Very friendly staff goes above and beyond to get you fixed up!",
+      "publishedAt": "2026-07-25T15:18:23.817Z",
+      "ownerResponse": "Thank you for your kind words, Warren! We're thrilled to hear that you had a positive experience with our team. Providing exceptional service is our priority, and we appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OeFdVSkNXbkZQY1hKSWFtRnBVbmRDT1V0R05IYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOnNxWUJCWnFPcXJIamFpUndCOUtGNHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGeFRWazRWWEZ5ZWpoNlNuQnpSMUJQUkZsbVNVRRAB",
+      "reviewer": "Craig V.",
+      "rating": 5,
+      "text": "Zach is a class act.  Not only did he unclog my drain in nanoseconds, but offered money-saving advice for 'the next time'.",
+      "publishedAt": "2026-07-21T14:56:40.335Z",
+      "ownerResponse": "Thank you for the review Craig. It means so much for small businesses!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGeFRWazRWWEZ5ZWpoNlNuQnpSMUJQUkZsbVNVRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjFxTVk4VXFyejh6SnBzR1BPRFlmSUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toSGJtZDZNREYzTVhsb2FURTRlV1UzVUVoeFZtYxAB",
+      "reviewer": "Candace H.",
+      "rating": 5,
+      "text": "Professional, understanding, and skilled. They were professional in their conduct, had respect for my property, and was thorough. They understood my financial and many faceted situation. They gave me options for me to choose. And there was no hard sell. I would recommend them to my family and friends!",
+      "publishedAt": "2026-07-16T21:07:20.769Z",
+      "ownerResponse": "Thank you for the kind words, Candace. We're glad to hear that you had a positive experience with our team. It's our priority to respect your property and provide you with the best options without any pressure. Your recommendation means a lot to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toSGJtZDZNREYzTVhsb2FURTRlV1UzVUVoeFZtYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOkhHbmd6MDF3MXloaTE4eWU3UEhxVmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21aU2RVOHdkMEZyU1RaMlpsaFdZbE5wT1hWSmFIYxAB",
+      "reviewer": "Lillian T.",
+      "rating": 5,
+      "text": "Zach did an amazing job. He explained the whole process very well. I would definitely recommend him to friends and family",
+      "publishedAt": "2026-07-11T13:35:43.068Z",
+      "ownerResponse": "Thank you for your kind words, Lillian! We're thrilled to hear that Zach provided excellent service and clear explanations. Your recommendation means a lot to us. If you need anything else, feel free to reach out!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aU2RVOHdkMEZyU1RaMlpsaFdZbE5wT1hWSmFIYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmZSdU8wd0FrSTZ2ZlhWYlNpOXVJaHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4bVIxZ3RWbXgyWmxRd2VFSlRRMUF6TWpGWGRFRRAB",
+      "reviewer": "Robert A.",
+      "rating": 5,
+      "text": "Exceptional work/ straight advice/ top results! Plus affordable!",
+      "publishedAt": "2026-07-08T16:52:03.722Z",
+      "ownerResponse": "Thank you, Robert, for your kind words! We're glad to hear that you had a positive experience with our service. Providing exceptional work and honest advice is our priority, and it's great to know you found our pricing affordable. We appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4bVIxZ3RWbXgyWmxRd2VFSlRRMUF6TWpGWGRFRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOkxmR1gtVmx2ZlQweEJTQ1AzMjFXdEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0QmVGSk1YMFJmT1hGMWVFaERTVzl1Y0dkRVNVRRAB",
+      "reviewer": "Libby D.",
+      "rating": 5,
+      "text": "I can’t say enough good things! Great communication, work ethic and skill. Our job was done well and correctly which seems to be a hard thing to find lately. I would highly recommend!",
+      "publishedAt": "2026-07-08T15:09:26.495Z",
+      "ownerResponse": "Thank you, Libby, for your wonderful review! We're thrilled to hear that you had a great experience with our communication, work ethic, and skill. It’s always our goal to deliver excellent service, and we appreciate your recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0QmVGSk1YMFJmT1hGMWVFaERTVzl1Y0dkRVNVRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOktBeFJMX0RfOXF1eEhDSW9ucGdESUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kwd2FWbExVVUoyZWpGVFdIWlNZVEZXYjA1UVZVRRAB",
+      "reviewer": "Rich H.",
+      "rating": 5,
+      "text": "Great customer service, communication, and knowledge. Very efficient in diagnosing an issue and explaining all repair options. No sale techniques used trying to upsell any part or product. Definitely worth considering for any  troubleshooting or repairs needed.",
+      "publishedAt": "2026-07-01T02:11:21.166Z",
+      "ownerResponse": "Glad we could help Rich! Just let us know if you need anything else!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kwd2FWbExVVUoyZWpGVFdIWlNZVEZXYjA1UVZVRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOi0waVlLUUJ2ejFTWHZSYTFWb05QVUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0cllWZ3RWM2cwYVRGd1gxcHVPV0pWYTBWQlVHYxAB",
+      "reviewer": "Paul P.",
+      "rating": 5,
+      "text": "The highest quality of service with tremendous promptness, who went the extra mile to be sure the job was done.<br>I would recommend him w/o any reservations.",
+      "publishedAt": "2026-06-24T23:48:16.331Z",
+      "ownerResponse": "Thank you so much for the recommendation Paul. We try to do whatever we need to make sure the job is done. Your kind words are much appreciated!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0cllWZ3RWM2cwYVRGd1gxcHVPV0pWYTBWQlVHYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOktrYVgtV3g0aTFwX1puOWJVa0VBUGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGRmJrVkZka2hRUldZeExYaExjak5NVW5jMlIyYxAB",
+      "reviewer": "Patricia A.",
+      "rating": 5,
+      "text": "Hi, thank you for your services. Thank you for letting me know what was going on with my garbage disposal before you installed another one and you gave me an option on what to do before I wanted to stall a new one thanks for being kind and honest and very professional and thank you for showing me what it looked like when you took it out it was a wreck. 💐💐",
+      "publishedAt": "2026-06-23T20:48:12.836Z",
+      "ownerResponse": "Thank you for your kind words, Patricia! We're glad to hear that you appreciated our service and the thorough communication regarding your garbage disposal. Providing honest and professional service is our top priority, and it's great to know that we met your expectations. If you need anything else in the future, feel free to reach out!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGRmJrVkZka2hRUldZeExYaExjak5NVW5jMlIyYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjFFbkVFdkhQRWYxLXhLcjNMUnc2R2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxeVVIUkVSVmxHWldGemFUQmxXWEEzZFVOamJIYxAB",
+      "reviewer": "Unlucky G.",
+      "rating": 5,
+      "text": "Fantastic service!",
+      "publishedAt": "2026-06-23T20:23:16.159Z",
+      "ownerResponse": "Awesome! I'm glad we could help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxeVVIUkVSVmxHWldGemFUQmxXWEEzZFVOamJIYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOk1yUHRERVlGZWFzaTBlWXA3dUNjbHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poMVVucGtjMnh6U2s5MlJGWXlaMVp6Wm5GMmNYYxAB",
+      "reviewer": "Sam W.",
+      "rating": 5,
+      "text": "Zach from Wickey plumbing is very friendly and did a great job for us in a very timely manner. Work is warranted for a year. I recommend them very highly!!",
+      "publishedAt": "2026-06-08T19:49:30.194Z",
+      "ownerResponse": "Thank you for the recommendation Sam!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poMVVucGtjMnh6U2s5MlJGWXlaMVp6Wm5GMmNYYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjh1Unpkc2xzSk92RFYyZ1ZzZnF2cXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKT01XdExSRk0wTlZoSVVtaE9jMDVIVDJGZmNuYxAB",
+      "reviewer": "Glenn A.",
+      "rating": 5,
+      "text": "Zach Wickey installed my gas hot water heater for a flip home I am renovating.  He came out in a timely manner, always responded to texts & calls, & did his work very efficiently.  The new water heater looks great!!!",
+      "publishedAt": "2026-05-30T15:16:36.269Z",
+      "ownerResponse": "Thank you for the review Glenn. Let us know if you need anything else!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKT01XdExSRk0wTlZoSVVtaE9jMDVIVDJGZmNuYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjJOMWtLRFM0NVhIUmhOc05HT2Ffcnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tabFIxOTJlamRNVVhoWVoyYzJSa3RSU1hsWVptYxAB",
+      "reviewer": "Sheri M.",
+      "rating": 5,
+      "text": "Reasonable price and showed up on time.",
+      "publishedAt": "2026-05-10T19:36:44.526Z",
+      "ownerResponse": "Thank you so much for your 5 star review Sheri!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tabFIxOTJlamRNVVhoWVoyYzJSa3RSU1hsWVptYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOkZlR192ejdMUXhYZ2c2RktRSXlYZmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pBM2VGQmhOMFJ1TWxsWlMwUjFZMVZOTTFGTGFYYxAB",
+      "reviewer": "Christopher B.",
+      "rating": 5,
+      "text": "Well knowledgeable about what was wrong with my water heater got it fixed and good to go got an alert when he was on his way and was in-between the window that was quoted that he would be at my location would recommend to anyone I know that has issues with what kind of work he does",
+      "publishedAt": "2026-04-28T20:06:53.503Z",
+      "ownerResponse": "Thank you for the recommendations, Christopher!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pBM2VGQmhOMFJ1TWxsWlMwUjFZMVZOTTFGTGFYYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjA3eFBhN0RuMllZS0R1Y1VNM1FLaXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kQ2NWSkJSemhOZFhaRFJXc3pSRGhwWXpoVWIyYxAB",
+      "reviewer": "Dave H.",
+      "rating": 5,
+      "text": "Josh Wickey was quick to respond to my initial request.  He had everything he needed to make the repair.  He does excellent work!  I will recommend him to all my friends",
+      "publishedAt": "2026-04-21T18:04:08.074Z",
+      "ownerResponse": "Dave, glad we could be so quick to help! Thanks for the review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kQ2NWSkJSemhOZFhaRFJXc3pSRGhwWXpoVWIyYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmdCcVJBRzhNdXZDRWszRDhpYzhUb2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WNlZqVlRUSEUyY3poZlJXVnRUbHBuUlY5VmNWRRAB",
+      "reviewer": "Patti T.",
+      "rating": 5,
+      "text": "Zach was on time, very knowledgeable, had great suggestions and had estimate the same day!’",
+      "publishedAt": "2026-04-16T22:00:46.817Z",
+      "ownerResponse": "Thanks for the kind words and review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WNlZqVlRUSEUyY3poZlJXVnRUbHBuUlY5VmNWRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOnV6VjVTTHE2czhfRWVtTlpnRV9VcVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT210VVZHMTViVmR6ZDFOR1pFVlljMGhqTFhoQk1WRRAB",
+      "reviewer": "Betsy",
+      "rating": 5,
+      "text": "Kyle got here, got the job done for waaay less than I anticipated. Awesome!",
+      "publishedAt": "2026-04-16T16:04:20.436Z",
+      "ownerResponse": "We don't have a Kyle that works for us so you might have the wrong company, but thanks for the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210VVZHMTViVmR6ZDFOR1pFVlljMGhqTFhoQk1WRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmtUVG15bVdzd1NGZEVYc0hjLXhBMVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kc1VuQnFkRXQ2WVZoVlUxOUxXbEJ2Ym1ock0zYxAB",
+      "reviewer": "Kevin K.",
+      "rating": 5,
+      "text": "Zach installed a hot water heater for me. He was on time, professional and did a great job. I would hire him again!",
+      "publishedAt": "2026-03-23T18:14:40.156Z",
+      "ownerResponse": "We look forward to helping you again if you have any more plumbing issues!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kc1VuQnFkRXQ2WVZoVlUxOUxXbEJ2Ym1ock0zYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOndsUnBqdEt6YVhVU19LWlBvbmhrM3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2paMk5sa3pNRlJwTURSellWOU5XVWhhU2tGbWVuYxAB",
+      "reviewer": "Andrzej H.",
+      "rating": 5,
+      "text": "Zach was fantastic and very professional, despite unexpected issues with installing Italian made sink. We would highly recommend his company's services.",
+      "publishedAt": "2026-03-20T20:47:53.815Z",
+      "ownerResponse": "Thank you Andrzej! We appreciate your business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paMk5sa3pNRlJwTURSellWOU5XVWhhU2tGbWVuYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjZ2NlkzMFRpMDRzYV9NWUhaSkFmenc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5eE1VVTFPRmhtYlhoR09HSTNkazVYVGxsU1ZWRRAB",
+      "reviewer": "Gary H.",
+      "rating": 5,
+      "text": "Wickey Plumbing is my go to plumber when I need any type of plumbing work done. Very good quality work",
+      "publishedAt": "2026-03-16T17:46:05.200Z",
+      "ownerResponse": "Thank you for the kind words Gary!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5eE1VVTFPRmhtYlhoR09HSTNkazVYVGxsU1ZWRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOk9xMUU1OFhmbXhGOGI3dk5XTllSVVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaTU0yaEdhVVV3Y1ZKa1VsZExMVzB4TTBOaFVYYxAB",
+      "reviewer": "Carla K.",
+      "rating": 5,
+      "text": "I will be calling Wickey Plumbing for all plumbing needs from now on.He was very nice and helpful.",
+      "publishedAt": "2026-03-04T18:44:54.820Z",
+      "ownerResponse": "Thank you for the review, Carla. We are glad to have earned your business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaTU0yaEdhVVV3Y1ZKa1VsZExMVzB4TTBOaFVYYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOlZMM2hGaUUwcVJkUldLLW0xM0NhUXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OSWJHaGZjVXRZTkhKZk1EYzJVMWxXWmxWMk9YYxAB",
+      "reviewer": "Cris N.",
+      "rating": 5,
+      "text": "Were coming to give me an estimate and walked into more have an emergency situation. Took care of the emergency. Zach was professional and courteous, and a pleasure to work with!",
+      "publishedAt": "2026-02-26T21:59:14.089Z",
+      "ownerResponse": "Cris, thank you for your review! Glad we could help your emergency plumbing situation.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OSWJHaGZjVXRZTkhKZk1EYzJVMWxXWmxWMk9YYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOnNIbGhfcUtYNHJfMDc2U1lWZlV2OXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pJelpFVXliMnB1VTA4NE4zbFhTVnBpV2pneU1IYxAB",
+      "reviewer": "Marcia H.",
+      "rating": 5,
+      "text": "If you’re having any type of plumbing issues contact Wickey Plumbing, Zack is the best!<br>I had the tubular drains underneath the kitchen sink replaced with a disposal waste kit.<br>He also found the disposal was not installed all the way and replaced the sink strainer.<br><br>Zack did a great job and price is responsible.",
+      "publishedAt": "2026-02-25T16:10:01.672Z",
+      "ownerResponse": "Thank you for you review and recommendations, Marcia! It means a lot to our small business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pJelpFVXliMnB1VTA4NE4zbFhTVnBpV2pneU1IYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjIzZEUyb2puU084N3lXSVpiWjgyMHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxbE9XMVdhVUp2UjNaQ2JVNURjbWx2VEVZM2NFRRAB",
+      "reviewer": "Aaron V.",
+      "rating": 5,
+      "text": "Called Wickey Plumbing to replace my water heater.  He came out within an hour and a half and completed the job quickly and professionally.  Very knowledgeable about the difference in brands and made sure my choice was an informed one.  If you need any plumbing work done,  Wickey is who should call,  that's who I'll be calling from now on.",
+      "publishedAt": "2026-02-23T22:34:32.136Z",
+      "ownerResponse": "We are glad we could quickly get your water heater replaced! Thank you for the 5-star review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxbE9XMVdhVUp2UjNaQ2JVNURjbWx2VEVZM2NFRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOi1lOW1WaUJvR3ZCbU5DcmlvTEY3cEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25Wd01ETjViM2QwUzIxalJqaElTSFJ2UmtNNE0zYxAB",
+      "reviewer": "Grace B.",
+      "rating": 5,
+      "text": "He did a great job and went out of the way for my heat tape. I am impressed and will recommend him to my friends",
+      "publishedAt": "2026-02-17T16:57:03.530Z",
+      "ownerResponse": "Thank you for the 5-star review and recommendations, Grace!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Wd01ETjViM2QwUzIxalJqaElTSFJ2UmtNNE0zYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOnVwMDN5b3d0S21jRjhISHRvRkM4M3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201aGIwRnVRVGRLTkRSaWFuZFRWM2hyYUhoV1NIYxAB",
+      "reviewer": "greg F.",
+      "rating": 5,
+      "text": "Zack did an amazing job. I had more than your typical clogged drain. A tree root had broken my drain and he had to tear up our floor to get to the problem. He was professional and got it done quickly. His price was very reasonable and we are more than happy with the work he has done. Thank you Zack. You will be my first choice for any plumbing issues.",
+      "publishedAt": "2026-02-07T16:09:59.869Z",
+      "ownerResponse": "Let us know if you have any other plumbing issues. Thank you, Greg for your review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201aGIwRnVRVGRLTkRSaWFuZFRWM2hyYUhoV1NIYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOm5hb0FuQTdKNDRiandTV3hraHhWSHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21odldrVmlTa1JPYzJ0MlRUVjZSV0ZhTURacGMxRRAB",
+      "reviewer": "Chris M.",
+      "rating": 5,
+      "text": "Very prompt service. Zack took the time to answer all my questions and did a fantastic job with our clog. I would and will recommend him for all your plumbing needs. Any future plumbing issues this will be my first call!",
+      "publishedAt": "2026-02-05T21:23:38.226Z",
+      "ownerResponse": "We are happy to answer all your plumbing questions! Thanks for the review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21odldrVmlTa1JPYzJ0MlRUVjZSV0ZhTURacGMxRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOmhvWkViSkROc2t2TTV6RWFaMDZpc1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xRMVRXMDFUWGxqT1dWNFRFSkpVVm81VG14cGNVRRAB",
+      "reviewer": "Automne H.",
+      "rating": 5,
+      "text": "Great service and a very fair price! Will absolutely use them again.",
+      "publishedAt": "2026-01-19T16:07:08.476Z",
+      "ownerResponse": "Thank you for the kind words Automne!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xRMVRXMDFUWGxqT1dWNFRFSkpVVm81VG14cGNVRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOlQ1TW01TXljOWV4TEJJUVo5TmxpcUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsMFdHZ3daVkJwTWpGbFpFOVNhVTlRYjFJdFMyYxAB",
+      "reviewer": "Matthew Z.",
+      "rating": 5,
+      "text": "Had a great experience with Zach. Will definitely be calling them again when I need plumbing work!",
+      "publishedAt": "2026-01-16T21:22:55.269Z",
+      "ownerResponse": "Thank you Matthew for the kind words and the review. They mean a lot for small businesses!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsMFdHZ3daVkJwTWpGbFpFOVNhVTlRYjFJdFMyYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOll0WGgwZVBpMjFlZE9SaU9Qb1ItS2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tscVZUVTVlRWhOZG1FNVZtNXVNUzFpT1MxTVJFRRAB",
+      "reviewer": "Brian M.",
+      "rating": 5,
+      "text": "Communication was excellent, work was completed to my satisfaction. Was advised on my selection of an inferior product and recommended a better product.",
+      "publishedAt": "2026-01-14T15:56:36.374Z",
+      "ownerResponse": "Thank you for the review. Let us know if you need anything else!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tscVZUVTVlRWhOZG1FNVZtNXVNUzFpT1MxTVJFRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOklqVTU5eEhNdmE5Vm5uMS1iOS1MREE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsblpuaEZRbTB0VlRKNlZrTlBXUzFaWVV4TldrRRAB",
+      "reviewer": "Timothy S.",
+      "rating": 5,
+      "text": "Very personalble and informative. Definitely went out of his way to get me in. Highly recommend.",
+      "publishedAt": "2025-12-31T15:48:00.756Z",
+      "ownerResponse": "Thank you for the 5 star review Timothy! It means so much!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsblpuaEZRbTB0VlRKNlZrTlBXUzFaWVV4TldrRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOklnZnhFQm0tVTJ6VkNPWS1ZYUxNWkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGWFZ6TjZaRGRaVUZsemFWWnVkV2hsTm05TFVVRRAB",
+      "reviewer": "Josh P.",
+      "rating": 5,
+      "text": "Zach was a top notch, one of a kind professional.  He gave his personal attention and interest in giving us the most cost effective solution.  We got a quote from one of the large commercial companies and their diagnosis was actually incorrect!  He too his time to be extremely thorough and provide the proper repair.  No doubt…call Zach if you have a plumbing issue!",
+      "publishedAt": "2025-12-22T23:04:06.283Z",
+      "ownerResponse": "Josh, thank you for the review and recommendation! They mean so much for small business. Let us know if you need anything else!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGWFZ6TjZaRGRaVUZsemFWWnVkV2hsTm05TFVVRRAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOjFXVzN6ZDdZUFlzaVZudWhlNm9LUUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWb1NuaGtURXc0Wmt0dmFWVmFaa1JUZG5WRVMyYxAB",
+      "reviewer": "Tamra P.",
+      "rating": 5,
+      "text": "Professional and communicative service! Great guy, got us in quickly and ensured cost effectiveness! Thank you Wickey plumbing!",
+      "publishedAt": "2025-12-21T17:11:17.920Z",
+      "ownerResponse": "No problem whatsoever Tamra. We always try to help our customers out as best we can!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWb1NuaGtURXc0Wmt0dmFWVmFaa1JUZG5WRVMyYxAB!2m1!1s0x0:0x1fb1ab00e7681bd4!3m1!1s2@1:CAIQACodChtycF9oOkVoSnhkTEw4ZktvaVVaZkRTdnVES2c%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kU1QwRm9OMHBwVUdFMlVqZGtOME0yT1ZobGVFRRAB",
+      "reviewer": "Jacob C.",
+      "rating": 5,
+      "publishedAt": "2026-11-14T14:46:22.479Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSd2RqWmtiVk0xTmpKWU1FNHhja2RYTjNZd1kyYxAB",
+      "reviewer": "Kel",
+      "rating": 5,
+      "publishedAt": "2026-10-31T04:22:13.130Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSQlYwUnVhQzFmYm10WVdITmxiRmg2YTFsSlQwRRAB",
+      "reviewer": "Shan_K",
+      "rating": 5,
+      "publishedAt": "2026-10-31T01:04:05.530Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xwRGQyWkZTR1JSY0hKbk4wOUhXV1p0YlZCMVoxRRAB",
+      "reviewer": "Chanchai H.",
+      "rating": 4,
+      "publishedAt": "2026-10-30T13:54:49.715Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSUlRXWmpNRk5xVmxOYWVEaFZPVFZWT0VGa1JXYxAB",
+      "reviewer": "Abigail W.",
+      "rating": 5,
+      "publishedAt": "2026-10-05T20:40:42.846Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xwWGNuVnNSR1pJTkd0VE9VODVNM1pKYUc1S1pYYxAB",
+      "reviewer": "Blake",
+      "rating": 5,
+      "publishedAt": "2026-09-03T22:34:01.262Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4T1NVRXhUbFUwV0hKbFJGRkROM0J3T1dsTGMyYxAB",
+      "reviewer": "Lindsey S.",
+      "rating": 5,
+      "publishedAt": "2026-09-03T14:02:43.799Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GSmVEVXhRMGx1V1ZjM1UzZFVlbGxqTVVOWWVsRRAB",
+      "reviewer": "Corey S.",
+      "rating": 4,
+      "publishedAt": "2026-08-20T14:23:46.603Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toWk1UUllhRkZzUzI0M1oxRktXazF5VTNkb1VVRRAB",
+      "reviewer": "Terrance E.",
+      "rating": 4,
+      "publishedAt": "2026-08-05T15:28:42.596Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWbk5VeDNNblEwZG1KT1psQmhaMkpKUjBWUE4yYxAB",
+      "reviewer": "Steven P.",
+      "rating": 5,
+      "publishedAt": "2026-07-30T18:28:04.136Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2twVFlqQTNkazVFZFMxbVJFMVZMWFZJUm5NNGFtYxAB",
+      "reviewer": "yungz L.",
+      "rating": 5,
+      "publishedAt": "2026-07-18T19:27:51.714Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214WVkyWm9UREJJZFV0WU4xSTJiMDFtZG1wVVdYYxAB",
+      "reviewer": "Jonathan S.",
+      "rating": 5,
+      "publishedAt": "2026-07-01T14:47:44.969Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tRMk9XVjBiVEJzU1ZkNVdYQTRaa1JRUjBkdGVsRRAB",
+      "reviewer": "Randy F.",
+      "rating": 5,
+      "publishedAt": "2026-06-08T21:19:03.911Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsTllXNUhkMGt5YVZjd1pFRjRWVkl0TkdocVFXYxAB",
+      "reviewer": "norma V.",
+      "rating": 5,
+      "publishedAt": "2026-05-06T01:41:53.105Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25ZNWQxSnZObFk1WjNsUWFEVktiRUZpV2tKUVFVRRAB",
+      "reviewer": "Sam W.",
+      "rating": 5,
+      "publishedAt": "2026-01-22T21:27:27.726Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGQlRHWXlRMkpHY25VdE1GRXlTR1l3U2xWSWFFRRAB",
+      "reviewer": "Megan L.",
+      "rating": 5,
+      "publishedAt": "2026-01-14T17:06:11.119Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pOYVdFNHhVMHN4VEhVMk56WkxUWE5OYUZkaE9WRRAB",
+      "reviewer": "vonna B.",
+      "rating": 5,
+      "publishedAt": "2026-01-13T21:27:38.059Z"
+    }
+  ]
+}

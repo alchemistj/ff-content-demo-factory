@@ -1,0 +1,28 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "fortwayne-plumbing-wickey",
+  "request": {
+    "mapsUrl": "place_id:ChIJfRDGZy_0KYUR1Bto5wCrsR8",
+    "maxReviews": 75,
+    "expectedPhone": "2604095128",
+    "expectedName": "Wickey"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "uAnJgarFSKQzWECBN",
+    "datasetId": "TbAF7N4A4k13NAoDb",
+    "attempts": 1,
+    "usageUsd": 0.0002
+  },
+  "counts": {
+    "listingTotal": 88,
+    "withText": 58,
+    "ratingOnly": 17
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T04:08:42.243Z",
+  "finishedAt": "2026-11-16T04:09:13.898Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43802225852"
+}

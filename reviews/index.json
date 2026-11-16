@@ -411,6 +411,18 @@
       "pulledAt": "2026-11-16T04:07:48.089Z"
     },
     {
+      "slug": "fortwayne-plumbing-wickey",
+      "name": "Wickey Plumbing LLC",
+      "placeId": "ChIJfRDGZy_0KYUR1Bto5wCrsR8",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 88,
+        "withText": 58,
+        "ratingOnly": 17
+      },
+      "pulledAt": "2026-11-16T04:09:13.898Z"
+    },
+    {
       "slug": "greenway-exteriors",
       "name": "Greenway Exteriors",
       "placeId": "ChIJAQC8MrzhuocR5qvlgPmfobc",
