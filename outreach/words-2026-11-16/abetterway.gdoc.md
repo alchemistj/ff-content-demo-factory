@@ -3,6 +3,14 @@
 
 ## Strategy page
 
+Badge: Free demo site built for A Better Way Construction & Roofing
+
+We already did the work. Here's an A Better Way Construction & Roofing website that tells Lincoln who you are and gets the phone ringing.
+
+Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
+
+We built A Better Way the first five pages of that kind of website. More on that below.
+
 **Why we built this site**
 
 Your reviews say you show up when you say you will, leave the yard clean, charge a fair price and walk people through the insurance company. Your site says almost none of that.
@@ -11,7 +19,7 @@ Your reviews say you show up when you say you will, leave the yard clean, charge
 >
 > — Taylor O.
 
-Look at your storm page. It never says you help with insurance claims, and how you replace a roof is buried in a 2013 article. So we built the first five pages: homepage, roof replacement, storm damage and insurance claims, contact, and this one. Your other services live on the homepage.
+Look at your storm page. It never says you help with insurance claims, and how you replace a roof is buried in a 2013 article. So we built the homepage, roof replacement, storm damage and insurance claims, and contact pages. Your other services live on the homepage.
 
 **The demo, page by page**
 
@@ -85,8 +93,6 @@ Every page set up behind the scenes so Google and AI tools like ChatGPT know exa
 
 **What a full build includes**
 
-*This demo is the first five pages of a full build.*
-
 Gets you found
 - Every service on your website and your Google profile, telling the same story
 - Each service gets its own page or shares one, based on what Google shows for that search
@@ -107,21 +113,20 @@ Keeps working after launch
 - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
 - Your site watched around the clock for downtime.
 - Google indexing and your Google visibility checked every day.
-- Menus, contact links and forms tested in a real browser twice a day.
-- New team members, booking systems and new services, updated for you
+- Page links, buttons and contact forms tested in a real browser twice a day.
 - Updated when Google and AI tools change how they read websites
 - You never have to know what to ask for
 
 **What we'd confirm with you**
 
 - Your site says "over 40 years," "20+ years," "since 2003" and "since 2004." Which is right?
-- Your site says GAF Certified, and GAF's contractor finder blocked our check. Can we see the certificate?
+- Two reviews call the owners "Rocky and Sue" and "Alex and Mary," not Alex and Maria. Who are they?
 - One page says a roof inspection costs a "competitive fee," others say free. Which is it?
 - Your site lists no hours. Do you answer calls after hours?
 
 **Want a website like this for your business?**
 
-Book a no-obligation call, or text us: (417) 373-2773
+Answer these four and we'll update the pages. Book a no-obligation call, or text us: (417) 373-2773
 
 ## Home — Roofing Company in Lincoln, NE — A Better Way Construction & Roofing
 
@@ -129,11 +134,11 @@ Roof replacement, storm damage and insurance claims, and the work around your ho
 
 # Roofing Company in Lincoln, NE — A Better Way Construction & Roofing
 
-Alex and Maria own A Better Way Construction & Roofing. We replace and repair roofs, help homeowners through storm damage and insurance claims, and do the gutters, siding, painting and remodeling that go with them, in Lincoln and the towns around it. Call us, or ask for a free estimate on your next home project.
+Alex and Maria own A Better Way Construction & Roofing. We replace and repair roofs, help homeowners through storm damage and insurance claims, and do the gutters, siding, painting and remodeling that go with them, in Lincoln and the towns around it. Customers describe repairs done quickly. Call us, or ask for a free estimate on your next home project.
 
 **Buttons:** Call (402) 432-6800 | Request a Free Estimate
 
-*Strip:* Free Estimates | GAF Certified Roofers | Insurance Claim Help | Lincoln and Nearby Towns
+*Strip:* Free Estimates | GAF Certified Roofers | Insurance Claim Help | Customers describe quick work
 
 > Alex and Maria are the perfect team. They stepped in quickly to get our project done. If you want quality workmanship, excellent customer service, and someone focused on your best interests, A Better Way is the way to go.
 >
@@ -142,8 +147,6 @@ Alex and Maria own A Better Way Construction & Roofing. We replace and repair ro
 ## Who You'll Deal With
 
 Alex worked alongside the company's previous owners for more than ten years before they retired and offered him the business. For the past six years, he and Maria have owned and run it. Maria joined shortly after Alex bought the company, after working in customer service, and she is the friendly voice many customers reach first. She guides you through the process, answers questions and helps with insurance claims when you have one.
-
-Our goal is simple: you feel informed, comfortable and confident from the first call to the last day.
 
 > Even with new owners they still show up when they say they will and the work is still professional and done with care.
 >
@@ -183,7 +186,7 @@ Bathrooms, kitchens, basements and additions are our specialty when you want a r
 
 ## Rentals, Sheds and Odd Jobs
 
-General construction is part of what we do: framing, drywall, windows, doors, carpet, and building or moving a shed. We've rebuilt a chimney, we handle snow removal, and we work for landlords as well as homeowners.
+We also do framing, drywall, windows, doors, carpet, and building or moving a shed. We've rebuilt a chimney, we handle snow removal, and we work for landlords as well as homeowners.
 
 > Great company to work with for the rentals we manage
 >
@@ -199,7 +202,7 @@ We stand behind our work with a 5 year workmanship warranty.
 
 ## How We Work
 
-We built the company on honesty, integrity and communication. In practice that usually means we show up when we say we will, price the job fairly and clean up at the end of each working day.
+We show up when we say we will, price the job fairly and clean up at the end of each working day.
 
 > Their prices are reasonable and they stick to their schedule and they do a good job cleaning up when we're finished.
 >
@@ -219,7 +222,7 @@ Roof replacement in Lincoln and nearby towns
 
 # Roof Replacement in Lincoln, NE — A Better Way Construction & Roofing
 
-Our replacements generally tear the old roof off down to the bare wood, so we can check the boards underneath and replace any that are damaged before the new roof goes on. Call us and we'll set up a time to look at yours.
+Our replacements generally tear the old roof off down to the bare wood, so we can check the boards underneath and replace any that are damaged before the new roof goes on. Customers describe an estimate and finished roof work within a week. Call us and we'll set up a time to look at yours.
 
 **Buttons:** Call (402) 432-6800 | Request a Free Estimate
 
@@ -328,7 +331,7 @@ Storm damage, Lincoln and nearby towns
 
 # Storm Damage and Insurance Claims in Lincoln, NE — A Better Way Construction & Roofing
 
-After hail or wind, we look at your roof and Maria helps you through the insurance claim. Call us for a free assessment of storm damage, and we'll tell you what we find.
+After hail or wind, we look at your roof and Maria helps you through the insurance claim. One customer called with storm damage and Alex was out right away. Call us for a free assessment, and we'll tell you what we find.
 
 **Buttons:** Call (402) 432-6800 | Request a Free Estimate
 
@@ -346,7 +349,7 @@ From the yard, check the gutters, downspouts, vents and siding first. Dents and 
 
 ## What We Check on a Visit
 
-A visit usually covers the shingles, the metal around chimneys and vents, the gutters and, where it's safe, the attic or the ceilings below for water. Hail often bruises shingles in ways that are hard to see from the ground, and wind can lift edges without tearing anything off.
+A thorough storm inspection covers the shingles, the metal around chimneys and vents, the gutters and, where it's safe, the attic or the ceilings below for water. Hail often bruises shingles in ways that are hard to see from the ground, and wind can lift edges without tearing anything off.
 
 > They took time to look over my roof after the adjuster and found additional hail damage.
 >

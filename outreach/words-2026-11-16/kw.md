@@ -13,19 +13,13 @@ We built K&W the first five pages of that kind of website. More on that below.
 
 **Why we built this site**
 
-Your customers say K&W shows up fast, again and again.
+Some of your customers say K&W got someone out within a day.
 
 > They find the time to get someone here within 24 hours when I have an issue.
 >
 > — Taylor M.
 
-Your 24/7 emergency line is the other half of the story.
-
-> When you trust you Furnance and AC with K&W no matter what the issue 24/7 the professionals got you covered
->
-> — Scott S.
-
-Your home page answers "Do you offer emergency HVAC services?" with a yes and no mention of 24/7.
+Your home page answers "Do you offer emergency HVAC services?" with a yes, and never says 24/7.
 
 So the demo puts your speed and your 24/7 line at the top, and gives furnace repair and AC repair a page each.
 
@@ -37,7 +31,7 @@ So the demo puts your speed and your 24/7 line at the top, and gives furnace rep
 
 **Current site problem**
 - Your browser tab says "Reliable HVAC Services for Indiana, Kentucky & Illinois." No Evansville, where your customers search from.
-- The same four testimonials (Viola Johnson, Kevin Storey, Michael Molinet, Andrew Hayes) repeat on your home, heating, AC and About pages. We couldn't find them on your Google profile.
+- The same four testimonials repeat on your home, heating, AC and About pages, and none of your Google reviews appear.
 
 **What the demo fixes**
 - A browser tab name and headline that say HVAC Company in Evansville, IN.
@@ -58,7 +52,7 @@ Google and AI tools can only repeat what's written down. We get every service, c
 **What the demo fixes**
 - A headline and browser tab name that say Furnace Repair in Evansville, IN.
 - What usually fails, a repair-or-replace rule, and a gas smell and carbon monoxide section.
-- A speed line up top (usually within a day, often the same day) and 24/7 service said plainly.
+- A line up top where customers describe a technician within a day, often the same day, and 24/7 service said plainly.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn't think to mention still get their own pages.
@@ -109,7 +103,7 @@ Earns their trust
 - A strip at the top of every page with your rating and credentials, so a customer sees why to pick you right away
 
 Turns visitors into calls
-- Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. About 80% of visitors are on a phone, and a slow page lets them down.
+- Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
 - A call-and-book bar that stays on screen on phones
 - A contact form that blocks spam
 
@@ -138,7 +132,7 @@ Book a call and we'll walk you through this demo, settle these four, and show yo
 
 ## Home — HVAC Company in Evansville, IN — K&W Premier Heating and Air
 
-Furnace and AC repair, new systems, heat pumps, generators and commercial HVAC for homes and businesses in Evansville and across the Tri-State. (HVAC means heating, ventilation and air conditioning.) We usually get a technician to you within a day, often the same day. Call (812) 589-9338.
+Furnace and AC repair, new systems, heat pumps, generators and commercial HVAC for homes and businesses in Evansville and across the Tri-State. (HVAC means heating, ventilation and air conditioning.) Call (812) 589-9338.
 
 **Buttons:** Call (812) 589-9338 · Request Service
 
@@ -154,7 +148,7 @@ We work on furnaces, heat pumps, air conditioners, ductless mini-splits (wall-mo
 >
 > — Helena L.
 
-### A Technician Within a Day, Often the Same Day
+### A Technician Within a Day
 
 When you call, we ask what the system is doing and gather the details about your heating, cooling or generator setup, so the right technician heads your way. Our technician explains the best fix before the work starts and then does the repair or install. A repair that needs a part that has to be ordered can take longer.
 
@@ -164,7 +158,7 @@ When you call, we ask what the system is doing and gather the details about your
 
 ### When It Quits at Night or on a Weekend
 
-Furnaces tend to fail on the coldest night, and air conditioners on the hottest afternoon. We offer 24/7 emergency service, including nights and weekends, and a technician can be headed your way after one call to (812) 589-9338.
+Furnaces tend to fail on the coldest night, and air conditioners on the hottest afternoon. We offer 24/7 emergency service, and a technician can be headed your way after one call to (812) 589-9338.
 
 Evansville summers are hot and humid, and winters often drop below freezing for stretches. A house with no cooling in July or no heat in January is not a problem to leave until Monday, and for older residents or small children it can become a safety problem within hours.
 
@@ -213,8 +207,6 @@ A repair price depends on the failed part and the labor. A replacement price dep
 
 **What if my system quits at night?** Call (812) 589-9338, any hour, and a technician can be headed your way.
 
-**How fast can you get here?** Usually within a day, and often the same day.
-
 **Do you work on brands other than Ruud and American Standard?** Yes. We repair all major brands and install equipment from most major manufacturers.
 
 **How long does a new system take to install?** Most heating or cooling system installs can be finished in one day. Larger or more complex jobs may take longer, and we'll keep you informed.
@@ -227,11 +219,9 @@ Call (812) 589-9338 and tell us what the system is doing. If it's an emergency, 
 
 ## Furnace Repair — Furnace Repair in Evansville, IN — K&W Premier Heating and Air
 
-The furnace has stopped heating and the house is getting colder. We usually get a technician to you within a day, often the same day, and we repair all major brands. Call (812) 589-9338.
+The furnace has stopped heating and the house is getting colder. Customers describe a technician within a day, often the same day. We repair all major brands. Call (812) 589-9338.
 
 **Buttons:** Call (812) 589-9338 · Request Service
-
-**Strip:** Furnace repair · Heat pumps · Free furnace replacement estimates · Often the same day
 
 ### We Repair Furnaces and Heat Pumps, Whoever Installed Them
 
@@ -306,11 +296,7 @@ A tune-up is also when the small parts get a look: the filter, the igniter and f
 
 **How can I lower my heating bills in the winter?** Replace filters regularly, seal drafts and use a programmable thermostat. For bigger savings, upgrading to a high-efficiency furnace or heat pump can significantly reduce energy costs.
 
-**How fast can you get here?** Usually within a day, and often the same day.
-
 **What should I do while I wait for a technician?** Close the doors to one room, keep everyone in it and dress in layers.
-
-**Is the emergency line really 24/7?** Yes. We offer 24/7 emergency service. Call (812) 589-9338.
 
 ### Call K&W
 
@@ -318,11 +304,9 @@ If your furnace isn't heating, call (812) 589-9338 and tell us what it's doing.
 
 ## Air Conditioning — AC Repair in Evansville, IN — K&W Premier Heating and Air
 
-When the air conditioner quits on a humid Evansville afternoon, the house gets uncomfortable fast. We usually get a technician to you within a day, often the same day. Call (812) 589-9338.
+When the air conditioner quits on a humid Evansville afternoon, the house gets uncomfortable fast. Customers describe a technician within a day, often the same day. Call (812) 589-9338.
 
 **Buttons:** Call (812) 589-9338 · Request Service
-
-**Strip:** AC repair · Mini-splits · Indoor air quality · Often the same day
 
 ### AC Repair That Starts With the Cause
 
@@ -405,8 +389,6 @@ Spring is the time to catch the things that fail on the first hot day: a weak ca
 **Why is my AC running but not cooling the house?** Low refrigerant, a frozen coil, dirty filters or an airflow restriction can all cause it. If basic troubleshooting doesn't fix it, we can diagnose it and prevent further damage.
 
 **What types of air conditioning systems do you install?** Central air conditioning systems, ductless mini-splits, heat pumps and high-efficiency cooling units, recommended for your layout and budget.
-
-**How fast can you get here?** Usually within a day, and often the same day.
 
 ### Call K&W
 

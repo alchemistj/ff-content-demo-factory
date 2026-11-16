@@ -171,7 +171,7 @@ Heating, AC and plumbing emergencies don't wait for office hours, so we offer 24
 
 Before a plumber arrives, you get a text with a short description of who is coming, including how many years they've been in the field.
 Questions Before You Call
-How fast can you get here? Usually the same day, often within a few hours.
+How fast can you get here? Usually the day you call, often in a few hours.
 
 Same day service. Austin explained everything well.
 
@@ -260,7 +260,7 @@ If the problem is a small part, such as an igniter, a capacitor, a motor or a se
 
 Many systems begin to decline after 10 to 15 years, and older equipment is often less efficient than today's. Ask the technician which one is the better buy. A heat pump is one option to ask about. It moves heat instead of burning fuel, so one system can heat and cool the house. Whether it fits depends on your house and your budget.
 
-For new equipment we offer a free, same-day estimate or a trusted second opinion. The free estimate doesn't cover service calls.
+For new equipment we offer a free estimate or a trusted second opinion. The free estimate doesn't cover service calls.
 
 Our guarantee: we clean up after ourselves, and we provide a standard two-year labor warranty on any complete system replacement.
 
@@ -342,7 +342,7 @@ If your water heater isn't working, call (402) 423-6960 and tell us what it's do
 Contact — Contact Action Plumbing, Heating, A/C & Electrical in Lincoln, NE
 Fact line: Plumbing · Heating · AC · Electrical
 Contact Action Plumbing, Heating, A/C & Electrical in Lincoln, NE
-Call and tell us what's going on. We offer 24-hour service for heating, AC and plumbing.
+Call and tell us what's going on. We take heating, AC and plumbing calls day or night.
 
 Buttons: Call (402) 423-6960
 Call Us, Day or Night
