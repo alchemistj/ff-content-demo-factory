@@ -363,6 +363,18 @@
       "pulledAt": "2026-11-09T12:44:52.542Z"
     },
     {
+      "slug": "evansville-roofing-theway",
+      "name": "The Way Construction",
+      "placeId": "ChIJ259sgGMrbogRU749tq740pw",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 376,
+        "withText": 61,
+        "ratingOnly": 14
+      },
+      "pulledAt": "2026-11-16T04:51:41.442Z"
+    },
+    {
       "slug": "evolve-exteriors",
       "name": "Evolve Exteriors",
       "placeId": "ChIJS6lMpo_qZUQRpZzFf2lGyAs",
