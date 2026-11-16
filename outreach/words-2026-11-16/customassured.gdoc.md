@@ -9,9 +9,9 @@ Your site shapes your Google ranking, what AI says about your business, and how 
 ### Why we built this site
 Your Google reviews keep coming back to one thing: you come out twice a year, your office calls to book it, and it's often the same technician. Customers who have been with you for years say so. One put it in four words:
 
-Lance is our guy.
+> Lance is our guy.
 
-— Linda R.
+> — Linda R.
 
 Your reviews say all of that. Your site says little of it. The homepage has no phone number, and no page lets a phone visitor tap to call.
 
@@ -133,17 +133,17 @@ Family owned and operated, on Independence Drive in Fort Wayne since 1998. We se
 
 Family owned and operated · Serving Fort Wayne since 1998 · Residential, commercial and new construction
 
-They show up on time, every time. All staff members are kind and considerate. Very customer service oriented.
+> They show up on time, every time. All staff members are kind and considerate. Very customer service oriented.
 
-— Michelle G.
+> — Michelle G.
 ### Heating and Air Conditioning, Start to Finish
 We are big enough to offer a full lineup of heating and cooling products and services, and small enough to give you personal service. You get prompt, professional and personal service during the installation or repair and after it. The job isn't complete until you're satisfied.
 
 We offer Bryant heating and cooling products: furnaces, heat pumps, air conditioners, humidifiers, thermostats and air cleaners.
 
-Probably one of the most honest / reliable contractors in the area.
+> Probably one of the most honest / reliable contractors in the area.
 
-— Matt M.
+> — Matt M.
 ### Maintenance, Furnaces and Repair
 **Maintenance.** Annual service agreements keep your equipment running at optimal performance, and Custom Priority Club members get priority service, discounts on services, emergency service and a call from our office. HVAC Maintenance in Fort Wayne, IN
 
@@ -151,9 +151,9 @@ Probably one of the most honest / reliable contractors in the area.
 
 **Repair beyond the brands we sell.** We repair many brands, not only the Bryant equipment we sell. Call (260) 496-8400 and tell us the brand and what it is doing.
 
-Custom Assured Mechanical did an awesome job! They came out first thing this morning and had my AC fixed in no time. Fast, professional, and easy to work with.
+> Custom Assured Mechanical did an awesome job! They came out first thing this morning and had my AC fixed in no time. Fast, professional, and easy to work with.
 
-— Roy S.
+> — Roy S.
 ### Air Conditioners, Heat Pumps and Thermostats
 **Air conditioners.** Indiana summers get hot. With a full line of A/C units, we find the right fit for your home and your budget.
 
@@ -167,15 +167,15 @@ Whole-home air cleaners come in many types and brands. We help you work through 
 ### Homes, Businesses and New Construction
 We tailor each job to what you need, whether you are a homeowner, a business or building new. In a new build, heating and cooling is easiest to get right at the planning stage, when the ducts, the equipment size and the thermostat location are worked out together on paper rather than around a finished house. A business has its own questions, such as how many people use the space and at what hours, which is why one setup rarely fits every building.
 
-CAM has been my HVAC company for my business and home, for many years. They do an excellent job at a reasonable price and I will continue to use them for many more years.
+> CAM has been my HVAC company for my business and home, for many years. They do an excellent job at a reasonable price and I will continue to use them for many more years.
 
-— Roger M.
+> — Roger M.
 
 We take on new construction as well as existing homes and businesses.
 
-I have been a customer for well over 10 years built two homes and a pole barn would not call anyone else … Their expertise has been a tremendous help with our last two homes both with HVAC design as well as our maintenence.
+> I have been a customer for well over 10 years built two homes and a pole barn would not call anyone else … Their expertise has been a tremendous help with our last two homes both with HVAC design as well as our maintenence.
 
-— Ken M.
+> — Ken M.
 ### The Family Behind the Name
 Our owner, Rod Schaefer, started in the HVAC trade over 35 years ago, sweeping floors, and has held every position since. He has earned certifications, accreditations and training for customer service, installation and technical services. Rod directly oversees installations and job scheduling, and the ongoing training of every employee, himself included.
 
@@ -183,29 +183,29 @@ Kim, Rod's wife, handles the scheduling of service calls, billing, accounting an
 
 Their son Casey started in the shop the way Rod did, pushing a broom, unloading deliveries and fabricating sheet metal for the installation teams since 2007. He earned a Technical Certificate from Ivy Tech and now manages our service department. Casey and Julie work side by side with Rod and Kim. Julie has a degree in Communications from Purdue University Fort Wayne and a background in customer service, and she works in the office.
 
-My air conditioner stopped running one day. From the very first phone call with Julie, to the end result of Casey getting it fixed, it was a PLEASURE to work with these people!
+> My air conditioner stopped running one day. From the very first phone call with Julie, to the end result of Casey getting it fixed, it was a PLEASURE to work with these people!
 
-— Jessica L.
+> — Jessica L.
 
 From the first call to the finished repair, you deal with one small team.
 ### The People Who Come to Your Door
 Jacob W and Lance are our service technicians. Dave and Kevin are our lead installers, and Jacob D and Logan are our apprentices. Our office dogs, Finn (all brown) and Guss (white on nose), are in the team photo too.
 
-Jacob is our favorite technician. He is always professional and on-time to us through every step of his process
+> Jacob is our favorite technician. He is always professional and on-time to us through every step of his process
 
-— Elizabeth N.
+> — Elizabeth N.
 
 When you have a question about your equipment, ask the person working on it.
 
-Very friendly and took time to explain issues. Thank you Logan and Jacob!
+> Very friendly and took time to explain issues. Thank you Logan and Jacob!
 
-— Karen H.
+> — Karen H.
 ### Customers for a Lifetime
 We earn our customers for a lifetime, not just a single job. It is our reputation and our promise.
 
-Been with them for 20 years and wouldn't change a thing. Thank you Custom Assured for always taking care of us!
+> Been with them for 20 years and wouldn't change a thing. Thank you Custom Assured for always taking care of us!
 
-— Patricia L.
+> — Patricia L.
 
 Call (260) 496-8400, or send us a message and tell us what you need.
 
@@ -216,15 +216,15 @@ Maintenance for your furnace and air conditioner from the Fort Wayne company tha
 
 [Call (260) 496-8400] [Ask About the Custom Priority Club]
 
-Great company to work with for my heating and cooling needs. I love the twice a year tune up!
+> Great company to work with for my heating and cooling needs. I love the twice a year tune up!
 
-— Andrew E.
+> — Andrew E.
 ### The Custom Priority Club
 The Custom Priority Club is our maintenance membership. Every system needs professional attention at some point, whether that is a repair or routine maintenance. Getting the required maintenance done on your comfort system helps prevent annoying breakdowns, and membership gets it done for you on a schedule.
 
-I signed up for the yearly service plan and it has totally paid off with twice a year maintenance on heating and air.
+> I signed up for the yearly service plan and it has totally paid off with twice a year maintenance on heating and air.
 
-— Anne B.
+> — Anne B.
 ### What Members Get
   - Priority customer.
   - Customer peace of mind.
@@ -241,15 +241,15 @@ Most of these are cheap to deal with when found early and expensive when they st
 ### The Same Technician Each Visit
 Customers say the same technician comes out year after year. A technician who has worked on your system before already knows it, and you already know who is at the door.
 
-They try to send the same technicians out every time.
+> They try to send the same technicians out every time.
 
-— Samantha R.
+> — Samantha R.
 
 On a system ten or more years old, a technician who remembers last year's readings can spot a part that is starting to slip.
 
-In fact, I believe we have had the same technician for the entire 7 years. He is focused on our service and does a great job. It is great to have someone who you familiar with and can trust!
+> In fact, I believe we have had the same technician for the entire 7 years. He is focused on our service and does a great job. It is great to have someone who you familiar with and can trust!
 
-— Gina W.
+> — Gina W.
 ### What a Visit Looks Like
 Your technician is there to work on the equipment and to answer your questions.
 
@@ -257,9 +257,9 @@ Exactly what a visit covers differs by company and by system, so ask our office 
 
 A visit often ends with a plain report: what is fine, what is wearing and what to plan for. It is fair to ask for a straight answer to "can this wait?"
 
-They come twice a year and inspect the equipment and clean the drains, answer our questions and replace the air filter.
+> They come twice a year and inspect the equipment and clean the drains, answer our questions and replace the air filter.
 
-— Fred K.
+> — Fred K.
 ### Carbon Monoxide and Your Furnace
 A gas furnace that is not burning or venting properly can produce carbon monoxide. It has no color or smell, so a detector is what tells you.
 
@@ -271,23 +271,23 @@ Outdoors, keep about two feet of clear space around the air conditioner. In earl
 ### Your Furnace, Air Conditioner and Humidifier
 Whole-home humidifiers are the piece people forget, because they only work in the dry season.
 
-Custom Assured Mechanical improved the distribution of heat and air conditioning in our house and provides prompt, dependable and thorough annual maintenance of our furnace, air conditioner and humidifier.
+> Custom Assured Mechanical improved the distribution of heat and air conditioning in our house and provides prompt, dependable and thorough annual maintenance of our furnace, air conditioner and humidifier.
 
-— Frederick H.
+> — Frederick H.
 
 A whole-home humidifier usually needs its water panel, the pad the water runs through, replaced about once a year, and hard water, which is common in Indiana, can leave scale that cuts how much moisture it adds. Ask when yours was last changed.
 ### We Call You When It Is Time
 Convenience is one of the Club benefits: our office contacts you, so a visit does not depend on you remembering to book. In a climate with hot summers and long cold winters, that matters twice a year, once before the cooling season and once before the heating season.
 
-I never have to worry about calling them to schedule as they contact me.
+> I never have to worry about calling them to schedule as they contact me.
 
-— Susan M.
+> — Susan M.
 ### Between Visits and After Hours
 Emergency service is one of the six Club benefits.
 
-They show up twice a year for maintenance, any problems I have had in between they take care of in a timely fashion … Last Winter I discovered at 10pm that my furnace was not working, I called the emergency no. and the tech had just walked in the door from another emergency job, he said he would come out but I told him we would be fine until morning. He was at my door bright and early and got everything fixed up.
+> They show up twice a year for maintenance, any problems I have had in between they take care of in a timely fashion … Last Winter I discovered at 10pm that my furnace was not working, I called the emergency no. and the tech had just walked in the door from another emergency job, he said he would come out but I told him we would be fine until morning. He was at my door bright and early and got everything fixed up.
 
-— Scharee Z.
+> — Scharee Z.
 
 Fort Wayne cold snaps are when furnaces run almost nonstop, and a part that has been wearing all season is the one most likely to quit then. That is the situation emergency service is for.
 ### What Membership Costs
@@ -295,15 +295,15 @@ Call the office at (260) 496-8400 and ask for the current Custom Priority Club p
 
 Before you decide, check your equipment paperwork. Many manufacturers ask for proof of regular maintenance before they honor a parts warranty, and a record of visits usually settles that question.
 
-I forgot to mention that they DID NOT raise their annual fees for their annual priority club agreement heating and cooling service.
+> I forgot to mention that they DID NOT raise their annual fees for their annual priority club agreement heating and cooling service.
 
-— Dennis G.
+> — Dennis G.
 ### Join the Custom Priority Club
 To join, call the office or send us a message.
 
-I recommend signing up for their maintenance program so your system is always in tip top shape.
+> I recommend signing up for their maintenance program so your system is always in tip top shape.
 
-— Mike R.
+> — Mike R.
 
 [Call (260) 496-8400] [Ask About the Custom Priority Club]
 ## Furnace Replacement — Furnace Replacement in Fort Wayne, IN — Custom Assured Mechanical
@@ -312,17 +312,17 @@ We sell, install and service heating systems in Fort Wayne. Most sales are handl
 
 [Call (260) 496-8400] [Contact Us]
 
-Professional business! Extremely informative with our furnace and A/C replacement.
+> Professional business! Extremely informative with our furnace and A/C replacement.
 
-— Kathy S.
+> — Kathy S.
 ### From Quote to Installation
 Rod's years in the trade are valuable when he works out what an individual job needs, and he customizes each system to it. If your home needs a more efficient system, an upgrade or additional capacity, we help you find the best solution. Our sales and installation team works with you to choose it and follows up after the installation.
 
 Our service professionals can also suggest energy saving tips and improvements to put money back in your pocket.
 
-Everything was quoted and installed as promise. We really appreciate Lance.
+> Everything was quoted and installed as promise. We really appreciate Lance.
 
-— Donita F.
+> — Donita F.
 ### Before You Call
 If the furnace stops, the thermostat setting and the breaker are worth a quick look before you call, and they sometimes solve it.
 
@@ -336,9 +336,9 @@ Once the house is cleared, call us to look at the furnace. A furnace that trigge
 ### Repair or Replace
 Call us either way. We repair furnaces and we replace them, so you can ask for a quote on both.
 
-When the furnace needs attention, they go right to work and continue to provide the best service we have ever had.
+> When the furnace needs attention, they go right to work and continue to provide the best service we have ever had.
 
-— Gerry C.
+> — Gerry C.
 
 A furnace often lasts fifteen to twenty years, so age is the first thing to weigh. These rules of thumb are common in the trade and hold in most cases:
 
@@ -359,15 +359,15 @@ Quotes are free, and our office will arrange a time that suits you. Call (260) 4
 ### Installed by Our Own Team
 Our installation team puts in your new furnace, and our service technicians are there for it afterward.
 
-Lance and Dave did a great job replacing our furnace. Conscience and considerate! Thank you Gentlemen.
+> Lance and Dave did a great job replacing our furnace. Conscience and considerate! Thank you Gentlemen.
 
-— Kari M.
+> — Kari M.
 
 Our installers replace furnaces and air conditioners.
 
-They installed the original unit 24 years ago in my parent’s home and always provided great service. I’m now the owner of the home and it was time for a new unit. Lance and Logan installed a new unit and they did a great job.
+> They installed the original unit 24 years ago in my parent’s home and always provided great service. I’m now the owner of the home and it was time for a new unit. Lance and Logan installed a new unit and they did a great job.
 
-— K D.
+> — K D.
 ### Replacing the Furnace and the Air Conditioner Together
 The indoor coil, the part that cools the air, often sits on top of the furnace and works with the outdoor air conditioner. Replacing only one can leave a mismatched pair, so ask whether doing both at once makes sense. In most cases the question is worth asking when the air conditioner is older than ten to twelve years and the furnace is due.
 ### Financing
@@ -375,9 +375,9 @@ Financing options are available with approved credit, so the monthly payment, no
 ### The Custom Assured Guarantee
 All of our sales are backed by our Custom Assured 100% Satisfaction Guarantee. We describe it as covering everything from the high efficiency unit itself to the quality installation by our skilled technicians. Ask us for the full terms. Whatever it takes®.
 
-They installed our new furnace & air conditioner! … They are very dependable, family friendly, and actually take the time to explain and walk through each step with you.
+> They installed our new furnace & air conditioner! … They are very dependable, family friendly, and actually take the time to explain and walk through each step with you.
 
-— Montana S.
+> — Montana S.
 
 [Call (260) 496-8400 to set up your free quote] [Contact Us]
 ## Contact — Contact Custom Assured Mechanical in Fort Wayne, IN
@@ -388,9 +388,9 @@ The fastest way to reach us is to call (260) 496-8400. Call about a repair, a ma
 ### Call the Office
 (260) 496-8400. Our office hours are Monday to Friday, 9am to 4pm.
 
-Julie is a joy to talk with in the office. When we have an issue she gets us scheduled for service quickly and we look forward to getting our regular service scheduled as well.
+> Julie is a joy to talk with in the office. When we have an issue she gets us scheduled for service quickly and we look forward to getting our regular service scheduled as well.
 
-— Beth D.
+> — Beth D.
 ### Write to Us
 Email julie@customassured.com. Tell us your name, how to reach you, and what you need.
 ### What to Have Ready
@@ -409,18 +409,18 @@ Invoice numbers are at the top of your invoice or on the right side of your work
 ### Visit the Office
 Our office is at 2630 Independence Drive, Fort Wayne, IN 46808, where Kim, Julie and the team keep the schedule.
 
-Great staff from office personnel to technicians. Great products and service from start to finish.
+> Great staff from office personnel to technicians. Great products and service from start to finish.
 
-— Mike W.
+> — Mike W.
 ## Notes (not page copy)
 Rebuild reason: Both. The browser tab says only the company name with no trade or city and furnaces have no page, and the homepage also has a broken video, no phone number and no tap-to-call.
 ### Word counts (script count; buttons and headings included)
 | Page | Without quotes | With quotes |
-| Strategy | 990 | 996 (trimmed by checker to fit the 1,000 limit; review counts removed, questions cut to 3) |
-| Home | 779 | 1019 |
-| HVAC Maintenance | 925 | 1221 |
-| Furnace Replacement | 840 | 982 |
-| Contact | 273 | 323 |
+| Strategy | 1306 | 1315 |
+| Home | 764 | 1032 |
+| HVAC Maintenance | 950 | 1277 |
+| Furnace Replacement | 869 | 1031 |
+| Contact | 264 | 323 |
 
 **Service pages (Nov 16 revision):** both now pass 700 words without quotes. Added general trade knowledge in the owner's voice, hedged ("usually", "often", "in most cases"): what usually fails, what a visit usually covers, carbon monoxide, filter and humidifier care, before-you-call checks, gas smell or alarm steps, repair-vs-replace rules of thumb, sizing, a typical replacement day and the furnace-plus-A/C question. Business claims are unchanged and sourced to site/, facts.md or reviews.json. The general-knowledge figures (filter intervals, furnace age, repair-cost rule, efficiency ranges, detector expiry) are trade rules of thumb, not Custom Assured promises; check them against how Rod actually works. Still unanswered and worth asking Rod: what a Club visit covers, Club price and terms, whether "same technician" and "we call you" are policy, how a replacement runs for them, lender, and guarantee terms. Nov 16 checker pass on the business pages: jargon explained once, do-it-yourself steps cut to essentials, repeats removed (brand repair, gas smell, hours, Club visit contents, convenience, emergency), review-based claims softened to usually/often, guarantee and free-quote lines hedged, the hours conflict and website talk removed from Contact, and quote-ending runs broken up. Counts above are approximate script counts after this pass. Nov 16 backport judgment pass: the doc was already free of speed claims, FAQs and review counts, so none were added (no FAQ: pages already answer their questions). Nov 16 Josh-voice pass: every strategy problem bullet now ends with its cost, the full-build list matches the canonical block, plural and unsourced process lines (same technician policy, call expectations, Convenience) were softened or cut. Strategy page got the badge, the approved headline and the first-five-pages line under the subhead; the repeat later was removed; the browser-test line now reads as approved. Home strip left as is (3 items, no ratings). The site has no case studies to use. Home passes 550.
 ### Credentials and sources
