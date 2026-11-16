@@ -95,7 +95,7 @@ Scoring: Appeal (1 to 5) times Exclusivity (1 to 5). 16 or more is a primary USP
    - Appeal 5: directly hits fear #2 (getting taken by a dishonest roofer). Reviews name Brian on site every day (Mary D., Curtis R.).
    - Exclusivity 4: 0 of 3 fetched competitors name an owner on the site. Owner supervision was not checked on the two unreached sites. Blue Line's founder is named only in a Chamber listing. Not 5, because "owner on the job" is a claim others could make.
    - Evidence: H and A ("Brian personally oversees every project"); S; reviews.
-2. **"Brian quotes it, Brian roofs it."** Score **16**? No: see below. Braid of the owner who quotes (Curtis R., Mary B.) and the owner who works (Mary D., Curtis R.). Score **20** (5 x 4), but it repeats candidate 1 with a sales hook. Use only as the middle of candidate 1, not as a second lead.
+2. **"Brian quotes it, Brian roofs it."** Score **20** (5 x 4). A braid of two true halves: Brian gives the estimate (Curtis R., Mary B.) and Brian is on the job (Mary D., Curtis R.). It is the same lead as candidate 1 with the estimate added, so use it as the hero line only if the owner confirms he quotes every job.
 3. **"The estimate is the final price."** Score **12** (4 x 3). Below the gate.
    - Appeal 4: fear #2 and #4 (surprise charges), top-5.
    - Exclusivity 3: competitors claim "competitive" or "fair" pricing (Messing: "without inflated emergency fees"), but none claims a fixed final price. Evidence is two reviews (Dan S., Adrienne B.), so this is "one customer's price held," not a standing rule.

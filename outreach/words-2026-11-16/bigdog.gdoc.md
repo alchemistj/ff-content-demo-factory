@@ -24,7 +24,7 @@ Draft for review. Sources: the business's own site, Google reviews, facts.md. Qu
 
   
 
-Your reviews keep saying the same things: Jason and Matt answer every question, the roof goes on in a day, and the yard is clean when the crew leaves. Your site says little of that.
+Some of your customers say Jason told them the truth, even when it meant they didn't need a new roof yet. Your site says little of that.
 
   
 
@@ -356,11 +356,9 @@ Fort Wayne and Northeast Indiana, including New Haven, Huntertown, Leo-Cedarvill
 
   
 
-**Can you replace a roof in winter?** Often, on a clear day above freezing. Expect a reschedule or two if snow or ice comes.
 
   
 
-**How long does a roof replacement take?** For a standard house, usually one full day. A larger house, a steep roof or extra decking repair can mean a second day.
 
   
 
@@ -386,7 +384,6 @@ Know what your new roof includes before you commit. We compare materials with yo
 
   
 
-*Trust bar:* Free 21-Point Inspection | Photo Documentation | GAF Timberline HDZ Shingles | Asphalt and Metal
 
   
 
@@ -514,7 +511,6 @@ I received quotes from 6 different companies and Big Dog Roofing beat them all i
   
   
 
-**Do I have to be home?** No. Many homeowners stay home, and some leave for the day.
 
 ## Ready for a New Roof?
 
@@ -538,7 +534,6 @@ Hail, wind, a leak or a limb through the shingles. We inspect the roof, photogra
 
   
 
-*Trust bar:* Free Storm Inspection | Photo and Video Documentation | Adjuster Meetings When Requested | Quick Response, Customers Say
 
   
 
