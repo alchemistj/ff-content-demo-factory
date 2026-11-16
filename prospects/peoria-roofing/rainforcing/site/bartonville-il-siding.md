@@ -1,6 +1,6 @@
 # https://www.rainforcingroofing.com/bartonville-il/siding
 
-- Fetched: 2026-11-16T04:02:40.812Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:07:04.799Z (rendered in a real browser)
 - HTTP: 200
 - Title: Expert Siding in Bartonville, IL | Rainforcing Roofing
 - H1: Siding Installation & Repair Bartonville, IL

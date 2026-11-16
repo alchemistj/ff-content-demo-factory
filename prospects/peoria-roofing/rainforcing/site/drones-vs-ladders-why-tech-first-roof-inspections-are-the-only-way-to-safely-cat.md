@@ -1,6 +1,6 @@
 # https://www.rainforcingroofing.com/drones-vs-ladders-why-tech-first-roof-inspections-are-the-only-way-to-safely-catch-invisible-hail-damage
 
-- Fetched: 2026-11-16T04:02:19.310Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:06:43.280Z (rendered in a real browser)
 - HTTP: 200
 - Title: Drones vs. Ladders: Why Tech-First Roof Inspections Are the Only Way to Safely Catch Invisible Hail Damage
 - H1: Drones vs. Ladders: Why Tech-First Roof Inspections Are the Only Way to Safely Catch Invisible Hail Damage

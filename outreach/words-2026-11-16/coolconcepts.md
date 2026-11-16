@@ -14,13 +14,13 @@ Your site shapes your Google ranking, what AI says about your business, and how 
 
 ### Why we built this site
 
-Your Google reviews say it again and again: when a furnace or air conditioner stops, someone shows up fast, finds what failed and explains it. One put the first part this way:
+Your Google reviews say it often: when a furnace or air conditioner stops, someone shows up fast, finds what failed and explains it. One example:
 
 > Called this morning at 9:15 and by 9:35, James had arrived to work on our furnace.
 >
 > — Brittany W.
 
-Your homepage never says how fast you come or that you explain the problem. So the demo starts with the homeowner's call, across five pages: this one, homepage, heating and AC repair, replacement and contact.
+Your homepage says neither. So the demo starts with the homeowner's call, across five pages: this one, home, repair, replacement and contact.
 
 ### The demo, page by page
 
@@ -35,8 +35,7 @@ Your homepage never says how fast you come or that you explain the problem. So t
 *What the demo fixes*
 
 - A headline that reads "HVAC Company in Lincoln, NE — Cool Concepts".
-- Homeowners first, with reviews that show how fast you come. Businesses get their own sections.
-- No video box, and a full-length page.
+- Homeowners first, with reviews that show how fast you come. Businesses get their own sections, and there is no video box.
 
 **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
@@ -45,7 +44,7 @@ Your homepage never says how fast you come or that you explain the problem. So t
 *Current site problems*
 
 - Your browser tab reads "Appliance Repair Services | Refrigeration Repair NE" and the page has no headline, so nothing says AC or furnace repair in Lincoln.
-- The "Residential" section repeats the "Prevention" paragraph word for word and talks about commercial kitchens.
+- The "Residential" section repeats the "Prevention" paragraph and talks about commercial kitchens.
 - No review, no word on how fast you come and nothing on what a visit includes.
 
 *What the demo fixes*
@@ -60,7 +59,7 @@ Your homepage never says how fast you come or that you explain the problem. So t
 
 *Current site problems*
 
-- The page runs 241 words with no headline, and its browser tab reads "Replacement - Cool Concepts". It never names a furnace, an air conditioner or Lincoln.
+- The page runs 241 words with no headline, and its browser tab reads "Replacement - Cool Concepts".
 - It never says when to repair and when to replace. That answer is one line on your FAQ page.
 - Its only proof is a 2009 case study on another page, which shows the technician as "1234 James".
 
@@ -125,7 +124,7 @@ This demo is the first five pages. About 80% of visitors are on a phone, which i
 
 1. **Hours and 24/7.** Your homepage says "24/7 service" and your repair page "our 24/7 response team", both about businesses. No page gives hours. Do homes get 24/7?
 2. **Dealer status.** Your repair page says "authorized Daikin dealer" and "local Amanda Heating and Air representative", and every page ends "We are the Official Dealer of" and stops. Which is right? We used Daikin and left Amanda off.
-3. **Email, James and payment plans.** Which email do customers use? We used coolconceptsne@gmail.com. Is "1234 James" in your case study a technician or the owner? Is that story's payment plan still offered?
+3. **Email, James and payment plans.** Which email do customers use? Is "1234 James" in your case study a technician or the owner? Is that story's payment plan still offered?
 
 ### Want a website like this for your business?
 
@@ -161,7 +160,7 @@ You leave knowing which part failed, what each option would involve, and which o
 
 ### Replacement and installation
 
-When a repair no longer makes sense, we order and install a new furnace, air conditioner or heat pump, for a home or a business. We go through the options with you before you decide, so you know what you are choosing and why. Starting with [replacement](/heating-ac-replacement-lincoln-ne/) options, not a sales pitch, is how we work.
+When a repair no longer makes sense, we [order and install a new furnace, air conditioner or heat pump](/heating-ac-replacement-lincoln-ne/), for a home or a business. We go through the options with you before you decide, so you know what you are choosing and why.
 
 ### Daikin and other brands
 
@@ -430,53 +429,52 @@ We come to you in Lincoln and the towns around it. Tell us your town when you ca
 
 ## Notes (not page copy)
 
-**Word counts (every visible word: hero, headings, buttons, quotes and captions as counted).**
+**Word counts (every visible word: hero, headings, buttons, quotes and captions).**
 
-WORDCOUNTS
+| Page | With quotes | Without quotes |
+|---|---|---|
+| Strategy page | 996 | 978 |
+| Home | 950 | 751 |
+| Heating and AC Repair | 1185 | 974 |
+| Heating and AC Replacement | 963 | 808 |
+| Contact | 270 | 229 |
 
-**Services chosen.** The brief says the two money services come from inventory.md: residential AC and furnace repair, and replacement and installation. Each is written as one service keyword: "Heating and AC Repair" and "Heating and AC Replacement", so a page does not split into two services. The home H1 owns the company type, "HVAC Company". The URLs shown on home (/heating-ac-repair-lincoln-ne/ and /heating-ac-replacement-lincoln-ne/) are suggested routes for the build.
+Strategy is just under the 1,000-word cap (the SRA proof block is template and not counted here). Home and both service pages clear their minimums without quotes. Contact is 229 words without quotes and 270 with, so it clears 250 only with the quote; the page stays lean on purpose and nothing was padded.
 
-**Credentials and their sources.** None is confirmed, so none is on any page.
-- "authorized Daikin dealer" (repair-service.md) and "local Amanda Heating and Air representative" (same page): two brands, and Daikin's dealer locator was never checked. Left off. Needs the locator result for ZIP 68507 or the dealer agreement. The home FAQ says only "We specialize in Daikin heating and air", which is the homepage's own wording and is not a credential.
-- "We are the Official Dealer of" (footer on every page): names no brand. Left off.
-- No license, NATE certification or insurance statement exists on the site. None claimed.
+**Services chosen.** The two money services from inventory.md, each as one keyword: "Heating and AC Repair" and "Heating and AC Replacement". Home owns "HVAC Company". Suggested routes: /heating-ac-repair-lincoln-ne/ and /heating-ac-replacement-lincoln-ne/.
 
-**Inventory items left out of page copy, and why.**
-- Heat pump: used on the replacement page (reviews show heat pump replacement, Kristi A.). Repair of heat pumps is not claimed.
-- Geothermal: a menu label only, with no page text and no review. Left out. Ask the owner whether geothermal is installed, serviced or both.
-- Daikin HVAC warranty service ("handle all warranty service request for Daikin HVAC equipment"): depends on the unconfirmed dealer status. Left out.
-- Installation payment plan (Petersen case study): one case, and facts.md found no financing offer. Not claimed. Asked in strategy item 3. The same case's home warranty company detail is a claim about another company, so it is left out; the 2009 and 2014 events (replacement next day, repair the same hour) are used as plain case facts without the customers' name.
-- 24/7: the site's "24/7 response team" is a business-only claim, used once on home under "Offices and other businesses". Residential 24/7 and hours are not stated anywhere, so neither is on a page. Strategy item 1.
-- Years: "since 2005" is said once, on home. "Over 20 years" technician experience (about-us.md) and "20 years of commercial kitchen repair" (repair-service.md) are two different 20-year claims, so neither is used.
-- "Small business that cares about the customer", "doing the job right the first time", "one call to fix it all", "locally owned and operated", "we work around your schedule", "if it sits on or is above the floor": used on home (small shop, commercial kitchens).
-- Free estimates: said once, on the replacement page. Onsite inspections ("onsite inspections", home.md): not claimed separately; the yearly service paragraph on home does not promise an inspection.
-- Commercial kitchen and refrigeration: the site gives it a lot of space and the earlier USP pass left it out to focus on homes. The brief says every inventory service is used or listed, so it has a short home section (with Robert C.) and a service-request choice on contact. It has no page of its own. Confirm with the owner how much of the business it is (facts.md open question).
-- Dryer vent cleaning and replacement, gas dryer hook-up and Nest thermostat setup: found only in reviews (Thomas S., J V., Ryan S., Christopher C.), none on the site. Used on home as one short section, claim strength matched to what those customers had done. Confirm the owner still offers them.
-- Residential kitchen equipment: the FAQ's "No" is used in the home FAQ.
-- Preventive maintenance and yearly service plans: home. The "every year" answer is on home only.
-- Review themes: speed (Max W., Andrea F., Alisa M., Marcus P., Rocky A., McKenna K., Bill F.), named technician (James, inside quotes only; his role is unverified, so copy says "we"), explains and gives options (Andrew B., Kristi A., Alisa M., Brian R., Rob M.), fair price (Bill F., Krishelle S.), clean job (Krishelle S., Marcus P., McKenna K.), long relationships (Devan M., Robert C.), phone help (Samantha C.). All used.
-- The Winter Efficiency Check, filter, fall and utility-bill posts on the site's What's New page: not inventory items. Their advice (monthly filter check, change every one to three months, pleated filters for most homes, keep vents clear, don't crank the thermostat, vent clear of snow, efficiency up to 97%, whole-home approach) is used on the repair and replacement pages. The blog's "40-60% efficient" claim for systems over ten years old is not repeated; the page says "often 60 to 70 percent" for furnaces built decades ago, which is general trade knowledge and is hedged.
-- Video library, About the technician videos: titles only ("Upfront Cost", "Daikin", "Humidifier"), no content read, so no claim made.
+**Credentials and the business's own claims (stated as their claims, per QA, conflicts on the strategy confirm card).**
+- "authorized Daikin dealer" and Daikin HVAC warranty service (repair-service.md): used on home. Daikin's dealer locator was not checked, so it is Unverified. Strategy item 2.
+- "local Amanda Heating and Air representative" (same page) conflicts with Daikin: left off, asked in strategy item 2.
+- "We are the Official Dealer of" (every footer) names no brand: left off, asked.
+- Payment plan (Petersen case study, one case): used once on replacement as "we have worked out payment plans ... ask". Strategy item 3.
+- "over 20 years" technician experience (about-us.md) used once on home. "since 2005" used once on home. The commercial kitchen "20 years" line (repair-service.md) is a different claim and is not used.
+- Free estimates: once, on replacement. Onsite inspections: not claimed on their own.
+- No license, NATE or insurance statement exists; none claimed.
 
-**Reviews not quoted, and why.**
-- Miss H. (2025): the best part is about another contractor "dragging their heels", a claim about another company, and the name format is not a first name plus initial. Left out.
-- Brittany W. is quoted on the strategy page only; Brittne M., Allen G., Thomas S., J V., Ryan S., Brock S., Samantha C. (contact only, used), Tami B. and the short generic lines (Michelle, Julie L., Adam H., Brandon H., Angela B., Scott S., Debbie W., Rachel S., chadd D., Andrew B. is used) are not quoted because the quoted reviews already carry each theme. Michelle is a one-word name and cannot be attributed.
-- Corey H., Samantha C. and others are 5 stars; every quote is from a 5-star review with words.
-- Seven reviews are from 2023 or later; most are 2016 to 2020. Recent ones used: Rocky A. (2025), Kristi A. (2023), McKenna K. (2023). Quotes from 2016 to 2020 are real but old; the owner may want newer ones.
+**Hedged site absolutes.** "all brands" became "most brands"; "all of our repairs are done on site" became "most repairs are done at your home or business"; "if it sits on or is above the floor, we can service it" became "we can usually service it"; "right the first time" became "we aim to".
 
-**The lead.** Strategy and home lead with speed and explanation: both scored 15 in usp.md, below the 16 gate. The copy states them as what the quotes show and the business's own plain claim ("we aim to finish the fix on that visit"), and it never promises a response time or 24/7 for homes. The phone-first, price-first after-hours offer from usp.md is only a proposal and is not on any page; Samantha C.'s quote stands alone.
+**Inventory items left out, and why.**
+- Geothermal: menu label only, no page text, no review. Left out. Ask the owner.
+- Heat pump: replacement page only (Kristi A.); heat pump repair is not claimed.
+- 24/7: the site's business-only claim is on home once. Residential 24/7 and hours are not stated anywhere, so neither is on a page.
+- Commercial kitchen and refrigeration: short home section (Robert C.) and a service choice on contact; no page of its own. Confirm how much of the business it is.
+- Dryer vent, gas dryer hook-up, Nest setup: from reviews only (Thomas S., J V., Ryan S., Christopher C.); one home section. Confirm still offered.
+- Residential kitchen equipment ("No"): home FAQ.
+- Yearly service plans: home only.
+- Review themes (speed, explains, fair price, clean job, long relationships, phone help): all used. Named technician "James" appears only inside quotes; his role is unverified, so copy says "we".
+- Blog advice from the site (filter schedule, pleated filters, keep vents clear, thermostat in extreme cold, efficiency up to 97%) is used on the two service pages. Its "40-60% efficient" line is not repeated.
+- Video library titles only; no content read, so no claim made.
+
+**Reviews not quoted.** Miss H. (the strong part is about another contractor, and the name is not First L.). Michelle (one-word name). Brittany W. is on strategy only. Brittne M., Allen G., Thomas S., J V., Ryan S., Brock S., Tami B. and the short generic lines add nothing beyond the quoted reviews. All quotes are 5-star and checked against reviews.json. Most reviews are 2016 to 2020; recent ones used: Rocky A. (2025), Kristi A. (2023), McKenna K. (2023). No review counts or star counts appear anywhere.
 
 **Facts to verify.**
-- Email: coolconceptsne@gmail.com (home.md header, mailto) vs coolconcepts@neb.rr.com (contact.md). Contact page uses the gmail address. Strategy item 3.
-- Hours: none stated anywhere, none on the pages. Strategy item 1.
-- Service area: "eastern Nebraska" only; no towns named. Contact says "Lincoln and the towns around it" and asks for the town. Get the real town list.
-- Address 3701 Touzalin Avenue, Lincoln, NE 68507 (site and Google), consistent.
-- 36 reviews read of 41 on Google; rating 5 from the Google pull (2026-11-15), not rechecked live.
-- "1234 James": a placeholder. James appears only inside quotes. Who he is is unverified.
-- Hedged trade knowledge (typical lifespans, R-22, parts that usually fail, sizing, SEER2 and AFUE, dual-fuel heat pumps, filter and thermostat advice, gas and carbon monoxide safety) is general knowledge, not from the business. Have the owner read the two service pages and cut anything he would not say.
-- Claims in the owner's voice taken from reviews: "we pick it up or order it" (Rocky A., Max W.), "clean up after ourselves" (Krishelle S., Marcus P., McKenna K.), "aim to finish the fix on that visit" (Max W., Rocky A., Andrea F.).
-- "the 2009 replacement" and "older air conditioner repaired the same hour" come from the Petersen case study (project-petersen-home.md), told without the family's name. The case study says "the unit was ordered and seamlessly installed the very next day" and "The unit was repaired that very hour".
-- The 80% mobile figure and the 91 score come from Josh's brief, not from data on this business.
-- The SRA proof block that opens every strategy page is template content and is not written here.
-- Full-build monitoring bullets use only the four verified lines, word for word. Never daily early-warning alerts.
-- Strategy page length: DoD 1.6 caps visible text at 1,000 words; the count is above.
+- Email: coolconceptsne@gmail.com (header) vs coolconcepts@neb.rr.com (contact block). Contact page uses the gmail address.
+- Hours: none on any page. Service area: "eastern Nebraska" only, no towns; contact asks for the town.
+- Address 3701 Touzalin Avenue, Lincoln, NE 68507: consistent.
+- "1234 James": placeholder; who James is is unverified.
+- Claims in the owner's voice from reviews, hedged with "usually" or "often": technician within hours, finished on the first visit, parts picked up or ordered, cleanup.
+- The 2009 replacement ("ordered and installed the next day") and older air conditioner repaired the same hour come from project-petersen-home.md, told without the family's name.
+- General trade knowledge (typical lifespans, R-22, what usually fails, sizing, SEER2 and AFUE, safety, filter advice) is not from the business. Have the owner read the two service pages and cut anything he would not say.
+- The 80% mobile figure and the 91 score come from Josh's brief, not this business.
+- Monitoring bullets are the four verified lines only.

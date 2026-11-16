@@ -1,6 +1,6 @@
 # https://www.rainforcingroofing.com/bartonville-il/residential-roofing
 
-- Fetched: 2026-11-16T04:02:37.064Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:07:01.033Z (rendered in a real browser)
 - HTTP: 200
 - Title: Professional Residential Roofing in Bartonville, IL | Rainforcing Roofing
 - H1: Residential Roofing Bartonville, IL
