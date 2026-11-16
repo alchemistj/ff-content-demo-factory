@@ -150,7 +150,7 @@ Origin note: most commit messages in #41 to #64 say only what changed, not why. 
 
 63. **Competitor and audit claims are backed.** PASS if "We checked the top five Wichita roofers, and none describes…" is supported by audit.md, and every button and link on the current site was clicked before one is called broken. [#58; #61; DoD 2.12] Pages: strategy.
 
-77. **Strategy page is in Josh's voice; business pages stay in the owner's voice.** PASS if the strategy page reads as Josh talking to the owner (voice guide: fluid-frame-marketing JOSH-VOICE.md and the ff2 guides; JOSH-VOICE.md is not yet on this repo's main) and the home, service and contact pages stay in the owner's voice. FAIL on a strategy page in owner voice or report-speak. [Josh, CT strategy review 11/15] Pages: strategy.
+77. **Strategy page is in Josh's voice; business pages stay in the owner's voice.** PASS if the strategy page reads as Josh talking to the owner (voice guide: `docs/voice/JOSH-VOICE.md` and `docs/voice/ff2-global-copy-rules.md`) and the home, service and contact pages stay in the owner's voice. FAIL on a strategy page in owner voice or report-speak. [Josh, CT strategy review 11/15] Pages: strategy.
 
 78. **The proof block is untouched template content.** PASS if the SRA Maps before/after plus stats block is word-for-word the fixed template. Writers never rewrite it. [Josh, CT strategy review 11/15] Pages: strategy.
 

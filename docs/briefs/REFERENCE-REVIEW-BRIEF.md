@@ -51,7 +51,7 @@ Edit nothing, send nothing, create no sessions, run no git.
 - No service is covered twice on one page.
 - The footer at 390px is evenly spaced, with no empty bands.
 - **Strategy page checks (checklist items 77 to 85, Josh CT review 11/15):**
-  - Strategy page is in Josh's voice; business pages in the owner's voice.
+  - Strategy page is in Josh's voice; business pages in the owner's voice. Voice guide: `docs/voice/JOSH-VOICE.md` and `docs/voice/ff2-global-copy-rules.md`.
   - Proof block (SRA Maps plus stats) is unchanged template content.
   - Jargon explained in plain words at first use (e.g. 404).
   - No separate "SEO title" and "H1"; one plain homepage point, tab title called "homepage browser tab title" if mentioned.

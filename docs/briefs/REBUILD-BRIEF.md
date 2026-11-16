@@ -66,7 +66,8 @@ Work only in `/home/user/ff-content-demo-factory/prospects/<folder>/`. Write `us
 
 ## Strategy page (Josh)
 From Josh's ComfortTechs review, 11/15 (checklist items 77 to 85).
-- The strategy page is in Josh's voice; business pages stay in the owner's voice. Voice guide: fluid-frame-marketing JOSH-VOICE.md and the ff2 guides (JOSH-VOICE.md is not on main yet).
+- The strategy page is in Josh's voice; business pages stay in the owner's voice. Voice guide: `docs/voice/JOSH-VOICE.md` and `docs/voice/ff2-global-copy-rules.md`.
+- The strategy page writer reads both voice files in full before writing it.
 - The proof block (SRA Maps before/after plus stats) is fixed template content. Never rewrite it.
 - Explain jargon in plain words at first use. For a 404: the website links to pages that no longer exist, a bad signal to Google and a terrible one for a customer who clicks.
 - Never split "SEO title" and "H1" for an owner. One plain point: the homepage tells Google your name, not what you do or where. If the tab title comes up, call it the "homepage browser tab title"; it should target the main search phrase.
