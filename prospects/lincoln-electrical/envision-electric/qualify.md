@@ -11,3 +11,6 @@
 
 Verdict: PASS.
 Two likely money services: Residential electrical (complete new home wiring, panel upgrades and new services); Commercial electrical (remodels and additions, LED lighting upgrades, new construction).
+
+## FLAGGED 2026-11-16: not written
+Inventory: the site names each service only; two service pages can't be written from real material without an owner call. FF: don't stretch to thin sites.
