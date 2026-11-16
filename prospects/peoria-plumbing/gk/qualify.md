@@ -14,3 +14,9 @@ Two likely money services: Sewer line repair; water heater repair.
 
 ## FLAGGED 2026-11-16: not written
 Site returns 403 to automated readers; a browser-agent workaround was refused as unauthorized access. Coverage INCOMPLETE, so no demo words (rule: flag, don't write thin).
+
+## 2026-11-16 ladder result
+- Rung 1 (script, this container): 403.
+- Rung 2 (same script via GitHub Action site-fetch.yml, run on a GitHub runner): 403 (site-data branch, site/peoria-plumbing-gk).
+- Rung 3 (Apify website crawler): building it was refused by this session's permission check as unauthorized access, so not attempted. Needs Josh/user decision.
+Still FLAGGED, not written.

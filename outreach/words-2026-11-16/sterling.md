@@ -20,7 +20,7 @@ Read your Google reviews and one story keeps coming back: the customer was told 
 >
 > — Sabine B.
 
-Your site never says that. Your twelve services appear as bare names, such as "Electrical panel upgrade" and "Electrical troubleshooting", with no word on how you decide between a repair and a replacement. Your reviews also show jobs the site never mentions, such as cameras, a whole-house rewire and lighting around the yard. So the demo starts with finding the real problem first. It has five pages: this one, homepage, electrical troubleshooting and repair, lighting installation and contact.
+Your site never says that. Your twelve services appear as bare names, such as "Electrical panel upgrade", with no word on repair versus replacement. Your reviews also show jobs the site never mentions, such as cameras and a whole-house rewire. So the demo starts with finding the real problem first. It has five pages: this one, homepage, electrical troubleshooting and repair, lighting installation and contact.
 
 ### The demo, page by page
 
@@ -43,7 +43,7 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 **Current site problem**
 - It shares one page with panels and lighting, under the headline "Electrical System Upgrades & Repairs in the Community".
-- Troubleshooting gets one sentence, with nothing about what usually goes wrong.
+- Troubleshooting gets one sentence, with nothing on what usually goes wrong.
 - "What is involved in troubleshooting electrical issues?" and "How do I know if my home's wiring needs repairs?" have no answers.
 
 **What the demo fixes**
@@ -59,7 +59,7 @@ A check of what your competitors offer, so services you didn't think to mention 
 **Current site problem**
 - Lighting is half a sentence about "custom lighting packages".
 - "Can you help improve my home's outdoor lighting?" has no answer.
-- Jobs your customers describe, such as three-way switches, ceiling fans and a lamppost, are missing.
+- Jobs customers describe, such as three-way switches and a lamppost, are missing.
 
 **What the demo fixes**
 - A Fort Wayne headline and its own page.
@@ -86,7 +86,7 @@ Call and form tracking that shows which pages and towns your leads come from.
 
 ### What a full build includes
 
-This demo is the first five pages. A full build starts by pulling every service you offer, and everything that makes you different, out of your head and onto the site, so nothing you do is left for Google or a customer to guess.
+This demo is the first five pages. A full build starts by pulling every service you offer, and everything that makes you different, out of your head and onto the site.
 
 **Gets you found**
 
@@ -214,9 +214,9 @@ Power out in part of the house, an outlet that sparks, lights that flicker, a br
 
 ### Troubleshooting means tracing, not guessing
 
-Troubleshooting is the work of following a fault back to its source. Electricity runs through circuits, each a loop of wire from the panel through outlets, switches and lights, protected by a breaker. When something stops working, the cause can sit anywhere along that loop, often in a spot nowhere near the dead outlet or dark light. We test along the circuit with meters until we find where it breaks, which is usually quicker than swapping parts and hoping.
+Troubleshooting is the work of following a fault back to its source. Electricity runs through circuits, each a loop of wire from the panel through outlets, switches and lights, protected by a breaker, the switch in the panel that shuts a circuit off when something goes wrong. When something stops working, the cause can sit anywhere along that loop, often in a spot nowhere near the dead outlet or dark light. We test along the circuit with meters until we find where it breaks, which is usually quicker than swapping parts and hoping.
 
-> Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes …
+> Sterling sent an electrician with no middle man. Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes …
 >
 > — James A.
 
@@ -229,26 +229,22 @@ You do not need to know what is wrong. A few details help us arrive with the rig
 - Whether anything smells like burning, feels warm, buzzes or makes a popping sound.
 - Whether a breaker has tripped, and whether it trips again after being reset.
 
-A breaker that keeps tripping is giving a warning, so please do not keep resetting it. Leave the panel cover on, too. Even with every breaker off, the wires coming in from the utility stay live inside, and that work belongs to a licensed electrician.
+A breaker that keeps tripping is a warning, so please do not keep resetting it. Panel work, including taking the cover off, belongs to a licensed electrician: even with every breaker off, the wires coming in from the utility stay live inside, and a mistake there can be fatal.
 
 ### What usually fails, and why
 
-Loose connections are among the most common causes. Wires held by a screw or a push-in slot can work loose over the years from heat and vibration, and a loose connection can heat up, spark or cut power to part of a house. Worn outlets that no longer grip a plug are another common repair. Both are usually fast to fix once found.
+Loose connections are among the most common causes. Wires held by a screw or a push-in slot can work loose over the years from heat and vibration, and a loose connection can heat up, spark or cut power to part of a house. Worn outlets that no longer grip a plug are another common repair. Both are usually quick to fix once found.
 
 Other causes we often see:
 
-- **GFCI outlets.** These have "Test" and "Reset" buttons and shut off in a fraction of a second if they sense electricity leaking, as it might through water. They are usually found in kitchens, bathrooms, garages and outdoors. One tripped GFCI can cut power to outlets in other rooms.
-- **AFCI breakers.** These breakers in the panel shut a circuit off when they sense the kind of arcing that can start a fire. They can trip because of a damaged cord or a loose connection.
-- **Overloaded circuits.** A circuit carries a set amount of current, measured in amps. Running a space heater and a microwave on one circuit can exceed it, and the breaker trips to protect the wiring.
+- **GFCI outlets.** GFCI stands for ground fault circuit interrupter. These outlets have "Test" and "Reset" buttons and shut off in a fraction of a second if they sense electricity leaking, as it might through water. They are usually found in kitchens, bathrooms, garages and outdoors, and one tripped GFCI can cut power to outlets in other rooms.
+- **AFCI breakers.** AFCI stands for arc fault circuit interrupter. These breakers in the panel shut a circuit off when they sense the kind of electrical arcing that can start a fire. A damaged cord or a loose connection can set one off.
+- **Overloaded circuits.** A circuit carries a set amount of current, measured in amps, a unit of how much electricity flows. A space heater and a microwave on one circuit can exceed it, and the breaker trips to protect the wiring.
 - **Damaged wiring.** Wires can be nicked by other work in the walls, chewed by pests or damaged by a storm.
-
-> Great service, Always fixs our issues and we have some wild ones at times!. Highly recommend.
->
-> — Daniel J.
 
 ### When the power is out in part of the house
 
-A dead room or a few dead outlets is often one failed connection or one tripped protective device, not a house-wide problem, which is why we trace before replacing anything. Power that goes out in several rooms at once points toward a shared circuit. A fault that comes and goes, or one that starts after other work in the walls, usually points to a loose or pinched wire.
+A dead room or a few dead outlets is often one failed connection or one tripped protective device, not a house-wide problem, which is why we trace before replacing anything. Power that goes out in several rooms at once points toward a shared circuit. A fault that comes and goes, or one that starts after other work in the walls, usually points to a loose or pinched wire. Because the fix is often small, a same-day visit can often get a room back on.
 
 > I was in a pinch and needed quick service. Sterling came out same day and restored power to 3 rooms in my home!
 >
@@ -256,15 +252,11 @@ A dead room or a few dead outlets is often one failed connection or one tripped 
 
 ### Sparks, heat and burning smells
 
-Sparks from an outlet, a plug that is hot to the touch, a buzzing panel or a burning smell all deserve a prompt call. If you see smoke or flames, leave the house and call 911 first. Otherwise, stop using the outlet or appliance involved, and call us. These signs usually come from a loose, overloaded or damaged connection, and the sooner it is found, the smaller the repair tends to be.
-
-> I called for a sparking outlet, and he came right out the same day after a scheduled appointment in the pouring rain and completed the service!
->
-> — Monique V.
+Sparks from an outlet, a plug that is hot to the touch, a buzzing panel or a burning smell all deserve a prompt call. If you see smoke or flames, leave the house and call 911 first. Otherwise, stop using the outlet or appliance involved, and call us. These signs usually come from a loose, overloaded or damaged connection, and the sooner it is found, the smaller the repair tends to be. We would rather look at a warm outlet that turns out to be fine than have you wait on one that is not.
 
 ### Why a new panel is not usually the first answer
 
-A panel does wear out, but it is not often the cause of a single dead room or a breaker that trips now and then. We look at the circuit first, since the problem is frequently one breaker, one device or one connection. If the panel itself has burn marks, rust, water damage or breakers that will not hold, replacing it can be the right repair, and we will show you why.
+A panel does wear out, but it is not often the cause of a single dead room or a breaker that trips now and then. We look at the circuit first, since the problem is frequently one breaker, one device or one connection. If the panel itself has burn marks, rust, water damage or breakers that will not hold, replacing it can be the right repair, and we will show you why before any work starts.
 
 > They took time to diagnose the problem fix it and not upsell extras we didn't need.
 >
@@ -272,23 +264,23 @@ A panel does wear out, but it is not often the cause of a single dead room or a 
 
 ### Repair or replace
 
-Replacing a switch, outlet or fixture is a small repair, and it is the right one when the wiring behind it is in good shape. A wire with cracked or crumbling insulation, or an old run that has been damaged in several places, is usually better replaced than patched, since the next failure is likely nearby. Older wiring such as knob-and-tube or aluminum branch wiring, found in some houses built in the 1960s and 70s, may need special connections or replacement. We explain which one applies to you, and what each costs, before we start.
+Replacing a switch, outlet or fixture is a small repair, and it is the right one when the wiring behind it is in good shape. A wire with cracked or crumbling insulation, or an old run that has been damaged in several places, is usually better replaced than patched, since the next failure is likely nearby. Older wiring such as knob-and-tube, or aluminum branch wiring found in some houses built in the 1960s and 70s, may need special connections or replacement. We explain which one applies to your house before we start.
 
 ### Storm damage and old wiring
 
-Storms can take out several rooms at once through a surge, a damaged service line or water in a fixture. Old wiring and a wiring fault can look alike from the room, which is why a trace comes first. If more than the problem you called about turns up, we tell you what we found, and you decide what to fix and when.
-
-> Very knowledgeable, … and repaired other issues. Would highly recommend to call first.
->
-> — scott H.
-
-### Repairs you can plan around
-
-Some repairs are urgent and some can wait. A tripped breaker on an overloaded circuit may only need the load moved, while a hot outlet needs attention right away. We tell you which is which. When you hire us for a larger repair, we keep you updated as the work goes on.
+A storm can take out several rooms at once through a power surge, a damaged service line or water in a fixture. Old wiring and storm damage can look alike from inside the room, which is why a trace comes first. Repairs after a storm range from replacing a few outlets to rewiring a section of the house, and we say which one you are facing once we have tested.
 
 > Repairs included removing knob and tub wiring, replacing light fixtures, wiring repairs after a storm took out two rooms of a house, switch and outlet replacements, etc.
 >
 > — Jackie M.
+
+### What else we find while we are there
+
+Some repairs are urgent and some can wait. A hot outlet needs attention right away, while a tripping breaker on an overloaded circuit may only need some of the load moved. If we find other problems while we are tracing the first one, such as a worn outlet nearby or an unlabeled panel, we tell you which are urgent and which can wait, and you decide what gets fixed that day.
+
+> Very knowledgeable, … and repaired other issues. Would highly recommend to call first.
+>
+> — scott H.
 
 ## Lighting Installation — Lighting Installation in Fort Wayne, IN — Sterling Electric
 
@@ -346,6 +338,10 @@ Converting a loft or finishing a basement changes what each room needs. We start
 >
 > — Mary H.
 
+### Choosing fixtures and bulbs
+
+Brightness is measured in lumens, and the color of the light in kelvins: lower numbers look warm and yellow, higher numbers look cool and blue-white. A kitchen or workbench often suits a brighter, cooler light, and a bedroom a warmer one. Many LED fixtures have the bulbs built in, so when one fails the whole fixture is replaced, which is worth knowing before you buy. We are happy to talk through the choices before you spend money on fixtures.
+
 ### Hot tubs, pools and other outdoor power
 
 A hot tub usually needs its own dedicated circuit with GFCI protection, a disconnect within sight of the tub, and wiring sized for the tub's load. Requirements differ by model and by local code, so check the tub's manual and talk to us before the tub arrives. That way the electrical side is ready on delivery day.
@@ -380,16 +376,43 @@ If you see smoke or flames, or smell burning, leave the house and call 911 befor
 
 ### Your estimate
 
-Tell us about your project and we'll provide a clear, upfront quote. Have your address and the best number to reach you on hand.
+Tell us about your project and we'll provide a clear, upfront quote. Have your address and the best number to reach you on hand. If you have a photo of the panel label, the fixture or the spot where you want a new outlet or light, it helps us picture the job before we arrive. Please keep your hands off the inside of the panel, and let us look at it.
 
 ### Where we work
 
 Our office is in Fort Wayne, and we serve homes and businesses in Fort Wayne and the area around it.
 
-Ready to talk? Call (260) 404-1802.
+If you are not sure which of these fits, that is fine. Tell us what you see and we will sort it out on the phone. Ready to talk? Call (260) 404-1802.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate
 
 ## Notes (not page copy)
 
-(counts pending)
+| Page | Words without quotes | Words with quotes |
+|---|---|---|
+| Strategy | ~960 | ~990 |
+| Home | ~820 | ~990 |
+| Electrical Troubleshooting & Repair | ~1,055 | ~1,190 |
+| Lighting Installation | ~740 | ~940 |
+| Contact | ~290 | ~310 |
+
+Counts include headings, bullets and the H1, and leave out button lines. All pages meet their minimums. The lighting page has the thinnest source material: the site gives about 25 words and the reviews give six jobs, so most of its length is hedged trade knowledge (wet-rated outdoor fixtures, GFCI, three-way switches, wafer lights, fan boxes, hot tub circuits, bulbs), not business claims.
+
+**Second service: lighting, not panel upgrades.** Panel upgrades have one site sentence and only two reviews (Ross N., Sabine B.), and Sabine's is really a "diagnosis, no panel needed" story, so it fits troubleshooting and the strategy lead. Panels are covered on Home ("When a new panel really is the answer") and in the repair-or-replace advice.
+
+**Credentials (own-site claims only).** "Licensed team" and "17 years" (home, residential, commercial pages), stated once on Home. "Meets current safety codes" is softened to "we work to meet". No license number, certifier or insurance claim appears anywhere; "insured" is only a question on the site with no answer.
+
+**Inventory items left out, and why.**
+- Insured, emergency service, after-hours (Tom S.) and outdoor lighting and signage for businesses: site FAQ questions are blank or conflict with the posted hours. Left out of copy; see questions below.
+- The $225 minimum and "honest/fair pricing" as a claim: conflicting (two 3-star reviews, owner replies). Price-heavy parts of quotes were trimmed (Ross N., wendy K., scott H.); Karah W., Sam E. and Robert K. not used.
+- George as a named technician (lead #3): needs owner approval. He appears only inside quotes (Mary H., wendy K.).
+- Unused reviews: Mark S. (same day), John D., Daniel J., Sadie B., Chad S., April M., isaiah G..
+- Commercial services: the site names no specific job, so only the umbrella line is used. The home page's one-line "Residential and commercial work" is the extent.
+- Security cameras: not on the site, only Mengal K.'s review, so stated in one hedged line and a quote. A whole-house rewire (Mark W.) is a quote under Older Houses. Smoke alarm (Mary H.) and hot tub (Satwik K.) are on the lighting page through the quotes.
+- Case studies/portfolio: the site has none, so the copy uses review jobs only.
+- Legal name "STERLING ELECTRIC FW INC.": copy uses "Sterling Electric".
+- Ceiling fan, outlet, surge protection, panel labeling, meter base, permits: all used on Home or Lighting.
+
+**Facts to verify.** Insurance and license number; whether hours extend past 8 to 4; the $225 minimum and what it covers; towns served; whether Jim is the owner (reviews say so); whether named staff can appear; whether permits are handled by Sterling (site lists "permit and inspection" only); whether cameras are an offered service.
+
+**Review use.** 18 quotes, each once, none back to back, no run of three quote-ended sections.
