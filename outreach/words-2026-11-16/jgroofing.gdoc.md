@@ -24,11 +24,11 @@ Draft for review. Sources: the business's own site, Google reviews, facts.md. Qu
 
   
 
-Look at your reviews. They keep saying the same things: Amanda explains every step, Jose looks at the roof and tells you what it needs, and the yard is clean when the crew leaves. Your site says almost none of that.
+Look at your reviews. They keep saying the same things: Amanda explains every step, Jose and his crew do the work, and the yard is clean when the crew leaves. Your site says almost none of that.
 
   
 
-Amanda helped us navigate our claim and everything was handled with professionalism.
+> Amanda helped us navigate our claim and everything was handled with professionalism.
 
   
 
@@ -52,11 +52,11 @@ Why it matters: It's the page most people see first, and it has to say who you a
 
   
 
-  - Roof replacement and roof repair have no headings of their own on your homepage, and storm damage gets one sentence.
+  - Roof replacement and roof repair have no headings of their own on your homepage, and storm damage gets one sentence, so a homeowner scanning for their problem finds no answer.
 
-  - Your BBB A+ rating is on the About page only.
+  - Your BBB accreditation is on the About page only, so a homepage visitor never sees it.
 
-  - The reviews on the homepage are from 2021 and 2023.
+  - The reviews on the homepage are from 2021 and 2023, so a visitor sees proof that looks old.
 
   
 
@@ -66,7 +66,7 @@ Why it matters: It's the page most people see first, and it has to say who you a
 
   - Every service has its own heading, with roof replacement and storm damage first.
 
-  - BBB A+ is on the homepage, with a plain line on what accreditation is.
+  - BBB accreditation is on the homepage, with a plain line on what it is.
 
   - Newer reviews sit beside the service they prove.
 
@@ -84,9 +84,9 @@ Why it matters: It's the job your reviews talk about most.
 
   
 
-  - Replacement is one paragraph of about 60 words.
+  - Replacement is one paragraph of about 60 words, so a homeowner pricing a new roof finds little to go on.
 
-  - Nearly every paragraph on that page repeats "Peoria, IL" and "roofing contractors," "roofing companies" or "roofers." That's keyword stuffing, an old trick Google ignores at best.
+  - Nearly every paragraph on that page repeats "Peoria, IL" and "roofing contractors," "roofing companies" or "roofers." That's keyword stuffing, an old trick Google ignores at best, so the page is tiresome to read and earns you nothing.
 
   
 
@@ -114,9 +114,9 @@ Why it matters: After a hailstorm, homeowners need to hear who will help with th
 
   
 
-  - One sentence covers insurance: "We are trained to work with insurance from start to finish."
+  - Insurance gets one sentence, so a homeowner in the middle of a claim cannot tell how you would help: "We are trained to work with insurance from start to finish."
 
-  - Amanda and Jose appear only inside reviews, so nobody learns who does what.
+  - Amanda and Jose appear only inside reviews, so a homeowner cannot tell who they would deal with.
 
   
 
@@ -126,7 +126,7 @@ Why it matters: After a hailstorm, homeowners need to hear who will help with th
 
   - A page for storm damage and insurance claims.
 
-  - It says who looks at the roof and who explains the claim.
+  - It says who explains the claim.
 
   - It says the insurance company decides what it covers.
 
@@ -144,9 +144,9 @@ Why it matters: It's where interest becomes a phone call.
 
   
 
-  - The number printed on your site is (309) 567-8236. The "Call or Text" button dials (309) 316-3652.
+  - The number printed on your site is (309) 567-8236. The "Call or Text" button dials (309) 316-3652, so a customer who taps it may reach a phone you do not answer.
 
-  - The CONTACT button at the top of your site goes back to the homepage.
+  - The CONTACT button at the top of your site goes back to the homepage, so a customer who taps it hits a dead end.
 
   
 
@@ -194,9 +194,9 @@ Why it matters: It's where interest becomes a phone call.
 
   - Reviews on every page, matched to the service
 
-  - About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
+  - About and owner pages that show who does the work
 
-  - A strip at the top of every page with your rating and credentials, so a customer sees why to pick you right away
+  - A trust bar that shows what makes you different
 
   
 
@@ -258,7 +258,7 @@ Roof replacement, storm damage and insurance claims, siding and gutters, from on
 
 # Roofing Company in Peoria, IL — JG Roofing and Company
 
-Jose comes to your house, looks at the roof and tells you what it needs. Amanda explains each step, including the insurance claim if there is one. We serve Peoria and all of Central Illinois. Call or text us to set up your estimate.
+Amanda explains each step, including the insurance claim if there is one, and Jose and his crew do the work. Call or text us to set up your estimate.
 
   
 
@@ -270,7 +270,7 @@ Trust bar: Free Estimates | BBB Accredited | Roofs, Siding and Gutters | Peoria 
 
   
 
-Working with Amanda and Jose was a seamless, professional and pleasant experience. They did it all for us; roofing, siding, fascia, soffit and gutters. And its all well constructed and beautiful!
+> Working with Amanda and Jose was a seamless, professional and pleasant experience. They did it all for us; roofing, siding, fascia, soffit and gutters. And its all well constructed and beautiful!
 
   
 
@@ -278,7 +278,7 @@ Working with Amanda and Jose was a seamless, professional and pleasant experienc
 
 ## Every Step Explained Before It Happens
 
-A roof job is stressful when you don't know what comes next. So we tell you before it happens.
+A roof job is stressful when you don't know what comes next.
 
   
 
@@ -294,7 +294,7 @@ Our [roof replacement](http:///roof-replacement-peoria-il/) work covers houses, 
 
   
 
-Extremely happy with the service I received. Very easy to work with. Quick turnaround. Honest, fair, & extremely transparent.
+> Extremely happy with the service I received. Very easy to work with. Quick turnaround. Honest, fair, & extremely transparent.
 
   
 
@@ -310,11 +310,11 @@ Your insurance company decides what it covers. We help you through everything ar
 
 ## Roof Repair
 
-Not every roof needs replacing. We repair leaks, missing shingles and worn spots before they get worse, and we'll tell you honestly when a repair is enough and when the roof is past it.
+Not every roof needs replacing. A repair is often enough when the trouble is in one place, and a roof past repair is better replaced.
 
   
 
-Winter snow, ice dams and summer storms are hard on Peoria roofs, and a small problem grows through a season.
+Winter snow, ice dams (ice that builds up along the roof edge) and summer storms are hard on Peoria roofs, and a small problem grows through a season.
 
 ## Siding
 
@@ -322,7 +322,7 @@ New siding changes how the whole house looks, and it takes the same weather your
 
   
 
-Our house looks amazing! Like a totally different house with our new siding!
+> Our house looks amazing! Like a totally different house with our new siding!
 
   
 
@@ -334,7 +334,7 @@ New gutters carry water away from your house and give it a clean, fresh look. We
 
   
 
-JG replaced the roof on my home along with the gutter guards. They were prompt, courteous and cleaned up very well. They brought a dumpster on wheels to prevent damage to my new driveway.
+> JG replaced the roof on my home along with the gutter guards. They were prompt, courteous and cleaned up very well. They brought a dumpster on wheels to prevent damage to my new driveway.
 
   
 
@@ -350,11 +350,11 @@ We also install roofs on new builds and upgrades, and attic venting when a roof 
 
 ## Homes and Businesses
 
-A business roof gets the same estimate, the same schedule and the same clean-up as a house. If your building is open during the day, tell us when you call and we'll plan the work around that.
+Customers have had us roof a building for their business as well as their home.
 
   
 
-JG has performed exceptional work-three times for us. Roof and siding for our home and a roof for a building for our business. Amanda and Jose were incredible communicators (something many desire when working with a contractor).
+> JG has performed exceptional work-three times for us. Roof and siding for our home and a roof for a building for our business. Amanda and Jose were incredible communicators (something many desire when working with a contractor).
 
   
 
@@ -362,7 +362,7 @@ JG has performed exceptional work-three times for us. Roof and siding for our ho
 
 ## Who Stands Behind the Work
 
-We are licensed, insured and bonded, and BBB Accredited with an A+ rating. We've been accredited since 2020, and BBB says accreditation shows a business operates honestly and with integrity.
+We are licensed, insured and bonded, and BBB Accredited. We've been accredited since 2020, and BBB says accreditation shows a business operates honestly and with integrity.
 
   
 
@@ -398,7 +398,7 @@ Roof replacement, Peoria and Central Illinois
 
 # Roof Replacement in Peoria, IL — JG Roofing and Company
 
-Customers describe a new roof finished in a day or two. Jose comes to your house, looks at the roof and tells you what it needs, and Amanda explains each step before it happens. Call or text us and we'll set up a time to look at your roof.
+Customers describe a new roof finished in a day or two. Amanda explains each step before it happens, and Jose and his crew do the work. Call or text us and we'll set up a time to look at your roof.
 
   
 
@@ -410,7 +410,7 @@ Customers describe a new roof finished in a day or two. Jose comes to your house
 
   
 
-We had a 30yr old roof that needed to be replaced completely. The crew that worked on our house was very professional and polite. … We personally enjoyed their transparency when it came to quotes/pricing.
+> We had a 30yr old roof that needed to be replaced completely. The crew that worked on our house was very professional and polite. … We personally enjoyed their transparency when it came to quotes/pricing.
 
   
 
@@ -434,7 +434,7 @@ The flat field of shingles is rarely the first thing to give out. Water more oft
 
   
 
-Water also travels. It often runs along the roof framing or the waterproof layer under the shingles before it drips, so a ceiling stain is usually not directly under the hole. That's why we look at the whole roof and the attic, not only the spot you point to. Wood that stays damp for a long time rots, and rotted wood is why a replacement sometimes includes new roof boards, the wooden deck the shingles are nailed to.
+Water also travels. It often runs along the roof framing or the waterproof layer under the shingles before it drips, so a ceiling stain is usually not directly under the hole. That's why the whole roof and the attic are worth a look, not only the spot you point to. Wood that stays damp for a long time rots, and rotted wood is why a replacement sometimes includes new roof boards, the wooden deck the shingles are nailed to.
 
 ## Peoria Weather and Your Roof
 
@@ -454,7 +454,7 @@ A leaking roof shouldn't sit on a long schedule. Say so when you call, and tell 
 
   
 
-I needed a roof quickly due to leaks. JG Roofing quickly provided me with a very competitive quote and within a week, I had a new, high quality roof installed (in very challenging weather conditions).
+> I needed a roof quickly due to leaks. JG Roofing quickly provided me with a very competitive quote and within a week, I had a new, high quality roof installed (in very challenging weather conditions).
 
   
 
@@ -482,7 +482,7 @@ A full replacement from us covers:
 
 ## Asphalt Shingles or Metal
 
-We install both. Asphalt shingles are the traditional choice, usually cost less and come in many colors. Metal roofs are known for lasting a long time and for a modern look, and they usually cost more up front. Your estimate can price both side by side.
+Asphalt shingles are the traditional choice, usually cost less and come in many colors. Metal roofs are known for lasting a long time and for a modern look, and they usually cost more up front. Ask for both to be priced side by side.
 
   
 
@@ -494,7 +494,7 @@ The estimate is given at your house, after the roof has been looked at. Customer
 
   
 
-Best of all was the speed between the time we contacted them for an estimate and the time the project was complete. And for a very reasonable price!
+> Best of all was the speed between the time we contacted them for an estimate and the time the project was complete. And for a very reasonable price!
 
   
 
@@ -502,7 +502,7 @@ Best of all was the speed between the time we contacted them for an estimate and
 
 ## Replacement Day
 
-You get the timeframe before we start.
+A customer reports getting a timeframe from Amanda, and the crew kept to it.
 
   
 
@@ -510,7 +510,7 @@ You don't have to supervise. The crew arrives, strips off the old roof and insta
 
   
 
-JG Roofing did an amazing job on our roof! They were super efficient; it all took about one day… we left the house while they worked on it and when we came back they were done! And it looked great too!
+> JG Roofing did an amazing job on our roof! They were super efficient; it all took about one day… we left the house while they worked on it and when we came back they were done! And it looked great too!
 
   
 
@@ -518,11 +518,11 @@ JG Roofing did an amazing job on our roof! They were super efficient; it all too
 
 ## Clean-Up
 
-The job isn't done until your property is clean. Customers often mention the crew picking up old roofing and debris, sweeping the yard again for nails, and bringing a dumpster on wheels to protect the driveway.
+The job isn't done until your property is clean. Customers mention the crew picking up old roofing and debris and sweeping the yard again for nails. One had a dumpster on wheels brought in to protect the driveway.
 
   
 
-They even were kind enough to do an extra few sweeps around the house to make sure there were no nails left behind for our dog to step on.
+> They even were kind enough to do an extra few sweeps around the house to make sure there were no nails left behind for our dog to step on.
 
   
 
@@ -562,7 +562,7 @@ Storm damage, Peoria and Central Illinois
 
 # Storm Damage and Insurance Claims in Peoria, IL — JG Roofing and Company
 
-We are trained to work with insurance from start to finish. After a hailstorm or other storm damage, Jose looks at your roof and Amanda explains each step of the claim. Call or text us and we'll start with a look at the roof.
+We are trained to work with insurance from start to finish. After a hailstorm or other storm damage, Amanda explains each step of the claim and Jose and his crew do the roof. Call or text us and we'll start with a look at the roof.
 
   
 
@@ -574,7 +574,7 @@ We are trained to work with insurance from start to finish. After a hailstorm or
 
   
 
-We had our roof on our old home replaced after a hailstorm recently. JG Roofing was very helpful with handling communication with our insurance.
+> We had our roof on our old home replaced after a hailstorm recently. JG Roofing was very helpful with handling communication with our insurance.
 
   
 
@@ -582,11 +582,11 @@ We had our roof on our old home replaced after a hailstorm recently. JG Roofing 
 
 ## After the Hail
 
-A hailstorm can damage more than the shingles. Customers have come to us for the roof, the gutters and the siding after a storm, so one team can look at the whole outside of the house, and then you decide what to do about your claim.
+A hailstorm can damage more than the shingles.
 
   
 
-Storms rarely hit just one part of a house, so it helps to have everything checked in one visit.
+Storms rarely hit just one part of a house.
 
   
 
@@ -610,7 +610,7 @@ Your insurance company decides what it covers. We help you through everything ar
 
   
 
-Amanda and Jose took the time to explain every single step, kept us updated constantly, and helped us understand exactly what was happening with our insurance company the whole way through.
+> Amanda and Jose took the time to explain every single step, kept us updated constantly, and helped us understand exactly what was happening with our insurance company the whole way through.
 
   
 
@@ -622,7 +622,7 @@ Customers say we helped with communication with their insurance company, and tha
 
   
 
-Amanda came and patiently explained the claim process and what to expect during the replacement process. She responded to all of my questions. Jose and his crew did a wonderful job. The roof was torn off, replaced and cleaned up in the timeframe that Amanda gave me.
+> Amanda came and patiently explained the claim process and what to expect during the replacement process. She responded to all of my questions. Jose and his crew did a wonderful job. The roof was torn off, replaced and cleaned up in the timeframe that Amanda gave me.
 
   
 
@@ -642,7 +642,7 @@ Customers say every charge was explained, so they knew what the claim covered, w
 
   
 
-Amanda was always responsive to our questions, explaining all the charges for what insurance wouldn't cover and the extras we added on. Should this Illinois weather damage my roof again, I know who I am calling.
+> Amanda was always responsive to our questions, explaining all the charges for what insurance wouldn't cover and the extras we added on. Should this Illinois weather damage my roof again, I know who I am calling.
 
   
 
@@ -650,7 +650,7 @@ Amanda was always responsive to our questions, explaining all the charges for wh
 
 ## Siding, Gutters, Fascia and Soffit
 
-We replace roofs, siding, gutters and the fascia and soffit (the trim along the roof edge), so one team can take care of everything a storm damaged.
+We replace roofs, siding, gutters and the fascia and soffit (the trim along the roof edge).
 
   
 
@@ -658,39 +658,30 @@ Siding that is no longer made can be a problem. Amanda has handled that for a cu
 
   
 
-Our home had siding that was no longer manufactured and Amanda was able to have the proper research done in order to prove that so that our home would not be repaired in a way that it would have mismatched siding!
+> Our home had siding that was no longer manufactured and Amanda was able to have the proper research done in order to prove that so that our home would not be repaired in a way that it would have mismatched siding!
 
   
 
 — Bert S.
 
-## When the Damage Is a Repair
-
-Not every storm means a new roof, and an honest look sorts out which one you have.
-
-  
-
-In most cases, damage to a few shingles on a roof that is otherwise sound is a repair. Damage spread across several slopes, or a roof already near the end of its life, more often points to replacement. Your insurance company may judge it differently than we do, and that's one more reason to have someone explain the difference to you.
-
 ## What Happens on a Visit
 
-Jose comes to your house and goes over the roof. A visit like this usually takes in the shingles, the seals around chimneys and vents, the gutters and, where it makes sense, the attic. Afterward he tells you what he found and what the roof needs.
+We come to your house and go over the roof. A visit like this usually takes in the shingles, the seals around chimneys and vents, the gutters and, where it makes sense, the attic. Afterward you hear what was found and what the roof needs.
 
   
 
-You don't have to decide anything that day. Take the time to read your policy and talk to your insurance company, and ask us anything that isn't clear.
 
 ## Questions
 
-**Will insurance pay for my new roof?**  That's your insurance company's decision. We can look at the roof and explain the steps.
+**Do I have to decide anything the day you visit?**  No. Take the time to read your policy, talk to your insurance company and ask us anything that isn't clear.
 
   
 
-**Does storm damage always mean a new roof?**  No. It depends on how much of the roof is damaged, and a close look shows whether it needs a repair or a replacement.
+**Does storm damage always mean a new roof?**  No. Damage to a few shingles on a roof that is otherwise sound is usually a repair. Damage spread across several slopes, or a roof already near the end of its life, more often points to replacement. Your insurance company may judge it differently than we do, so it helps to have someone explain the difference. A close look shows which one you have.
 
   
 
-**What if the storm damaged my siding or gutters too?**  We do siding and gutters, so the same team can handle all of it.
+**What if the storm damaged my siding or gutters too?**  Customers have come to us for the roof, the gutters and the siding after a storm, and we look at all of it in one visit.
 
 ## Hurt by a Storm?
 
@@ -722,7 +713,7 @@ Call or text us, and tell us what's going on with your roof, siding or gutters. 
 
 ## What to Have Ready
 
-You don't need to know what the roof needs. That's what Jose is there to find out. A few things help us get started:
+You don't need to know what the roof needs. That's what the visit is for. A few things help us get started:
 
   
 
@@ -748,13 +739,12 @@ We set a time, come to your house, look at the roof and give you the estimate. Q
 
   
 
-If you have photos of a stain or a missing shingle, send them along. They help us plan the visit.
 
 ## Send Us Your Project Details
 
 Prefer to write? Send your name, phone, email and a few lines about the project. We'll get back to you.
 
-## Notes (not page copy). Nov 16 QA pass and judgment backport (home strip now one line under the hero buttons, five items, BBB Accredited with no A+ and no ratings; the service-page strips were removed; one speed claim added to the home strip, and the home FAQ cut to three questions; service pages keep their existing hero and FAQs, nothing new added; filler line "we stay until the job is done right" cut; strategy page: duplicate "This demo is the first five pages" line removed, full-build list fixed to the approved speed wording, the unapproved "New team members, booking systems" bullet deleted, and a call-to-action sentence added under What we'd confirm; no FAQ question repeats a page section). Earlier: jargon explained, repeated Jose/Amanda lines cut to once per page, site warranty and licensed/insured claims restored in their voice and hedged.
+## Notes (not page copy). Nov 16 QA pass and judgment backport (second judgment pass: no ratings anywhere, FAQs no longer repeat page paragraphs, unsourced process lines cut, Jose-looks-at-the-roof claims reworded because no quoted review backs them, full-build list matched to the canonical block, every Current site problem bullet ends with its cost; home strip now one line under the hero buttons, five items, BBB Accredited with no A+ and no ratings; the service-page strips were removed; one speed claim added to the home strip, and the home FAQ cut to three questions; service pages keep their existing hero and FAQs, nothing new added; filler line "we stay until the job is done right" cut; strategy page: duplicate "This demo is the first five pages" line removed, full-build list fixed to the approved speed wording, the unapproved "New team members, booking systems" bullet deleted, and a call-to-action sentence added under What we'd confirm; no FAQ question repeats a page section). Earlier: jargon explained, repeated Jose/Amanda lines cut to once per page, site warranty and licensed/insured claims restored in their voice and hedged.
 
 **Rebuild reason: Both. Services sit on one page and the page text repeats "Peoria, IL" and "roofing contractors" in nearly every paragraph, and the site is 1225 px wide on a phone, so it scrolls sideways.**
 
@@ -768,7 +758,7 @@ Prefer to write? Send your name, phone, email and a few lines about the project.
 
   - Roof Replacement: about 967 without quotes, 1,205 with. Expanded Nov 16 with hedged general trade knowledge (repair vs replace by age, where old roofs usually fail, ice dams and freeze-thaw). No new business claims.
 
-  - Storm Damage and Insurance Claims: about 887 without quotes, 1,128 with. Expanded Nov 16 with hedged general knowledge (hail damage, first steps after a storm and staying off the roof, how a claim usually goes, repair vs replace, what happens on a visit). The insurer decides coverage; no outcomes promised. The only business claims are the existing sourced ones (Jose looks at the roof, Amanda explains the claim).
+  - Storm Damage and Insurance Claims: about 887 without quotes, 1,128 with. Expanded Nov 16 with hedged general knowledge (hail damage, first steps after a storm and staying off the roof, how a claim usually goes, repair vs replace, what happens on a visit). The insurer decides coverage; no outcomes promised. The only business claims are the existing sourced ones (Amanda explains the claim, Jose and his crew do the work).
 
   - Contact: about 265 without quotes (no quotes used), 288 with.
 
@@ -778,7 +768,7 @@ Prefer to write? Send your name, phone, email and a few lines about the project.
 
   
 
-  - BBB A+ accredited: confirmed on bbb.org (profile: [https://www.bbb.org/us/il/peoria/profile/roofing-contractors/jg-roofing-and-company-0724-1000014407](https://www.bbb.org/us/il/peoria/profile/roofing-contractors/jg-roofing-and-company-0724-1000014407); accredited since 6/30/2020; business started 4/24/2018). The line "operates honestly and with integrity" is from BBB's own page ([https://www.bbb.org/en/us/about-bbb-accreditation](https://www.bbb.org/en/us/about-bbb-accreditation)). I could not find BBB's own definition of the A+ rating on bbb.org, so the page does not explain what A+ means. Defined once, on home only.
+  - BBB accredited: confirmed on bbb.org (profile: [https://www.bbb.org/us/il/peoria/profile/roofing-contractors/jg-roofing-and-company-0724-1000014407](https://www.bbb.org/us/il/peoria/profile/roofing-contractors/jg-roofing-and-company-0724-1000014407); accredited since 6/30/2020; business started 4/24/2018). The line "operates honestly and with integrity" is from BBB's own page ([https://www.bbb.org/en/us/about-bbb-accreditation](https://www.bbb.org/en/us/about-bbb-accreditation)). Defined once, on home only.
 
   - GAF certified: NOT confirmed, and cut from the page copy in the Nov 16 recheck because it is a What we'd confirm item. Older note follows (GAF's directory returned 403). Used as the site's own warranty claim, hedged ("ask what it covers"), on home and on the replacement page; sited as the site says it ("We are certified with GAF, the largest shingle manufacturer in North America..."). **Check the GAF locator before this goes out.**  Strategy page also asks the owner about it.
 
@@ -806,13 +796,13 @@ Prefer to write? Send your name, phone, email and a few lines about the project.
 
   - "Nick O. got more than I expected covered", Christopher L. ("got everything we were entitled to"), Robert T. ("insurance tried to short change us"), Larilyn H. ("amount was not reflective"): outcome or insurer-blame wording; held back under the no-promised-outcomes rule. Becky T., Whitney J., Daniel G., Rose H., Bert S. and Robert T. (charges only) carry the insurance theme.
 
-  - Laurie R. (4 stars) is not quoted. Sam C. (1 star) not quoted. Single-name and username reviews (Melissa, Erik, LeAnn, Marie-Joe, carl1978) not quoted.
+  - Laurie R. and Sam C. are not quoted. Single-name and username reviews (Melissa, Erik, LeAnn, Marie-Joe, carl1978) not quoted.
 
-  - Reviews not used (no page needed them): Shannon R., Michael M., Wendy S., Timothy H., Pam W., Cat W., Wesley B., Matthew L., Giovanni G., Lee M. Roof repair has no page, so Cat W., Sarah G. and Wesley B. carry it only in one strategy quote (Sarah G.).
+  - Reviews not used (no page needed them): Shannon R., Michael M., Wendy S., Timothy H., Pam W., Cat W., Wesley B., Matthew L., Giovanni G., Lee M. Roof repair has no page, so Cat W., Sarah G. and Wesley B. are not quoted.
 
   - Claim-timeline offer from usp.md ("a one-page claim and job timeline"): not in the approved full-build lines, so not on the strategy page.
 
-  - The "Amanda explains / Jose looks at the roof" split is from reviews; copy names them as the people customers deal with and never as owners. Roles are unconfirmed.
+  - Pages say Amanda explains and Jose and his crew do the work, which the quoted reviews back. No page says Jose looks at the roof, because no quoted review says it. Copy names them as the people customers deal with and never as owners. Roles are unconfirmed.
 
   - Review themes: insurance help, Amanda and Jose, clean-up, speed, honest pricing and communication are all used. The Jonathan J. quote is trimmed from a longer review; Kayla T., Mandy P., Rose H., Daniel G., Robert T. and Kelsey H. are trimmed too.
 

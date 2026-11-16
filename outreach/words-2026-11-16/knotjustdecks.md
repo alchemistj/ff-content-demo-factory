@@ -14,7 +14,7 @@ We built Knot Just Decks the first five pages of that kind of website. More on t
 
 ### Why we built this site
 
-Customers name who they worked with and say they were kept up to date.
+Customers name who they worked with, and one says they were kept up to date.
 
 > Mike and John were great at communicating all our options and keeping us up to date on the process and timeline.
 >
@@ -128,10 +128,10 @@ So the demo opens with Exterior Contractor in Fort Wayne, IN, and gives deck des
 
 On a short onboarding call, we'd confirm four things.
 
-1. **Email.** Which address do customers use, info@myknotjustdecks.com or info@knotjustdecks.com?
-2. **Flagpole warranty.** Your flagpole page says lifetime; a customer wrote five-year. Which is right?
-3. **Garage coatings.** One page says most homeowners choose polyurea, another says polyaspartic. Which do you install most?
-4. **Roofing.** It is in your menu but not your home page list or most footers, and no review mentions a roof. How much of your business is roofing?
+- **Email.** Which address do customers use, info@myknotjustdecks.com or info@knotjustdecks.com?
+- **Flagpole warranty.** Your flagpole page says lifetime; a customer wrote five-year. Which is right?
+- **Garage coatings.** One page says most homeowners choose polyurea, another says polyaspartic. Which do you install most?
+- **Roofing.** It is in your menu but not your home page list or most footers, and no review mentions a roof. How much of your business is roofing?
 
 ### Want a website like this for your business?
 
@@ -151,7 +151,7 @@ Decks, roofing, gutters, garage floor coatings, pergolas and flagpoles, built by
 
 ### A family business that began with decks and flagpoles
 
-Ken and Ann Woodfill started Knot Just Decks in 1987 in their home on the south side of Fort Wayne. Ken, a Marine, kept selling and installing flagpoles because the U.S. flag mattered to him. Their son Mike bought the business in 2008 and runs it today with his wife, Becca, by the Golden Rule: treat others as you would have them treat you. That is why you deal with the same family-owned team from the estimate to the warranty.
+Ken and Ann Woodfill started Knot Just Decks in 1987 in their home on the south side of Fort Wayne. Ken, a Marine, kept selling and installing flagpoles because the U.S. flag mattered to him. Their son Mike bought the business in 2008 and runs it today with his wife, Becca, by the Golden Rule: treat others as you would have them treat you.
 
 > The folks at Knot Just Decks are always friendly and efficient.
 >
@@ -211,7 +211,7 @@ Yes, we service residential and commercial flagpoles and flags, as well as selli
 
 Call (260) 745-0337 and tell us what you want built or fixed.
 
-**Buttons:** Call (260) 745-0337 / Get a Free Estimate
+**Buttons:** Call (260) 745-0337 / Request an Estimate
 
 ## Deck Design and Build — Deck Design and Build in Fort Wayne, IN — Knot Just Decks
 
@@ -321,11 +321,11 @@ Northeast Indiana gets heavy snow, high winds, hail and driving rain, and storms
 
 ### Insurance claims
 
-We assist homeowners with insurance claims by providing thorough documentation and working with you through the process. The insurer usually sends an adjuster, the person who inspects the damage and estimates the repair, and photos with the date of the storm and a written description of the damage tend to matter. Your deductible, the part of the cost you pay yourself, is set by your policy. The documentation records what the storm did to your roof.
+We assist homeowners with insurance claims by providing thorough documentation and working with you through the process. A claims adjuster, the person who inspects the damage and estimates the repair, usually visits, and photos with the date of the storm plus a written description tend to matter. Your deductible, the part of the cost you pay yourself, is set by your policy.
 
 ### Emergency tarping
 
-When a storm leaves your roof open, we offer emergency tarping. A tarp is a heavy waterproof sheet fastened over the damaged area to keep water out until a permanent repair can be made. It is a temporary measure and not a fix. Photograph the damage before it goes on and keep your receipts, because many policies reimburse reasonable temporary repairs. A repair in deep winter can also be temporary, because the sealing strips that hold shingles down bond best in mild weather. A roof that is leaking now shouldn't wait, though, and a tarp can hold things until the permanent work is done.
+When a storm leaves your roof open, we offer emergency tarping. A tarp is a heavy waterproof sheet fastened over the damaged area to keep water out until a permanent repair can be made. Photograph the damage before it goes on and keep your receipts, because many policies reimburse reasonable temporary repairs. A repair in deep winter can also be temporary, because the sealing strips that hold shingles down bond best in mild weather. A roof that is leaking now shouldn't wait, though, and a tarp can hold things until the permanent work is done.
 
 ### Shingles and metal roofing
 
@@ -341,7 +341,7 @@ We install CertainTeed architectural asphalt shingles, which are thicker and lay
 
 ### Your roof and the rest of the exterior
 
-A failing roof can lead to water getting into the house, damaged gutters, deteriorating siding and extra wear on outdoor living spaces. We are also a deck and gutter contractor, so we look at your whole exterior, not only the shingles, and we check how the roof, the gutters and the roof edge work together. In winter, poor attic ventilation can feed ice dams, which are ridges of ice at the roof edge that push meltwater back under shingles, so the roof and the attic are worth looking at together.
+A failing roof can let water into the house, damaged gutters, deteriorating siding and extra wear on outdoor living spaces. We are also a deck and gutter contractor, so we look at your whole exterior, not only the shingles, and we check how the roof, the gutters and the roof edge work together. In winter, poor attic ventilation can feed ice dams, which are ridges of ice at the roof edge that push meltwater back under shingles, so the roof and the attic are worth looking at together.
 
 ### Roofing questions
 
@@ -359,7 +359,7 @@ Sometimes. The rules depend on your town, so the local permit office has the fin
 
 #### Should I call my insurer or a roofer first?
 
-Report the storm to your insurer soon after it happens, because policies often set a deadline for reporting damage. Then call us for an inspection. The insurer decides what it pays. We can document the damage but can't promise coverage.
+Report the storm soon after it happens, because policies often set a deadline for reporting damage. Then call us for an inspection. What gets paid is your company's call. We can document the damage but can't promise coverage.
 
 ### Need your roof looked at?
 
@@ -412,13 +412,13 @@ We review your project details and schedule a free consultation, in person or vi
 
 | Page | With quotes | Without quotes |
 |---|---|---|
-| Strategy page | 1050 | 1027 |
-| Home | 827 | 767 |
-| Deck Design and Build | 1064 | 963 |
-| Roof Replacement and Repair | 927 | 927 |
-| Contact | 294 | 254 |
+| Strategy page | 1052 | 1029 |
+| Home | 822 | 762 |
+| Deck Design and Build | 1088 | 987 |
+| Roof Replacement and Repair | 920 | 920 |
+| Contact | 303 | 263 |
 
-**Services chosen.** Deck design and build (home to composite, wood, process and mistakes material, each fact said once) and roofing. Garage floor coatings was not chosen: the garage page plus the coating-comparison page total about 600 words of site material, so a 700-word page would be padding. Roofing is the other service the site can carry at 700+ words: its page has the most prose (about 615 words) and its trade knowledge is specific (hail and wind damage, insurance steps, tarping, shingles against metal). Roofing has no customer review, so that page has no quote; its site page (858 words, own claims on CertainTeed, process, storm and tarping) is real material, so it stays. Suggested routes: /deck-design-build-fort-wayne-in/ and /roof-replacement-repair-fort-wayne-in/. Home owns "Exterior Contractor".
+**Services chosen.** Deck design and build (home to composite, wood, process and mistakes material, each fact said once) and roofing. Garage floor coatings was not chosen: the garage page plus the coating-comparison page total about 600 words of site material, so a 700-word page would be padding. Roofing is the other service the site can carry at 700+ words: its page has the most prose (about 615 words) and its trade knowledge is specific (hail and wind damage, insurance steps, tarping, shingles against metal). Roofing has no customer review, so that page has no quote and says "insurance" three times (heading, claims line, FAQ); its site page (858 words, own claims on CertainTeed, process, storm and tarping) is real material, so it stays. Suggested routes: /deck-design-build-fort-wayne-in/ and /roof-replacement-repair-fort-wayne-in/. Home owns "Exterior Contractor".
 
 **Credentials and the business's own claims (stated as their claims; none confirmed on a certifier's site).**
 - Trex Pro Platinum, "Trex's highest contractor designation" (home, deck-design-build, composite-decking, why-choose-us): defined once on home. The site spells it three ways; copy uses "Trex Pro Platinum".
@@ -426,7 +426,7 @@ We review your project details and schedule a free consultation, in person or vi
 - CertainTeed Master Craftsman (roofing): defined once on home as "a designation we describe as installing to the manufacturer's highest standards". Named again on the roofing page only as CertainTeed shingles.
 - NIFDA member dealer (flagpoles, flag-inventory): defined once on home as the National Independent Flag Dealers Association.
 - Trex 25-year limited fade and stain warranty (composite-decking): deck page, once, with "limited" explained.
-- Locally owned since 1987 (home, about): strip, and the backstory on home only. Roofing's "nearly four decades" is not used. Owner: Mike Woodfill is named as the person who bought the business in 2008 (about page, signed "President"; reviews call him the owner).
+- Locally owned since 1987 (home, about): strip, and the backstory on home only. The line about dealing with one family team from estimate to warranty was cut as unsourced. Roofing's "nearly four decades" is not used. Owner: Mike Woodfill is named as the person who bought the business in 2008 (about page, signed "President"; reviews call him the owner).
 - No BBB listing, license or insurance statement exists; none claimed. "HBA" logo on the estimate page is unexplained: left out.
 
 **Hedged site absolutes.** "Seamless beats sectional — fewer leaks, fewer clogs" became "fewer joints that can leak". "We handle all required permits" is stated as their process on the deck page (site's own step 5). "Most deck projects take 2-4 weeks" is kept as the site's "most". "We regularly assist ... insurance claims" became "we assist". "Without pressure or hidden costs" is not used.
