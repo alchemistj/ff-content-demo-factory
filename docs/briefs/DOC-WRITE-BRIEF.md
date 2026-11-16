@@ -6,6 +6,8 @@ You write words only, as one Markdown file that becomes a Google Doc. Edit only 
 
 **Strips and hedging (FF architect, Nov 16):** one strip per doc, on Home only, under the hero buttons, max 5 items (no service-page strips, no second or third bar). Hedge claims that need proof; never hedge plain process steps ("We schedule the work once the claim is approved").
 
+**Rebuild reason (FF architect, Nov 16):** the first line of "## Notes" is "Rebuild reason: SEO / Design / Both. [one sentence of evidence]". SEO = Google can't tell what the site is (no town/service in headlines or titles, stuffed titles, services in one page). Design = reads fine to Google but looks dated/weak (old template, cramped, poor on phones, broken images). Both = both. Base it on the strategy page and audit.
+
 ## Read first, in full
 1. **The models:**
    - `examples/approved-copy/` (sra, window-dudes, greene-planet);
