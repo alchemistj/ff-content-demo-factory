@@ -168,7 +168,6 @@ At homes, we handle:
 
 - **Plumbing repair and emergencies:** leaks, broken valves, sump pumps, water heaters and toilets, sewer lines, water softeners and whole-house filters. See [Plumbing Repair](/plumbing-repair-fort-wayne-in/).
 - **Heating and cooling repair:** furnaces, heat pumps and air conditioners. See [Heating and Cooling Repair](/heating-and-cooling-repair-fort-wayne-in/).
-- **Yearly maintenance checks:** some homeowners schedule one with us.
 
 ### Memberships we list
 
@@ -182,9 +181,9 @@ We list these affiliations on our site:
 
 ### The bigger jobs behind the small ones
 
-Our site calls the full list our commercial and industrial work, and it is wide. We pipe automotive plants and food processing plants. Our fabrication shops in Fort Wayne and Lafayette build pipe assemblies in carbon steel, stainless steel and copper, and our site says they test high-pressure systems up to 40,000 PSI, a measure of pressure. Our plumbers also install and certify medical gas systems, the piping that carries medical gases to patient rooms.
+Our commercial and industrial work is wide. We pipe automotive plants and food processing plants. Our fabrication shops in Fort Wayne and Lafayette build pipe assemblies in carbon steel, stainless steel and copper, and we test high-pressure systems up to 40,000 PSI, a measure of pressure. Our plumbers also install and certify medical gas systems, the piping that carries medical gases to patient rooms.
 
-For a larger project, design/build means one company handles engineering, pricing, installation, warranty and long-term maintenance, so one company answers for the result. Our Proactive Predictive Maintenance program uses data and technology to catch equipment problems before they cause downtime. The site gives no plan details or prices.
+For a larger project, design/build means one company handles engineering, pricing, installation, warranty and long-term maintenance, so one company answers for the result. Our Proactive Predictive Maintenance program uses data and technology to catch equipment problems before they cause downtime.
 
 > Going through a large remodel we have dealt with multiple contractors and subs--It has been a process finding ones that we trust and provide good work. Mark and everyone at A Hattersley have exceeded expectations at every turn. Not only are the professional, meet every deadline, have great communication but the quality of work is unmatched. My only regret is that they weren't the first plumbing company we called.
 >
@@ -248,7 +247,7 @@ A tank water heater commonly lasts 8 to 12 years. When it is old and leaking fro
 
 ### Toilets, drains and sewer lines
 
-A toilet that will not flush correctly is often a clog or a worn part inside the tank, so pulling it off the floor is rarely the first step, and it can damage the wax seal and flooring. A drain that backs up in more than one fixture usually points past the fixture to the main sewer line. Older Fort Wayne neighborhoods are more likely to have clay or cast iron sewer pipe, and tree roots can enter the joints of such pipe. We replace sewer lines, and we do leak detection and system diagnostics to find where the problem actually sits.
+A toilet that will not flush correctly is often a clog or a worn part inside the tank, so pulling it off the floor is rarely the first step, and it can damage the wax seal and flooring. A drain that backs up in more than one fixture usually points past the fixture to the main sewer line. Older Fort Wayne neighborhoods are more likely to have clay or cast iron sewer pipe, and tree roots can enter the joints of such pipe. Our plumbing work also covers leak detection and system diagnostics to find where the problem actually sits.
 
 > I’m new to the area and am so happy to have an honest and fair company like  Hattersley  . We were about to attempt to fix the toilet ourselves by ripping it out of the floor and are so happy we did not!! Hattersley not only fixed the problem without any invasive or damaging solutions  but taught me exactly what to try in case we ever have a similar issue . They have a the heart of a teacher !
 >
