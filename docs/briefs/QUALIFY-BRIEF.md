@@ -7,7 +7,7 @@ For each candidate (name, website, rating, review count given in your task), ope
 1. **Strong written reviews:** 4.6+ stars and 40+ Google reviews. (Written-review depth is checked later in the review pull.)
 2. **Weak site:** most money services have NO page of their own whose top heading names the service and the city. Also note: thin copy, no reviews on the site, phone not tappable, dated design. A site where most services already have a "<Service> in <City>" page is NOT weak: SKIP.
 3. **Enough real material:** the site itself has enough service detail (or FAQs, about text) to write 2 service pages. A one-page site with three lines: SKIP.
-4. **No current agency build:** check the footer and page source for agency credits or platforms (Scorpion, Hibu, Thryv, ServiceTitan Marketing, Blue Corona, Rival Digital, Footbridge, Market Hardware, LocaliQ, Yodle, Web.com, "Website by…"). A national franchise or a multi-city chain: SKIP.
+4. **No current agency build:** check the footer and page source for agency credits or platforms (Scorpion, Hibu, Thryv, ServiceTitan Marketing, Blue Corona, Rival Digital, Footbridge, Market Hardware, LocaliQ, Yodle, Web.com, "Website by…"). A national franchise or a multi-city chain: SKIP. A DIY builder (Wix, GoDaddy, Squarespace) is not an agency build and is not a SKIP by itself.
 
 Also SKIP: no website, closed, a supplier or union, or anything in FL, CO, OR, WA, Northern CA, or Springfield MO/417.
 
