@@ -38,12 +38,12 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 **Current site problem**
 - Replacement is one paragraph on the residential roofing page, not how you replace one.
-- Your tear-off to bare wood and new felt paper are explained only in a 2013 article.
+- Tearing the old roof off to bare wood and laying new paper under the shingles is explained only in a 2013 article.
 - The reviews under the roof heading include one about a deck and one about a garage vent.
 
 **What the demo fixes**
 - A page for roof replacement alone.
-- Your tear-off, underlayment, metal edging and ventilation in plain words, plus a repair-versus-replace rule.
+- Tearing off to bare wood, the paper under the shingles, the metal along the roof edge and attic airflow, in plain words, plus a repair-or-replace rule.
 - Only roof reviews, and replacement day.
 
 **A full build would also add**
@@ -114,10 +114,10 @@ Keeps working after launch
 
 **What we'd confirm with you**
 
-- Years in business: which of "over 40," "20+," "since 2003" or "since 2004" is right?
-- Credentials: GAF Certified, A+ Better Business Bureau, City of Lincoln license, Lead-Paint Certified, AirVent Experts. GAF and the BBB blocked our check. Can we see the certificates?
-- Roof inspections: one page says a "competitive fee," others say free. Which is it?
-- Hours: your site doesn't list any. Do you answer after hours?
+- Your site says "over 40 years," "20+ years," "since 2003" and "since 2004." Which is right?
+- Your site says GAF Certified, and GAF's contractor finder blocked our check. Can we see the certificate?
+- One page says a roof inspection costs a "competitive fee," others say free. Which is it?
+- Your site lists no hours. Do you answer calls after hours?
 
 **Want a website like this for your business?**
 
@@ -133,7 +133,7 @@ Alex and Maria own A Better Way Construction & Roofing. We replace and repair ro
 
 **Buttons:** Call (402) 432-6800 | Request a Free Estimate
 
-*Trust bar:* Free Estimates | GAF Certified Roofers | Insurance Claim Help | Lincoln and Nearby Towns
+*Strip:* Free Estimates | GAF Certified Roofers | Insurance Claim Help | Lincoln and Nearby Towns
 
 > Alex and Maria are the perfect team. They stepped in quickly to get our project done. If you want quality workmanship, excellent customer service, and someone focused on your best interests, A Better Way is the way to go.
 >
@@ -223,7 +223,7 @@ Our replacements generally tear the old roof off down to the bare wood, so we ca
 
 **Buttons:** Call (402) 432-6800 | Request a Free Estimate
 
-*Trust bar:* GAF Certified Roofers | Tear-Off to Bare Wood | Lincoln and Nearby Towns
+*Strip:* GAF Certified Roofers | Tear-Off to Bare Wood | Lincoln and Nearby Towns
 
 > Better Way Construction did a fantastic job on a full roof replacement for us. They showed up as expected and cleaned up at the end of everyday during the roof replacement process.
 >
@@ -243,7 +243,7 @@ Underlayment is the black layer, called felt paper, between the wood and the shi
 
 A repair makes sense when the damage is in one place and the rest of the roof is sound: a few missing shingles, a single leak, one damaged vent. Replacement usually makes more sense when the trouble is spread across the roof, when the same roof keeps needing repairs, or when it has reached the end of its life.
 
-Asphalt shingle roofs often last somewhere around 20 to 25 years, depending on the shingle, how well the attic is ventilated and the weather, and Nebraska supplies plenty of it: summer heat, hail, strong wind and freezing winters. Here is a rule you can check from the yard. Shingles curling or cracking across several slopes, or piles of the colored grit that coats shingles collecting at the bottom of the downspouts, point to a roof wearing out broadly rather than in one spot. Either way, an aged or storm-hit roof doesn't always need replacing, and we'll tell you if a repair will do.
+Asphalt shingle roofs often last somewhere around 20 to 25 years, depending on the shingle, how well the attic is ventilated and the weather, and Nebraska supplies plenty of it: summer heat, hail, strong wind and freezing winters. Here is a rule you can check from the yard. Shingles curling or cracking across several slopes, or piles of the colored grit that coats shingles collecting at the bottom of the downspouts, point to a roof wearing out broadly rather than in one spot.
 
 ## Ventilation Under the New Roof
 
@@ -282,7 +282,7 @@ As a rule of thumb, roofing goes best above freezing, and the shingle maker's in
 
 ## Replacement Day
 
-Expect noise, falling debris and a crew on the roof early in the day. Keep children and pets away from the work area, move cars away from the house, and cover anything in the attic that dust could settle on, since hammering can shake it loose. You don't need to supervise, but tell us about anything fragile around the house, like a garden. The old roofing and nails get cleaned up when the work is done.
+Expect noise, falling debris and a crew on the roof. Keep children and pets away from the work area, move cars away from the house, and cover anything in the attic that dust could settle on, since hammering can shake it loose. You don't need to supervise, but tell us about anything fragile around the house, like a garden. The old roofing and nails get cleaned up when the work is done.
 
 > The crew that came to my house was always respectful and helpful! Made sure everyone on in my house was safe as they were working on taking off old material they would let me know so my kids wouldn’t step on nails.
 >
@@ -332,7 +332,7 @@ After hail or wind, we look at your roof and Maria helps you through the insuran
 
 **Buttons:** Call (402) 432-6800 | Request a Free Estimate
 
-*Trust bar:* Free Storm Damage Assessment | Insurance Claim Help | GAF Certified Roofers | Lincoln and Nearby Towns
+*Strip:* Free Storm Damage Assessment | Insurance Claim Help | GAF Certified Roofers | Lincoln and Nearby Towns
 
 > Called with storm damage and Alex was out right away to evaluate! Turned into a total re roof and gutter install. … Maria has been awesome with communication and helping with the insurance process!
 >

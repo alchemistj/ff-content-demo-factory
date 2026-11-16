@@ -19,7 +19,7 @@ Your reviews say you stay with people through the insurance claim.
 >
 > — Gary A.
 
-Others say the same. On your homepage, storm damage gets one line in a row of cards.
+On your homepage, storm damage gets one line in a row of cards.
 
 So the demo opens with Roofing Contractor in Evansville, IN, leads with storm claims, and gives replacement and repair a page each.
 
@@ -36,7 +36,7 @@ So the demo opens with Roofing Contractor in Evansville, IN, leads with storm cl
 
 **What the demo fixes**
 - A headline that says Roofing Contractor in Evansville, IN.
-- A storm-claims section up top: photos, your adjuster, a tarp.
+- A storm-claims section up top: photos, the adjuster visit, a tarp.
 - Credentials said once, in plain words.
 
 **A full build would also add**
@@ -65,7 +65,7 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 **Current site problem**
 - The headline never says Evansville.
-- No review sits on the page, though yours describe a leak traced to a window and a peak vent fixed.
+- No review sits on the page, though yours describe a window leak traced and a vent fixed.
 - The "Repairs" link at the bottom of your site lands on the homepage, not here.
 
 **What the demo fixes**
@@ -123,8 +123,8 @@ Keeps working after launch
 
 On a short onboarding call, we'd confirm four things.
 
-- Which matches your GAF listing: "top installer tier," "top 2%" or "fewer than 2%"?
-- Is your warranty up to 25 years, lifetime, or workmanship only for 10, 25 or 50? Your pages say all three.
+- Your site words your GAF Master Elite level three ways: "top installer tier," "top 2%" and "fewer than 2%." Which is right?
+- Your pages call your warranty lifetime, up to 25 years, and workmanship-only for 10, 25 or 50. Which is right?
 - Your contact page says calls are answered 24/7. Does a person pick up overnight?
 - Should a homeowner expect one day or one to two?
 
@@ -140,13 +140,13 @@ We replace and repair roofs across the Evansville area, and when a storm does th
 
 **Buttons:** Call (812) 455-0231 · Free Roof Inspection
 
-**Strip:** GAF 2-Star President's Club · GAF Master Elite · 5.0 on Google from 376 reviews · Licensed and insured in Indiana
+**Strip:** GAF 2-Star President's Club · GAF Master Elite · Licensed and insured in Indiana
 
 ### After a Storm, We Walk the Claim With You
 
 Hail and high wind often leave damage you can't see from the ground, so the first step is a free inspection. We go over every surface the storm touched and take photos of each damaged spot, with measurements, and you keep a copy of everything.
 
-Then you call your insurance company to open the claim. We help you describe the damage accurately and give you photos to send with it. When the adjuster comes out, we can meet them on the roof and walk it with them, so what they see lines up with what we recorded. We've worked hundreds of storm claims, so we usually know what an adjuster looks for.
+Then you call your insurance company to open the claim. We help you describe the damage accurately and give you photos to send with it. When the insurance company's adjuster comes out, we can meet them on the roof and walk it with them, so what they see lines up with what we recorded. We've worked hundreds of storm claims, so we usually know what an adjuster looks for.
 
 If the storm opened a hole in the roof, we can put temporary protection over it, so water stays out of the house while the claim moves forward.
 
@@ -158,7 +158,7 @@ Your insurance company decides what your policy pays. What we do is make sure th
 
 ### Evansville Roofs and Evansville Weather
 
-Much of Evansville's housing was built between the 1940s and 1980s, so a lot of roofs here are due for replacement whether or not a storm hits. Spring and fall storm seasons in the Ohio River valley then bring hail and high wind, which speed that up. We've worked in this market since 2018 and have finished more than 2,500 projects across the Tri-State, so we know the common weak spots in the housing here and the insurance companies that operate in it.
+Many Evansville homes are decades old, so a lot of roofs here are due for replacement whether or not a storm hits. Spring and fall storm seasons in the Ohio River valley then bring hail and high wind, which speed that up. We've worked in this market since 2018 and have finished more than 2,500 projects across the Tri-State, so we know the common weak spots in the housing here.
 
 Summers here are hot and humid, and attic air that can't escape can age a roof from underneath. That's why we check the attic and its airflow on every roof we look at, not just the shingles.
 
@@ -176,7 +176,7 @@ Then you get your options in writing, with materials and timeline, and the decis
 
 Our own crew does the work. We don't hand your job to a subcontractor you've never met, and there's a project manager overseeing each job. You hear from us before the job starts, during it if anything changes, and after it's done. We also do a final walkaround with you before we consider the job finished.
 
-Photos are a big part of that. Customers describe pictures and texts through the day, and one describes drone shots of places you can't see from the ground.
+Photos are a big part of that. We often send pictures and updates through the job, including shots from above of places you can't see from the ground.
 
 > Caleb kept us updated on their work progress & sent us drone pics which were really neat to see and showed us areas around the chimney, etc. that we couldnt see from ground level.
 >
@@ -204,9 +204,9 @@ We offer no-strings consultations to businesses as well as homeowners. A big roo
 
 GAF is the largest roofing manufacturer in North America, and we hold two of its contractor recognitions.
 
-**GAF Master Elite** is the certification we hold. As our site states it, GAF requires active licensing and insurance, strong homeowner ratings and ongoing product training to earn it.
+**GAF Master Elite** is the certification we hold. To earn it, a contractor needs active licensing and insurance, strong homeowner ratings and ongoing product training.
 
-**The GAF 2-Star President's Club** is the top award GAF gives contractors. We state it as fewer than 1% of contractors earning it.
+**The GAF 2-Star President's Club** is GAF's top honor for contractors, and fewer than 1% of contractors earn it.
 
 **Licensed, bonded and insured.** We're fully licensed in Indiana, with general liability and workers' compensation coverage, and we'll give you the paperwork if you ask.
 
@@ -220,9 +220,9 @@ Jack and Honey, our golden retrievers, are the official heads of morale. They do
 
 **Will a claim raise my premiums?** That depends on your insurance company, so ask them before you file. We can tell you what we see on the roof either way.
 
-**How soon can you come out after a storm?** Everyone calls at once after a big storm, so call early. Going by our reviews, we usually get to people within a day or so.
+**How soon can you come out after a storm?** Everyone calls at once after a big storm, so call early. We usually get to people within a day or so.
 
-**Do you charge for the inspection?** No. If you want a second opinion afterward, that's fine with us.
+**Do you charge for the inspection?** No. It's free, and you keep the written report and the photos either way.
 
 ### Talk It Through
 
@@ -242,9 +242,9 @@ Then we put on the new roof in layers, from the bottom up: new waterproof layers
 
 ### What We Do About the Wood Under Your Old Roof
 
-Once the old roof is off, we walk every square foot of the wood, looking for soft spots, water damage and nails that have let go. On older Evansville homes, that wood is often individual boards, not sheets of plywood, and boards that have been wet at some point can rot. Damaged sections are replaced before installation begins.
+Once the old roof is off, we walk every square foot of the wood under the shingles, which roofers call decking, looking for soft spots, water damage and nails that have let go. On older Evansville homes, that wood is often individual boards, not sheets of plywood, and boards that have been wet at some point can rot. Damaged sections are replaced before installation begins.
 
-This is the part that changes a price after the roof is open, so ask any company how it handles it before you sign: is wood repair priced in, or added later?
+This is the part that can change a price once the roof is open.
 
 > I think they had every shingle off my roof in under an hour. Full decking replacement and was still done by days end.
 >
@@ -256,17 +256,17 @@ Under the shingles, a waterproof layer covers the whole roof. We add a second, s
 
 ### The Shingles: One Maker, Three Levels
 
-We install GAF Timberline shingles, a line GAF describes as the most installed in North America. There are three levels:
+We install GAF Timberline shingles, the most-installed shingle line in North America. There are three levels:
 
 - **A premium level** with a thicker body and a deeper shadow line, for the look of a heavier roof.
-- **The everyday level**, which is the one most homes get. GAF rates it for wind up to 130 mph, and it comes in more than 30 colors.
+- **The everyday level**, which is the one most homes get. It's built for wind up to 130 mph and comes in more than 30 colors.
 - **A standard level**, priced to give good performance at a lower cost.
 
 We walk you through the differences with samples, so you choose for your house and your budget.
 
 ### Metal Strips and Attic Air
 
-We inspect the metal strips sealed around chimneys, skylights and walls and replace them as needed. A strip that was fine under an old roof can fail under a new one, because it's cheaper to replace it now than to open the new roof later. We also confirm that air can move along the peak of the roof, and correct it if it can't. Blocked attic airflow lets summer heat and moisture build up under the roof.
+We inspect the metal strips sealed around chimneys, skylights and walls and replace them as needed. A strip that was fine under an old roof can fail under a new one, because it's cheaper to replace it now than to open the new roof later. We also confirm that air can move along the peak of the roof, and correct it if it can't.
 
 ### What a Replacement Costs in Evansville
 
@@ -279,17 +279,17 @@ Price follows the roof, not the size of the house: the roof's actual surface are
 
 Your free inspection gives you the exact price in writing, as Good, Better and Best packages, and you pick.
 
-Pay by cash or check, or by card, with a 3% fee on card payments over $1,200. We ask for 50% when you sign and the rest when the job is done. If you'd rather spread the cost, we offer financing: 0% APR for 4 years or 4.99% APR for 12 years, and it can cover an insurance deductible too. We walk through the terms before you apply, and approval and rates are the lender's. If the rate, any promotional period and any penalty for paying early aren't in writing, don't sign.
+Pay by cash or check, or by card, with a 3% fee on card payments over $1,200. We ask for 50% when you sign and the rest when the job is done. If you'd rather spread the cost, we offer financing: 0% APR for 4 years or 4.99% APR for 12 years, and it can cover an insurance deductible too. We walk through the terms before you apply, and approval and rates are the lender's.
 
 ### Good, Better, Best: What the Warranty Covers
 
 Every roof we install comes with a workmanship warranty, and the package sets the length: 10 years on Good, 25 on Better, 50 on Best. It covers defects in our workmanship on the roof we installed, under normal conditions.
 
-It doesn't cover weather events such as lightning, high winds, hail or ice dams, or falling trees. It doesn't cover movement of the house, problems that were there before we started, repairs someone else made, or routine upkeep like caulking. The warranty starts once the job is paid in full, and the full terms are in your contract. To make a claim, call us and tell us what you're seeing.
+It doesn't cover weather events such as lightning, high winds, hail or ice dams (ice that backs up under the shingles at the roof's edge), or falling trees. It doesn't cover movement of the house, problems that were there before we started, repairs someone else made, or routine upkeep like caulking. The warranty starts once the job is paid in full, and the full terms are in your contract. To make a claim, call us and tell us what you're seeing.
 
 ### Install Day
 
-Most homes finish in a day, and a bigger or more cut-up roof can take a second day. The crew arrives, protects your landscaping and property, removes the old roof, deals with any wood damage and installs the new one.
+Most homes finish in a day, and a bigger or more cut-up roof can take a second day. The crew arrives, protects your property, removes the old roof, deals with any wood damage and installs the new one.
 
 We clean as we go. At the end, we sweep the yard with a magnet and haul away the debris. An old roof coming off scatters nails, so one pass isn't enough.
 
@@ -297,7 +297,7 @@ We clean as we go. At the end, we sweep the yard with a magnet and haul away the
 >
 > — Becky C.
 
-When it's done, we walk the roof with you, confirm the cleanup and hand over your paperwork. Reviews often describe someone coming back the next day to check.
+When it's done, we walk the roof with you, confirm the cleanup and hand over your paperwork. We often come back the next day to check.
 
 > One thing I especially appreciated was that, because I'm not comfortable with heights, they took photos throughout the entire project.
 >
@@ -305,7 +305,9 @@ When it's done, we walk the roof with you, confirm the cleanup and hand over you
 
 ### Replacing a Roof After an Insurance Claim
 
-If a claim is behind the replacement, we schedule the work once it's approved.
+If a claim is behind the replacement, we schedule the work once it's approved. Insurance companies often pay in stages, with a first payment when the claim is approved and the rest after the work is done, so ask yours how it pays before the crew arrives.
+
+If the old roof comes off and the wood underneath is worse than anyone could see from above, tell your insurance company right away. Photos of that damage give you a record to send them.
 
 > The Way Construction Co went above and beyond to get my new roof on quickly to satisfy my insurance company.
 >
@@ -402,17 +404,9 @@ Call or email us. A question is welcome even if you're not ready for an estimate
 
 We answer the phone 24/7. If a storm has damaged your roof in the middle of the night, call. Tell us what happened, and we'll tell you what to do next, including how we can put temporary protection over an opening until the claim and the repair get going.
 
-### Office Hours
+### Hours, Email and Address
 
-Monday to Friday, 9 a.m. to 5 p.m.
-
-### Email
-
-sierra@thewayconstruction.com
-
-### Our Office
-
-2425 US-41, Suite 202, Evansville, IN 47711
+Office hours are Monday to Friday, 9 a.m. to 5 p.m. You can email sierra@thewayconstruction.com or stop by our office at 2425 US-41, Suite 202, Evansville, IN 47711.
 
 ### What to Have Ready
 
@@ -424,7 +418,7 @@ sierra@thewayconstruction.com
 
 ### What Happens After You Call
 
-We set a time to come out. We inspect the roof, photograph what we find and give you a written report. You get your options in writing, and you decide what happens next.
+We set a time to come out and look at the roof. A written report follows, and what happens next is up to you.
 
 > Great Experience with Thomas and Sierra. They answered questions and helped us work with insurance.
 >
@@ -442,11 +436,11 @@ Call (812) 455-0231 and we'll set up your visit.
 
 **Word counts** (script count; "without quotes" excludes blockquotes, buttons and the strip; "with" is everything on the page)
 
-- Strategy page: 972 without quotes, 992 with (limit 1,000).
-- Home: 992 without quotes, 1140 with.
-- Roof Replacement: 1005 without quotes, 1120 with.
-- Roof Repair: 896 without quotes, 958 with.
-- Contact: 255 without quotes, 280 with.
+- Strategy page: 968 without quotes, 993 with (limit 1,000).
+- Home: 1004 without quotes, 1145 with.
+- Roof Replacement: 1052 without quotes, 1183 with.
+- Roof Repair: 911 without quotes, 983 with.
+- Contact: 270 without quotes, 299 with.
 
 **Credentials and sources** (none checked on GAF's own site, which returns 403 to this environment; each is the business's claim, stated as theirs)
 - GAF Master Elite: `/`, `/about`, `/roof-replacement`. Defined once, on home. The rank wording (top installer tier, top 2%, fewer than 2%) conflicts, so no percentage is stated. On the strategy page as a "What we'd confirm" question.
@@ -454,7 +448,7 @@ Call (812) 455-0231 and we'll set up your visit.
 - Licensed, bonded and insured in Indiana, with general liability and workers' comp, paperwork on request: `/about`. Home only. No license number on the site.
 - 2,500+ projects across the Tri-State, in business since 2018: `/`, `/about`, `/evansville-in`. Home only. Not verifiable.
 - "Worked hundreds of storm claims": `/about`. Home only, hedged ("usually know what an adjuster looks for").
-- 5.0 on Google from 376 reviews: `/`, `reviews.json`. Home strip only. The siding and gutters pages say "over 330+".
+- Google rating and review count: not used (no rating counts). Site shows 376 on most pages and "330+" on siding and gutters.
 - Workmanship warranty 10/25/50 years, with exclusions: `/guarantee`, `/pricing`. Replacement page only.
 - Financing (0% APR 4 years, 4.99% APR 12 years, insurance deductible, card fee over $1,200, 50% deposit): `/financing`, `/pricing`. Replacement page only.
 - Price ranges: `/pricing`, `/roof-replacement`. Replacement page only.
@@ -465,10 +459,10 @@ Call (812) 455-0231 and we'll set up your visit.
 - Golden Pledge: "lifetime" (`/roof-replacement`) vs "up to 25 years" (`/about`) vs workmanship-only 10/25/50 packages (`/guarantee`, `/pricing`). Golden Pledge is not named in copy. Strategy question.
 - Master Elite rank wording. No percentage stated. Strategy question.
 - Replacement time: "one to two days" and "a single day" on the same page. Copy says "most homes finish in a day, and a bigger or more cut-up roof can take a second day," backed by roughly a dozen reviews saying one day and the church review saying two. Strategy question.
-- Review count 376 vs "330+". Copy uses 376 on the home strip only.
+- Review count 376 vs "330+": not used in the copy.
 - Siding materials (vinyl, composite and shake vs vinyl, fiber cement and wood): the home list says "Vinyl and composite" to match `/siding`.
 - Service area: `/about` lists Owensboro and Webster County, KY; `/areas-served` lists Tell City, Pike and Spencer counties. Contact lists only the towns with their own city pages plus Henderson, KY, and the four counties common to both pages plus Henderson County.
-- Review #30 (K H., 3 stars) says the crew gave no updates and the job took two days. Not quoted. Home says "customers describe pictures and texts through the day," which the written reviews support. Worth raising on the call.
+- Review #30 (K H., 3 stars) says the crew gave no updates and the job took two days. Not quoted. Home says "we often send pictures and updates through the job," which the written reviews support. Worth raising on the call.
 
 **Inventory items and why**
 - Services: roof replacement and roof repair have pages. Inspection, storm damage and claims, new construction roofing and gutters, siding and gutters are on home ("What We Do", and the storm section). Financing, pricing and warranty are on the replacement page, once each.
@@ -482,12 +476,12 @@ Call (812) 455-0231 and we'll set up your visit.
 - Insurance claim page: the storm-damage page's FAQ answers are behind taps and not in site/. The deadline, deductible and premium answers on home are general advice, hedged, and no business claim.
 
 **Facts to verify**
+- "Often come back the next day" (replacement) and "often send pictures and updates" (home): review-inferred, hedged, used once each.
 - Whether a person answers overnight, and whether emergency tarping is available at night. Contact promises only that the phone is answered; the temporary-protection offer comes from `/storm-damage`.
 - "About 80% of visitors are on a phone" is from the brief, not a source I checked.
 - "A project manager overseeing each job" and "final walkaround": `/` step three.
 - "Reviews often describe someone coming back the next day": Melissa W. and Robert I. only. It is hedged and used once.
 - "Usually within a day or so after a storm": two reviews (Jon W., Kevin C.). Review-inferred, used once.
 - Drone shots: only Debra M.'s review mentions them; the copy says "one describes" and her quote is used once.
-- The 5.0 rating on Google with 376 reviews: reviews.json has 61 written reviews plus a rating-only list.
 - Hail, attic heat, older-house weak spots, and the repair and wood advice are general trade knowledge, hedged. No business claim.
 - Warranty repairs: the site is silent on whether repair work is warranted, so the repair page makes no warranty claim.

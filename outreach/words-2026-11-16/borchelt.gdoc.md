@@ -3,11 +3,11 @@ Draft for review. Sources: the business's own site, Google reviews, facts.md. Qu
 Strategy page
 Free demo site built for W C Borchelt & Sons
 We already did the work. Here's a W C Borchelt & Sons website that tells Fort Wayne who you are and gets the phone ringing.
-Your site shapes your Google ranking, what AI says about you, and how easy you are to reach. Here’s a demo of what yours could be.
+Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
 
 Buttons: View the Demo Site / See What Changed
 Why we built this site
-Google gives you 4.9 stars from 969 reviews, and one story keeps coming back: the customer expected "replace it" and heard what needed fixing, at a fair price. Kari G.:
+Your Google reviews keep telling one story: the customer expected "replace it" and heard what needed fixing, at a fair price. Kari G.:
 
 RJ was professional, efficient and I believe honest in his assessment and fair with the price. And the problems are fixed.
 
@@ -20,7 +20,7 @@ The demo, page by page
 Current site problem
 
 The headline lists your trades, not your town, and the browser tab says "Home | Wc Borchelt." Neither says Fort Wayne. Noble County is listed twice.
-Its one review is a furnace installation, and the 969 on Google never reach the page.
+Its one review is a furnace installation, and your Google reviews never reach the page.
 "Family Owned and Operated since 1962" and the after-hours line sit on other pages.
 
 What the demo fixes
@@ -73,7 +73,7 @@ Emergency instructions differ between the Services page and the top of the page.
 What the demo fixes
 
 Address, phone, text number and hours in one place, with call and text buttons.
-When to call and when a text can wait.
+When to call instead of texting.
 
 A full build would also add Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
 What a full build includes
@@ -316,7 +316,7 @@ Call 260-485-3412 or text 260-231-1794. We are at 6332 Maplecrest Road, Fort Way
 
 Buttons: Call 260-485-3412 / Text 260-231-1794
 Hours
-The office is open Monday to Friday, 8:00 AM to 4:30 PM. Saturday and Sunday are emergency calls only. Texts sent after 4:30 PM are answered the next business day, so if the heat, water or power is out, call instead.
+The office is open Monday to Friday, 8:00 AM to 4:30 PM. Saturday and Sunday are emergency calls only. If the heat, water or power is out, call instead of texting.
 What to tell us
 Tell us what the equipment is doing and when it started, so the right technician can come prepared.
 
