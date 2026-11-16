@@ -58,6 +58,23 @@ def main(paths):
                     hard = group in HARD
                     bad = bad or hard
                     print(f"{'FAIL' if hard else 'WARN'} {path.split('/')[-1]} | {name[:40]} | {group}: {n} (limit {LIMIT})")
+        # Strip / trust bar lines outside Home, and FAQ questions repeated across pages
+        faq = {}
+        for name, lines in pages(text):
+            if name.startswith("Notes") or name.startswith("Strategy"):
+                continue
+            for l in lines:
+                s = l.strip().strip("*").strip()
+                if re.match(r"^(strip|trust bar|differentiators)\s*(:|$)", s, re.I) and not name.lower().startswith("home"):
+                    bad = True
+                    print(f"FAIL {path.split('/')[-1]} | {name[:40]} | strip/trust bar outside Home: {s[:60]}")
+                if s.endswith("?") and len(s) < 160 and not l.lstrip().startswith(">"):
+                    q = re.sub(r"[^a-z ]", "", s.lower()).strip()
+                    faq.setdefault(q, set()).add(name[:30])
+        for q, where in faq.items():
+            if len(where) > 1:
+                bad = True
+                print(f"FAIL {path.split('/')[-1]} | FAQ on {len(where)} pages: '{q[:60]}' ({', '.join(sorted(where))})")
     if not bad:
         print("OK: no claim group appears more than twice on any page")
     return 1 if bad else 0
