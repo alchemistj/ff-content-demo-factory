@@ -1,0 +1,766 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "fortwayne-windows-busheys",
+  "place": {
+    "name": "Bushey's Windows & Doors",
+    "placeId": "ChIJHV7XDffkFYgR1wDSfCfSEfU",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bushey's%20Windows%20%26%20Doors&query_place_id=ChIJHV7XDffkFYgR1wDSfCfSEfU",
+    "address": "3802 Lima Rd, Fort Wayne, IN 46805",
+    "phone": "(260) 456-1247",
+    "rating": 4.9,
+    "totalReviewCount": 843
+  },
+  "pulledAt": "2026-11-16T05:42:54.849Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25reVdrRXdkV0ZtV0hBeGMzSnlhbXRJTlVRd05HYxAB",
+      "reviewer": "Diana C.",
+      "rating": 5,
+      "text": "Tony did a great job installing our Storm Door.",
+      "publishedAt": "2026-11-14T16:10:08.548Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25reVdrRXdkV0ZtV0hBeGMzSnlhbXRJTlVRd05HYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOnkyWkEwdWFmWHAxc3JyamtINUQwNGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GSFp6aFJkMkZMUW1NeFQwUlBlUzFxYWxwV1ZrRRAB",
+      "reviewer": "Sandra S.",
+      "rating": 5,
+      "text": "Have been doing business with Bushey’s well over 25 years and have always been very satisfied with their work from putting in replacement windows to new Doors and recently storm doors. Tony and Phil have been in the business a long time and it shows in their workmanship.",
+      "publishedAt": "2026-11-13T17:59:36.013Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GSFp6aFJkMkZMUW1NeFQwUlBlUzFxYWxwV1ZrRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOnFHZzhRd2FLQmMxT0RPeS1qalpWVkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kweWJYUnNUalUyTWxWYVNYVXRlVWRoUTAxb1lsRRAB",
+      "reviewer": "Rick L.",
+      "rating": 5,
+      "text": "John - Kole - Tyler came and installed a large window for us.  They were prompt, professional, courteous and did a good job of cleaning up afterwards.",
+      "publishedAt": "2026-11-11T15:02:15.345Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kweWJYUnNUalUyTWxWYVNYVXRlVWRoUTAxb1lsRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOi0ybXRsTjU2MlVaSXUteUdhQ01oYlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCcWFtaE1WbE50V1V4UldrTkpaMDF6UlhsNU5XYxAB",
+      "reviewer": "Joe O.",
+      "rating": 5,
+      "text": "Excellent windows, installation, service, and personable!",
+      "publishedAt": "2026-11-10T21:28:05.867Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCcWFtaE1WbE50V1V4UldrTkpaMDF6UlhsNU5XYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjBqamhMVlNtWUxRWkNJZ01zRXl5NWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0MFJ6UmhPVXhYVWtGSVRuVmhWMHQwTTA5dVMxRRAB",
+      "reviewer": "C G.",
+      "rating": 5,
+      "text": "This is the 4th time we have used Busheys to replace windows and doors. They meet their estimated date of installation, everything comes stained and finished and this last job, everything was cleaned up and looked good. We only had minor issues the 3rd time but they were resolved. We used a well known competitior also this year, and not great, and shows why Busheys is the better choice.",
+      "publishedAt": "2026-11-10T13:37:16.790Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0MFJ6UmhPVXhYVWtGSVRuVmhWMHQwTTA5dVMxRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkt0RzRhOUxXUkFITnVhV0t0M09uS1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21jdGREbHRTSGgwZVVaYVNUQkNOVFV5WDFOT09HYxAB",
+      "reviewer": "Alex P.",
+      "rating": 5,
+      "text": "Had a great experience from start to finish getting a new front door built and installed with Bushey's.  My sales rep, Jared, was detailed and helped answer all my questions, and the installers, Jack and Kole were extremely professional and detailed.  If you're in the Fort Wayne area and thinking of a new door, call Bushey's.",
+      "publishedAt": "2026-11-08T12:50:19.640Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21jdGREbHRTSGgwZVVaYVNUQkNOVFV5WDFOT09HYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmctdDltSHh0eUZaSTBCNTUyX1NOOGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21saVIzTllRbXN3TUZGQldqWjZZMUY1ZG1wbVVGRRAB",
+      "reviewer": "David K.",
+      "rating": 5,
+      "text": "I needed a storm door and its casing replaced.  Bushey's responded promptly to my request for a quote, which I found to be quite reasonable.  They sent a measurement technician to precisely determine the product dimensions.  It took about 4 or 5 weeks for the product to be delivered, and the Bushey's installer did a superb job.  He carefully aligned and tested the door mechanisms and took care to protect my property.  I am completely satisfied with the door and I highly recommend Bushey's for products and services such as those I required.",
+      "publishedAt": "2026-11-07T16:44:40.082Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21saVIzTllRbXN3TUZGQldqWjZZMUY1ZG1wbVVGRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmliR3NYQmswMFFBWjZ6Y1F5dmpmUFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5S1RtZENRV3hTUmxrM2RXbDVhVmhzWVhkeVozYxAB",
+      "reviewer": "Lance L.",
+      "rating": 5,
+      "text": "I was very pleased with the professionalism demonstrated by everyone at Bushey’s throughout this process.<br><br>The initial visit was low-pressure.  No gimmicks during the presentation.<br><br>The follow up visit to measure and order materials was very thorough.  This increased my confidence level that the project would likely go smoothly.<br><br>The in-house installation team (Eric and Nick) were top-notch.  They are clearly both skilled and knowledgeable.  They executed the installation with care and concern for my home.<br><br>I am confident that I made the best choice available by selecting Bushey’s for this project.",
+      "publishedAt": "2026-11-06T19:43:07.755Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5S1RtZENRV3hTUmxrM2RXbDVhVmhzWVhkeVozYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOk9KTmdCQWxSRlk3dWl5aVhsYXdyZ3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201WmJVZGpjRlpUT0V4VU1qVTJRMm95UzBsWk5IYxAB",
+      "reviewer": "Richard R.",
+      "rating": 5,
+      "text": "Jack, Archer, and Camden did a great job on our two windows. Would happily recommend.",
+      "publishedAt": "2026-11-05T19:55:43.047Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201WmJVZGpjRlpUT0V4VU1qVTJRMm95UzBsWk5IYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOm5ZbUdjcFZTOExUMjU2Q2oyS0lZNHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tJMlowVXdhM2wwUzFwNFIyUTRSRkZKTFY5V2NuYxAB",
+      "reviewer": "Beth G.",
+      "rating": 5,
+      "text": "We had Bushey replace our double front door a couple years ago and they did an excellent job. Recently, they replaced two windows. They are responsive, neat, and install quality products. I highly recommend Bushey for windows and doors.",
+      "publishedAt": "2026-10-31T19:20:16.046Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tJMlowVXdhM2wwUzFwNFIyUTRSRkZKTFY5V2NuYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkI2Z0Uwa3l0S1p4R2Q4RFFJLV9Wcnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSVVpGOVhORGxDWm0wMFJUZFNMVnBUZDBSbmVGRRAB",
+      "reviewer": "Tina W.",
+      "rating": 5,
+      "text": "Jack, Kole, Elijah and Phil.  They all did a great job installing our windows and doors.   I would highly recommend Bushey’s for quality and workmanship and most importantly the price was very reasonable.",
+      "publishedAt": "2026-10-29T21:28:18.149Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSVVpGOVhORGxDWm0wMFJUZFNMVnBUZDBSbmVGRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjRUZF9XNDlCZm00RTdSLVpTd0RneFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWTVNtdEpaVWxaU21jNGMwVmZjMjExZEZOaWRWRRAB",
+      "reviewer": "Sue C.",
+      "rating": 5,
+      "text": "John Kole and Eli did a great job!",
+      "publishedAt": "2026-10-27T21:56:27.647Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWTVNtdEpaVWxaU21jNGMwVmZjMjExZEZOaWRWRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlVMSmtJZUlZSmc4c0Vfc211dFNidVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wQlRIZHNkRXBOZG5aUmNESnlTakozWlZCaWNrRRAB",
+      "reviewer": "Jason",
+      "rating": 5,
+      "text": "Phil, Tony and Nick thank you for the very professional job on the new windows.",
+      "publishedAt": "2026-10-27T11:53:14.070Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wQlRIZHNkRXBOZG5aUmNESnlTakozWlZCaWNrRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmpBTHdsdEpNdnZRcDJySjJ3ZVBickE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21jNGNHeG9jMDFSZUhoZmJrRlBUVFp2UmsxclUyYxAB",
+      "reviewer": "Andrew L.",
+      "rating": 5,
+      "text": "My mom hired Bushey’s to replace 3 windows. She was very happy with the work!!  John, Kole and Eli did a great job.  They were very respectful of my mom’s home and were great to work with.  She would use them again.",
+      "publishedAt": "2026-10-22T14:25:17.873Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21jNGNHeG9jMDFSZUhoZmJrRlBUVFp2UmsxclUyYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmc4cGxoc01ReHhfbkFPTTZvRk1rU2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT200eWNucEVjWEIyU0VwYVYxVjVUVk5EYm1sQk5uYxAB",
+      "reviewer": "Marsha W.",
+      "rating": 5,
+      "text": "Chris, Zach, and Autumn were great. They were extremely professional, knowledgeable, and skilled. We highly recommend Bushey’s.",
+      "publishedAt": "2026-10-21T18:08:52.272Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT200eWNucEVjWEIyU0VwYVYxVjVUVk5EYm1sQk5uYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOm4ycnpEcXB2SEpaV1V5TVNDbmlBNnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25oMVl6UkJhVjlsT0drNWRXSlZWRlpsYVRKcU9VRRAB",
+      "reviewer": "Karin K.",
+      "rating": 5,
+      "text": "Tony and Phil did an awesome job installing our new storm door. We appreciate their experience and expertise. They also had great attention to detail and were very kind.",
+      "publishedAt": "2026-10-21T13:56:51.124Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oMVl6UkJhVjlsT0drNWRXSlZWRlpsYVRKcU9VRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOnh1YzRBaV9lOGk5dWJVVFZlaTJqOUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5UlVucGhObU4yVlVzNFVVMUtPRWN6UzBoSGRWRRAB",
+      "reviewer": "Robert A.",
+      "rating": 5,
+      "text": "Very good quality and professional installation",
+      "publishedAt": "2026-10-19T16:23:43.938Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5UlVucGhObU4yVlVzNFVVMUtPRWN6UzBoSGRWRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOl9RUnphNmN2VUs4UU1KOEczS0hHdVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKMFIzZERjRU5YTVVGRVgxVjZZVWx2UkhsalpWRRAB",
+      "reviewer": "Tina G.",
+      "rating": 5,
+      "text": "EXCELLENT SERVICE and WONDERFUL PRODUCT!  We just had an oversized sliding glass door installed (Marvin door) by Bushey's, and we cannot thank Bushey's enough for the excellent customer service!  Jack, Tyler, Archer, Kole and Eli, all of you were absolutely the BEST!  They were polite, they called to let us know they were on their way, they were professional, and did excellent work, painted our trim and were good, honest guys.  We wanted a good job, no problems with professional men who are honest and decent, and Jack, Tyler, Archer, Kole and Eli did not disappoint.  Thank you, guys!  We hope to have you back to do more work!",
+      "publishedAt": "2026-10-19T02:57:18.068Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKMFIzZERjRU5YTVVGRVgxVjZZVWx2UkhsalpWRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkJ0R3dDcENXMUFEX1V6YUlvRHljZVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCNE5UTmFlVGt3TnpZeFUwRTJaV2xJUlc1dlVrRRAB",
+      "reviewer": "Sean S.",
+      "rating": 5,
+      "text": "After numerous estimates for windows and a storm door we choose Bushey's. Now, they weren't the most expensive or the cheapest. We just liked how they presented themselves, the scheduling of the estimate and overall performance of how long it took them to put the window and storm door in, (it was even raining at points during installment). The installers (John, Kole, Zach and Phil) did an amazing job with major issues. They arrived around 8:15 a.m. and by 11 were already done and gone. Great Job to the Bushey's team and I'll be using them again in the future.  WELL DONE...",
+      "publishedAt": "2026-10-17T21:32:28.403Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCNE5UTmFlVGt3TnpZeFUwRTJaV2xJUlc1dlVrRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlB4NTNaeTkwNzYxU0E2ZWlIRW5vUkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKMmNDMVpaVTFuWmpWWWRtRTVTVkpKV21GZlRIYxAB",
+      "reviewer": "Lynn H.",
+      "rating": 5,
+      "text": "Excellent installation work by Phil. He was efficient, thorough and friendly. Would highly recommend Bushey’s Windows and Doors to others.",
+      "publishedAt": "2026-10-15T20:55:45.962Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKMmNDMVpaVTFuWmpWWWRtRTVTVkpKV21GZlRIYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlJ2cC1ZZU1nZjVYdmE5SVJJWmFfTHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGS1RubExOVmQxU2xaSmFWWlRNRFJxZUVkelJWRRAB",
+      "reviewer": "Tony",
+      "rating": 5,
+      "text": "The purchase thru install by Bushey’s was fantastic. The install team was on time every day and communicated their plan and executed exactly as they said, finishing early. Jared on sales, John, Kole, Eric, Nick on install. Highly recommend!",
+      "publishedAt": "2026-10-15T17:33:03.362Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGS1RubExOVmQxU2xaSmFWWlRNRFJxZUVkelJWRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjFKTnlLNVd1SlZJaVZTMDRqeEdzRVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kYVVFODRWRFF5TkdGbFJEZE1ia3BXT1hkd1YzYxAB",
+      "reviewer": "Rhonda S.",
+      "rating": 5,
+      "text": "Friendly staff",
+      "publishedAt": "2026-10-14T19:31:10.762Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kYVVFODRWRFF5TkdGbFJEZE1ia3BXT1hkd1YzYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOndaUE84VDQyNGFlRDdMbkpWOXdwV3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2padmFVSndMWEE0VldGNlRsRTVkMlpyUTJaaWJGRRAB",
+      "reviewer": "Mark R.",
+      "rating": 5,
+      "text": "The team did a great job.  All the way from Jared, who did the initial sale, to the install crew led by Chris.  Other install team members were Cole, Eric, Autumn and Phil.  Thanks",
+      "publishedAt": "2026-10-13T18:32:15.813Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2padmFVSndMWEE0VldGNlRsRTVkMlpyUTJaaWJGRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjZvaUJwLXA4VWF6TlE5d2ZrQ2ZibFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kWlZ6aHJaMFJZVUZVMVUweFRMVjh5TkVKYWRrRRAB",
+      "reviewer": "Nicole U.",
+      "rating": 5,
+      "text": "Very professional and thorough! Timely",
+      "publishedAt": "2026-10-12T18:38:00.499Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kWlZ6aHJaMFJZVUZVMVUweFRMVjh5TkVKYWRrRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmdZVzhrZ0RYUFU1U0xTLV8yNEJadkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT204MVRVUlZOVWxoZG1KeFpsRmFhM05xVFc4dGRVRRAB",
+      "reviewer": "Don F.",
+      "rating": 5,
+      "text": "Replaced 5 windows in one day. I had to take down the blinds and curtains. Inside trim was already stained to match the woodwork. The guys were friendly and efficient. Would highly recommend Bushey’s",
+      "publishedAt": "2026-10-12T18:18:21.433Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT204MVRVUlZOVWxoZG1KeFpsRmFhM05xVFc4dGRVRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOm81TURVNUlhdmJxZlFaa3NqTW8tdUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKWFYwUlphM3AxTm1aSVpHZGlPWEZQTFcxeFdXYxAB",
+      "reviewer": "Cheri G.",
+      "rating": 5,
+      "text": "Phil did an excellent job installing our storm door. He was very thorough and paid attention to detail.",
+      "publishedAt": "2026-10-10T16:09:08.893Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKWFYwUlphM3AxTm1aSVpHZGlPWEZQTFcxeFdXYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkJXV0RZa3p1NmZIZGdiOXFPLW1xWWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsWWEzVTNiMjVJY25OV1YyMWxVWGhzUzNKd2FrRRAB",
+      "reviewer": "Grace K.",
+      "rating": 5,
+      "text": "Chris, Autumn, Eli, and Kole were awesome installing our windows today! We've had Bushey's install all of the windows and doors in our home over the past 5 years. They do such a great job communicating and cleaning up when they're finished. We couldn't be happier with them, or the Infinity by Marvin fiberglass windows! Glad we did our research in comparing them to vinyl products that don't last very long.",
+      "publishedAt": "2026-10-09T22:26:35.243Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsWWEzVTNiMjVJY25OV1YyMWxVWGhzUzNKd2FrRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOllYa3U3b25IcnNWV21lUXhsS3JwakE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT205ZlJITkRialp2ZEdOQmFHRm5XakpLZUdWeGJXYxAB",
+      "reviewer": "claudette M.",
+      "rating": 5,
+      "text": "Jon and Cole did a great job installing our new patio door.  They were very conscientious and left everything tidy.   Awesome service!",
+      "publishedAt": "2026-10-08T19:04:03.482Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205ZlJITkRialp2ZEdOQmFHRm5XakpLZUdWeGJXYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOm9fRHNDbjZvdGNBaGFnWjJKeGVxbWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wV1RGaFZXRU14UkZWVE5reDJaVmt6ZWxWeU1sRRAB",
+      "reviewer": "C. H.",
+      "rating": 5,
+      "text": "Tony and Cam did a great job installing my storm door. They were professional and courteous. I’m very happy with the service and quality of work.",
+      "publishedAt": "2026-10-05T17:38:03.158Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wV1RGaFZXRU14UkZWVE5reDJaVmt6ZWxWeU1sRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmpWTFhVWEMxRFVTNkx2ZVkzelVyMlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaZlVsazJRakZYWTBVMlFXdG9XWEZ2U0hZNExWRRAB",
+      "reviewer": "B L.",
+      "rating": 4,
+      "text": "Not without hiccups but the end product looks wonderful. My main installers John and Kole went out of their way to help and make things go smoother. All the installers that were in addition to them that were in and out on the last 2 days were also great. Love the new front door, slider and black trim.",
+      "publishedAt": "2026-10-03T19:55:50.087Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaZlVsazJRakZYWTBVMlFXdG9XWEZ2U0hZNExWRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlZfUlk2QjFXY0U2QWtoWXFvSHY4LVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2twM1NGSjJMVUl3ZURaVmRESTNXREkxVDBwMFpHYxAB",
+      "reviewer": "Bob L.",
+      "rating": 5,
+      "text": "John and Kole were an awesome team! They made sure that the windows were just what we wanted. Thanks so much!!!",
+      "publishedAt": "2026-10-03T16:40:24.738Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twM1NGSjJMVUl3ZURaVmRESTNXREkxVDBwMFpHYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkp3SFJ2LUIweDZVdDI3WDI1T0p0ZGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5MGRFaHhSMFJ5YjJGVmFXZzNlRmRIT1Vsd2NFRRAB",
+      "reviewer": "sharon H.",
+      "rating": 5,
+      "text": "John, Eli, and DJ installed windows today.  There were some challenges and John made the necessary adjustments for a successful installation.   The windows and the interior trim look great!  Thank you!",
+      "publishedAt": "2026-10-01T03:00:03.676Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5MGRFaHhSMFJ5YjJGVmFXZzNlRmRIT1Vsd2NFRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOk90dEhxR0Ryb2FVaWg3eFdHOUlwcEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21Kak5YaENkbmR4YTFkUmFUWmpSVzVLWjAxVGFuYxAB",
+      "reviewer": "Scott K.",
+      "rating": 5,
+      "text": "​I recently had Infinity by Marvin windows installed by Bushey's Window & Door, and I am extremely satisfied with the results. The installation crew—John, Kole, and Eli—did a fantastic job from start to finish. They were highly professional, completed the project exactly on time, and took incredible care with my home during the entire installation process. The new windows look outstanding, and the team's attention to detail was top-notch. I highly recommend them to anyone looking for a seamless window upgrade.",
+      "publishedAt": "2026-09-29T23:15:42.932Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Kak5YaENkbmR4YTFkUmFUWmpSVzVLWjAxVGFuYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmJjNXhCdndxa1dRaTZjRW5KZ01Tanc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCUGNXaHlVM0ZyTmkxa1YzQnphMHgxV1hsdk5IYxAB",
+      "reviewer": "Steph G.",
+      "rating": 5,
+      "text": "Bushey's replaced 3 doors for us that were challenging sizes and situations. Phil did an outstanding job. He found solutions to unique issues and left everything looking great while remaining pleasant and professional when the job was not an easy one. Thanks, Phil! Thanks, Bushey's!",
+      "publishedAt": "2026-09-22T13:15:50.093Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCUGNXaHlVM0ZyTmkxa1YzQnphMHgxV1hsdk5IYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjBPcWhyU3FrNi1kV3Bza0x1WXlvNHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WbGNtaHBiemd0TVRWZlZqUnlNMlZxT0Rjd01GRRAB",
+      "reviewer": "Michelle B.",
+      "rating": 5,
+      "text": "We were thrilled with our window purchase! Brian was awesome to work with. He explained things so clearly and answered all of our many questions. Jeff and his team of installers were EXCELLENT! They took great care with installing the new windows and removing the old ones. We highly recommend Bushey's!",
+      "publishedAt": "2026-09-21T13:31:38.846Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WbGNtaHBiemd0TVRWZlZqUnlNMlZxT0Rjd01GRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOnVlcmhpbzgtMTVfVjRyM2VqODcwMFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25FdE5pMXNWVk16ZVZNNVVsSXdNelEzVTFWb1gwRRAB",
+      "reviewer": "phil B.",
+      "rating": 5,
+      "text": "Very professional installers. They were able to have our plantation shutters removed and reinstalled without issue where others that quoted us were struggling to figure out how to do this work. The windows are great. Well done.",
+      "publishedAt": "2026-09-19T16:06:26.780Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25FdE5pMXNWVk16ZVZNNVVsSXdNelEzVTFWb1gwRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOnEtNi1sVVMzeVM5UlIwMzQ3U1VoX0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25aalFYTldRakI1YmxOcGJIWm1kMmhWY0RWcVpWRRAB",
+      "reviewer": "Cheryl A.",
+      "rating": 5,
+      "text": "Great windows and exceptional installation. I can't say enough about the crew that installed our windows; they were great!",
+      "publishedAt": "2026-09-15T12:14:03.357Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aalFYTldRakI1YmxOcGJIWm1kMmhWY0RWcVpWRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOnZjQXNWQjB5blNpbHZmd2hVcDVqZVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25weWRHaEtZVTlyU0c1UWRXcHpkMlpqTVRONmJrRRAB",
+      "reviewer": "Margaret L.",
+      "rating": 5,
+      "text": "The lnstallation of Marvin Patio Doors was  very smooth from Brian's quote to the installation by Jon, Zach and Eli. They were very professional and efficient,  arriving on time and cleaning up. Love the new Doors. I highly recommend Bushy!",
+      "publishedAt": "2026-09-13T18:54:07.650Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25weWRHaEtZVTlyU0c1UWRXcHpkMlpqTVRONmJrRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOnpydGhKYU9rSG5QdWpzd2ZjMTN6bkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKWFZWUjZPRmM0V0VSWWNYUk9lbnAxUzFGR1YwRRAB",
+      "reviewer": "Tami B.",
+      "rating": 5,
+      "text": "Windows were replace on the front of our house the end of August and I cannot say enough about how beautiful they are and what a nice job Jon and Zach did on the install. They are professionals and the windows are high quality I will be using them again next spring. I highly recommend!",
+      "publishedAt": "2026-09-12T23:37:28.057Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKWFZWUjZPRmM0V0VSWWNYUk9lbnAxUzFGR1YwRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlJXVVR6OFc4WERYcXROenp1S1FGV0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKeWRIbEhNMjFuZFhGVGRTMHhaMWxmVHpSbE1WRRAB",
+      "reviewer": "Shana F.",
+      "rating": 5,
+      "text": "Jared was great as he came out and explained what made their window replacements different than average replacement windows. The installers, Nick and Eric, also did a great job!! From start to finish, we were very pleased with our service and the product. We had multiple companies quote us and feel like Busheys was comparable and offers an excellent warranty. We would highly recommend them!!",
+      "publishedAt": "2026-09-12T19:23:01.124Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKeWRIbEhNMjFuZFhGVGRTMHhaMWxmVHpSbE1WRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlJydHlHM21ndXFTdS0xZ1lfTzRlMVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pjeGFHVTBhWFp1UmxnMlgzVlNiaTFTZHpGSlNYYxAB",
+      "reviewer": "Kathy A.",
+      "rating": 5,
+      "text": "Phil did an excellent job. We are very happy.",
+      "publishedAt": "2026-09-10T22:26:08.361Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pjeGFHVTBhWFp1UmxnMlgzVlNiaTFTZHpGSlNYYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjcxaGU0aXZuRlg2X3VSbi1SdzFJSXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNvNXVTMUtBEAE",
+      "reviewer": "Kelly S.",
+      "rating": 5,
+      "text": "Amazing quality and craftsmanship. Customer service as good as it gets. I wouldn’t hesitate to recommend them to anyone.",
+      "publishedAt": "2026-09-05T19:09:10.479Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvNXVTMUtBEAE!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CIHM0ogKEICAgICo5uS1KA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poQlJ6UnNabmhrZFdKMll6RlFRM1ZMZEcxNlMzYxAB",
+      "reviewer": "Paul C.",
+      "rating": 5,
+      "text": "Simply the best! Chris and his crew were awesome from start to finish and we couldn't be happier with the windows. Bushey's is the only window installer you should be be considering!",
+      "publishedAt": "2026-09-04T00:34:23.587Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poQlJ6UnNabmhrZFdKMll6RlFRM1ZMZEcxNlMzYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjhBRzRsZnhkdWJ2YzFQQ3VLdG16S3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xvME4wZHRNMWxZVHpSdlIySjJUV1pQU2xkWk1VRRAB",
+      "reviewer": "Stanford T.",
+      "rating": 5,
+      "text": "VERY SMOOTH OPERATION FROM SELECTION, TO MEASUREMENT, TO QUOTE, TO ORDER, TO DELIVERY, AND INSTALLATION == VERY SEAMLESS AND PROFESSIONAL EXPERIENCE  👌🏻",
+      "publishedAt": "2026-09-02T22:22:41.574Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xvME4wZHRNMWxZVHpSdlIySjJUV1pQU2xkWk1VRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlo0N0dtM1lYTzRvR2J2TWZPSldZMUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pOSFkwaGZkMVk0U1Y5WmJWaHJWRmRRTTBaZlRVRRAB",
+      "reviewer": "Sherry A.",
+      "rating": 5,
+      "text": "Great window!!! Great crew that put it in!!!",
+      "publishedAt": "2026-09-02T19:34:10.553Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pOSFkwaGZkMVk0U1Y5WmJWaHJWRmRRTTBaZlRVRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjNHY0hfd1Y4SV9ZbVhrVFdQM0ZfTUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCSFJEZHRiamRZWm14b00xWnFiWHBoWjI5c1QwRRAB",
+      "reviewer": "Jean K.",
+      "rating": 5,
+      "text": "The window installation went perfect.  The installers were on time, worked efficiently and once they left, there was no evidence they were ever there except for the new window!",
+      "publishedAt": "2026-09-02T16:20:47.170Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCSFJEZHRiamRZWm14b00xWnFiWHBoWjI5c1QwRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjBHRDdtbjdYZmxoM1ZqbXphZ29sT0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tkd1JGUndSMGRxWlc5T1FVaFZUUzFLWVZocGJXYxAB",
+      "reviewer": "Linda S.",
+      "rating": 5,
+      "text": "Busheys installed a new storm door for me.  It has a screen that slides down from the top.  There is no more carrying a heavy glass to install in the spring and fall.  It is a self storing screen.  The door is very strong & looks great",
+      "publishedAt": "2026-09-01T19:15:56.063Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkd1JGUndSMGRxWlc5T1FVaFZUUzFLWVZocGJXYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkdwRFRwR0dqZW9OQUhVTS1KYVhpbWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURKbjctNVJ3EAE",
+      "reviewer": "Michael M.",
+      "rating": 5,
+      "text": "Very happy with the sales team and the installation team.  Very professional organization.  Eric, Kole, Nick and Cam did a great job with the installation!",
+      "publishedAt": "2026-08-31T18:04:09.098Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKbjctNVJ3EAE!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CIHM0ogKEICAgIDJn7-5Rw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCc1dqWm5PVTFvTkRKVFEyWTJkWGRYTURONmJHYxAB",
+      "reviewer": "Cristin B.",
+      "rating": 5,
+      "text": "Be prepared for a company that knows their products, their value, doesn't need to have \"special sale prices\" only good while at my house, or hard pushy sales pitches. Their integrity, knowledge of the area and what is needed here versus other parts of the country, and professionalism really stands out. Install was smooth and easy with minor issues handled quickly. After meeting with everyone else, I am so glad I was referred to them!",
+      "publishedAt": "2026-08-31T15:34:33.599Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCc1dqWm5PVTFvTkRKVFEyWTJkWGRYTURONmJHYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjBsWjZnOU1oNDJTQ2Y2dXdXMDN6bGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxMlZYUmlSVmg1TnpkblVFZFdhbmQ0V2tOVU9WRRAB",
+      "reviewer": "Perry S.",
+      "rating": 5,
+      "text": "We had 29 windows replaced in our home, their staff did treat our home as their own. Project lasted about 8 days but they left our home clean each day.",
+      "publishedAt": "2026-08-29T15:11:55.079Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxMlZYUmlSVmg1TnpkblVFZFdhbmQ0V2tOVU9WRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOi12VXRiRVh5NzdnUEdWand4WkNUOVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214U2MzZzFYMjFQUlRoNlFUWk5jMnBzTFhGTlgzYxAB",
+      "reviewer": "Steve H.",
+      "rating": 5,
+      "text": "Just wanted to thank PHIL with Busheys for the quality installation of our storm door. He was on time, polite and very knowledgeable. Busheys always provides quality products and service.",
+      "publishedAt": "2026-08-28T17:46:06.906Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214U2MzZzFYMjFQUlRoNlFUWk5jMnBzTFhGTlgzYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmxSc3g1X21PRTh6QTZNc2psLXFNX3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pBdFRIUk9TR3hGVGxCZlp6TldNMU5XWVMxTE5YYxAB",
+      "reviewer": "Stephanie R.",
+      "rating": 5,
+      "text": "Great product, great service and installation! Phil and Tony did a great job!",
+      "publishedAt": "2026-08-28T15:47:24.427Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pBdFRIUk9TR3hGVGxCZlp6TldNMU5XWVMxTE5YYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjAtTHROSGxFTlBfZzNWM1NWYS1LNXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214UlNEVkdSMTlOYjFRMmVIRm5SVk0xUXpBMWJYYxAB",
+      "reviewer": "Kyle F.",
+      "rating": 5,
+      "text": "We recently had a majority of our windows replaced with Marvin ones. Eric and Nick did a phenomenal job. They were cordial and courteous. They sealed up everything outside well and even rebuilt all the interior window boxes and interior trim surrounding them. The fit and finish is amazing! Definitely 5 star effort and workmanship. We would definitely recommend these guys. Great job!",
+      "publishedAt": "2026-08-28T13:26:05.927Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214UlNEVkdSMTlOYjFRMmVIRm5SVk0xUXpBMWJYYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmxRSDVGR19Nb1Q2eHFnRVM1QzA1bXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGMmVHUnVRbXRTY0hOcVdXOXVjbUpZVjBORmJIYxAB",
+      "reviewer": "Sherri H.",
+      "rating": 5,
+      "text": "Bushey's is a great company to work with. From the beginning they kept me informed about the patio door order I placed with them.<br>The team that installed the patio door was fantastic.  They stayed focused and worked great together. They cleaned everything up afterwards before leaving.<br>Bushey's will be who to call for my next project too.",
+      "publishedAt": "2026-08-26T16:12:44.903Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGMmVHUnVRbXRTY0hOcVdXOXVjbUpZVjBORmJIYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkF2eGRuQmtScHNqWW9ucmJYV0NFbHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxSldVa3RiVEZSUTFkU00zQnJWVUpzZEVJeVJtYxAB",
+      "reviewer": "William S.",
+      "rating": 5,
+      "text": "We just wrapped up a whole house “full window” replacement project using Bushey’s and the crew of Chris, Cole, and Eli.<br>The guys did a GREAT job with entire process and answered all of my questions as the job progressed.<br>The EverWood interior stained wood grain finish matched perfectly with the rest of the house trim and are we are very pleased with the final results.<br>When we first started the search for a window provider, we looked at the quality of their products at our neighbors place and were sold at that point.  We would recommend the use of Bushey’s to anyone looking to make a remodeling change in their home.",
+      "publishedAt": "2026-08-23T11:23:40.387Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxSldVa3RiVEZSUTFkU00zQnJWVUpzZEVJeVJtYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOi1JWUktbTFRQ1dSM3BrVUJsdEIyRmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2paR1luQndjRm8wWDBsV2IwWnBjakp4UTB4MVpWRRAB",
+      "reviewer": "HOPE B.",
+      "rating": 5,
+      "text": "I had no idea what to expect when I scheduled a complete window replacement.  Bushey's knowledgeable staff, professionalism and patience made the entire experience painless and educational.  Specifically, Jon was exceptional.  He went above and beyond.  Zach and Eli were also great.  Bushey's stellar reputation is well-deserved.  I am very thankful I went with them.",
+      "publishedAt": "2026-08-23T00:57:23.517Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paR1luQndjRm8wWDBsV2IwWnBjakp4UTB4MVpWRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjZGYnBwcFo0X0lWb0ZpcjJxQ0x1ZVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2padFRGVXhkamRKTjBWRWEwNUJVa1p0TFZndFQzYxAB",
+      "reviewer": "Susie B.",
+      "rating": 5,
+      "text": "We are very pleased with our new windows and sliding glass door!",
+      "publishedAt": "2026-08-22T17:15:34.748Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2padFRGVXhkamRKTjBWRWEwNUJVa1p0TFZndFQzYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjZtTFUxdjdJN0VEa05BUkZtLVgtT3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCeVJIRlNhek0wVW5seVUwMUxkWEJGUmxaaGRVRRAB",
+      "reviewer": "Nancy T.",
+      "rating": 5,
+      "text": "Tony was on time and workmanship was excellent! This is why we have used Bushey's for so many years.",
+      "publishedAt": "2026-08-17T17:07:25.387Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCeVJIRlNhek0wVW5seVUwMUxkWEJGUmxaaGRVRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjByRHFSazM0UnlyU01LdXBFRlZhdUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pZMVYxaFZXSG90VEZsWlJXUkRiMGhsVDNkMldsRRAB",
+      "reviewer": "Daniel Q.",
+      "rating": 5,
+      "text": "The whole experience of working with Busheys was great from Jared who came in and didn't waste my time. He had a reasonable quote with no pressure in in 30 mins. The installation team was great as well Jon,  Zach , and Nik did an amazing job and made sure to show and answer my questions.<br><br>If your going to get windows I strongly recommend them , dont waste your time on people who ask when both spouse will be home as from experience  its not a quote but a sales pitch and 2 hrs of your life wasted beyond the astronomical quote price.",
+      "publishedAt": "2026-08-08T12:16:37.554Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pZMVYxaFZXSG90VEZsWlJXUkRiMGhsVDNkMldsRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjY1V1hVWHotTFlZRWRDb0hlT3d2WlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkb1ppMUVRemhyWWxVNFUzQjRUamN3TXpRMWVrRRAB",
+      "reviewer": "Todd F.",
+      "rating": 5,
+      "text": "Great, tiely service . . . As Always!  I can always trust your technicians and sales team to do an accurate, precise job!  Thanks for all the work!",
+      "publishedAt": "2026-08-05T19:49:48.919Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkb1ppMUVRemhyWWxVNFUzQjRUamN3TXpRMWVrRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOldoZi1EQzhrYlU4U3B4TjcwMzQ1ekE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OemNETkJkbGhIVVMxWGNqTk1WRnBSYVdadmFFRRAB",
+      "reviewer": "Stephanie R.",
+      "rating": 5,
+      "text": "We had a screen door replaced. Great quality, installers made it fit and close perfectly. Phil and Tony were on time and  professional and communicated well.They also cleaned up when finished.",
+      "publishedAt": "2026-08-04T17:02:20.948Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OemNETkJkbGhIVVMxWGNqTk1WRnBSYVdadmFFRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOnNzcDNBdlhHUS1XcjNMVFpRaWZvaEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21rMVJHcHRaR1o0VldaNFJtUTNTRmh4WVRKZlJIYxAB",
+      "reviewer": "A O.",
+      "rating": 5,
+      "text": "Added two Provia storm doors.  They are beautiful and Phil did an excellent job with installation. I highly recommend!",
+      "publishedAt": "2026-08-03T20:16:23.230Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21rMVJHcHRaR1o0VldaNFJtUTNTRmh4WVRKZlJIYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmk1RGptZGZ4VWZ4RmQ3SFhxYTJfRHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201Q1pHazJkV1JFY1ZoVWRucEtMV1kyV0VWd1JtYxAB",
+      "reviewer": "Daniel W.",
+      "rating": 5,
+      "text": "The entire Busheys team was great to work with. From Brian in sales through John, Kole, Cam, Chris, Cole, and Elyah on the installation team, the experience was seamless and easy to get through.  I highly recommend Busheys for your window and door project!",
+      "publishedAt": "2026-08-02T19:07:55.734Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201Q1pHazJkV1JFY1ZoVWRucEtMV1kyV0VWd1JtYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOm5CZGk2dWREcVhUdnpKLWY2WEVwRmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCelJtOTBSMGREYzJaSmRrMWpWbVptVFd0VFUxRRAB",
+      "reviewer": "Joann M.",
+      "rating": 5,
+      "text": "Estimate and Installation were great! Very conscientious about the quality of their product and workmanship. Highly recommend!",
+      "publishedAt": "2026-08-01T18:45:32.377Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCelJtOTBSMGREYzJaSmRrMWpWbVptVFd0VFUxRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlBzRm90R0dDc2ZJdk1jVmZmTWtTU1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25Sd0xXZGpibmhUUkZCblNEQkxNREV5Tm01UlVFRRAB",
+      "reviewer": "Heather K.",
+      "rating": 5,
+      "text": "We had replacement Marvin windows and an exterior door installed on 7/14/26.  We absolutely love them so far.   The guys that did the work, Cole, Chris and Eli were very professional and did a great job.  I would highly recommend them.",
+      "publishedAt": "2026-07-28T14:32:27.018Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Sd0xXZGpibmhUUkZCblNEQkxNREV5Tm01UlVFRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOnRwLWdjbnhTRFBnSDBLMDEyNm5RUEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWMFRVaDBZbWx0TFdkd2JuWmFNRGRTZFVvdGQyYxAB",
+      "reviewer": "Rene M.",
+      "rating": 5,
+      "text": "We are more than happy with our new front door, it is beautiful and it is everything we wanted it to be! From the salesman, Jared, to the installers, John, Kole and Cam, they all did a great job, they were all very kind and  courteous and very meticulous about the job they did for us! We couldn’t be happier with our experience with Bushey’s!",
+      "publishedAt": "2026-07-24T14:17:28.008Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWMFRVaDBZbWx0TFdkd2JuWmFNRGRTZFVvdGQyYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkV0TUh0YmltLWdwbnZaMDdSdUotd2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pac2RYcHFSVk5MU0VSVlMyTmhSbE14V1hkZmFIYxAB",
+      "reviewer": "Randi B.",
+      "rating": 5,
+      "text": "7/20/26 -7/21/26<br>We had three fine young installers who did a fantastic job on our windows and sliding back door.<br>Jack, Cristian and Autumn clearly knew how to do great work, clean up afterwards and explain the paperwork to us.<br>We recommend them highly for any Bushey's project!<br>Dave and Randi Boyd",
+      "publishedAt": "2026-07-21T16:50:19.183Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pac2RYcHFSVk5MU0VSVlMyTmhSbE14V1hkZmFIYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOjZsdXpqRVNLSERVS2NhRlMxWXdfaHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xZNVRUaE5Ra3htVVZaV1dVTnNTMmxQZDA1c2FsRRAB",
+      "reviewer": "Susan K.",
+      "rating": 5,
+      "text": "18 years ago Bushey's turned my screened-in porch to a 4 season room for me<br>Today, 18 years later, my patio door wouldn't lock. I called Bushey's and told them about the lock. Within an hour they had someone out to my house to fix it. No charge. Who does that? I'll definitely be contacting them for new windows when I need them! I cannot thank them enough! That is a shining example of wonderful customer service!",
+      "publishedAt": "2026-07-21T00:49:53.093Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xZNVRUaE5Ra3htVVZaV1dVTnNTMmxQZDA1c2FsRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlY5TThNQkxmUVZWWUNsS2lPd05salE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGa1FtRnNWSEZwWkRSc2VFUm1SbVZhY0VKbFJHYxAB",
+      "reviewer": "lori W.",
+      "rating": 5,
+      "text": "Carson, Michael, and Elijah installed a couple of windows for us today. They were professional, courteous and performed the job well and quickly. We've always used Bushey's for our doors and windows and appreciate their attention to detail and their follow up if ever needed regardless of the time lapse.",
+      "publishedAt": "2026-07-20T18:21:55.128Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGa1FtRnNWSEZwWkRSc2VFUm1SbVZhY0VKbFJHYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkFkQmFsVHFpZDRseERmRmVacEJlRGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSQ2VqaERaSGROU3pkV09YSkVhbWR1VkhwV1NXYxAB",
+      "reviewer": "Kim R.",
+      "rating": 5,
+      "text": "We could not be happier with our decision to have our old windows replaced by Bushey's.  From the first consultation, we knew we would be dealing with a professional local business that would provide a top-quality product and stand by it.  Jeff Bushey is exactly the kind of person you always hope to do business with.  We had teams of installers who took genuine pride in their work and made sure everything was done perfectly. Special gratitude to Cole who was so eager to go out of his way to be extra helpful with anything we asked, and shout outs to John and his team (Cam & Cole), Jack and his team (Christian and Autumn) and Tony, who wouldn't stop until perfection was achieved.  We would recommend you all 100x over.",
+      "publishedAt": "2026-07-18T18:11:49.647Z",
+      "ownerResponse": "Kim, Thank you for the kind words. We enjoyed working for you and your family!  Jim Bushey",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSQ2VqaERaSGROU3pkV09YSkVhbWR1VkhwV1NXYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkRCejhDZHdNSzdWOXJEamduVHpWSWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKb1ZGTldSMUJLTFhONFZsTTJXV2hTU1hGNlJHYxAB",
+      "reviewer": "Bev K.",
+      "rating": 5,
+      "text": "We couldn’t be happier with our experience. The crew’s cleanliness each day was greatly appreciated, even though it was more than we expected. Our new windows and doors look fantastic and completely met our expectations.<br><br>The price was more than competitive, making the decision even easier. The craftsmanship on the casework around the windows and door was exceptional and really showcased the quality of the installation.<br><br>A special thank you to our salesman, Jared, who truly put the customer first throughout the entire process. His professionalism, honesty, and commitment to making sure we were satisfied made all the difference. We highly recommend this company to anyone considering new windows and doors.",
+      "publishedAt": "2026-07-17T22:51:51.653Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKb1ZGTldSMUJLTFhONFZsTTJXV2hTU1hGNlJHYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlJoVFNWR1BKLXN4VlM2WWhSSXF6RGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21Gb1dWSTFkM2hEU2xoU1YyVXhVRE5FUjJ0WVNHYxAB",
+      "reviewer": "Cathy B.",
+      "rating": 5,
+      "text": "Had a replacement storm door installed with the trim etc .... Looks amazing, works amazing . Phil did a great job and in a timely manner. Thank you. Love my Bushey doors.",
+      "publishedAt": "2026-07-15T20:45:19.824Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Gb1dWSTFkM2hEU2xoU1YyVXhVRE5FUjJ0WVNHYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOmFoWVI1d3hDSlhSV2UxUDNER2tYSGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xOWlIycDBMV0paZVdJeE1FdHBRelpzVkdWRVRYYxAB",
+      "reviewer": "Beverly M.",
+      "rating": 5,
+      "text": "John, kole, Elijah did a wonderful job installing my windows. They did a thorough job at being organized with their duties. Thank you Beverly.",
+      "publishedAt": "2026-07-12T15:03:12.982Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOWlIycDBMV0paZVdJeE1FdHBRelpzVkdWRVRYYxAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOlNZR2p0LWJZeWIxMEtpQzZsVGVETXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2todWFGQkVOVkJyVjJVMFJ6UlBUa1ZZYkVWbmFGRRAB",
+      "reviewer": "Bruce S.",
+      "rating": 5,
+      "text": "Forgot to mention in our review the awesome installers Phil and Kole.  They were AWESOME!",
+      "publishedAt": "2026-07-11T16:06:28.687Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2todWFGQkVOVkJyVjJVMFJ6UlBUa1ZZYkVWbmFGRRAB!2m1!1s0x0:0xf511d2277cd200d7!3m1!1s2@1:CAIQACodChtycF9oOkhuaFBENVBrV2U0RzRPTkVYbEVnaFE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25scFJHUnFYM1JqVkdVM1dHRk9hVFpzUTJGMmIwRRAB",
+      "reviewer": "Sharmila C.",
+      "rating": 5,
+      "publishedAt": "2026-10-12T18:12:37.517Z"
+    }
+  ]
+}
