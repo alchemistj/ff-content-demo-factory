@@ -10,15 +10,23 @@ Draft for review. Sources: the business's own site, Google reviews, facts.md. Qu
 
 Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be. We built Cool Concepts the first five pages of that kind of website. More on that below.
 
+  
+
 **Buttons:** View the Demo Site / See What Changed
 
 ### Why we built this site
 
 Your Google reviews say it often: when a furnace or air conditioner stops, someone shows up fast, finds what failed and explains it. One example:
 
+  
+
 Called this morning at 9:15 and by 9:35, James had arrived to work on our furnace.
 
+  
+
 — Brittany W.
+
+  
 
 Usually the same day, often within hours. Your homepage says none of this. So the demo starts with the homeowner's call.
 
@@ -26,87 +34,149 @@ Usually the same day, often within hours. Your homepage says none of this. So th
 
 **1. Homepage**
 
+  
+
 *Current site problems*
+
+  
 
   - Your top headline is "What You Should Know About Cool Concepts" and your browser tab ends "Services Nebraska". Neither says Lincoln or heating, so Google can't tell you're a Lincoln HVAC company.
   - Its one reason to choose you is aimed at restaurants and businesses, and no review appears, so a homeowner has no proof.
 
+  
+
 *What the demo fixes*
+
+  
 
   - A headline that reads "HVAC Company in Lincoln, NE — Cool Concepts".
   - Homeowners first, with reviews that show how fast you come. Businesses get their own sections.
 
+  
+
 **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
+
+  
 
 **2. Heating and AC Repair**
 
+  
+
 *Current site problems*
+
+  
 
   - Your browser tab reads "Appliance Repair Services | Refrigeration Repair NE" and the page has no headline, so nothing says AC or furnace repair in Lincoln.
   - The "Residential" section copies the "Prevention" paragraph.
   - No review, no word on how fast you come and nothing on what a visit includes. Nothing covers a gas smell or a furnace that quits at night.
 
+  
+
 *What the demo fixes*
+
+  
 
   - A headline that reads "Heating and AC Repair in Lincoln, NE — Cool Concepts".
   - Reviews beside what usually fails, what to check first, what a visit looks like, and what to do about a gas smell.
 
+  
+
 **A full build would also add:** Call and form tracking that shows which pages and towns your leads come from.
+
+  
 
 **3. Heating and AC Replacement**
 
+  
+
 *Current site problems*
+
+  
 
   - The page runs 241 words with no headline, and its browser tab reads "Replacement - Cool Concepts".
   - It never says when to repair and when to replace. That answer is one line on your FAQ page.
   - No review appears on it. Its only proof is a 2009 case study on another page.
 
+  
+
 *What the demo fixes*
+
+  
 
   - A headline that reads "Heating and AC Replacement in Lincoln, NE — Cool Concepts".
   - A repair-or-replace section, with heat pumps, sizing and install day.
   - Reviews of real replacements, and the 2009 family's story.
 
+  
+
 **A full build would also add:** A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
+
+  
 
 **4. Contact**
 
+  
+
 *Current site problems*
 
+  
+
   - The "Request An Estimate" button goes to a page that doesn't exist.
-  - Two emails, coolconceptsne@gmail.com at the top and coolconcepts@neb.rr.com below.
+  - Two emails, <coolconceptsne@gmail.com> at the top and <coolconcepts@neb.rr.com> below.
   - The form asks "How did you find us?", not what is wrong or whether it is a home or a business.
 
+  
+
 *What the demo fixes*
+
+  
 
   - A call button and a form that both work.
   - Your phone number and street address, with one email once you tell us which to use.
   - A form that asks the service, home or business, and what is going on.
 
+  
+
 **A full build would also add:** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
 
 ### What a full build includes
 
+  
+
 **Gets you found**
+
+  
 
   - Every service on your website and your Google profile, telling the same story
   - Each service gets its own page or shares one, based on what Google shows for that search
   - Every town you serve, on your website and your Google profile
   - Built so Google and AI tools can read every page
 
+  
+
 **Earns their trust**
+
+  
 
   - Reviews on every page, matched to the service
   - About and owner pages that show who does the work
   - A trust bar that shows what makes you different
 
+  
+
 **Turns visitors into calls**
+
+  
 
   - Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range. Most visitors are on a phone, and a slow page lets them down.
   - A call-and-book bar that stays on screen on phones
   - A contact form that blocks spam
 
+  
+
 **Keeps working after launch**
+
+  
 
   - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
   - Your site watched around the clock for downtime.
@@ -125,7 +195,11 @@ Usually the same day, often within hours. Your homepage says none of this. So th
 
 Book a call and we'll walk you through this demo and what a full build adds.
 
+  
+
 **Button:** Book a no-obligation call
+
+  
 
 Text us: (417) 373-2773
 
@@ -135,6 +209,8 @@ Text us: (417) 373-2773
 
 Heating and cooling repair and replacement for Lincoln homes and businesses, and repair for commercial kitchen equipment. We are locally owned and operated, and we have served Lincoln and eastern Nebraska since 2005. Customers describe a technician at the door within hours of the call.
 
+  
+
 **Buttons:** Call (402) 483-2665 / Request a Quote
 
 Lincoln-based · Homes and businesses · Commercial kitchen repair · Customers describe same-day visits
@@ -143,7 +219,11 @@ Lincoln-based · Homes and businesses · Commercial kitchen repair · Customers 
 
 Lincoln winters drop below zero and summer afternoons pass 100 degrees, and that is when furnaces and air conditioners fail, because they run the most. A stopped system can't wait for next week. We often finish the fix on that first visit, whether it is a [furnace or air conditioner repair](about:blank) or a part we have to track down.
 
+  
+
 Got back from vacation and heat wasn’t working. Called and had servicemen out with in 45 min. Once they came back with the right part they had it up and running with in 15 min.
+
+  
 
 — Max W.
 
@@ -151,7 +231,11 @@ Got back from vacation and heat wasn’t working. Called and had servicemen out 
 
 Usually you leave knowing which part failed, what each option would involve, and which one we recommend. Sometimes that is a quick repair. Sometimes it is a system that costs more to keep fixing than to replace, and we say so.
 
+  
+
 James always provides great experience and service. He gives great advice and recommends affordable options.
+
+  
 
 — Andrew B.
 
@@ -167,7 +251,11 @@ We specialize in Daikin heating and air, and we also service most other brands o
 
 Heating and cooling equipment does best with a visit every year, and our service plans keep that visit on the calendar. The point is to find a worn part before the first cold night or the first hot week, rather than during it. Skipped visits tend to turn into emergency calls, and a repair made early usually costs less than a breakdown.
 
+  
+
 Cool Concepts is the BEST to call for reliable, honest service. … We use them for yearly service (8 years now) as well as anything that might need to be repaired in our system\!
+
+  
 
 — Devan M.
 
@@ -175,7 +263,11 @@ Cool Concepts is the BEST to call for reliable, honest service. … We use them 
 
 Customers have also had us set up a Nest thermostat to work with their furnace and air conditioner, clean dryer vents and connect gas dryers. A clogged dryer vent makes a dryer work harder and raises the risk of a fire, so the vent is worth cleaning.
 
+  
+
 They're very knowledgeable with the Internet of things devices. I have a nest thermostat and they were able to help make sure it was configured correctly with my HVAC unit.
+
+  
 
 — Christopher C.
 
@@ -183,7 +275,11 @@ They're very knowledgeable with the Internet of things devices. I have a nest th
 
 A kitchen failure costs sales, spoils food and disappoints customers. We repair and maintain commercial ovens, refrigeration units and kitchen appliances of most brands. Our line is that if it sits on or is above the floor, we can usually service it. Planned maintenance lets you choose when equipment is down, and we work around your schedule so that downtime fits your day.
 
+  
+
 I've known and referred James for a long while now. He knows his craft well and always does great work. I send everyone I know his way for HVAC and restaurant repair work.
+
+  
 
 — Robert C.
 
@@ -191,7 +287,11 @@ I've known and referred James for a long while now. He knows his craft well and 
 
 We repair and replace commercial heating and cooling systems, and we can help them run more efficiently. Regular maintenance is available for commercial systems too.
 
+  
+
 Been using Cool Concepts for years at our office. Our AC went out yesterday, I called the office around 11am. … One of the guys made it out office around 2:30pm. Found, fixed and cleaned everything up and was done by 3pm.
+
+  
 
 — McKenna K.
 
@@ -217,6 +317,8 @@ No. We repair commercial kitchen equipment. Most home kitchen appliances are bui
 
 Call (402) 483-2665 and tell us what it is doing, or request a quote.
 
+  
+
 **Buttons:** Call (402) 483-2665 / Request a Quote
 
 ## Heating and AC Repair — Heating and AC Repair in Lincoln, NE — Cool Concepts
@@ -225,9 +327,15 @@ Call (402) 483-2665 and tell us what it is doing, or request a quote.
 
 When your furnace or air conditioner stops, call (402) 483-2665 and tell us what it is doing. Customers describe same-day visits.
 
+  
+
 **Buttons:** Call (402) 483-2665 / Send a Request
 
+  
+
 Thankfully James came out and took the time to diagnose the issue and even left to go pick up the parts needed for the fix. He had us up and running before the end of the day.
+
+  
 
 — Rocky A.
 
@@ -247,7 +355,11 @@ If you smell gas, leave the house and call your gas utility or 911 from outside.
 
 If the outdoor unit hums but the fan or compressor (the pump at the heart of the cooling system) doesn't start, a worn capacitor is often the cause. A capacitor is a small part that gives the motors the jolt they need to start. A failed fan motor in the outdoor unit leaves the system running hot and cooling poorly. Weak cooling often points to a refrigerant leak, because an air conditioner doesn't use up refrigerant. Water near the indoor unit is often a clogged drain line, the pipe that carries away the moisture the system pulls from your air, and many systems answer a clogged line by shutting the air conditioner off.
 
+  
+
 AC went out, hottest day of the year of course. He was at my house within 2 hours after my call. AC was back on in 15 minutes.
+
+  
 
 — Andrea F.
 
@@ -259,7 +371,11 @@ A furnace that lights and shuts off within seconds often has a dirty flame senso
 
 We usually find the failed part and tell you what it is. Then we lay out your options: repair now, plan to replace later, or replace the system. When a part isn't on the truck, we often pick it up or order it. When the work is done, we usually clean up after ourselves.
 
+  
+
 In 100 degree heat and a broken ac, we called Cool Concepts on a Friday night at 7pm and they came right on time at 10am on Saturday morning--despite being booked up for the day. He was able to solve the issue quickly and was extremely easy to work with (and even took his shoes off when he came inside.)
+
+  
 
 — Marcus P.
 
@@ -267,7 +383,11 @@ In 100 degree heat and a broken ac, we called Cool Concepts on a Friday night at
 
 A repair usually makes sense when one part has failed, such as a capacitor, motor, sensor or igniter, and the rest of the system has years left. Older doesn't mean worn out. When repairs keep coming back or the failed part is the compressor, we'll tell you if replacing would cost less over time.
 
+  
+
 Called on Sunday - was here on Monday to fix the air\! Got it fixed in about 30 minutes. James is very nice, and let us know the different options we could do.
+
+  
 
 — Alisa M.
 
@@ -275,7 +395,11 @@ Called on Sunday - was here on Monday to fix the air\! Got it fixed in about 30 
 
 A new buzz, rattle, squeal or grinding from the outdoor unit or the furnace is usually a part that is wearing out. Replacing a part before it fails often costs less than the breakdown it would cause, and it can protect the motor or compressor beside it. If you hear a new noise, call before the system stops.
 
+  
+
 James (Cool Concepts) is one of those guys that will come at the drop of a hat, take a look at the situation and then be open and honest with you about your situation. Then he also accomplishes the work quickly and expertly.
+
+  
 
 — Brian R.
 
@@ -301,6 +425,8 @@ No. A higher setting doesn't heat the house faster, it only keeps the furnace ru
 
 Call (402) 483-2665 and tell us what the system is doing.
 
+  
+
 **Buttons:** Call (402) 483-2665 / Send a Request
 
 ## Heating and AC Replacement — Heating and AC Replacement in Lincoln, NE — Cool Concepts
@@ -309,9 +435,15 @@ Call (402) 483-2665 and tell us what the system is doing.
 
 When repairs stop making sense, we help you choose the right system, order it and install it. Customers have had a new system running the same day they called. Call (402) 483-2665.
 
+  
+
 **Buttons:** Call (402) 483-2665 / Request a Quote
 
+  
+
 Old AC failed, hottest day of the year, daughter getting married Sat., wedding guests arriving tomorrow afternoon. … James arrived within an hour of my call. He and his crew had old AC out, new one in and running in less than three hours. Not a penny over estimate and more than reasonable.
+
+  
 
 — Bill F.
 
@@ -323,7 +455,11 @@ Age is the first thing we look at. Air conditioners commonly last 12 to 15 years
 
 A free estimate puts the choices side by side: repair using parts for your current unit, or replace the whole system. We take care of the ordering and the installation, for homes and businesses.
 
+  
+
 During the bidding process James asked me questions about what I wanted, and gave suggestions on what was needed to do the job right.
+
+  
 
 — Rob M.
 
@@ -339,7 +475,11 @@ Efficiency ratings are printed on every new unit. Air conditioners carry a SEER2
 
 A heat pump heats and cools with one outdoor unit. Many Nebraska homes keep a gas furnace as backup for the coldest days, and newer models built for cold weather handle low temperatures better than older ones. We replace heat pumps, and we help you work out which setup fits your house.
 
+  
+
 James came out to check out our broken heat pump (we knew it was going to need replaced). He took the panel off and explained what went wrong in a way that I could understand. He had a crew out to install a new one right away.
+
+  
 
 — Kristi A.
 
@@ -351,7 +491,11 @@ Heated winter air in Nebraska often runs dry, and a whole-house humidifier adds 
 
 A standard swap, with the new unit set where the old one was, often takes a day. New ductwork, a new location or an added humidifier takes longer. When one family's air conditioner failed in a summer heat wave in 2009, we ordered the unit and installed it the very next day. The old equipment comes out, the new equipment is set and connected, and the system is usually tested before the crew leaves.
 
+  
+
 Great service, Great price. Replaced furnace, A/C, whole house humidifier and air purifier. In and out, quick, no mess left behind. Very courteous techs.
+
+  
 
 — Krishelle S.
 
@@ -377,6 +521,8 @@ It often does when the old system was inefficient, and less when the ducts leak 
 
 Call (402) 483-2665, or request a quote.
 
+  
+
 **Buttons:** Call (402) 483-2665 / Request a Quote
 
 ## Contact — Contact Cool Concepts in Lincoln, NE
@@ -385,15 +531,23 @@ Call (402) 483-2665, or request a quote.
 
 Call for anything that has stopped working, or send a request for a quote.
 
+  
+
 **Buttons:** Call (402) 483-2665 / Send a Request
 
 ### Call
 
 (402) 483-2665
 
+  
+
 If your heat or air conditioning has stopped, call rather than use the form, and tell us what the system is doing. Say when it started and whether anything changed first.
 
+  
+
 I've used Cool Concepts for years and would not trust anyone else. James and his team are extremely knowledgeable and have even helped with an easy fix over the phone instead of charging us an after-hours service charge.
+
+  
 
 — Samantha C.
 
@@ -401,13 +555,19 @@ I've used Cool Concepts for years and would not trust anyone else. James and his
 
 Cool Concepts, 3701 Touzalin Avenue, Lincoln, NE 68507.
 
+  
+
 ### Request a quote
 
 Use the form for a quote or a job that can wait. Give us your name, phone number, email and, if you can, your address, then choose:
 
+  
+
   - The service: heating, cooling, replacement, yearly service, or commercial kitchen equipment
   - Whether it is for a home or a business
   - What is going on, in your own words
+
+  
 
 **Button:** Send a Request
 
@@ -431,6 +591,7 @@ We come to you in Lincoln and the towns around it. Tell us your town when you ca
 **Word counts (every visible word: hero, headings, buttons, quotes and captions).**
 
   
+
 |  |  |  |
 | :-: | :-: | :-: |
 | \*\*Page\*\* | \*\*With quotes\*\* | \*\*Without quotes\*\* |
@@ -440,11 +601,19 @@ We come to you in Lincoln and the towns around it. Tell us your town when you ca
 | Heating and AC Replacement | 990 | 830 |
 | Contact | 317 | 276 |
 
+  
+
 Strategy is under the 1,000-word cap (the SRA proof block is template and not counted here). Home and both service pages clear their minimums without quotes. Contact is 276 words without quotes after a hedged what-happens-next and have-this-ready addition, with no new business claims.
+
+  
 
 **Services chosen.** The two money services from inventory.md, each as one keyword: "Heating and AC Repair" and "Heating and AC Replacement". Home owns "HVAC Company". Suggested routes: /heating-ac-repair-lincoln-ne/ and /heating-ac-replacement-lincoln-ne/.
 
+  
+
 **Credentials and the business's own claims (stated as their claims, per QA, conflicts on the strategy confirm card).**
+
+  
 
   - "authorized Daikin dealer" and Daikin HVAC warranty service (repair-service.md): left off home, because dealer status is on the strategy confirm list. "We specialize in Daikin" stays. Strategy item 2.
   - "local Amanda Heating and Air representative" (same page) conflicts with Daikin: left off, asked in strategy item 2.
@@ -454,9 +623,15 @@ Strategy is under the 1,000-word cap (the SRA proof block is template and not co
   - Free estimates: once, on replacement. Onsite inspections: not claimed on their own.
   - No license, NATE or insurance statement exists; none claimed.
 
+  
+
 **Hedged site absolutes.** "all brands" became "most brands"; "all of our repairs are done on site" became "most repairs are done at your home or business"; "if it sits on or is above the floor, we can service it" became "we can usually service it".
 
+  
+
 **Inventory items left out, and why.**
+
+  
 
   - Geothermal: menu label only, no page text, no review. Left out. Ask the owner.
   - Heat pump: replacement page only (Kristi A.); heat pump repair is not claimed.
@@ -469,11 +644,17 @@ Strategy is under the 1,000-word cap (the SRA proof block is template and not co
   - Blog advice from the site (filter schedule, pleated filters, keep vents clear, thermostat in extreme cold, efficiency up to 97%) is used on the two service pages. Its "40-60% efficient" line is not repeated.
   - Video library titles only; no content read, so no claim made.
 
+  
+
 **Reviews not quoted.** Miss H. (the strong part is about another contractor, and the name is not First L.). Michelle (one-word name). Brittany W. is on strategy only. Brittne M., Allen G., Thomas S., J V., Ryan S., Brock S., Tami B. and the short generic lines add nothing beyond the quoted reviews. All quotes are 5-star and checked against reviews.json. Most reviews are 2016 to 2020; recent ones used: Rocky A. (2025), Kristi A. (2023), McKenna K. (2023). No review counts or star counts appear anywhere.
+
+  
 
 **Facts to verify.**
 
-  - Email: coolconceptsne@gmail.com (header) vs coolconcepts@neb.rr.com (contact block). No email appears in the page copy until the owner picks one (strategy item 3).
+  
+
+  - Email: <coolconceptsne@gmail.com> (header) vs <coolconcepts@neb.rr.com> (contact block). No email appears in the page copy until the owner picks one (strategy item 3).
   - Hours: none on any page. Service area: "eastern Nebraska" only, no towns; contact asks for the town.
   - Address 3701 Touzalin Avenue, Lincoln, NE 68507: consistent.
   - "1234 James": placeholder; who James is is unverified.
@@ -482,3 +663,4 @@ Strategy is under the 1,000-word cap (the SRA proof block is template and not co
   - General trade knowledge (typical lifespans, R-22, what usually fails, sizing, SEER2 and AFUE, safety, filter advice) is not from the business. Have the owner read the two service pages and cut anything he would not say.
   - The 80% mobile figure and the 91 score come from Josh's brief, not this business.
   - Monitoring bullets are the four verified lines only.
+  - Backport pass (Nov 16). Home strip under the hero buttons: Lincoln-based, homes and businesses, commercial kitchen repair, customers describe same-day visits. Speed claim placement: strip plus hero on home, hero only on each service page; the body repeats on home and repair were cut. FAQ questions are bold plain lines, not headings, and no FAQ was added. Removed: generic experience and right-the-first-time lines, the 24/7 and Daikin dealer claims, the email, review counts on the strategy page, and the rating wording in the full-build list. Full-build bullets now use the approved wording.
