@@ -327,7 +327,7 @@ Convenience is one of the six Club benefits: our office contacts you, so a visit
 >
 > — Susan M.
 
-### Between Visits and After Hours
+### After Hours and Emergencies
 
 Emergency service is one of the six Club benefits.
 

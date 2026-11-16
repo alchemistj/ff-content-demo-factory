@@ -280,7 +280,7 @@ Convenience is one of the Club benefits: our office contacts you, so a visit doe
 > I never have to worry about calling them to schedule as they contact me.
 
 > — Susan M.
-### Between Visits and After Hours
+### After Hours and Emergencies
 Emergency service is one of the six Club benefits.
 
 > They show up twice a year for maintenance, any problems I have had in between they take care of in a timely fashion … Last Winter I discovered at 10pm that my furnace was not working, I called the emergency no. and the tech had just walked in the door from another emergency job, he said he would come out but I told him we would be fine until morning. He was at my door bright and early and got everything fixed up.
