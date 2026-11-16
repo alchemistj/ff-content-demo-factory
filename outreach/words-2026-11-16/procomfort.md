@@ -26,43 +26,63 @@ Your site never says that. It says your staff is "qualified to explain every asp
 
 **1. Homepage**
 
-- **Current site problem:** The top headline says "Fort Wayne, IN Area", but the paragraph near the bottom talks about "your Anderson, IN home". A Fort Wayne visitor can't tell which you are.
-- **Current site problem:** The page promises same-day service "as well as evenings, weekends, and holidays", while the hours printed on the same page are Monday to Friday, 8:00 AM to 4:30 PM.
-- **Current site problem:** Under the heading "Our Certifications & Affiliations" the logo image doesn't load, so a visitor sees a heading and no credential.
-- **What the demo fixes:** A headline that reads "HVAC Company in Fort Wayne, IN — Pro Comfort Heating & Cooling" and Fort Wayne in the copy beneath it.
-- **What the demo fixes:** Same-day service stated the way your site states it, with the posted hours and no evening or weekend promise until you confirm one.
-- **What the demo fixes:** Your credentials written out in words: veteran owned and operated, BBB accredited, certified and insured technicians.
-- **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
+**Current site problem**
+- The headline says "Fort Wayne, IN Area", but near the bottom it says "your Anderson, IN home".
+- It promises same-day service "as well as evenings, weekends, and holidays", while the printed hours are Monday to Friday, 8:00 AM to 4:30 PM.
+- Under "Our Certifications & Affiliations" the logo doesn't load, so there is a heading and no credential.
+
+**What the demo fixes**
+- A headline reading "HVAC Company in Fort Wayne, IN — Pro Comfort Heating & Cooling".
+- Same-day service as your site states it, with the posted hours.
+- Your credentials in words, with the satisfaction guarantee your AC page mentions.
+
+**A full build would also add**
+Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **2. Furnace Repair**
 
-- **Current site problem:** The headline is "Furnace Repair Services" and the browser tab says "Heating Repair Services". Neither says Fort Wayne, and the first paragraph says "If you reside in Anderson, IN".
-- **Current site problem:** No review is on the page. The repairs your customers describe (a circuit board, a blower motor, error codes 14 and 34) appear nowhere on it.
-- **Current site problem:** The five repair steps are there, but nothing says what a homeowner can check first or what usually breaks, so a visitor with a cold house has to call to find out.
-- **What the demo fixes:** A "Fort Wayne, IN" headline and Fort Wayne winter details in the copy.
-- **What the demo fixes:** Seven reviews from furnace customers, matched to the repairs they describe.
-- **What the demo fixes:** Sections on what to check before calling, what usually fails and when to repair or replace.
-- **A full build would also add:** A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
+**Current site problem**
+- The headline is "Furnace Repair Services", the browser tab says "Heating Repair Services", and the text says "If you reside in Anderson, IN".
+- No review is on the page, so a circuit board, a blower motor and error codes 14 and 34 appear nowhere on it.
+- Nothing says what a homeowner can check first or what usually breaks.
+
+**What the demo fixes**
+- A "Fort Wayne, IN" headline and Fort Wayne winter details.
+- Seven furnace reviews, matched to the repairs they describe.
+- Sections on what to check, what usually fails and repair or replace.
+
+**A full build would also add**
+A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
 
 **3. AC Repair**
 
-- **Current site problem:** The headline is "AC Repair Services" with no city, and the page ends with "air conditioning emergency repair in Anderson, IN".
-- **Current site problem:** The body is five general reasons to call you (Expertise, Availability, Convenience, Trustworthiness, Superior Services). None names an AC part, a symptom or a repair.
-- **Current site problem:** No review is on the page, and the one that shows a specific AC job, the older refrigerant a customer needed replaced, never appears.
-- **What the demo fixes:** A "Fort Wayne, IN" headline and Fort Wayne summer details in the copy.
-- **What the demo fixes:** Sections on what to check, what usually fails and the older refrigerant.
-- **What the demo fixes:** Three reviews tied to the work, including the refrigerant job.
-- **A full build would also add:** Call and form tracking that shows which pages and towns your leads come from.
+**Current site problem**
+- The headline is "AC Repair Services" with no city, and the page ends with "air conditioning emergency repair in Anderson, IN".
+- The body is five general reasons to call you (Expertise, Availability, Convenience, Trustworthiness, Superior Services), none naming an AC part or symptom.
+- No review is on the page, so the customer who needed the older refrigerant replaced never appears.
+
+**What the demo fixes**
+- A "Fort Wayne, IN" headline and Fort Wayne summer details.
+- Sections on what to check, what usually fails and the older refrigerant.
+- Three reviews tied to the work, including the refrigerant job.
+
+**A full build would also add**
+Call and form tracking that shows which pages and towns your leads come from.
 
 **4. Contact**
 
-- **Current site problem:** The contact page says "We are located in Anderson, IN" above a Fort Wayne street address.
-- **Current site problem:** The homepage says "Email Us Today", but no email address appears anywhere on the site.
-- **Current site problem:** The form offers five choices (New System Quote, Schedule Repair, Schedule Maintenance, Indoor Air Quality, Other) and has no line telling a visitor what to put in the message box.
-- **What the demo fixes:** Your Fort Wayne address, phone and hours up top.
-- **What the demo fixes:** A short list of what to have ready when you call or send the form.
-- **What the demo fixes:** The towns you serve, and no email address until you give us one.
-- **A full build would also add:** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
+**Current site problem**
+- It says "We are located in Anderson, IN" above a Fort Wayne street address.
+- The homepage says "Email Us Today", but no email address appears on the site.
+- The form has five choices and no line saying what to put in the message box.
+
+**What the demo fixes**
+- Your Fort Wayne address, phone and hours up top.
+- A short list of what to have ready.
+- The towns you serve, and no email address until you give us one.
+
+**A full build would also add**
+Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
 
 ### What a full build includes
 
@@ -83,7 +103,7 @@ This demo is the first five pages. A full build starts by pulling every service 
 
 **Turns visitors into calls**
 
-- Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range
+- Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range. About 80% of visitors are on a phone, and a slow page loses them.
 - A call-and-book bar that stays on screen
 - A contact form that blocks spam
 
@@ -99,9 +119,10 @@ This demo is the first five pages. A full build starts by pulling every service 
 
 ### What we'd confirm with you
 
-1. **Where you work.** Your homepage headline says Fort Wayne, your address is Fort Wayne, but your About, Contact and many service pages say Anderson, and the towns list runs from Anderson and Muncie to Auburn and New Haven. Which towns do you want customers to see? We used Fort Wayne.
-2. **Hours and after-hours calls.** Your site lists Monday to Friday, 8:00 AM to 4:30 PM, but also promises same-day service on "evenings, weekends, and holidays". The AC page also says "emergency repair". What can a customer count on at 7 PM on a Saturday? We stated only the posted hours.
-3. **Years, owner and the guarantee.** The site says "For 6 years", "over 50 years" (a team total) and "decades", says "veteran owned and operated" on most pages and "family-owned" on one, and offers a "satisfaction guarantee" with no terms. We left years, the owner's name and the guarantee off. On our onboarding call we'd also settle the BBB, NATE and license claims, the maintenance plan terms and whether the same technician comes back.
+1. **Where you work.** Your headline and address say Fort Wayne, but About, Contact and many service pages say Anderson. Which towns should customers see? We used Fort Wayne.
+2. **Hours.** The site lists Monday to Friday, 8:00 AM to 4:30 PM, but promises same-day service on "evenings, weekends, and holidays" and "emergency repair". What can a customer count on at 7 PM on a Saturday? We stated only the posted hours.
+3. **The guarantee.** The site offers a "satisfaction guarantee" and guaranteed workmanship on thermostat projects, with no terms, and two one-star reviews say the company doesn't stand behind its work. What does it cover? We state it as your claim, with no terms.
+4. **Years and owner.** The site says "For 6 years", "decades" and "over 50 years" (a team total), and "veteran owned and operated" on most pages but "family-owned" on one. We left years and the owner's name off, and we'd also settle the BBB, NATE and license claims, the plan terms and whether the same technician comes back.
 
 ### Want a website like this for your business?
 

@@ -5,80 +5,80 @@
 
 **Why we built this site**
 
-Your reviews say the same few things: you show up when you say you will, the yard is clean when the crew leaves, the price is fair, and Alex and Maria walk people through the insurance company. Your site says almost none of that.
+Your reviews say you show up when you say you will, leave the yard clean, charge a fair price and walk people through the insurance company. Your site says almost none of that.
 
 > We had a great experience with this roofing company! They were professional, honest, and communicated with us every step of the way.
 >
 > — Taylor O.
 
-The page about storm damage never says you help with insurance claims. That sentence sits on a few of your town pages and in Maria's bio. Roof replacement is one paragraph inside a page about residential roofing, and what sets your replacements apart, like tearing off to bare wood and putting on new metal edging, is in a 2013 article. So we built the first five pages: the homepage, roof replacement, storm damage and insurance claims, contact, and this page. Roof repair, gutters, skylights, siding, painting, remodeling, decks, fences, concrete and snow removal are on the homepage. Each can get its own page in a full build.
+Your storm page never says you help with insurance claims, and what sets your replacements apart is in a 2013 article. So we built the first five pages: the homepage, roof replacement, storm damage and insurance claims, contact, and this page. Your other services are on the homepage.
 
 **The demo, page by page**
 
 ### 1. Homepage
 
-*Why it matters:* It's the page most people see first, and it has to say who you are, what you do and why to call.
+*Why it matters:* Most people see it first.
 
 **Current site problem**
-- Storm damage and insurance claim help are not on the homepage. The only storm mention is the title of a 2016 article.
-- Maria isn't named anywhere on the homepage, and Alex appears only inside reviews.
-- The homepage says "over 40 years," your residential roofing page says "20+ years," your Lincoln town page says "since 2003" and a blog post says "since 2004."
+- Insurance claim help isn't on it; the only storm mention is a 2016 article title.
+- Maria isn't named; Alex appears only in reviews.
+- It says "over 40 years"; other pages say "20+ years," "since 2003" and "since 2004."
 
 **What the demo fixes**
-- Storm damage and insurance claims get their own section, with a link to the full page.
-- Alex and Maria are named, with the story your About page tells: Alex's more than ten years with the previous owners, and the six years since he and Maria took over.
-- No company-age number appears until you tell us which one is right.
+- Storm and insurance help gets a section linking to its page.
+- Alex and Maria named, with your About page story.
+- No company-age number until you confirm one.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 ### 2. Roof Replacement
 
-*Why it matters:* A new roof is a big decision, and people compare contractors before they call.
+*Why it matters:* People compare contractors before calling.
 
 **Current site problem**
-- Replacement is one paragraph on the residential roofing page, and it's about roofs wearing out in general. It doesn't say how you replace one.
-- Your tear-off to bare wood, new felt paper and new flashing are explained only in a 2013 article.
-- "Roof," "roofing" or "roofer" comes up dozens of times on the page, and the reviews under the roof heading include one about a deck and one about a garage vent.
+- Replacement is one paragraph on the residential roofing page, not how you replace one.
+- Your tear-off to bare wood and new felt paper are explained only in a 2013 article.
+- The reviews under the roof heading include one about a deck and one about a garage vent.
 
 **What the demo fixes**
-- A page for roof replacement alone, with "Roof Replacement in Lincoln, NE" at the top.
-- Your tear-off, underlayment, metal edging and ventilation work in plain words, plus a rule for deciding between repair and replacement.
-- Only roof reviews, and what happens on replacement day.
+- A page for roof replacement alone.
+- Your tear-off, underlayment, metal edging and ventilation in plain words, plus a repair-versus-replace rule.
+- Only roof reviews, and replacement day.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 ### 3. Storm Damage and Insurance Claims
 
-*Why it matters:* After hail or wind, homeowners need to hear who will help with the claim and what to do first.
+*Why it matters:* After hail, homeowners need to know who helps with the claim.
 
 **Current site problem**
-- The page never says you help with insurance claims. Its one insurance mention says local contractors "have worked with local insurance companies before."
-- It opens with "many violent storms this spring" and no year, and most of its words warn about out-of-town crews.
-- The steps to take after a storm are in a separate 2016 article, and neither Alex nor Maria is on the page.
+- Its one insurance mention says local contractors "have worked with local insurance companies before."
+- It opens with "many violent storms this spring," no year, and mostly warns about out-of-town crews.
+- The steps after a storm are in a 2016 article; neither Alex nor Maria is on the page.
 
 **What the demo fixes**
-- It says who helps with what: Maria with the insurance process, Alex with the roof, and the insurance company with the coverage decision.
-- It brings the 2016 steps up to date: stay off the roof, look from the ground, take photos, call your insurance company.
-- It explains how a claim usually goes, so an owner knows what to expect.
+- Maria helps with the insurance process, Alex with the roof, the insurer decides coverage.
+- The 2016 steps, updated, on the page.
+- How a claim usually goes.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
 
 ### 4. Contact
 
-*Why it matters:* It's where interest becomes a phone call.
+*Why it matters:* It's where interest becomes a call.
 
 **Current site problem**
-- Alex's number can be tapped to call. Maria's, (402) 570-5813, is plain text.
-- The only required box on the form asks how the visitor heard about you. It doesn't ask what the job is.
-- The page says "We will get in touch with you shortly" and nothing more about what happens next.
+- Alex's number taps to call; Maria's is plain text.
+- The only required form box asks how you heard of us, not the job.
+- It says only "We will get in touch with you shortly."
 
 **What the demo fixes**
-- Both numbers tap to call, with Alex and Maria each named.
-- A short list of what to tell us when you call: the address, what you're seeing, and whether a storm is involved.
-- A plain "After You Call" section on what happens next.
+- Both numbers tap to call.
+- What to tell us when you call.
+- An "After You Call" section.
 
 **A full build would also add**
 Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
@@ -114,14 +114,12 @@ Keeps working after launch
 
 **What we'd confirm with you**
 
-Six things to sort out together:
-
-- Years in business. Your site says "over 40 years" in some places, "20+ years" in one, and "since 2003" or "since 2004" in others. Which is right, and what does each count?
-- Credentials. Your site says you're GAF Certified, rated A+ by the Better Business Bureau, licensed with the City of Lincoln, Lead-Paint Certified and AirVent Experts. GAF's contractor finder and the Better Business Bureau profile both blocked our check, so let's go through certificates and license numbers together.
-- Roof inspections. One page says you charge "a competitive fee" for an inspection with a written report. Other pages offer a free inspection. Which is it?
-- Your 5 year workmanship warranty. What does it cover, and is there a written copy? Same question for the GAF warranties your site says you offer.
-- People and numbers. Your site says Maria; one review says "Alex and Mary," and another says "Rocky and Sue." Who are they? Is Maria's number the one customers should call, and should email go to alex@lincolnroofingexperts.com or an address on your own website?
-- Hours. They aren't on your site or your Google profile. Do you answer after hours?
+- Years in business: which of "over 40," "20+," "since 2003" or "since 2004" is right?
+- Credentials: GAF Certified, A+ Better Business Bureau, City of Lincoln license, Lead-Paint Certified, AirVent Experts. GAF and the BBB blocked our check; can we see the certificates?
+- Roof inspections: one page says a "competitive fee," others say free. Which is it?
+- Your 5 year workmanship warranty and GAF warranties: what is covered, and is there a written copy?
+- People: reviews say "Alex and Mary" and "Rocky and Sue." Who are they? Is Maria's number the one to call, and is alex@lincolnroofingexperts.com the right email?
+- Hours: not on your site or Google profile. Do you answer after hours?
 
 **Want a website like this for your business?**
 
@@ -467,7 +465,7 @@ Prefer to write? Send your name, phone, email and a few lines about the project,
 ## Notes (not page copy)
 
 **Word counts** (by script; "without quotes" excludes blockquotes, buttons and trust bar; "with quotes" adds the quoted reviews and captions)
-- Strategy: 1,347 without quotes, 1,372 with (full-build list included).
+- Strategy: about 980 without the quote, about 1,000 with (full-build list included).
 - Home: 824 without quotes, 994 with. 11 sections.
 - Roof Replacement: 1,308 without quotes, 1,505 with. 12 sections. Hedged trade knowledge (repair vs replace by age, where roofs fail, ventilation and ice dams, wind ratings, winter installs, replacement day, how to compare estimates) is general knowledge, not a business claim. Business claims come from the site (tear off to bare deck, new felt, new flashing, nails not staples, venting specialty, GAF warranties).
 - Storm Damage and Insurance Claims: 805 without quotes, 1,058 with. 11 sections. The insurer decides coverage; no outcome is promised. Business claims: free storm assessment, Maria helps with insurance claims, Alex evaluates the roof, local office (all from site or reviews). The claim steps, deductible and cash-value explanations are hedged general knowledge.
