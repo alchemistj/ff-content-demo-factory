@@ -421,4 +421,55 @@ Call (402) 314-3612, or send a message with the form above.
 
 ## Notes (not page copy)
 
-(Notes section unchanged in the Google Doc; see the doc. The word counts there are stale. Current counts are computed below the page copy by the QA pass: AC Repair and AC Replacement are both over 700 words without quotes.)
+**Two services chosen:** AC Repair and Air Conditioner Replacement (the two money services in inventory.md). Both now pass 700 words without quotes. The site gives one sentence for each, plus the FAQ and the financing page for replacement, so the added depth is hedged general trade knowledge in the owner's voice (usual failures, checks before calling, safety, repair-or-replace rules of thumb, what a visit and a replacement usually involve). It makes no new business claims. Owner input still useful: process, after-hours answer, hours, equipment line.
+
+**Word counts** (computed from the page copy above; "with quotes" includes the quote text and names; "without quotes" removes quote blocks and their captions; headings, bullets, trust bar and buttons count):
+
+- Home: about 870 with quotes, about 690 without quotes
+- AC Repair: about 1,010 with quotes, about 880 without quotes
+- AC Replacement: about 915 with quotes, about 800 without quotes
+- Contact: about 325 with quotes, about 280 without quotes
+- Strategy: about 1,000 or fewer
+
+**Strategy page length:** kept at or under 1,000 words.
+
+**Section counts:** Home 11 (hero, then ten), AC Repair 11 (hero, then ten), Replacement 11 (hero, then ten), Contact 7 (hero plus six).
+
+**Credentials and their sources**
+
+- None confirmed. The site states no license, insurance, warranty, certification or award. Nothing is defined on Home because there is nothing to define.
+- Comfortmaker: stated only as the FAQ says it ("We proudly install Comfortmaker® HVAC equipment ... locally supplied"). Dealer status is not claimed. A dealer finder search (Lincoln 68508) found no Roettger's listing (inventory.md). The "Comfortmaker-Dealer.png" file name on the About page is not page text, so I did not use it.
+- Wisetack: stated as the site states it ("we've partnered with Wisetack"). Wisetack's own site was not checked, so the terms (3 to 60 months, no compounding interest, no prepayment penalties or late fees, no credit-score impact to check, $46 example) are the business's own claims.
+- Locally owned: a claim on the site, used as a claim, not a credential.
+
+**Conflicts, listed and not resolved**
+
+- Brand: FAQ says Comfortmaker; review from Lee P. says "a full replacement of our HVAC with a Rheem system". I did not use Lee P.'s review. Strategy page lists it as a question.
+- Years: About says "established in 2022" and "more than 10 years of hands-on, high-quality experience". No year or years-in-business appears on any page. "10 years old" on the replacement page is the FAQ's system-age rule, not the company's age.
+- Address: no address on the site. A BBB search result (not opened) lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Reviews name Roca and Hickman. The Contact page gives only "Lincoln, NE and surrounding areas". Legal name unverified (LLC), everyday name used throughout.
+- Staff name spelled Kaden, Caden and Kaleb across reviews. I name no staff in page copy; names appear only inside word-for-word quotes (Kaden in Chelle S.'s and Ethan V.'s quotes).
+
+**Inventory items, used or left out**
+
+- Services (7): all seven used. AC Repair and Air Conditioner Replacement get their own pages. Heating System Repair, Furnace Installation & Replacement, Heating Maintenance & Tune-Ups, AC Maintenance & Tune-Ups and Maintenance Memberships are on Home (Heating, Cooling, Maintenance and Memberships sections).
+- Differentiators (6): locally owned (Home, trust bars); speak directly with Matt (Home, both service pages, Contact); honest recommendations and free estimates (Replacement, with honest recommendations also on Home); treat as our own (Home hero); "more than 10 years" left out because it conflicts with 2022 and years are disputed. The "as if it were my own" line on About is covered by the "as if it were our own" wording on Home.
+- Unusual offers (3): Wisetack financing (Replacement page only, so financing is said once on the demo); maintenance membership (Home, no price because the site gives none); Comfortmaker, locally supplied (Replacement page).
+- Review themes (7): speed (AC Repair); heads-up before arrival (Home, Contact, AC Repair); honest, no pressure (Replacement, Home); explains the work (Home, AC Repair); named staff and the owner answers (Home, Contact; staff not named in page copy); clean work site (Replacement); fair price (AC Repair; the Replacement page leaves price to the estimate).
+- Left out on purpose: Dawn S. (thermostat batteries and filters), Sandy (mini-split cleaning) and Melissa E. (business location). Mini-split work is not named on the site, so I did not add it as a service. Also left out: Glenn F., Janel C., William T., Dianna K., Lori W., Trevor S., Slavik S., Ryan B., Patrick K. and others whose stories repeat a theme already carried by a used quote. Not used: the FAQ "signs my system needs attention" list (a generic signs list), the "maintenance lowers energy bills" FAQ answer (no figure, claim already carried by the membership benefits), and the family line beyond Jessica and the two boys. Review stories that name a time or price are used only where the copy around them does not repeat the number.
+- Financing, free estimate and quote lines appear once each on the business pages (Replacement). The trust bar on the AC Repair page says "Honest Pricing", which is the site's phrase.
+- No SRA proof block was supplied in the brief or the working files I read, so none is on the strategy page.
+
+**Facts to verify with Matt**
+
+1. Is the heads-up before arrival standard? Six reviews describe a text or call, but the site is silent. Home and Contact word it as what customers report; confirm before stating it as policy.
+2. Is "within hours" and "often the same day" for AC repair fair on a normal summer day? Several reviews (an hour, 20 minutes, within hours, same day) support it. One review shows a Saturday contact scheduled for Monday, which is why Contact gives that quote.
+3. Hours, emergency hours and a street address. None is on the site, so none is on the pages. The emergency line uses only the FAQ's words.
+4. Is Matt the owner, and is his surname Roettger? Reviews say "Matt the owner"; the surname is from the business name. The Home family line (Matt, Jessica, two boys, grew up in Lincoln) comes from the About page, which is written in first person and unsigned. Does he want his family on the page?
+5. Comfortmaker: dealer status, and which other brands are installed (Rheem).
+6. Wisetack: is the partnership live, and are the terms and the $46 example current? The site says "as low as 3 to 60 months"; I wrote "monthly payment plans of 3 to 60 months".
+7. Membership price and what "Discounts on repairs" means. No price on the site.
+8. "Next-day replacement" rests on a few reviews (a next-day install, a next-business-day install, a quote the next day). I wrote "we aim to move quickly" and did not promise a time.
+9. Pre-sale inspection: written from one review (Ethan V.), supported by the site's "system inspections, tune-ups, and cleaning". Confirm it is a regular offer.
+10. Remove the stray /cart page and the "FAQs 2" page name. These are on the strategy page as problems.
+
+**Cut after checker review:** "Many Repairs Are One Part", "Fixed Before a Closing", "A Diagnosis You Can Follow", "Installed Without Rushing" and "A Tidy Work Site" stated review-derived process as company policy, so they are gone with their quotes (Jane B., Charli H., Marcus B., Manuel R., River K.). Remaining review-derived lines say what customers report. **Nov 16 correction:** AC Repair and Replacement expanded past 700 words without quotes using hedged general trade knowledge only (new sections carry no quotes and no business claims).
