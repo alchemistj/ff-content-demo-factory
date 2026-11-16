@@ -1,6 +1,6 @@
 # https://www.bigdogroofing.org/privacy-policy
 
-- Fetched: 2026-11-16T03:41:48.993Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:49:58.166Z (rendered in a real browser)
 - HTTP: 200
 - Title: Privacy Policy | Big Dog Roofing in Fort Wayne, Indiana
 - H1: Privacy Policy

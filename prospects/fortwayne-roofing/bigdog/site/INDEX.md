@@ -1,6 +1,6 @@
 # Full text of the business's own site
 
-Fetched 2026-11-16T03:45:04.471Z from https://www.bigdogroofing.org by scripts/fetch-site-text.mjs. Writers quote from these files, never from notes.
+Fetched 2026-11-16T03:50:39.019Z from https://www.bigdogroofing.org by scripts/fetch-site-text.mjs. Writers quote from these files, never from notes.
 
 | File | URL | HTTP | Words | Title |
 |---|---|---|---|---|
@@ -21,46 +21,83 @@ Fetched 2026-11-16T03:45:04.471Z from https://www.bigdogroofing.org by scripts/f
 | roofing-leo-cedarville-in.md | https://www.bigdogroofing.org/roofing-leo-cedarville-in | 200 | 1028 | Leo-Cedarville Roofing Contractor / Big Dog Roofing |
 | roofing-roanoke-in.md | https://www.bigdogroofing.org/roofing-roanoke-in | 200 | 880 | Roofing Services for Roanoke, IN / Big Dog Roofing |
 | roofing-auburn-in.md | https://www.bigdogroofing.org/roofing-auburn-in | 200 | 1104 | Roofing Contractor in Auburn, IN / Big Dog Roofing |
-| roofing-columbia-city-in.md | https://www.bigdogroofing.org/roofing-columbia-city-in | 200 | 1090 | Columbia City Roofing Contractor / Big Dog Roofing |
-| articles.md | https://www.bigdogroofing.org/articles | 200 | 4985 | Roofing Articles & Guides / Big Dog Roofing Fort Wayne |
-| services.md | https://www.bigdogroofing.org/services | 200 | 850 | Fort Wayne Roofing Services / Repair, Replacement & Gutters |
-| about.md | https://www.bigdogroofing.org/about | 200 | 469 | About Big Dog Roofing / Fort Wayne Roofing Company |
-| financing.md | https://www.bigdogroofing.org/financing | 200 | 163 | Roof Financing Options in Fort Wayne / Big Dog Roofing |
-| warranty.md | https://www.bigdogroofing.org/warranty | 200 | 381 | Big Dog Roofing 15-Year Craftsmanship Warranty / Fort Wayne |
-| terms-of-service.md | https://www.bigdogroofing.org/terms-of-service | 200 | 785 | Terms of Service / Big Dog Roofing in Fort Wayne, Indiana |
-| services-soffit-fascia.md | https://www.bigdogroofing.org/services/soffit-fascia | 200 | 552 | Soffit & Fascia Repair Fort Wayne / Roof Edge Repair |
-| commercial-roofing-fort-wayne.md | https://www.bigdogroofing.org/commercial-roofing-fort-wayne | 200 | 529 | Commercial Roofing Fort Wayne / Flat & Metal Roof Repair |
-| insurance-claim-roof-fort-wayne.md | https://www.bigdogroofing.org/insurance-claim-roof-fort-wayne | 200 | 2146 | Roof Insurance Claim Help Fort Wayne / Big Dog Roofing |
-| roof-replacement-cost-fort-wayne.md | https://www.bigdogroofing.org/roof-replacement-cost-fort-wayne | 200 | 1037 | Fort Wayne Roof Replacement Cost: $7K–$22K Guide (2026) |
-| portfolio-fort-wayne-hail-claim-replacement.md | https://www.bigdogroofing.org/portfolio/fort-wayne-hail-claim-replacement | 200 | 331 | Fort Wayne Hail Claim Roof Replacement / Big Dog Roofing |
-| portfolio-leo-cedarville-chimney-flashing-repair.md | https://www.bigdogroofing.org/portfolio/leo-cedarville-chimney-flashing-repair | 200 | 317 | Leo-Cedarville Chimney Flashing Repair / Big Dog Roofing |
-| portfolio-auburn-metal-roof-upgrade.md | https://www.bigdogroofing.org/portfolio/auburn-metal-roof-upgrade | 200 | 332 | Auburn Metal Roof Upgrade / Fort Wayne Project Story |
-| roofing-huntington-in.md | https://www.bigdogroofing.org/roofing-huntington-in | 200 | 985 | Roofing Services for Huntington, IN / Big Dog Roofing |
-| articles-pipe-boot-leak-repair-fort-wayne.md | https://www.bigdogroofing.org/articles/pipe-boot-leak-repair-fort-wayne | 200 | 2273 | Pipe Boot Leak Repair in Fort Wayne / Big Dog Roofing |
-| articles-roof-flashing-failures.md | https://www.bigdogroofing.org/articles/roof-flashing-failures | 200 | 2592 | Roof Flashing Failures / Fort Wayne Roof Repair Guide |
-| articles-how-much-snow-is-too-much-a-homeowners-guide-to-roof-weight-limits-in-i.md | https://www.bigdogroofing.org/articles/how-much-snow-is-too-much-a-homeowners-guide-to-roof-weight-limits-in-indiana-winters | 200 | 1202 | Roof Snow Load Indiana / How Much Snow Is Too Much? |
-| articles-why-winter-is-hard-on-fort-wayne-roofs-and-how-to-protect-your-home.md | https://www.bigdogroofing.org/articles/why-winter-is-hard-on-fort-wayne-roofs-and-how-to-protect-your-home | 200 | 1683 | Winter Roof Protection Fort Wayne / Homeowner Guide |
-| articles-roof-leak-repair-guide.md | https://www.bigdogroofing.org/articles/roof-leak-repair-guide | 200 | 1641 | Roof Leak Repair Guide / Fort Wayne Homeowner Steps |
-| emergency-roof-repair-fort-wayne.md | https://www.bigdogroofing.org/emergency-roof-repair-fort-wayne | 200 | 667 | Emergency Roof Repair Fort Wayne / Big Dog Roofing |
-| roof-inspection-fort-wayne.md | https://www.bigdogroofing.org/roof-inspection-fort-wayne | 200 | 710 | Free Roof Inspection in Fort Wayne / Big Dog Roofing |
-| articles-roof-replacement-vs-repair.md | https://www.bigdogroofing.org/articles/roof-replacement-vs-repair | 200 | 2240 | Roof Repair vs. Replacement / Fort Wayne Decision Guide |
-| articles-roof-inspection-checklist.md | https://www.bigdogroofing.org/articles/roof-inspection-checklist | 200 | 1273 | Roof Inspection Checklist / Fort Wayne Homeowner Guide |
-| hail-damage-roof-fort-wayne.md | https://www.bigdogroofing.org/hail-damage-roof-fort-wayne | 200 | 779 | Hail Damage Roof Repair Fort Wayne / Big Dog Roofing |
-| articles-attic-condensation-vs-roof-leak-fort-wayne.md | https://www.bigdogroofing.org/articles/attic-condensation-vs-roof-leak-fort-wayne | 200 | 1324 | Attic Condensation vs. Roof Leak / Fort Wayne Guide |
-| articles-finding-a-roof-leak-source.md | https://www.bigdogroofing.org/articles/finding-a-roof-leak-source | 200 | 1309 | How to Find the Source of a Roof Leak / Fort Wayne |
-| articles-roof-valley-types-open-vs-closed.md | https://www.bigdogroofing.org/articles/roof-valley-types-open-vs-closed | 200 | 1270 | Open vs. Closed Roof Valleys / Fort Wayne Repair Guide |
-| articles-nail-pops-exposed-nails-roof.md | https://www.bigdogroofing.org/articles/nail-pops-exposed-nails-roof | 200 | 1254 | Roof Nail Pops and Exposed Nails / Fort Wayne Guide |
-| articles-shingle-granule-loss-normal-vs-not.md | https://www.bigdogroofing.org/articles/shingle-granule-loss-normal-vs-not | 200 | 1157 | Shingle Granule Loss: Normal or Damage? / Fort Wayne |
-| articles-low-slope-porch-roof-options-fort-wayne.md | https://www.bigdogroofing.org/articles/low-slope-porch-roof-options-fort-wayne | 200 | 1305 | Low-Slope Porch Roof Options / Fort Wayne Indiana Guide |
-| articles-matching-discontinued-shingles-repair.md | https://www.bigdogroofing.org/articles/matching-discontinued-shingles-repair | 200 | 1240 | Matching Discontinued Shingles for Roof Repair / Guide |
-| articles-tree-canopy-roof-maintenance-northwest-fort-wayne.md | https://www.bigdogroofing.org/articles/tree-canopy-roof-maintenance-northwest-fort-wayne | 200 | 1243 | Roof Care Near Trees in Northwest Fort Wayne / Big Dog |
-| articles-newer-home-roof-leaks-north-fort-wayne.md | https://www.bigdogroofing.org/articles/newer-home-roof-leaks-north-fort-wayne | 200 | 1242 | Newer Home Roof Leaks in North Fort Wayne / Big Dog |
-| articles-2025-roofing-material-trends-what-fort-wayne-homeowners-are-choosing-no.md | https://www.bigdogroofing.org/articles/2025-roofing-material-trends-what-fort-wayne-homeowners-are-choosing-now | 200 | 1268 | Roofing Material Trends in Fort Wayne / 2026 Guide |
-| asphalt-shingle-roofing-fort-wayne.md | https://www.bigdogroofing.org/asphalt-shingle-roofing-fort-wayne | 200 | 691 | Asphalt Shingle Roofing Fort Wayne / Big Dog Roofing |
-| articles-best-time-replace-roof-fort-wayne.md | https://www.bigdogroofing.org/articles/best-time-replace-roof-fort-wayne | 200 | 844 | Best Time to Replace a Roof in Fort Wayne / Big Dog |
-| articles-signs-you-need-new-roof.md | https://www.bigdogroofing.org/articles/signs-you-need-new-roof | 200 | 1510 | 8 Signs You Need a New Roof / Big Dog Roofing Fort Wayne |
-| articles-asphalt-vs-metal-roofing.md | https://www.bigdogroofing.org/articles/asphalt-vs-metal-roofing | 200 | 1346 | Asphalt vs. Metal Roofing / Big Dog Roofing Fort Wayne |
-| articles-ridge-vent-vs-box-vent-vs-turbine.md | https://www.bigdogroofing.org/articles/ridge-vent-vs-box-vent-vs-turbine | 200 | 1346 | Ridge Vent vs. Box Vent vs. Turbine / Indiana Roofs |
-| articles-roof-replacement-in-winter-indiana.md | https://www.bigdogroofing.org/articles/roof-replacement-in-winter-indiana | 200 | 1208 | Roof Replacement in Winter / Indiana Homeowner Guide |
-| articles-how-many-squares-is-my-roof.md | https://www.bigdogroofing.org/articles/how-many-squares-is-my-roof | 200 | 1330 | How Many Squares Is My Roof? / Fort Wayne Roofing Guide |
-| articles-solar-panel-removal-reinstall-roof-replacement.md | https://www.bigdogroofing.org/articles/solar-panel-removal-reinstall-roof-replacement | 200 | 1320 | Solar Panel Removal for Roof Replacement / Indiana |
+| (failed) | https://www.bigdogroofing.org/roofing-columbia-city-in | error | 0 | page.waitForTimeout: Target page, context or browser has bee |
+| (failed) | https://www.bigdogroofing.org/articles | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/services | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/about | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/financing | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/warranty | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/terms-of-service | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/services/soffit-fascia | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/commercial-roofing-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/insurance-claim-roof-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roof-replacement-cost-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/portfolio/fort-wayne-hail-claim-replacement | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/portfolio/leo-cedarville-chimney-flashing-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/portfolio/auburn-metal-roof-upgrade | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-huntington-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/pipe-boot-leak-repair-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roof-flashing-failures | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/how-much-snow-is-too-much-a-homeowners-guide-to-roof-weight-limits-in-indiana-winters | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/why-winter-is-hard-on-fort-wayne-roofs-and-how-to-protect-your-home | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roof-leak-repair-guide | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/emergency-roof-repair-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roof-inspection-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roof-replacement-vs-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roof-inspection-checklist | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/hail-damage-roof-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/attic-condensation-vs-roof-leak-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/finding-a-roof-leak-source | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roof-valley-types-open-vs-closed | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/nail-pops-exposed-nails-roof | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/shingle-granule-loss-normal-vs-not | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/low-slope-porch-roof-options-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/matching-discontinued-shingles-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/tree-canopy-roof-maintenance-northwest-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/newer-home-roof-leaks-north-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/2025-roofing-material-trends-what-fort-wayne-homeowners-are-choosing-now | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/asphalt-shingle-roofing-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/best-time-replace-roof-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/signs-you-need-new-roof | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/asphalt-vs-metal-roofing | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/ridge-vent-vs-box-vent-vs-turbine | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roof-replacement-in-winter-indiana | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/how-many-squares-is-my-roof | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/solar-panel-removal-reinstall-roof-replacement | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/best-shingles-northwest-fort-wayne-homes | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/hoa-roof-replacement-approval-northwest-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roof-replacement-closeout-checklist-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/rain-during-roof-replacement-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/storm-inspection-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/storm-chaser-roofers-red-flags | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/fort-wayne-storm-season-2026-roof-preparation | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/emergency-roof-repair-guide | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/what-to-do-after-hailstorm-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/wind-damage-roof-insurance | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/insurance-claim-vs-out-of-pocket-roof-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roofing-insurance-supplement-explained | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/documenting-roof-storm-damage-photos | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/metal-roofing-huntertown-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/metal-roof-over-existing-shingles | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/standing-seam-vs-exposed-fastener-metal | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/vinyl-vs-fiber-cement-siding-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/warning-signs-new-siding-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/rotted-fascia-boards-fort-wayne-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roof-or-siding-first-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/gutter-maintenance-101-preventing-overflow-foundation-damage-and-roof-rot-in-fort-wayne-homes | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/gutters-101-how-to-protect-your-fort-wayne-home-from-water-damage | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/why-gutters-matter-more-than-you-think | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/gutter-guards-worth-it-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/downspout-drainage-foundation-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/replace-gutters-with-roof-northwest-fort-wayne | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-grabill-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-decatur-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-bluffton-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-churubusco-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-kendallville-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-ossian-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-angola-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-warsaw-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/roofing-marion-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/roof-replacement-new-haven-in | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.bigdogroofing.org/articles/storm-damage-roof-repair-auburn-in | error | 0 | page.goto: Target page, context or browser has been closed |

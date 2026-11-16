@@ -1,6 +1,6 @@
 # https://www.bigdogroofing.org/portfolio
 
-- Fetched: 2026-11-16T03:41:53.902Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:50:01.384Z (rendered in a real browser)
 - HTTP: 200
 - Title: Fort Wayne Roofing Portfolio | Big Dog Project Gallery
 - H1: Our Work

@@ -1,6 +1,6 @@
 # https://www.bigdogroofing.org/roofing-auburn-in
 
-- Fetched: 2026-11-16T03:42:52.177Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:50:37.621Z (rendered in a real browser)
 - HTTP: 200
 - Title: Roofing Contractor in Auburn, IN | Big Dog Roofing
 - H1: Roofing Contractor in Auburn, IN

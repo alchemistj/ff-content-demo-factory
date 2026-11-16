@@ -1,6 +1,6 @@
 # https://www.bigdogroofing.org/locations
 
-- Fetched: 2026-11-16T03:42:29.397Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:50:25.164Z (rendered in a real browser)
 - HTTP: 200
 - Title: Areas We Serve | Big Dog Roofing Northeast Indiana
 - H1: Areas We Serve

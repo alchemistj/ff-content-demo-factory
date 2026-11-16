@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/air-filters
 
-- Fetched: 2026-11-16T03:47:32.162Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:50:36.202Z (rendered in a real browser)
 - HTTP: 403
 - Title: Request blocked
 - H1: Request blocked

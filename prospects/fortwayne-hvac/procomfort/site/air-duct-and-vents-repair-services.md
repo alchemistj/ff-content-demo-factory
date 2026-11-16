@@ -1,12 +1,14 @@
 # https://www.myprocomfort.com/air-duct-and-vents-repair-services
 
-- Fetched: 2026-11-16T03:47:19.873Z (rendered in a real browser)
-- HTTP: 502
-- Title: 
-- H1: (none)
+- Fetched: 2026-11-16T03:50:23.687Z (rendered in a real browser)
+- HTTP: 403
+- Title: Request blocked
+- H1: Request blocked
 - tel: links: (none)
-- Words: 3
+- Words: 12
 
 ---
 
-upstream request failed
+Request blocked
+This request was blocked by edge IP-blocking policy.
+IP-blocking enforcement

@@ -1,6 +1,6 @@
 # https://www.bigdogroofing.org/roofing-new-haven-in
 
-- Fetched: 2026-11-16T03:42:34.383Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:50:27.621Z (rendered in a real browser)
 - HTTP: 200
 - Title: New Haven, IN Roofer | 15-Year Craftsmanship Warranty
 - H1: New Haven, IN Roofer Backed by a 15-Year Warranty
