@@ -9,3 +9,4 @@ Fetched 2026-11-15T21:45:30.544Z from https://www.jgroofingco.com by scripts/fet
 | projects.md | https://www.jgroofingco.com/projects | 200 | 13 | Recent Roofing Projects in Peoria, IL / JG Roofing |
 | about.md | https://www.jgroofingco.com/about | 200 | 79 | About Us - Licensed & Insured Roofing Company / JG Roofing |
 | reviews.md | https://www.jgroofingco.com/reviews | 200 | 204 | Customer Reviews for JG Roofing / Trusted Roofing in Peoria, IL |
+| peoria.md | https://www.jgroofingco.com/peoria | 200 | 864 | Roofing Contractor in Peoria, IL / JG Roofing and Company (added 2026-11-16: listed in pages-sitemap.xml, missing from the first crawl) |
