@@ -19,7 +19,7 @@ Your customers say K&W shows up fast, and they say it again and again.
 >
 > — Taylor M.
 
-Your heating and AC pages never say how fast. The AC page says "prompt service" and stops there. Your home page says "same-day residential repairs" once, in a paragraph about the company.
+Your heating and AC pages never say how fast. The AC page says "prompt service" and stops there.
 
 Your emergency line is the other half of the story.
 
@@ -27,7 +27,7 @@ Your emergency line is the other half of the story.
 >
 > — Scott S.
 
-Your home page answers "Do you offer emergency HVAC services?" with a yes and no mention of 24/7. The 24/7 promise sits in a short bullet list on the service pages.
+Your home page answers "Do you offer emergency HVAC services?" with a yes and no mention of 24/7.
 
 So the demo opens with HVAC Company in Evansville, IN, puts your speed and your 24/7 line at the top, and gives furnace repair and AC repair a page each.
 
@@ -39,13 +39,12 @@ So the demo opens with HVAC Company in Evansville, IN, puts your speed and your 
 
 **Current site problem**
 - The name in your browser tab is "Reliable HVAC Services for Indiana, Kentucky & Illinois." Evansville isn't in it, and Evansville is where your customers search from.
-- The headline starts with the word "HOME," then says "HVAC services," not the phrase people type: HVAC company in Evansville.
 - The same four testimonials (Viola Johnson, Kevin Storey, Michael Molinet, Andrew Hayes) sit on your home, heating, AC and About pages. They aren't matched to the service, and none of them is on your Google profile.
 
 **What the demo fixes**
 - A headline that says HVAC Company in Evansville, IN, and a browser tab name to match.
 - A strip right under the call buttons: family-owned, 24/7 emergency service, free replacement estimates, often the same day.
-- Your Google reviews, word for word, in place of the four repeated testimonials, plus a short list of questions customers ask before they call.
+- Your Google reviews, word for word, in place of the four repeated testimonials.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -56,12 +55,12 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 **Current site problem**
 - The headline is "Heating Services – Furnaces, Heat Pumps, Maintenance & More," with no Evansville and no furnace repair. Google can't tell which town it's for.
-- Six services get a short paragraph each. Furnace repair gets two sentences, and nothing says what usually goes wrong or what happens when you call.
+- Furnace repair gets two sentences, and nothing says what usually goes wrong or what happens when you call.
 - Nothing covers a gas smell or a furnace that quits at night, and the page never says how fast you get there. Your reviews do: Thomas B. wrote "Quick, same day service."
 
 **What the demo fixes**
 - A headline and browser tab name that say Furnace Repair in Evansville, IN.
-- What usually fails (a furnace that won't light, shuts off after a few minutes, or blows cold air) and a repair-or-replace rule you can check yourself.
+- What usually fails, and a repair-or-replace rule you can check yourself.
 - A gas smell and carbon monoxide section that says what to do first.
 - A speed line up top (usually within a day, often the same day) and your 24/7 emergency service said plainly.
 
@@ -75,12 +74,12 @@ A check of what your competitors offer, so services you didn't think to mention 
 **Current site problem**
 - The headline is "Air Conditioning Services – Repairs, Replacements, Maintenance & More." No Evansville, and no "AC repair."
 - The page says "prompt service" and "24/7 emergency availability" but never how fast. Rodney H. wrote that a tech "came out on Saturday in 100 degree heat."
-- Your FAQ answers (leaks, not cooling) each end with "schedule a service call," and none names what usually causes it.
+- Your FAQ lists possible causes for a leak and for no cooling, but never says which is likely or what happens on the visit.
 
 **What the demo fixes**
 - A headline and browser tab name that say AC Repair in Evansville, IN.
-- What usually fails and why: a weak starter part, a frozen coil, low refrigerant, a clogged drain line in a humid summer.
-- A repair-or-replace rule, a ductless mini-split section, and indoor air quality, each with the customer review that fits it.
+- What usually fails and why, including a clogged drain line in a humid summer.
+- A repair-or-replace rule and a ductless mini-split section, each with the customer review that fits it.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
@@ -91,8 +90,8 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 **Current site problem**
 - It's 33 words: address, phone, email and a form. It never says you answer emergencies 24/7. That promise sits in small print at the bottom of other pages.
-- It doesn't say where you work. Evansville is the only city named on your site's home page.
-- Your email is a Gmail address. A customer can't tell it's the business's from the name on the page alone.
+- It doesn't say where you work, so someone in Wadesville or across the river can't tell if you come out.
+- It never says what to have ready, so the first call turns into twenty questions.
 
 **What the demo fixes**
 - 24/7 emergency service said first, with the number.
@@ -153,7 +152,7 @@ Furnace and AC repair, new systems, heat pumps, generators and commercial HVAC f
 
 ### Two Local Businesses, One Family-Owned Company
 
-K&W Premier Heating and Air is built from the merger of two local businesses, and it started with one van and a promise of honest, reliable HVAC service for Evansville and Wadesville. We're still family-owned, still based on Vogel Road in Evansville, and the people who answer the phone are your neighbors.
+K&W Premier Heating and Air is built from the merger of two local businesses, and it started with one van and a promise of honest, reliable HVAC service for Evansville and Wadesville. We're still family-owned, still based on Vogel Road in Evansville.
 
 We work on furnaces, heat pumps, air conditioners, ductless mini-splits, thermostats, indoor air quality equipment, standby generators and commercial rooftop units. One company handles all of it, so you aren't hunting for a different number when the problem changes.
 
@@ -165,7 +164,7 @@ We work on furnaces, heat pumps, air conditioners, ductless mini-splits, thermos
 
 When you call, we ask what the system is doing and gather the details about your heating, cooling or generator setup, so the right technician heads your way. Our technician explains the best fix before the work starts, does the repair or install, then tests the system and tidies the workspace.
 
-Appointments are usually within a day, and often the same day. A repair that needs a part we don't have on the truck can take longer, and we'll tell you that on the phone instead of letting you guess.
+Appointments are usually within a day, and often the same day. A repair that needs a part that has to be ordered can take longer.
 
 > Quick, same day service. Good communication with technician as well as office. Would highly recommend anyone.
 >
@@ -198,7 +197,7 @@ Instead of pushing a single brand, we match the equipment to your home, your bud
 
 A standby generator watches your home's power supply. When an outage hits, it starts on its own within seconds and runs until power returns, then shuts itself off. The right size depends on what you want to keep running, such as the furnace, the sump pump, the refrigerator or the whole house. We look at your home's electrical load and recommend a model that covers it without paying for capacity you won't use.
 
-Ice storms and summer thunderstorms are the usual causes of long outages in this part of Indiana, and a generator is what keeps a heating or cooling system alive through one.
+Ice storms and summer thunderstorms are often the cause of long outages in this part of Indiana, and a generator is what keeps a heating or cooling system alive through one.
 
 ### For Businesses and Property Managers
 
@@ -244,9 +243,9 @@ The furnace has stopped heating and the house is getting colder. We usually get 
 
 ### We Repair Furnaces and Heat Pumps, Whoever Installed Them
 
-We repair furnaces and heat pumps from all major brands. Ruud and American Standard are the two we sell, but you don't need to have bought from us. Our technicians are licensed, and when we find the cause we tell you what failed and what it will take to fix, before the work starts.
+We repair furnaces and heat pumps from all major brands. You don't need to have bought the furnace from us. Our technicians are licensed, and when we find the cause we tell you what failed and what it will take to fix, before the work starts.
 
-Most Evansville homes are heated by a gas furnace, and some by an electric furnace or a heat pump. The cause of a no-heat call is usually different for each, which is why the first job is finding out which parts are working.
+Many Evansville homes are heated by a gas furnace, and others by an electric furnace or a heat pump. The cause of a no-heat call is usually different for each, which is why the first job is finding out which parts are working.
 
 > Jake did a great job. He took the time to show me what he was looking at and explain how the safety features worked. Would definitely recommend!!
 >
@@ -256,7 +255,7 @@ Most Evansville homes are heated by a gas furnace, and some by an electric furna
 
 1. **You describe it.** Tell us what the furnace is doing, and we confirm an appointment and gather the details about your system. It's usually within a day, often the same day.
 2. **We arrive on time.** The technician looks at the furnace, then explains the best solution.
-3. **We repair it.** Common parts are often handled in one visit. A part we don't carry may mean a second trip.
+3. **We repair it.** Common parts can often be handled in one visit. A part that has to be ordered may mean a second trip.
 4. **We test it.** Before we leave, we run the furnace and tidy up the workspace.
 
 ### Furnace Problems and What Usually Causes Them
@@ -299,7 +298,7 @@ Most installs can be finished in one day.
 
 ### Heat Pumps and Thermostats
 
-A heat pump heats and cools with one system, which suits Evansville's winters, since they are cold but not as long as northern Indiana's. Below freezing a heat pump works harder, and many are paired with backup heat. If you're considering one, ask what backs it up on the coldest nights. We repair heat pumps and install new ones.
+A heat pump heats and cools with one system, which suits Evansville's winters, since they are cold but often not far below freezing for long. Below freezing a heat pump works harder, and many are paired with backup heat. If you're considering one, ask what backs it up on the coldest nights. We repair heat pumps and install new ones.
 
 We also install programmable and smart thermostats, zoning controls, and replacements for controls that have stopped responding.
 
@@ -442,7 +441,7 @@ kwheatingandair@gmail.com
 
 ### What Happens After You Call
 
-We confirm your appointment and gather the details we need about the system. A technician then arrives, explains the best solution and handles the work. Customers have usually heard from us quickly, with appointments often within a day.
+We confirm your appointment and gather the details we need about the system. A technician then arrives, explains the best solution and handles the work. Appointments are often within a day.
 
 > The company called quickly after requesting maintenance, the dates they had available were soon and the technician (Clint) came out exactly when they said he'd be here.
 >
@@ -450,11 +449,11 @@ We confirm your appointment and gather the details we need about the system. A t
 
 ### Our Address
 
-4324 Vogel Rd, Evansville, IN 47715
+4324 Vogel Rd, Evansville, IN 47715. Tell us the address of the job when you call, since the job site is often not the office.
 
 ### Where We Work
 
-We're based in Evansville and serve Evansville, Wadesville and the Tri-State area: southern Indiana, western Kentucky and parts of Illinois. If you manage several properties, we can put them on one maintenance schedule with a single point of contact. If your job is outside that area, call and we'll talk about travel.
+We're based in Evansville and serve Evansville, Wadesville and the Tri-State area: southern Indiana, western Kentucky and parts of Illinois. If you manage several properties, we can put them on one maintenance schedule with a single point of contact. If your job is outside that area, call and we'll talk about travel. For a home, a rental or a commercial building, the call starts the same way: what is the system doing, and where is it?
 
 ### Call Today
 
@@ -463,7 +462,11 @@ Call (812) 589-9338 and we'll set up your visit.
 ## Notes (not page copy)
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
-WORDCOUNTS
+- Strategy: 1250 without quotes, 1290 with (includes the fixed full-build list and four cards; over the ~1,000 soft cap, with the fixed lines about 450 of it).
+- Home: 922 without quotes, 992 with.
+- Furnace Repair: 951 without quotes, 1042 with.
+- Air Conditioning: 908 without quotes, 1020 with.
+- Contact: 291 without quotes, 320 with.
 
 **Credentials and sources** (none checked on a certifier's or manufacturer's own site; each is the business's claim, stated as theirs)
 - Certified dealers for Ruud and American Standard: `/about-us`. Not checked on the dealer locators. Defined once, on home, with a hedged plain meaning.
