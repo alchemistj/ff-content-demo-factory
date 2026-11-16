@@ -142,39 +142,55 @@ Book a no-obligation call and we'll walk you through this demo.
 
 # Roofing Contractor in Rockford, IL — Premium Roofing Solutions
 
-A named project manager works your insurance claim with you, start to finish. Premium Roofing Solutions replaces and repairs roofs, siding and gutters in Rockford and nearby Wisconsin. Call (844) 997-6633 for a free inspection.
+A named project manager works your insurance claim with you, start to finish. Premium Roofing Solutions is licensed and insured in Illinois and Wisconsin, with offices in Rockford and Delavan, and replaces and repairs roofs, siding and gutters across the Rockford area and nearby Wisconsin. Call (844) 997-6633 for a free inspection.
 
 **Buttons:** Call (844) 997-6633 · Ask a Question
 
 **Strip:** Licensed and insured in Illinois and Wisconsin · A named project manager on your claim · Free inspections · Offices in Rockford and Delavan · Flexible payment plans
 
-### A Named Project Manager Works Your Claim With You
+### A Named Project Manager on Every Claim
 
-After hail or a windstorm you have a damaged roof and an insurance claim at the same time. We keep the claim moving, and one project manager stays with you from the first inspection to the final cleanup. Customers name Tyler, Brad and Tommy as their project managers.
-
-We meet your adjuster at the house. The adjuster is the claim inspector who decides what the damage is worth, and we point out the damage in person so it all gets recorded. You hear from us at every step. Your policy decides what's covered, and we stay with you while the claim moves.
+After hail or a windstorm you have a damaged roof and an insurance claim at the same time. One project manager stays with you from the first inspection to the final cleanup, and works the claim with your insurance company so you aren't doing it alone. Your policy decides what's covered. We handle the rest alongside you.
 
 > He made sure he was here to meet with our adjuster and point out all the areas that got damaged.
 >
 > — Natalie P.
 
+Tyler, Brad and Tommy are the project managers our customers name. You hear from us at every step.
+
+> Dan from Premium was very good at project management and keeping us well informed.
+>
+> — Brian B.
+
+**Book a free inspection.** Call (844) 997-6633 and we'll look at the roof and the damage.
+
 ### Roofs, Siding and Gutters
 
-Our residential work starts with taking the old roof fully off before the new one goes on. We install new roofs and re-roofs, cedar shake and wood shingle roofs, and flat roofs, from asphalt shingles to metal and tile. Roof repair runs from small patch jobs to major repairs: leaks, missing or broken shingles, and storm damage. We also do metal flashing, the metal that seals the joints around chimneys, walls and vents, along with siding, gutters and downspouts.
+We install new roofs and re-roofs, cedar shake and wood shingle roofs, and flat roofs, from asphalt shingles to metal and tile. Roof repair runs from small patch jobs to major repairs: leaks, missing or broken shingles, and storm damage. We also do metal flashing, the metal that seals the joints around chimneys, walls and vents, along with siding, gutters and downspouts. After a storm we replace the roof, siding and gutters in one project, with one project manager on the whole job.
 
-After a storm, customers have had us replace the roof, siding and gutters in one project. When you want to know what shape your roof is in, we inspect it and give you a detailed report on its condition. For businesses, we do commercial flat roofing, and one commercial customer had us inspect their roof.
+> They did an awesome job and did a great job of cleaning up the mess.
+>
+> — Terri Y.
+
+For businesses we do commercial flat roofing. For homeowners who want to know where their roof stands, we inspect it and give you a detailed report on its condition.
+
+> CJ and his team at Premium Roofing Solutions delivered quickly and with great attention to detail.
+>
+> — Alan S.
+
+**Get a roof report.** Call (844) 997-6633 to book a free inspection, for a house or a business.
 
 ### Why We Started This Company
 
-There are bigger roofing companies in northern Illinois and Wisconsin, with larger advertising budgets, and you hear their commercials on TV and radio. We're in business for the homeowner who has already been let down by a roofer, or whose friend or family member has. We want to give you a much better experience, and our entire team will do everything in our power to make you happy. If you're tired of local roofing companies failing to honor their promises, we'd like the chance to earn your business.
+There are bigger roofing companies in northern Illinois and Wisconsin with larger advertising budgets, and you hear their commercials on TV and radio. We're in business for the homeowner who has already been let down by a roofer, or whose friend or family member has. Our entire team will do everything in our power to make you happy, and if you're tired of local roofing companies failing to honor their promises, we'd like the chance to earn your business.
 
 > Ownership and staff, said what they would do, and more importantly did what they said.
 >
 > — Tim K.
 
-### Licensed and Insured in Two States
+### Licensed and Insured in Illinois and Wisconsin
 
-Premium Roofing Solutions is licensed and insured in both Illinois and Wisconsin, and the subcontractors we work with are licensed and insured too. We keep an office in Rockford at 321 W State St, Suite 201, and another in Delavan, Wisconsin, so we work on either side of the state line.
+Premium Roofing Solutions is licensed and insured in both states, and the subcontractors we work with are licensed and insured too. Our Illinois office is at 321 W State St, Suite 201, Rockford, and our Wisconsin office is at 3578 North Shore Drive, Delavan. We work on either side of the state line.
 
 ### Questions Before You Call
 
@@ -186,13 +202,13 @@ Yes. We offer flexible payment plans to suit your budget.
 
 We do roofing, not solar installation. We work hand in hand with solar professionals, so the roof is ready for the panels.
 
-**What if my policy is with a company you haven't worked with?**
+**Do you work with my insurance company?**
 
-Call and tell us who it is. We may still work with them.
+We work with your insurance provider to streamline the claim. Tell us who it's with when you call.
 
-### Start With a Call
+### Book Your Free Inspection
 
-Call (844) 997-6633, tell us what the roof looks like and what the weather did, and we'll book a time to come out.
+Call (844) 997-6633, tell us what the roof looks like and what the weather did, and we'll book a time to come out and inspect it. If a storm did the damage, your project manager starts the claim with you from there. Prefer to write first? Use Ask a Question and tell us about the roof.
 
 ## Roof Replacement — Roof Replacement in Rockford, IL — Premium Roofing Solutions
 
@@ -250,57 +266,65 @@ Call (844) 997-6633 and tell us about the roof. We'll set up the inspection.
 
 # Storm Restoration in Rockford, IL — Premium Roofing Solutions
 
-Hail, high wind and heavy rain can damage a roof, siding and gutters in a single storm. Premium Roofing Solutions repairs and rebuilds homes after severe weather in Rockford and across northern Illinois and southern Wisconsin, and a named project manager works your insurance claim with you. Call (844) 997-6633 for a free inspection.
+A named project manager works your insurance claim with you, from the first inspection to the final cleanup. Premium Roofing Solutions, licensed and insured in Illinois and Wisconsin, repairs and rebuilds roofs, siding and gutters after hail, wind and heavy rain in Rockford and across northern Illinois and southern Wisconsin. Call (844) 997-6633 for a free inspection.
 
 **Buttons:** Call (844) 997-6633 · Ask a Question
 
-### From the First Inspection to the Final Cleanup
+### Your Project Manager Works the Claim
 
-Storm restoration means repairing and rebuilding what the storm damaged: the roof, the siding, the gutters and a check of the structure underneath. Quick action stops leaks, mold and weakened wood from following the storm. Here is how a storm job goes with us.
-
-1. **Damage assessment.** We inspect your home and document the damage.
-2. **Emergency repairs.** We make repairs right away to stop further damage.
-3. **Insurance coordination.** We work with your insurance company to move the claim along.
-4. **Full restoration.** We complete the roof, siding and structural repairs.
-5. **Final inspection and cleanup.** We check the work and clean up the property.
-
-### We Work Your Claim With You
-
-The adjuster is the claim inspector who values the damage. We meet the adjuster at your house and point out what we found, so it all gets seen and recorded. Your policy decides what's covered. We stay on the claim with you and keep you informed at every step.
+One project manager stays on your claim, keeps you informed at every step, and works with your insurance company while you deal with the house. Your policy decides what's covered.
 
 > he came to look over the property for damage then came back to do a walk around with our insurance adjuster to make sure she saw and recorded everything.
 >
 > — Susan W.
 
-Some customers come to us after their first claim was denied. We build the photos and written findings to support a second look, and we can't promise a result.
+**Start with a free inspection.** Call (844) 997-6633 and we'll document the damage before you file.
+
+### When a Claim Is Denied
+
+A first denial isn't always the last word. We put together the photos and written findings that support a second look at the damage. We can't promise a result.
 
 > When our initial claim for hail damage was denied, Scott and Premium made sure we had all the support we needed to make sure our second adjustment report was accepted.
 >
 > — Cindy W.
 
-### Two Storm Jobs
+**Had a denial?** Call (844) 997-6633 and tell us what the insurer said.
 
-We handle roofing, siding, gutters and structural repairs in one project.
+### The Whole Storm Job, in One Project
+
+We repair and rebuild the roof, siding, gutters and the structure underneath in one project, with one project manager.
 
 In northern Wisconsin, 2- to 3-inch hailstones damaged a home's roof, siding and gutters. We replaced the roof with Class 4 impact-resistant shingles, the top rating for hail, repaired the siding, and installed 6-inch gutters to replace the dented ones. The goal was to leave the house better than it was before the storm.
 
-In Roscoe, the roof and siding on a two-story home had been damaged by weather. We inspected both and documented the damage to support the claim, handled the paperwork and dealt directly with the carrier. We upgraded the roof to Class 4 shingles at no additional cost and replaced the siding.
+In Roscoe, the roof and siding on a two-story home had been damaged by weather. We inspected both, documented the damage to support the claim, handled the paperwork and dealt directly with the insurance company. We upgraded the roof to Class 4 shingles at no additional cost and replaced the siding.
 
-### Covering a Roof That's Open
+> This was my first time having to go through a home claim process for Hail Damage and they made it very easy.
+>
+> — Ben M.
 
-When a roof is open to the weather, covering it comes first, before the claim is settled and before the new roof goes on.
+### A Roof Open to the Weather Gets Covered First
+
+We make emergency repairs right away to stop further damage, before the claim is settled and before the new roof goes on.
 
 > True to his word, he did show up a few hours later and nailed some roofing material over both holes - which I truly appreciated when it started to rain that night!
 >
 > — Tom C.
 
+Water that gets in can mean leaks, mold and weakened wood, which is why the covering goes on first.
+
+> We had an emergency and they came and addressed it immediately .
+>
+> — Gale B.
+
+**Roof open right now?** Call (844) 997-6633.
+
 ### Damage You Can't See From the Yard
 
-Hail can do damage without a missing shingle in sight. It knocks the gritty protective granules off asphalt shingles, and a handful of them in the gutter is a warning. Water spots on an attic ceiling are often the first sign inside the house. We inspect for hidden damage and recommend the repairs that are needed.
+Hail can do damage without a missing shingle in sight. It knocks the gritty protective granules off asphalt shingles, and a handful of them in the gutter is a warning. Water spots on an attic ceiling are often the first sign inside the house. Our free inspection finds hidden damage, and we tell you which repairs are needed.
 
-### Call Us After the Storm
+### Book Your Free Storm Inspection
 
-Call (844) 997-6633 and tell us what the storm did. We'll set up your free inspection.
+Call (844) 997-6633 and tell us what the storm did. We inspect the roof, siding and gutters, document the damage, and if there's a claim to file, your project manager starts on it with you. We work from our Rockford and Delavan offices across northern Illinois and southern Wisconsin.
 
 ## Contact — Contact Premium Roofing Solutions, Rockford, IL
 
@@ -346,10 +370,10 @@ Written from briefs @ 21550ef
 
 **Word counts** (script count; "without quotes" excludes blockquotes, buttons and strip)
 
-  - Strategy: 1053 without the quote, 1079 with, incl. the canonical list (about 190 of it).
-  - Home: 553 without quotes, 637 with (strip and buttons counted only in "with").
+  - Strategy: 1,031 without the quote, 1,057 with, incl. the canonical list (about 190 of it).
+  - Home: 580 without quotes, 727 with (strip and buttons counted only in "with").
   - Roof Replacement: 575 without quotes, 653 with.
-  - Storm Restoration: 500 without quotes, 617 with.
+  - Storm Restoration: 479 without quotes, 642 with.
   - Contact: 176 without quotes, 207 with.
   - Length follows the real material: the site's own replacement and storm pages are short, so the pages are built from them plus the project write-ups and quoted reviews.
 
@@ -379,7 +403,7 @@ Written from briefs @ 21550ef
   - Used: named project manager and insurance claim help (strategy, home, replacement and storm heroes, storm), adjuster meeting (home, storm), replacement (page), storm (page), repair, installation, inspection, siding, gutters, cedar shake, flat roofing, metal flashing (home list), commercial (home), solar (home FAQ), payment plans (home strip and FAQ), insurer not listed (home FAQ), tarps and rain (replacement, storm), Class 3 and Class 4 shingles (replacement, storm), clean-up (replacement), keeps informed (home, storm), honest and does what they said (home, Tim K.), color samples (replacement, Mary M.), denied claim (storm, Cindy W.).
   - Case studies used: architectural shingle leak job and the black-shingle chimney job (replacement); northern Wisconsin hail and Roscoe (storm).
   - Left out: "red-carpet" and "premium experience" slogans, cedar cost range, "hundreds of roofs," 30-50 year warranty, "advanced technology" inspections, residential/commercial insurer logos (image only), "Roof Repair" as its own page, "Quality Craftsmanship"/"Dedication to Excellence" values (filler), "Community Focus."
-  - Quotes used once each: Kayla P., Natalie P., Tim K., Mary M., Colin S., Jim D., Susan W., Cindy W., Tom C., Shawn L. Not quoted: Charles W. and Derrick T. (long, insurer disputes), Rita R. (names an owner).
+  - Quotes used once each: Kayla P., Natalie P., Brian B., Terri Y., Alan S., Tim K., Mary M., Colin S., Jim D., Susan W., Cindy W., Ben M., Tom C., Gale B., Shawn L. Not quoted: Charles W. and Derrick T. (long, insurer disputes), Rita R. (names an owner).
 
 **Facts to verify**
 

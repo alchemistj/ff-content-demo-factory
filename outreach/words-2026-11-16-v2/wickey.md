@@ -244,41 +244,49 @@ Hot water out? Call (260) 409-5128. We offer after-hours emergency service.
 
 # Drain Cleaning & Sewer Lines in Fort Wayne, IN — Wickey Plumbing
 
-We find what is causing your clog and fix that, whether it's a slow kitchen sink or a sewer line broken by tree roots. Licensed and insured, with the price before we start.
+Veteran-owned and family-run, Wickey Plumbing sends Josh or Zach Wickey to your backed-up drain the same day or the next morning, with the price before the work starts. Licensed and insured, for homes and businesses across Fort Wayne and Northeast Indiana.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 
-### Drain cleaning
+### What we clear and fix
 
-We clear everything from a slow kitchen sink and a clogged toilet to a fully backed-up sewer line. Recurring clogs, gurgling drains and a sewage smell are signs of a deeper problem, and we diagnose and fix it. We work in homes and businesses across Fort Wayne and Northeast Indiana. In Fort Wayne we cleared a completely clogged kitchen drain and replaced the curved pipe under the sink at no extra charge.
+We clear clogged toilets with a toilet auger, clogged kitchen sinks, garage floor drains and backed-up sewer lines, and we get to the root of the problem instead of treating the symptom. When a kitchen sink drain has failed, we re-plumb the drains under the sink, and when a main sewer line has failed from age, shifting soil or tree roots, we repair or replace it.
 
-Call (260) 409-5128 and tell us what the drain is doing.
+One Fort Wayne-area customer's garage drain had been clogged for 30 years. Josh cleared it.
 
-> Zach is a class act. Not only did he unclog my drain in nanoseconds, but offered money-saving advice for 'the next time'.
+> He got that drain taken care of and then went on to unclog a drain in the middle of the garage that had been clogged for the 30 years that I’ve lived here. Yay!
 >
-> — Craig V.
+> — Debra H.
 
-### Sewer line repair and replacement
+Got a clog that keeps coming back? Call (260) 409-5128 and tell us what the drain is doing. We'll give you a free estimate.
 
-When a sewer line has failed from age, shifting soil or tree root intrusion, we repair or replace it. In New Haven, a collapsed pipe under a concrete floor was causing serious drainage problems. We broke up the concrete, dug out the damaged pipe and replaced it, checked the line with a camera to confirm there were no other problems, backfilled the hole, poured new concrete and reset the toilet once the new floor was in.
+### When the pipe is under your floor
+
+Some sewer problems are under the floor. We open the floor to reach the pipe, replace it, and put the floor back. In New Haven, a collapsed pipe under a concrete floor was causing serious drainage problems. We broke up the concrete, dug out the damaged pipe and replaced it, checked the line with a camera to confirm there were no other problems, backfilled the hole, poured new concrete and reset the toilet once the new floor was in.
 
 > Zack did an amazing job. I had more than your typical clogged drain. A tree root had broken my drain and he had to tear up our floor to get to the problem. He was professional and got it done quickly. His price was very reasonable and we are more than happy with the work he has done.
 >
 > — greg F.
 
-### Drains tied to your water softener
+### How a drain call goes
 
-Josh Wickey cleared a garage drain that a water softener kept flooding, and then cleared a second drain in the same garage.
-
-> Josh came out the day after I called with a clog in the garage drain for the water softener. Everytime the water softener regenerated, my garage was flooded. He got that drain taken care of and then went on to unclog a drain in the middle of the garage that had been clogged for the 30 years that I’ve lived here. Yay! He was so kind and professional. He is now my go to guy for any plumbing needs ! I took his cards and have handed them out to my neighbors.
->
-> — Debra H.
-
-We also install and repair water softeners, so the softener and its drain come from one plumber.
+1. You call (260) 409-5128 and tell us what the drain is doing.
+2. We come out the same day or the next morning.
+3. We find the cause and explain it in plain language, and we answer your questions.
+4. You get the price before we start.
+5. Then we do the work.
 
 ### Get the price before we start
 
-Call (260) 409-5128, tell us what the drain is doing, and you get a free estimate and the price before any work begins. We offer after-hours emergency service.
+Call us with the clog, the gurgling drain or the sewage smell. You get a licensed, insured plumber, an upfront price and no pressure to buy more than the job needs. We also offer after-hours emergency service.
+
+One customer thanked Zach for more than the clog:
+
+> Zach is a class act. Not only did he unclog my drain in nanoseconds, but offered money-saving advice for 'the next time'.
+>
+> — Craig V.
+
+Call (260) 409-5128 or request a quote, and we'll be there.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 
@@ -325,7 +333,7 @@ Written from briefs @ 21550ef
 | Strategy page | 1064 | 1079 |
 | Home | 647 | 757 |
 | Water Heater Repair & Installation | 350 | 485 |
-| Drain Cleaning & Sewer Lines | 293 | 466 |
+| Drain Cleaning & Sewer Lines | 380 | 495 |
 | Contact | 103 | 165 |
 
 Counts include headings, bullets and the H1, and leave out button lines, the Home strip line and quote attributions. Length follows the material; no word targets.

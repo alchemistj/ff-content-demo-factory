@@ -33,13 +33,13 @@ So the demo opens with Replacement Windows and Doors in Fort Wayne, IN, and give
 **Current site problem**
 
 - The headline is "Your clear choice," which names neither windows nor Fort Wayne, so Google has little to match a replacement-window search.
-- The page is about 140 words, and "Trusted by local homeowners" has no proof beside it, so visitors take your word for it.
+- The page is thin, and "Trusted by local homeowners" has no proof beside it, so visitors take your word for it.
 - Your crew, awards and process sit on four other pages, so a visitor never sees them together.
 
 **What the demo fixes**
 
 - A headline that says replacement windows and doors in Fort Wayne, IN.
-- Your own-crew claim, six-step process and four awards together, with Tina W.'s and Lance L.'s reviews beside them.
+- Your own-crew claim, step-by-step process and awards together, with Tina W.'s and Lance L.'s reviews beside them.
 
 **A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
@@ -50,7 +50,7 @@ So the demo opens with Replacement Windows and Doors in Fort Wayne, IN, and give
 **Current site problem**
 
 - The headline, "Windows from Infinity® by Marvin®," has no Fort Wayne or "replacement," so Google has little to match.
-- The page is about 240 words, and answers on inserts, full-frame and fogged panes sit in a separate FAQ, so a buyer never finds them.
+- The page is short, and answers on inserts, full-frame and fogged panes sit in a separate FAQ, so a buyer never finds them.
 - Your reviews about trim and clean-up appear nowhere on it, so no customer vouches for the work.
 
 **What the demo fixes**
@@ -68,13 +68,13 @@ So the demo opens with Replacement Windows and Doors in Fort Wayne, IN, and give
 **Current site problem**
 
 - Entry and storm doors share one page headed "Entry & storm doors from ProVia®," with no Fort Wayne, so neither ranks alone.
-- Six ProVia lines are bullet lists with no help choosing, so a buyer can't tell which fits.
+- The ProVia lines are bullet lists with no help choosing, so a buyer can't tell which fits.
 - Reviews praising Phil's storm door installs are not on that page, so a visitor never sees who does the work.
 
 **What the demo fixes**
 
 - A Fort Wayne page for entry and storm doors.
-- Signet, Ascent and Legacy entry doors and three storm door lines, each with what sets it apart.
+- Signet, Ascent and Legacy entry doors and the storm door lines, each with what sets it apart.
 - Alex P.'s entry door and David K.'s storm door reviews beside the products.
 
 **A full build would also add** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
@@ -85,7 +85,7 @@ So the demo opens with Replacement Windows and Doors in Fort Wayne, IN, and give
 
 **Current site problem**
 
-- Three test copies of the contact page are in your sitemap, so Google may index pages you never published.
+- Test copies of the contact page are in your sitemap, so Google may index pages you never published.
 - Your towns appear only in a drop-down, so a search from Auburn or Warsaw has nothing to match.
 - Nothing says what the free consultation covers, so visitors don't know what to ask for.
 
@@ -131,8 +131,8 @@ So the demo opens with Replacement Windows and Doors in Fort Wayne, IN, and give
 On a short onboarding call, we'd confirm four things:
 
 - Your About page says "Since 1968" and also dates Bushey Construction's founding to 1958. Which year should we print?
-- Your FAQ says about 1,500 installations a year; your About page says over 15,000 customers served. At 1,500 a year, that is about ten years of work. Which number is right?
-- The Better Business Bureau's site shows your A+ rating but not accreditation. Are you accredited?
+- Your FAQ's yearly installation figure and your About page's customers-served figure don't fit together over your years in business. Which one is right?
+- Your site says you're Better Business Bureau accredited, but the BBB's own listing doesn't show it. Are you?
 - Your FAQ says yes to financing, but its linked page wouldn't open for us. What terms should we state?
 
 Book a no-obligation call and we'll walk you through this demo.
@@ -376,7 +376,7 @@ Written from briefs @ 21550ef
 
 | Page | Words without quotes | Words with quotes |
 | :-- | --: | --: |
-| Strategy | ~1,077 | ~1,101 |
+| Strategy | ~1,066 | ~1,090 |
 | Home | ~816 | ~983 |
 | Replacement Windows | ~433 | ~554 |
 | Entry and Storm Doors | ~673 | ~873 |

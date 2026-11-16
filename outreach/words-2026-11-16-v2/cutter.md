@@ -135,28 +135,28 @@ Book a no-obligation call and we'll walk you through this demo.
 
 ## Home — General Contractor in Cedar Rapids, IA — Cutter Construction
 
-Mike and Bryan Cutter are twin brothers, born and raised in Cedar Rapids. Concrete, decks and additions for homes in Cedar Rapids and Iowa City. Call 319-900-5497.
+Mike and Bryan Cutter, twin brothers born and raised in Cedar Rapids, take your idea from design to bid to build: concrete, decks, roofing, siding, masonry, additions and more, for homes and businesses in Cedar Rapids and Iowa City. Call 319-900-5497.
 
 **Buttons:** Call 319-900-5497 · Request an Estimate
 
 **Strip:** Born and raised in Cedar Rapids · Free estimates on standard jobs · Licensed and insured, license C103142 · Trex Pro Platinum Certified · Better Business Bureau member
 
-### We Don't Just Work in Cedar Rapids, We Live Here
+### You Deal With Mike and Bryan
 
-Cutter Construction is a general contractor, and we work as a building advisory team. You bring the thought, we turn it into a finished project: design, bid, build. We do frame-to-finish carpentry, concrete, decks, masonry, garages, basements and roofs, and a custom home if you can think it. Our own employees cover several trades, and we bring in reliable subcontractors for specialty work.
-
-Mike is our president and Bryan is our director of operations. We were here after the 2020 derecho, working on Cedar Rapids roofs, and we're still here. Bryan and Mike keep you informed from the first call to the last day.
+Cutter Construction is a general contractor, and we work as a building advisory team. You bring the thought, and we turn it into a finished project. Mike is our president and Bryan is our director of operations. We don't just work in Cedar Rapids, we live here, and we were here after the 2020 derecho, working on roofs. Our own employees cover several trades, and reliable subcontractors handle the specialty work. Bryan and Mike keep you informed from the first call to the last day.
 
 > Bryan kept me informed on what was happening so there were no surprises.
 >
 > — Judy P.
 
+Call 319-900-5497 and talk it through with Bryan or Mike.
+
 ### What We Build
 
-- **Concrete.** Driveways, sidewalks, steps, patios, garage slabs and custom outdoor basketball courts, with a free sealer when you schedule the installation.
+- **Concrete.** Driveways, sidewalks, steps, patios, garage slabs and custom outdoor basketball courts, with the sealer free when you schedule the installation.
 - **Decks.** New decks, rebuilds and resurfacing in Trex composite or wood, with railings.
 - **Roofing and siding.** Repairs and full replacements.
-- **Masonry.** Brick, block, stone, glass block and foundations, chimney repair, and tuck-pointing, which is replacing the worn mortar between bricks.
+- **Masonry.** Brick, block, stone, glass block and foundations, chimney repair and mortar repair, by a team of five masons.
 - **Home additions.** Garage, bedroom, sunroom and living-space additions, and a roof over a deck or patio.
 - **Garages.** Attached or detached, additions, conversions and the concrete slab under them.
 - **Finished basements.** Bedrooms, bathrooms and second living rooms.
@@ -164,158 +164,175 @@ Mike is our president and Bryan is our director of operations. We were here afte
 - **Commercial snow removal.** Plowing, blowing, shoveling and salt before and after a storm.
 - **Model home.** Tour a home built to show the materials and finishes we'd choose for our own.
 
+[Request an Estimate]
+
 ### From a Rough Idea to a Finished Addition
 
-A garage or an addition rarely starts with drawings. It starts with an idea in someone's head, and we take it from there through design choices, architecture drawings and the build.
+A garage or an addition starts with an idea, and we take it through design choices, architecture drawings and the build. Garages, bedroom and sunroom additions, and finished basements all start the same way.
 
 > Mike Cutter and his team took a concept of a garage/home addition that lived in my mind and made it come to life, far exceeding expectations.
 >
 > — Tyler A.
 
+Call 319-900-5497 and tell us what you'd like to add.
+
 ### Roofs and Siding
 
-We repair and replace roofs and siding. A new roof from us comes with GAF's own warranty, because we install as a GAF certified installer. GAF makes roofing shingles. After a storm we work closely with your insurance adjuster, the company's inspector who decides what a claim covers,.
+We repair and replace roofs and siding as GAF certified installers, and a roof we install comes with GAF's own warranty. From our first phone call to the last shingle, we walk you through every step. After a storm we work closely with your insurance adjuster.
 
-Because we also do masonry, a chimney or a brick wall can be repaired in the same project as the roof beside it.
+> Cutter's Construction replaced my roof and installed siding on my house and garage. I was very satisfied with their work when it was all finished.
+>
+> — Amanda B.
 
-### Masonry and Repairs That Run Deeper Than They Look
+Call 319-900-5497 for a roof or siding estimate.
 
-Brick, block and stone are the work of our team of five masons, from a chimney that needs tuck-pointing to a wall that is coming down. We also take on repairs that turn out bigger than they first looked.
+### Masonry and Repairs
+
+Our team of five masons repairs and builds with brick, block and stone, from a chimney to a foundation wall. Because we also do roofing, a chimney or a brick wall can be repaired in the same project as the roof beside it.
 
 > Cutter dug into a very complex leak repair project that became way bigger than anyone had anticipated.
 >
 > — Jim H.
 
+Call 319-900-5497 and tell us what needs repairing.
+
 ### What Stands Behind the Work
 
-- **License.** We're licensed and insured, and our license number is C103142.
-- **Trex Pro Platinum.** Trex is a maker of composite deck boards. Platinum is the highest designation Trex offers its installers.
-- **GAF certified installer.** GAF's warranty is described above.
-- **Better Business Bureau.** The BBB is a nonprofit that tracks how businesses handle customer complaints. We've been members every year we've participated.
+- **License.** Licensed and insured, license number C103142.
+- **Trex Pro Platinum Certified.** The highest designation Trex offers its installers.
+- **GAF certified installer.** Roofs we install come with GAF's own warranty.
+- **Better Business Bureau.** Members every year we've participated.
 
 ### Paying for the Project
 
-Neighborhood Finance Corporation is a nonprofit focused on neighborhood improvement in Cedar Rapids, and we point customers to its programs. One is a forgivable loan of $15,000 for home improvements like finishing a basement or adding a garage, and another is a $10,000 program for energy improvements. Qualifying depends on where your house is, and the terms and approval are NFC's, so read them before you decide.
+Neighborhood Finance Corporation, a Cedar Rapids nonprofit focused on neighborhood improvement, offers a forgivable loan of $15,000 for home improvements like finishing a basement or adding a garage, and a $10,000 program for energy improvements. We point our customers to both.
 
 ### Talk It Through
 
-Call 319-900-5497 and tell us what you'd like to build or fix, even if it's still a rough idea.
+Call 319-900-5497 and tell us what you'd like to build or fix. Mike or Bryan will take it from there.
 
 ## Concrete — Concrete Contractor in Cedar Rapids, IA — Cutter Construction
 
-Driveways, sidewalks, steps, patios and garage slabs, poured in Cedar Rapids by a crew that cleans up before it leaves each day. When you schedule your installation, we include the sealer free of charge. Call 319-900-5497.
+Mike and Bryan Cutter's crews pour driveways, sidewalks, steps, patios and garage slabs in Cedar Rapids, and when you schedule your installation, we include the sealer free of charge. Call 319-900-5497.
 
 **Buttons:** Call 319-900-5497 · Request an Estimate
 
-### Concrete for Cedar Rapids Homes
+### What We Pour
 
-Flatwork is the trade word for the concrete you walk and drive on, and it's most of what we pour. We replace cracked and sinking driveways, add parking beside an existing driveway, and pour sidewalks, front steps, patios and garage slabs. We build custom outdoor basketball courts too. One customer had us take out a 33-year-old asphalt driveway and put in concrete. Another had a driveway and steps done in two days, and a third had front steps and a side patio poured in a schedule we fit them into.
+- Driveway replacements, and parking areas added beside an existing driveway.
+- Sidewalks and front steps.
+- Patios.
+- Garage slabs.
+- Custom outdoor basketball courts.
+- The sealer, free with your installation.
 
-> Cutter crew replaced original cracked/sinking residential concrete driveway and sidewalk. Everything you would hope for in a contractor. 12/10 would recommend.
->
-> — Christy
-
-### Water Has to Go Somewhere
-
-Iowa winters freeze and thaw the water that sits against a slab, so where the water goes matters as much as the concrete itself. When slabs shift, drainage is often the reason. One customer had us regrade a driveway to send the water away from the foundation, and another had us waterproof the foundation while we installed a new driveway.
-
-> We had numerous concrete slabs shifting due to improper drainage. They regraded the driveway and now have the water channeling away from our foundation.
->
-> — Mark B.
-
-### Patios Shaped for How You Use Them
-
-A patio can carry a curved edge, a seating wall or a border of river rock. One customer had us pour an 11 by 25 foot patio curved at one end to hold a seating wall, and another had a custom patio and sidewalk poured.
-
-### Your Lawn and Your Old Driveway Stay Intact
-
-A loaded concrete truck is heavy, so one customer had us keep it off their driveway and bring the concrete to the forms in a concrete buggy, a hand-pushed cart. Another had plywood laid over the lawn wherever equipment crossed it, and a third was left with spotless ground and only a little area to reseed.
-
-> Did an amazing job, was able to get to it quickly, and above all else didn't risk driving the concrete truck on my driveway and used concrete buggy's.
->
-> — Seth H.
-
-Our crews clean up before they leave each day, and they pick up any rock or dirt that spills on your driveway or the street.
+We explain each step of the job and when it will happen, and our crew cleans up before it leaves each day.
 
 > Very professional and clean. The crew that did our concrete pad cleaned up before they left every day. Concrete looks great.
 >
 > — David C.
 
+Call 319-900-5497 and tell us what you'd like poured.
+
+### Replacing Cracked and Sinking Driveways
+
+We take out the cracked or sinking driveway and pour a new one, and we do the sidewalk with it.
+
+> Cutter crew replaced original cracked/sinking residential concrete driveway and sidewalk. Everything you would hope for in a contractor. 12/10 would recommend.
+>
+> — Christy
+
+Call 319-900-5497 for a driveway estimate.
+
+### Drainage
+
+Iowa winters freeze and thaw the water that sits against a slab, which is why drainage matters on every pour.
+
+> We had numerous concrete slabs shifting due to improper drainage. They regraded the driveway and now have the water channeling away from our foundation.
+>
+> — Mark B.
+
+Call 319-900-5497 if your slabs are shifting.
+
+### Your Yard and Your Old Driveway
+
+We protect what's already there while we pour.
+
+> Did an amazing job, was able to get to it quickly, and above all else didn't risk driving the concrete truck on my driveway and used concrete buggy's.
+>
+> — Seth H.
+
+Call 319-900-5497 to get on the schedule.
+
 ### The Free Sealer
 
-Sealer soaks into the concrete and keeps out the water and salt that do the most damage to it. Schedule your installation with us and we include it free of charge.
+Our sealer keeps out the water and salt that damage concrete. Schedule your installation with us and we include it free of charge.
 
-### Spring Fills Up
-
-Call early in the year to get on the spring list.
+### Get on the Spring List
 
 > The estimate was done within a week and we were one of the first on the list this spring.
 >
 > — Deb W.
 
-### Ready to Talk About Your Concrete?
-
-Call 319-900-5497 and tell us what you'd like poured.
+Call early in the year to get on the spring list. Call 319-900-5497.
 
 ## Decks — Deck Builder in Cedar Rapids, IA — Cutter Construction
 
-New decks, rebuilds and resurfacing in Cedar Rapids, in Trex composite or wood, with railings, stairs and a roof over part of it if you want one. Call 319-900-5497.
+Mike and Bryan Cutter's crews build decks in Cedar Rapids as Trex Pro Platinum Certified installers, the highest designation Trex offers its installers. New decks, rebuilds and resurfacing, from the first estimate to the very last hand rail. Call 319-900-5497.
 
 **Buttons:** Call 319-900-5497 · Request an Estimate
 
-### From the First Estimate to the Last Hand Rail
+### What We Build
 
-If you're thinking about a new deck, want an old one converted to maintenance-free boards, repaired or added on to, we take it from the first estimate to the very last hand rail.
+- New decks, in Trex composite or wood.
+- Old decks converted to maintenance-free boards, repaired, or added on to.
+- Railings and stairs.
+- A roof line over part of the deck or patio.
+- Porches, and enclosed storage under a raised deck.
+
+We take care of your project from the first estimate to the last hand rail.
 
 > Cutter Construction did an outstanding job tearing down and rebuilding our second-story deck. From start to finish, they were professional, fairly priced, and delivered exceptional craftsmanship.
 >
 > — Daniel H.
 
-### Composite or Wood?
+Call 319-900-5497 and tell us what you're picturing.
 
-Composite deck boards are a mix of wood and plastic, built to hold up against weather and insects, and many are made from recycled material instead of newly cut wood. They don't need staining every year. Wood costs less up front and has the classic look, and we build in wood as well.
+### Trex, Our First Choice
 
-Trex is our first choice for composite. Trex warranties its boards against fading and staining for 25 years on its entry-level line, 35 on the middle line and 50 on the top line. We keep physical samples, so you can see the colors and textures in person before you choose.
-
-### Which Boards Fit Your Household
-
-An entry-level board suits a lower-traffic deck, in a house without pets or young children, where you can live with a few cosmetic marks down the road. A large family, or anyone who hosts often, is better off with Trex's top lines, which resist scratches far better. The top line is also built to stay cooler in direct sun, which matters if you grill through July.
+Trex is our first choice for composite. Its boards carry a warranty against fading and staining of 25 years on the entry-level line, 35 on the middle line and 50 on the top line. We keep physical samples, so you see the colors and textures in person before you choose.
 
 > We knew Trex was a quality product, but installation is the Key. Use a Trex Pro!
 >
 > — Lila T.
 
-### Railings and the Finishing Touches
+Call 319-900-5497 to see the samples.
 
-Railings frame the whole deck, and Trex warranties its railings from 15 years on the entry-level steel to 50 on the top line. We install composite railings in black or white, aluminum with round or square balusters, steel mesh, glass panels for a clear view, and cable. A cocktail rail adds a wide flat cap that holds a drink if you entertain.
+### Railings and Finishing Touches
 
-> Cutter Construction did a great job on our new Trex deck with deck railing and porch railing.
->
-> — Dick W.
+We install composite railings in black or white, aluminum with round or square balusters, steel mesh, glass panels and cable. Add a cocktail rail, a wide flat cap for setting down a drink, and finish the deck with a picture-frame border of boards around the edge and along each step.
 
-A picture-frame border, a ring of boards laid around the edge and along each step, hides the cut ends and gives the deck a finished look.
+Call 319-900-5497 to plan your railings.
 
-### Rebuilds With Surprises
+### Rebuilds and Resurfacing
 
-We rebuild old decks, resurface ones that are sound, and add on to existing ones. One customer replaced a 12 by 12 wood deck with a 12 by 16 Trex deck, and we kept the two-year-old framing underneath because it was in excellent condition, which kept them in budget. Another kept the original footprint and put in a two-tone Trex deck laid on a diagonal, and a third had us rebuild the deck and install new french doors to it. Old decks can hide surprises, and one customer's rebuild changed the framing under the boards.
+We rebuild old decks, resurface ones that are sound, and add on to existing ones.
 
 > Our project had several unique challenges with the existing deck, including changing the joist layout, removing a window that was hidden under the deck, and incorporating picture frame framing into the new deck design, but Andy and team handled everything perfectly.
 >
 > — Bryce
 
-### Covered Decks, Porches and Storage Below
+Call 319-900-5497 to talk about your old deck.
 
-A roof over part of a deck keeps the sun and rain from ending your evening. We add a roof line over a deck or patio, and we build porches and railings. One customer had us remove a 113-year-old porch and build a new one in the style of the old, updated to code where needed.
+### Covered Decks and Storage Below
+
+We add a roof line over a deck or patio, so the sun and rain don't end your evening, and we build enclosed storage under a raised deck.
 
 > We worked with Andy to design a covered Trex deck with enclosed storage area below.
 >
 > — David M.
 
-Tell us what you want from yours.
-
-### Ready to Plan Your Deck?
-
-Call 319-900-5497 and tell us what you're picturing.
+Call 319-900-5497 to plan your deck.
 
 ## Contact — Contact Cutter Construction, Cedar Rapids, IA
 
@@ -363,13 +380,13 @@ Written from briefs @ 21550ef
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
 
-- Strategy page: 1079 without quotes, 1101 with.
-- Home: 664 without quotes, 729 with.
-- Concrete: 418 without quotes, 545 with.
-- Decks: 539 without quotes, 668 with.
-- Contact: 153 without quotes, 182 with.
+- Strategy page: 1039 without quotes, 1061 with.
+- Home: 570 without quotes, 699 with.
+- Concrete: 227 without quotes, 361 with.
+- Decks: 301 without quotes, 417 with.
+- Contact: 147 without quotes, 182 with.
 
-**Rewrite basis:** tone reset from the rejected Nov 16 evening version. Home and service pages now use the site's own words as the main material, with reviews as the fact check. The how-to sections of the earlier version (frost depth, permits, driveway replacement steps, "which boards" checklists, FAQ) are cut.
+**Rewrite basis:** tone reset from the rejected Nov 16 evening version. Home and service pages now use the site's own words as the main material, with reviews as the fact check. The how-to and explainer sections of the earlier version (frost depth, permits, driveway steps, composite-vs-wood, which-boards-fit, FAQ) and the glossary asides are cut. Pages now lead with the Cutter twins, the Trex Pro claim and the free sealer, say what is included, use reviews only as quotes (never retold), and put a call to action after each section.
 
 **Same two service pages as before:** Concrete and Decks. The site's concrete and deck pages plus 22 and 11 review mentions still support them over roofing (7 mentions).
 
@@ -377,11 +394,11 @@ Written from briefs @ 21550ef
 
 - License C103142: footer on every page. Not looked up. Strip and home only.
 - "Licensed and insured": /contact. Home only.
-- Trex Pro Platinum Certified, "highest designation Trex offers": /services/decks/. Trex page returned 403. Defined once on home; reviews (David M., Lila T.) back the Trex Pro idea, Lila T. is quoted on Decks.
+- Trex Pro Platinum Certified, "highest designation Trex offers": /services/decks/. Trex page returned 403. Stated as theirs on home (strip and credentials list) and in the Decks lead; Lila T. is quoted on Decks.
 - GAF certified installers: /services/roofing/. Not checked. The 50-year System Plus number is left out (strength not confirmed); copy says "GAF's own warranty".
 - Better Business Bureau: /about-us/, /services/siding/. Copy says member, the weaker wording. BBB profile returned 520.
 - Free estimates "on standard jobs": /. Free sealer with installation: /services/concrete/; terms not confirmed.
-- Trex warranty tiers (25, 35, 50 years against fading and staining): /services/decks-trex-decking/ and /services/decks/; stated as Trex's, not ours.
+- Trex boards' warranty against fading and staining (25, 35, 50 years by line): /services/decks-trex-decking/ and /services/decks/; stated as Trex's, not ours. Railing warranty figures cut.
 - NFC programs: /financing/; third-party, terms theirs.
 - Insurance adjuster line: /services/general-contractor/, home only.
 - Ratings and review counts: not used anywhere.
@@ -404,13 +421,12 @@ Written from briefs @ 21550ef
 - Careers page: speaks to applicants; a full-build idea.
 - Basement "resume" line (quite a few basements): too vague to state; basements named once.
 - Site testimonials not in reviews.json (Floyd Van Auken, Rick Zettler, Deb Washburn and others): not quoted; quotes come only from reviews.json.
-- Trex colour names and railing product lines: brand names, left out; "which boards fit" paraphrases the site's use cases in plain words.
+- Trex colour names and railing product lines: brand names, left out. The which-boards-fit and composite-vs-wood explainers are cut.
 - Roofing, siding, masonry, additions, garages, basements, general contracting, residential projects, model home, snow removal: named on home; no own pages in this demo.
-- Review themes used: no surprises (Judy P.), garage addition (Tyler A.), leak repair (Jim H.), drainage (Mark B.), truck and buggy (Seth H.), clean-up (David C.), spring list (Deb W.), cracked driveway (Christy), Trex Pro (Lila T.), railings (Dick W.), rebuilt second-story deck (Daniel H.), hidden window (Bryce), covered deck (David M.), "born here" (Cory H., strategy), Bryan (Marcillina B.). Not used: Amanda B. clean-up, Todd J. brick repair, Floyd A. patio (used as one-customer paraphrase), Ken A. french doors (one-customer paraphrase), critical reviews (calls not returned; raised in "What we'd confirm").
+- Review themes used (quotes only, once each): no surprises (Judy P.), garage addition (Tyler A.), roof and siding (Amanda B.), leak repair (Jim H.), clean-up (David C.), cracked driveway (Christy), drainage (Mark B.), truck and buggy (Seth H.), spring list (Deb W.), second-story rebuild (Daniel H.), Trex Pro (Lila T.), hidden window (Bryce), covered deck (David M.), Bryan (Marcillina B.), "born here" (Cory H., strategy). Not used: Dick W. railings, Floyd A. patio, Ken A. french doors, Todd J. brick repair, critical reviews (calls not returned; raised in "What we'd confirm").
 - Home-page claims "keep you informed" rest on Judy P., Tyler A. and Diana P. (reviews 51, 38, 25); the "five masons" and "frame-to-finish" lines are the site's own claims.
-- Concrete page's one trade section: freeze and thaw is general trade knowledge; "often the reason" is hedged accordingly.
-- "Plywood goes down where equipment crosses your lawn" rests on one review (Floyd A.) and "hand cart" on Seth H.'s buggy; both stated as this crew's way of working on those jobs, so verify they are standard.
-- Concrete (418) and Decks (539) follow the real material. Added in the check from reviews.json and site/: waterproofing with a new driveway, driveway and steps in two days, steps and patio fitted into the schedule, spotless ground (Concrete); the 12 by 12 to 12 by 16 Trex swap that kept the sound framing, two-tone diagonal Trex deck (site testimonial, Judy Feldkamp), french doors, the 113-year-old porch, Trex railing warranties 15 to 50 years (Decks). Trex colour names and railing product lines stay out as brand names. Every relevant site/ file (concrete, decks, Trex boards, railings) is used.
+- Concrete page's one trade line: freeze and thaw (Drainage), general trade knowledge. "We explain each step and when it will happen" rests on several reviews (e.g. Steve T., Mark B.); "cleans up before it leaves each day" on 11 reviews.
+- Concrete and Decks are short because the site's own concrete and deck pages are short; length follows that material, nothing padded. Review-only job details (waterproofing, 113-year-old porch, 12 by 16 Trex swap, french doors, patio shapes) are left out so no review is retold. Every relevant site/ file (concrete, decks, Trex boards, railings) is used.
 
 **Facts to verify**
 
@@ -419,4 +435,5 @@ Written from briefs @ 21550ef
 - Free sealer terms and whether it applies to every installation.
 - Whether Trex Pro Platinum, GAF and BBB status are current.
 - Whether the derecho roof work can be stated more strongly.
+- Whether "design, bid, build" and "we walk you through every step" (site claims) are how every job runs.
 - Whether Bryan and Mike are owners; copy says president and director of operations only.
