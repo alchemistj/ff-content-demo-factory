@@ -27,14 +27,14 @@ Your site never says that. It says your staff is "qualified to explain every asp
 **1. Homepage**
 
 **Current site problem**
-- The headline says "Fort Wayne, IN Area", but near the bottom it says "your Anderson, IN home".
-- It promises same-day service "as well as evenings, weekends, and holidays", while the printed hours are Monday to Friday, 8:00 AM to 4:30 PM.
-- Under "Our Certifications & Affiliations" the logo doesn't load, so there is a heading and no credential.
+- The headline says Fort Wayne, but near the bottom it says "your Anderson, IN home".
+- It promises service on "evenings, weekends, and holidays", but the printed hours are Monday to Friday, 8:00 AM to 4:30 PM.
+- Under "Our Certifications & Affiliations" the logo doesn't load, so no credential shows.
 
 **What the demo fixes**
-- A headline reading "HVAC Company in Fort Wayne, IN — Pro Comfort Heating & Cooling".
-- Same-day service as your site states it, with the posted hours.
-- Your credentials in words, with the satisfaction guarantee your AC page mentions.
+- A Fort Wayne headline.
+- Same-day service with the posted hours.
+- Your credentials in words, with your satisfaction guarantee.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -42,14 +42,14 @@ Google and AI tools can only repeat what's written down. We get every service, c
 **2. Furnace Repair**
 
 **Current site problem**
-- The headline is "Furnace Repair Services", the browser tab says "Heating Repair Services", and the text says "If you reside in Anderson, IN".
-- No review is on the page, so a circuit board, a blower motor and error codes 14 and 34 appear nowhere on it.
-- Nothing says what a homeowner can check first or what usually breaks.
+- The headline is "Furnace Repair Services" with no city, and the text says "If you reside in Anderson, IN".
+- No review is on it, so the circuit board, blower motor and codes 14 and 34 customers describe are missing.
+- Nothing says what to check first or what usually breaks.
 
 **What the demo fixes**
-- A "Fort Wayne, IN" headline and Fort Wayne winter details.
-- Seven furnace reviews, matched to the repairs they describe.
-- Sections on what to check, what usually fails and repair or replace.
+- A Fort Wayne headline.
+- Seven furnace reviews, matched to repairs.
+- What to check, what usually fails, repair or replace.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
@@ -57,14 +57,14 @@ A check of what your competitors offer, so services you didn’t think to mentio
 **3. AC Repair**
 
 **Current site problem**
-- The headline is "AC Repair Services" with no city, and the page ends with "air conditioning emergency repair in Anderson, IN".
-- The body is five general reasons to call you (Expertise, Availability, Convenience, Trustworthiness, Superior Services), none naming an AC part or symptom.
-- No review is on the page, so the customer who needed the older refrigerant replaced never appears.
+- The headline has no city, and the page ends with "emergency repair in Anderson, IN".
+- The body is five general reasons to call you (Expertise, Availability and so on), none naming an AC part or symptom.
+- No review is on it, so the customer who needed older refrigerant replaced never appears.
 
 **What the demo fixes**
-- A "Fort Wayne, IN" headline and Fort Wayne summer details.
-- Sections on what to check, what usually fails and the older refrigerant.
-- Three reviews tied to the work, including the refrigerant job.
+- A Fort Wayne headline.
+- What to check, what usually fails, older refrigerant.
+- Three reviews tied to the work.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
@@ -72,14 +72,14 @@ Call and form tracking that shows which pages and towns your leads come from.
 **4. Contact**
 
 **Current site problem**
-- It says "We are located in Anderson, IN" above a Fort Wayne street address.
-- The homepage says "Email Us Today", but no email address appears on the site.
-- The form has five choices and no line saying what to put in the message box.
+- "We are located in Anderson, IN" sits above a Fort Wayne address.
+- The homepage says "Email Us Today", but no email address is on the site.
+- The form never says what to put in the message box.
 
 **What the demo fixes**
-- Your Fort Wayne address, phone and hours up top.
-- A short list of what to have ready.
-- The towns you serve, and no email address until you give us one.
+- Address, phone and hours up top.
+- What to have ready.
+- The towns you serve; no email until you give one.
 
 **A full build would also add**
 Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
@@ -119,10 +119,10 @@ This demo is the first five pages. A full build starts by pulling every service 
 
 ### What we'd confirm with you
 
-1. **Where you work.** Your headline and address say Fort Wayne, but About, Contact and many service pages say Anderson. Which towns should customers see? We used Fort Wayne.
-2. **Hours.** The site lists Monday to Friday, 8:00 AM to 4:30 PM, but promises same-day service on "evenings, weekends, and holidays" and "emergency repair". What can a customer count on at 7 PM on a Saturday? We stated only the posted hours.
-3. **The guarantee.** The site offers a "satisfaction guarantee" and guaranteed workmanship on thermostat projects, with no terms, and two one-star reviews say the company doesn't stand behind its work. What does it cover? We state it as your claim, with no terms.
-4. **Years and owner.** The site says "For 6 years", "decades" and "over 50 years" (a team total), and "veteran owned and operated" on most pages but "family-owned" on one. We left years and the owner's name off, and we'd also settle the BBB, NATE and license claims, the plan terms and whether the same technician comes back.
+1. **Where you work.** Your headline and address say Fort Wayne, but many pages say Anderson. Which towns should we show? We used Fort Wayne.
+2. **Hours.** The posted hours are weekdays only, yet the site promises "evenings, weekends, and holidays" and "emergency repair". We stated only the posted hours.
+3. **The guarantee.** The site offers a "satisfaction guarantee" with no terms, and two one-star reviews say the company doesn't stand behind its work. What does it cover? We state it as your claim.
+4. **Years and owner.** The site says "For 6 years", "decades" and "over 50 years", and "veteran owned and operated" but once "family-owned". We left years and the owner off. We'd also settle the BBB, NATE and license claims.
 
 ### Want a website like this for your business?
 
@@ -150,7 +150,7 @@ Some customers call expecting to hear they need a whole new system. Heating and 
 
 ### What we repair
 
-We repair and service gas and oil furnaces, boilers, heat pumps, air conditioners, ductless mini-splits, thermostats and fireplaces, and we work on all the central heating and cooling brands. Two of these have their own pages: [Furnace Repair](/furnace-repair-fort-wayne-in/) and [AC Repair](/ac-repair-fort-wayne-in/), which also covers mobile manufactured homes.
+We repair and service gas and oil furnaces, boilers, heat pumps, air conditioners, ductless mini-splits, thermostats and fireplaces, and we work on many central heating and cooling brands. Two of these have their own pages: [Furnace Repair](/furnace-repair-fort-wayne-in/) and [AC Repair](/ac-repair-fort-wayne-in/), which also covers mobile manufactured homes.
 
 A few of the less familiar ones, in plain terms:
 
@@ -195,6 +195,8 @@ We are BBB accredited. BBB is the Better Business Bureau, a nonprofit that lists
 
 Our licenses are Allen County BD31623, Indianapolis HL1900005, Anderson 111-22, Goshen 3885, Peru 2023-12 and Muncie 93.
 
+We offer a satisfaction guarantee, and we guarantee our workmanship on thermostat projects. Call us for what it covers.
+
 > John has always been honest & upfront. He explains things to me at my level so I actually understand what’s happening. He’s such a kind person. Everyone at ProComfort has been great towards my family and me. It’s the only company I recommend.
 >
 > — Laine V.
@@ -219,7 +221,7 @@ Heat or air not working? Call 260-310-7721, or schedule service.
 
 # Furnace Repair in Fort Wayne, IN — Pro Comfort Heating & Cooling
 
-We repair furnaces, boilers and heat pumps for Fort Wayne homes and the towns around it. Gas or oil, and all furnace brands. Call 260-310-7721.
+We repair furnaces, boilers and heat pumps for Fort Wayne homes and the towns around it. Gas or oil, and many furnace brands. Call 260-310-7721.
 
 **Buttons:** Call 260-310-7721 / Schedule Service
 
@@ -420,6 +422,10 @@ The form asks whether you're a new customer and what you need: a new system quot
 > The office staff was very professional and nice! Also, Casey, the technician that came out was very nice very professional and quick I would 100% recommend them
 >
 > — Tayler C.
+
+### After you send it
+
+A form sent in the evening or on a weekend will most likely wait until the office opens on a weekday morning, so if the heat or air is out and it is urgent, call instead. Have your address and the best number to reach you on hand, and a recent service report or warranty paperwork if you have one. If you smell gas or a carbon monoxide alarm sounds, leave the house and call 911 before you call us.
 
 ### Where we work
 

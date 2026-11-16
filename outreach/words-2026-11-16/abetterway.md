@@ -153,7 +153,7 @@ Our goal is simple: you feel informed, comfortable and confident from the first 
 
 ## Roof Replacement
 
-When a roof is leaking in several places, keeps needing repairs or has reached the end of its life, [roof replacement](/roof-replacement-lincoln-ne/) is usually a better answer than another patch. We tear the old roof off down to the bare wood, replace any boards that are damaged, and build the new roof up from there.
+When a roof is leaking in several places, keeps needing repairs or has reached the end of its life, [roof replacement](/roof-replacement-lincoln-ne/) is usually a better answer than another patch. Our replacements generally start by tearing the old roof off down to the bare wood, replacing any boards that are damaged, and building the new roof up from there.
 
 ## Storm Damage and Insurance Claims
 
@@ -221,7 +221,7 @@ Roof replacement in Lincoln and nearby towns
 
 # Roof Replacement in Lincoln, NE — A Better Way Construction & Roofing
 
-On every replacement we tear the old roof off down to the bare wood, check the boards underneath, and replace any that are damaged before the new roof goes on. Call us and we'll set up a time to look at yours.
+Our replacements generally tear the old roof off down to the bare wood, so we can check the boards underneath and replace any that are damaged before the new roof goes on. Call us and we'll set up a time to look at yours.
 
 **Buttons:** Call (402) 432-6800 | Request a Free Estimate
 
@@ -258,7 +258,7 @@ One thing we watch for is mixing two types of vents on the same section of roof.
 A new roof is more than shingles. A replacement from us includes:
 
 - New metal flashing, the thin metal that seals where the roof meets a wall, chimney or vent, in colors that match your shingles or trim, instead of reusing old rusty metal
-- A self-sealing waterproof membrane, often sold as ice and water shield, along the lower edge and in the valleys, which often helps stop meltwater from backing up under shingles and which many cities' building codes now call for
+- A self-sealing waterproof membrane, often sold as ice and water shield, along the lower edge and in the valleys (where two roof slopes meet), which often helps stop meltwater from backing up under shingles and which many cities' building codes now call for
 - Metal edging along the lower edge and the sides that guides water off the roof and away from the wood trim
 - New rubber collars around plumbing and exhaust pipes, and paint on old metal vent pipes so they don't stand out against the new shingles
 - Shingles from a reputable distributor, backed by a company representative if there is ever a concern about the product
@@ -398,7 +398,7 @@ After a big storm, crews from out of town often arrive, and some go door to door
 
 ## More Than the Roof
 
-Storms damage gutters, soffits, siding and decks as well, and we repair all of them, so one crew can finish the whole job.
+Storms damage gutters, siding and decks as well, and we repair all of them, so one crew can finish the whole job.
 
 > They repaired my roof, my gutters & soffits, and my wooden deck, after 120' sycamore tree fell on my house. … You would never know anything happened, thanks to Alex and his crew.
 >
@@ -448,7 +448,7 @@ You don't need to know what the roof or the project needs. That's what we come t
 
 ## If a Storm Hit
 
-Tell us when you call. Please stay off the roof, take photos from the ground, and we'll set up a time to look at the damage.
+Tell us when you call. Take photos of the damage from the ground, and we'll set up a time to look at it.
 
 ## Where We Work
 
