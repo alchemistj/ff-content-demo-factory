@@ -211,71 +211,63 @@ Neighborhood Finance Corporation, a Cedar Rapids nonprofit focused on neighborho
 
 Call 319-900-5497 and tell us what you'd like to build or fix. Mike or Bryan will take it from there.
 
-## Concrete — Concrete Contractor in Cedar Rapids, IA — Cutter Construction
+## Masonry — Masonry Contractor in Cedar Rapids, IA — Cutter Construction
 
-Our concrete crews work for Bryan and Mike Cutter, twin brothers born and raised in Cedar Rapids. We pour driveways, sidewalks, steps, patios and garage slabs, and when you schedule your installation, the sealer is free. Call 319-900-5497.
+Our masons work for Bryan and Mike Cutter, twin brothers born and raised in Cedar Rapids. A team of five repairs and builds in brick, block and stone, from chimneys to foundations, for homes and businesses. Call 319-900-5497 to schedule a consultation.
 
 **Buttons:** Call 319-900-5497 · Request an Estimate
 
-### Driveways, Sidewalks, Steps and Patios
+### Brick, Block and Stone Work
 
-Driveways are most of our concrete work. We replace cracked and sinking driveways and the sidewalks beside them, pour front steps and patios, and pour garage slabs. We add parking areas next to an existing driveway, and we build custom outdoor basketball courts.
+We repair brick walls, porch columns and front entries, rebuild with block, and set stone. Pressure washing and sealing keep the finished work looking the way it did the day it was laid.
 
-> Cutter crew replaced original cracked/sinking residential concrete driveway and sidewalk. Everything you would hope for in a contractor. 12/10 would recommend.
+> We first worked with Bryan Cutter to have real stone put on the front of our home. I can’t say enough about the crew, the beautiful job they did.
 >
-> — Christy
+> — Diana P.
 
-### How a Job Runs
+### Chimneys
 
-1. You call 319-900-5497, and we put together your estimate.
-2. We schedule your pour and explain each step and when it will happen.
-3. The crew shows up on time and works through the job.
-4. Before the crew leaves each day, it cleans up.
-5. Your sealer comes with the installation.
+We restore and repair chimneys, from loose bricks to tuck-pointing, which replaces the worn mortar between the bricks.
 
-> The crew Cutter sent over was very considerate and efficient. Did my driveway and steps in two days.
+> Outstanding service, quick tuckpointing job on my chimney was completed fast and with no hassle. Highly recommend.
 >
-> — John C.
+> — jim J.
 
-Call 319-900-5497 and we'll start your estimate.
+Call 319-900-5497 to schedule a consultation on your chimney.
 
-### Clean at the End of Every Day
+### The Masons Behind the Work
 
-Our crews pick up the wood scraps, rock and dirt before they leave, including anything that spills onto your driveway or the street.
+Duane Eash is a third-generation mason who has worked on and maintained the University of Iowa's brick and stone for decades. Joe Luchtenburg oversaw the Kirkwood Community College mason training program for over a decade, teaching students the fundamentals of the trade. Both work on our crews.
 
-> Very professional and clean. The crew that did our concrete pad cleaned up before they left every day. Concrete looks great.
+### Old Houses
+
+We work on old homes: Victorian foundations and porch columns, and brick houses more than a century old.
+
+> Project was completed well within the expected time frame and budget. Great communication throughout the entire process. The repair was blended seamlessly with our 156 year old brick house.
 >
-> — David C.
+> — Todd J.
 
-### Your Lawn and Your Old Driveway
+### Foundations and Basement Entrances
 
-We keep the concrete truck off your existing driveway, and we lay plywood where equipment crosses your lawn.
+We repair and waterproof foundations and rebuild basement entrances.
 
-> Did an amazing job, was able to get to it quickly, and above all else didn't risk driving the concrete truck on my driveway and used concrete buggy's.
+> A Cutter Construction master bricklayer with associates dug out the basement stairway, took out the collapsing walls, filled in the basement opening with concrete blocks, freshly mixed grout and rebar, and then waterproofed the outside; adjoining window as well.
 >
-> — Seth H.
+> — Lora D.
 
-### Water Away From Your House
-
-Shifting slabs often trace back to drainage. We regrade driveways so the water runs off and away from your foundation.
-
-> We had numerous concrete slabs shifting due to improper drainage. They regraded the driveway and now have the water channeling away from our foundation.
->
-> — Mark B.
-
-Call 319-900-5497 if your driveway holds water.
+Call 319-900-5497 and tell us what's cracking, leaking or leaning.
 
 ### Questions Buyers Ask
 
-**Is the sealer really free?** Yes. Our sealer keeps out the water and salt that damage concrete, and when you schedule your installation we include it free of charge.
+**Do you do commercial masonry?** Yes. Our team of five masons takes on residential and commercial projects.
 
-**Can you replace an asphalt driveway with concrete?** Yes. We've taken out a 33-year-old asphalt driveway and poured concrete in its place.
+**Do you do pressure washing and sealing?** Yes, on all types of masonry.
 
-**Can you add parking beside my driveway?** Yes. Parking additions are part of our concrete work, along with custom outdoor basketball courts.
+**What materials do you work with?** Brick, block, stone, glass block, chimneys and foundations.
 
-### Schedule Your Pour, Get the Sealer Free
+### Schedule a Masonry Consultation
 
-Call 319-900-5497 and schedule your installation. The sealer is free, and estimates are free on standard jobs.
+Call 319-900-5497 and tell us what needs repairing or building. We'll take it from there.
 
 ## Decks — Deck Builder in Cedar Rapids, IA — Cutter Construction
 
@@ -338,7 +330,7 @@ A covered deck with storage below is a design we work out with you.
 
 ### Plan Your Deck With a Trex Pro Platinum Crew
 
-Call 319-900-5497 for your deck estimate. Estimates are free on standard jobs.
+Call 319-900-5497 to schedule your consultation.
 
 ## Contact — Contact Cutter Construction, Cedar Rapids, IA
 

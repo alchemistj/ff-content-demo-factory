@@ -10,31 +10,33 @@ A named project manager works your insurance claim with you, start to finish. Pr
 
 ### A Named Project Manager on Every Claim
 
-After hail or a windstorm you have a damaged roof and an insurance claim at the same time. At Premium, one project manager owns both. Tyler, Brad and Tommy are the names customers give. Your project manager works the claim with your insurance company, meets the company's adjuster, the person who values the damage, and keeps you informed from the first inspection to the final cleanup. Your policy decides what's covered, and we handle the rest alongside you.
+After hail or a windstorm you have a damaged roof and an insurance claim at the same time. At Premium, one project manager owns both. Your project manager, Tyler, Brad or Tommy, works the claim with your insurance company, keeps you informed at every step, and stays with you from the first inspection to the final cleanup. Your policy decides what's covered, and we handle the rest alongside you.
+
+When the insurance company sends its adjuster, the person who values the damage, your project manager is at the house to point out what the storm did.
 
 > Matt guided us through the whole process with our insurance company. He made sure he was here to meet with our adjuster and point out all the areas that got damaged. His expertise was invaluable.
 >
 > — Natalie P.
 
-The project manager's job doesn't end when the paperwork does. Yours is on the job while the crew installs your roof.
-
-> He worked with our insurance company and communicated everything very thoroughly to us every step of the way. He was on site each day making sure we were happy as the roof and gutters were being installed....sometimes even being attacked by mosquitos and bees! So dedicated!!
->
-> — Kari S.
-
 **Book a free inspection.** Call (844) 997-6633 and we'll look at the roof and the damage.
 
-### Roofs, Siding and Gutters, Done as One Project
+### Everything on the Outside of Your House
 
-We install new roofs and re-roofs, cedar shake and wood shingle roofs, and flat roofs, from asphalt shingles to metal and tile. Roof repair runs from small patch jobs to major repairs: leaks, missing or broken shingles, and storm damage. We also do metal flashing, the metal that seals the joints around chimneys, walls and vents, along with siding, gutters and downspouts. After a storm we replace the roof, siding and gutters in one project, with one project manager on the whole job.
+- **Roof Replacement.** We inspect the whole roof, give you an estimate, help you choose a material from asphalt shingles to metal or tile, and replace the roof.
+- **Roof Repair.** From small patch jobs to major repairs: leaks, missing or broken shingles and storm damage.
+- **Roof Installation.** Asphalt shingle, metal, tile and flat roofs, on new homes and existing ones.
+- **Cedar and Specialty Roofs.** Cedar shake and wood shingle roofs, flat roofs, and metal flashing, the metal that seals the joints around chimneys, walls and vents.
+- **Roof Inspection.** We check the shingles, look for leaks, and check the gutters and the roof's structure, then give you a detailed report on its condition.
+- **Storm Restoration.** Emergency repairs, claim coordination, and roof, siding, gutter and structural repair after hail, wind or heavy rain. One northern Wisconsin job followed 2- to 3-inch hailstones.
+- **Siding.** Installed and repaired in vinyl, wood, fiber cement or metal.
+- **Gutters and Downspouts.** Installed and repaired in aluminum, copper or vinyl, including a 6-inch system sized for over 5,000 square feet of roof.
+- **Commercial Roofing.** Flat and low-slope roofs for businesses, with a consultation, a detailed proposal with timelines and material options, and an inspection when the project ends.
 
-For businesses we do commercial flat roofing. For homeowners who want to know where their roof stands, we inspect it and give you a detailed report on its condition. We do roofing, not solar installation, and we work hand in hand with solar professionals so your roof is ready for the panels.
+We do roofing, not solar installation, and we work hand in hand with solar professionals so your roof is ready for the panels. After a storm we replace the roof, siding and gutters as one project, with one project manager on the whole job.
 
 > From the first day Brad and Todd came to our house to do the assessment, to the day we settled the account. New roof, new siding, new gutters and down spouts. New air conditioner, replaced damaged window flashings. Through all our tribulations with insurance and other parties, they helped us through it all. And now our home looks like a brand new house.
 >
 > — Garey H.
-
-**Get a roof report.** Call (844) 997-6633 for a free inspection, for a house or a business.
 
 ### We Leave the Job Site Clean
 
@@ -44,13 +46,11 @@ When the crew packs up, the job site is clean, and your project manager is the p
 >
 > — Shawn C.
 
+**Get a roof report.** Call (844) 997-6633 for a free inspection, for a house or a business.
+
 ### Why We're in Business
 
 We know the local roofing industry has many pitfalls, and that some roofing companies have unethical business practices. Bigger companies with larger advertising budgets fill the TV and radio, and we're here for the homeowner who has already been let down by a roofer, or whose friend or family member has. We want to give you a much better experience.
-
-> Ownership and staff, said what they would do, and more importantly did what they said.
->
-> — Tim K.
 
 ### Licensed and Insured in Illinois and Wisconsin
 
