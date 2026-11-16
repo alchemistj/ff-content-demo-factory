@@ -163,11 +163,11 @@ After hail or wind you have a damaged roof and an insurance company to deal with
 
 ## Roof Replacement
 
-When a roof is near the end of its life, we replace all of it. Asphalt shingle roofs commonly last about 15 to 20 years, so an older roof with leaks in more than one place is usually cheaper to replace than to keep patching. We install asphalt shingles, metal, tile, slate and flat-roof systems, and we roof new construction.
+When a roof is near the end of its life, we replace all of it, and we roof new construction too. Replacements run from the first look at your roof through cleanup, with help on the insurance paperwork when a storm caused the damage.
 
 ## Repairs and Emergency Leaks
 
-Not every roof needs replacing. We repair leaks around skylights and vent pipes, missing shingles, flat roofs and storm damage, and a small repair is often the right answer when the rest of the roof is sound. If water is coming in, call us about emergency roof repair, and we'll tell you what we can do and when.
+We repair leaks around skylights and vent pipes, missing shingles, flat roofs and storm damage. If water is coming in, call us about emergency roof repair, and we'll tell you what we can do and when.
 
 > I had an issue with water leaking through vent pipe from the roof. Miguel jumped to my house when I found water leaking. He noticed main problem from the roof and suggested the solution.
 >
@@ -191,7 +191,7 @@ Every job comes with our No-Mess Guarantee. Before work starts we cover landscap
 
 ## Who Stands Behind the Work
 
-GAF is a large roofing shingle manufacturer, and it runs a certification program for the roofers who install its products. We're a GAF Certified roofing company.
+GAF is a large roofing shingle manufacturer, and it runs a certification program for the roofers who install its products. We're a GAF Certified roofing company, and we're BBB accredited. The Better Business Bureau, which rates local businesses, gives Rainforcing an A+ rating.
 
 We're licensed, bonded and insured. Insurance covers accidents on a job, and a bond is a financial guarantee that usually protects customers if a contractor doesn't meet its obligations.
 
@@ -295,7 +295,7 @@ Usually, yes. The choice is generally yours, even if your insurance company sugg
 Policies set their own deadlines for reporting storm damage, often a year from the storm or less. Check yours and don't wait.
 
 **Will filing a claim mean the roof gets replaced?**
-Not always. Sometimes the damage calls for a repair, sometimes for a full replacement. The inspection and your insurance company's estimate decide which.
+Not always. Sometimes the damage calls for a repair, sometimes for a full replacement. The inspection shows which.
 
 ## Hail or Wind Damage?
 
@@ -323,7 +323,7 @@ We look at the roof and tell you whether it needs replacing. Call (309) 989-3279
 
 Our rule: if the trouble is in one place and the rest of the roof is sound, repair that place. If damage is spread across several slopes, if the roof is past about 15 to 20 years old and leaks in more than one spot, or if repairs keep coming back, price a replacement.
 
-One clue shows up in the gutters and under the downspouts: piles of gritty granules, the coating on top of the shingles. Heavy granule loss usually means the shingles are wearing out, and a roof in that shape is better replaced than patched. A visible dip along the ridge or roof deck is another reason to call, since it can point to rotted boards underneath.
+One clue shows up in the gutters and under the downspouts: piles of gritty granules, the coating on top of the shingles. Heavy granule loss usually means the shingles are wearing out, and a roof in that shape is better replaced than patched. A visible dip along the ridge or across the roof is another reason to call, since it can point to rotted boards underneath.
 
 ## Where Old Roofs Usually Fail
 
@@ -362,7 +362,7 @@ Your new roof is backed by manufacturer warranties, which usually cover the mate
 
 For a limited time, roofing and gutter projects over $25,000 come with a free 5-year exterior maintenance plan, which we value at $3,000. It covers:
 
-- A yearly inspection of your shingles, flashing, fascia and seals
+- A yearly inspection of your shingles, the metal and sealant at roof joints, the trim board along the roof edge and the seals
 - Gutter and downspout cleaning
 - Small repairs, such as re-sealing the rubber collars around vent pipes and tightening loose gutter hangers
 - Clearing branches and moss from the valleys of the roof
@@ -450,7 +450,7 @@ We usually set a time to come look at the roof. Miguel Rivera, our owner, is oft
 - Strategy is at or under 1,000 words including the full-build list; home, both service pages and contact clear their minimums without quotes.
 
 **Credentials and sources**
-- BBB: left off every business page. The A+ rating shows only on bbb.org search results ("BBB Rating: A+"), not on their site, and the site's "BBB accredited" (one town page, /roofing-in-west-peoria-il/) is not confirmed by that listing. It is the fourth "What we'd confirm" question.
+- BBB: the A+ rating is CONFIRMED on bbb.org search results ("BBB Rating: A+") and is stated once on home. "BBB accredited" is their own claim (one town page, /roofing-in-west-peoria-il/), stated once on home as theirs; the bbb.org listing does not confirm it, so it is also the fourth "What we'd confirm" question.
 - GAF Certified: the business's own claim (/, /about-us/, /roof-replacement/). NOT confirmed: the GAF contractor locator returned 403. Used only as "GAF Certified", defined once on home as a manufacturer program. "GAF Certified Plus" (/miguel-rivera/, /roof-replacement/, /gutters/) is left out; the strategy page asks which is current. **Check the locator before this goes out.**
 - Licensed, bonded and insured: the business's own claim (/roofing-in-peoria/storm-damage-roof-repair/, /roofing-in-peoria/residential-roofing/, /roofing-in-peoria/siding/, /roofing-in-peoria/emergency-roof-repair/). No license number or insurer on the site; not confirmed. Stated as their claim on home only, with plain definitions of insurance and bond (hedged general knowledge).
 - 10-year workmanship warranty: their claim (/roof-replacement/, /financing/, /gutters/). Terms are not on the site. Used on the roof replacement page only.
@@ -462,7 +462,7 @@ We usually set a time to come look at the roof. Miguel Rivera, our owner, is oft
 
 **Inventory items left out, and why**
 - 24/7 emergency service: not stated on any page. The site says "24/7" but the hours block says 7-8 and 8-3. It is the first "What we'd confirm" question. Emergency repair and temporary tarping are used without a time promise.
-- GAF Certified Plus, NRCA member, "BBB accredited": see credentials.
+- GAF Certified Plus and NRCA member: see credentials.
 - "Certified Insurance Restoration Experts", "Preferred roofing company", Trustindex widget: not credentials, not used (the strategy page flags the first).
 - Years: "since 2021", "since 2022", "over a decade" (Miguel), "over 20 years" (emergency page) all conflict or are unclear, so no year or years-in-business claim is on any business page. Miguel's "spent years on roofs" is used without a number.
 - "Save 30% on Energy" (commercial title), "Save 15% & No Ladders" (gutter guards title), "Get 100% Off Professional Gutter Cleaning" (repair page title), the soffit and fascia price range of "$20 to $35 per linear foot": no terms or source for the numbers, left out.
