@@ -1,0 +1,33 @@
+{
+  "kind": "google-prospect-scout",
+  "version": 1,
+  "slug": "ozark-ashs-barber-2",
+  "query": "Ash's Barber Collective 5104 N 22nd St",
+  "location": "Ozark, Missouri 65721",
+  "maxPlaces": 1,
+  "scrapedAt": "2026-11-16T05:28:40.814Z",
+  "places": [
+    {
+      "rank": 1,
+      "name": "Ash's Barber Collective",
+      "placeId": "ChIJ8bZtIFBxz4cR5BpeENYruuQ",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ash's%20Barber%20Collective&query_place_id=ChIJ8bZtIFBxz4cR5BpeENYruuQ",
+      "categoryName": "Barber shop",
+      "categories": [
+        "Barber shop"
+      ],
+      "rating": 4.9,
+      "reviewsCount": 34,
+      "website": "https://ashsbarberco.studio/",
+      "phone": "(417) 380-3078",
+      "address": "5104 N 22nd St, Ozark, MO 65721",
+      "city": "Ozark",
+      "state": "Missouri",
+      "permanentlyClosed": false,
+      "temporarilyClosed": false,
+      "isAdvertisement": false,
+      "claimThisBusiness": false,
+      "ownerUpdates": null
+    }
+  ]
+}
