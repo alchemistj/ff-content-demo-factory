@@ -1,0 +1,742 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "cedarrapids-roofing-cutter",
+  "place": {
+    "name": "Cutter Construction",
+    "placeId": "ChIJf3KzhKL55IcR_K3LKNRp4Lg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cutter%20Construction&query_place_id=ChIJf3KzhKL55IcR_K3LKNRp4Lg",
+    "address": "1049 Juniper Dr SW, Cedar Rapids, IA 52404",
+    "phone": "(319) 533-2164",
+    "rating": 4.8,
+    "totalReviewCount": 193
+  },
+  "pulledAt": "2026-11-16T05:07:43.375Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT200NGVuZ3RUWEpoWjBOVE4zZE9UbEZMY2xSNGJXYxAB",
+      "reviewer": "Landon W.",
+      "rating": 5,
+      "text": "We hired Cutter for patio repairs. Fantastic work and craftsmanship. Very satisfied and looking forward to working with them on future repairs.",
+      "publishedAt": "2026-10-14T11:01:42.033Z",
+      "ownerResponse": "Thanks for the 5-Star⭐Review Landon!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT200NGVuZ3RUWEpoWjBOVE4zZE9UbEZMY2xSNGJXYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOm44engtTXJhZ0NTN3dOTlFLclR4bWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tobk5FUjVZVEJFY1ZabGRIUkRXa0ZrV0VaU2RuYxAB",
+      "reviewer": "Mark F.",
+      "rating": 5,
+      "text": "Cutter Construction did repair work to the brick wall on the front of our house.  The workers did a fantastic job and the repairs turned out GREAT!  A very professional company... I would highly recommend them for any of your construction needs.",
+      "publishedAt": "2026-10-08T16:26:57.601Z",
+      "ownerResponse": "Hey Mark!   <br>Thanks for the 5-Star⭐ review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tobk5FUjVZVEJFY1ZabGRIUkRXa0ZrV0VaU2RuYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOkhnNER5YTBEcVZldHRDWkFkWEZSdnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT210U2NtUk5OVVY0ZUhkbWJreHRSVk5IUjFOTlZsRRAB",
+      "reviewer": "Molly S.",
+      "rating": 5,
+      "text": "We had the best experience with this company. They were amazing to work with, had great communication, and incredible attention to detail. We highly recommend them!",
+      "publishedAt": "2026-09-17T20:52:54.775Z",
+      "ownerResponse": "Hey Molly!  Thanks for taking the time to share your experience working with our company!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210U2NtUk5OVVY0ZUhkbWJreHRSVk5IUjFOTlZsRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmtScmRNNUV4eHdmbkxtRVNHR1NNVlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25jdFEwOTRWa3hwYXpkR1MweGZSa054UjE5S1RsRRAB",
+      "reviewer": "Susan R.",
+      "rating": 5,
+      "text": "We had a huge project — removing a 113 year old porch and replacing it with new, staying as much in the style of the old as possible, updating to code where needed.  Cutter Construction did an excellent job!  We had a few details that needed to be addressed but Andy Clark and Mike Cutter responded promptly, and Mike went out of his way to resolve anything that came up.  The porch looks great, a major improvement, and a beautiful addition.<br>All the crew were hard workers, friendly, and skilled.  During removal of the old porch, they uncovered toys and painted signs left behind from the days our now-adult children had a secret club under there, and set the items  aside for us.  A wonderful gesture!<br>We highly recommend Cutter Construction for any project!",
+      "publishedAt": "2026-07-29T02:06:27.309Z",
+      "ownerResponse": "Thanks for the great review Susan! We are glad to hear you are happy with it.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25jdFEwOTRWa3hwYXpkR1MweGZSa054UjE5S1RsRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOnctQ094VkxpazdGS0xfRkNxR19KTlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCSlMxUmxZVjlVU2w5UGNHa3hWbWRvYzFnemFGRRAB",
+      "reviewer": "Terri S.",
+      "rating": 5,
+      "text": "Great company to work with.   They did a fantastic job on the porch.",
+      "publishedAt": "2026-06-26T16:22:43.852Z",
+      "ownerResponse": "Thanks for taking the time to leave a great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCSlMxUmxZVjlVU2w5UGNHa3hWbWRvYzFnemFGRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOjBJS1RlYV9USl9PcGkxVmdoc1gzaFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WcFdHdHhlSGg1VUZrNVpGcGxVMGR6WkRCZlFsRRAB",
+      "reviewer": "Daniel H.",
+      "rating": 5,
+      "text": "Cutter Construction did an outstanding job tearing down and rebuilding our second-story deck. From start to finish, they were professional, fairly priced, and delivered exceptional craftsmanship. The attention to detail really stood out, especially the picture-framed decking on both the deck and each step, which gives it a beautiful finished look. The quality of their work exceeded our expectations, and we couldn’t be happier with the final result. I highly recommend Cutter Construction to anyone looking for a contractor who takes pride in their work.",
+      "publishedAt": "2026-06-26T16:16:04.636Z",
+      "ownerResponse": "Hey Daniel! Thank you so much for the 5-Star⭐ review !!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WcFdHdHhlSGg1VUZrNVpGcGxVMGR6WkRCZlFsRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmVpWGtxeHh5UFk5ZFplU0dzZDBfQlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WbU1ubGpkMHRzY2xKdU5FRlpNbloxUTFCSE5GRRAB",
+      "reviewer": "Aaron K.",
+      "rating": 5,
+      "text": "Awesome experience.  Love the work they did and very relaxed.  Idk how many times i changed my mind about what needed done first.  They were there and delivered for my needs!  Thanks again!",
+      "publishedAt": "2026-06-15T23:01:19.547Z",
+      "ownerResponse": "Thanks Aaron!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WbU1ubGpkMHRzY2xKdU5FRlpNbloxUTFCSE5GRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOnVmMnljd0tsclJuNEFZMnZ1Q1BHNFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1cmJHRmFiWFF5VldSMmVHRktWRU5HWkhCdloxRRAB",
+      "reviewer": "Joseph V.",
+      "rating": 5,
+      "text": "Cutter Construction was great! The team was friendly, and efficient with our project. Quality of work was top notch, and they kept a clean work area. The Communication was also great, clear and transparent on timelines and progress. Already planning on working with them again for future projects. I’ve recommended Cutter to others already and wouldn’t hesitate to do so on the future.",
+      "publishedAt": "2026-05-21T01:31:27.328Z",
+      "ownerResponse": "Thanks for the 5 stars Joseph!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1cmJHRmFiWFF5VldSMmVHRktWRU5HWkhCdloxRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOk5rbGFabXQyVWR2eGFKVENGZHBvZ1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sR1pqWkVPRTU0YTA1RmJWQnFhbkZHTlRkMFRIYxAB",
+      "reviewer": "Marcillina B.",
+      "rating": 5,
+      "text": "We had a time sensitive manner that we needed  a second option on. Bryan was amazing. He helped us out and put our mind at ease. Definitely recommend! We'll be using them in the future if we ever need anything done.",
+      "publishedAt": "2026-05-14T22:06:43.591Z",
+      "ownerResponse": "Thanks for the review Marci.  Glad we could help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sR1pqWkVPRTU0YTA1RmJWQnFhbkZHTlRkMFRIYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmlGZjZEOE54a05FbVBqanFGNTd0THc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21jM1FtMHdWVVZGVEVSMVNIcE1iM0JpUVZablEwRRAB",
+      "reviewer": "Ken A.",
+      "rating": 5,
+      "text": "Cutter rebuilt our deck and installed new french doors to the deck. The work was perfect, as much as we could ask. The workers were friendly and management was very responsive. Two years later we had a problem with the doors and Cutter helped us to have Andersen come out and fix the issue under warranty. I definitely use them again. Great respect for them.",
+      "publishedAt": "2026-05-14T18:23:19.868Z",
+      "ownerResponse": "Thanks for taking the time to share your experience working with us Ken.  This is another reason we prefer Anderson.  They too have a great reputation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21jM1FtMHdWVVZGVEVSMVNIcE1iM0JpUVZablEwRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmc3Qm0wVUVFTER1SHpMb3BiQVZnQ0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1SFZtUlhWVFJ5VjFJNFJVTndaazUzWm1GMWMwRRAB",
+      "reviewer": "Bryce",
+      "rating": 5,
+      "text": "We had an outstanding experience working with Andy and the entire Cutter Construction team. From start to finish, the communication and overall process were excellent. Our project had several unique challenges with the existing deck, including changing the joist layout, removing a window that was hidden under the deck, and incorporating picture frame framing into the new deck design, but Andy and team handled everything perfectly.<br><br>The craftsmanship and finished product exceeded our expectations. The whole crew were friendly and cleaned up after themselves. We couldn’t be more pleased with how everything turned out and truly appreciated the transparency and communication every step of the way.<br><br>We highly recommend Cutter Construction and will absolutely use them again for future projects!",
+      "publishedAt": "2026-05-07T18:02:50.178Z",
+      "ownerResponse": "Thanks for the review Bryce! You were an absolute pleasure to work for and we are looking forward to working for you again in the future on anything you are looking to get done.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1SFZtUlhWVFJ5VjFJNFJVTndaazUzWm1GMWMwRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOk5HVmRXVTRyV1I4RUNwZk53ZmF1c0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGNU1sSkdVR1pLYW1oc1lXaEpWbVZDVkdaTk9HYxAB",
+      "reviewer": "Cory H.",
+      "rating": 5,
+      "text": "I've known Brian and Mike for quite a few years and they constantly provide fantastic customer service and work.  They recently installed a roof and were in constant communication with having to work around all of the rain.  Their crew did a fantastic job, cleaned everything up and were in and out in a few days.<br><br>They'll be my first call for any additional work I need done on my house",
+      "publishedAt": "2026-05-06T00:17:25.891Z",
+      "ownerResponse": "Thanks for the feedback Cory. It means a lot to us when people trust us with their projects.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGNU1sSkdVR1pLYW1oc1lXaEpWbVZDVkdaTk9HYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOkF5MlJGUGZKamhsYWhJVmVCVGZNOGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaSFJUSTNlR2RZUTBKSk5HNXlOVzVqVVZwWWFHYxAB",
+      "reviewer": "steve S.",
+      "rating": 5,
+      "text": "So, I wanted to say to Nate, and Cutter construction. Thank you for actually showing up to my house on time, keeping your appointment and not acting like you had more important things to do ( seems to be the norm for many now). They came out and checked my roof for a leak, but educated me on how the wind can blow rain into the roof and then leak sometimes. Came out and got up on my roof, didnt charge me anything for their time. I really appreciate that alone. Cutter will be getting my business in the future.",
+      "publishedAt": "2026-04-30T15:23:11.396Z",
+      "ownerResponse": "Thanks James we take pride in doing standing by our word as well as our work so it feels great to hear you had such a positive experience. We look forward to helping you out on any future projects!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaSFJUSTNlR2RZUTBKSk5HNXlOVzVqVVZwWWFHYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOlZHRTI3eGdYQ0JJNG5yNW5jUVpYaGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKeVNtY3RXa0puZGtScFZXdEVabWx3WTFRM2FHYxAB",
+      "reviewer": "Todd J.",
+      "rating": 5,
+      "text": "Great company to work with. Project was completed well within the expected time frame and budget. Great communication throughout the entire process. The repair was blended seamlessly with our 156 year old brick house. Would highly recommend their services.",
+      "publishedAt": "2026-04-29T22:13:35.711Z",
+      "ownerResponse": "Thanks Todd!<br>Happy to hear you're satisfied with how the tuckpointing turned out.  We love working on old brick homes.  Spread the word!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKeVNtY3RXa0puZGtScFZXdEVabWx3WTFRM2FHYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOlJySmctWkJndkRpVWtEZmlwY1Q3aGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKcWVYcHZaMjFUV1hGM01rMXVVakZFVDA1bFNrRRAB",
+      "reviewer": "Bobby T.",
+      "rating": 5,
+      "text": "Mike, Nate, and their site crew were great to work with. I saw some great work on another property in the neighborhood that Cutter did so I made sure I got a quote from them. I was glad I chose them to do a roof repair on my garage the end result was great! I would not hesitate to go with them again for the next job!",
+      "publishedAt": "2026-04-28T22:46:15.809Z",
+      "ownerResponse": "Thanks Bobby! Very kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKcWVYcHZaMjFUV1hGM01rMXVVakZFVDA1bFNrRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOkJqeXpvZ21TWXF3Mk1uUjFET05lSkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsQ1VWSkpNV2t3UVdSVVFYUllYMkZMYTBWdlkzYxAB",
+      "reviewer": "Teresa C.",
+      "rating": 5,
+      "text": "The Cutter construction team showed up ahead of time, met all my needs, and finished the job in a timely manner.  Communication was great, and very respectful all around.  They did a fabulous job, would highly recommend!!!",
+      "publishedAt": "2026-04-11T13:57:11.243Z",
+      "ownerResponse": "Thanks Teresa!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsQ1VWSkpNV2t3UVdSVVFYUllYMkZMYTBWdlkzYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOklCUVJJMWkwQWRUQXRYX2FLa0VvY3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25wd1RsbFRjRk52YjNacVduaGZZbGxNYlcxM1NsRRAB",
+      "reviewer": "Elizabeth G.",
+      "rating": 5,
+      "text": "Cutter Construction just completed their third project with us, and I can't recommend them highly enough.  The quality of the work, politeness of the crew, and end result - all exceptional.  We definitely will be using them for future projects.",
+      "publishedAt": "2026-01-13T14:23:20.012Z",
+      "ownerResponse": "Hey Beth!  Thanks for taking the time to share your experience working with our company.  We look forward to those future projects.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wd1RsbFRjRk52YjNacVduaGZZbGxNYlcxM1NsRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOnpwTllTcFNvb3ZqWnhfYllMbW13SlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5a1RESkphSGhGVERSUFFrOUhkM2xtTVVvMlIwRRAB",
+      "reviewer": "Mike H.",
+      "rating": 5,
+      "text": "CUTTER CONSTRUCTION, what a thoroughly professional company. Highly professional & courteous employees. They installed a new Front Window, Two new Storm Doors & converted a sliding door into a French Door, exactly as we wanted. Superb communication on all issues. This is the company you want to deal with.",
+      "publishedAt": "2025-12-13T02:28:09.131Z",
+      "ownerResponse": "Thanks for the review Mike!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5a1RESkphSGhGVERSUFFrOUhkM2xtTVVvMlIwRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOk9kTDJJaHhFTDRPQk9Hd3lmMUo2R0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSTlQyWlJSalpqZW01UFkwVXlXamx3ZFVodVYwRRAB",
+      "reviewer": "Lora D.",
+      "rating": 5,
+      "text": "My 1870 house in Lisbon suddenly had major problems with the basement entrance on the outside of the house: flooding, mold, mice, major worries. With winter arriving and soon after spring, I had to get on this and find a competent honest company to save the house.<br><br>A Cutter Construction master bricklayer with associates dug out the basement stairway, took out the collapsing walls, filled in the basement opening with concrete blocks, freshly mixed grout and rebar, and then waterproofed the outside; adjoining window as well. Dump trucks with mansand and dirt filled in the existing hole of the prior basement entrance. This left me with what will be a beautiful larger lawn on the side of the house and no worries about flooding. From the inside, the new basement mason wall is a bonus decorative finely designed modern grotto, an attractive addition to not only the basement but to the house for which we are very thankful. Very reasonable cost for a week of work.<br><br>Patty dJ - Lisbon",
+      "publishedAt": "2025-11-24T23:15:07.431Z",
+      "ownerResponse": "Hey Patty!  Thank you so much for sharing your story.  We certainly appreciate the 5 star review.  So glad to hear you are happy with the work we did.  I'll pass along the complements to the boys!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSTlQyWlJSalpqZW01UFkwVXlXamx3ZFVodVYwRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOjRNT2ZRRjZjem5PY0UyWjlwdUhuV0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21FNWJYZ3pTazF0VEU1SldGODRiRGR3WXpkd1RFRRAB",
+      "reviewer": "Scott P.",
+      "rating": 5,
+      "text": "Cutter Construction built a custom patio and sidewalk for us.  The project was completed on-time and we were extremely happy with the results.  The crew performing the work were professional and highly skilled.  Will use them again for future concrete projects.",
+      "publishedAt": "2025-11-08T23:04:35.764Z",
+      "ownerResponse": "Thanks guys!  So glad to hear you're happy with the new front yard transformation!  Can't wait to see the finished polyurea coating in the spring!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21FNWJYZ3pTazF0VEU1SldGODRiRGR3WXpkd1RFRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmE5bXgzSk1tTE5JWF84bDdwYzdwTEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tadlRuaHFZMnhYV1VSSWMzQkNSR1U0TjNOVlZuYxAB",
+      "reviewer": "David F.",
+      "rating": 5,
+      "text": "We had our front cement steps and side patio poured.  They fit us in to their schedule and finished rather quickly. I plan on having them back to coat all surfaces with a Polyurea finish in the near future.  Great to work with.",
+      "publishedAt": "2025-10-02T16:38:01.429Z",
+      "ownerResponse": "Thanks for the 5 Star Review David!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tadlRuaHFZMnhYV1VSSWMzQkNSR1U0TjNOVlZuYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOkZvTnhqY2xXWURIc3BCRGU4N3NVVnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KR1NIRlpNakZZZDNkMFlsSlNUMkl5Tlhjd2NtYxAB",
+      "reviewer": "David C.",
+      "rating": 5,
+      "text": "Very professional and clean. The crew that did our concrete pad cleaned up before they left every day. Concrete looks great.",
+      "publishedAt": "2025-10-02T13:47:29.284Z",
+      "ownerResponse": "Thanks for the 5 stars!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KR1NIRlpNakZZZDNkMFlsSlNUMkl5Tlhjd2NtYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmJGSHFZMjFYd3d0YlJST2IyNXcwcmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GNlFsbDZOVGt6VTB4a1RteE9VMlEyWjFKeGNXYxAB",
+      "reviewer": "Edward H.",
+      "rating": 5,
+      "text": "We have had Cutter Construction to our house three times for separate projects. Each project was completed in a timely manner and the results were great.  Based on our positive experience we have recommended Cutter Construction to friends and family.",
+      "publishedAt": "2025-09-30T19:59:56.410Z",
+      "ownerResponse": "Thanks Guys!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GNlFsbDZOVGt6VTB4a1RteE9VMlEyWjFKeGNXYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmF6Qll6NTkzU0xkTmxOU2Q2Z1JxcWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4dWN6SnNjV1ZJWkRZM1NFa3RNeTFLTnpWVk1uYxAB",
+      "reviewer": "Christy",
+      "rating": 5,
+      "text": "Cutter crew replaced original cracked/sinking residential concrete driveway and sidewalk. Everything you would hope for in a contractor. 12/10 would recommend.",
+      "publishedAt": "2025-09-24T16:19:57.733Z",
+      "ownerResponse": "Hey Christy!  Thanks for the 5 stars!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4dWN6SnNjV1ZJWkRZM1NFa3RNeTFLTnpWVk1uYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOkxuczJscWVIZDY3SEktMy1KNzVVMnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KeE9VRXpUMkkwUnpaUGNWVjJlR2MwTVU4NFgxRRAB",
+      "reviewer": "Seth H.",
+      "rating": 5,
+      "text": "Did an amazing job, was able to get to it quickly, and above all else didn't risk driving the concrete truck on my driveway and used concrete buggy's. Highly recommended.",
+      "publishedAt": "2025-09-07T15:18:19.313Z",
+      "ownerResponse": "Thanks for the great review Seth!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KeE9VRXpUMkkwUnpaUGNWVjJlR2MwTVU4NFgxRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmJxOUEzT2I0RzZPcVV2eGc0MU84X1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ob1ExWm1VMW8wVDFwbFNHZFNkekl3YkhkM2VVRRAB",
+      "reviewer": "Diana P.",
+      "rating": 5,
+      "text": "We first worked with Bryan Cutter to have real stone put on the front of our home. I can’t say enough about the crew, the beautiful job they did.We are so very happy with the results.<br>We then worked with Mike Cutter to have repairs done on our little barn, two new custom made doors, and siding put on the barn and another building. The communication was great. Mike kept us up to date on every step.And again we received a beautiful work.<br>Both crews, cleaned up at the end of everyday, which was really appreciated.<br>We highly recommend Cutter Construcyion.",
+      "publishedAt": "2025-09-05T01:17:40.965Z",
+      "ownerResponse": "Thanks For The 5 Star Review!<br>And thank you for taking the time to share your experience working with Mike & I.  I'll pass the complements onto the boys as well.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ob1ExWm1VMW8wVDFwbFNHZFNkekl3YkhkM2VVRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmhoQ1ZmU1o0T1plSGdSdzIwbHd3eUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSUlVrMDJVRFl6ZVY5NFZGaGtWa0pGY0RkcGNWRRAB",
+      "reviewer": "Pat P.",
+      "rating": 5,
+      "text": "We had our sun room changed to an all season room. I was surprised at the short time they took to do it. The guys were great and did a great job. I love that room!! Would definitely recommend Cutters for any home improvement needs. Thanks guys!!",
+      "publishedAt": "2025-08-27T00:20:58.726Z",
+      "ownerResponse": "Thanks Pat! It turned out great.  Enjoy the view!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSUlVrMDJVRFl6ZVY5NFZGaGtWa0pGY0RkcGNWRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOjRRUk02UDYzeV94VFhkVkJFcDdpcVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xRemVtcDRVM1YyYTBaaVlsVkpWSFpCWkdkc2VYYxAB",
+      "reviewer": "Steve T.",
+      "rating": 5,
+      "text": "We had Cutter const. Replace our 33 yr old asphalt driveway with a concrete one. Very pleasant group of people to work with.  They answered all of our questions and explained processes to be done as well as when they would be done.  Work crew showed respect for each other and their manager.  They did a great job, we are very pleased how our new driveway turned out.  I would recommend them highly.",
+      "publishedAt": "2025-08-26T02:10:29.162Z",
+      "ownerResponse": "I was a pleasure working with you!  We really appreciate you taking the time to share your experience working with our company!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xRemVtcDRVM1YyYTBaaVlsVkpWSFpCWkdkc2VYYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOlQzemp4U3V2a0ZiYlVJVHZBZGdseXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taaFlWUndNbkJqTVd4SUxWRm1WMEpWTURJMVZsRRAB",
+      "reviewer": "Sheryl H.",
+      "rating": 5,
+      "text": "Great job,  workers polite and came everyday until finished",
+      "publishedAt": "2025-08-25T19:34:16.680Z",
+      "ownerResponse": "Thank you for the 5 Star review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taaFlWUndNbkJqTVd4SUxWRm1WMEpWTURJMVZsRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOkZhYVRwMnBjMWxILVFmV0JVMDI1VlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2paR1NtMUpNeTFYWkZOQ1VWQnhVUzFVY0dKNVIzYxAB",
+      "reviewer": "Abbey W.",
+      "rating": 5,
+      "text": "Highly recommend Cutter Construction! They were so easy to work with and very professional. You can tell they genuinely care about their work and will go above and beyond to make sure the customer is happy. We couldn't be happier with our deck. Thank you Andy and team!",
+      "publishedAt": "2025-08-19T21:18:37.833Z",
+      "ownerResponse": "Thanks Abbey!  Hope you, Kevin, and the new one enjoy the deck!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paR1NtMUpNeTFYWkZOQ1VWQnhVUzFVY0dKNVIzYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOjZGSm1JMy1XZFNCUVBxUS1UcGJ5R3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21jeWJqWjNaa3RTYTBWSFJIcFVObmRRTlRWamVHYxAB",
+      "reviewer": "Debra G.",
+      "rating": 5,
+      "text": "Your guys are amazing! They believe in quality and they did their damnedest to maintain that standard of workmanship.<br>The crew was on time, efficient, professional! The quality and just little things to make the experience easy was top notch! HIGHLY RECOMMEND!<br><br>Excellent work at a fair price for the project!",
+      "publishedAt": "2025-08-07T23:50:03.302Z",
+      "ownerResponse": "Wow!  Thanks Debra.  I know a lot of my replies sound the same, but we are truly grateful for you taking the time to share your experience with the public.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21jeWJqWjNaa3RTYTBWSFJIcFVObmRRTlRWamVHYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmcybjZ3ZktSa0VHRHpUNndQNTVjeGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25oVk1IcHdZMmxCZVhoWFFrOHlMWFpEZFc1c00zYxAB",
+      "reviewer": "JustBe F.",
+      "rating": 5,
+      "text": "Our work is almost done but I am confident it will be amazing because we have seen these guys work.  They are extraordinary.<br><br>As for the vindictive people bitching about not getting a call back, put your big girl panties on and call them if you don't hear back.  These guys are super busy because they are extremely good at what they do, trustworthy, fair-priced and personable to say the least.   They are well worth the effort of a phone call and a little patience and understanding.<br><br>***<br><br>Andy came out to do an estimate on replacing our 12 x 12 wood deck with a 12 x 16 Trex deck.  He was both professional and down to earth.<br><br>The guys who came out from two other highly rated companies insisted the 2-year-old deck had to be completely removed and rebuilt which would have cost us at least 12,000 more even with a lower grade of Trex.  What it cost them was the sale.<br><br>Andy said there was no reason to tear out the framework or substructure of the deck.  It was in excellent condition.    He helped us stay within our budget and gave us options.  He even came back out before finalizing the quote to let us look over our selections once more and to confirm the measurements.   This built a high level of trust and respect.<br><br>The men working on the deck are very respectful and personable as well.  They have been doing an impressive job and are making sure everything is perfect.  I have never seen contractors so meticulous and precise.<br><br>Thank you all for an outstanding job!!",
+      "publishedAt": "2025-08-03T18:55:33.001Z",
+      "ownerResponse": "Wow thanks Kay!! Really appreciate the support!  Enjoy your deck, it looks awesome!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oVk1IcHdZMmxCZVhoWFFrOHlMWFpEZFc1c00zYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOnhVMHpwY2lBeXhXQk8yLXZDdW5sM3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xOWFMxcE1hbGR3VjFKSGVuTmpiVkJqUVc1VVdVRRAB",
+      "reviewer": "Chad W.",
+      "rating": 5,
+      "text": "Cutter’s attention to detail and craftsmanship is top notch. They came in and completed my project quickly and correctly. It’s hit and miss when it comes to contract work in the current day and age, but these guys are a sure thing. You get what you pay for and Cutter Construction delivers.",
+      "publishedAt": "2025-08-01T14:54:25.911Z",
+      "ownerResponse": "Thanks for the awesome review Chad.  You guys were great to work for.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOWFMxcE1hbGR3VjFKSGVuTmpiVkJqUVc1VVdVRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOlNXS1pMaldwV1JHenNjbVBjQW5UWUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWQlJHcE9URWRXY2t4YWJVUm9hRVF4U0c1MVVuYxAB",
+      "reviewer": "Ryan S.",
+      "rating": 5,
+      "text": "We had Cutter Construction work on some more projects at our house.  They helped install two storm doors, one on an outside door that faced due west, and one in our garage.  Both were installed quickly.  We had had issues with our west facing outside door with all of the high winds and rain, water would get blown inside the house due to the high winds.  Since the install we've had two thunderstorms and the rain is no longer being blown into the house.  The doors are also providing more insulation and helping the house stay cooler.<br><br>Thank you for the quick response and great work.",
+      "publishedAt": "2025-07-29T19:08:53.065Z",
+      "ownerResponse": "Thanks Ryan! We appreciate the continued business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tWQlJHcE9URWRXY2t4YWJVUm9hRVF4U0c1MVVuYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOkVBRGpOTEdWckxabURoaEQxSG51Unc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2treGMzQkhOWEEzVW5OWE4xaFdNa1V3YjJSTUxYYxAB",
+      "reviewer": "Ann S.",
+      "rating": 5,
+      "text": "Cutter doesn’t cut corners; they do things the right way. Excellent work at a fair price.<br>Great crew members who work well with each other.  We highly recommend Cutter Construction.",
+      "publishedAt": "2025-07-28T01:03:47.863Z",
+      "ownerResponse": "Hey Ann.  Thanks for the great review!<br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2treGMzQkhOWEEzVW5OWE4xaFdNa1V3YjJSTUxYYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOkkxc3BHNXA3UnNXN1hWMkUwb2RMLXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214NVNFdFBUR2hMU1VrelRTMUlaVFpNTkVSclowRRAB",
+      "reviewer": "Alan L.",
+      "rating": 5,
+      "text": "Fast turnaround from start to finish.  Excellent job.",
+      "publishedAt": "2025-07-25T16:50:25.979Z",
+      "ownerResponse": "Thanks Alan! We appreciate the work!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214NVNFdFBUR2hMU1VrelRTMUlaVFpNTkVSclowRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmx5SEtPTGhLSUkzTS1IZTZMNERrZ0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CM1NEZHhNR1pETkRKS2RXSndWMVppZEhNelJsRRAB",
+      "reviewer": "Brenda C.",
+      "rating": 5,
+      "text": "Windsor on the River has been working with Cutter Construction (Bryan and Brad) on some concrete and brick work. They explained things very well and did an amazing job on the projects. We look forward to working with them in the future!",
+      "publishedAt": "2025-07-09T14:21:40.570Z",
+      "ownerResponse": "Hey Brenda.  Thanks for the 5 star review!  Let me know if you need help with any other projects.  We're glad to be of service.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CM1NEZHhNR1pETkRKS2RXSndWMVppZEhNelJsRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOnB3SDdxMGZDNDJKdWJwV1ZidHMzRlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201cVRUZGFabGRPTkU4NFoxcDFaVkptZEU1a2FVRRAB",
+      "reviewer": "Jim H.",
+      "rating": 5,
+      "text": "Cutter dug into a very complex leak repair project that became way bigger than anyone had anticipated. They worked closely with my expert friend, and the flat roofing contractor and just did a great job.Their brickwork turned out beautifully and the interior work turned out great as well. I highly recommend this company and their entire team. Top notch.",
+      "publishedAt": "2025-07-07T14:51:26.998Z",
+      "ownerResponse": "Thank you Jim for taking the time to share your experience working with our team.  We truly enjoyed working on your project.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201cVRUZGFabGRPTkU4NFoxcDFaVkptZEU1a2FVRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOm5qTTdaZldONE84Z1p1ZVJmdE5kaUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGaVZHTnVTRWRxUmxwaFNXcEJkVzVHYVUxbFJYYxAB",
+      "reviewer": "Tyler A.",
+      "rating": 5,
+      "text": "Mike Cutter and his team took a concept of a garage/home addition that lived in my mind and made it come to life, far exceeding expectations. From rough concept to detailed architecture drawings and then the construction process, Mike and his team kept us well informed and served as a partner helping us through design choices. We could not be more pleased with the end result. The Cutter team also re-sided our entire home and the results speak for themselves. This is a group of highly skilled and dedicated tradesmen who take pride in a job well done. They are friendly, thoughtful, and clean-up as they work. Mike's team including Mark, Travis, Rick, Thomas, Smith, Carl, and Brad to name a few, have given us an amazing space to enjoy with friends and family for many years to come.",
+      "publishedAt": "2025-06-20T06:01:30.319Z",
+      "ownerResponse": "WOW!  Thanks Tyler for leaving such a detailed review.  We really appreciate these reviews.  It helps people solidify their decision when choosing a contractor.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGaVZHTnVTRWRxUmxwaFNXcEJkVzVHYVUxbFJYYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOlFiVGNuSEdqRlphSWpBdW5GaU1lRXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kaGFDMUtaMmN6YWpsTmFGVlNNVzFMTmtSU1ZGRRAB",
+      "reviewer": "Bob H.",
+      "rating": 5,
+      "text": "We heard positive reviews from a neighbor regarding their experience with Cutter Construction for new siding on an existing home. We called their office and was told to expect a call from Brad Weatherman. From our 1st phone meeting and 3 face to face encounters, his Five Star Personality came through. Brad knew his products, provided a complete estimate for our project, and remained customer focused throughout. Thank you Cutter Construction. Bob Hamill",
+      "publishedAt": "2025-06-18T01:34:23.272Z",
+      "ownerResponse": "Wow Bob!  Thanks for taking the time to write such a great review!  We appreciate it.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kaGFDMUtaMmN6YWpsTmFGVlNNVzFMTmtSU1ZGRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOmdhaC1KZ2czajlNaFVSMW1LNkRSVFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VMR3hyOENFaGRpMUVnEAE",
+      "reviewer": "Sean S.",
+      "rating": 1,
+      "text": "Was told I'd get a call back to set up a consultation. Never heard anything.Found an address on Koudsi Blvd and spoke with a Roselyn and Mike. Gave Michael my number and email address. It's been a long while and still haven't received any communication.",
+      "publishedAt": "2025-06-10T18:40:46.847Z",
+      "ownerResponse": "Wondering where the communication breakdown was.  I can't seem to find you in our system, but clearly you looked up my personal address.  Please reach back out to use to rectify this.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VMR3hyOENFaGRpMUVnEAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKELGxr8CEhdi1Eg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xKeGVGRm1VM1puTW0xTlpFOUZXazVSV0c5NmFtYxAB",
+      "reviewer": "John F.",
+      "rating": 1,
+      "text": "I would like to give them a really good review but I called and requested a quote and they said someone would contact me but it has been 3 weeks and I still have not heard from them",
+      "publishedAt": "2025-05-31T19:03:08.630Z",
+      "ownerResponse": "Hey John, <br>Sorry we took too long to get back to you.  We try to return calls in the order that they are received and last month had an extremely high call volume for the framing side of our company.  Three weeks is getting out there, but also kind of typical.  Again...Thanks for reaching out and sorry to disappoint.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xKeGVGRm1VM1puTW0xTlpFOUZXazVSV0c5NmFtYxAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CAIQACodChtycF9oOlJxeFFmU3ZnMm1NZE9FWk5RWG96amc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VLM1Y2ZHU3OTVpRWhRRRAB",
+      "reviewer": "Mark R.",
+      "rating": 1,
+      "text": "I called Cutter Construction over a week ago looking for an estimate to replace our deck.  I was told that someone would get back to me. So far, NO response! I would recommend that you look elsewhere for someone that will respond and really wants to do the job.",
+      "publishedAt": "2025-05-27T14:06:11.234Z",
+      "ownerResponse": "Hello Mark,<br>I'm sorry for your disappointment with our time frame it takes to call someone back.  Sometimes it can be 3 weeks or more.  Most people are fine with an apology when we do return their phone call and often times we are told that nobody else has called them back either.  Last year I (Bryan Cutter) held the record at being 5 weeks behind with 62 people waiting.  Thank you for taking the time to share your disappointment with the public.  I'm sure your review will be heard by others... Most likely laughed at.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VLM1Y2ZHU3OTVpRWhRRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEK3V6du795iEhQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VKaTNfbzNIZ3BHejBnRRAB",
+      "reviewer": "Doug P.",
+      "rating": 5,
+      "text": "We are pleased and love the work done!  Very professional and considerate of property .  Quality was great and even gave us a couple of ideas that were appreciated.  The crew were friendly and hard working. Very impressed.  Will hire again if needed.  Thank you!!!!",
+      "publishedAt": "2025-05-16T14:37:27.530Z",
+      "ownerResponse": "Thanks for taking the time to share your experience working with Cutter Construction.  I'll pass along the complements to the boys!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VKaTNfbzNIZ3BHejBnRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEJi3_o3HgpGz0gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VOV1YtTEtIamZIXzRRRRAB",
+      "reviewer": "Floyd A.",
+      "rating": 5,
+      "text": "We had Cutter Construction pour a 11x25 ft patio curved at one end to incorporate a seating wall. Red edger block was used around the patio with river rock pebbles. The crew took about 2-3 days to complete the patio and seating wall. A small Bobcat removed the grass, dumped coarse rock in the formed area, and made numerous trips to the front of the house where dump trucks and cement truck were located. Plywood boards were layed on the lawn to not be damaged by the Bobcat. Let me say that there was no damage to driveway or lawn. Any spillage of rock and dirt on the driveway or the street was cleaned up. The crew did a professional job throughout the process!<br><br>We love the patio and seating wall. The furniture and fire pit have really enhanced the patio area.<br><br>I would certainly recommend Cutter Construction for any concrete projects!! Thanks to the crew who worked on the job!",
+      "publishedAt": "2025-05-08T00:52:27.108Z",
+      "ownerResponse": "Thanks for the 5 stars!  Looks like you're already enjoying the new patio.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VOV1YtTEtIamZIXzRRRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKENWV-LKHjfH_4QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNZLWQ3TU9BEAE",
+      "reviewer": "David M.",
+      "rating": 5,
+      "text": "Fantastic craftsmanship. We selected Cutter as they have the highest Trex certification in the CR/IC area. We worked with Andy to design a covered Trex deck with enclosed storage area below. I appreciated the communication from him, and quality of the work. Mark was the job foreman and he ran the crew efficiently and effectively. I highly recommend Cutter for future projects where you want a quality design and build which will last the life of your house. Before & After pictures below (dog not included!)",
+      "publishedAt": "2025-05-05T15:44:28.225Z",
+      "ownerResponse": "Thanks Dave we really appreciate you taking the time to give us such a glowing review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNZLWQ3TU9BEAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgMCY-d7MOA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURvb2JHYVpREAE",
+      "reviewer": "Jordan C.",
+      "rating": 5,
+      "text": "Bryan and his team used their years of professional experience to make working with them a great experience for us. They helped waterproof our foundation while also installing a new driveway. We couldn't be happier with how our experience was and we are happy we found a trusted contractor here in Eastern Iowa. Highly recommend and will use again with any future projects.",
+      "publishedAt": "2025-04-25T18:01:52.636Z",
+      "ownerResponse": "Thanks for taking the time to share your experience working with Cutter Construction. Happy to have another satisfied customer!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURvb2JHYVpREAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgMDoobGaZQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURJMWVQYzR3RRAB",
+      "reviewer": "jim J.",
+      "rating": 5,
+      "text": "Outstanding service, quick tuckpointing job on my chimney was completed fast and with no hassle. Highly recommend.",
+      "publishedAt": "2025-04-11T22:25:43.619Z",
+      "ownerResponse": "Thanks for the kind words Jim!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURJMWVQYzR3RRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgMDI1ePc4wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNJbHVQbHZBRRAB",
+      "reviewer": "Deb W.",
+      "rating": 5,
+      "text": "Had a big driveway pour last week and everything from start to finish was FIRST CLASS!  The estimate was done within a week and we were one of the first on the list this spring.   The crew was on time, efficient, professional and fun to work with!   The quality and just little things to make the experience easy were top notch!   HIGHLY RECOMMEND!",
+      "publishedAt": "2025-04-01T16:36:23.481Z",
+      "ownerResponse": "Wow Guys!  Thanks for the 5 stars!  I was a pleasure working with you.  Thanks again for the cookies!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJbHVQbHZBRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgMCIluPlvAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNRdWMzNWFREAE",
+      "reviewer": "carol I.",
+      "rating": 5,
+      "text": "Did a great job repairing the bricks on my chimney. 100% pleased with the job completed.  Thank you!",
+      "publishedAt": "2025-03-06T01:39:49.734Z",
+      "ownerResponse": "Thank you Carol!  We're glad to hear you're happy!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNRdWMzNWFREAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgMCQuc35aQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURfdEtQNmlRRRAB",
+      "reviewer": "Amanda B.",
+      "rating": 5,
+      "text": "Cutter's Construction replaced my roof and installed siding on my house and garage. I was very satisfied with their work when it was all finished. They made sure my yard was cleaned up when they were done each day and when the work was completed. Brad Weatherman was very easy to communicate with and was very timely with his responses to any questions I had. They were also flexible with adjusting my original bid with the siding as needed. I would recommend them to my family and friends in the area and will contact them for any work I may need in the future",
+      "publishedAt": "2025-01-22T00:54:45.010Z",
+      "ownerResponse": "Thanks for the 5 star review Amanda!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURfdEtQNmlRRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgID_tKP6iQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURQN01QbzNRRRAB",
+      "reviewer": "Judy P.",
+      "rating": 5,
+      "text": "Cutter Construction recently completed a new driveway for me. It looks great! The team was very hardworking & paid attention to detail, making sure it was perfect. Bryan kept me informed on what was happening so there were no surprises. I would highly recommend Cutter Construction!",
+      "publishedAt": "2024-11-29T23:27:36.233Z",
+      "ownerResponse": "Thank you Judy!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURQN01QbzNRRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgIDP7MPo3QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQzMmJMREJnEAE",
+      "reviewer": "R B.",
+      "rating": 2,
+      "text": "Guy came out and said he would send me an estimate. I had to ask daily. He said he sent it 3 times. Then found he had problem with email. Then a week later I tried to call and he didn't answer or return call. Not a great experience.",
+      "publishedAt": "2024-11-17T18:33:51.047Z",
+      "ownerResponse": "I'm curious what happened here.  This is a rare occurrence.  I would like to know who you spoke to and what type of job this was.  I would like to personally make this right, regardless if this was a while back.  There are quite a few more employees on the team lately, with new CRM software.  This happens from time to time.<br><br>My name is Bryan Cutter. You or anybody can call me directly @ 319-540-0556",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQzMmJMREJnEAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgID32bLDBg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzMk5Qd3BBRRAB",
+      "reviewer": "Barbara C.",
+      "rating": 5,
+      "text": "Cutter Construction just completed a new driveway, new steps and replaced part of the sidewalk at my residence.  The workers were awesome, respectful and helpful.   Very grateful for the upgrades completed by them.   Will use them again if I need more work completed.",
+      "publishedAt": "2024-11-02T15:43:09.767Z",
+      "ownerResponse": "Hey Barb!  We are soo glad you are happy with your driveway.  I will pass on the complements to the boys!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzMk5Qd3BBRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgIC32NPwpAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYNWNtNWlBRRAB",
+      "reviewer": "Amanda B.",
+      "rating": 5,
+      "text": "Andy and crew did a fantastic job replacing our deck!  Night and day difference from before.  They were great to work with, honest, reliable and reasonably priced.  Would definitely do business with them again!",
+      "publishedAt": "2024-10-29T18:18:32.338Z",
+      "ownerResponse": "Thanks Amanda! Glad to hear you had a great experience with Cutter Construction. We look forward to working with you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYNWNtNWlBRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgIDX5cm5iAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYbEs3c2hRRRAB",
+      "reviewer": "Dick W.",
+      "rating": 5,
+      "text": "Cutter Construction did a great job on our new Trex deck with deck railing and porch railing.  Andy C. was great to work with.  The crew with Cutter were also great to work with. We love the work they did and the end result.  We would highly recommend them.",
+      "publishedAt": "2024-10-24T14:33:47.743Z",
+      "ownerResponse": "Thanks, we think it really turned out great too. Glad your happy with it!! I'll be sure to pass along your kind words to the crew.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYbEs3c2hRRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgIDXlK7shQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYbU9PS2VREAE",
+      "reviewer": "MARK B.",
+      "rating": 5,
+      "text": "Cutter Construction did a fantastic job on our driveway. We had numerous concrete slabs shifting due to improper drainage.  They regraded the driveway and now have the water channeling away from our foundation.  They did a great job with cleanup.   They did a great job setting expectations how the process would work.  I highly recommend you give them a call for your project needs.",
+      "publishedAt": "2024-10-23T19:35:02.328Z",
+      "ownerResponse": "Thanks for the 5 stars Mark!<br>It was a pleasure working with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYbU9PS2VREAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgIDXmOOKeQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYM3RyOGxBRRAB",
+      "reviewer": "Scott N.",
+      "rating": 5,
+      "text": "I had our driveway and side walk replaced.  The guys were experienced and talented.  Awesome job, I'm very happy with the results.",
+      "publishedAt": "2024-10-17T18:35:23.355Z",
+      "ownerResponse": "Thanks for the 5 stars Scott!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYM3RyOGxBRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgICX3tr8lAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYdXZXQVRBEAE",
+      "reviewer": "Susie W.",
+      "rating": 5,
+      "text": "They did an awesome job and put a full days work in! Love our new deck!",
+      "publishedAt": "2024-10-15T16:06:35.546Z",
+      "ownerResponse": "Thanks Susie!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYdXZXQVRBEAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgICXuvWATA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURucTlESnp3RRAB",
+      "reviewer": "Robert M.",
+      "rating": 5,
+      "text": "The crew did a great job. The work was done very professionally. The process was discussed from the quote to the finish. Everyone from the owners to the crew worked with me to get exactly what I wanted and was done in a very timely manner. I will be using them for other work that needs to be done. I am very satisfied with the finished driveway.",
+      "publishedAt": "2024-10-10T16:02:27.903Z",
+      "ownerResponse": "Thanks Robert!  Glad to hear you had a great experience with Cutter Construction.  We look forward to working with you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURucTlESnp3RRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgIDnq9DJzwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURudTVXb1d3EAE",
+      "reviewer": "M K.",
+      "rating": 5,
+      "text": "I personally did not have this company work construction on anything of mine. But I do want to leave a positive review to let everyone know how amazing the people running this company are. Easy going and very friendly people. I had an issue with some accidental damage that they were not aware was happening and was definitely not purposely done. The owners response when I complained “we want to make our community a better place” and proceeded to rectify the situation he was not mad or angry and every one I spoke to just had a very pleasant approach.<br>I would pick these guys just because of their respect for their community and the people they encounter.",
+      "publishedAt": "2024-10-10T14:47:36.953Z",
+      "ownerResponse": "I want to thank you for taking the time to share your experience. <br>I remember this phone call.  I must commend you as well for the way you approached us.  Kindness is not always everyone's first approach... But it works so much better!<br><br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURudTVXb1d3EAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgIDnu5WoWw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNudHJxOHhRRRAB",
+      "reviewer": "Kimberly J.",
+      "rating": 5,
+      "text": "I could not be more thrilled with the work that Cutter Construction did for me, replacing driveway and very front walkway. Very professional, great friendly and knowledgeable crew, and A+++ work. I would hire again. Have already referred 2 people who loved my driveway. Left very minimal area needing grass seed. Left the area spotlessly clean when job was done.Thank you, Cutter!!! You’re the best!",
+      "publishedAt": "2024-09-25T20:49:57.340Z",
+      "ownerResponse": "Thanks for the awesome review Kim.  !!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNudHJxOHhRRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgICntrq8xQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURIbEwzNXR3RRAB",
+      "reviewer": "John C.",
+      "rating": 5,
+      "text": "The crew Cutter sent over was very considerate and efficient. Did my driveway and steps in two days. The third day they did some back fill work, sawed concrete and was done by noon the third day. I like the way they did the new drive, much better than the original.<br>If I need more concrete work done I’ll only call you! I feel I got my money’s worth.  Thank you",
+      "publishedAt": "2024-09-13T00:31:33.032Z",
+      "ownerResponse": "You're very welcome John.  I'll pass along the complements.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURIbEwzNXR3RRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgIDHlL35twE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNINUpLdlZBEAE",
+      "reviewer": "Jennifer H.",
+      "rating": 5,
+      "text": "We hired Cutter to put in a new driveway and front patio. They were great to work with. Communicated with us. They had great ideas to make the area better for us. The crew worked great together, cleaned up after themselves. Everyone was friendly. A piece of siding accidently got damaged when the step was removed but they fixed it. The finished project looks great. Highly recommend this company!",
+      "publishedAt": "2024-09-01T12:02:42.681Z",
+      "ownerResponse": "Thanks for the great review Jen !",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNINUpLdlZBEAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgICH5JKvVA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ3cWNPSmF3EAE",
+      "reviewer": "annette S.",
+      "rating": 5,
+      "text": "Our driveway is perfect.  Cutter was extremely professional,  prompt,  and thorough.  We would recommend them in a heartbeat.",
+      "publishedAt": "2024-08-25T19:03:10.199Z",
+      "ownerResponse": "Thanks Annette!  Quite the transformation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3cWNPSmF3EAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgID7qcOJaw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ3M3FEQXBBRRAB",
+      "reviewer": "Shawn P.",
+      "rating": 5,
+      "text": "We recently had Cutter Construction expand our driveway, and we couldn't be happier with the results! From start to finish, Bryan was fantastic to work with. His crew was professional and a pleasure to work with. They completed the job quickly and exceeded all our expectations with the quality of their work. The driveway looks amazing! I highly recommend Cutter Construction to anyone needing concrete work done. Truly a 5-star experience!",
+      "publishedAt": "2024-08-24T18:33:23.278Z",
+      "ownerResponse": "Thanks Shawn!  You too were awesome to work for.  We're glad to hear you had a great experience working with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ3M3FEQXBBRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgID73qDApAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURibzZhLWlRRRAB",
+      "reviewer": "tannerchickering",
+      "rating": 5,
+      "text": "Fantastic experience working with these guys. The crew was very friendly and professional. They did a great job - excellent attention to detail. Took their time and did the job right.",
+      "publishedAt": "2024-08-08T21:44:57.704Z",
+      "ownerResponse": "Thanks Tanner.  It was a pleasure working for you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURibzZhLWlRRRAB!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgIDbo6a-iQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNidHJlcEtREAE",
+      "reviewer": "Lila T.",
+      "rating": 5,
+      "text": "We knew Trex was a quality product, but installation is the Key.  Use a Trex Pro!  We were very satisfied with the office, the staff and most important, the installers.  Very professional and 5 star all the way!  Thank you Cutter Construction<br>Mark & Lila",
+      "publishedAt": "2024-07-26T23:47:47.603Z",
+      "ownerResponse": "You're very welcome guys.  It was a pleasure working with you two!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNidHJlcEtREAE!2m1!1s0x0:0xb8e069d428cbadfc!3m1!1s2@1:CIHM0ogKEICAgICbtrepKQ%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2trMmJEVldTM0UxWTI1d2VFWXRaSFZYUXpkR1IxRRAB",
+      "reviewer": "Michael B.",
+      "rating": 5,
+      "publishedAt": "2026-09-21T19:55:08.765Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURnNzhIbm5RRRAB",
+      "reviewer": "Bryan C.",
+      "rating": 5,
+      "publishedAt": "2026-08-21T14:38:43.164Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sbWNVZERSVFZGUkZORVNUSnFiak00YTNNeE1YYxAB",
+      "reviewer": "Thomas T.",
+      "rating": 5,
+      "publishedAt": "2025-11-28T17:26:59.579Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWS2VqZHFaMlo1Um5sQ1RWUnJaVmMxTTE5bVdFRRAB",
+      "reviewer": "Alex M.",
+      "rating": 1,
+      "publishedAt": "2025-11-19T18:20:21.173Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KNGQxRlNZelp2UzBKd2RYZG1TSGc0YlZwV1JIYxAB",
+      "reviewer": "Janet M.",
+      "rating": 5,
+      "publishedAt": "2025-09-16T17:19:26.996Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJYk90Sl9LbEttMXdRRRAB",
+      "reviewer": "Desirae H.",
+      "rating": 1,
+      "publishedAt": "2025-06-09T23:07:04.050Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxMFliM2hBRRAB",
+      "reviewer": "Scott N.",
+      "rating": 5,
+      "publishedAt": "2024-10-07T14:17:29.181Z"
+    }
+  ]
+}

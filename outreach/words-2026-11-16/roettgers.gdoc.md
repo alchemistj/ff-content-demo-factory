@@ -8,7 +8,9 @@ Draft for review. Sources: the business's own site, Google reviews, facts.md. Qu
 
 # We already did the work. Here's a Roettger's Heating and Cooling website that tells Lincoln who you are and gets the phone ringing.
 
-Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach.
+Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
+
+We built Roettger's Heating and Cooling the first five pages of that kind of website. More on that below.
 
 Buttons: View the Demo Site / See What Changed
 
@@ -24,13 +26,13 @@ We led the demo with one idea: call Matt, and you know when we're coming. We bui
 
 **Current site problem**
 
-- The headline (the big line at the top of the page) doesn't say HVAC, heating or air conditioning. The only mention is a small line under it, so Google has little to match to someone searching for an HVAC company in Lincoln.
-- "Cooling" sits over the maintenance paragraph and "Maintenance" over the air conditioning paragraph, so a visitor looking for AC reads about tune-ups first.
+  - The headline (the big line at the top of the page) doesn't say HVAC, heating or air conditioning. The only mention is a small line under it, so Google has little to match to someone searching for an HVAC company in Lincoln.
+  - "Cooling" sits over the maintenance paragraph and "Maintenance" over the air conditioning paragraph, so a visitor looking for AC reads about tune-ups first.
 
 **What the demo fixes**
 
-- The headline reads "HVAC Company in Lincoln, NE — Roettger's Heating and Cooling".
-- Every heading sits over its own text, and all seven services are named.
+  - The headline reads "HVAC Company in Lincoln, NE — Roettger's Heating and Cooling".
+  - Every heading sits over its own text, and all seven services are named.
 
 **A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
@@ -40,13 +42,13 @@ View page
 
 **Current site problem**
 
-- AC repair is one sentence on your services page, with no page of its own, so someone searching for AC repair in Lincoln has nothing to land on.
-- "Quickly" and "fast" are the only speed your site claims, while your reviews give real times: Matt came out within an hour and fixed it in 20 minutes.
+  - AC repair is one sentence on your services page, with no page of its own, so someone searching for AC repair in Lincoln has nothing to land on.
+  - "Quickly" and "fast" are the only speed your site claims, while your reviews give real times: Matt came out within an hour and fixed it in 20 minutes.
 
 **What the demo fixes**
 
-- Its own page, headlined "AC Repair in Lincoln, NE — Roettger's Heating and Cooling".
-- Reviews that give the actual times, placed beside the claim they prove.
+  - Its own page, headlined "AC Repair in Lincoln, NE — Roettger's Heating and Cooling".
+  - Reviews that give the actual times, placed beside the claim they prove.
 
 **A full build would also add** Call and form tracking that shows which pages and towns your leads come from.
 
@@ -56,13 +58,13 @@ View page
 
 **Current site problem**
 
-- Replacement is one line on your services page, so nothing exists for someone searching for air conditioner replacement in Lincoln.
-- Your repair-or-replace answer and equipment brand are on the FAQs page, not where someone decides.
+  - Replacement is one line on your services page, so nothing exists for someone searching for air conditioner replacement in Lincoln.
+  - Your repair-or-replace answer and equipment brand are on the FAQs page, not where someone decides.
 
 **What the demo fixes**
 
-- Its own page, headlined "Air Conditioner Replacement in Lincoln, NE — Roettger's Heating and Cooling".
-- The repair-or-replace answer and the Comfortmaker line sit where the decision gets made.
+  - Its own page, headlined "Air Conditioner Replacement in Lincoln, NE — Roettger's Heating and Cooling".
+  - The repair-or-replace answer and the Comfortmaker line sit where the decision gets made.
 
 **A full build would also add** A check of what your competitors offer, so services you didn't think to mention still get their own pages.
 
@@ -72,13 +74,13 @@ View page
 
 **Current site problem**
 
-- Your FAQ says you offer emergency service and your reviews thank you for fast answers on holiday weekends, but the contact page never mentions either.
-- The title Google shows in search results and in the browser tab is "Contact | Get Expert HVAC Support Today", and the page headline is "Contact Us". Neither says Lincoln.
+  - Your FAQ says you offer emergency service and your reviews thank you for fast answers on holiday weekends, but the contact page never mentions either.
+  - The title Google shows in search results and in the browser tab is "Contact | Get Expert HVAC Support Today", and the page headline is "Contact Us". Neither says Lincoln.
 
 **What the demo fixes**
 
-- "If it's urgent, please call" with your number, right at the top.
-- A headline that names Roettger's Heating and Cooling and Lincoln, NE.
+  - "If it's urgent, please call" with your number, right at the top.
+  - A headline that names Roettger's Heating and Cooling and Lincoln, NE.
 
 **A full build would also add** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
 
@@ -94,37 +96,37 @@ The demo is the first five pages. A full build covers the rest of your services 
 
 **Gets you found**
 
-- Every service on your website and your Google profile, telling the same story
-- Each service gets its own page or shares one, based on what Google shows for that search
-- Every town you serve, on your website and your Google profile
-- Built so Google and AI tools can read every page
+  - Every service on your website and your Google profile, telling the same story
+  - Each service gets its own page or shares one, based on what Google shows for that search
+  - Every town you serve, on your website and your Google profile
+  - Built so Google and AI tools can read every page
 
 **Earns their trust**
 
-- Reviews on every page, matched to the service
-- About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
-- A strip at the top of every page that shows what makes you different, so a customer sees why to pick you right away
+  - Reviews on every page, matched to the service
+  - About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
+  - A strip at the top of every page that shows what makes you different, so a customer sees why to pick you right away
 
 **Turns visitors into calls**
 
-- Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range
-- A call-and-book bar that stays on screen on phones, where most of your visitors are
-- A contact form that blocks spam
+  - Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range
+  - A call-and-book bar that stays on screen on phones, where most of your visitors are
+  - A contact form that blocks spam
 
 **Keeps working after launch**
 
-- Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
-- Your site watched around the clock for downtime.
-- Google indexing and your Google visibility checked every day.
-- Page links, buttons and contact forms tested in a real browser twice a day.
+  - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
+  - Your site watched around the clock for downtime.
+  - Google indexing and your Google visibility checked every day.
+  - Page links, buttons and contact forms tested in a real browser twice a day.
 
 ### What we'd confirm with you
 
 We'd go through these on the onboarding call. Each is a place where two things we found disagree.
 
-1. **Brand.** Your FAQ says you install Comfortmaker equipment, and we couldn't find you in Comfortmaker's dealer finder. One review says you replaced a system with a Rheem. Which brands do you install?
-2. **Years.** Your About text says the company was established in 2022 and also says it's backed by more than 10 years of experience. What do you want said?
-3. **Address.** Your site shows "Lincoln, NE and surrounding areas" and no street address. A BBB search result lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Where are you based?
+1.  **Brand.** Your FAQ says you install Comfortmaker equipment, and we couldn't find you in Comfortmaker's dealer finder. One review says you replaced a system with a Rheem. Which brands do you install?
+2.  **Years.** Your About text says the company was established in 2022 and also says it's backed by more than 10 years of experience. What do you want said?
+3.  **Address.** Your site shows "Lincoln, NE and surrounding areas" and no street address. A BBB search result lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Where are you based?
 4.  Hours. Your site lists no hours, and your FAQ says you offer emergency service. When do you answer the phone?
 
 ### Want a website like this for your business?
@@ -145,10 +147,10 @@ Buttons: Call (402) 314-3612 / Contact us
 
 **Trust bar**
 
-- Locally Owned in Lincoln
-- Speak Directly With Matt
-- Honest Recommendations
-- Maintenance Memberships
+  - Locally Owned in Lincoln
+  - Speak Directly With Matt
+  - Honest Recommendations
+  - Maintenance Memberships
 
 "The phone was answered right away, and Matt was available to take care of our needs quickly and efficiently." — Dave M.
 
@@ -182,10 +184,10 @@ When the summer heat hits, we fix [AC problems](about:blank), from warm air to u
 
 Routine maintenance means a system inspection, a tune-up and a cleaning, for your heating and your cooling. A Maintenance Membership puts that on a schedule:
 
-- Two tune-ups a year, one for cooling and one for heating
-- A full system inspection and cleaning each visit
-- Priority scheduling, especially in peak seasons
-- Discounts on parts and repairs
+  - Two tune-ups a year, one for cooling and one for heating
+  - A full system inspection and cleaning each visit
+  - Priority scheduling, especially in peak seasons
+  - Discounts on parts and repairs
 
 "I'm so glad I got the service plan. He checked out everything and cleaned inside and out, he was very thorough. It was also nice to not have a bill." — Martha R.
 
@@ -223,10 +225,10 @@ Buttons: Call (402) 314-3612 / Contact us
 
 **Trust bar**
 
-- Speak Directly With Matt
-- Locally Owned in Lincoln
-- Often Fixed the Same Day
-- Honest Pricing
+  - Speak Directly With Matt
+  - Locally Owned in Lincoln
+  - Often Fixed the Same Day
+  - Honest Pricing
 
 "Matt came out within an hour of me calling, diagnosed the problem, and fixed it within 20 minutes!" — Ben U.
 
@@ -240,20 +242,20 @@ When the AC quits, waiting a week isn't an option. Customers describe their air 
 
 Most "AC not cooling" calls come down to a short list of causes. In most cases it's one of these:
 
-- **A weak or failed capacitor.** It's a small part that gives the outdoor unit's motors a jolt to start, including the compressor, the pump at the heart of the system. Heat and age wear capacitors out, and a bad one often shows up as an outdoor unit that hums but doesn't start. It's usually one of the less costly repairs.
-- **A refrigerant leak.** Refrigerant is the fluid that carries heat out of your house. It isn't used up like fuel, so a system that's low usually has a leak somewhere. Topping it off without finding the leak often means the same problem comes back.
-- **A frozen indoor coil (the part inside that chills the air).** Often caused by restricted airflow, from a dirty filter or a blocked vent, or by low refrigerant. Ice blocks the air, and the system blows warm.
-- **A dirty outdoor coil.** Grass clippings, leaves and cottony seeds can pack the unit and keep it from shedding heat.
-- **A failed contactor (the switch that powers the outdoor unit on) or fan motor.** Both are common wear parts, and both often show up as a unit that clicks, buzzes or runs without the fan turning.
-- **A clogged condensate drain.** Many systems shut themselves off when the drain backs up, which can look like a dead air conditioner.
+  - **A weak or failed capacitor.** It's a small part that gives the outdoor unit's motors a jolt to start, including the compressor, the pump at the heart of the system. Heat and age wear capacitors out, and a bad one often shows up as an outdoor unit that hums but doesn't start. It's usually one of the less costly repairs.
+  - **A refrigerant leak.** Refrigerant is the fluid that carries heat out of your house. It isn't used up like fuel, so a system that's low usually has a leak somewhere. Topping it off without finding the leak often means the same problem comes back.
+  - **A frozen indoor coil (the part inside that chills the air).** Often caused by restricted airflow, from a dirty filter or a blocked vent, or by low refrigerant. Ice blocks the air, and the system blows warm.
+  - **A dirty outdoor coil.** Grass clippings, leaves and cottony seeds can pack the unit and keep it from shedding heat.
+  - **A failed contactor (the switch that powers the outdoor unit on) or fan motor.** Both are common wear parts, and both often show up as a unit that clicks, buzzes or runs without the fan turning.
+  - **A clogged condensate drain.** Many systems shut themselves off when the drain backs up, which can look like a dead air conditioner.
 
 ### Check These Before You Call
 
 Three quick checks sometimes solve it, and they help whoever you call:
 
-- **Thermostat.** Make sure it's set to cool, set a few degrees below the room temperature, and has fresh batteries if it takes them.
-- **Breaker.** The outdoor unit usually has its own breaker. If it's tripped, reset it once. If it trips again, leave it off and call.
-- **Filter.** A clogged filter is one of the most common causes of weak airflow and frozen coils. If it's dirty, replace it.
+  - **Thermostat.** Make sure it's set to cool, set a few degrees below the room temperature, and has fresh batteries if it takes them.
+  - **Breaker.** The outdoor unit usually has its own breaker. If it's tripped, reset it once. If it trips again, leave it off and call.
+  - **Filter.** A clogged filter is one of the most common causes of weak airflow and frozen coils. If it's dirty, replace it.
 
 Then tell us what you found, along with what the system is doing and when it started.
 
@@ -309,10 +311,10 @@ Buttons: Call (402) 314-3612 / Contact us
 
 **Trust bar**
 
-- Honest Recommendations
-- Free Estimates
-- Comfortmaker® Equipment
-- Financing Through Wisetack
+  - Honest Recommendations
+  - Free Estimates
+  - Comfortmaker® Equipment
+  - Financing Through Wisetack
 
 "Our air conditioner died on one of the hottest days of the year! Matt was referred as being quick, honest and helpful. He was able to replace the A/C the NEXT DAY!!" — Donna W.
 
@@ -342,10 +344,10 @@ The old refrigerant, the fluid that carries heat out of the house, has to be rec
 
 A few things make the estimate more accurate:
 
-- The age and model number, from the label on the outdoor unit
-- What's been repaired, and when
-- Which rooms never get cool enough
-- How long you plan to stay in the house
+  - The age and model number, from the label on the outdoor unit
+  - What's been repaired, and when
+  - Which rooms never get cool enough
+  - How long you plan to stay in the house
 
 When you compare any estimates, ask what size is being recommended and how it was figured. Ask whether the indoor coil is included and what the warranty covers, in writing. A higher efficiency rating (the SEER number on the unit's label) usually costs more up front. The savings depend on how many hours a year you run the air conditioner, and Lincoln's cooling season is shorter than in southern states, so a long payback is common.
 
@@ -369,10 +371,10 @@ We proudly install Comfortmaker® HVAC equipment, and we'll size and match a uni
 
 We've partnered with Wisetack to offer financing, so you can get the comfort you need now and pay later.
 
-- Apply from your phone
-- No compounding interest, prepayment penalties or late fees, per Wisetack's terms
-- Monthly payment plans of 3 to 60 months
-- Checking your options shouldn't affect your credit score
+  - Apply from your phone
+  - No compounding interest, prepayment penalties or late fees, per Wisetack's terms
+  - Monthly payment plans of 3 to 60 months
+  - Checking your options shouldn't affect your credit score
 
 Once we give you your project estimate, you see your financing options. You apply, pick the monthly plan that works for you, and we get started. A $2,500 project could be as low as $46 a month over 60 months (subject to approval).
 
@@ -426,11 +428,11 @@ Call (402) 314-3612, or send us a message.
 
 **Word counts** (computed from the page copy above; "with quotes" includes the quote text and names; "without quotes" removes quote blocks and their captions; headings, bullets, trust bar and buttons count):
 
-- Home: about 870 with quotes, about 690 without quotes
-- AC Repair: about 1,010 with quotes, about 880 without quotes
-- AC Replacement: about 915 with quotes, about 800 without quotes
-- Contact: about 325 with quotes, about 280 without quotes
-- Strategy: about 1,000 or fewer
+  - Home: about 870 with quotes, about 690 without quotes
+  - AC Repair: about 1,010 with quotes, about 880 without quotes
+  - AC Replacement: about 915 with quotes, about 800 without quotes
+  - Contact: about 325 with quotes, about 280 without quotes
+  - Strategy: about 1,000 or fewer
 
 **Strategy page length:** kept at or under 1,000 words.
 
@@ -438,39 +440,39 @@ Call (402) 314-3612, or send us a message.
 
 **Credentials and their sources**
 
-- None confirmed. The site states no license, insurance, warranty, certification or award. Nothing is defined on Home because there is nothing to define.
-- Comfortmaker: stated only as the FAQ says it ("We proudly install Comfortmaker® HVAC equipment ... locally supplied"). Dealer status is not claimed. A dealer finder search (Lincoln 68508) found no Roettger's listing (inventory.md). The "Comfortmaker-Dealer.png" file name on the About page is not page text, so I did not use it.
-- Wisetack: stated as the site states it ("we've partnered with Wisetack"). Wisetack's own site was not checked, so the terms (3 to 60 months, no compounding interest, no prepayment penalties or late fees, no credit-score impact to check, $46 example) are the business's own claims.
-- Locally owned: a claim on the site, used as a claim, not a credential.
+  - None confirmed. The site states no license, insurance, warranty, certification or award. Nothing is defined on Home because there is nothing to define.
+  - Comfortmaker: stated only as the FAQ says it ("We proudly install Comfortmaker® HVAC equipment ... locally supplied"). Dealer status is not claimed. A dealer finder search (Lincoln 68508) found no Roettger's listing (inventory.md). The "Comfortmaker-Dealer.png" file name on the About page is not page text, so I did not use it.
+  - Wisetack: stated as the site states it ("we've partnered with Wisetack"). Wisetack's own site was not checked, so the terms (3 to 60 months, no compounding interest, no prepayment penalties or late fees, no credit-score impact to check, $46 example) are the business's own claims.
+  - Locally owned: a claim on the site, used as a claim, not a credential.
 
 **Conflicts, listed and not resolved**
 
-- Brand: FAQ says Comfortmaker; review from Lee P. says "a full replacement of our HVAC with a Rheem system". I did not use Lee P.'s review. Strategy page lists it as a question.
-- Years: About says "established in 2022" and "more than 10 years of hands-on, high-quality experience". No year or years-in-business appears on any page. "10 years old" on the replacement page is the FAQ's system-age rule, not the company's age.
-- Address: no address on the site. A BBB search result (not opened) lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Reviews name Roca and Hickman. The Contact page gives only "Lincoln, NE and surrounding areas". Legal name unverified (LLC), everyday name used throughout.
-- Staff name spelled Kaden, Caden and Kaleb across reviews. I name no staff in page copy; names appear only inside word-for-word quotes (Kaden in Chelle S.'s and Ethan V.'s quotes).
+  - Brand: FAQ says Comfortmaker; review from Lee P. says "a full replacement of our HVAC with a Rheem system". I did not use Lee P.'s review. Strategy page lists it as a question.
+  - Years: About says "established in 2022" and "more than 10 years of hands-on, high-quality experience". No year or years-in-business appears on any page. "10 years old" on the replacement page is the FAQ's system-age rule, not the company's age.
+  - Address: no address on the site. A BBB search result (not opened) lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Reviews name Roca and Hickman. The Contact page gives only "Lincoln, NE and surrounding areas". Legal name unverified (LLC), everyday name used throughout.
+  - Staff name spelled Kaden, Caden and Kaleb across reviews. I name no staff in page copy; names appear only inside word-for-word quotes (Kaden in Chelle S.'s and Ethan V.'s quotes).
 
 **Inventory items, used or left out**
 
-- Services (7): all seven used. AC Repair and Air Conditioner Replacement get their own pages. Heating System Repair, Furnace Installation & Replacement, Heating Maintenance & Tune-Ups, AC Maintenance & Tune-Ups and Maintenance Memberships are on Home (Heating, Cooling, Maintenance and Memberships sections).
-- Differentiators (6): locally owned (Home, trust bars); speak directly with Matt (Home, both service pages, Contact); honest recommendations and free estimates (Replacement, with honest recommendations also on Home); treat as our own (Home hero); "more than 10 years" left out because it conflicts with 2022 and years are disputed. The "as if it were my own" line on About is covered by the "as if it were our own" wording on Home.
-- Unusual offers (3): Wisetack financing (Replacement page only, so financing is said once on the demo); maintenance membership (Home, no price because the site gives none); Comfortmaker, locally supplied (Replacement page).
-- Review themes (7): speed (AC Repair); heads-up before arrival (Home, Contact, AC Repair); honest, no pressure (Replacement, Home); explains the work (Home, AC Repair); named staff and the owner answers (Home, Contact; staff not named in page copy); clean work site (Replacement); fair price (AC Repair; the Replacement page leaves price to the estimate).
-- Left out on purpose: Dawn S. (thermostat batteries and filters), Sandy (mini-split cleaning) and Melissa E. (business location). Mini-split work is not named on the site, so I did not add it as a service. Also left out: Glenn F., Janel C., William T., Dianna K., Lori W., Trevor S., Slavik S., Ryan B., Patrick K. and others whose stories repeat a theme already carried by a used quote. Not used: the FAQ "signs my system needs attention" list (a generic signs list), the "maintenance lowers energy bills" FAQ answer (no figure, claim already carried by the membership benefits), and the family line beyond Jessica and the two boys. Review stories that name a time or price are used only where the copy around them does not repeat the number.
-- Financing, free estimate and quote lines appear once each on the business pages (Replacement). The trust bar on the AC Repair page says "Honest Pricing", which is the site's phrase.
-- No SRA proof block was supplied in the brief or the working files I read, so none is on the strategy page.
+  - Services (7): all seven used. AC Repair and Air Conditioner Replacement get their own pages. Heating System Repair, Furnace Installation & Replacement, Heating Maintenance & Tune-Ups, AC Maintenance & Tune-Ups and Maintenance Memberships are on Home (Heating, Cooling, Maintenance and Memberships sections).
+  - Differentiators (6): locally owned (Home, trust bars); speak directly with Matt (Home, both service pages, Contact); honest recommendations and free estimates (Replacement, with honest recommendations also on Home); treat as our own (Home hero); "more than 10 years" left out because it conflicts with 2022 and years are disputed. The "as if it were my own" line on About is covered by the "as if it were our own" wording on Home.
+  - Unusual offers (3): Wisetack financing (Replacement page only, so financing is said once on the demo); maintenance membership (Home, no price because the site gives none); Comfortmaker, locally supplied (Replacement page).
+  - Review themes (7): speed (AC Repair); heads-up before arrival (Home, Contact, AC Repair); honest, no pressure (Replacement, Home); explains the work (Home, AC Repair); named staff and the owner answers (Home, Contact; staff not named in page copy); clean work site (Replacement); fair price (AC Repair; the Replacement page leaves price to the estimate).
+  - Left out on purpose: Dawn S. (thermostat batteries and filters), Sandy (mini-split cleaning) and Melissa E. (business location). Mini-split work is not named on the site, so I did not add it as a service. Also left out: Glenn F., Janel C., William T., Dianna K., Lori W., Trevor S., Slavik S., Ryan B., Patrick K. and others whose stories repeat a theme already carried by a used quote. Not used: the FAQ "signs my system needs attention" list (a generic signs list), the "maintenance lowers energy bills" FAQ answer (no figure, claim already carried by the membership benefits), and the family line beyond Jessica and the two boys. Review stories that name a time or price are used only where the copy around them does not repeat the number.
+  - Financing, free estimate and quote lines appear once each on the business pages (Replacement). The trust bar on the AC Repair page says "Honest Pricing", which is the site's phrase.
+  - No SRA proof block was supplied in the brief or the working files I read, so none is on the strategy page.
 
 **Facts to verify with Matt**
 
-1. Is the heads-up before arrival standard? Six reviews describe a text or call, but the site is silent. Home and Contact word it as what customers report; confirm before stating it as policy.
-2. Is "within hours" and "often the same day" for AC repair fair on a normal summer day? Several reviews (an hour, 20 minutes, within hours, same day) support it. One review shows a Saturday contact scheduled for Monday, which is why Contact gives that quote.
-3. Hours, emergency hours and a street address. None is on the site, so none is on the pages. The emergency line uses only the FAQ's words.
-4. Is Matt the owner, and is his surname Roettger? Reviews say "Matt the owner"; the surname is from the business name. The Home family line (Matt, Jessica, two boys, grew up in Lincoln) comes from the About page, which is written in first person and unsigned. Does he want his family on the page?
-5. Comfortmaker: dealer status, and which other brands are installed (Rheem).
-6. Wisetack: is the partnership live, and are the terms and the $46 example current? The site says "as low as 3 to 60 months"; I wrote "monthly payment plans of 3 to 60 months".
-7. Membership price and what "Discounts on repairs" means. No price on the site.
-8. "Next-day replacement" rests on a few reviews (a next-day install, a next-business-day install, a quote the next day). I wrote "we aim to move quickly" and did not promise a time.
-9. Pre-sale inspection: written from one review (Ethan V.), supported by the site's "system inspections, tune-ups, and cleaning". Confirm it is a regular offer.
+1.  Is the heads-up before arrival standard? Six reviews describe a text or call, but the site is silent. Home and Contact word it as what customers report; confirm before stating it as policy.
+2.  Is "within hours" and "often the same day" for AC repair fair on a normal summer day? Several reviews (an hour, 20 minutes, within hours, same day) support it. One review shows a Saturday contact scheduled for Monday, which is why Contact gives that quote.
+3.  Hours, emergency hours and a street address. None is on the site, so none is on the pages. The emergency line uses only the FAQ's words.
+4.  Is Matt the owner, and is his surname Roettger? Reviews say "Matt the owner"; the surname is from the business name. The Home family line (Matt, Jessica, two boys, grew up in Lincoln) comes from the About page, which is written in first person and unsigned. Does he want his family on the page?
+5.  Comfortmaker: dealer status, and which other brands are installed (Rheem).
+6.  Wisetack: is the partnership live, and are the terms and the $46 example current? The site says "as low as 3 to 60 months"; I wrote "monthly payment plans of 3 to 60 months".
+7.  Membership price and what "Discounts on repairs" means. No price on the site.
+8.  "Next-day replacement" rests on a few reviews (a next-day install, a next-business-day install, a quote the next day). I wrote "we aim to move quickly" and did not promise a time.
+9.  Pre-sale inspection: written from one review (Ethan V.), supported by the site's "system inspections, tune-ups, and cleaning". Confirm it is a regular offer.
 10. Remove the stray /cart page and the "FAQs 2" page name. These are on the strategy page as problems.
 
 **Cut after checker review:** "Many Repairs Are One Part", "Fixed Before a Closing", "A Diagnosis You Can Follow", "Installed Without Rushing" and "A Tidy Work Site" stated review-derived process as company policy, so they are gone with their quotes (Jane B., Charli H., Marcus B., Manuel R., River K.). Remaining review-derived lines say what customers report. **Nov 16 correction:** AC Repair and Replacement expanded past 700 words without quotes using hedged general trade knowledge only (new sections carry no quotes and no business claims).
