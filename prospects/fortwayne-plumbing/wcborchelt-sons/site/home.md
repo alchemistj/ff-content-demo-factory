@@ -1,6 +1,6 @@
-# http://wcborcheltandsons.com
+# https://www.wcborcheltandsons.com
 
-- Fetched: 2026-11-16T04:17:56.353Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:18:13.145Z (rendered in a real browser)
 - HTTP: 200
 - Title: Home | Wc Borchelt
 - H1: (none)
