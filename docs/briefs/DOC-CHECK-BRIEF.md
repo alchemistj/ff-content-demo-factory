@@ -1,5 +1,7 @@
 # Brief: check ONE business's demo words (separate Sonnet)
 
+**Josh's demo guardrails (Nov 16) come first:** the doc's Notes must start with `Written from briefs @ <sha>` (FAIL if missing); `python3 scripts/check-rejected.py <file>` must print no FAIL; and the content rule at the top of DOC-WRITE-BRIEF.md (all the site's words, reviews as fact check, confident, sales pages, length follows the material) overrides anything below. After your check, the blind taste check (`TASTE-CHECK-BRIEF.md`, a different Sonnet) still has to pass.
+
 ## New patterns from FF's Josh-voice passes on Wickey, Big Dog and Cool Concepts (Nov 16). Check every one.
 - **No Google/Yelp star ratings or review counts; BBB letter grades are credentials and allowed if confirmed** (FF, Nov 16). This covers "What we'd confirm" too.
 - **No ratings or review counts in "What we'd confirm" either.** Example: "5.0 on Angi and Yelp vs 4.9 Google". Ask about the unnamed claim without the numbers.
@@ -44,10 +46,10 @@ You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-
 - an invented credential, license, award, year or guarantee (cut it); a site-sourced one is fine in the owner's voice, and a conflict belongs in "What we'd confirm" (never drop a top differentiator);
 - unexplained trade jargon (tear-off, decking, flashing, ACV, RTUs, TPO, EPDM, curbs, coping, "soft metals", soffit, fascia, brand product names): plain phrase or explain once;
 - an idea repeated anywhere in the doc (same repair-or-replace line, insurer-decides line, tech explainer, staff-role line): one idea, one place;
-- review-inferred process or reply speed stated as policy or repeated: change to "usually"/"often", once;
+- review-inferred process or reply speed that only one review shows, stated as a business claim: cut it (several reviews: say it plainly, once). Never hedge the business's own claims with "usually"/"often" (REJECTED.md R3);
 - filler copied from the business's own site ("years of experience", "good hands", "finish the job right", "X is part of what we do"): cut or replace with something specific;
-- speed claims the reviews support missing or timid: same day, within hours, at the reviews' strength, in the home hero/subheading, service-page heroes and FAQ;
-- home or either service page without a short FAQ (3-5 questions) at the ComfortTechs bar, or an FAQ using facts not in the doc;
+- speed claims the site makes or several reviews show, missing or timid: state them plainly in the owner's voice, never "customers describe" above the fold (REJECTED.md R1);
+- an FAQ with more than 3 questions, a question repeated on two pages, or answers using facts not in the doc (an FAQ is optional);
 - strategy "What the demo fixes" bullets that are vague ("credentials in plain words"): must name the actual items or the exact gap between reviews and page;
 - differentiators (veteran owned, same-day, free estimates) missing from a strip right under the home hero buttons, or only in the last home section: move them;
 - a service that conflicts with posted hours (e.g. "emergency repair" with 9-to-5 hours) appearing in page copy: cut it, keep it in "What we'd confirm";
@@ -76,7 +78,7 @@ Edit nothing else. Run no git, send nothing, create no sessions.
 ## FAIL conditions (send back)
 - **Missing inventory:** a differentiator, unusual offer or service from inventory.md is missing and not listed as consciously left out.
 - **Invented business claims:** services, credentials, speed, guarantees, prices or promised process not in `site/`, `facts.md` or `reviews.json`, including process steps inferred from reviews. Do NOT cut hedged general trade knowledge (what usually fails, what to check, safety, repair-vs-replace, what a visit involves); it is expected.
-- **Thin page:** home under 550 words or a service page under 700 is a FAIL: send back to the writer to add trade knowledge, not padding.
+- **Blog page:** a service page that reads like an explainer (how-to, "what usually fails", "before you call", more than one short trade section) is a FAIL: send it back to be rewritten from the site's own words as a sales page. There is no word floor; length follows the real material (Josh, Nov 16).
 - **Shallow:** sections that aren't Window Dudes deep, or a home page that feels thin.
 - **Strategy page:**
   - jargon, a generic lead-in, or a CTA placed before "What we'd confirm";

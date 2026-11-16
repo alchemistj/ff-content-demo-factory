@@ -1,5 +1,7 @@
 # Brief: one in-place backport pass on ONE finished doc (Sonnet)
 
+> **SUPERSEDED Nov 16 (Josh's demo guardrails).** Its speed-placement and FAQ rules came from the withdrawn "one-review strength" and "fill to 700" instructions. Do not use this brief. Rewrites follow the content rule at the top of `DOC-WRITE-BRIEF.md`, then `DOC-CHECK-BRIEF.md`, `scripts/check-rejected.py` and `TASTE-CHECK-BRIEF.md`.
+
 ## New patterns from FF's Josh-voice passes on Wickey, Big Dog and Cool Concepts (Nov 16). Check every one.
 - **No Google/Yelp star ratings or review counts; BBB letter grades are credentials and allowed if confirmed** (FF, Nov 16). This covers "What we'd confirm" too.
 - **No ratings or review counts in "What we'd confirm" either.** Example: "5.0 on Angi and Yelp vs 4.9 Google". Ask about the unnamed claim without the numbers.

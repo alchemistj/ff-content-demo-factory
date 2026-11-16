@@ -25,6 +25,7 @@ Removed, never use: "A redirect from every old page to its new home, so the rank
 
 `scripts/check-repeats.py` compares every doc's list to this block word for word (straight or curly quotes both accepted). Copy it exactly.
 
+<!-- Nov 16 (FF for Josh): "A trust bar that shows…" became "A bar near the top of every page that shows…"; Josh rejected "trust bar" as insider wording (ComfortTechs comment). Docs written before this keep the old line; no backport. -->
 <!-- FULL-BUILD-START -->
 **Gets you found**
 - Every service on your website and your Google profile, telling the same story
@@ -35,7 +36,7 @@ Removed, never use: "A redirect from every old page to its new home, so the rank
 **Earns their trust**
 - Reviews on every page, matched to the service
 - About and owner pages that show who does the work
-- A trust bar that shows what makes you different
+- A bar near the top of every page that shows what makes you different
 
 **Turns visitors into calls**
 - Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
