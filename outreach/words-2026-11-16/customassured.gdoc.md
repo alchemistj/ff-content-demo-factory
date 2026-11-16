@@ -7,7 +7,7 @@ Your site shapes your Google ranking, what AI says about your business, and how 
 
 [View the Demo Site] [See What Changed]
 ### Why we built this site
-Your Google reviews keep coming back to one thing: you come out twice a year, your office calls to book it, and it's often the same technician. Many reviewers say they've been with you ten years or more. One put it in four words:
+Your Google reviews keep coming back to one thing: you come out twice a year, your office calls to book it, and it's often the same technician. Customers who have been with you for years say so. One put it in four words:
 
 Lance is our guy.
 
@@ -23,9 +23,9 @@ Why it matters: Google reads your homepage first to decide what you do and where
 
 **Current site problem**
 
-  - The name in the browser tab, the line Google shows in search results, says only "Custom Assured Mechanical." No trade, no city.
-  - No phone number on the homepage, and no tap-to-call link on any page.
-  - The video under "Our Services" is broken. It shows "Video is not available or format is not supported."
+  - The name in the browser tab, the line Google shows in search results, says only "Custom Assured Mechanical." No trade, no city, so Google has little to show a customer searching for HVAC in Fort Wayne.
+  - No phone number on the homepage, and no tap-to-call link on any page, so a customer on a phone has to hunt for a way to call.
+  - The video under "Our Services" is broken. It shows "Video is not available or format is not supported," so the first thing a visitor sees under your services looks broken.
 
 **What the demo fixes**
 
@@ -41,9 +41,9 @@ Why it matters: maintenance is what your reviewers talk about most, and your sit
 
 **Current site problem**
 
-  - The Custom Priority Club is a few lines in the middle of Our Services, a page with no headline.
-  - The site never says how often you service a system or who comes. Your reviews do.
-  - Spelling slips: "CPC Benifits" and "maintenances preformed."
+  - The Custom Priority Club is a few lines in the middle of Our Services, a page with no headline, so the service your reviewers talk about most is easy to miss.
+  - The site never says how often you service a system or who comes. Your reviews do, so a new customer never hears why members stay.
+  - Spelling slips: "CPC Benifits" and "maintenances preformed," which makes a customer wonder how careful the work is.
 
 **What the demo fixes**
 
@@ -59,9 +59,9 @@ Why it matters: new systems come up in your reviews, and your site gives furnace
 
 **Current site problem**
 
-  - Furnaces get one sentence and no page, so nothing answers "furnace replacement Fort Wayne."
-  - Rod handling most sales himself appears only on the Financing page, 154 words with no headline.
-  - The free quote, financing and guarantee sit there, away from the furnace.
+  - Furnaces get one sentence and no page, so nothing answers "furnace replacement Fort Wayne," and a customer searching for a new furnace lands on someone else.
+  - Rod handling most sales himself appears only on the Financing page, 154 words with no headline, so a customer deciding on a furnace never learns who they would deal with.
+  - The free quote, financing and guarantee sit there, away from the furnace, so a customer has to piece together the price and the promise.
 
 **What the demo fixes**
 
@@ -78,8 +78,8 @@ Why it matters: Most visitors are on a phone, and this is where they decide whet
 **Current site problem**
 
   - Contact says Monday to Friday, 9am to 4pm. Your homepage says the service department is available around the clock. A customer with a dead furnace can't tell which is true.
-  - The form marks five fields "(required)" but enforces none, and it puts what a visitor types into the web address.
-  - The page is 45 words, with nothing on what to have ready.
+  - The form marks five fields "(required)" but enforces none, and it puts what a visitor types into the web address, so an empty form still goes through and a customer's details show in the address bar.
+  - The page is 45 words, with nothing on what to have ready, so a customer calls without the details you need.
 
 **What the demo fixes**
 
@@ -100,7 +100,7 @@ A full build starts with the foundation, then adds what we guarantee after launc
   - Built so Google and AI tools can read every page
 **Earns their trust**
   - Reviews on every page, matched to the service
-  - About and owner pages that show who does the work, which builds trust with customers and with Google and AI tools
+  - About and owner pages that show who does the work
   - A trust bar that shows what makes you different
 **Turns visitors into calls**
   - Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
@@ -239,7 +239,7 @@ On furnaces, the usual causes are a dirty flame sensor (the small rod that confi
 
 Most of these are cheap to deal with when found early and expensive when they stop the system on a holiday weekend. Finding them early is most of what maintenance is for.
 ### The Same Technician Each Visit
-Many customers say the same technician comes out year after year, and we often work that way. A technician who has worked on your system before already knows it, and you already know who is at the door.
+Customers say the same technician comes out year after year. A technician who has worked on your system before already knows it, and you already know who is at the door.
 
 They try to send the same technicians out every time.
 
@@ -277,7 +277,7 @@ Custom Assured Mechanical improved the distribution of heat and air conditioning
 
 A whole-home humidifier usually needs its water panel, the pad the water runs through, replaced about once a year, and hard water, which is common in Indiana, can leave scale that cuts how much moisture it adds. Ask when yours was last changed.
 ### We Call You When It Is Time
-Reviewers often mention the Club benefit called Convenience: our office contacts you, so a visit does not depend on you remembering to book. In a climate with hot summers and long cold winters, that matters twice a year, once before the cooling season and once before the heating season.
+Convenience is one of the Club benefits: our office contacts you, so a visit does not depend on you remembering to book. In a climate with hot summers and long cold winters, that matters twice a year, once before the cooling season and once before the heating season.
 
 I never have to worry about calling them to schedule as they contact me.
 
@@ -403,7 +403,7 @@ Email julie@customassured.com. Tell us your name, how to reach you, and what you
 
 
 ### After You Reach Us
-When you call, expect the conversation to start with what the equipment is doing. If you write, include a phone number so we can call you back.
+If you write, include a phone number so we can call you back.
 ### Paying a Bill
 Invoice numbers are at the top of your invoice or on the right side of your work order. If the cardholder's name is different from the name on the invoice, put the cardholder's name in the memo section.
 ### Visit the Office
@@ -422,7 +422,7 @@ Rebuild reason: Both. The browser tab says only the company name with no trade o
 | Furnace Replacement | 840 | 982 |
 | Contact | 273 | 323 |
 
-**Service pages (Nov 16 revision):** both now pass 700 words without quotes. Added general trade knowledge in the owner's voice, hedged ("usually", "often", "in most cases"): what usually fails, what a visit usually covers, carbon monoxide, filter and humidifier care, before-you-call checks, gas smell or alarm steps, repair-vs-replace rules of thumb, sizing, a typical replacement day and the furnace-plus-A/C question. Business claims are unchanged and sourced to site/, facts.md or reviews.json. The general-knowledge figures (filter intervals, furnace age, repair-cost rule, efficiency ranges, detector expiry) are trade rules of thumb, not Custom Assured promises; check them against how Rod actually works. Still unanswered and worth asking Rod: what a Club visit covers, Club price and terms, whether "same technician" and "we call you" are policy, how a replacement runs for them, lender, and guarantee terms. Nov 16 checker pass on the business pages: jargon explained once, do-it-yourself steps cut to essentials, repeats removed (brand repair, gas smell, hours, Club visit contents, convenience, emergency), review-based claims softened to usually/often, guarantee and free-quote lines hedged, the hours conflict and website talk removed from Contact, and quote-ending runs broken up. Counts above are approximate script counts after this pass. Nov 16 backport judgment pass: the doc was already free of speed claims, FAQs and review counts, so none were added (no FAQ: pages already answer their questions). Strategy page got the badge, the approved headline and the first-five-pages line under the subhead; the repeat later was removed; the browser-test line now reads as approved. Home strip left as is (3 items, no ratings). The site has no case studies to use. Home passes 550.
+**Service pages (Nov 16 revision):** both now pass 700 words without quotes. Added general trade knowledge in the owner's voice, hedged ("usually", "often", "in most cases"): what usually fails, what a visit usually covers, carbon monoxide, filter and humidifier care, before-you-call checks, gas smell or alarm steps, repair-vs-replace rules of thumb, sizing, a typical replacement day and the furnace-plus-A/C question. Business claims are unchanged and sourced to site/, facts.md or reviews.json. The general-knowledge figures (filter intervals, furnace age, repair-cost rule, efficiency ranges, detector expiry) are trade rules of thumb, not Custom Assured promises; check them against how Rod actually works. Still unanswered and worth asking Rod: what a Club visit covers, Club price and terms, whether "same technician" and "we call you" are policy, how a replacement runs for them, lender, and guarantee terms. Nov 16 checker pass on the business pages: jargon explained once, do-it-yourself steps cut to essentials, repeats removed (brand repair, gas smell, hours, Club visit contents, convenience, emergency), review-based claims softened to usually/often, guarantee and free-quote lines hedged, the hours conflict and website talk removed from Contact, and quote-ending runs broken up. Counts above are approximate script counts after this pass. Nov 16 backport judgment pass: the doc was already free of speed claims, FAQs and review counts, so none were added (no FAQ: pages already answer their questions). Nov 16 Josh-voice pass: every strategy problem bullet now ends with its cost, the full-build list matches the canonical block, plural and unsourced process lines (same technician policy, call expectations, Convenience) were softened or cut. Strategy page got the badge, the approved headline and the first-five-pages line under the subhead; the repeat later was removed; the browser-test line now reads as approved. Home strip left as is (3 items, no ratings). The site has no case studies to use. Home passes 550.
 ### Credentials and sources
   - None confirmed on a certifier's own site; none checked this pass. Defined once, on Home only, as the site states them: Rod's unnamed "certifications, accreditations, and training"; Casey's Technical Certificate from Ivy Tech; Julie's Communications degree (Purdue University Fort Wayne); Kim's business degree. Verify before sending.
   - Bryant: "proud to offer Bryant products" only (Home). Not called a dealer or certified.
@@ -447,5 +447,5 @@ Rebuild reason: Both. The browser tab says only the company name with no trade o
   - Lender, guarantee terms; "Whatever it takes®" use.
   - Service area beyond Fort Wayne; Kim/Julie/Kelly office contact; "Inc." vs "INC."
   - Whether Julie is Casey's wife (site says "better half"); copy just says they work together.
-  - Strategy numbers: about 22 maintenance reviews, about 9 install reviews, about a dozen long-tenure reviews come from inventory.md counts of the 66 pulled.
+  - Strategy lines about twice-a-year visits, the office calling members and long-time customers come from the reviews, not the site.
   - Hero tap-to-call and the "Pay Bill" page destination were not verified.

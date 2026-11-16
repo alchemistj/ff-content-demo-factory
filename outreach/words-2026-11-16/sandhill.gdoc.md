@@ -372,3 +372,17 @@ If you'd rather talk, call [(402) 890-6460](tel:+14028906460). Our owner, Dusty 
 ## Notes (not page copy)
 
 **Rebuild reason:** SEO. The homepage has no headline and no H1, and all five services sit as sections of one page, so no page exists for roof replacement or storm damage in Lincoln.
+
+**Word counts (page text including hero and strip; counts after the Nov 16 judgment pass; quotes counted separately).**
+
+| **Page** | **Without quotes** | **Quotes** | **With quotes** |
+| :-: | :-: | :-: | :-: |
+| Strategy | 1,023 | 0 | 1,023 (soft cap 1,000) |
+| Home | 709 | 213 | 922 |
+| Roof Replacement | 857 | 181 | 1,038 |
+| Storm Damage | 735 | 113 | 848 |
+| Contact | 256 | 34 | 290 |
+
+**Credentials.** None claimed on the site or anywhere else, so none are defined. Claims managers exist (site says they are "highly trained and qualified"; used once, on Storm Damage). "We tell you what needs doing and what doesn't." Appears once, in the Home hero subhead; reviews describe it, so confirm it with the owner.
+
+**Facts to verify.** Street address (Google shows 8120 Trendwood Dr, Lincoln, NE 68506; site shows none; may be a home). Discount terms. Hours and phone agree on all pages.

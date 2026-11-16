@@ -119,7 +119,7 @@ Call and form tracking that shows which pages and towns your leads come from.
 
 **What we'd confirm with you**
 
-On a short onboarding call, we'd confirm three things.
+On a short onboarding call, we'd confirm four things.
 
 - Which phone numbers and addresses should customers use? Your site shows (779) 368-0256; the Better Business Bureau adds three more numbers and 810 S Main St in Belvidere.
 - Your site says "15 years of being in business" and elsewhere "over a decade." What year did you start?
@@ -139,7 +139,7 @@ Roofing, siding, windows and gutters. Rockford, Loves Park, Belvidere and the to
 
 # Roofing Contractor in Rockford, IL — Bufalo Contracting
 
-We look at your roof first and tell you straight what it needs: a repair, a replacement, or nothing yet. If a storm did the damage, we work with your insurance company. Call any hour and we'll set up a time to look.
+We look at your roof first and tell you straight what it needs: a repair, a replacement, or nothing yet. If a storm did the damage, we work with your insurance company. Call and we'll set up a time to look.
 
 **Buttons:** Call (779) 368-0256 | Request a Free Inspection
 
@@ -151,9 +151,9 @@ We look at your roof first and tell you straight what it needs: a repair, a repl
 
 ## Honest First
 
-Some roofers hear the word "hail" and see a sale. We start with the roof. If the damage is small, we say it's a repair. If the roof has years left, we say that. If it's past saving, we show you where, and you decide what to do next.
+We start with the roof. If the damage is small, we say it's a repair. If the roof has years left, we say that. If it's past saving, we show you where, and you decide what to do next.
 
-That order matters most in the weeks after a big storm, when crews knock on doors and every roof is a "total loss." A second opinion from someone who walks the roof is worth having before you sign anything.
+After a big storm, a second opinion from someone who walks the roof is worth having before you sign anything.
 
 > Dillon was on my roof for what seemed like 20 minutes, came down and discussed a few possible repairs, but noted they were not pressing! Explained the roof still had several years of life!
 >
@@ -225,7 +225,7 @@ We work across northern Illinois and southern Wisconsin, including Rockford, Lov
 
 ## Ready When You Are
 
-Call (779) 368-0256 any hour and tell us what's going on with your roof. We'll set up a time to look at it.
+Call (779) 368-0256 and tell us what's going on with your roof. We'll set up a time to look at it.
 
 **Buttons:** Call (779) 368-0256 | Request a Free Inspection
 
