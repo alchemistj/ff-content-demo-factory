@@ -28,7 +28,14 @@ Keep navigation on real built routes.
 
 The footer should reinforce who the business is, what it does, where it serves, how to contact it, and where the key pages are. It is a trust/navigation anchor, not a second homepage.
 
-Include confirmed identity, phone, email, address, hours, service links, service-area summary, and brief verified credentials when they exist. Group them so they scan. Do not force a four-column layout.
+The footer always carries these four groups (the template lays them out):
+
+1. **Brand and contact:** the business name, a one- or two-sentence identity line (`footer.about`), every phone number with its office label, email and hours when confirmed.
+2. **Services:** the **full** confirmed service list (`services`), not only the built pages. Built pages are linked.
+3. **Service area:** the confirmed summary and towns, including every office.
+4. **Why choose us:** two to four confirmed differentiators (`footer.why`), such as owner on every job, warranty, price promise, or a verified credential.
+
+Every phone number for every office is tap-to-call wherever it appears. A second office's number is never left as plain text.
 
 Never sell the website (“professional website experience,” “clean mobile experience,” “this mockup”).
 

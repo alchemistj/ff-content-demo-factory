@@ -1,0 +1,848 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Flawless Roofing Co",
+    "slug": "flawless",
+    "owners": [
+      "Ravi"
+    ],
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Roofing Company",
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 730-0301",
+        "tel": "+13167300301"
+      }
+    ],
+    "email": "ravi@flawlessroofingcousa.com",
+    "hours": "Monday to Friday, 10:00 AM to 6:00 PM",
+    "address": "928 S Broadway, Wichita, KS 67211",
+    "serviceArea": {
+      "summary": "Wichita, Kansas",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Free Roof Inspections",
+    "Insurance Claim Help",
+    "Free Class 4 Shingle Upgrade",
+    "Based in Wichita"
+  ],
+  "services": [
+    {
+      "name": "Roof Replacement",
+      "route": "/roof-replacement-wichita-ks/",
+      "blurb": "Tear-off to cleanup, with a free class 4 impact-resistant upgrade, downspouts and gutter guards included."
+    },
+    {
+      "name": "Roof Repair",
+      "route": "/roof-repair-wichita-ks/",
+      "blurb": "Leaks, lifted shingles and storm damage traced from the roof and fixed, after a free inspection."
+    },
+    {
+      "name": "Roof Inspection",
+      "route": null,
+      "blurb": "Free, and the first step on every job: shingles, flashing and vents checked, and what we found explained."
+    },
+    {
+      "name": "Insurance Claim Help",
+      "route": null,
+      "blurb": "We file your hail or wind claim and work it with your adjuster."
+    },
+    {
+      "name": "New Roof Installation",
+      "route": null,
+      "blurb": "New roofs for homes and for commercial buildings."
+    },
+    {
+      "name": "Siding",
+      "route": null,
+      "blurb": "Vinyl, fiber cement or wood, with the old siding taken off first."
+    },
+    {
+      "name": "Gutters and Gutter Guards",
+      "route": null,
+      "blurb": "New gutters installed, old ones repaired and cleaned, and guards fitted to keep leaves out."
+    },
+    {
+      "name": "Interior and Exterior Painting",
+      "route": null,
+      "blurb": "Inside and outside walls repainted, and touch-ups where only a patch needs it."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "roofing company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita, KS · Free Roof Inspections · Insurance Claim Help",
+        "h1": "Roofing Company in Wichita, KS — Flawless Roofing Co",
+        "sub": "I'm Ravi. Our roof replacements come with a free class 4 impact-resistant upgrade, downspouts and gutter guards included. I work the claim with your adjuster. Call me for a free inspection.",
+        "primaryCta": {
+          "label": "Call (316) 730-0301",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Close-up of impact-resistant architectural shingles",
+          "brief": "roofing pool: class4-shingle-closeup"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Flawless roofing and construction was awesome! They helped with every step of the way to get my roof replaced. They answered any questions I had.",
+          "name": "Sean P."
+        },
+        {
+          "type": "split",
+          "heading": "The Claim Moves Forward. The Same Shingle Goes Back On.",
+          "body": [
+            "The hail came through Tuesday. By Thursday there's a roofer's card on the door, a deductible you never looked up, and a feeling you're one phone call from getting this wrong.",
+            "Then the quote comes, and it's for the same shingle the hail just broke. You go through all of this to put back the roof that couldn't take it, and the next storm starts it over.",
+            "Nobody tells you the shingle is a choice."
+          ],
+          "image": {
+            "slot": "home-claim",
+            "alt": "Hail marks on gray shingles in afternoon light",
+            "brief": "close view of a roof slope with scattered hail marks on gray shingles, roof filling the right of the frame, plain soft sky on the left, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "split",
+          "heading": "Put Back a Tougher Roof Than the Storm Took.",
+          "body": [
+            "Most roofers put back what was there. Our replacements include a free class 4 impact-resistant upgrade, with downspouts and gutter guards, so the upgrade isn't an extra line you have to ask for.",
+            "It starts with a free inspection and filing of your insurance claim. Then I work the claim with your adjuster, and the crew puts the new roof on."
+          ],
+          "image": {
+            "slot": "home-owner",
+            "alt": "Close-up of the ridge line on a gray shingle roof",
+            "brief": "roofing pool: sec-ridge-cap"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "You Shouldn't Have to Wonder What You'll Be Charged",
+          "body": [
+            "Many homeowners brace for the roofer who says one thing and bills another. You should know what's happening on your roof.",
+            "I'll tell you what I found after the inspection."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Being a single woman, finding someone who does what they say & not charge you more $ is extremely limited. I hired Ravi to replace my siding on my house & a detached garage & they showed up on time daily & didn’t take a day off till the job was done & it looks amazing!",
+          "name": "Diane J."
+        },
+        {
+          "type": "services",
+          "heading": "What We Do",
+          "intro": "Roof replacement first, because the upgrade rides on it. Then repair, inspection and the exteriors around the roof, from one company on S Broadway in Wichita."
+        },
+        {
+          "type": "prose",
+          "heading": "What a Class 4 Shingle Is",
+          "body": [
+            "Class 4 is an impact rating for shingles.",
+            "An ordinary shingle that takes a hailstorm is the one you end up replacing again. An impact-resistant shingle is built to hold up better when the next one comes.",
+            "The downspouts and gutter guards give the water coming off the new roof somewhere good to go."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What You Can See From the Ground, and What It Means",
+          "body": [
+            "Most roof damage is up where you can't see it from the driveway. Here's what homeowners do notice, what usually causes it and what we do about it."
+          ],
+          "items": [
+            {
+              "title": "Granules piling up at the downspouts",
+              "text": "Hail knocks the gritty granules off asphalt shingles. A free inspection tells you whether it's hail damage worth a claim or ordinary age."
+            },
+            {
+              "title": "Dents in the gutters, vents or AC unit after hail",
+              "text": "Hail that dents metal may have marked the shingles too, even when the roof looks fine from the yard. We check at the inspection and file your claim."
+            },
+            {
+              "title": "Shingles in the yard after a wind storm",
+              "text": "Wind breaks the seal strip that holds a shingle down, and rain runs under the ones left lifted. We tell you whether it's a repair or a claim, and cover the spot first if rain is coming."
+            },
+            {
+              "title": "A stain on the ceiling after a hard rain",
+              "text": "Water can get in at the flashing, a cracked pipe boot or a hail-bruised shingle, and travel before it shows. We trace it from the roof, not the ceiling."
+            },
+            {
+              "title": "Curled, cracked or bare shingles on an older roof",
+              "text": "That's age and sun, and a patch fixes one spot while the shingles beside it keep wearing. The free inspection tells you if it's time for a new roof."
+            }
+          ],
+          "tail": [
+            "Every one of these starts the same way, with a free inspection."
+          ],
+          "link": {
+            "label": "See roof repair →",
+            "route": "/roof-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Install Day",
+          "body": [
+            "On install day, a crew comes to your house and the old roof comes off. Then the underlayment, flashing and new shingles go on.",
+            "Several customers say their roof went on in a day. A bigger roof or short winter daylight can take longer, and after the inspection we'll tell you what to expect for yours.",
+            "When the crew leaves, your yard should look like it did when they arrived."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Cleaned up everything before they left. You could not tell they had been here.",
+          "name": "Bren C."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Job Goes",
+          "items": [
+            {
+              "title": "You call.",
+              "text": "Tell me what happened, or just that the roof is old. We set up the inspection, which is free."
+            },
+            {
+              "title": "We inspect your roof.",
+              "text": "We tell you what we found and what it means."
+            },
+            {
+              "title": "We file your claim.",
+              "text": "If there's storm damage, we file it and work it with your adjuster."
+            },
+            {
+              "title": "We put the roof on.",
+              "text": "Once the claim is settled, we schedule the crew. The upgraded shingle goes on with it."
+            },
+            {
+              "title": "We clean up.",
+              "text": "When the crew leaves, so does the debris."
+            }
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Do you handle the insurance claim?",
+              "a": "Yes. We file it, and we work it with your adjuster. Whether it pays depends on your policy and on the damage coming from a storm, not age. Your deductible is on your policy's declarations page, so look it up before the inspection."
+            },
+            {
+              "q": "Are you one of the storm chasers?",
+              "a": "We're a local roofing company with an office at 928 S Broadway in Wichita. You can call (316) 730-0301 or stop by, Monday to Friday, 10:00 AM to 6:00 PM."
+            },
+            {
+              "q": "What if the inspection finds no damage?",
+              "a": "Then you'll know, and you didn't pay to find out. The inspection is free either way, and a roof with years left shouldn't be replaced."
+            },
+            {
+              "q": "Do I have to sign or pay before you inspect?",
+              "a": "The inspection is free. Ask me about the price when you call."
+            },
+            {
+              "q": "Who will be on my job?",
+              "a": "Ask when you call who will be on your job."
+            },
+            {
+              "q": "What does the class 4 upgrade cost?",
+              "a": "Our offer is a free class 4 impact-resistant upgrade, with downspouts and gutter guards, on a roof replacement. Ask me how it applies to your roof when you call."
+            },
+            {
+              "q": "How soon after a storm should I call?",
+              "a": "Soon. Most policies set a deadline for filing a storm claim, and your policy states it. Damage looked at right after the storm is easier to prove than damage found a year later."
+            },
+            {
+              "q": "How long does a roof take?",
+              "a": "Several customers say their roof went on in a day. A bigger roof or short winter daylight can take longer. After the inspection we can tell you what to expect."
+            },
+            {
+              "q": "What if my roof is leaking right now?",
+              "a": "Call me. If a storm is coming, getting the leak covered comes before anything else."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Ravi for a Free Roof Inspection",
+          "text": "If a storm has gone through, or the ceiling has a stain you can't explain, call. We'll inspect the roof free and tell you what's there. Call (316) 730-0301. We're at 928 S Broadway in Wichita, open Monday to Friday, 10:00 AM to 6:00 PM, or email ravi@flawlessroofingcousa.com."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-replacement-wichita-ks/",
+      "navLabel": "Roof Replacement",
+      "keyword": "roof replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Roof Replacement",
+        "h1": "Roof Replacement in Wichita, KS — Flawless Roofing Co",
+        "sub": "If your roof is at the end of its life, or hail finished it off, the next question is who pays and who does the work. I'll look at the roof for free, work out the insurance claim with you and put the new roof on. Call me for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 730-0301",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "replacement-hero",
+          "alt": "Brick home with a brand-new charcoal shingle roof and clean gutters",
+          "brief": "brick ranch house with a brand-new charcoal shingle roof and clean gutters, house on the right, front yard on the left, calm pale sky behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "When It's Time for a New Roof, Not Another Patch",
+          "body": [
+            "Shingles don't fail all at once. They go brittle, curl at the edges, lose their granules and let go of nails, and eventually a stain shows up on a ceiling.",
+            "A patch fixes the spot you can see. It does nothing about the shingle next to it, which is the same age and wearing out the same way.",
+            "When the damage is across the whole roof, a new roof makes more sense than patching it. If it's one leak in one place, that's a [roof repair](/roof-repair-wichita-ks/), and I'll tell you so."
+          ],
+          "image": {
+            "slot": "replacement-claim",
+            "alt": "Worn gray shingles with hail marks seen from above",
+            "brief": "roof slope with worn gray shingles and a few hail marks seen from above, slope on the right, plain soft sky on the left, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "From Storm Claim to New Roof",
+          "body": [
+            "In Wichita, hail ends a lot of roofs years before age would. When it does, your homeowner's policy may pay for the replacement, so the claim is usually the first decision, not the last.",
+            "Here's the path.",
+            "You call us. We inspect the roof for free and document what we find. We file the claim with your insurance company, and we work the claim with your adjuster.",
+            "You don't have to get on the roof, learn the paperwork or chase anyone down. You tell us when the adjuster is coming, and we take it from there."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What You Pay",
+          "body": [
+            "On an insurance replacement, your policy decides what the claim pays, and your deductible is yours. We'll tell you where the claim stands as it goes.",
+            "If there's no claim, you pay for the roof, and the price comes from your roof, not a number off a chart. These are the things that move it:"
+          ],
+          "tail": [
+            "Anyone who quotes a roof over the phone hasn't seen yours. You get the number after the inspection, with each of those things explained.",
+            "Downspouts and gutter guards come with the replacement. Hail beats up gutters as much as shingles, and a new roof draining into old, clogged gutters wastes half the job."
+          ],
+          "items": [
+            {
+              "title": "Size and pitch",
+              "text": "More squares of roof means more material, and a steep roof is slower and harder to work on."
+            },
+            {
+              "title": "Layers",
+              "text": "Every old layer has to come off before the new roof goes on."
+            },
+            {
+              "title": "Decking",
+              "text": "Wet or rotted boards under the shingles get replaced, and nobody knows how many until the old roof is off."
+            },
+            {
+              "title": "The shingle",
+              "text": "Which one you pick changes both the price and the look."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Flawless roofing co is the best we called them out to look at our roof and they gave us the best option and right after that they came delivered materials and roofed it the following day. Ravi the owner is a superstar",
+          "name": "Kiet H."
+        },
+        {
+          "type": "steps",
+          "heading": "What Happens When You Call About a New Roof",
+          "items": [
+            {
+              "title": "You call.",
+              "text": "Tell me how old the roof is or what the storm did. The inspection is free."
+            },
+            {
+              "title": "We inspect the roof.",
+              "text": "On the roof, not from the driveway. You hear whether it's time to replace and why."
+            },
+            {
+              "title": "We file the claim.",
+              "text": "If a storm did the damage, we file it and work it with your adjuster."
+            },
+            {
+              "title": "You get the price.",
+              "text": "On a claim, you know what the policy pays and what your deductible is. Without one, you get a price for your roof."
+            },
+            {
+              "title": "The crew puts the roof on.",
+              "text": "The free class 4 upgrade, downspouts and gutter guards go on with it, and the yard is cleaned before they leave."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Choosing the Shingle",
+          "body": [
+            "The roof is the biggest single piece of your house you can see from the street. Color and style are the part of this job you'll live with every time you pull into the driveway, so take your time with them.",
+            "What the shingle is made to survive matters as much as how it looks. We put a class 4 impact-resistant shingle on your replacement as a free upgrade, so you're not choosing between the look you want and a roof that stands up to the next storm."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We have the nicest looking roof on the block and it completely transformed the look of our house!",
+          "name": "Jamie W."
+        },
+        {
+          "type": "prose",
+          "heading": "Install Day",
+          "body": [
+            "A tear-off is the part of the job you live through: noise overhead, a trailer in the driveway and a house open to the sky. We keep that stretch as short as we can.",
+            "A crew arrives and the old roof comes off. Then the underlayment, flashing and new shingles go on, and the gutters follow."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Did excellent job. on our new roof New gutter … Finished in one day highly recommend for other people",
+          "name": "Mahesh R."
+        },
+        {
+          "type": "prose",
+          "body": [
+            "Bigger roofs and short winter days take longer, and the gutters follow after the roof. After the inspection I can tell you what to expect for yours.",
+            "Before the crew leaves, the yard gets cleaned up. Old shingles and nails don't belong in your grass or your tires."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Before You Call",
+          "body": [
+            "**Is the inspection free?** Yes. It's how every job starts.",
+            "**How soon after a storm should I call?** Soon. Most policies set a time limit for filing a storm claim, and damage documented right after the storm is easier to prove than damage found a year later.",
+            "**Do I have to be home?** Be there for the inspection if you can, and for the adjuster's visit. Tell me when the adjuster is coming and I'll meet them.",
+            "**Can I replace the roof without a claim?** Yes. If there's no storm damage, there's no claim to file. You get a free estimate for the new roof.",
+            "**Does the gutter work cost extra?** The downspouts and gutter guards come with the roof replacement. New gutters themselves are a separate service: installation, repair and cleaning."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call for a Free Roof Estimate",
+          "text": "Call (316) 730-0301, Monday to Friday, 10:00 AM to 6:00 PM, or email ravi@flawlessroofingcousa.com. Tell me what happened to the roof, or just how old it is. For a leak that needs attention first, see [roof repair](/roof-repair-wichita-ks/)."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-repair-wichita-ks/",
+      "navLabel": "Roof Repair",
+      "keyword": "roof repair Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Roof Repair",
+        "h1": "Roof Repair in Wichita, KS — Flawless Roofing Co",
+        "sub": "A stain on the ceiling, a drip in a storm or a few shingles on the lawn means the roof needs attention now. I'll come out, inspect it for free and tell you what it needs. Call me for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 730-0301",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "repair-hero",
+          "alt": "Worn shingles beside a patched section of a roof",
+          "brief": "roof slope with a neatly patched section among gray shingles, roof on the right, plain soft sky on the left, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "When the Roof Is Leaking Right Now",
+          "body": [
+            "The first job is to stop the water getting worse, before anyone talks about the repair. Wet insulation, a stained ceiling and a soaked closet wall all cost more than the roof fix.",
+            "If a storm is coming, call and say so first. A tarp over the damaged area holds until the real repair can be done, and getting the water stopped comes before anyone prices anything."
+          ],
+          "image": {
+            "slot": "repair-leak",
+            "alt": "Ceiling corner with a faint water stain",
+            "brief": "corner of a bedroom ceiling with a faint water stain, ceiling on the right, calm plain wall on the left, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "I had a roof leak that was going into my daughter’s closet. Ravi was out same day and offered to patch it for free with the incoming storm so the damage wouldn’t get worse! So helpful and informative. I would’ve been happy to pay for the tarp job but he insisted.",
+          "name": "Jordan T."
+        },
+        {
+          "type": "steps",
+          "heading": "What Happens When You Call",
+          "items": [
+            {
+              "title": "You call.",
+              "text": "Tell me what you're seeing: where the stain is, when it showed up, whether a storm came through."
+            },
+            {
+              "title": "We tarp if we need to.",
+              "text": "If rain is coming, stopping the water goes first."
+            },
+            {
+              "title": "We inspect the roof.",
+              "text": "Free. We find the source of the leak and look at the rest of the roof while we're up there."
+            },
+            {
+              "title": "You get a straight answer.",
+              "text": "Repair, or replacement, and why."
+            },
+            {
+              "title": "We do the repair.",
+              "text": "After the inspection, we do the work."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where Roofs Leak",
+          "body": [
+            "The stain on your ceiling is almost never right under the hole. Water runs along the decking and the rafters before it shows, so the leak can be several feet from the stain.",
+            "Most leaks start in the same handful of places:"
+          ],
+          "tail": [
+            "That's why we get on the roof. A leak you can only see from inside the house has to be traced from outside."
+          ],
+          "items": [
+            {
+              "title": "Flashing pulled loose",
+              "text": "The metal around chimneys, walls and skylights gets bent and pulls loose, and water goes in behind it."
+            },
+            {
+              "title": "A cracked pipe boot",
+              "text": "The rubber collar around a vent pipe cracks in the sun long before the shingles wear out."
+            },
+            {
+              "title": "Missing or lifted shingles",
+              "text": "Wind breaks the seal and lifts them, and the next rain gets under."
+            },
+            {
+              "title": "Hail-bruised shingles",
+              "text": "A shingle hit by hail loses granules and cracks, and it leaks months later."
+            },
+            {
+              "title": "Valleys",
+              "text": "Where two slopes meet, a lot of water runs through a small seam."
+            }
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Claim It or Just Fix It",
+          "body": [
+            "After a storm, the question isn't only what's broken. It's whether the damage is worth an insurance claim at all.",
+            "A claim pays for storm damage above your deductible. If the repair costs less than your deductible, filing gets you nothing back, and paying for it yourself is simpler.",
+            "If the hail or wind damage runs across the roof, the math changes. That's when a claim is worth a closer look, and when a replacement may make more sense than a patch.",
+            "We'll tell you which side of that line your roof is on after the inspection, so you decide with the facts. If you file, we file it with you and work with the adjuster.",
+            "Have the damage looked at soon either way. Damage written down right after the storm is better evidence than a memory of a noise in the night."
+          ],
+          "image": {
+            "slot": "repair-types",
+            "alt": "Gray shingles lifted along a roof edge after wind",
+            "brief": "roof edge with a few lifted gray shingles along the eave, roof on the right, plain sky on the left, no readable text, no people, no tools"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace",
+          "body": [
+            "This is the question most homeowners have. We'll answer it on the roof, with you.",
+            "A repair makes sense when the damage is in one place and the rest of the roof has years left. A flashing, a pipe boot or a handful of shingles can be fixed without touching anything else.",
+            "Replacement makes sense when the damage is spread across the roof, the shingles are old and brittle, or the same roof keeps leaking in different places. Then you'd be paying for repair after repair on a roof that's finished. See [roof replacement](/roof-replacement-wichita-ks/) for how that works.",
+            "If a repair is all you need, that's what I'll tell you. I'd rather fix a roof right than sell a roof you don't need."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "How Long a Repair Takes",
+          "body": [
+            "How long a repair takes depends on what's wrong.",
+            "A pipe boot is a quick fix. A damaged valley or a section of rotted decking takes longer. Once I've been on the roof, I'll tell you what it needs and when we can do it, so a small leak doesn't sit waiting for weeks."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Very courteous and professional.. came and jnspected my roof and got it fixed in least then a week!!!!",
+          "name": "Dhaval B."
+        },
+        {
+          "type": "prose",
+          "heading": "Before You Call",
+          "body": [
+            "**Is the inspection free?** Yes.",
+            "**What does a repair cost?** It depends on what's failed and how much of the roof is involved. A boot or a few shingles is a small job. Ask me when you call, and I'll tell you what I find after the inspection.",
+            "**Should I wait for the next rain to see where it leaks?** No. Water that stays in a roof for weeks rots the decking and soaks the insulation. Call when you see the first stain.",
+            "**Can I fix a leak from the attic with sealant?** It might slow it. It won't fix it, and it hides where the water is actually coming in."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Before the Next Storm",
+          "text": "Call (316) 730-0301, Monday to Friday, 10:00 AM to 6:00 PM, or email ravi@flawlessroofingcousa.com. We're at 928 S Broadway in Wichita."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Flawless Roofing Wichita",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita, KS",
+        "h1": "Contact Flawless Roofing Co",
+        "sub": "The fastest way to reach me is to call. Tell me what happened to your roof, or just how old it is, and we'll set up your free inspection.",
+        "primaryCta": {
+          "label": "Call (316) 730-0301",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Wichita neighborhood street with shingle roofs",
+          "brief": "roofing pool: contact-street (replaces a porch photo with warped gutters)"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Send a Request",
+          "body": [
+            "**Call (316) 730-0301.** Monday to Friday, 10:00 AM to 6:00 PM. If a storm is on the way and you have a leak, call and say so first.",
+            "**Send a request.** Call, or email ravi@flawlessroofingcousa.com, and tell us what's going on. We'll set a time."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Happens After You Reach Us",
+          "body": [
+            "We set a time for the inspection that works for you, so you are not left waiting on someone to show up."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Super Nice guy, very prompt and professional. Helped our Aunt get her roof replaced and our neighbor. All excellent experiences and results!",
+          "name": "Joseph I."
+        },
+        {
+          "type": "prose",
+          "body": [
+            "After the inspection you get a straight answer: what we found and what it needs."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Ravi is the best in the business! Makes every accommodation and goes the extra mile to make sure everything goes right and fights for you!! Highly recommend Flawless Roofing Co!!",
+          "name": "Robert H."
+        },
+        {
+          "type": "prose",
+          "heading": "What Helps to Have Ready",
+          "body": [
+            "You don't need to prepare much. These help:"
+          ],
+          "list": [
+            "Your address in Wichita",
+            "What happened: a storm, a leak, a stain on the ceiling, or just an older roof",
+            "The date of the storm, if there was one",
+            "Your insurance company's name, if you plan to file a claim",
+            "Photos of damage or stains, if you have them"
+          ],
+          "tail": [
+            "If you've already filed a claim, tell me when the adjuster is coming."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Where We Are",
+          "text": "Flawless Roofing Co, 928 S Broadway, Wichita, Kansas 67211. Monday to Friday, 10:00 AM to 6:00 PM. We serve Wichita. The inspection is free. See [roof replacement](/roof-replacement-wichita-ks/) or [roof repair](/roof-repair-wichita-ks/) for what each involves."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "A Wichita roofing company at 928 S Broadway.",
+    "why": [
+      "Free roof inspections and insurance claim help",
+      "Work with Ravi, the owner"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your Google reviews describe a roofer who comes out the same day, files the claim, meets the adjuster and puts the new roof on in a day. One customer had a leak tarped for free before a storm because you insisted. And your site adds a free class 4 upgrade on top.",
+      "Your site shows none of that. The top of your homepage says \"Roofing Redefined for Modern Living\", with no town and no roof work named, and the \"Services\" item in your menu goes nowhere.",
+      "So we built a site that says roofing company in Wichita at the top, gives replacement and repair their own pages, and puts your customers' words beside their work."
+    ],
+    "cardsHeading": "Be the Roofing Company People Find on Google",
+    "cardsIntro": "Each card is one page: what your site does today and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "The top of the page says \"Roofing Redefined for Modern Living\", so Google can't tell you're a roofing company in Wichita.",
+          "Your menu's \"Services\" item goes nowhere, so a visitor looking for your work hits a dead end.",
+          "No customer reviews near the top, so a new visitor sees no proof."
+        ],
+        "fixes": [
+          "A headline that says roofing company in Wichita, KS, right at the top.",
+          "A menu that opens the pages we built.",
+          "A customer review right under the top of the page."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      },
+      {
+        "route": "/roof-replacement-wichita-ks/",
+        "title": "Roof Replacement",
+        "why": "New roofs are most of your reviews, and they share one page called \"Roofing\".",
+        "problems": [
+          "Replacement, repair and inspection sit on one page headed only \"Roofing\", so Google has no page to rank for roof replacement in Wichita.",
+          "Its \"Our Testimonials\" heading shows no reviews under it."
+        ],
+        "fixes": [
+          "Its own page for roof replacement in Wichita, KS: the claim, the free upgrade and roof day.",
+          "Three customer reviews, each beside the part of the job it describes."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      },
+      {
+        "route": "/roof-repair-wichita-ks/",
+        "title": "Roof Repair",
+        "why": "A leaking roof is a call you answer fast, and repair has no page.",
+        "problems": [
+          "Repair is one line on the \"Roofing\" page, so someone searching roof repair in Wichita finds nothing built for them."
+        ],
+        "fixes": [
+          "A page for roof repair in Wichita, KS: leaks, storm damage and the free inspection.",
+          "The same-day tarp review near the top."
+        ],
+        "alsoAdd": "Pages for storm damage, insurance claims and new roof installation, then gutters and siding, each planned from what Google actually shows for that search."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a ready customer reaches you.",
+        "problems": [
+          "The \"Start A Project\" button on your contact page goes nowhere."
+        ],
+        "fixes": [
+          "One tap to call at the top of the page, with your hours, address and email.",
+          "A short list of what to have ready."
+        ],
+        "alsoAdd": "Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you."
+      }
+    ],
+    "reportCardHeading": "What great roofing websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Every phone link goes to your number",
+        "status": "Good"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Needs work"
+      },
+      {
+        "label": "Menu and buttons open the right pages",
+        "status": "Needs work"
+      },
+      {
+        "label": "Contact form boxes labeled right",
+        "status": "Needs work"
+      },
+      {
+        "label": "No roof price on painting or gutter pages",
+        "status": "Needs work"
+      },
+      {
+        "label": "One customer count, not two",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already say you're the one to call. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your customers call you Ravi, while your BBB profile lists the owner as Yagnesh Zinzuwadia, so how would you like to be named everywhere?",
+        "Your site names only Wichita, while your BBB profile lists Butler, Harvey, Kingman, Reno, Sedgwick and Sumner Counties, so which towns should every listing say you serve?",
+        "Your site offers a free class 4 upgrade with downspouts and gutter guards included. Is that offer still current, and are there terms we should show next to it?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with the free class 4 upgrade",
+      "text": "After a hailstorm, the fear is paying to put back the same roof, then watching the next storm start it over. A free class 4 upgrade, with downspouts and gutter guards included, answers that directly. We checked the top five Wichita roofers, and none states it as free and included. Please tell us if the terms have changed.",
+      "showScores": true,
+      "rows": [
+        {
+          "claim": "Free class 4 upgrade, downspouts and gutter guards included",
+          "score": 20
+        },
+        {
+          "claim": "Ravi on your job, answering himself",
+          "score": 12
+        },
+        {
+          "claim": "Free same-day leak tarp before a storm",
+          "score": 12
+        }
+      ]
+    }
+  },
+  "onboardingQuestions": [
+    "Owner's full name and how he wants to be introduced: BBB lists Yagnesh Zinzuwadia, customers say Ravi.",
+    "Is ravi@flawlessroofingcousa.com the address to publish?",
+    "Manufacturer certifications (GAF, Owens Corning, CertainTeed): which, and where are you listed? None is claimed in this copy.",
+    "Kansas roofing contractor registration number, license and insurance details to show.",
+    "Free class 4 upgrade, downspouts and gutter guards: current, and any terms or limits? Does it apply to every new roof?",
+    "Is NEW ROOFS STARTS AT 99$ a real offer, and what does it cover? It is left out.",
+    "Warranty on workmanship or materials, and any financing partner: none found, so none claimed.",
+    "Years in business: BBB shows March 2023; the site shows no number.",
+    "Service area: BBB lists Butler, Harvey, Kingman, Reno, Sedgwick and Sumner Counties; the site names only Wichita. Which towns should be listed?",
+    "Derby address on BBB: is it a live office?",
+    "Does the 928 S Broadway office take walk-ins, and do the Google hours match Monday to Friday, 10 to 6?",
+    "Commercial roofing: how much of the work, and any project types to name?",
+    "Typical roof schedules, and whether the free tarp for a leak is standard or was a one-off.",
+    "The $200 referral reward: current, and may it go on the site?",
+    "How should the crew be named, and are there photos of finished Wichita roofs we can use?",
+    "A review says you are licensed in Hutchinson and Wichita areas: is Hutchinson a town to list, and is there a license to show?",
+    "The copy says \"Based in Wichita\" rather than \"locally owned\": may we say locally owned?"
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Air Capital Heating and Air",
+    "slug": "aircapital",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "HVAC Company",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 990-1911",
+        "tel": "+13169901911"
+      }
+    ],
+    "email": "aircapitalheatingnair@gmail.com",
+    "hours": "Monday to Sunday, 8 a.m. to 5 p.m. Emergency calls available.",
+    "address": null,
+    "serviceArea": {
+      "summary": "Wichita and surrounding areas",
+      "towns": [
+        "Wichita",
+        "Derby",
+        "Andover",
+        "Maize",
+        "Goddard",
+        "Haysville",
+        "Valley Center",
+        "Park City",
+        "Bel Aire"
+      ]
+    }
+  },
+  "trustBar": [
+    "Free Estimates",
+    "Same-Day and Next-Day Appointments",
+    "Emergency Calls Available",
+    "Homes and Businesses"
+  ],
+  "services": [
+    {
+      "name": "AC Repair",
+      "route": "/ac-repair-wichita-ks/",
+      "blurb": "Capacitors, motors, drain lines and refrigerant leaks, found and explained first."
+    },
+    {
+      "name": "Furnace Repair",
+      "route": null,
+      "blurb": "Igniters, flame sensors and no-heat calls, with the cause explained in plain words."
+    },
+    {
+      "name": "New AC Installation",
+      "route": null,
+      "blurb": "An energy-efficient air conditioning system matched to your home and your needs."
+    },
+    {
+      "name": "New Furnace Installation",
+      "route": null,
+      "blurb": "A furnace sized for your home, with your options laid out before you choose."
+    },
+    {
+      "name": "AC Replacement",
+      "route": "/ac-replacement-wichita-ks/",
+      "blurb": "A replacement system, only when repair no longer makes sense."
+    },
+    {
+      "name": "Boiler and Heat Pump Repair",
+      "route": null,
+      "blurb": "Heating repair for boilers and heat pumps as well as furnaces."
+    },
+    {
+      "name": "Ductless Mini Splits",
+      "route": null,
+      "blurb": "Heating and cooling for additions and rooms without ductwork."
+    },
+    {
+      "name": "Preventative Maintenance Plans",
+      "route": null,
+      "blurb": "Scheduled tune-ups that catch small problems before they quit."
+    },
+    {
+      "name": "Light Commercial HVAC",
+      "route": null,
+      "blurb": "Installation, repair and maintenance for offices, retail and restaurants."
+    },
+    {
+      "name": "Financing",
+      "route": null,
+      "blurb": "Available through Enhancify across installation, replacement and repair work."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "hvac company wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita, KS · Locally Owned · Same-Day Appointments",
+        "h1": "HVAC Company in Wichita, KS — Air Capital Heating and Air",
+        "sub": "We're a new Wichita heating and air company. We book same-day visits, and the technician explains the cause and every option before any work starts. You're not stuck waiting, and you're not being sold. Call (316) 990-1911.",
+        "primaryCta": {
+          "label": "Call (316) 990-1911",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Unmarked white service van parked beside a brick building",
+          "brief": "HVAC pool r2: arrive-van-driveway"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Called and had service done the same day within hours. The technician was very honest and friendly as well as did a great job explaining what was wrong with our A/C. They knew exactly what they were doing. Very thankful and happy we called. I would recommend this company to everyone.",
+          "name": "Oscar M."
+        },
+        {
+          "type": "prose",
+          "heading": "When the AC Quits on a Hot Afternoon",
+          "body": [
+            "It's 2:30 on a July afternoon. The thermostat says 86 and climbing, the baby finally fell asleep, and your mom keeps saying she's fine. You've called two places. One went to voicemail and one said next week.",
+            "You don't care who's cheapest. You want somebody there today, and you want to be told what's wrong without being sold something."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Same Day. Explained First.",
+          "body": [
+            "Most companies book you out for days, then show up and hand you a number. You're left guessing whether it's one small part or a whole new system.",
+            "We do it in a different order. We book you the same day or the next, and nothing starts until you've heard the cause and every option in plain words."
+          ],
+          "image": {
+            "slot": "sameday-gauges",
+            "alt": "Technician checking an outdoor air conditioner with gauges",
+            "brief": "HVAC pool photo: Technician checking an outdoor air conditioner with gauges"
+          },
+          "list": [
+            "You call and tell us what the system is doing",
+            "We book you a same-day visit",
+            "The technician finds the cause and explains it in plain words",
+            "You hear every option before any work starts, then you decide"
+          ],
+          "listStyle": "checks"
+        },
+        {
+          "type": "prose",
+          "heading": "No Games, Just Honest Work",
+          "body": [
+            "Our job is to leave you sure of what was wrong and what you paid for. Here's how that went on the hottest day of the Kansas summer."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "My AC died on the hottest day of the Kansas summer, and Air Capital Heating and Air showed up like the cavalry. … Instead, they showed up SAME DAY. The tech was friendly, explained exactly what was wrong (RIP capacitor, you served us well), didn’t try to upsell me on a whole new unit like some places do, and had cold air blasting through my vents faster than I could finish my iced coffee.",
+          "name": "Carlos F."
+        },
+        {
+          "type": "services",
+          "heading": "Heating and Cooling Services",
+          "intro": "New installs, repair, replacement and upkeep for the AC and the furnace, for homes and light commercial buildings."
+        },
+        {
+          "type": "review",
+          "quote": "Juan was great!  He explained everything that he was doing, what parts needed to be repaired or replaced, and explained all of the options.  He cleaned the unit thoroughly and everything's working great!  I highly recommend Air Capital!",
+          "name": "Wichita B."
+        },
+        {
+          "type": "prose",
+          "heading": "What Wichita Homeowners Call Us About",
+          "body": [
+            "Most breakdowns come down to one part, and the symptom usually points to it. Here is what we look for, and what we do about it."
+          ],
+          "items": [
+            {
+              "title": "The house won't get below 80",
+              "text": "The vents blow warm. A weak capacitor, a worn fan motor or a refrigerant leak is usually the cause, and we fix that part."
+            },
+            {
+              "title": "The outdoor unit hums and the fan never spins",
+              "text": "A weak capacitor can't give the motor its starting jolt. It's one of the cheapest and most common AC repairs, and we replace it once we've confirmed it's the cause."
+            },
+            {
+              "title": "The AC shuts off and water sits by the unit",
+              "text": "Algae has usually clogged the condensate drain, and a safety switch has tripped to protect the house. We clear the line and check why it clogged."
+            },
+            {
+              "title": "The furnace clicks but never lights",
+              "text": "A dirty flame sensor or a worn igniter is the usual reason. We test both, tell you which one failed, and replace only that."
+            },
+            {
+              "title": "It runs all afternoon and the house still sits at 82",
+              "text": "On an older system that has needed repeated repairs, each fix buys a few months. We lay the repair next to replacement, with reasons for each, and you decide."
+            }
+          ],
+          "link": {
+            "label": "See AC repair in Wichita →",
+            "route": "/ac-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace",
+          "body": [
+            "A new system is the biggest bill in this trade, so it should never be the first thing you hear. If a capacitor, a motor or an igniter has failed on a system that otherwise runs well, repair it.",
+            "Replacement starts to make sense when the system is old, the repairs keep coming, or it's on the older R-22 refrigerant. The label on the outdoor unit shows the age and refrigerant.",
+            "When it is time, we install new air conditioners and furnaces. Here is [what a replacement involves](/ac-replacement-wichita-ks/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Work",
+          "body": [
+            "We serve Wichita, Derby, Andover, Maize, Goddard, Haysville, Valley Center, Park City and Bel Aire.",
+            "Not sure whether we cover your street? Call and ask."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Will recommend this company to everyone. … When I reached out to Air Capital Heating and Air they showed up within an hour and fixed the issue. They were very informative and reasonable priced!",
+          "name": "Jayci G."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Can you come today?",
+              "a": "We book same-day and next-day appointments, so it depends on when you call and what's already on the schedule. Call early and tell us what the system is doing and your town. We're open 8am to 5pm, and emergency calls are available."
+            },
+            {
+              "q": "Do I really need a whole new system?",
+              "a": "Not if one part has failed. A young system with one failed part is a repair, and we'll tell you so. An older system that keeps breaking is worth pricing a new one. We lay out both, and you choose."
+            },
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes, we offer free estimates. The technician finds the cause and explains it first, so you hear the options before you agree to any work."
+            },
+            {
+              "q": "What does a repair cost?",
+              "a": "It depends on what failed. A capacitor is a small repair and a compressor is not. We don't quote a number without seeing the system, so call for a free estimate."
+            },
+            {
+              "q": "Are you a new company?",
+              "a": "Yes. Air Capital is new to the Wichita market, and the owners and technicians bring years of hands-on HVAC experience. The reviews on this page are from our first customers, so read them and judge us on the work."
+            },
+            {
+              "q": "Do you offer financing?",
+              "a": "Yes, through Enhancify. It covers installation, replacement and repair work, and promotional 0% interest periods may be available depending on the financing partner."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Air Capital Today",
+          "text": "Call for a free estimate and tell us what the system is doing. We'll take it from there."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/ac-repair-wichita-ks/",
+      "navLabel": "AC Repair",
+      "keyword": "ac repair wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Air conditioning, Wichita",
+        "h1": "AC Repair in Wichita, KS — Air Capital Heating and Air",
+        "sub": "When your AC stops cooling in a Wichita summer, every hour in the heat counts. We book same-day and next-day appointments, find the failed part, and explain it and your options before we fix it.",
+        "primaryCta": {
+          "label": "Call (316) 990-1911",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "ac-hero",
+          "alt": "Technician checking an outdoor air conditioner at a Wichita home",
+          "brief": "HVAC pool r1: ac-repair-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "106 degrees today and they were out quickly to fix our AC. Great service! Kind and honest!",
+          "name": "Tammy S."
+        },
+        {
+          "type": "split",
+          "heading": "What Happens When You Call",
+          "body": [
+            "You tell us what the system is doing and which town you're in, and we book you the same day or the next. Emergency calls are available.",
+            "The technician checks the system, finds the failed part and explains what's wrong before anything gets fixed.",
+            "Then you decide. If a repair makes sense, we do it. If it doesn't, we say so and talk through replacement."
+          ],
+          "image": {
+            "slot": "service-van",
+            "alt": "Service van parked in the driveway of a Wichita home",
+            "brief": "HVAC pool photo: Service van parked in the driveway of a Wichita home"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Very quick reliable, and leave you with a clear understanding on what’s going on! After servicing my unit, I was left feeling happy with who I chose to go with! 10/10",
+          "name": "Sophia L."
+        },
+        {
+          "type": "prose",
+          "heading": "Warm Air, Silent Unit: What Usually Fails",
+          "body": [
+            "The thermostat says 74, the house says 85, and the vents blow warm. Heat is when an air conditioner works hardest, so heat is when parts quit. Most of the time it's one failed part, not a dead system.",
+            "Here is what we usually find, and what we do about it."
+          ],
+          "tail": [
+            "We'd rather find the real cause and fix it once than guess and have to come back."
+          ],
+          "items": [
+            {
+              "title": "The unit hums but the fan won't start",
+              "text": "A weak capacitor, the small part that gives the motors their starting jolt. We replace it, and it is one of the cheapest and most common fixes."
+            },
+            {
+              "title": "The fan or compressor stalls",
+              "text": "Hours of Kansas heat wear a motor's bearings and windings. We confirm the motor is the cause, then replace it."
+            },
+            {
+              "title": "Cool air that isn't cold",
+              "text": "A system doesn't use up refrigerant, so low levels mean a leak. We find the leak instead of just topping off."
+            },
+            {
+              "title": "The system shuts off and water sits by the unit",
+              "text": "Algae has clogged the condensate drain and a safety switch tripped. We clear the line and check why it clogged."
+            },
+            {
+              "title": "Ice on the coil",
+              "text": "Restricted airflow, usually a dirty filter, lets the coil freeze over. Turn the system off to thaw it, and we find why the air was restricted."
+            },
+            {
+              "title": "The AC won't turn on at all",
+              "text": "A tripped breaker is the first thing to rule out, and a failed contactor or a dead control board is next. We test each one, tell you which one failed, and replace only that."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "My AC motor stopped working and they were able to make it out within an hour of calling and get my unit fixed. The communication, service and price were great! 10/10 recommend.",
+          "name": "Hannah M."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace?",
+          "body": [
+            "Repair when the system is fairly young and one part has failed. A new capacitor or motor on a system that otherwise runs well is money well spent.",
+            "Replace when most of these are true: the system is 10 to 15 years old or more, it has broken down repeatedly, it runs on the older R-22 refrigerant, or it can't keep the house cool even with every part working.",
+            "We give you the reasoning and the numbers on both, and you choose. If it does come to replacement, here is [what a new system involves](/ac-replacement-wichita-ks/).",
+            "Annual tune-ups are part of what we offer, so a weak part gets caught on a mild day instead of failing on the hottest one."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Not Sure It's the AC?",
+          "body": [
+            "A quick check can save you a visit:"
+          ],
+          "list": [
+            "Confirm the thermostat is set to cool, below the room temperature, with working batteries.",
+            "Check that the breaker for the outdoor unit and the indoor air handler hasn't tripped.",
+            "Look at your air filter. If it's packed with dust, replace it.",
+            "Check for ice on the refrigerant lines or the indoor coil. If you see ice, turn the system off and let it thaw before calling."
+          ],
+          "tail": [
+            "If those don't fix it, call and tell us what you see and hear. That helps us arrive with the right parts."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Repair Air Conditioners",
+          "body": [
+            "We repair AC systems in Wichita, Derby, Andover, Maize, Goddard, Haysville, Valley Center, Park City and Bel Aire. Our appointments run between 8am and 5pm.",
+            "If you're outside those towns, call and ask."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Common Questions",
+          "items": [
+            {
+              "q": "How fast can you get here?",
+              "a": "We book same-day and next-day appointments. Call early in the day, tell us the AC isn't cooling and give us your town, and we'll say when we can be there."
+            },
+            {
+              "q": "What does an AC repair cost?",
+              "a": "It depends on what failed: a capacitor is a small repair, a compressor is not. The estimate is free, so call and describe what the system is doing."
+            },
+            {
+              "q": "Can you maintain my AC so this doesn't happen again?",
+              "a": "Yes. We offer preventative maintenance plans, including annual tune-ups."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get Your AC Running Again",
+          "text": "Call Air Capital Heating and Air and tell us what your air conditioner is doing."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/ac-replacement-wichita-ks/",
+      "navLabel": "AC Replacement",
+      "keyword": "AC replacement Wichita KS",
+      "seo": {
+        "title": "AC Replacement in Wichita, KS | Air Capital Heating and Air",
+        "description": "AC replacement in Wichita, KS from a new local company with experienced techs. Straight answers on repair vs. replace, fair quotes and financing. Call for a free estimate."
+      },
+      "hero": {
+        "eyebrow": "Air conditioning, Wichita",
+        "h1": "AC Replacement in Wichita, KS — Air Capital Heating and Air",
+        "sub": "A new air conditioner is a big decision, and you shouldn't have to make it in a hot house with a stranger pushing you. We tell you whether your system is worth another repair, and if it isn't, we install a new one.",
+        "primaryCta": {
+          "label": "Call (316) 990-1911",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "acreplace-hero",
+          "alt": "Outdoor air conditioner beside a Wichita home",
+          "brief": "HVAC pool r1: home-hero-alt"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "They replaced a full hvac system in a very timely manner with very very competitive pricing.",
+          "name": "Sabrina F."
+        },
+        {
+          "type": "prose",
+          "heading": "What Happens When You Call",
+          "body": [
+            "Tell us how old the system is and what it's doing, and we book you the same day or the next. Emergency calls are available, summer included.",
+            "The technician finds what failed and explains your options in plain words: repair the part, replace a major component, or replace the system. You get the reasoning and the numbers on each, and you decide."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Repair First, When Repair Makes Sense",
+          "body": [
+            "Replacement is not where we start. A young system with one failed part should be repaired, and we'll tell you so. If your system has years left, you'll hear that from us."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "When the System Is Telling You It's Done",
+          "body": [
+            "You've paid for the same system three summers running. It runs all afternoon and the house still sits at 82. The outdoor unit rattles, the vents are weak, or the electric bill climbs while the comfort drops.",
+            "None of those alone means replace. Together they usually do. Each repair buys a few months, not years.",
+            "Most central air conditioners are built to last around 10 to 15 years, and Kansas summers sit at the hard end of that range. As a system ages, repair calls come closer together and it uses more electricity to deliver less cooling.",
+            "A system on the older R-22 refrigerant is also getting costly to service, because that refrigerant is no longer produced. A new system fixes all three at once."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "What We Install",
+          "body": [
+            "We install energy-efficient air conditioning systems for homes, matched to your house and your needs. The goal is a system that is the right size for your home, not the biggest one on the truck.",
+            "Size matters. A system that's too large cools fast, shuts off and leaves the house clammy. One that's too small runs nonstop and can't keep up on a 100-degree day.",
+            "If part of your space has no ductwork, ask us about a ductless mini split.",
+            "Same-day and next-day appointments are available, and the estimate is free."
+          ],
+          "image": {
+            "slot": "thermostat",
+            "alt": "Outdoor air conditioner beside a brick Wichita home",
+            "brief": "HVAC pool: ac-hero (reused from Integrity; replaces the blank-screen thermostat)"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Outstanding service throughout the whole process from the first call, appointment, and installation. Installers are very professional and friendly. I highly recommend using Air Capital heating and air!",
+          "name": "Victor V."
+        },
+        {
+          "type": "prose",
+          "heading": "What a Good Replacement Quote Shows You",
+          "body": [
+            "A replacement price should be something you can read and compare. Ask any company, including us, for these:"
+          ],
+          "list": [
+            "What equipment is being installed, and its efficiency rating",
+            "What's included in the install, and what the old system's removal covers",
+            "Whether your existing ductwork and thermostat are staying or changing"
+          ],
+          "tail": [
+            "If a quote leaves those out, you're comparing a number, not a system."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Paying for It",
+          "body": [
+            "Replacing a system rarely comes at a convenient time. Financing is available through Enhancify, a partner we work with to offer flexible financing options.",
+            "Promotional 0% interest periods may be available, depending on the financing partner. Enhancify has a page for Air Capital Heating and Air where you can see the options and apply.",
+            "You can see your financing offers before you decide anything, through the same lender link on our site."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Install",
+          "body": [
+            "We install and replace air conditioning in Wichita, Derby, Andover, Maize, Goddard, Haysville, Valley Center, Park City and Bel Aire. If you're outside those towns, call and ask."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Common Questions",
+          "items": [
+            {
+              "q": "How do I know whether to repair or replace?",
+              "a": "Look at the age and the repair history. An older system that keeps needing repairs is a replacement candidate. A newer system with one failed part usually isn't. If one part has failed, [AC repair](/ac-repair-wichita-ks/) is usually the better answer."
+            },
+            {
+              "q": "What does a new AC cost?",
+              "a": "The price depends on the size of your home, the efficiency of the system and whether your ductwork needs work. We don't quote a number without seeing the house, so call for a free estimate."
+            },
+            {
+              "q": "Do you replace AC systems in the middle of summer?",
+              "a": "Yes. We book same-day and next-day appointments, and emergency calls are available."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Straight Answer on Your AC",
+          "text": "Call Air Capital Heating and Air, tell us how old your system is and what it's doing, and we'll set up a free estimate. If a repair will do, we'll say so."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact air capital heating and air wichita ks",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact",
+        "h1": "Contact Air Capital Heating and Air",
+        "sub": "Tell us what your system is doing and we'll book a visit, same day or next. Call or email us.",
+        "primaryCta": {
+          "label": "Call (316) 990-1911",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request Service",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Brick ranch home with a wide lawn in the Wichita area",
+          "brief": "HVAC pool r1: contact-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call",
+          "body": [
+            "(316) 990-1911, between 8am and 5pm. Emergency calls are available. Tell us what the system is doing and which town you're in, and we'll tell you when we can be there."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Amazing communication through the whole process. Quick to respond, great prices and great service. Customer for life!",
+          "name": "Aaron S."
+        },
+        {
+          "type": "prose",
+          "heading": "Send a Message",
+          "body": [
+            "Not ready to call? Email us your name, a few words about what's wrong and the town you're in."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "What to Have Ready",
+          "list": [
+            "Whether it's your AC, furnace, boiler or heat pump",
+            "What it's doing: no cooling, no heat, odd noises, a smell or ice on the lines",
+            "The age of the system, if you know it",
+            "Your town, so we can confirm we cover you"
+          ],
+          "image": {
+            "slot": "airflow-vent",
+            "alt": "Ceiling air vent in a quiet Wichita home",
+            "brief": "HVAC pool photo: Ceiling air vent in a quiet Wichita home"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Work",
+          "body": [
+            "Wichita, Derby, Andover, Maize, Goddard, Haysville, Valley Center, Park City and Bel Aire. Not sure about your area? Call and ask, and we'll tell you."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Email",
+          "text": "You can also write to us at aircapitalheatingnair@gmail.com. If it's urgent, please call."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Heating and cooling repair and replacement for Wichita homes and light commercial buildings.",
+    "why": [
+      "Free estimates",
+      "Same-day and next-day appointments",
+      "Open Monday to Sunday, 8 a.m. to 5 p.m.",
+      "We explain what failed before we fix it"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "The top of your homepage says “Expert Heating & Air Services.” It never says HVAC company, and the town only appears in small print below. Google can’t match you to someone searching for an HVAC company in Wichita, and that line costs you the most calls.",
+      "Your customers already describe the company you are. Carlos F.: “showed up SAME DAY” and “didn’t try to upsell me on a whole new unit like some places do.” Mai D.: “They’re new to market but years of experience between the owners.” Today those words sit on Google, not on your site.",
+      "So the demo opens with HVAC company in Wichita, KS, gives AC repair and AC replacement a page each, and sets your customers’ words beside the work they prove."
+    ],
+    "cardsHeading": "Be the HVAC Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls, and the fix.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "Your homepage headline says “Expert Heating & Air Services” with no HVAC company and no Wichita, so Google can’t tell what you are or where.",
+          "All four “Learn More” buttons under your services go to the contact page, so someone who wants to read about heating repair lands on a form.",
+          "Light commercial work is missing from the services on your homepage, so business owners won’t see you offer it."
+        ],
+        "fixes": [
+          "A headline that says HVAC company in Wichita, KS, right at the top.",
+          "Homepage sections that link to AC repair and AC replacement pages.",
+          "Light commercial listed with every other service."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. From that we plan how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/ac-repair-wichita-ks/",
+        "title": "AC Repair",
+        "why": "When the AC quits in a Wichita summer, people call the first company they find.",
+        "problems": [
+          "AC repair has no page of its own. It shares one with installation and maintenance, so “AC repair Wichita KS” has nothing built for it.",
+          "Your customers’ praise for same-day AC repairs lives only on Google."
+        ],
+        "fixes": [
+          "A page for AC repair in Wichita, KS, with what usually fails and what happens when you call.",
+          "Customer reviews beside the point each one proves."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/ac-replacement-wichita-ks/",
+        "title": "AC Replacement",
+        "why": "The page for homeowners whose old AC is done and who need a straight answer on replacing it.",
+        "problems": [
+          "AC replacement shares one general AC page with repair and installation, so \"AC replacement Wichita\" has nothing built for it."
+        ],
+        "fixes": [
+          "A page about AC replacement in Wichita, KS, with plain answers on repair versus replace and on financing."
+        ],
+        "alsoAdd": "New Furnace Installation and Furnace Repair pages, each built for its own search."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with a dead AC decides to call.",
+        "problems": [
+          "Your hours and “emergency calls available” sit in one small block with no emergency number, so an after-hours visitor isn’t told what to do."
+        ],
+        "fixes": [
+          "Your number one tap away, hours and emergency calls beside it, and what to have ready."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Good"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Service buttons go to the service",
+        "status": "Missing"
+      },
+      {
+        "label": "Light commercial shown on the homepage",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your About page talks about “our owners” but never names them, so whose names should Google and AI tools connect to Air Capital?",
+        "Your contact page lists Monday to Sunday, 8 to 5, with emergency calls available, so is Sunday right, and how should after-hours callers reach you?",
+        "Your About page names nine towns from Derby to Bel Aire, while your Google listing shows no address, so which towns should Google list as your service area?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with same day, explained first",
+      "text": "The scariest moment for a Wichita homeowner is a dead AC with someone at home in the heat, and right behind it is being sold a new system they didn't need. Arriving the same day and explaining the cause and every option before any work answers both. We checked the five top Wichita competitors, and none of them states both.",
+      "showScores": true,
+      "rows": [
+        {
+          "claim": "Same day, with the cause and every option explained before any work",
+          "score": 20
+        },
+        {
+          "claim": "The problem fixed in the visit, with no repeat trips",
+          "score": 12
+        },
+        {
+          "claim": "Updates through the whole job",
+          "score": 12
+        }
+      ]
+    }
+  }
+}

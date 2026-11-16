@@ -1,0 +1,1782 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "rods-hvac-wichita",
+  "place": {
+    "name": "Rods Cooling & Heating LLC",
+    "placeId": "ChIJB3foALnmuocROUUPbmyBVgI",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rods%20Cooling%20%26%20Heating%20LLC&query_place_id=ChIJB3foALnmuocROUUPbmyBVgI",
+    "address": "1102 S Pattie St, Wichita, KS 67211",
+    "phone": "(316) 516-0406",
+    "rating": 4.8,
+    "totalReviewCount": 190
+  },
+  "pulledAt": "2026-11-09T17:52:55.112Z",
+  "requestedMax": 200,
+  "reviews": [
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURELTdpQndnRRAB",
+      "reviewer": "Country M.",
+      "rating": 5,
+      "text": "Dave came out today within 30 minutes and fixed my ac fast and found what pheonix messed up! Will only use him from now on",
+      "publishedAt": "2024-04-14T19:59:34.467Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURELTdpQndnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDD-7iBwgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNGamNXQWdRRRAB",
+      "reviewer": "Wanda M.",
+      "rating": 1,
+      "text": "I drove by and the business is closed up and shut down.  This website is no longer any good the phone number is out of order",
+      "publishedAt": "2023-10-30T20:49:35.290Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGamNXQWdRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICFjcWAgQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM1X3JtLTNRRRAB",
+      "reviewer": "Tara S.",
+      "rating": 5,
+      "text": "Will and Dallas were very professional, they worked together as a team and were very friendly and respectful when installing my grandmas (Rose)  furnace. We appreciate your business and will recommending them to friends and family. Thank you!",
+      "publishedAt": "2023-10-14T00:54:37.409Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM1X3JtLTNRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC5_rm-3QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURaaU5pSUZnEAE",
+      "reviewer": "Terry W.",
+      "rating": 5,
+      "text": "Great Service, Prompt",
+      "publishedAt": "2023-10-02T16:25:49.605Z",
+      "ownerResponse": "Thank you for your 5-star rating, Terry! We appreciate your support.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURaaU5pSUZnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDZiNiIFg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNac05EYzJRRRAB",
+      "reviewer": "Maria M.",
+      "rating": 5,
+      "text": "D'Adrian and Tyler were great!  On time, explained issues and options.  Real person, Carly, amswered the phone and was superb.  Rod's was awesome amd I had AC 2 hours after my call.  Thanks!!",
+      "publishedAt": "2023-09-02T15:17:32.342Z",
+      "ownerResponse": "Thank you, Maria! We appreciate your kind words about D'Adrian, Tyler, Karlie, and Rod's team. It means a lot to us that you had a positive experience with our service.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNac05EYzJRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICZsNDc2QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURwdS1DRXZBRRAB",
+      "reviewer": "Cody R.",
+      "rating": 5,
+      "text": "Needed something done and this company was the only one to answer the phone at 6am. Tyler came out and got us taken care of. Very helpful!",
+      "publishedAt": "2023-08-29T20:49:09.549Z",
+      "ownerResponse": "Thank you for choosing our company, Cody! We're glad Tyler was able to assist you and get everything taken care of.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdS1DRXZBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDpu-CEvAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURwbGNDNlFREAE",
+      "reviewer": "Aaron L.",
+      "rating": 5,
+      "text": "Fast,friendly great service and value!!!",
+      "publishedAt": "2023-08-25T23:44:14.256Z",
+      "ownerResponse": "Thank you, Aaron! We appreciate your kind words and are delighted to hear that you had a positive experience with our fast, friendly service. We strive to provide great value to our customers.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwbGNDNlFREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDplcC6QQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURwcGZPLXFnRRAB",
+      "reviewer": "Jessica F.",
+      "rating": 5,
+      "text": "Will and Dallas did a great job. Had whole heating and cooling unit replaced. It was an all day job, they didn't leave until it was finished at 8 pm. Thank you guys!",
+      "publishedAt": "2023-08-25T19:02:30.069Z",
+      "ownerResponse": "Thank you, Jessica! We truly appreciate your kind words and are grateful for your patience during the installation process.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcGZPLXFnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDppfO-qgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURwcGRIZTNBRRAB",
+      "reviewer": "Erika E.",
+      "rating": 5,
+      "text": "Tyler and D’Adrian were phenomenal! Great service, answered my call on a Sunday, very reliable and honest! I highly recommend!",
+      "publishedAt": "2023-08-25T18:12:39.726Z",
+      "ownerResponse": "Thank you, Erika! We appreciate your kind words and recommendation. Tyler and D'Adrian are fantastic assets to our team and we're glad they were able to provide you with the excellent service you deserve.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwcGRIZTNBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDppdHe3AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURwdHZXNnF3RRAB",
+      "reviewer": "Joshua J.",
+      "rating": 5,
+      "text": "My A/C unit stopped while the forecast was for 5 straight days of triple digits.  They were at my house two hours after I called and quickly identified a simple electrical issue.  A/C was working with in 30 minutes of arrival. I will use again.",
+      "publishedAt": "2023-08-21T17:55:43.532Z",
+      "ownerResponse": "Thank you, Joshua! We're glad we could quickly resolve the electrical issue with your A/C unit and get it working again. We appreciate your support and look forward to assisting you in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdHZXNnF3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDptvW6qwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURwdHNhYjBRRRAB",
+      "reviewer": "Jared G.",
+      "rating": 5,
+      "text": "Very professional and showed up on time!",
+      "publishedAt": "2023-08-21T17:03:31.283Z",
+      "ownerResponse": "Thank you for your kind review! We appreciate your feedback.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURwdHNhYjBRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDptsab0QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURwcXNXRVRBEAE",
+      "reviewer": "Charles E.",
+      "rating": 5,
+      "text": "Tyler was great and the receptionist Carly was awesome.  Very honest and didn't try to sell me service or parts I didn't need!",
+      "publishedAt": "2023-08-19T23:04:59.895Z",
+      "ownerResponse": "Thank you so much for your kind words, Charles! We're grateful for your feedback and glad Tyler and Karlie provided you with an honest and exceptional experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwcXNXRVRBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDpqsWETA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURwNHZDMk1nEAE",
+      "reviewer": "Brandon Q.",
+      "rating": 5,
+      "text": "Tyler did a wonderful job and did it quick and affordable.",
+      "publishedAt": "2023-08-18T19:41:27.913Z",
+      "ownerResponse": "Thank you so much, Brandon! We really appreciate your kind words and are thrilled to hear that Tyler was able to provide you with a wonderful and efficient experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwNHZDMk1nEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDp4vC2Mg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURKeTlURkZBEAE",
+      "reviewer": "Marsha R.",
+      "rating": 5,
+      "text": "These guys are awesome! Very knowledgeable friendly and professional",
+      "publishedAt": "2023-08-13T17:32:42.578Z",
+      "ownerResponse": "Thank you for the 5-star rating, Marsha! We appreciate your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKeTlURkZBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDJy9TFFA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNwOVlpemZBEAE",
+      "reviewer": "Dustin R.",
+      "rating": 5,
+      "text": "My A/C went out on a Saturday and of the 7 companies that I called, this was the 1st and only one that had a real person who answered my call. They diagnosed the problem a few hours later, at the time I was told, and Brandon installed a new unit on Monday after getting all of the parts and pieces. Brandon showed up within the window of time that I was provided and since I had to take the day off work, having no delays was imperative. He did a great job and we now have a cooled home again. Thank you for your prompt and reliable service!",
+      "publishedAt": "2023-08-08T00:29:07.461Z",
+      "ownerResponse": "Thank you for choosing us and for your kind words! We're glad we could provide prompt and reliable service to get your A/C back up and running. It was our pleasure to help and we appreciate your support.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwOVlpemZBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICp9YizfA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNwZ2Myc1R3EAE",
+      "reviewer": "Frank M.",
+      "rating": 5,
+      "text": "The two gentlemen who came and looked at my AC unit were friendly and answered all my questions",
+      "publishedAt": "2023-08-04T22:13:29.445Z",
+      "ownerResponse": "Thank you so much for your kind words, Frank! We're glad our technicians were able to provide excellent service and assist you with your AC unit.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwZ2Myc1R3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICpgc2sTw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNwOXNPWk13EAE",
+      "reviewer": "Sara M.",
+      "rating": 5,
+      "text": "100 degree weather, my AC quit, called and they came out the same day. Unfortunately had to order a part but they got it the next day and got it installed. They were quick, very knowledgeable, and professional! Would definitely use again and will be recommending Rod’s Cooling & Heating to others! Thank you!",
+      "publishedAt": "2023-08-03T15:46:24.114Z",
+      "ownerResponse": "Thank you so much, Sara! We're glad we could help you out with your AC issue, and we appreciate your kind words about our quick and professional service. We look forward to serving you again in the future and appreciate any recommendations you send our way!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwOXNPWk13EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICp9sOZMw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNwOW9udFJnEAE",
+      "reviewer": "Sharon H.",
+      "rating": 5,
+      "text": "They came promptly.  I liked both of them both polite and efficient.  Thank you thank you guys.",
+      "publishedAt": "2023-08-03T15:13:22.294Z",
+      "ownerResponse": "Thank you so much for your kind words, Sharon! We truly appreciate your feedback.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwOW9udFJnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICp9ontRg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNwdHNqUVNBEAE",
+      "reviewer": "Brandon",
+      "rating": 5,
+      "text": "Very pleased with the service from Rod's. Customer service was great. The technician, Tyler was great as well.",
+      "publishedAt": "2023-08-03T11:01:28.737Z",
+      "ownerResponse": "Thank you, Brandon! We're so glad you had a great experience with our customer service and technician, Tyler.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwdHNqUVNBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICptsjQSA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNwcHB6RnZ3RRAB",
+      "reviewer": "deborah Z.",
+      "rating": 5,
+      "text": "Responded quickly and fixed the problem within minutes.",
+      "publishedAt": "2023-08-02T19:13:39.855Z",
+      "ownerResponse": "Thank you for taking the time to leave a review! We appreciate your kind words and are glad we were able to resolve the issue for you promptly.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwcHB6RnZ3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICpppzFvwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNweHMtaFZnEAE",
+      "reviewer": "Sharon Y.",
+      "rating": 5,
+      "text": "Very prompt and got the job done well.",
+      "publishedAt": "2023-08-02T18:23:14.713Z",
+      "ownerResponse": "Thank you, Sharon! We appreciate your kind words and are glad we could assist you in a timely manner.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNweHMtaFZnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICpxs-hVg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNwaHZmQWRnEAE",
+      "reviewer": "Rafael M.",
+      "rating": 5,
+      "text": "My sister's A/C at her house has had issues every summer since they bought the house 4 years ago. This year they had had enough and attempted to get their home warranty to replace the A/C unit, to no avail. Taking matters into her own hands, she got connected with Rod's Heating and Cooling and they were able to come out the next day to diagnose the problem. Turned out they needed to replace the entire system, and Rod's came out a couple days later to replace it all. Will and Dallas were right on the ball with the project and they got them taken care of same day with ice cold A/C. I'm grateful they were available on short notice because their house was a literal hazard to be in given how hot its been this summer. Thanks again to Will and Dallas for taking care of business!",
+      "publishedAt": "2023-08-02T15:28:54.333Z",
+      "ownerResponse": "Thank you, Rafael! We appreciate your kind words and are glad we could help your sister with her A/C issues. We're happy that Will and Dallas were able to resolve the problem quickly and provide her with cool air. Your gratitude means a lot to us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNwaHZmQWRnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICphvfAdg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURPenBuRjd3RRAB",
+      "reviewer": "Vaughn V.",
+      "rating": 5,
+      "text": "Contacted a half-dozen companies when my A/C began freezing up in late spring, all but Rods Cooling put my installation weeks into the future, but Rods managed to fit me in in a very timely manner.<br><br>My Goodman system was state of the art, but the service technician had access to Goodman's system installation department, conducted himself professionally with their techs, and worked out technical concerns in a timely manner.<br><br>My system has been installed for > 6 weeks now without issue, and though I paid a little more for the 20 SEER system, I couldn't be happier with the performance, efficiency,  and how quickly my house cools.<br><br>In total there were 4 primary workers who all worked well as a team, the system took about 12 hours to install, but they removed the old and installed the new and cleaned up any mess as they went.<br><br>To the guys who evaluated and worked on my installation...<br><br>Thank you,<br><br>-Vaughn<br><br>Update 7/29/23 - A little better than a year later and my system has worked flawlessly.",
+      "publishedAt": "2023-07-29T22:34:14.896Z",
+      "ownerResponse": "Thank you Vaughn for the positive feedback! We're so happy we were able to get you scheduled in a timely manner, especially during the busiest time of the year. We hope you enjoy your new AC!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPenBuRjd3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDOzpnF7wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN4N2VPTXZRRRAB",
+      "reviewer": "Roxanne S.",
+      "rating": 5,
+      "text": "Left message late night after air quit...called 1st thing...had us up and running before mid-day.  Always polite, prompt and service oriented.",
+      "publishedAt": "2023-07-28T23:56:36.166Z",
+      "ownerResponse": "Thank you so much for your kind words, Roxanne! We appreciate your business and look forward to serving you again in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4N2VPTXZRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICx7eOMvQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNwaE5PNi1BRRAB",
+      "reviewer": "Leslie P.",
+      "rating": 5,
+      "text": "Our AC broke in the hottest week of the year, Dallas and Will came early in the morning and worked quietly and quickly to repair it for us!! Great work!! Definitely request these two!",
+      "publishedAt": "2023-07-28T17:58:36.550Z",
+      "ownerResponse": "Thank you for your kind words, Leslie! We're glad that Dallas and Will could repair your AC efficiently and quietly. We appreciate your recommendation and are here to help if you need anything else.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwaE5PNi1BRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICphNO6-AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNwbVBEemtnRRAB",
+      "reviewer": "Sharon H.",
+      "rating": 5,
+      "text": "Such a great company. Very fast and super reliable. The tech Tyler was so awesome and got our ac working. Thank you so much for being such a respectable company",
+      "publishedAt": "2023-07-28T01:50:38.317Z",
+      "ownerResponse": "Thank you, Sharon! We appreciate your kind words and are thrilled that Tyler was able to get your AC working. We're grateful for your support!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwbVBEemtnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICpmPDzkgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNwbVBERTZBRRAB",
+      "reviewer": "Kindra H.",
+      "rating": 5,
+      "text": "This company is absolutely amazing. They came out and fixed our thermostat. They were fast and super respectful. 5/5 stars definitely will call them for all our problems.",
+      "publishedAt": "2023-07-28T01:48:51.714Z",
+      "ownerResponse": "Thank you so much for your kind words! We are grateful for the opportunity to help and are glad we could provide a fast and respectful service. Feel free to reach out to us anytime for any future problems.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwbVBERTZBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICpmPDE6AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURKaGUzcHNRRRAB",
+      "reviewer": "Troy V.",
+      "rating": 5,
+      "text": "Provided excellent service when my AC unit was leaking into my attic. Will be my go-to people going forward.",
+      "publishedAt": "2023-07-20T15:06:41.867Z",
+      "ownerResponse": "Thank you for your kind words, Troy! We're grateful for the opportunity to assist you with your AC unit. We look forward to continuing to provide you with excellent service in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKaGUzcHNRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDJhe3psQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURKcXJmTWpBRRAB",
+      "reviewer": "SARAH T.",
+      "rating": 5,
+      "text": "I can’t say enough good things about my experience! Rod, George, Dallas and Will we all amazing! Will definitely use them when needed in the future!",
+      "publishedAt": "2023-07-14T22:01:26.465Z",
+      "ownerResponse": "Thank you so much, Sarah! We truly appreciate your kind words and are grateful for your support.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKcXJmTWpBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDJqrfMjAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNSbXVxc3ZBRRAB",
+      "reviewer": "Jason B.",
+      "rating": 5,
+      "text": "Rod did a wonderful job! They replaced 6 commercial units and saved us on our bill and on the equipment. Thank you!",
+      "publishedAt": "2023-07-14T13:14:43.882Z",
+      "ownerResponse": "Thank you so much for taking the time to leave a 5-star review, Jason! We are thrilled to hear that we did a wonderful job replacing your commercial units and helped you save on your bill and equipment. We truly appreciate your business and hope to continue serving you in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNSbXVxc3ZBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICRmuqsvAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURKNHJfLUxnEAE",
+      "reviewer": "phon K.",
+      "rating": 5,
+      "text": "Great customer service and quick response. Tyler was my resident under 20mins after I called them.",
+      "publishedAt": "2023-07-13T20:09:42.493Z",
+      "ownerResponse": "Thank you for your kind words! We're thrilled to hear that you had a positive experience with our customer service team and that Tyler was able to assist you promptly. We appreciate your feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKNHJfLUxnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDJ4r_-Lg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURKNHFXbkpREAE",
+      "reviewer": "Chris B.",
+      "rating": 5,
+      "text": "Over delivered. I expected the job to take a couple days but these guys showed up ready to work, in the dog days of summer,  and got it done in 1. No surprises on the bill, would definitely recommend them.",
+      "publishedAt": "2023-07-13T19:01:11.770Z",
+      "ownerResponse": "Thank you so much for the kind words, Chris! We're thrilled to hear that we exceeded your expectations and completed the job quickly. We appreciate your recommendation and look forward to serving you again in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKNHFXbkpREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDJ4qWnJQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURKM00zV0dBEAE",
+      "reviewer": "Braden S.",
+      "rating": 4,
+      "text": "When they say they’ll show up, they mean it. Such a great attribute for a co. to have especially in the middle of July! Our AC went out and they were able to come the same day to assess and replaced it the next day!",
+      "publishedAt": "2023-07-12T20:52:18.172Z",
+      "ownerResponse": "Thank you for your kind words, Braden! We understand the importance of prompt service, especially during the hot summer months. We're glad we were able to assist you quickly with your AC issue. If you have any further questions or need assistance, feel free to reach out to us via email or call.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURKM00zV0dBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDJ3M3WGA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNKaTVUVXN3RRAB",
+      "reviewer": "Tom C.",
+      "rating": 5,
+      "text": "Tyler showed up earlier than I was thinking due to the 4th of July Holiday. He was AWESOME! Friendly, courteous, professional and showed me how to clean the outside unit to prevent any future situations.",
+      "publishedAt": "2023-07-04T19:23:41.985Z",
+      "ownerResponse": "Thank you so much for the kind words, Tom! We're grateful for your positive feedback and are glad Tyler was able to provide exceptional service.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKaTVUVXN3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICJi5TUswE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNKdWFDQ0FnEAE",
+      "reviewer": "Kevin B.",
+      "rating": 5,
+      "text": "Tyler was here perfectly on time and took no time in fixing our AC. Very efficient! You are OUR HVAC GUYS. Forever! Thank you!!",
+      "publishedAt": "2023-06-30T17:08:17.467Z",
+      "ownerResponse": "Thank you so much, Kevin! We're thrilled to hear that Tyler provided prompt and efficient service in fixing your AC. We appreciate your loyalty and look forward to serving you as your HVAC experts for years to come!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKdWFDQ0FnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICJuaCCAg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNKMFotdjB3RRAB",
+      "reviewer": "Cassidy J.",
+      "rating": 5,
+      "text": "They were quick to respond and even quicker with fixing the issue. No complaints.",
+      "publishedAt": "2023-06-29T11:53:27.170Z",
+      "ownerResponse": "Thank you for your kind words! We appreciate your feedback and are glad we could resolve the issue promptly.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKMFotdjB3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICJ0Z-v0wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNKNGNLdHFBRRAB",
+      "reviewer": "Jana D.",
+      "rating": 5,
+      "text": "Tyler was excellent & fixed our problem.  He was so knowledgeable!",
+      "publishedAt": "2023-06-28T23:05:24.239Z",
+      "ownerResponse": "Thank you so much for your kind words, Jana! If you have any other questions or need further assistance, please don't hesitate to reach out.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKNGNLdHFBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICJ4cKtqAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNKM29tNW5nRRAB",
+      "reviewer": "Stephen R.",
+      "rating": 5,
+      "text": "Replaced heater and air conditioner with Rod's company. Excellent job and very happy with them.",
+      "publishedAt": "2023-06-28T01:47:42.393Z",
+      "ownerResponse": "Thank you for choosing our company for your heater and air conditioner replacement. We are grateful for your positive feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNKM29tNW5nRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICJ3om5ngE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNKcXAyUlBREAE",
+      "reviewer": "Jason W.",
+      "rating": 5,
+      "text": "Tyler came out and fixed our unit on a Saturday night. Great value and great service, i cannot recommend them enough.",
+      "publishedAt": "2023-06-25T03:09:48.193Z",
+      "ownerResponse": "Thanks for the amazing review, Jason! We are thrilled to hear that Tyler provided great value and service in fixing your unit on a Saturday night. We appreciate your recommendation and look forward to serving you again in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNKcXAyUlBREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICJqp2RPQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNpZ3AtM0h3EAE",
+      "reviewer": "Steve Y.",
+      "rating": 5,
+      "text": "Fast, prompt, and very professional service on a Sunday evening!!",
+      "publishedAt": "2023-06-02T15:02:43.674Z",
+      "ownerResponse": "Thank you so much for the review, Steve!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpZ3AtM0h3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICigp-3Hw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4dzl5NmFBEAE",
+      "reviewer": "Rick H.",
+      "rating": 5,
+      "text": "Will and Dallas worked late hours so that we could have our A/C installed and running by the end of the day. Also had a heat pump and furnace installed, looking forward to the utility bill savings.",
+      "publishedAt": "2023-05-24T16:16:29.873Z",
+      "ownerResponse": "Thank you so much for taking the time to share your experience, Rick! We're thrilled to hear that Will and Dallas went above and beyond to make sure your A/C was installed and running smoothly. We hope that your new heat pump and furnace provide you with the savings you're looking for.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4dzl5NmFBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICxw9y6aA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN4a2ZtT1NREAE",
+      "reviewer": "Mary M.",
+      "rating": 5,
+      "text": "I had had a regularly scheduled service for my AC four weeks ago and suddenly had standing water at the base of my inside unit. Rod’s was able to schedule a service right away. I was so happy about that. Then the techs found a lot of pet hair on the AC coils. I had asked the previous service tech to check the coils as I have pets. Obviously they did not. I was impressed with the techs, knowledgeable and professional. I purchased a service agreement and could not be more pleased and relieved.",
+      "publishedAt": "2023-05-19T16:21:42.087Z",
+      "ownerResponse": "Thank you, Mary, for sharing your positive experience with us! We are so glad that we were able to quickly resolve the issue with your AC unit and that our technicians were able to provide you with knowledgeable and professional service. We appreciate your business and are thrilled that you have decided to purchase a service agreement with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN4a2ZtT1NREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICxkfmOSQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURSbVl6XzdnRRAB",
+      "reviewer": "Sachin B.",
+      "rating": 3,
+      "text": "Would have given 5-stars for doing good work and being receptive to fixing the HVAC unit. However, they will not wait even one day to process a check to pay the balance. This technique may work for residential customers, but not for businesses or property management companies.",
+      "publishedAt": "2023-04-28T18:16:30.250Z",
+      "ownerResponse": "We're sorry you feel that way! We treat all of our customers the same and have the same processes for everybody, but after making multiple attempts to contact you with no response for a week, we felt like our hands were tied. A returned phone call would've made this a much more pleasant experience for us all.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSbVl6XzdnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDRmYz_7gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNCMmV2VktREAE",
+      "reviewer": "Brian P.",
+      "rating": 5,
+      "text": "Tyler was very professional, showed up earlier then planned and knew exactly what the problem was. I'll be using this business in the future for all my air conditioning and furnace needs. Thanks for the quick work.",
+      "publishedAt": "2022-12-29T22:27:19.610Z",
+      "ownerResponse": "Brian, we appreciate the wonderful feedback! Our team works hard to keep our customers happy, and we're glad we could get out there quickly and get your unit running again. Thanks again!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCMmV2VktREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICB2evVKQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQtd3RpcFhREAE",
+      "reviewer": "Leland C.",
+      "rating": 5,
+      "text": "Jerry and Will did a great job. The new unit was much bigger than the old one. It would not physically fit into the same area between the house and garage. They figure a way to make it fit (genius).. Air conditioner performed very well, electric bills running more than 20% lower than last year at the same time.  Now we know the heat is also running great.  Thanks Guys",
+      "publishedAt": "2022-11-24T18:26:49.654Z",
+      "ownerResponse": "Thank you Leland for this positive review! We're glad we could find a solution to get that unit installed. Enjoy those lower energy bills! <br>We're always here to help, please let us know if there's anything else we can assist with",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtd3RpcFhREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID-wtipXQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMtZ191OWNREAE",
+      "reviewer": "Jennifer B.",
+      "rating": 5,
+      "text": "Tyler has come out and done our services several times and he is so friendly and kind. Recommend the company as they have very polite and responsive on time when things need fixed and decent priced",
+      "publishedAt": "2022-11-11T21:14:51.413Z",
+      "ownerResponse": "Thanks, Jennifer for the positive feedback! We do all we can to provide everyone with the best customer service possible :)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMtZ191OWNREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC-g_u9cQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMtZzl2enVBRRAB",
+      "reviewer": "Dustin B.",
+      "rating": 5,
+      "text": "The people are amazing. They do great work and have been always on time. They are very respectful. I will recommend this company to anyone that needs a service on there heater and or ac.",
+      "publishedAt": "2022-11-11T21:10:09.791Z",
+      "ownerResponse": "Thank you Dustin for these kind words!! We hope to make your next service just as positive. Have an amazing day, and thanks again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtZzl2enVBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC-g9vzuAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNleGFEbEh3EAE",
+      "reviewer": "Angela S.",
+      "rating": 5,
+      "text": "The technician arrived promptly when we called after hours on a Sunday. He had out AC back running within 15 minutes. Great service for a great price.",
+      "publishedAt": "2022-09-19T00:57:49.035Z",
+      "ownerResponse": "Hi Angela! Thank you for the five-star review. We're always happy to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNleGFEbEh3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICexaDlHw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VNV2hoTUROZ1l5cGhRRRAB",
+      "reviewer": "David C.",
+      "rating": 5,
+      "text": "I left a message late last night at 1 am they contacted me a soon as possible and got someone to my house 30 mins later. Fixed my ac in less then an hr. So highly recommended really appreciate their work.",
+      "publishedAt": "2022-09-17T17:20:32.276Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VNV2hoTUROZ1l5cGhRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEMWhhMDNgYyphQE%7C%7C?hl=en-US"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNlbnVmTTNRRRAB",
+      "reviewer": "Dale C.",
+      "rating": 5,
+      "text": "Reached out on facebook for recommendations for reliable HVAC service and got several bites.  I called Rod's from the referral of a trusted friend.  Rod had a tech on site within an hour, and that is incredible for this time of year.  Devin took a look, made mental notes and went to his van.  Not only did he repair the problem, he upgraded and improved the way the equipment was installed originally and I could not be happier.  My new go-to HVAC company.  Thanks so much!!",
+      "publishedAt": "2022-09-14T20:05:25.217Z",
+      "ownerResponse": "Thank you so much Dale for this awesome feedback! We're so happy we could get someone out there in a timely manner and properly get your HVAC system running again. Please let us know if there's anything you need in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlbnVmTTNRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICenufM3QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VQejVySjd0OHNxNGNnEAE",
+      "reviewer": "Sheri S.",
+      "rating": 5,
+      "text": "Absolutely phenomenal service by Tyler. Caught some issues we had missed. Super honest and upfront and very friendly. They were out super fast within like 15 minutes of us calling them. Beyond impressed with these guys! Definitely plan to be using them again. Highly recommend!",
+      "publishedAt": "2022-09-07T22:20:37.355Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VQejVySjd0OHNxNGNnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEPz5rJ7t8sq4cg%7C%7C?hl=en-US"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNlbEltSmpBRRAB",
+      "reviewer": "Sarah M.",
+      "rating": 5,
+      "text": "I have used this company twice now and have been more than pleased each time. Most recently it was Tyler who came out to service my A/C. He was quick, efficient and had my unit back to cooling in no time.  I'd be more than happy to give them my business with anything cooling and heating related.",
+      "publishedAt": "2022-09-06T22:33:32.470Z",
+      "ownerResponse": "Thank you Sarah for sharing your experience with our company! We're absolutely thrilled to hear this. We appreciate your business and positive feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlbEltSmpBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICelImJjAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR1eVlydUtREAE",
+      "reviewer": "DL R.",
+      "rating": 5,
+      "text": "Brandon, Jerry and Will installed complete ca/ch unit.  They all worked together and completed this job in a very timely manner.  Great job guys!",
+      "publishedAt": "2022-08-23T18:34:15.320Z",
+      "ownerResponse": "Thank you for leaving us such a wonderful review! We prioritize customer experience and satisfaction, so this is the type of feedback we like to see. Thank you again for your kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1eVlydUtREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDuyYruKQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN1cDZlcmpBRRAB",
+      "reviewer": "Sarah R.",
+      "rating": 5,
+      "text": "Dru Abbott came out to service our A/C this week. He did an excellent job explaining issues he discovered and ways to help increase longevity and effectiveness of our unit. Overall, great service.",
+      "publishedAt": "2022-08-08T04:14:49.316Z",
+      "ownerResponse": "Thank you Sarah for taking the time to leave us a review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1cDZlcmpBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICup6erjAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURtaFBuMlJnEAE",
+      "reviewer": "Mary P.",
+      "rating": 5,
+      "text": "Ian, Will, Jerry, came out today and installed air conditioner, furnace.<br>Explained things clearly. Showed me various things, like filter area, explained new thermostat, and the importance of checking filter monthly.<br>Installed Tues. Last night I realized I haven't had sinus issues the last couple of days. WoooHoo! And we don't hear the furnace kicking on and off anymore. It sooo quiet! Rod's originally came out to fix furnace. Since it was 30 yrs old, we decided to replace both furnace and Air. We are quite pleased with service , time, and people. And our dogs were okay with the employees, which counts a lot for us.<br><br>update 7/27/22:   Even with all this heat. Our electric bill is lower than it has been in years!!  Thank you Rod's for recommendations!",
+      "publishedAt": "2022-07-27T14:12:19.240Z",
+      "ownerResponse": "We are thrilled to hear about the wonderful service that our company provided for you! We appreciate your business and the wonderful review as well. Take care of those great dogs and have a wonderful day.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtaFBuMlJnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDmhPn2Rg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN1aE1TZzdBRRAB",
+      "reviewer": "Rusty F.",
+      "rating": 5,
+      "text": "Jerry & Andrew were awesome! We have two units. They serviced both and replaced a capacitor on one. Will definitely use again.",
+      "publishedAt": "2022-07-20T23:29:56.937Z",
+      "ownerResponse": "We're so glad we could help you guys on one of the hottest days of the year, thank you for leaving great feedback for our technicians!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1aE1TZzdBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICuhMSg7AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURPN2Q2eWlRRRAB",
+      "reviewer": "D B.",
+      "rating": 5,
+      "text": "Glad we called Rod's Cooling and Heating. Our experience was excellent, from the first phone call through job completion. The pricing was fair, and the job was done well. Tyler, Jerry and Will were all knowledgeable, efficient, and professional. Our questions we answered clearly and respectfully. The space was left clean after their work. We would highly recommend the company, and all their crew. Thank you Carly, for getting us worked in a day early!",
+      "publishedAt": "2022-07-11T19:08:52.166Z",
+      "ownerResponse": "Thank you Dee for leaving such a great review for our company! We appreciate the feedback. Please let us know if there's anything we can help with in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPN2Q2eWlRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDO7d6yiQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURPc29Ia2VnEAE",
+      "reviewer": "Mrs. A.",
+      "rating": 5,
+      "text": "My old hvac guy went out of business, so when my AC unit stopped last night, I did a quick Google search, and called the 1st on the list— Rod's Cooling and Heating LLC. I called at about 10 PM and got an appointment for today. WooT!<br><br>Tyler came out and was able to quickly diagnose and fix the problem we were having with our AC unit. With as hot as it is, and with it being the Friday before a holiday weekend, I can't tell you how much I appreciate that he was able to get it done. Plus, the cost was more than reasonable.<br><br>Knowledgeable. Affordable. Quick. I think we just found our new hvac guy.<br><br>I signed up for the maintenance service, too.<br><br>Thanks! Happy 4th!",
+      "publishedAt": "2022-07-01T20:02:58.992Z",
+      "ownerResponse": "Thank you, Amber! We love reading these kinda reviews about our technicians. We're so happy we were able to get you scheduled and serviced so quickly. Please let us know if there's anything we can help with in the future!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURPc29Ia2VnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDOsoHkeg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNPXzh5SzJ3RRAB",
+      "reviewer": "Derek R.",
+      "rating": 5,
+      "text": "Called Rod's after my AC went out on a Friday, they were out on Monday and were able to tell me exactly what was wrong with my AC. Unfortunately it needed a full replacement (It was 24 yrs old) and they were able to get it installed next day even though there was a heat wave going on.",
+      "publishedAt": "2022-06-24T03:46:48.741Z",
+      "ownerResponse": "Thanks for this positive review Derek! This time of year is not a good time to go without AC so we're happy to help.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPXzh5SzJ3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICO_8yK2wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNPejdqMVVBEAE",
+      "reviewer": "Divya N.",
+      "rating": 5,
+      "text": "Brandon and Will were amazing at getting to my place quickly and fixing my AC. They explained what was wrong and fixed it efficiently. I appreciate their help and I am already cooling down!",
+      "publishedAt": "2022-06-22T22:19:16.369Z",
+      "ownerResponse": "Thank you for taking the time to leave us such a great review. Let us know if there's any way we can help you in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPejdqMVVBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICOz7j1UA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNPNTlqNGhRRRAB",
+      "reviewer": "Haley H.",
+      "rating": 3,
+      "text": "If there was an option I would give five stars SOLELY for the customer service I encountered with this company. I would give them a ONE STAR due to an incorrect diagnostic of our unit. Resulting in the three stars I have given.<br>We noticed our AC unit wasn't cooling our house and we knew we'd need to have the professionals come out and check to see what could be the problem.<br>Brandon and Willis were the two gentlemen who ended up coming to our house. They explained that our compressor had went bad due to it running low on refrigerant which inevitably resulted in the compressor having irreversible damage. After they looked at the cost of repair versus replacement (and saying the unit was old) it would be beneficial to have the system replaced in its entirety.<br>The price we were quoted seemed high and before we'd accept their proposal we did what I thought was the best thing to do and called a secondary company for a second opinion.<br>The two men that arrived later that night spent a total of 15 minutes doing their diagnostic testing and came to the conclusion that it was the capacitor that had went bad. The part that worked with the fan was fine, but the part for the compressor was shot. They changed the capacitor out and it has been working beautifully since.<br>We were confused as to why Brandon and Willis didn't check the capacitor (although they said they had) or even try further to fix the unit. Rather they turned on their salesmen pitch and went down that road. It's disheartening to know that we could have had our house cooled hours earlier if they had taken their time to do the right thing.<br><br>The next morning we received the invoice/proposal and I declined it. I called their company and Karlie is who I spoke with.<br>I cannot begin to put into words what a professional and genuine employee she is. Not only did she apologies for things well out of her hand, but she waved our diagnostic fee due to the gentlemen not doing their job correctly. Her tone was never once defensive and was truly sincere over the whole situation. She went above and beyond and is a TRUE ASSET to the company. THANK YOU KARLIE!!<br><br>This was our experience with the company. Despite the wrong diagnostic, the customer service was genuine and felt that Karlie took care of us. The company will still be in our back pocket for future problems if and when they arise solely due to her. Again, thank you Karlie.",
+      "publishedAt": "2022-06-21T18:13:56.704Z",
+      "ownerResponse": "We certainly apologize again for the actions of our technicians. This is absolutely not how Rod's Cooling & Heating intends to do business. Thank you for the feedback, we have addressed this type of situation with our entire team. Thank you for the positive feedback about Karlie. We certainly do hope you consider giving us a second chance in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPNTlqNGhRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICO59j4hQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNPZy1xM0dBEAE",
+      "reviewer": "Sherry M.",
+      "rating": 5,
+      "text": "I called Rod’s on a Thursday about my air not working and they were able to send someone out the same day even though it is the busy season. The whole unit needed to be replaced, they gave me several options to choose from. While they had originally told me that they would not be able to get it replaced until Monday, they called me back and said they were able to squeeze me in on Friday! Jerry and Andrew came out and worked hard in the heat to get me back up and running.",
+      "publishedAt": "2022-06-17T23:23:26.319Z",
+      "ownerResponse": "Sherry thank you for the review we always strive to provide our customers with comfort.  Thank you for supporting our small local business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNPZy1xM0dBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICOg-q3GA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNPbWIteTdnRRAB",
+      "reviewer": "John W.",
+      "rating": 5,
+      "text": "Brandon and Will arrived on time, new exactly what the problem was immediately with my AC unit and fixed it quickly! Very professional and I will use Rod’s HVAC repair again!",
+      "publishedAt": "2022-06-14T03:42:28.142Z",
+      "ownerResponse": "Thank you for taking the time to leave such a great review for Brandon and Will!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNPbWIteTdnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICOmb-y7gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQybmJ2U3dnRRAB",
+      "reviewer": "Patrick L.",
+      "rating": 5,
+      "text": "Jerry and will fixed me up right. Originally I was scheduled for a Wednesday but they came TWO days early. You have no idea how great that was. My system was a mess but they didn’t complain once. I am very grateful for the amazing work they put in!",
+      "publishedAt": "2022-05-22T13:56:46.320Z",
+      "ownerResponse": "Thank you! We will let Jerry and Will know your appreciation for their service. Let us know if we can help you in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQybmJ2U3dnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID2nbvSwgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQyOXVYNEZBEAE",
+      "reviewer": "Michelle P.",
+      "rating": 5,
+      "text": "First worked with Tyler who is friendly and helpful, fixing my heat when it went out in April. Not only were they out the next morning when I called at night, when the same issue happened but with my AC just this week I called they were out next morning and Tyler let me know I was looking at a new system needed.<br>They got my system in and replaced within a couple days and once again super friendly and helpful on the AC replacement. Appreciated all of Jerry and Will's hard work and helpfulness getting my new system running and my house cooling off!<br>I don't look forward to repairs but Rod's makes it easier with good prices and great services done by great people!",
+      "publishedAt": "2022-05-14T17:16:21.653Z",
+      "ownerResponse": "We really appreciate your great review of our team. It truly means a lot! We're glad we were able to help you in a timely manner and that you were happy with our service. Please let us know if there's anything else we can help with!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyOXVYNEZBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID29uX4FA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQyNnNhNDdRRRAB",
+      "reviewer": "George G.",
+      "rating": 5,
+      "text": "Very friendly, Brandon and Abe answered my service call and jumped right in, checked everything inside and out , serviced the unit and educated me on all they were doing. I hope in the spring when I call the same crew shows.",
+      "publishedAt": "2022-05-12T00:45:15.033Z",
+      "ownerResponse": "We're glad Brandon and Abe were able to help you resolve your issue in a timely manner. Thanks again for your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyNnNhNDdRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID26sa47QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQyNnN5azF3RRAB",
+      "reviewer": "cj L.",
+      "rating": 5,
+      "text": "AC is working perfectly thanks Jerry and will, fast effective work!",
+      "publishedAt": "2022-05-11T23:19:29.164Z",
+      "ownerResponse": "Thank you for your positive feedback!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQyNnN5azF3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID26syk1wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQyNUppQmNREAE",
+      "reviewer": "Justin S.",
+      "rating": 5,
+      "text": "They came and installed a new AC and Furnace for me.  Quick, efficient, and professional.",
+      "publishedAt": "2022-05-06T22:45:56.498Z",
+      "ownerResponse": "Thank you so much, Justin! We appreciate you taking time out of your busy schedule to leave us such an awesome review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyNUppQmNREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID25JiBcQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMyeC12LWlBRRAB",
+      "reviewer": "Judy D.",
+      "rating": 5,
+      "text": "Great !!!",
+      "publishedAt": "2022-04-29T21:27:25.746Z",
+      "ownerResponse": "Thanks for the 5-star review, Judy! We greatly appreciate your business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyeC12LWlBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC2x-v-iAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMycDRhX1FnEAE",
+      "reviewer": "tazz M.",
+      "rating": 5,
+      "text": "I spoke with Rod and he gave me a price on a new Goodman furnace that fit my budget. I had him install the furnace for an agreed price in a rental in Wichita. There were a couple of challenges initially with the flue and the cap. He replaced them for the initial agreed price and we made it through the winter just fine. Very happy with the results and now going to have AC work done by Rod's.",
+      "publishedAt": "2022-04-29T19:23:26.299Z",
+      "ownerResponse": "Thank you, Tazz! Give us a call if there's anything we can help you with in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMycDRhX1FnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC2p4a_Qg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR5dU42bVZnEAE",
+      "reviewer": "Mary H.",
+      "rating": 5,
+      "text": "Very professional. Went above and beyond to make sure we were warm.",
+      "publishedAt": "2022-03-19T20:54:57.255Z",
+      "ownerResponse": "Thank you for the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5dU42bVZnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDyuN6mVg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNXdmM3REVnEAE",
+      "reviewer": "Alexzandria C.",
+      "rating": 5,
+      "text": "Our business AC unit gave us some trouble. I contacted Rod's Cooling and Heating and they had a technician out within an hour! We were able to have Jerry, Will, and Brandon do the actual repair literally the next day. This company is awesome, you won't go wrong booking their service.",
+      "publishedAt": "2022-03-04T18:58:00.628Z",
+      "ownerResponse": "Thank you so much for the 5-review and the wonderful recommendation! We appreciate your business and hope you all have a wonderful weekend.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXdmM3REVnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICWvc7DEg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNXdk5IUnRnRRAB",
+      "reviewer": "Terri R.",
+      "rating": 5,
+      "text": "Rod’s Cooling and Heating came and fixed my furnace. It needed a new motherboard and exhaust fan, they ordered the parts and fixed it fast. Now it works better than it has been in 5 years!!",
+      "publishedAt": "2022-02-21T02:26:29.624Z",
+      "ownerResponse": "Thank you so much for taking the time to write a review we appreciate your business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNXdk5IUnRnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICWvNHRtgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNXLVB5eFBBEAE",
+      "reviewer": "Alexander G.",
+      "rating": 5,
+      "text": "Great Experience! My heat went out during a snow storm and they were still able to get out in a timely manner. Quickly and effectively found the issue and got it back up! They will be my go to from now on.",
+      "publishedAt": "2022-02-17T18:41:00.452Z",
+      "ownerResponse": "Thank you for your business, the recommendation, and the 5-star review! We are happy to hear you will be a repeat customer.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXLVB5eFBBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICW-PyxPA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURtbzgtR2lBRRAB",
+      "reviewer": "Scott P.",
+      "rating": 5,
+      "text": "Great experience! Tyler, Abraham and Brandon teamed up to get me my new furnace installed and I can’t say enough good things about them. Good people and awesome work. Thank you!",
+      "publishedAt": "2022-02-07T22:33:15.845Z",
+      "ownerResponse": "Scott, we are so pleased to hear about your positive experience and as always we strive for happy customers. Thank you so much for taking the time to leave an excellent review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtbzgtR2lBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDmo8-GiAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURtNEpiU1lnEAE",
+      "reviewer": "Wizdom",
+      "rating": 5,
+      "text": "Little joe (resident) fantastic service, everything is working properly. Highly recommend this to others to reach out to rods for good quality work. Brandon , abe, ian showed up and gave awsome service.",
+      "publishedAt": "2022-01-15T19:29:12.155Z",
+      "ownerResponse": "Thank you so much for the great review! it was a pleasure doing business with you, and we hope you keep us in mind for seasonal maintenance.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtNEpiU1lnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDm4JbSYg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNta2EyNjJnRRAB",
+      "reviewer": "jud D.",
+      "rating": 5,
+      "text": "Great service, they were able to get to my house within an hour of me calling. He explained what he was doing in simple terms and didn't try to upsell at all. It ended up being an easy fix that he showed me how to do on my own. I'll absolutely use them again if needed.",
+      "publishedAt": "2021-12-31T13:20:31.861Z",
+      "ownerResponse": "Thank you we love getting positive feedback and we are so happy you took the time to leave a review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNta2EyNjJnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICmka262gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNtb1pUUl9BRRAB",
+      "reviewer": "Timaria M.",
+      "rating": 5,
+      "text": "Quick and responsive.  Great service!",
+      "publishedAt": "2021-12-30T20:33:25.354Z",
+      "ownerResponse": "Thank you so much for the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtb1pUUl9BRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICmoZTR_AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNtNHFTTG1RRRAB",
+      "reviewer": "Larry S.",
+      "rating": 5,
+      "text": "The techs, Abe and Will, were very professional and efficient. I would recommend them to others  for their HVAC work.",
+      "publishedAt": "2021-12-22T22:11:07.874Z",
+      "ownerResponse": "Thank you so much for the review, Larry!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtNHFTTG1RRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICm4qSLmQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURHbzl5b0tBEAE",
+      "reviewer": "T.C",
+      "rating": 5,
+      "text": "Josh and Jerry installed a new heater in my home.  Very professional, courteous, and knowledgeable. Highly recommended.",
+      "publishedAt": "2021-12-08T00:23:57.799Z",
+      "ownerResponse": "We are so happy to hear about such a positive experience and we are so grateful for our wonderful technicians always putting our customers first! Thank you for the review and take care.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURHbzl5b0tBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDGo9yoKA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNHdUpfQ2xnRRAB",
+      "reviewer": "Ben B.",
+      "rating": 5,
+      "text": "Rods Cooling & Heating was fantastic to deal with. Jerry & Manny did an excellent job communicating, even though we had a mishap. I couldn't recommend them more! We'll be sure to use this great company in the future.",
+      "publishedAt": "2021-10-20T00:10:35.318Z",
+      "ownerResponse": "Thank you for taking the time to write a review and thank you for recommending Rod's Cooling and Heating.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHdUpfQ2xnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICGuJ_ClgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM2cDRLODN3RRAB",
+      "reviewer": "Philip Y.",
+      "rating": 5,
+      "text": "Jerry, Will and Abe did an excellent job, fastly and efficiently. Put two old folks at ease with cool air in the middle of hot and humid summer day and also saved us money.",
+      "publishedAt": "2021-09-14T17:29:40.973Z",
+      "ownerResponse": "Thank you for the wonderful review it makes us happy to hear about your excellent experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2cDRLODN3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC6p4K83wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM2dS1HM0R3EAE",
+      "reviewer": "Clayton A.",
+      "rating": 5,
+      "text": "Brandon and Abe responded to my request for maintenance in the evening. House was super hot. Now it’s cooling down. They were quick and took the time to educate me on proper care of the system. Will definitely be dealing with them in the future.",
+      "publishedAt": "2021-09-14T02:48:10.436Z",
+      "ownerResponse": "Thank you for the positive review and for the 5-star rating!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2dS1HM0R3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC6u-G3Dw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM2eHVfYkJnEAE",
+      "reviewer": "beddawithtyme",
+      "rating": 1,
+      "text": "Had an appointment scheduled for today at 10 AM. No one called and no one showed. I tried to call to follow up at 1030 and there was no answer. I was finally able to reach the office at 1230PM to let them know. Very disappointed after all the positive reviews and feedback for this company.",
+      "publishedAt": "2021-09-03T18:20:41.701Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM2eHVfYkJnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC6xu_bBg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURhLWNQQnpBRRAB",
+      "reviewer": "Laura M.",
+      "rating": 5,
+      "text": "Jerry Will and Al replaced our furnance. They were very prompt, completed the installation professionally and quickly. We were suffering without A/C in this humid and hot weather. They offered their recommendation for the most beneficial and cost effective solution for us. Very impressed with their logic and knowledge to provide the best possible solution. We will be having them back to install a new condensing unit in the near future. Highly recommend these guys!!!  Thank you!!",
+      "publishedAt": "2021-08-24T06:25:22.698Z",
+      "ownerResponse": "Thank you so much for your review we are so happy to be of service, and we hope to see you, folks, in the future for any of your HVAC needs.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURhLWNQQnpBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDa-cPBzAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNhcmR5ZXdBRRAB",
+      "reviewer": "Cheryl P.",
+      "rating": 5,
+      "text": "Tyler was amazing.  Efficient and honest.  A lot of companies might try and \"upsell\" to add to charges and none of this happened.  I would recommend to anybody and everybody who need service for their heating for cooling.  He also gave us advice on how to keep the unit clean and did a quick inspection of our heating unit to make sure all looked good.  Just so pleased with eveything, it is so nice to know there are honest companies out there.",
+      "publishedAt": "2021-08-06T17:37:35.119Z",
+      "ownerResponse": "Cheryl, we are blushing! Thank you so much for the positive review, and we strive to make our customers feel comfortable during any decisions they make with us.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhcmR5ZXdBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICardyewAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNhM0l1cGVREAE",
+      "reviewer": "Matt B.",
+      "rating": 5,
+      "text": "I had just gotten home from vacation where it was already close to 100 degrees and returned home where it was 95 outside. I was really looking forward to coming in to some cold air in the house, but when I opened the door and stepped inside…. It was worse than outside! 93 degrees with no air movement. Called 4 or 5 places that said they were open on Sunday according to google. Most places I got a voicemail with a promise to call back or was told that they don’t do emergency calls on the weekend. Rods actually answered and said that they could get someone there within a couple of hours. I received a call from one of their techs (Abraham) and he informed me they had one more stop before heading my way. The guys, Abraham and Brandon arrived about an hour later and had me cooling off in about 15 minutes! I was quite impressed with the responsiveness and how quick they had me up and running. As mine is a 20 year old unit, I was planning on replacing the whole thing this fall. I plan on using these guys for sure!",
+      "publishedAt": "2021-07-25T20:45:42.269Z",
+      "ownerResponse": "Thank you so much for the great review! Abraham and Brandon do great work for sure, please give us a call at 316-776-4088 for any future needs and have a wonderful day.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhM0l1cGVREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICa3IupeQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNhbk5TbTZ3RRAB",
+      "reviewer": "Kali S.",
+      "rating": 5,
+      "text": "Brandon and his crew came out first thing in the morning to fix our A/C and then offered to come back again that afternoon. He was very knowledgeable and friendly the whole way through! I would highly recommend this company to everyone!",
+      "publishedAt": "2021-07-25T13:29:45.477Z",
+      "ownerResponse": "Thank you for the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNhbk5TbTZ3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICanNSm6wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNhdU11NGNREAE",
+      "reviewer": "Kraig K.",
+      "rating": 5,
+      "text": "Extremely professional and prompt service with very knowledgeable service. Highly recommend using them",
+      "publishedAt": "2021-07-23T16:33:28.113Z",
+      "ownerResponse": "Thank you for taking the time to review our company.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhdU11NGNREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICauMu4cQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNhNk9ybkRnEAE",
+      "reviewer": "Antowine L.",
+      "rating": 5,
+      "text": "The whole crew did an amazing job!!! From the initial visited to the final results. I would go back to them any day!!! THANK YOU!!",
+      "publishedAt": "2021-07-22T21:14:14.826Z",
+      "ownerResponse": "Thank you Antowine, for the great review and we hope you call us in the future for preventative  maintenance.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNhNk9ybkRnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICa6OrnDg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxbV9qSTJRRRAB",
+      "reviewer": "Austin R.",
+      "rating": 5,
+      "text": "Jeremy and Abraham are great techs, the we're fast and reliable. Knew exactly what they were talking about and tried their best to get everything at the best prices, Highly recommended",
+      "publishedAt": "2021-07-16T01:52:18.534Z",
+      "ownerResponse": "Thank you so much for the recommendation Austin, please let us know if you need any preventative maintenance in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxbV9qSTJRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDqm_jI2QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxLWJhdEdREAE",
+      "reviewer": "Patricia S.",
+      "rating": 5,
+      "text": "Amazing service and wonderful friendly people. The best service I have ever had with heating and cooling. Definitely recommend this place to everyone",
+      "publishedAt": "2021-07-13T23:03:38.248Z",
+      "ownerResponse": "Thank you we appreciate the recommendation and hope you give us a call soon for preventative maintenance.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxLWJhdEdREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDq-batGQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxcnRELUJBEAE",
+      "reviewer": "Larry P.",
+      "rating": 5,
+      "text": "My neighbor told me about Rod’s. I connected them on a Friday night. They responded with an email letting me know that I could save service call weekend charges if I sat tight til Monday.  They came out on Tuesday as Monday was the 4th of July observed. tyler and his teammate quoted a competitive price and I was pleasantly surprised when they were ready to install Thursday. I thought it was Going to be Friday. Win!  The crew: Jerry, Miguel, Ian, and Will. These guys were cordial, appreciative, and made my family feel at home. They were great around everyone ,including the dogs. From start to finish, I’m happy.  Check them out. You’ll be glad you did",
+      "publishedAt": "2021-07-08T23:00:38.729Z",
+      "ownerResponse": "We are so pleased to hear about your wonderful experience with our company, We really do have a wonderful team and we are proud of them and the work they do. If we can do anything else for you please don't hesitate to reach out, also if you refer anyone and they install a new system we will give you a 100 dollars cash! So please tell your friends and family about us and enjoy your new system.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxcnRELUJBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDqrtD-BA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxZ3JpaXBRRRAB",
+      "reviewer": "Gidget K.",
+      "rating": 4,
+      "text": "Staff explained and solved my problems. Called ahead and showed up on time.",
+      "publishedAt": "2021-07-02T13:14:37.811Z",
+      "ownerResponse": "We are so glad to hear that we met your expectations, please remember us in the future for any maintenance needs.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxZ3JpaXBRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDqgriipQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxbExPUDBnRRAB",
+      "reviewer": "Becca K.",
+      "rating": 5,
+      "text": "They were awesome! Tyler explained everything to me and I felt confident in the work being done.",
+      "publishedAt": "2021-06-29T20:26:34.296Z",
+      "ownerResponse": "That is what we want to hear and we appreciate the feedback on our crew! If you know of anyone in need of a new system and they install with us and mention your name we pay 100.00 for referrals just FYI ;)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxbExPUDBnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDqlLOP0gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxNUxxbVlnEAE",
+      "reviewer": "Gale W.",
+      "rating": 5,
+      "text": "Tyler and Abraham and the other guys which I can't remember their name sorry were awesome. They explained everything they were doing to me and gave me some tips on how to keep my unit clean with all of the cotton flying everywhere. I will definitely use them again couldn't ask for anybody any better.<br>Thank you again for all your help.",
+      "publishedAt": "2021-06-29T13:38:49.442Z",
+      "ownerResponse": "Thank you so much we really appreciate the feedback and look forward to servicing any maintenance needs in the future. Also if you refer someone and they install a unit with us we will pay you 100.00. Thanks again Gale!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxNUxxbVlnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDq5LqmYg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNxMjRUSEJnEAE",
+      "reviewer": "Aaron",
+      "rating": 5,
+      "text": "They showed up on time got me taken care of fast. Very knowledgeable didn't take them long to figure out what was wrong. Will do business with again.",
+      "publishedAt": "2021-06-19T19:18:00.074Z",
+      "ownerResponse": "Thank you Aaron for the review we appreciate your business and look forward to doing any maintenance in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxMjRUSEJnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICq24THBg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxbS12QmpRRRAB",
+      "reviewer": "Mike B.",
+      "rating": 5,
+      "text": "All I can say is we were thoroughly pleased and impressed with the service we received from Rod's cooling and heating! They were very professional, explained everything, very trusting, and even though I wouldn't want to do it soon, I would certainly use them again! Best service! Thanks guys!",
+      "publishedAt": "2021-06-19T17:47:36.763Z",
+      "ownerResponse": "Well thank you so very much for the review Mike, and we look forward to any maintenance needs that arise in the future. Also if you refer someone and they install a new unit with us we pay 100.00 for referrals!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxbS12QmpRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICqm-vBjQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxaGJmX3hRRRAB",
+      "reviewer": "Maude C.",
+      "rating": 5,
+      "text": "Jerry, Kevin and Tony did an excellent job installing my new ac and furnace. Professional and friendly.",
+      "publishedAt": "2021-06-12T21:37:15.256Z",
+      "ownerResponse": "We appreciate the feedback and are pleased to hear you had a great experience. Just so you know we pay for referrals on new installs and we also offer service agreements for routine maintenance.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxaGJmX3hRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICqhbf_xQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxaFpHNmxBRRAB",
+      "reviewer": "Katie H.",
+      "rating": 1,
+      "text": "I  had high hopes for this company.   My ac went out and  The lady told me it would be fixed that day  because it was considered emergent as I have a 2 month old in the house.  So the guys showed up in their regular truck not their work truck and looked at it for 5 seconds and told me they couldn't fix the problem because they didn't bring anything with them. They also told me we would be fine and to just put a box fan in front of my two month old. So we decided to cancel with them due to this behavior and they still had the nerve to charge us for a 5 second interaction. I would not recommend them.",
+      "publishedAt": "2021-06-12T19:28:21.555Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxaFpHNmxBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICqhZG6lAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxMXRQdDNRRRAB",
+      "reviewer": "Rob S.",
+      "rating": 5,
+      "text": "Very friendly and professional. Originally tried to squeeze us last minute for Friday but they had a lot of calls and moved us to Saturday but still charged us Friday labor rates. Tyler and Carson were super friendly and got the job done quickly. Will definitely use Rod’s again in the future.",
+      "publishedAt": "2021-06-05T22:32:41.632Z",
+      "ownerResponse": "Thanks Rob we diffidently try to get to everyone we can and we appreciate the feedback. Please give us a call for routine maintenance in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxMXRQdDNRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICq1tPt3QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxOE16cG13RRAB",
+      "reviewer": "Amy H.",
+      "rating": 5,
+      "text": "All the people at this company are AWESOME! Tyler came out the same day the A/C went out. He was super friendly and knowledgeable! He came out on a Friday and I had an appointment the following Monday. Kevin, Jerry and Will showed up early to replace the unit. They were friendly and professional. They explained what were going to do in terms I could understand (I'm not a technical person). I would highly recommend Rods Cooling and Heating!",
+      "publishedAt": "2021-05-24T16:59:24.182Z",
+      "ownerResponse": "Thank you so much for the great review and recommendation Amy, please call us for preventative maintenance or should another problem arise.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxOE16cG13RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICq8MzpmwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURLcjdUX3ZRRRAB",
+      "reviewer": "Clinton L.",
+      "rating": 5,
+      "text": "I highly recommend this company. They were extremely proficient in removing my old HVAC system and installing a new one. The owner presented me with all the options and price ranges allowing me to make an informed decision. The Installers knew what the were doing so I want to thank Mr. Jerry, Mr. Carlos & Mr. Carson for their professionalism and especially Mr. Jerry for explaining the entire process along the way. You will not be disappointed using this company.",
+      "publishedAt": "2021-05-20T22:02:26.710Z",
+      "ownerResponse": "We are so happy to hear that you had such a wonderful experience and we want to thank you for the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLcjdUX3ZRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDKr7T_vQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURLeG9Dd2RnEAE",
+      "reviewer": "Priceless M.",
+      "rating": 5,
+      "text": "Air conditioning went out on Sunday and they had someone out the next day! They even installed a newer thermostat I already had. Great timely professional service.",
+      "publishedAt": "2021-05-09T15:57:20.690Z",
+      "ownerResponse": "Thank you so much for the review, and make sure to call us for preventative maintenance in the future.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLeG9Dd2RnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDKxoCwdg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURLbUtudDRBRRAB",
+      "reviewer": "Alireza T.",
+      "rating": 5,
+      "text": "I had a great experience. They also refunded me $5 to leave this review.",
+      "publishedAt": "2021-04-28T23:02:44.816Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLbUtudDRBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDKmKnt4AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURLeU91YkNREAE",
+      "reviewer": "Andrew C.",
+      "rating": 5,
+      "text": "AC went down late in the evening. Called Rods and they said they could have someone out the next day. Tyler showed up on time, was very professional and courteous. Fixed the issue and made suggestions to  improve the air flow of my unit. He was absolutely correct and a complete life saver. If I need AC service again in the future, I'm calling Rods and asking for Tyler.",
+      "publishedAt": "2021-04-28T07:57:39.823Z",
+      "ownerResponse": "Thank you so much for taking the time to leave a review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLeU91YkNREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDKyOubCQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLXzUyTWtnRRAB",
+      "reviewer": "Mary H.",
+      "rating": 5,
+      "text": "Very good job my furnace is working well now.",
+      "publishedAt": "2021-04-25T12:18:02.117Z",
+      "ownerResponse": "Thank you for the review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLXzUyTWtnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICK_52MkgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNLdXNpR1BBEAE",
+      "reviewer": "Sheri H.",
+      "rating": 5,
+      "text": "the guys Kevin William Jerry Brandon showed up on time worked their tails off all day long got our entire system installed in a day they made sure that everything was cleaned up when they were finished the air was working properly and we're very happy with every aspect of their work.",
+      "publishedAt": "2021-04-02T15:09:12.899Z",
+      "ownerResponse": "Thank you for the five-star review and we are so pleased to hear about your great experience.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLdXNpR1BBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICKusiGPA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR5XzhfVEtBEAE",
+      "reviewer": "Roger O.",
+      "rating": 5,
+      "text": "I had a complete AC and Furnace replacement done. Rod came out a day after I called him....gave me a estimate for everything....including running a new gas line. Gave him the green light to do the work on Friday....his crew was out Monday morning. Took Kevin...Jerry...Will and Brandon a little over a day to tear out old and put in new. Including a lot of new ductwork. Everyone was very friendly....courteous...and above all professional. They cleaned everything up when they left so all I had to do was enjoy the new system. Would highly recommend this company for any kind of HVAC work that needs to be done.",
+      "publishedAt": "2021-03-23T19:38:05.460Z",
+      "ownerResponse": "Thank you for the five-star review and the recommendation we appreciate you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5XzhfVEtBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDy_8_TKA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR5eC1TYVdBEAE",
+      "reviewer": "steve G.",
+      "rating": 5,
+      "text": "Great service!  Couldn't recommend better.",
+      "publishedAt": "2021-03-19T16:28:18.810Z",
+      "ownerResponse": "Thank you for the five-star review and the recommendation we appreciate you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5eC1TYVdBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDyx-SaWA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR5NVBMTVdnEAE",
+      "reviewer": "Mark N.",
+      "rating": 5,
+      "text": "Dustin and Jerry did a great job. Tyler was very helpful diagnosing my problem.",
+      "publishedAt": "2021-02-25T02:35:17.202Z",
+      "ownerResponse": "Thank you for the five-star review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5NVBMTVdnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDy5PLMWg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN5eHRPUXRBRRAB",
+      "reviewer": "Ciara B.",
+      "rating": 5,
+      "text": "tyler did a great job when he came out will be having them back",
+      "publishedAt": "2021-01-28T13:55:53.466Z",
+      "ownerResponse": "Thank you for the five-star review we appreciate you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5eHRPUXRBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICyxtOQtAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURTcHJteURnEAE",
+      "reviewer": "Chris A.",
+      "rating": 5,
+      "text": "We had a new heating system installed a little more than a year ago by another company.<br>It never worked right.<br><br>My parents are elderly and my mom was crying after the rudeness of the other company.<br><br>Rod’s tech Tyler came over and got it corrected right away.<br><br>Rod’s to the rescue and we greatly appreciate the kind and professional service.  I will recommend to anyone.",
+      "publishedAt": "2020-12-23T17:08:07.287Z",
+      "ownerResponse": "Thank you for the five-star review and the recommendation we appreciate you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURTcHJteURnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDSprmyDg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNTc09iNDZnRRAB",
+      "reviewer": "Jason H.",
+      "rating": 5,
+      "text": "Brandon was very pleasant, and had the furnace up and running within 10 minutes.  I will use this company again.",
+      "publishedAt": "2020-12-13T02:10:33.074Z",
+      "ownerResponse": "Thank you for the review and we are here for preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNTc09iNDZnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICSsOb46gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURpLXN6V1pnEAE",
+      "reviewer": "Dawn M.",
+      "rating": 5,
+      "text": "We needed a whole house humidifier installed. They came quickly, the same day! The guys were very nice, professional, and fast.",
+      "publishedAt": "2020-12-02T17:41:41.216Z",
+      "ownerResponse": "Thank you for the review and we are here for preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpLXN6V1pnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDi-szWZg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURpbXNxdHFRRRAB",
+      "reviewer": "Bob H.",
+      "rating": 5,
+      "text": "They were quick to respond and on time, all at a fair price.",
+      "publishedAt": "2020-12-01T19:29:01.409Z",
+      "ownerResponse": "Thank you for the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpbXNxdHFRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDimsqtqQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNpaHJpYlFREAE",
+      "reviewer": "Kara M.",
+      "rating": 5,
+      "text": "Repaired my gas fireplace in a very professional manner. Prompt courteous and efficient.  Highly recommend these guys.",
+      "publishedAt": "2020-10-30T17:06:27.864Z",
+      "ownerResponse": "Thank you for the review and we are here for preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNpaHJpYlFREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICihribQQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNpd3Z5SS1BRRAB",
+      "reviewer": "aaron O.",
+      "rating": 5,
+      "text": "Furnace at my home had a glitch and stopped working on a cold Sunday evening.<br>Rod's company was open and available.<br>Showed up in good time (within the hour). Furnace repair was done in good time, got it all fixed up (had to replace a fuse triggered by loose wire), and good to go.<br>Very professional, polite, and great attitude.<br>Checked everything else out in furnace while he was looking at it.<br>The price to come out and fix it was very fair and reasonable...especially since it was a Sunday evening.<br>Very pleased with them. I would highly recommend this company.",
+      "publishedAt": "2020-10-28T22:17:05.214Z",
+      "ownerResponse": "Thank you for the review, please give us a call for preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpd3Z5SS1BRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICiwvyI-AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURDNDZ6cWVREAE",
+      "reviewer": "Mary S.",
+      "rating": 4,
+      "text": "They are polite and professional.   Always respond quickly and competitive pricing.",
+      "publishedAt": "2020-10-09T21:32:27.731Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDNDZ6cWVREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDC46zqeQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURDZ195UHdRRRAB",
+      "reviewer": "Mike J.",
+      "rating": 5,
+      "text": "Gary and tyler were very informative professional answered all my questions would definitely use again great work",
+      "publishedAt": "2020-10-08T22:55:41.204Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDZ195UHdRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDCg_yPwQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNDdC1UOXpnRRAB",
+      "reviewer": "Mary W.",
+      "rating": 5,
+      "text": "My A/C quit working approx 8pm. I was so lucky I called Rod's Cooling & Heating, I had the repairman knock on the front door 30mins after I called. He got things put back together in no time & he was absolutely delightful even tho I got him up out of his bed so that I cud go 2 bed in a cool house. I'll never call any other company ever again, u have me 4 life as a customer!",
+      "publishedAt": "2020-09-07T12:00:33.131Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDdC1UOXpnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICCt-T9zgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNDMjhqY193RRAB",
+      "reviewer": "Alma",
+      "rating": 5,
+      "text": "Found this company through homeadvisor.com. they are knowledgeable in A/C systems, which is what I needed serviced. They arrived on time, and were very professional.  Once arriving they got to work and quickly diagnosed the problem, and fixed it. I highly recommend doing business with this company.",
+      "publishedAt": "2020-09-04T16:40:06.084Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we are here anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDMjhqY193RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICC28jc_wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNDODlpZEp3EAE",
+      "reviewer": "Delilah W.",
+      "rating": 5,
+      "text": "Professional and had my AC back to working in a short time.",
+      "publishedAt": "2020-09-02T19:06:17.609Z",
+      "ownerResponse": "Thank you for the review, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDODlpZEp3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICC89idJw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNDdzlpY1BREAE",
+      "reviewer": "Janey S.",
+      "rating": 5,
+      "text": "Great response and awesome work!! So much appreciate being able to use a family-owned LOCAL business. Everyone I talked with from the office and Rod were great...and the two guys (Brandon & Tyler) that showed up were a hoot!! Highly recommend them",
+      "publishedAt": "2020-09-01T18:26:09.921Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDdzlpY1BREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICCw9icPQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNDdU02YVJBEAE",
+      "reviewer": "Earl A.",
+      "rating": 5,
+      "text": "Tyler is an amazing professional. He came, looked at a few things with the air conditioner and knew immediately what to do. He had to run and get a new part and had it replaced in minutes. The price is absolutely low. Definitely the best place to call to get your air conditioning working. I wish we could give him more than 5 stars.",
+      "publishedAt": "2020-08-10T21:06:17.396Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDdU02YVJBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICCuM6aRA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ4ODZyV2ZREAE",
+      "reviewer": "Ron B.",
+      "rating": 5,
+      "text": "About the third time we have utilized Rod or his crew.  They came highly recommended by one of my clients.  A fair market based value and honest.  Thankful to have found Rod!  I recommend without reservation...good people!",
+      "publishedAt": "2020-07-28T22:35:27.618Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we appreciate you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4ODZyV2ZREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID886rWfQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ4OF9qdlRBEAE",
+      "reviewer": "Barbara L.",
+      "rating": 5,
+      "text": "Tyler was very professional and knowledgeable. He got right to work and had the job complete in no time. I will definitely refer friends to this company and I will definitely use them again in the future.",
+      "publishedAt": "2020-07-28T20:44:48.752Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4OF9qdlRBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID88_jvTA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ4emZTZ1lBEAE",
+      "reviewer": "Gina K.",
+      "rating": 5,
+      "text": "Very good response. Very professional. Efficient.",
+      "publishedAt": "2020-07-24T22:13:09.618Z",
+      "ownerResponse": "Thank you for the review we appreciate it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4emZTZ1lBEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID8zfSgYA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ4MWZHOXRBRRAB",
+      "reviewer": "pamela C.",
+      "rating": 5,
+      "text": "I couldnt be more pleased with hiring Rods cooling and Heating. They were very  conscientious, hard-working, polite, all around very nice people they did an awesome job replacing my outside air conditioning unit and I would highly recommend them you can't go wrong",
+      "publishedAt": "2020-07-23T17:52:01.784Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4MWZHOXRBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID81fG9tAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ4bWVYbk93EAE",
+      "reviewer": "Mike W.",
+      "rating": 5,
+      "text": "Tyler showed up within an hour of us calling and was able to help us out of a bad situation. We just returned from being gone on vacation and some time while we were gone our capacitor went out leaving us to return to a home that was 93 degrees. He had it replaced within 15 minutes and we were good as new. He is a life saver.",
+      "publishedAt": "2020-07-20T23:32:42.541Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ4bWVYbk93EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID8meXnOw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ4OGN5cXlnRRAB",
+      "reviewer": "joshua S.",
+      "rating": 5,
+      "text": "We're at my house within an hour of a request. Gave me two solutions, with reasonable time tables. Both solutions for my repair were good. Cost was incredibly good!",
+      "publishedAt": "2020-07-19T02:00:39.502Z",
+      "ownerResponse": "So glad we could be of service. Thank you for the review and the recommendation, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4OGN5cXlnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgID88cyqygE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4aWRlcU5BEAE",
+      "reviewer": "Zach C.",
+      "rating": 5,
+      "text": "A/C went out, and from start to finish the communication was amazing. The crew that came out made me and my girlfriend feel at ease about the situation and they were prompt and went above and beyond to not only replace the unit, but make sure that the moisture coming from the unit drained properly. It’s also very nice to call the business phone and speak directly to the owner. I would highly recommend them for any services in the future!! Thank you for making a bad situation a lot easier.",
+      "publishedAt": "2020-07-10T01:06:10.209Z",
+      "ownerResponse": "Thank you for the review and the recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4aWRlcU5BEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC8ideqNA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4dnRyVlhnEAE",
+      "reviewer": "Mike H.",
+      "rating": 5,
+      "text": "Great people to work with.",
+      "publishedAt": "2020-07-07T21:51:11.784Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4dnRyVlhnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC8vtrVXg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4M3NfeVhnEAE",
+      "reviewer": "Doug M.",
+      "rating": 5,
+      "text": "Had an AC emergency in July heat.  Rod's people were quick to respond when we couldn't get other companies out for 3 days to a week because of demand.<br><br>They came out the same day and within 24 hours had the problem diagnosed and corrected for a very reasonable price.<br><br>Highly recommended company and people",
+      "publishedAt": "2020-07-07T18:34:34.922Z",
+      "ownerResponse": "Thank you for the review and the recommendation, call us anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4M3NfeVhnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC83s_yXg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4dHVDdmR3EAE",
+      "reviewer": "Kristy P.",
+      "rating": 5,
+      "text": "Awesome service, very polite family values professional.  Quick response. Thank you so much. .<br>Kristy Patterson.",
+      "publishedAt": "2020-07-06T15:27:54.875Z",
+      "ownerResponse": "Thank you for the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4dHVDdmR3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC8tuCvdw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM4eXRmdzR3RRAB",
+      "reviewer": "Heather V.",
+      "rating": 5,
+      "text": "I found Rod’s Cooling and Heating through the Home Advisor app the night before. I was contacted first thing the next morning via phone by a very understanding and respectful gentleman. Upon hearing the issue I was having with my air conditioner at a home our son rents from us, he explained he would be out that same afternoon and would do what needed to be done to remedy the issue. I had contacted 3 other service companies and was told the earliest they would be available was late the next day, while understandable, it was not ideal. Fortunately, the issue was as simple as changing the air filter. I then recontacted Rod’s and advised I would not need their service after all as the issue had been fixed. The gentleman- over the phone - walked me through several steps to ensure the air filter was the only issue. He did this of his own accord and was not seeking any payment - just an honest and pure of heart business man. This is why, should I need their services in the future, they are the first and only company I’ll call.  Thank you!",
+      "publishedAt": "2020-07-01T19:52:35.986Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4eXRmdzR3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC8ytfw4wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM4a3MtazBRRRAB",
+      "reviewer": "Adam A.",
+      "rating": 5,
+      "text": "Rod & Brandon trouble-shot our AC that was blowing fuses on the control board. Had the unit charged & running relatively quickly & shared freely all that they did.<br>Also provided options & quotes for replacement as the old unit is on its last leg.<br>We are very satisfied with their work.",
+      "publishedAt": "2020-06-29T19:00:11.011Z",
+      "ownerResponse": "Thank you for the review and the recommendation, we also do preventative maintenance anytime you need us! 316-776-4088.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4a3MtazBRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIC8ks-k0QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURja1k2ZGxBRRAB",
+      "reviewer": "Patti B.",
+      "rating": 5,
+      "text": "Great company!  Highly recommended",
+      "publishedAt": "2020-06-13T18:35:17.819Z",
+      "ownerResponse": "Thank you for the 5-star review and the recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURja1k2ZGxBRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDckY6dlAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjMzVPb3BnRRAB",
+      "reviewer": "Vicki R.",
+      "rating": 5,
+      "text": "The guys came out and worked on my old air conditioner and got it going in no time.  I could not ask for any one better. What a blessing.  Thank you so much.",
+      "publishedAt": "2020-05-06T22:21:46.198Z",
+      "ownerResponse": "Thank you for the 5-star review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjMzVPb3BnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICc35OopgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzN3J1VW53RRAB",
+      "reviewer": "Neil C.",
+      "rating": 5,
+      "text": "Amazing company, Brandon the technician I worked with did an outstanding job. I will continue to use this company for any work needed in Kansas. I'm an out of state contractor who wishes all companies were as solid as this one. Thanks again.",
+      "publishedAt": "2020-03-04T21:43:22.998Z",
+      "ownerResponse": "It was a pleasure to work with you on the McDonalds project. We look forward to working with you in the future. Thank You for the review",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzN3J1VW53RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDs7ruUnwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzd3VxeDVRRRAB",
+      "reviewer": "Shane M.",
+      "rating": 5,
+      "text": "Rod and his crew are awesome. They show up on time anytime I need them. The new system they put in works awesome no problem recommending him .",
+      "publishedAt": "2020-02-27T16:33:35.586Z",
+      "ownerResponse": "Thanks so much for your review Shane! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzd3VxeDVRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDswuqx5QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNza1ktSXJ3RRAB",
+      "reviewer": "Misty S.",
+      "rating": 5,
+      "text": "Excellent work would definitely recommend and have recommended.",
+      "publishedAt": "2020-02-05T04:30:01.472Z",
+      "ownerResponse": "Thanks so much for your review Misty! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNza1ktSXJ3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICskY-IrwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNza1pqMVJREAE",
+      "reviewer": "Candra W.",
+      "rating": 5,
+      "text": "I have used this company twice so for. I appreciate the work in one day. Rod and his team of experts completed the job with professionalism. They complete a whole wiring install for an air conditioner and a furnace. I will continue to use this business in the future and refer to my family and friends.",
+      "publishedAt": "2020-02-04T21:12:19.009Z",
+      "ownerResponse": "Thanks so much for your review Candra! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNza1pqMVJREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICskZj1RQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzNGN1QVRREAE",
+      "reviewer": "Jerry C.",
+      "rating": 5,
+      "text": "Rod is just a phone call away, takes care of problems, and treats me fair.<br>Thanks Rod",
+      "publishedAt": "2020-02-04T19:24:27.165Z",
+      "ownerResponse": "Thanks so much for your review Jerry! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzNGN1QVRREAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICs4cuATQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNzNFlXM3hRRRAB",
+      "reviewer": "Cecil R.",
+      "rating": 5,
+      "text": "The Best HVAC Business in Wichita....",
+      "publishedAt": "2020-02-04T18:18:48.988Z",
+      "ownerResponse": "Thanks so much for your review Cecil! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzNFlXM3hRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICs4YW3xQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNzb1l2VXZnRRAB",
+      "reviewer": "Justin I.",
+      "rating": 5,
+      "text": "Been using Rod many years. Not only is it quality work, but he works with your schedule and even goes out of their way on evenings, they stopped by to help us out when we needed some work immediately! HIGHLY RECOMMEND this company!",
+      "publishedAt": "2020-02-04T14:11:34.674Z",
+      "ownerResponse": "Thanks so much for your review Justin! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzb1l2VXZnRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICsoYvUvgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzX3JtTEZ3EAE",
+      "reviewer": "Ty M.",
+      "rating": 5,
+      "text": "Rods cooling & heating  has never failed to impress me ! They will get you up & going same day & all . Berry happy with the work & the employees",
+      "publishedAt": "2020-02-03T20:05:25.516Z",
+      "ownerResponse": "Thanks so much for your review! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzX3JtTEZ3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICs_rmLFw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzX3VXUGV3EAE",
+      "reviewer": "Sandra P.",
+      "rating": 5,
+      "text": "Rod Was very  knowledgeable and fixed the issues we was having with our air conditioning.",
+      "publishedAt": "2020-02-03T17:03:18.036Z",
+      "ownerResponse": "Thanks so much for your review Sandra! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzX3VXUGV3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICs_uWPew%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNzX3RtYmlRRRAB",
+      "reviewer": "Blaise D.",
+      "rating": 5,
+      "text": "put an air conditioning unit in my mother's house in and out in less than a day everything was done nicely would recommend",
+      "publishedAt": "2020-02-03T16:48:01.157Z",
+      "ownerResponse": "Thanks so much for your review Blaise! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzX3RtYmlRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICs_tmbiQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzaHIzUUN3EAE",
+      "reviewer": "Asher R.",
+      "rating": 5,
+      "text": "Great company to deal with, on time, and got the job done quick, will definitely use again!!!",
+      "publishedAt": "2020-01-30T17:30:49.989Z",
+      "ownerResponse": "Thanks so much for your review Asher! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzaHIzUUN3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICshr3QCw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzMnZ2YlV3EAE",
+      "reviewer": "Christopher S.",
+      "rating": 5,
+      "text": "As a licensed General Contractor for Sedgwick co. I have used Rods family owned business for over 10 years now. We have never had a customer complaint and any issue that arose was quickly rectified with no additional out of pocket expenses. Rods prices are below what I feel is the average market prices he could be charging. And his customer care and quality of workmanship is far above industry standards. If you have any cooling and heating needs you will not go wrong choosing Rod Cooking and Heating.<br><br>General Contractor<br>Sampson Construction<br>C.A.S",
+      "publishedAt": "2020-01-29T21:19:04.232Z",
+      "ownerResponse": "Thanks so much for your review Christopher! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzMnZ2YlV3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICs2vvbUw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNzMnJPMThRRRAB",
+      "reviewer": "Darren F.",
+      "rating": 4,
+      "text": "They were top of there game they went out of there way to make sure we were very happy and I have no problem recommending them to anyone",
+      "publishedAt": "2020-01-29T20:50:27.729Z",
+      "ownerResponse": "Thanks so much for your review Nathan! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNzMnJPMThRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICs2rO18QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzMnUzY0t3EAE",
+      "reviewer": "Andre P.",
+      "rating": 5,
+      "text": "I've used Rod's heating and air for severely years and never been disappointed. They have commitment to taking care of customer.",
+      "publishedAt": "2020-01-29T20:14:00.999Z",
+      "ownerResponse": "Thanks so much for your review Andre! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNzMnUzY0t3EAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICs2u3cKw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR3MHNTUmxRRRAB",
+      "reviewer": "dee W.",
+      "rating": 5,
+      "text": "Awesome job as always!!",
+      "publishedAt": "2018-10-16T23:50:05.161Z",
+      "ownerResponse": "Thanks so much for your review Dee! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR3MHNTUmxRRRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDw0sSRlQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURRbHE3VkVnEAE",
+      "reviewer": "Jerry T.",
+      "rating": 5,
+      "text": "I thank God for this company, just by being honest they saved my home and possibly my grand sons lives and by the way they also do great work.",
+      "publishedAt": "2018-07-07T15:09:18.040Z",
+      "ownerResponse": "Thanks so much for your review Jerry! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURRbHE3VkVnEAE!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgIDQlq7VEg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNnM3FQTWh3RRAB",
+      "reviewer": "JC R.",
+      "rating": 5,
+      "text": "Great customer service.",
+      "publishedAt": "2018-06-12T23:27:05.770Z",
+      "ownerResponse": "Thanks so much for your review JC! It was a pleasure to work with you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnM3FQTWh3RRAB!2m1!1s0x0:0x256816c6e0f4539!3m1!1s2@1:CIHM0ogKEICAgICg3qPMhwE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25Wc2VtbzVWWGxHY0RSMldqa3pVVmxzZFVoS1dFRRAB",
+      "reviewer": "Georgetta C.",
+      "rating": 5,
+      "publishedAt": "2026-05-25T21:51:28.387Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNaX01DWk5BEAE",
+      "reviewer": "elnora C.",
+      "rating": 5,
+      "publishedAt": "2023-09-06T14:12:45.987Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURwaFlPR1RnEAE",
+      "reviewer": "Annlice K.",
+      "rating": 5,
+      "publishedAt": "2023-08-25T13:14:59.815Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNwLWFQeC1nRRAB",
+      "reviewer": "Aaron M.",
+      "rating": 5,
+      "publishedAt": "2023-08-07T00:42:21.851Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURPbk9yUTB3RRAB",
+      "reviewer": "Na A.",
+      "rating": 5,
+      "publishedAt": "2022-06-29T22:50:14.590Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNDOTYzeTNRRRAB",
+      "reviewer": "Nicole M.",
+      "rating": 1,
+      "publishedAt": "2022-05-09T22:34:13.207Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMyNFozQzl3RRAB",
+      "reviewer": "B F.",
+      "rating": 1,
+      "publishedAt": "2022-04-23T03:34:54.352Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMyZ3ZyQXlnRRAB",
+      "reviewer": "Bishop B.",
+      "rating": 5,
+      "publishedAt": "2022-04-16T00:07:11.914Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNXOW9tajh3RRAB",
+      "reviewer": "D K.",
+      "rating": 1,
+      "publishedAt": "2022-02-26T20:46:59.144Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNtcktLLUlBEAE",
+      "reviewer": "Meowdy C.",
+      "rating": 5,
+      "publishedAt": "2021-12-20T21:04:46.154Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNtaFBYR1hREAE",
+      "reviewer": "Earl G.",
+      "rating": 5,
+      "publishedAt": "2021-12-18T13:56:45.410Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURhdDVlaHB3RRAB",
+      "reviewer": "Mari P.",
+      "rating": 5,
+      "publishedAt": "2021-08-25T20:16:39.555Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxLWF1NHZ3RRAB",
+      "reviewer": "Reformed S.",
+      "rating": 1,
+      "publishedAt": "2021-06-12T16:11:53.003Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxZ2N1WjF3RRAB",
+      "reviewer": "Sergio E.",
+      "rating": 5,
+      "publishedAt": "2021-06-08T19:39:52.128Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxcE12YjV3RRAB",
+      "reviewer": "Jesse L.",
+      "rating": 5,
+      "publishedAt": "2021-05-27T17:16:01.507Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURLaGFtdE13EAE",
+      "reviewer": "Mika H.",
+      "rating": 5,
+      "publishedAt": "2021-05-13T22:26:59.776Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNLcUtYQlBREAE",
+      "reviewer": "Gage B.",
+      "rating": 5,
+      "publishedAt": "2021-03-26T17:05:23.797Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR5LXBiUWpBRRAB",
+      "reviewer": "T D.",
+      "rating": 5,
+      "publishedAt": "2021-03-04T20:49:20.245Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN5d09PMzJBRRAB",
+      "reviewer": "amber G.",
+      "rating": 5,
+      "publishedAt": "2021-01-15T14:57:41.186Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNpM3FPR0xnEAE",
+      "reviewer": "Bethany G.",
+      "rating": 5,
+      "publishedAt": "2020-11-04T02:01:51.506Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNpeklpdWxRRRAB",
+      "reviewer": "Tom B.",
+      "rating": 5,
+      "publishedAt": "2020-10-23T19:39:49.100Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM4bXFIaDNnRRAB",
+      "reviewer": "Nathanael B.",
+      "rating": 5,
+      "publishedAt": "2020-07-02T20:58:40.801Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4cXFTcE9nEAE",
+      "reviewer": "David E.",
+      "rating": 5,
+      "publishedAt": "2020-07-01T22:00:04.201Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4OHYzaUtnEAE",
+      "reviewer": "Douglas B.",
+      "rating": 5,
+      "publishedAt": "2020-06-30T22:28:02.319Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM4bVBPaXhBRRAB",
+      "reviewer": "Teri S.",
+      "rating": 5,
+      "publishedAt": "2020-06-24T14:31:42.681Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM4eVBIZXNRRRAB",
+      "reviewer": "Teddy G.",
+      "rating": 5,
+      "publishedAt": "2020-06-23T01:58:51.959Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURjM3BicTlRRRAB",
+      "reviewer": "Cheyenne M.",
+      "rating": 5,
+      "publishedAt": "2020-06-12T18:04:03.946Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURjN0ppWGNREAE",
+      "reviewer": "Velena H.",
+      "rating": 5,
+      "publishedAt": "2020-06-12T17:15:52.947Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNza2JEOVRREAE",
+      "reviewer": "John A.",
+      "rating": 5,
+      "publishedAt": "2020-02-04T20:54:11.284Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNzZ2JXWTNnRRAB",
+      "reviewer": "Kandyce G.",
+      "rating": 5,
+      "publishedAt": "2020-02-04T00:05:59.847Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzX3BMNVJ3EAE",
+      "reviewer": "Miguel B.",
+      "rating": 5,
+      "publishedAt": "2020-02-03T15:02:04.681Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzX3Z5UVd3EAE",
+      "reviewer": "Jerry R.",
+      "rating": 5,
+      "publishedAt": "2020-02-03T14:47:42.047Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMwck1Mc2x3RRAB",
+      "reviewer": "Vernon C.",
+      "rating": 3,
+      "publishedAt": "2019-09-17T12:39:12.916Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURJeE5xX09REAE",
+      "reviewer": "Sheryl W.",
+      "rating": 5,
+      "publishedAt": "2018-12-21T20:17:36.257Z"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "sender": {
+    "firstName": "Josh",
+    "lastName": "Lenz",
+    "fullName": "Josh Lenz",
+    "email": "josh@fluidframemarketing.com",
+    "phone": "4173732773",
+    "company": "Fluid Frame Marketing",
+    "zip": "65804"
+  },
+  "entries": [
+    { "slug": "rivercity", "company": "River City Roofing", "prospect": "prospects/wichita-roofing/rivercity", "formUrl": "https://rivercity-roofing.com/contact/", "approved": false },
+    { "slug": "flawless", "company": "Flawless Roofing Co", "prospect": "prospects/wichita-roofing/flawless", "formUrl": "https://flawlessroofingcousa.com/contact/", "approved": false },
+    { "slug": "ict-roofing", "company": "ICT Roofing & Exteriors", "prospect": "prospects/wichita-roofing/ict-roofing", "formUrl": "https://www.ict-roofing.com/contact", "approved": false },
+    { "slug": "douglas-fry", "company": "Douglas Fry Roofing", "prospect": "prospects/wichita-roofing/douglas-fry", "formUrl": "https://www.douglasfryroofing.com/", "frame": "powr.io", "approved": false }
+  ]
+}

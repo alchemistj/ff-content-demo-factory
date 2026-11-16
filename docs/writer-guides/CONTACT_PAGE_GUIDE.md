@@ -37,4 +37,4 @@ A few practical questions can help (area, hours, what to include, call vs. messa
 
 ## SEO metadata
 
-Write the final SEO title and meta description for this contact route as part of the page. Follow the general guide. The website builder will consume those words rather than inventing them.
+Optional for demos; see the general guide. The website builder will consume those words rather than inventing them.

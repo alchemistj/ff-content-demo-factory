@@ -1,0 +1,646 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "cooks-hvac-wichita",
+  "place": {
+    "name": "Cook's Heating and Cooling",
+    "placeId": "ChIJjxss2tbmuocREGRO-I7jkEE",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Cook's%20Heating%20and%20Cooling&query_place_id=ChIJjxss2tbmuocREGRO-I7jkEE",
+    "address": "2215 S West St, Wichita, KS 67213",
+    "phone": "(316) 945-2665",
+    "rating": 4,
+    "totalReviewCount": 67
+  },
+  "pulledAt": "2026-11-09T12:44:09.449Z",
+  "requestedMax": 100,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WdVVHZGthRWM1WDJsUVJERlRTSEpOUWw5cGRtYxAB",
+      "reviewer": "Tom V.",
+      "rating": 5,
+      "text": "Shannon and Jose did our repairs on out outside ac unit and explained everything professionally! Highly recommend this company",
+      "publishedAt": "2026-05-26T23:35:06.836Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WdVVHZGthRWM1WDJsUVJERlRTSEpOUWw5cGRtYxAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CAIQACodChtycF9oOnVuUGdkaEc5X2lQRDFTSHJNQl9pdmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25BelR6QkVOSEZITFRCWWEyMUVTak41TTBKc1UzYxAB",
+      "reviewer": "Charlotte C.",
+      "rating": 5,
+      "text": "Jose and Shannon have done a fantastic job and these men are honest.  You can trust them. Thank you!  I would highly recommend!",
+      "publishedAt": "2026-05-26T23:34:13.995Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25BelR6QkVOSEZITFRCWWEyMUVTak41TTBKc1UzYxAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CAIQACodChtycF9oOnAzTzBENHFHLTBYa21ESjN5M0JsU3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1eWVHeEZSMVIwVG14T1NGOXBSWEZZU1ZGNGNVRRAB",
+      "reviewer": "Dustin L.",
+      "rating": 1,
+      "text": "A guy came to look at my full house exhaust fan system - told me he'd write up a quote and get back to me in a couple of days.  A month goes by and no one calls.  I call back, they transfer the call to Allan, Allan starts reading the tech's notes and then tells me \"I should just look somewhere else\".  Golly, thanks!",
+      "publishedAt": "2026-05-21T21:49:56.844Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1eWVHeEZSMVIwVG14T1NGOXBSWEZZU1ZGNGNVRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CAIQACodChtycF9oOk5yeGxFR1R0TmxOSF9pRXFYSVF4cUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oM2NtMDVZblZUUWtKR2JsVnRTSGRMY0VOUFMzYxAB",
+      "reviewer": "Matt B.",
+      "rating": 5,
+      "text": "I was stuck on the side of the road and Shannon and Jose went out of their way and got me unstuck!<br>Thank you!",
+      "publishedAt": "2026-01-27T17:38:34.627Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oM2NtMDVZblZUUWtKR2JsVnRTSGRMY0VOUFMzYxAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CAIQACodChtycF9oOmh3cm05YnVTQkJGblVtSHdLcENPS3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaQldEbFplbEJFYkhadk4wOHpMVXN3YWpaSU5VRRAB",
+      "reviewer": "Diana N.",
+      "rating": 5,
+      "text": "Charlie was our technician, he was absolutely awesome, very knowledgeable on what he was doing ! If and when I need to use them again, I hope I get Charlie again ! Great service?",
+      "publishedAt": "2025-06-19T18:57:08.512Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaQldEbFplbEJFYkhadk4wOHpMVXN3YWpaSU5VRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CAIQACodChtycF9oOlZBWDlZelBEbHZvN08zLUswajZINUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNfLWNQOTN3RRAB",
+      "reviewer": "Carolyn R.",
+      "rating": 5,
+      "text": "Thank you Cooks for the fast response to take care of my 90 year old father. Don was very nice and had the part and got it fixed before this next cold snap.",
+      "publishedAt": "2025-01-17T15:02:23.016Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfLWNQOTN3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIC_-cP93wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURiMlBfZFdBEAE",
+      "reviewer": "Alexis D.",
+      "rating": 1,
+      "text": "My A/C has been down since last Thursday. Called cooks to get a second opinion on the problem and wasn’t given a bid because there were too many problems. I’ve since been told that any other company wouldn’t have problems because he claimed my NON FUNCTIONAL fire place was wood burning even though it’s gas and there’s clearly a gas pipe leading to it. Thus no bid because “you can’t mix a wood burning and gas burning appliance” so many things overlooked and problems created that aren’t legitimate. I thought the guy was experienced and he clearly is not.",
+      "publishedAt": "2024-08-01T21:56:14.457Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURiMlBfZFdBEAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDb2P_dWA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNyazZLTm5BRRAB",
+      "reviewer": "Amanda C.",
+      "rating": 1,
+      "text": "First, I currently rent and landlord is aware of this issue. An employee came to “service” my ac unit about a month ago. At that time, my ac was working amazing!! A few days later, my ac unit freezes. Same guy comes and says, “I’m not sure what I did when I came or if I even did anything. You were my last job over here and I was just ready to be done with my day.” Well, it’s apparent he didn’t add any refrigerant…He states I have an issue that would require them to order a part. A different guy comes out for a 3rd time the following week and states the first guy was wrong about what’s going on with my unit and that they’ll need to order another part. Same guy comes out for the FOURTH TIME and says he has my ac working good and we are good to go. A week later AND…MY AC ISNT WORKING AGAIN!!! Landlord called them. Receptionist called me to schedule a time for them to come out for the FIFTH time. At this point, I’m a little passed irritated. I have to take off during the day to fit THEIR time slots and sometimes they aren’t even on time. I don’t get paid to take off. I feel at this point they should be paying me for my time or working off hours to fix my ac for good! I do NOT recommend this company. The first guy wasn’t friendly. The second guy was friendly but still…I’m having issues. The lady that called about scheduling said she could do 12-3 tomorrow. I said I prefer later as I can’t continue to keep taking off work; this is the FIFTH time now. She had no apology or any sincere in her voice, just stated we can TRY to do 3-5pm.  I give them a ONE star for the fact that ONE employee was actually nice. Not sure how they have 5* with all the issues I’m having with them!",
+      "publishedAt": "2024-07-10T23:43:13.026Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNyazZLTm5BRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICrk6KNnAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURMOHMtMmVnEAE",
+      "reviewer": "John E.",
+      "rating": 5,
+      "text": "I have had Cooks do my HVAC work and installations for many, many years and the work has always been good, in each of my two homes.  The first system in Belle Plaine, a Carrier,  still runs good after almost 40 years.  My new system at my Wichita home, a Carrier, was installed today by David and Lalo, and they were very courteous as well as competent.  I always use Cook's for service also.  I appreciate Cook's work.",
+      "publishedAt": "2024-07-02T15:30:38.855Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURMOHMtMmVnEAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDL8s-2eg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURaajViU2lnRRAB",
+      "reviewer": "Christi G.",
+      "rating": 5,
+      "text": "Did a great job on mine and my son’s air conditioner/heater installation— just now realized did not post it when they were done.",
+      "publishedAt": "2024-05-22T04:30:21.440Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURaajViU2lnRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDZj5bSigE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNWd0pDVGtRRRAB",
+      "reviewer": "John H.",
+      "rating": 5,
+      "text": "Derek talked me through every step of the process and helped me understand how my furnace worked, what to watch out for, and even offered a few pointers and tricks along the way. You can't ask for better service than this!",
+      "publishedAt": "2023-12-04T20:56:38.876Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNWd0pDVGtRRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICVwJCTkQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNseFlxdDJnRRAB",
+      "reviewer": "Ted H.",
+      "rating": 5,
+      "text": "I called Monday for an appointment,  and Friday was the earliest they had so I took it. They called today (Wednesday) with a cancellation, so they told me 12 to 3:00. Technician Ricky got here early at 11:45, checked out the system, found a wiring issue that was preventing it from running, and had my heater running in 20 minutes. He even noticed the housing was labeled with the wrong size air filter and replaced that. I appreciated Ricky and the friendly, professional, prompt service from him and Cook's.",
+      "publishedAt": "2023-11-22T18:39:23.957Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNseFlxdDJnRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIClxYqt2gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNGdGFDZG9nRRAB",
+      "reviewer": "Cecelia S.",
+      "rating": 1,
+      "text": "Had a brand new unit installed 3/22. Shoddy installation has caused numerous problems.<br>(Didn't seal gaps properly so all the air was going UNDER the house, freeze ups at compressor)<br>Had to have a new ignitor installed 2/10/23, tried to turn furnace on 10/27 and it's throwing a bad ignitor code.  Would not recommend them to my worst enemy.",
+      "publishedAt": "2023-10-30T13:22:16.863Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNGdGFDZG9nRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICFtaCdogE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNweE11VnJ3RRAB",
+      "reviewer": "Vicki V.",
+      "rating": 5,
+      "text": "Thank you Cook's! Called on a Friday morning, sweltering hot day, and my A/C was out. Got a technician here that afternoon, on time, and they fixed me up! Reasonable price, professional service. Ricky was awesome. Now I can enjoy my weekend!! 😊Highly recommend!!",
+      "publishedAt": "2023-07-28T21:18:51.527Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNweE11VnJ3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICpxMuVrwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURKMUlIdHVBRRAB",
+      "reviewer": "Blakeracer R.",
+      "rating": 1,
+      "text": "Crooks! No accountability for improper install even under warranty. Super rude, keep off your property.",
+      "publishedAt": "2023-07-11T15:52:00.645Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURKMUlIdHVBRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDJ1IHtuAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNlM1lhU213RRAB",
+      "reviewer": "Lupe N.",
+      "rating": 5,
+      "text": "The technician was nice, clean and knew his job. Got to work right away, without any issues.",
+      "publishedAt": "2022-09-21T13:28:07.960Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNlM1lhU213RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICe3YaSmwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN1N1BIbjl3RRAB",
+      "reviewer": "Matthew L.",
+      "rating": 5,
+      "text": "We contacted Cooks because we were told by a different HVAC company that we needed a return installed and duct work repaired in our crawl space. The space where the return was going to be was covered up by the previous home owner and we were advised by the other company that nothing was connected. The tech showed up on time, was friendly, and professional. He also found that we DO have a return hooked up already and that the other company was lying to us. He also took the time to crawl in our crawl space and found our duct work isn’t damaged. Basically they didn’t charge for doing all of this, so I wanted to make sure they at least got a great review. I also appreciate the tech’s patience, due to us having a newborn I was very groggy and had trouble communicating. We will for sure call them again if we ever have any problems.",
+      "publishedAt": "2022-07-23T02:31:13.720Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1N1BIbjl3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICu7PHn9wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURtaDUzRTZRRRAB",
+      "reviewer": "Barney W.",
+      "rating": 5,
+      "text": "You won't meet people any nicer. I'm a truck 🚚 driver and I meet many people. Kansas has some of the finest. True and honest Americans.",
+      "publishedAt": "2022-02-11T06:47:03.113Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtaDUzRTZRRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDmh53E6QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURtNGR5ZGVREAE",
+      "reviewer": "Jr F.",
+      "rating": 5,
+      "text": "They get stuff done and done the first time.",
+      "publishedAt": "2022-01-31T04:07:20.111Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtNGR5ZGVREAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDm4dydeQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNHbDZIZG9BRRAB",
+      "reviewer": "Kendre P.",
+      "rating": 5,
+      "text": "Great!!",
+      "publishedAt": "2021-11-12T00:30:16.781Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNHbDZIZG9BRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICGl6HdoAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxbXVMQ2NnEAE",
+      "reviewer": "Christy R.",
+      "rating": 5,
+      "text": "The price couldn't be beat (had several estimates) on new heater and ac unit. The technicians were great! Super friendly and knowledgeable. Overall great office staff, sales, and techs. Highly recommend!",
+      "publishedAt": "2021-07-05T16:10:53.832Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxbXVMQ2NnEAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDqmuLCcg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxd3FTZjZnRRAB",
+      "reviewer": "Candy H.",
+      "rating": 2,
+      "text": "I am disappointed in the customer service I received from Cooks.. the office support staff were unprofessional. We waited three weeks for our unit to be serviced only to find out that the part they knew we needed from the previous summer  did not get ordered but we were charged 95 for them to come out and do nothing... I will say the maintenance worker was professional but there seemed to be miscommunication between the maintenance workers and office workers.",
+      "publishedAt": "2021-07-02T17:49:12.860Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxd3FTZjZnRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDqwqSf6gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxakozb2dnRRAB",
+      "reviewer": "SJ A.",
+      "rating": 5,
+      "text": "Tech Freddie did a great job fixed it fast and worked hard to get it back up and running very thankful to have good techs like him out in the field you can tell he's motivated and ready for more",
+      "publishedAt": "2021-06-30T19:32:23.800Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxakozb2dnRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDqjJ3oggE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNxdEl2aUVREAE",
+      "reviewer": "Kip S.",
+      "rating": 5,
+      "text": "They were great",
+      "publishedAt": "2021-05-28T18:04:22.002Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxdEl2aUVREAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICqtIviEQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNLOUpMS093EAE",
+      "reviewer": "jason K.",
+      "rating": 5,
+      "text": "Amazing, professional service. Couldn't have asked for a better company.",
+      "publishedAt": "2021-03-29T22:30:16.418Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNLOUpMS093EAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICK9JLKOw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR5OHZhTjNBRRAB",
+      "reviewer": "LaVona B.",
+      "rating": 5,
+      "text": "These guys were amazing. Another HVAC company told me I would have to replace my heater and ac and then gave me an estimate that was insane. Cooks came out, worked on the heater, it worked for a few weeks and then started doing the same thing. They came back out 3 more times . 2 of those just to check on it and insure it was still working. They were very reasonable and took great care of me. They saved me thousands that I didn't have to spend. Very honest and reliable.",
+      "publishedAt": "2021-03-02T16:28:58.103Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR5OHZhTjNBRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDy8vaN3AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURpM3YtSGl3RRAB",
+      "reviewer": "Sean S.",
+      "rating": 5,
+      "text": "Great customer service and competitive pricing. Glenn and Tyler are great Techs and Rosa in the office is very helpful.",
+      "publishedAt": "2020-12-03T17:38:28.265Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpM3YtSGl3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDi3v-HiwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURpLXJUaFZREAE",
+      "reviewer": "Karrie J.",
+      "rating": 1,
+      "text": "There is a intaller that was rude and very unprofessional at a job site... Wont use these people again...",
+      "publishedAt": "2020-12-02T17:30:21.252Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpLXJUaFZREAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDi-rThVQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNpMHFtVHBnRRAB",
+      "reviewer": "S C.",
+      "rating": 3,
+      "text": "In general they seem like nice people. Prices are comparable. I think the technicians they have are hit or miss though. One time they are super nice and knowledgeable and the next time you get a guy who can't tie his own shows. They refused to work with a home warranty company which forced me into working with another company. After I already paid cooks 400 bucks to diagnose the system. (Which took two separate techs two days to properly diagnose)",
+      "publishedAt": "2020-11-03T23:56:22.357Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpMHFtVHBnRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICi0qmTpgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURDNHRhelhREAE",
+      "reviewer": "Cherri B.",
+      "rating": 4,
+      "text": "Good people good price",
+      "publishedAt": "2020-09-20T07:47:26.774Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDNHRhelhREAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDC4tazXQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURDcE9mZW1BRRAB",
+      "reviewer": "Joshua M.",
+      "rating": 5,
+      "text": "I used to wire new houses in Wichita and the surrounding area. Which means I worked around many HVAC companies over the years that I did that line of work. Cooks has always been one of my top three companies that I suggest or would use to do any work for me or anyone I know. The installation guys work their buts off and they do their best to make everything right.",
+      "publishedAt": "2020-09-15T11:41:29.091Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDcE9mZW1BRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDCpOfemAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNDdzZqbm53RRAB",
+      "reviewer": "James B.",
+      "rating": 5,
+      "text": "Brad fixed my ac today during covid during humid as hell.",
+      "publishedAt": "2020-09-01T18:20:24.726Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDdzZqbm53RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICCw6jnnwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNDdWIzZzV3RRAB",
+      "reviewer": "Brian",
+      "rating": 5,
+      "text": "I own a small gas fireplace service company in the Wichita area, a coworkers Air conditioner broke down and asked if I could try to fix it.   Well it was broke beyond my tools and repair skill set.   Cook came out and got it running on a Friday night. The service was quick, honest and fair on the billing.    The tech was polite professional and even taught me a few new tricks.   This is an honest company you can trust.      From Thee Fireplace Guys.",
+      "publishedAt": "2020-08-29T02:28:51.842Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNDdWIzZzV3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICCub3g5wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNDNlpDNk9nEAE",
+      "reviewer": "N R.",
+      "rating": 1,
+      "text": "Were I work they came and kept telling me it was the compressor is bad and it actually was just to sell a new system I got a tech from sol tech  and they knew right away what the problem was and alot cheaper not to bad mouth the company it's the techs they have they're moral compass is off",
+      "publishedAt": "2020-08-28T02:31:28.178Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNDNlpDNk9nEAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICC6ZC6Og%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURjc3NlSzF3RRAB",
+      "reviewer": "Gabriel S.",
+      "rating": 5,
+      "text": "Tyler really hooked us up! My store was super hot and not only was he able to fix the issue quickly but he was also able to explain it to me in a simple yet efficient manner. Thabks Tyler, you da best!",
+      "publishedAt": "2020-06-03T22:14:55.971Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjc3NlSzF3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDcsseK1wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURja29uY1hBEAE",
+      "reviewer": "Gina G.",
+      "rating": 1,
+      "text": "I watched your tech purposely release refrigerant in the air numerous times and it wasn't him purging his line because I have a Universal EPA license.  Therefore I have a duty as a technician and a human to report it to the EPA, which I have. I am letting you know because I know that you are a good company and should not be punished for one man's action.  Thank you.",
+      "publishedAt": "2020-06-02T19:14:29.870Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURja29uY1hBEAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDckoncXA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURjN0tmRnh3RRAB",
+      "reviewer": "Jeff W.",
+      "rating": 5,
+      "text": "I have known Gerry for 30+ years.  I have always used him for all my HVAC needs, always great pricing, and the workmanship is second to none.  He just installed these three beauties, top of the line Trane systems.  If you are looking for a World Champion HVAC company to work with, look no further, hurry and call Gerry.",
+      "publishedAt": "2020-05-29T06:55:19.166Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjN0tmRnh3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDc7KfFxwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNjLVlEXy13RRAB",
+      "reviewer": "Don H.",
+      "rating": 5,
+      "text": "Call for an estimate on a heater",
+      "publishedAt": "2020-03-16T10:33:16.360Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNjLVlEXy13RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICc-YD_-wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURzek96enpBRRAB",
+      "reviewer": "Patrick",
+      "rating": 5,
+      "text": "Fantastic family friendly buisness! Cook's Heating & Cooling offers top Technicians for your maintenance needs plus new HVAC equipment built right here in Wichita!<br>Local buisness rocks! Thanks Cook's!",
+      "publishedAt": "2020-02-25T16:33:25.416Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURzek96enpBRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDszOzzzAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNVOXNYWnNnRRAB",
+      "reviewer": "Terry S.",
+      "rating": 5,
+      "text": "Great service .  Responds quickly.   Reasonable rates.",
+      "publishedAt": "2019-07-23T13:36:08.449Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVOXNYWnNnRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICU9sXZsgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURrODczQWtRRRAB",
+      "reviewer": "Joyce S.",
+      "rating": 5,
+      "text": "We get the best service",
+      "publishedAt": "2019-07-07T15:51:06.789Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURrODczQWtRRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDk873AkQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ0dzhhUERnEAE",
+      "reviewer": "Sandra S.",
+      "rating": 5,
+      "text": "We have used Cook's for the last 35 years couldn't be happier.<br>Thank you Sheldon you are amazing",
+      "publishedAt": "2019-06-15T00:48:07.304Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ0dzhhUERnEAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgID4w8aPDg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURZbE52NFpBEAE",
+      "reviewer": "PATTI D.",
+      "rating": 5,
+      "text": "Matt did a great job called ahead to let us know he was on his way. Replaced the part in no time. I highly recommend them.",
+      "publishedAt": "2019-04-30T23:46:42.894Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZbE52NFpBEAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDYlNv4ZA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNZc3FMTjJ3RRAB",
+      "reviewer": "Terry S.",
+      "rating": 4,
+      "text": "Finally fixed furnace after 4 trips!",
+      "publishedAt": "2019-04-09T15:09:49.833Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNZc3FMTjJ3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICYsqLN2wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURvaThLZWdnRRAB",
+      "reviewer": "James D.",
+      "rating": 1,
+      "text": "Heater was working fine yesterday morning. Cooks came out for a yearly maintenance inspection in the afternoon, tech was awesome and feel like I was treated well. An equipment problem came up and scheduled the sales guy to come give a quote today. Problem is the heater didn't work after the tech left, called back today and they sent another tech. They charged their flat rate of $95 to fix the issue which wasn't happening before the tech yesterday. 2nd tech was here while the sales guy is working up an equipment quote. I think it's fair to say you just lost a $7,000 sale over a sketchy $95 charge.",
+      "publishedAt": "2019-03-21T23:22:38.116Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURvaThLZWdnRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDoi8KeggE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBOWRyd3VBRRAB",
+      "reviewer": "Glen V.",
+      "rating": 5,
+      "text": "Great heating and air conditioning service and repair",
+      "publishedAt": "2019-03-02T18:44:41.403Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBOWRyd3VBRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICA9drwuAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURJeHIzYVRnEAE",
+      "reviewer": "Kirk S.",
+      "rating": 5,
+      "text": "Cooks Heating and Air has done an amazing job with my properties and my clients properties!  I specifically work with Wayne Rau there and would recommend everyone talking to him especially if they need a new system!!!!!",
+      "publishedAt": "2019-01-02T18:37:36.920Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURJeHIzYVRnEAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDIxr3aTg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNRLS1iZC1nRRAB",
+      "reviewer": "Brian F.",
+      "rating": 5,
+      "text": "They come out ASAP when your Air is not working and fix it right. The price is fair.",
+      "publishedAt": "2018-08-30T17:33:22.622Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRLS1iZC1nRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICQ--bd-gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBa2NyNjlRRRAB",
+      "reviewer": "Alex R.",
+      "rating": 5,
+      "text": "Nothing but great things to say about Wayne and the team at Cook's! Incredible to work with!",
+      "publishedAt": "2018-02-12T21:55:00.291Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBa2NyNjlRRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICAkcr69QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChRDSUhNMG9nS0VJQ0FnSUNRenV4NRAB",
+      "reviewer": "Anh N.",
+      "rating": 1,
+      "text": "Wouldn’t recommend this company is bad service and tell you all the lie so they can get your money. Even you pay for it and your stuff won’t be fix.",
+      "publishedAt": "2018-01-08T12:50:57.020Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChRDSUhNMG9nS0VJQ0FnSUNRenV4NRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICQzux5%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURnanZ2LTV3RRAB",
+      "reviewer": "Brian B.",
+      "rating": 1,
+      "text": "I own rentals and after reading the reviews for this company, I decided to try them out.  The technician was 30 minutes late, he didn't park where I specifically told the receptionist on the phone. (He was suppose to park in the alley driveway, it's a duplex with separate drives).  He was talking on the phone using speaker phone, he did let the woman go when I approached him, but he never even introduced himself, very unprofessional attitude.  During the visit he was receiving phone calls and he would answer them, on speaker phone, letting them know he'll call them back in a bit.  He never checked for any gas leaks like I ask, nor did much of anything.  He said there's a minimum of one hour charge plus $20.00.  So, I spent $115.00 for somebody to be late, dodge phone calls, and not even do what I asked.  I will not use them again and I will not recommend them to anybody.",
+      "publishedAt": "2017-08-24T02:59:55.703Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnanZ2LTV3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDgjvv-5wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNBa05teld3EAE",
+      "reviewer": "Ya M.",
+      "rating": 5,
+      "text": "Fantastic Quick Service!  After having an AC unit go bad during 100 degree weather, Wayne Rau with Cooks, rushed right out and got us taken care of.",
+      "publishedAt": "2017-08-10T13:02:12.865Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBa05teld3EAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICAkNmzWw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURBNnRqXzV3RRAB",
+      "reviewer": "Shawn B.",
+      "rating": 5,
+      "text": "Very reliable and professional service staff installed the best and most efficient equipment in my home. We are very pleased!!",
+      "publishedAt": "2016-07-29T03:15:01.979Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBNnRqXzV3RRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDA6tj_5wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURROFAzemJnEAE",
+      "reviewer": "Letty M.",
+      "rating": 1,
+      "text": "Worst experience was charged for something that i wasnt supposed to. Guy did not do it right and now my westar bill is sky rocketing!  Tried to explain to them and they did not want to fix it! Connie and sherry are very rude!",
+      "publishedAt": "2016-06-06T19:52:35.212Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURROFAzemJnEAE!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDQ8P3zbg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURReWNDTzZBRRAB",
+      "reviewer": "The G.",
+      "rating": 5,
+      "text": "I testing the duct work in a new home today.  Cooks finished the job last Friday. This is an important step in Wichita, because there is no code requirement for insulation or other energy efficiency.<br><br>This test did fantastic.  The National Professional Standard is < 6% leakage.  This job was < 5%.  The duct work was installed well.  To many times I find it kinked or looped and wasted, plus the increased flow losses.<br><br>It is nice to see quality work.",
+      "publishedAt": "2014-06-03T02:26:07.048Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURReWNDTzZBRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgIDQycCO6AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNRMXZlaW9RRRAB",
+      "reviewer": "Richard R.",
+      "rating": 5,
+      "text": "When my ac went out 2 years ago I called Cook because that's who my grandparents always called. They had a new system in place within 48 hours. When I call for service they are quick to arrive and thorough in their inspection. Their techs are knowledgeable, respectful and kind. They take the time to answer all your questions. You don't have to worry about anything when you work with this company.<br><br>They were bought out in 2008 by an outfit with 40 years of experience. My experience follows this buyout. I will continue to use Cooks to insure safe operating heating and cooling at my house in the years to come.",
+      "publishedAt": "2009-09-10T12:26:10.596Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRMXZlaW9RRRAB!2m1!1s0x0:0x4190e38ef84e6410!3m1!1s2@1:CIHM0ogKEICAgICQ1veioQE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xrMFpHdGtaRFI1VVMxNVdEWmZkblJCV1RGS1dYYxAB",
+      "reviewer": "Kyle L.",
+      "rating": 1,
+      "publishedAt": "2026-05-11T11:52:31.668Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VPT0pwcmI3LV96SWl3RRAB",
+      "reviewer": "Shawn J.",
+      "rating": 3,
+      "publishedAt": "2025-06-12T14:48:37.291Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNhN2NiRHJ3RRAB",
+      "reviewer": "Jamie",
+      "rating": 5,
+      "publishedAt": "2021-08-06T23:02:11.146Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxM0lYdURnEAE",
+      "reviewer": "Bryce B.",
+      "rating": 5,
+      "publishedAt": "2021-07-01T20:37:43.224Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURzN3RxNEpBEAE",
+      "reviewer": "Heather H.",
+      "rating": 2,
+      "publishedAt": "2020-03-04T18:53:36.951Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNzMDhiT0tnEAE",
+      "reviewer": "C M.",
+      "rating": 5,
+      "publishedAt": "2020-02-13T12:54:56.442Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNVdWEyY0VREAE",
+      "reviewer": "Kayla B.",
+      "rating": 5,
+      "publishedAt": "2019-07-29T06:34:57.721Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURFaHQzM1BBEAE",
+      "reviewer": "Jeremy B.",
+      "rating": 4,
+      "publishedAt": "2019-06-19T10:36:09.060Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNRcnZMdG5RRRAB",
+      "reviewer": "Dan L.",
+      "rating": 5,
+      "publishedAt": "2017-10-31T20:52:17.772Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURRbnUzc1lREAE",
+      "reviewer": "Rod R.",
+      "rating": 5,
+      "publishedAt": "2017-06-24T18:33:22.956Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURBd2VYX1RREAE",
+      "reviewer": "Howard S.",
+      "rating": 1,
+      "publishedAt": "2016-04-11T19:21:49.070Z"
+    }
+  ]
+}

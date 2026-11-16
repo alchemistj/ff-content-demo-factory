@@ -13,13 +13,13 @@ The approved Springfield examples in `examples/approved-copy/` are the main teac
 - Fulfill the **approved job of each page** while choosing the flow and expression that suit this business.
 - Learn craft, rhythm, depth, and judgment from the examples.
 - Write an owner-facing **Strategy Overview** that explains the finished work, separately from the business-facing pages.
-- Write a final **SEO title** and **meta description** for each customer-facing routed page (homepage, both service pages, contact). The later builder consumes those words.
+- Deliver everything as one words package (`docs/words-package.md`). The demo template renders it exactly; it writes nothing itself.
 
 The reference businesses’ facts, credentials, offers, and reviews belong to those businesses. They teach craft. The current prospect packet supplies the current business’s evidence.
 
 ## SEO title and meta description
 
-These fields are part of the finished `writing-package/v1` page, not a later builder invention.
+**Optional for demos (Josh, 2026-11-09).** Demos don't need them; skip them unless a human asks. When you do write them:
 
 - Let the approved page job, URL, and primary keyword guide the wording.
 - Write a literal, useful result-line the customer can trust. Stay inside confirmed evidence.
@@ -56,6 +56,10 @@ Human QA is the editorial gate. Do not hide a removed rulebook in a private prom
 
 Business-facing pages speak as the business. They help a ready-to-hire local customer decide, trust, and act.
 
+**Point of view: second person.** Each page talks to one visitor as "you". The business speaks as "we" and "our" ("Our crew shows up in the morning. We cover and protect your home…"). Never switch into narrating the business from outside ("The crew shows up… They cover…"). Owners speak in the first person too: "We're Colton and Riley, and we own Evolve", then "we", never "Colton and Riley own Evolve and stay close to every job". Naming one owner inside a "we" sentence is fine ("Colton quotes many homes himself" reads as third person; write "one of us quotes your home himself" or "I quote most homes myself" only when the speaker is clear). When a review holds a detail that would sound odd stated bare ("34 windows replaced with 17"), don't drop it: find the benefit the customer got and state that in our voice ("Older houses often have lots of small windows. We look for openings where one larger window can take the place of two or three small ones: a cleaner look and fewer windows to buy and install"), then put the review right after it as the proof (Josh, 2026-11-09).
+
+**Confident, active voice.** State what the business does as fact. Save conditional words for real variables (price, timing that depends on the job).
+
 Keep demo, audit, mockup, “we built this page to,” and Fluid Frame commentary off those pages. Those ideas belong only on the Strategy Overview.
 
 The Strategy Overview is owner-facing. It explains the website that actually exists — why this page set, what changed, what the customer can now do. Write it last.
@@ -88,6 +92,10 @@ The reference examples show this without a sentence-pattern list. If a paragraph
 
 Quotations are proof placed beside the benefit they support, not a testimonial dump.
 
+**State the benefit, then let the review prove it.** The page makes the claim in the business's own voice ("New windows keep rooms at the temperature you set, cut drafts and quiet the street"). The quotation under it is the proof. Never put what customers said in the claim's place: no "Customers tell us…", "Most people notice…", "One customer…", "Homeowners say…" or "Your reviews…" sentences on business pages. **Don't say it twice in a row** (Josh, 2026-11-09). Don't put a stat right above the review that already says it ("We have replaced five basement windows in four hours" over a review saying exactly that): the visitor reads the same story twice. Say the benefit and let the review carry the specifics. A review's story can still earn a place elsewhere as a reason to choose the business, the way Window Dudes uses its Tulsa drive in "We Go Above and Beyond". The spirit: every sentence should add something the visitor didn't just read.
+
+Quotes are five-star reviews only, attributed as first name plus last initial (`docs/writer-guides/REVIEW_QUOTES.md`).
+
 Use only verified reviews. Keep attribution. Keep the customer’s wording, or a faithful excerpt. Do not merge reviews, strengthen the claim, or invent a city, service, or result the reviewer did not give.
 
 A suggested first review is a useful starting point, not a placement command. If another verified review clearly serves the written page better, use it.
@@ -116,6 +124,6 @@ Homepage, service, contact, and header/footer roles are in the page guides. The 
 
 ## Strategy Overview
 
-Write it last, from the finished business-facing site plus the original audit and prescription.
+Write it last, from the finished business-facing site plus the original audit and prescription. Follow `STRATEGY_PAGE_GUIDE.md`, use only the lines in `FULL_BUILD_LINES.md`, and study `examples/approved-copy/strategy-overview-examples.md`.
 
 It is a concise owner-facing explanation, not an internal dump and not another sales page for the local customer.

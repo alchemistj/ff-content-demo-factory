@@ -1,0 +1,171 @@
+# Run scripts/fetch-site-text.mjs as-is on a GitHub runner (site-read ladder, rung 2)
+# and commit the page text to the site-data branch under site/<slug>/.
+# No user-agent spoofing, no CAPTCHA solving, no logins. Inputs are passed through env.
+
+name: Site fetch
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: Site URL, for example https://example.com
+        required: true
+        type: string
+      slug:
+        description: Output folder slug (a-z, 0-9, hyphens, 2 to 60 characters)
+        required: true
+        type: string
+      max:
+        description: Maximum pages to read
+        required: false
+        default: "60"
+        type: string
+  push:
+    paths:
+      - "site-requests/*.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: site-data
+  cancel-in-progress: false
+
+env:
+  SITE_URL: ${{ inputs.url }}
+  SITE_SLUG: ${{ inputs.slug }}
+  SITE_MAX: ${{ inputs.max }}
+  SITE_TRIGGER: ${{ github.event_name }}
+  EVENT_BEFORE: ${{ github.event.before }}
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Resolve and validate inputs
+        run: |
+          set -euo pipefail
+          if [ "$SITE_TRIGGER" = "push" ]; then
+            zero="0000000000000000000000000000000000000000"
+            if [ -z "${EVENT_BEFORE}" ] || [ "$EVENT_BEFORE" = "$zero" ]; then
+              mapfile -t changed < <(git diff-tree --no-commit-id --name-only -r --diff-filter=AM "$GITHUB_SHA" -- 'site-requests/*.json')
+            else
+              mapfile -t changed < <(git diff --name-only --diff-filter=AM "$EVENT_BEFORE" "$GITHUB_SHA" -- 'site-requests/*.json')
+            fi
+            if [ "${#changed[@]}" -ne 1 ]; then
+              echo "This push must change exactly one site-requests/*.json file. Found ${#changed[@]}: ${changed[*]:-none}."
+              exit 1
+            fi
+            file="${changed[0]}"
+            if ! [[ "$file" =~ ^site-requests/[A-Za-z0-9._-]{1,80}\.json$ ]]; then
+              echo "Request file must be a single site-requests/*.json file. Got: ${file}"
+              exit 1
+            fi
+            if [ ! -f "$file" ]; then
+              echo "Request file ${file} is not in this commit."
+              exit 1
+            fi
+            SITE_URL=$(jq -r '.url // empty' "$file")
+            SITE_SLUG=$(jq -r '.slug // empty' "$file")
+            SITE_MAX=$(jq -r '(.max // "60") | tostring' "$file")
+          elif [ "$SITE_TRIGGER" != "workflow_dispatch" ]; then
+            echo "Unsupported trigger: $SITE_TRIGGER"
+            exit 1
+          fi
+          if ! [[ "$SITE_SLUG" =~ ^[a-z0-9-]{2,60}$ ]]; then
+            echo "slug must match ^[a-z0-9-]{2,60}$"
+            exit 1
+          fi
+          if ! [[ "$SITE_URL" =~ ^https?://[^[:space:]]+$ ]]; then
+            echo "url must start with http:// or https://"
+            exit 1
+          fi
+          if ! [[ "$SITE_MAX" =~ ^[0-9]{1,3}$ ]] || [ "$SITE_MAX" -lt 1 ]; then
+            echo "max must be a whole number from 1 to 999"
+            exit 1
+          fi
+          {
+            echo "SITE_URL=${SITE_URL}"
+            echo "SITE_SLUG=${SITE_SLUG}"
+            echo "SITE_MAX=${SITE_MAX}"
+          } >> "$GITHUB_ENV"
+
+      - name: Set work folder
+        run: echo "SITE_WORK=${RUNNER_TEMP}/site-data" >> "$GITHUB_ENV"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Install
+        run: npm ci
+
+      - name: Install Playwright chromium
+        run: |
+          set -euo pipefail
+          if [ ! -d node_modules/playwright ]; then
+            npm install --no-save playwright
+          fi
+          npx playwright install --with-deps chromium
+
+      - name: Prepare site-data
+        run: |
+          set -euo pipefail
+          git worktree remove --force "$SITE_WORK" >/dev/null 2>&1 || true
+          rm -rf "$SITE_WORK"
+          if git ls-remote --exit-code --heads origin site-data >/dev/null 2>&1; then
+            git fetch origin site-data
+            git worktree add "$SITE_WORK" origin/site-data
+            git -C "$SITE_WORK" checkout -B site-data
+          else
+            git worktree add --detach "$SITE_WORK" HEAD
+            git -C "$SITE_WORK" checkout --orphan site-data
+            git -C "$SITE_WORK" rm -rf --cached . >/dev/null
+            find "$SITE_WORK" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
+          fi
+          mkdir -p "$SITE_WORK/site"
+
+      - name: Fetch site text
+        run: |
+          set -euo pipefail
+          rm -rf "$SITE_WORK/site/$SITE_SLUG"
+          node scripts/fetch-site-text.mjs "$SITE_WORK/site/$SITE_SLUG" "$SITE_URL" "$SITE_MAX"
+          ls -la "$SITE_WORK/site/$SITE_SLUG/site"
+
+      - name: Commit and push site-data
+        run: |
+          set -euo pipefail
+          git -C "$SITE_WORK" add -f "site/$SITE_SLUG"
+          if git -C "$SITE_WORK" diff --cached --quiet; then
+            echo "No site-data changes to commit"
+            exit 0
+          fi
+          git -C "$SITE_WORK" -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" commit -m "Fetch site text for ${SITE_SLUG}"
+          pushed=0
+          for try in 1 2 3; do
+            if git -C "$SITE_WORK" push origin HEAD:site-data; then
+              pushed=1
+              break
+            fi
+            if [ "$try" -eq 3 ]; then
+              break
+            fi
+            git -C "$SITE_WORK" fetch origin site-data
+            git -C "$SITE_WORK" rebase origin/site-data
+          done
+          if [ "$pushed" -ne 1 ]; then
+            echo "Push to site-data failed after 3 tries"
+            exit 1
+          fi

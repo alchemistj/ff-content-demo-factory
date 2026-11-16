@@ -62,4 +62,4 @@ End with the approved contact path. Repeat the same offer and phone hierarchy. D
 
 ## SEO metadata
 
-Write the final SEO title and meta description for this service route as part of the page. Follow the general guide. The website builder will consume those words rather than inventing them.
+Optional for demos; see the general guide. Each service page owns one service keyword that the homepage and the other service page do not use (`KEYWORD_GUIDE.md`). The website builder will consume those words rather than inventing them.

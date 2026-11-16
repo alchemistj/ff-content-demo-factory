@@ -1,0 +1,764 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Modern Glass Structures",
+    "slug": "modernglass",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Glass Company",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 712-8147",
+        "tel": "+13167128147"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "1301 E Harry St, Wichita, KS 67211",
+    "serviceArea": {
+      "summary": "Wichita, KS",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Frameless Shower Doors and Mirrors",
+    "Window Glass and Storefronts",
+    "Residential and Commercial Glass",
+    "1301 E Harry St, Wichita"
+  ],
+  "services": [
+    {
+      "name": "Frameless Shower Doors",
+      "route": "/frameless-shower-doors-wichita-ks/",
+      "blurb": "Measured in your bathroom and fit to the shower you have."
+    },
+    {
+      "name": "Walk-In Shower Glass",
+      "route": null,
+      "blurb": "Glass for the walk-in shower, installed quickly and left clean."
+    },
+    {
+      "name": "Mirrors",
+      "route": null,
+      "blurb": "Mirrors for homes and businesses, in the size you ask for."
+    },
+    {
+      "name": "Window Glass Replacement",
+      "route": "/window-glass-replacement-wichita-ks/",
+      "blurb": "New glass for the windows you have, one pane or a whole order."
+    },
+    {
+      "name": "Windows and Aluminum Glass Doors",
+      "route": null,
+      "blurb": "Supplied for projects from one opening to more than thirty."
+    },
+    {
+      "name": "Storefront and Commercial Glass",
+      "route": null,
+      "blurb": "Glass for shops and offices, so your doors stay open."
+    },
+    {
+      "name": "Custom Cut Glass",
+      "route": null,
+      "blurb": "Glass cut to the size your project calls for."
+    },
+    {
+      "name": "Residential Glass Installation",
+      "route": null,
+      "blurb": "Glass measured and installed in your home."
+    },
+    {
+      "name": "Specialty Glass",
+      "route": null,
+      "blurb": "Custom projects you describe to us, measured and quoted."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "glass company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita glass shop",
+        "h1": "Glass Company in Wichita, KS — Modern Glass Structures",
+        "sub": "We install frameless shower doors, mirrors, window glass and storefront glass for Wichita homes and businesses. We come out, measure your opening ourselves and cut the glass to fit. Call us and tell us what you need.",
+        "primaryCta": {
+          "label": "Call (316) 712-8147",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request a Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Frameless glass shower enclosure in a bright modern bathroom",
+          "brief": "frameless glass shower enclosure with a clear door in a bright bathroom, shower on the right half of the frame, plain pale wall and soft light on the left behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Great Glass Company, has the best customer service in Wichita! Very fast service & easy to work with!",
+          "name": "Michelle M."
+        },
+        {
+          "type": "split",
+          "heading": "Glass Is Cut for One Opening",
+          "body": [
+            "A sheet of glass can't be trimmed to fit once it's made. Shower glass and most door glass is tempered, and tempered glass can't be cut at all after it's tempered.",
+            "So the measurement is the job. A bathroom wall that leans a quarter inch or a window frame that has shifted over the years is the difference between glass that drops in and glass that goes back.",
+            "That's why we come out and measure the opening ourselves instead of quoting from a guess. Then we cut the glass to that measurement and install it."
+          ],
+          "image": {
+            "slot": "home-shower",
+            "alt": "Clear frameless shower door with a chrome handle",
+            "brief": "clear frameless shower door with a chrome handle seen straight on, door on the right, plain tile wall and soft light on the left behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "They are amazingly fast with getting results! Great product and very kind respectful employees who clearly take pride in their work!",
+          "name": "Haley G."
+        },
+        {
+          "type": "prose",
+          "heading": "Frameless Shower Doors",
+          "body": [
+            "If your shower has a curtain, or a framed door with a track that sticks and collects scum, a frameless door is the change you notice every morning.",
+            "There's no metal frame around the glass. The weight is carried by the hinges and the glass itself, so the fit has to be exact.",
+            "We measure in your bathroom, fit the door to the shower you have and install it. Frameless shower doors are the work we do most."
+          ],
+          "link": {
+            "label": "See frameless shower doors →",
+            "route": "/frameless-shower-doors-wichita-ks/"
+          }
+        },
+        {
+          "type": "split",
+          "heading": "Walk-In Shower Glass",
+          "body": [
+            "A walk-in shower trades the door for a fixed panel of glass and an open entry. It suits a bathroom where you want the tile to show and nothing to step around.",
+            "The panel has to sit where it will stop the spray from the shower head, so we measure with the head in mind, not just the width of the opening.",
+            "We install the glass and leave the bathroom clean."
+          ],
+          "image": {
+            "slot": "home-windows",
+            "alt": "Large clear window glass in a sunlit room",
+            "brief": "large clear window with thin dark frame in a sunlit living room, window on the right, calm plain wall on the left behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Mirrors",
+          "body": [
+            "A mirror that's the wrong size looks wrong on the wall: a gap on one side, an edge that stops short of the vanity.",
+            "We make mirrors for homes and businesses in the size you ask for. Tell us the wall and what you want it to do, and we measure and quote it."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Window Glass Replacement",
+          "body": [
+            "A cracked pane, a window that fogged between the panes or a sash that's lost its glass doesn't always mean a new window. Often the frame is fine and the glass is the part that failed.",
+            "We replace the glass in the windows you have, one pane or a whole house worth. When a project calls for new windows or aluminum glass doors, we supply those too, from one opening to a long order."
+          ],
+          "link": {
+            "label": "See window glass replacement →",
+            "route": "/window-glass-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Storefront and Commercial Glass",
+          "body": [
+            "When a storefront pane breaks, the shop can't lock up and customers can't come in. That's a problem to fix this week, not next month.",
+            "We do commercial glass the way we do homes. We come out, measure the opening and install, so a business gets the same quick visit a homeowner does."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Custom Cut and Specialty Glass",
+          "body": [
+            "Some projects don't match a catalog size: a shelf, a tabletop, a panel for an odd-shaped frame, a one-off job you've been trying to describe to someone.",
+            "Tell us what you're building. We measure it, quote it and cut the glass to size."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "How a Job Goes",
+          "items": [
+            {
+              "title": "You call or send a request.",
+              "text": "Tell us what you need glass for, and send sizes and a few photos if you have them."
+            },
+            {
+              "title": "We come out and measure.",
+              "text": "We look at the opening in person, talk through the options and quote the job."
+            },
+            {
+              "title": "We cut the glass to your measurements.",
+              "text": "It's made for your opening, not pulled from a shelf."
+            },
+            {
+              "title": "We install it.",
+              "text": "We set the glass and clean up when we're done."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Very fast company and great customer service. It is hard to find a glass company that takes the time to come or put you as a priority. We love working with them.",
+          "name": "Villa A."
+        },
+        {
+          "type": "prose",
+          "heading": "What Moves the Price of Glass",
+          "body": [
+            "We don't put prices on a page, because glass isn't priced off a list. It's priced off your opening.",
+            "Size is the biggest factor, since more glass costs more. After that come the thickness of the glass, the hardware on a shower door, whether the edges are polished and whether the glass has to be tempered.",
+            "That's another reason we measure first. Once we've seen the opening and talked through what you want, the quote is for your job and not a range."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "One Shop on East Harry",
+          "body": [
+            "Our shop is at 1301 E Harry St, Wichita, KS 67211. We work on homes and businesses, and we come to you to measure."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "How do I get a quote?",
+              "a": "Call (316) 712-8147, or send a quote request on our contact page with a phone number or email. We come out and measure, and then we quote the job."
+            },
+            {
+              "q": "Do you only do shower doors?",
+              "a": "No. Shower doors are most of what we do, and we also do walk-in shower glass, mirrors, window glass, storefront and commercial glass, custom cut glass and specialty projects."
+            },
+            {
+              "q": "Do you work on businesses too?",
+              "a": "Yes. Storefronts and commercial glass are part of what we do, along with homes."
+            },
+            {
+              "q": "Can you replace just the glass in my window?",
+              "a": "Often, yes. If the frame is sound, replacing the glass is usually the faster fix, and we'll look at the frame when we measure."
+            },
+            {
+              "q": "What should I have ready when I call?",
+              "a": "What the glass is for, roughly how big the opening is, and a photo or two if you can send them. We measure it ourselves once we're there."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call and Tell Us What You Need",
+          "text": "Tell us what you need, whether it's a shower door, a mirror, a broken pane or a storefront, and we'll come out and measure. Call (316) 712-8147 or send a quote request. Modern Glass Structures, 1301 E Harry St, Wichita, KS 67211."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/frameless-shower-doors-wichita-ks/",
+      "navLabel": "Shower Doors",
+      "keyword": "frameless shower doors Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita glass shop",
+        "h1": "Frameless Shower Doors in Wichita, KS — Modern Glass Structures",
+        "sub": "We measure your shower in your bathroom, fit a frameless glass door to it and install it. Call us to set up a visit.",
+        "primaryCta": {
+          "label": "Call (316) 712-8147",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request a Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "shower-hero",
+          "alt": "Frameless glass shower door with a brushed handle in a tiled bathroom",
+          "brief": "frameless glass shower door with a brushed-metal handle in a tiled bathroom, shower on the right, plain light tile wall and soft window light on the left behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I live about a hour 20 from Wichita & they came out the same day I called them. … Modern Glass came out and never mentioned one thing about fixing anything or any problems with installing the glass.",
+          "name": "AmyKate P."
+        },
+        {
+          "type": "split",
+          "heading": "Why a Frameless Door Beats a Curtain or a Framed Slider",
+          "body": [
+            "A shower curtain clings, grows mildew along the hem and lets water out when the fan pulls on it. A framed door has a bottom track that fills with soap scum and a roller that wears until the door scrapes.",
+            "A frameless door has no track and no metal frame around the glass. Thick tempered glass hangs from a few hinges, so there's less to clean and nothing for scum to hide in.",
+            "It also lets you see the tile. A small bathroom looks bigger when the shower isn't boxed in by a frame."
+          ],
+          "image": {
+            "slot": "shower-measure",
+            "alt": "Clear glass shower panel meeting a tiled wall",
+            "brief": "clear glass shower panel meeting a tiled wall in a bathroom, panel on the right, plain wall and soft light on the left behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "It Has to Be Measured in Your Bathroom",
+          "body": [
+            "Frameless glass carries its own weight, so a quarter inch matters. Bathroom walls lean, tubs sit a little off level and tile adds thickness no drawing shows.",
+            "Glass can't be trimmed once it's made, and tempered glass can't be cut at all. If the door is made to a wrong number, it doesn't get fixed with a shim. It gets remade.",
+            "So we come to your bathroom and measure the real shower, not the one on the plans. Then we cut the glass to those numbers."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "karen in the office was very helpful about choosing the right shower for my bathroom.bryan was on time when it came to measuring and installing the shower.",
+          "name": "Norma G."
+        },
+        {
+          "type": "prose",
+          "heading": "A Door or a Walk-In Panel",
+          "body": [
+            "There are two ways to go, and the bathroom usually points to one.",
+            "**A hinged door** closes the shower in. It holds the heat and keeps the spray in a tub-shower combination or a small stall.",
+            "**Walk-in shower glass** is a fixed panel with an open entry and no door to swing. It suits a larger shower with room to step in, and it leaves the tile in view.",
+            "With a walk-in, the panel has to stand where the spray from the shower head would otherwise hit the floor. That's why we look at where the head points before we decide how wide the glass should be.",
+            "Not sure which way to go? Call the office and talk it through before the visit."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Excellent craftsmanship, and quick work. I really appreciate the great service while installing the walk-in shower, I would definitely work with them again, highly recommend them.",
+          "name": "Veysi B."
+        },
+        {
+          "type": "prose",
+          "heading": "What Decides the Look and the Price",
+          "body": [
+            "A shower door is mostly glass, so size drives the price first. After that come the thickness of the glass, the hinges and handle you pick and the finish on them.",
+            "Clear glass is the usual choice, and it's what lets the bathroom keep its light.",
+            "Hardware is also what wears. Hinges carry the full weight of the door, so they're worth choosing on purpose and not by the cheapest option.",
+            "Once we've measured and talked through the choices, you get a quote for your shower."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "What Happens When You Call",
+          "items": [
+            {
+              "title": "You call or send a request.",
+              "text": "Tell us what shower you have: a tub-shower, a stall or a bigger walk-in."
+            },
+            {
+              "title": "We come out and measure.",
+              "text": "We look at the walls, the curb or tub edge and the spot where the glass will stand, then quote the job."
+            },
+            {
+              "title": "The glass is cut to your measurements.",
+              "text": "It's made for your shower."
+            },
+            {
+              "title": "We install it.",
+              "text": "We set the glass and hardware, check how the door swings and clean up."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "body": [
+            "You don't need exact numbers. We measure the real shower ourselves.",
+            "It helps to know whether it's a tub-shower or a stall, whether you want a door or an open walk-in, and what finish you like on the hinges and handle. A photo of the bathroom helps too."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "How do I get a quote?",
+              "a": "Call (316) 712-8147 or send a quote request. We come out to measure and then quote the job."
+            },
+            {
+              "q": "Do I need to measure my shower first?",
+              "a": "No. We measure it in person, because the numbers that matter are the ones on your walls."
+            },
+            {
+              "q": "Can I get a walk-in instead of a door?",
+              "a": "Yes. We install walk-in shower glass as well as frameless doors."
+            },
+            {
+              "q": "What if my bathroom isn't square?",
+              "a": "Most aren't. That's why the glass is cut after we measure, to the shower you actually have."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Ready for the Glass Door?",
+          "text": "Call and tell us about your shower, and we'll come out and measure. Call (316) 712-8147 or ask for a quote online. Modern Glass Structures, 1301 E Harry St, Wichita, KS 67211. See also: [Window Glass Replacement](/window-glass-replacement-wichita-ks/)"
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/window-glass-replacement-wichita-ks/",
+      "navLabel": "Window Glass",
+      "keyword": "window glass replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita glass shop",
+        "h1": "Window Glass Replacement in Wichita, KS — Modern Glass Structures",
+        "sub": "We replace the glass in the windows you already have, one pane or a whole order, and we supply windows and aluminum glass doors for bigger projects. Call us and tell us what's broken.",
+        "primaryCta": {
+          "label": "Call (316) 712-8147",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request a Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "windows-hero",
+          "alt": "Clear window glass in a dark frame on a house exterior",
+          "brief": "clear window glass in a dark frame on a house exterior seen at a slight angle, window on the right, plain softly blurred wall and sky on the left behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Great glass company, we have bought over 30 windows, glass replacements and aluminum glass doors from them with no issues. The staff made the process simple and fast.",
+          "name": "Magnolia W."
+        },
+        {
+          "type": "split",
+          "heading": "When It's the Glass That Failed",
+          "body": [
+            "A cracked pane is obvious. Others are quieter: a haze between the two panes of a double-pane window that won't wipe off, or a window that has always felt cold to stand next to.",
+            "Fog between the panes means the seal around the sealed glass unit has failed and moisture got in. Cleaning won't reach it, because it's inside. The glass unit is what gets replaced.",
+            "Cracks come from a hit, from the house settling or from heat building up unevenly across the pane. Either way, the frame is often fine and the glass is the part that needs to go."
+          ],
+          "image": {
+            "slot": "windows-order",
+            "alt": "Aluminum-framed glass door beside a large window",
+            "brief": "aluminum-framed glass door beside a large window, door on the right, plain wall and soft light on the left behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Glass or the Whole Window",
+          "body": [
+            "Older single-pane windows fail by breaking. Newer double-pane windows fail by fogging, and nothing is cracked.",
+            "Either way, the question is the same: what's wrong with it, the glass or the frame?",
+            "Replacing only the glass is usually the faster, smaller job when the frame is straight, solid and still opens and closes well.",
+            "A whole window is the better call when the frame itself is the problem: rot, warping, a sash that doesn't close or a frame that has pulled out of square.",
+            "We look at the frame when we come out to measure, so you hear which one makes sense before you spend anything. And if the answer is new windows, we supply those too."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "One Pane or Thirty",
+          "body": [
+            "Some jobs are one cracked pane in the back bedroom. Some are every window in a building.",
+            "We handle both the same way. We come out, measure each opening and cut the glass to fit.",
+            "For larger projects we also supply windows and aluminum glass doors, so a single order can cover the glass, the windows and the doors."
+          ],
+          "image": {
+            "slot": "windows-storefront",
+            "alt": "Glass storefront entrance with an aluminum frame",
+            "brief": "glass storefront entrance with an aluminum frame and double doors, storefront on the right, plain pavement and soft sky on the left behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "They had very good communication and very punctual. I would recommend them to anyone needing glass replaced",
+          "name": "David G."
+        },
+        {
+          "type": "prose",
+          "heading": "Why Every Opening Gets Measured",
+          "body": [
+            "Windows that look identical rarely are. Houses settle, frames get replaced one at a time and old openings drift out of square.",
+            "Glass can't be trimmed once it's made, so the number has to be right before the glass is cut. We measure the opening itself instead of assuming the neighbor window is the same.",
+            "Safety matters on some windows, too. Glass in a door, beside a door or low to the floor is usually required to be tempered safety glass, and tempered glass can't be cut after it's made. That's one more reason to measure first."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Homes and Businesses",
+          "body": [
+            "We replace window glass for homes and for businesses. Storefront and commercial glass is part of the same work, so a shop with a broken pane gets the same visit a house does."
+          ]
+        },
+        {
+          "type": "steps",
+          "heading": "What Happens When You Call",
+          "items": [
+            {
+              "title": "You call or send a request.",
+              "text": "Tell us what's broken and where. A photo helps."
+            },
+            {
+              "title": "We come out and measure.",
+              "text": "We look at the glass and the frame and tell you what we'd replace."
+            },
+            {
+              "title": "The glass is cut to your measurements.",
+              "text": "It's made for your opening."
+            },
+            {
+              "title": "We install it.",
+              "text": "We set the glass and clean up when we're done."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "body": [
+            "How many windows, and which ones. Whether it's a crack or fog between the panes.",
+            "A photo of each one, if you can send it. You don't need to measure anything yourself, because we measure every opening in person."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Can you replace just the glass, not the window?",
+              "a": "Often, yes, when the frame is in good shape. We check the frame when we measure."
+            },
+            {
+              "q": "Do you sell whole windows and doors?",
+              "a": "Yes. We supply windows and aluminum glass doors, from one opening to a large order."
+            },
+            {
+              "q": "Why is my double-pane window foggy?",
+              "a": "The seal has failed and moisture is trapped between the panes. It can't be wiped clean, so the glass unit is replaced."
+            },
+            {
+              "q": "How do I get a quote?",
+              "a": "Call (316) 712-8147 or send a quote request. We come out, measure and quote the job."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Got a Broken Window?",
+          "text": "Call and tell us what's broken. We'll come out and measure. Call (316) 712-8147 or send a quote request. Modern Glass Structures, 1301 E Harry St, Wichita, KS 67211. See also: [Frameless Shower Doors](/frameless-shower-doors-wichita-ks/)"
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Modern Glass Structures Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita glass shop",
+        "h1": "Contact Modern Glass Structures",
+        "sub": "Call us at (316) 712-8147 and tell us what glass you need. Or send a quote request, and we'll follow up and set up a time to measure.",
+        "primaryCta": {
+          "label": "Call (316) 712-8147",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Request a Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Bright bathroom with a clear glass shower door",
+          "brief": "clear glass shower door in a bright bathroom, shower on the right, plain wall and soft light on the left behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Send a Request",
+          "body": [
+            "Calling is the fastest way. Tap the number on your phone and tell us what you need: a shower door, a mirror, a window pane or a storefront.",
+            "If you'd rather write, use the quote request. It asks for a phone number or email so we can reach you."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Very professional. Very knowledgeable. Work clean and efficiently.",
+          "name": "Samantha M."
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "list": [
+            "What the glass is for: a shower, a mirror, a window, a door, a storefront or something custom.",
+            "Roughly how big the opening is. You don't need exact numbers, because we measure in person.",
+            "A photo or two of the space, if you can send them."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Are",
+          "body": [
+            "Modern Glass Structures, 1301 E Harry St, Wichita, KS 67211."
+          ],
+          "link": {
+            "label": "Get directions",
+            "route": "https://www.google.com/maps/search/?api=1&query=1301%20E%20Harry%20St%2C%20Wichita%2C%20KS%2067211"
+          }
+        },
+        {
+          "type": "faq",
+          "heading": "Questions",
+          "items": [
+            {
+              "q": "Do you come to me?",
+              "a": "Yes. We come out to measure, because the numbers that matter are the ones in your space."
+            },
+            {
+              "q": "Do you work on businesses?",
+              "a": "Yes, storefronts and commercial glass along with homes."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Modern Glass Structures is a Wichita glass shop at 1301 E Harry St. We install frameless shower doors, mirrors, window glass and storefronts for homes and businesses.",
+    "why": [
+      "We come out to measure, then install",
+      "Home and business glass from one Wichita shop",
+      "Shower doors, mirrors, windows and storefronts, one call"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your customers make your case. They call you \"amazingly fast\" and \"very punctual,\" and write: \"It is hard to find a glass company that takes the time to come or put you as a priority.\" You hold a 4.8 on 25 Google reviews.",
+      "Your website says none of that. The top never says glass company or Wichita, nothing taps to call, and shower doors and windows have no page.",
+      "So we rebuilt it around the work your customers praise, with your number one tap away."
+    ],
+    "cardsHeading": "Be the Glass Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls today, and the fix.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "The top of the page says \"Custom Residential & Commercial Glass\" with no town, and it is not a real headline, so Google cannot tell you are a glass company in Wichita.",
+          "Your phone number is plain text at the very bottom of the page, so someone on a phone cannot tap it to call."
+        ],
+        "fixes": [
+          "A headline that says glass company in Wichita, KS, right at the top.",
+          "Your number is a one-tap call at the top and bottom of every page.",
+          "A menu to your shower door, window glass and contact pages, and a card for every service."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/frameless-shower-doors-wichita-ks/",
+        "title": "Frameless Shower Doors",
+        "why": "Your reviews praise shower doors most, yet they have no page of their own.",
+        "problems": [
+          "Someone searching \"frameless shower doors Wichita\" has no page of yours to land on.",
+          "The four reviews on your page sit apart from the service they prove."
+        ],
+        "fixes": [
+          "A full page for frameless shower doors in Wichita, KS.",
+          "Reviews placed beside the point each one proves."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/window-glass-replacement-wichita-ks/",
+        "title": "Window Glass Replacement",
+        "why": "Customers buy windows and glass replacements from you, yet the word \"window\" appears nowhere on your site.",
+        "problems": [
+          "A search for \"window glass replacement Wichita\" cannot find you, because no page mentions windows.",
+          "Your window and aluminum glass door work is invisible, though one buyer has bought over 30 windows."
+        ],
+        "fixes": [
+          "A page for window glass replacement in Wichita, KS.",
+          "Windows, glass replacements and aluminum glass doors named plainly."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where interest turns into a call.",
+        "problems": [
+          "Every \"Click for a Quote\" button sends people off your site to an outside form, and some never come back.",
+          "Your number and address sit only at the very bottom of the page."
+        ],
+        "fixes": [
+          "Every quote button leads to your own contact page.",
+          "Your number, shop address and what to have ready on one page, with one tap to call."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great glass company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number taps to call",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Windows named on the site",
+        "status": "Missing"
+      },
+      {
+        "label": "Quote request on your own site",
+        "status": "Needs work"
+      },
+      {
+        "label": "Reviews beside what they prove",
+        "status": "Needs work"
+      },
+      {
+        "label": "Photos labeled so Google knows what they show",
+        "status": "Missing"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Book a strategy call with Fluid Frame. We will walk you through this demo, confirm every service you offer and show you what it takes to put it live."
+    }
+  },
+  "onboardingQuestions": [
+    "Owner and office names and surnames. BBB lists Bryan Chamale (owner) and Karen Chamale (office manager); reviews name \"Bryan and Eric\". How do they want to be introduced?",
+    "Email address to show. The site footer shows an address, but facts.md does not record it, so none is on the demo.",
+    "Years in business. BBB says started June 2024; Jordan W.'s review says 7 years with \"this family\". Is there a predecessor business?",
+    "Hours, and whether Saturday is open.",
+    "Full list of services: glass repair, tempered and plate glass (BBB categories), mirrors (custom sizes, framed or frameless), glass doors beyond aluminum, specialty glass.",
+    "Windows: do they sell and install full replacement windows, or mainly replace the glass? Magnolia W. bought over 30 windows. Which brands, if any?",
+    "Do they measure and install every job with their own crew, with no subcontractors?",
+    "Towns served beyond Wichita. A customer 1 hour 20 minutes out was served the same day; is there a standard radius?",
+    "Is the estimate free, and is the quote usually given the next day (one review)?",
+    "Licensing, insurance, warranty on shower doors and windows, and BBB accreditation (the profile says not accredited, A rating).",
+    "Financing and any lead-time or install-time promises they are comfortable making.",
+    "Logo file, brand colors and real project photos with descriptions.",
+    "The 1-star review about broken glass at pickup: do they want a pickup and packaging line added anywhere?",
+    "Reviewer names for Vickie and Sherry (Google shows no last initial), so their reviews can be used."
+  ]
+}

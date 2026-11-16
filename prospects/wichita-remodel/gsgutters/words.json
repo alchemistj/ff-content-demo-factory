@@ -1,0 +1,763 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "GS Gutters LLC",
+    "slug": "gsgutters",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Exterior Remodeling Company",
+    "owners": [
+      "Nelson"
+    ],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 210-0063",
+        "tel": "+13162100063"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "1243 N Poplar St, Wichita, KS 67214",
+    "serviceArea": {
+      "summary": "Wichita and a 90-mile radius around it",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Owner-Led by Nelson Galdamez",
+    "Insured",
+    "Free Estimates",
+    "10% Off for Veterans and Retirees"
+  ],
+  "services": [
+    {
+      "name": "Gutter Installation",
+      "route": "/gutter-installation-wichita-ks/",
+      "blurb": "New seamless gutters and downspouts hung on your whole house, detached garage included."
+    },
+    {
+      "name": "Gutter Repair",
+      "route": null,
+      "blurb": "Sagging, leaking or badly hung gutters fixed, and rotted wood around them replaced."
+    },
+    {
+      "name": "Gutter Cleaning",
+      "route": null,
+      "blurb": "Clogged gutters and plugged downspouts cleared so the water runs again."
+    },
+    {
+      "name": "Gutter Screens",
+      "route": null,
+      "blurb": "Screens set on top of your gutters to keep debris out."
+    },
+    {
+      "name": "Siding Installation",
+      "route": "/siding-installation-wichita-ks/",
+      "blurb": "New siding and trim installed, with the job site cleaned up when we leave."
+    },
+    {
+      "name": "Siding Repair",
+      "route": null,
+      "blurb": "Damaged siding and trim repaired when a repair is all the wall needs."
+    },
+    {
+      "name": "Interior and Exterior Painting",
+      "route": null,
+      "blurb": "Fresh paint inside and out, so the house looks cared for."
+    },
+    {
+      "name": "Deck Installation and Repair",
+      "route": null,
+      "blurb": "New decks built and worn decks repaired, with your estimate from the crew that builds it."
+    },
+    {
+      "name": "Floor Installation and Maintenance",
+      "route": null,
+      "blurb": "New floors put in, and the floors you have kept in good shape."
+    },
+    {
+      "name": "Windows and Doors Installation",
+      "route": null,
+      "blurb": "New windows and doors set into the walls we side and paint."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "exterior remodeling company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Owner-led in Wichita, Kansas",
+        "h1": "Exterior Remodeling Company in Wichita, KS — GS Gutters LLC",
+        "sub": "I'm Nelson Galdamez, and I own GS Gutters LLC. Our crew does gutters, siding, painting, decks, windows and doors across Wichita and 90 miles around it. Call me for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 210-0063",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Two-story Wichita house with fresh siding and new gutters on a clear day",
+          "brief": "two-story house with fresh siding, new gutters and downspouts, house on the right half of the frame, front lawn leading off to the left, calm clear sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "What a awesome company to do gutter work or any other home repairs easy to work with great pricing very very professional",
+          "name": "Rob C."
+        },
+        {
+          "type": "split",
+          "heading": "One Crew for the Whole Outside of Your House",
+          "body": [
+            "Water is what wears out the outside of a house. It comes off the roof, runs past the edge, down the wall, around the windows and into the wood under the paint.",
+            "Gutters, siding, trim, paint and decks are all ways of keeping it out. When one of them fails, the water finds the next.",
+            "That's why we do all of it. The crew that hangs your gutters can see where else the water is getting in, so you hire one crew instead of five contractors.",
+            "We're insured, the estimate is free, and we take 10% off for veterans and retirees. We bring over eight years of experience to every job."
+          ],
+          "image": {
+            "slot": "home-crew",
+            "alt": "House corner with new gutter, downspout, siding and a window together",
+            "brief": "close view of a house corner showing a gutter, downspout, new siding and a window together, downspout on the right, siding running off to the left, soft neutral sky behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Gutters",
+          "body": [
+            "You notice it when it rains. Water pours over the edge instead of down the downspout, the siding below is streaked, and there's a puddle by the foundation.",
+            "Gutters fail in a few ordinary ways. They clog with leaves and shingle grit, and they sag when the fasteners let go.",
+            "A hailstorm dents them and splits the seams. A plugged downspout backs up the whole run, and the water goes over the edge and down the wall.",
+            "We hang new gutters and downspouts, repair the ones you have, clean them out and put screens on top to keep debris out. If the wood behind a gutter has gone soft, we replace it.",
+            "Gutter work moves fast, and you get a straight answer on what your house needs."
+          ],
+          "link": {
+            "label": "See our gutter work →",
+            "route": "/gutter-installation-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "I had gutters put on my whole house and detached garage. The GS Gutter crew did a fantastic job. They were very fast and friendly. … They made sure I was happy with the job before they left.",
+          "name": "Randy V."
+        },
+        {
+          "type": "split",
+          "heading": "Siding",
+          "body": [
+            "Siding takes the Kansas wind, hail and summer sun before anything else on the house does.",
+            "When it's tired, you can see it: faded or chalky panels, cracks, pieces that have worked loose. What you can't see is the wall behind it, where a gap lets water in.",
+            "We install new siding and trim, and we repair damaged siding when a repair is all the wall needs. When we leave, the job site is clean."
+          ],
+          "link": {
+            "label": "See our siding work →",
+            "route": "/siding-installation-wichita-ks/"
+          },
+          "image": {
+            "slot": "home-water",
+            "alt": "Rain running off a roof edge into a clean gutter",
+            "brief": "rain running off a roof edge into a clean gutter, gutter on the right, water flowing toward the left, plain soft gray sky behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Interior and Exterior Painting",
+          "body": [
+            "Peeling paint on the trim and soffit is usually the first place a house shows its age. Paint is the skin over the wood at the edges of your house, and bare wood soaks up water.",
+            "Paint over rotted wood fails again in a year or two. So where the wood behind a gutter or along the trim has rotted, we replace it, and the paint goes on something solid.",
+            "We paint outside and inside, and a freshly painted house looks cared for. Paint the trim and doors while the crew is already there, and you won't need to call a painter later."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "GS Gutters LLC did a great job on our house. They repaired our gutters, and fixed the rotted wood around the gutters as needed. They also did a great job painting the trim, doors and soffit around the house.",
+          "name": "Trino B."
+        },
+        {
+          "type": "prose",
+          "heading": "Decks",
+          "body": [
+            "A deck gets sun and rain on top and damp underneath.",
+            "Boards go gray, then soft. Railings loosen. Eventually you stop trusting a step.",
+            "We build new decks and repair worn ones. If your siding, paint or gutters are on the same list, the same crew can do them while we're at the house."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "My deck looks very nice. He did my siding, paint and gutters last time. That's why I wanted him for my deck project. His prices are fair and craftsmanship is very good. I'll call him for my next project!",
+          "name": "Luis R."
+        },
+        {
+          "type": "prose",
+          "heading": "Windows, Doors and Floors",
+          "body": [
+            "New windows and doors have to be set into the walls around them, and those are walls we side and paint. One crew means the trim and the finish get done once, and match.",
+            "We install windows and doors, and we install and maintain floors."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "You Deal With the Owner",
+          "body": [
+            "When you call, you're talking to the owner, not a call center. Nelson and his crew do the work.",
+            "You get suggestions along with the price, about what the house needs and what can wait."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Nelson and his crew redid my kitchen and I love it. His suggestions only made it more perfect. You need a job done make him your first and only call!",
+          "name": "Roxann S."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Job Goes",
+          "items": [
+            {
+              "title": "You call and we give you a price.",
+              "text": "The estimate is free. We show up when we say we will."
+            },
+            {
+              "title": "We start when we said we would.",
+              "text": "Gutter jobs are fast. One hail-damaged house had all of its gutters replaced in just over an hour. A whole-house project with siding, trim, paint, windows and gutters took about two weeks."
+            },
+            {
+              "title": "We keep you posted.",
+              "text": "If you decide to add something halfway through, tell us. We'll work it in."
+            },
+            {
+              "title": "We clean up before we go.",
+              "text": "We make sure you are happy with the job before we leave."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita and 90 Miles Around",
+          "body": [
+            "Our office is at 1243 N Poplar St in Wichita. We work in Wichita and in a 90-mile radius around it.",
+            "If you're not sure your town is in range, call and ask."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes, for every job we do."
+            },
+            {
+              "q": "Do you only do gutters?",
+              "a": "No. We do gutters, siding, painting inside and out, decks, windows and doors, and floors."
+            },
+            {
+              "q": "Can I do gutters first and the rest later?",
+              "a": "Yes. Start with whichever is costing you the most. If the gutters are the problem, that's usually the one to fix first, because they protect everything under them."
+            },
+            {
+              "q": "Is there a discount?",
+              "a": "Yes, 10% off for veterans and retirees."
+            },
+            {
+              "q": "Are you insured?",
+              "a": "Yes."
+            },
+            {
+              "q": "How long will my job take?",
+              "a": "A full gutter replacement on one house took just over an hour. Siding, trim and paint take longer; a whole-house project ran about two weeks."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call for a Free Estimate",
+          "text": "Tell us what you're seeing: water over the gutter edge, siding that's tired, paint that's peeling or a deck you don't trust. We'll look at it and give you a fair price. Call (316) 210-0063, or send us a message."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/gutter-installation-wichita-ks/",
+      "navLabel": "Gutter Installation",
+      "keyword": "gutter installation Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Gutters in Wichita, Kansas",
+        "h1": "Gutter Installation in Wichita, KS — GS Gutters LLC",
+        "sub": "We hang new gutters and downspouts, repair the ones you have, clean them out and put screens on top. Nelson Galdamez owns GS Gutters LLC, and gutters are the work in our name. Call for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 210-0063",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "gutters-hero",
+          "alt": "Gloved hands fitting a new gutter section at a roof edge",
+          "brief": "worker's gloved hands, no face and no shirt lettering, fitting a new gutter section at a roof edge, gutter on the right, the gutter line running off to the left, soft sky behind the text side, no readable text"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Needed all my guttering replaced due to hailstorm damage, and thes folks were GREAT! They work fast (had me done in just over an hour), their prices are great, they are easy to deal with and flexible to a person needs (I added to the job after the initial scheduling), and the quality was excellent. … If you're looking for seamless guttering, look no further.",
+          "name": "Steve S."
+        },
+        {
+          "type": "split",
+          "heading": "When New Gutters Are the Answer",
+          "body": [
+            "Sometimes you can tell from the driveway. A run of gutter has pulled away from the house, a seam drips every time it rains, or the whole thing sags in the middle.",
+            "Other times it's what's under the gutter: streaked siding, soft wood along the roof edge, a puddle at the foundation where the downspout should have sent the water.",
+            "Gutters take a beating in Kansas. Hail dents them and splits seams, wind loosens the fasteners, and leaves and shingle grit pack the troughs. After enough of that, patching one section only moves the problem down the line.",
+            "When the whole run is tired, replacing it is cheaper than coming back to it every spring."
+          ],
+          "image": {
+            "slot": "gutters-install",
+            "alt": "New seamless gutter and downspout along the roof edge of a house",
+            "brief": "new seamless gutter and downspout along a roof edge, downspout on the right, gutter line running toward the left, calm plain sky behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "What a New Gutter Job Includes",
+          "body": [
+            "We replace the gutters and the downspouts together, because one without the other doesn't move water.",
+            "You get a new run along every edge that needs one, and downspouts that carry the water to the ground instead of down your siding.",
+            "You get the price after a free estimate, before the work starts."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why Gutters Matter to the Rest of the House",
+          "body": [
+            "A roof sheds a surprising amount of water in a hard rain. Gutters catch it at the edge and send it away from the walls and the foundation.",
+            "Without them, that water lands next to the house, splashes mud up the siding and soaks into the ground by the foundation. A good run keeps the wall dry from the top."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Where the Downspouts Go",
+          "body": [
+            "A gutter is only as good as its downspouts. Too few, and the trough fills faster than it can drain and spills over the front. The same goes for a downspout that drops water right at the foundation.",
+            "How many you need depends on how long the run is and how much roof drains into it. We look at your house and tell you.",
+            "If the plan changes once we're up on the ladder, we'll tell you and work it in."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were quick to give me an estimate and to complete the job. Their prices were very reasonable and they also added a down spout for me on the spot once it was determined that I really needed and extra one.",
+          "name": "Lacy S."
+        },
+        {
+          "type": "prose",
+          "heading": "Gutter Repair",
+          "body": [
+            "Not every gutter needs replacing. If the run is sound and one piece has failed, repair is the better call.",
+            "We fix sagging sections, leaking seams and gutters that were hung badly in the first place. If the wood behind them has rotted, we replace that too, so the new fasteners have something to hold."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Great job on cleaning the gutters, even fixed one that was improperly installed for no extra charge! Will be hiring again to install gutter guards and fix siding.",
+          "name": "Calder Y."
+        },
+        {
+          "type": "prose",
+          "heading": "Gutter Cleaning",
+          "body": [
+            "Clogged gutters overflow, and an overflowing gutter soaks the wall behind it. A plugged downspout is worse, because the whole run fills and sits.",
+            "We clear the gutters and the downspouts so the water runs again, including a downspout that has plugged."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Excellent work and very affordable. Cleaned area and downspout that was plugged. Showed pics of gutters after cleaning, hadn’t seen them that clean in quite awhile.",
+          "name": "Bob O."
+        },
+        {
+          "type": "prose",
+          "heading": "Gutter Screens",
+          "body": [
+            "If you're tired of climbing a ladder every fall, screens on top of your gutters keep leaves and debris out of the trough.",
+            "They don't make a gutter maintenance-free. Fine grit still gets through, and a screen needs a look now and then. But they cut the number of times you need a cleaning.",
+            "We install gutter screens on top of your gutters."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "GS Gutters just completed my gutters & downspouts. They also installed gutter screens on top of my gutters. Their work is impeccable.",
+          "name": "Kurt W."
+        },
+        {
+          "type": "prose",
+          "heading": "Gutters and the Rest of the Outside of Your House",
+          "body": [
+            "Water that gets past a gutter ends up in the siding, the trim and the paint. When we're at your house for gutters, we'll tell you what else we see, and you decide what to do about it.",
+            "We also do [siding](/siding-installation-wichita-ks/), painting inside and out, decks, and windows and doors."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes."
+            },
+            {
+              "q": "How long does a gutter job take?",
+              "a": "Gutter work moves fast. One hail-damaged house had every gutter replaced in just over an hour."
+            },
+            {
+              "q": "Can you add to the job after I've scheduled it?",
+              "a": "Yes. One homeowner added to the job after the first scheduling, and we worked it in."
+            },
+            {
+              "q": "Do you clean gutters, or only replace them?",
+              "a": "Both. We install, repair and clean gutters, and we put screens on top."
+            },
+            {
+              "q": "Is there a discount?",
+              "a": "10% off for veterans and retirees."
+            },
+            {
+              "q": "Where do you work?",
+              "a": "Wichita and a 90-mile radius around it."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get Your Gutters Looked At",
+          "text": "Call (316) 210-0063. Tell us what you're seeing, and we'll give you a free estimate and a straight answer on whether you need new gutters, a repair or a cleaning."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/siding-installation-wichita-ks/",
+      "navLabel": "Siding Installation",
+      "keyword": "siding installation Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Siding in Wichita, Kansas",
+        "h1": "Siding Installation in Wichita, KS — GS Gutters LLC",
+        "sub": "We install new siding and trim, and repair siding when a repair is all the wall needs. Nelson Galdamez and his crew do the work, and the job site is clean when we leave. Call for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 210-0063",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "siding-hero",
+          "alt": "House partway through new siding with fresh trim",
+          "brief": "house mid-way through new siding with fresh trim, the finished side on the right of the frame, the wall running off to the left, calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "GS Gutters did a fantastic job replacing my siding. They were quick and cleaned up very well. Very friendly and professional crew. Thanks Nelson and crew.",
+          "name": "Casey M."
+        },
+        {
+          "type": "split",
+          "heading": "When Siding Is Tired",
+          "body": [
+            "Siding takes the Kansas wind, hail and summer sun before anything else on your house does.",
+            "When it's wearing out, you can see it. Panels fade or turn chalky, crack, warp or work loose, and trim around the windows and corners starts to split.",
+            "What you can't see is the wall behind it. A gap or a missing piece lets water in, and wet sheathing rots quietly for years before it shows inside."
+          ],
+          "image": {
+            "slot": "siding-main",
+            "alt": "Corner of a house with new siding and fresh trim",
+            "brief": "corner of a house with new siding and fresh trim, house corner on the right, wall running off to the left, calm soft sky behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or Replace",
+          "body": [
+            "If the damage is one section, say a few panels a storm cracked or a spot where the trim has rotted, a repair may be all the wall needs. We repair siding and trim, and we'll tell you when that's the better choice.",
+            "If the siding is worn across the house, patching only buys time. New siding gives you a wall that's tight against the weather again.",
+            "Either way, you get a free estimate and a price before we start."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "What New Siding Includes",
+          "body": [
+            "We install new siding and trim together, so the edges around windows, doors and corners are finished the same way as the walls.",
+            "Then we clean up. The job site is clean when we leave, and one homeowner said we cleaned up very well."
+          ],
+          "image": {
+            "slot": "siding-finished",
+            "alt": "Finished house with new siding, fresh paint and new gutters",
+            "brief": "finished house with new siding, fresh trim paint and new gutters, house on the right of the frame, front lawn leading off to the left, calm clear sky behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Siding, Trim, Paint and Windows in One Job",
+          "body": [
+            "Siding doesn't stand alone. It meets the trim, the windows, the doors and the gutters at the roof edge, and water finds whichever one was left for later.",
+            "We're one crew for all of it. On one recent whole-house job we replaced two thirds of the siding and trim, painted the house and trim, installed five new windows and a new garage door to the backyard, and hung new gutters and gutter covers."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "GS Gutters did a wonderful job on replacing 2/3 of our siding and trim, painting the house and trim, installing a new garage door to the backyard, installing five new windows, and new gutters and premium gutter covers. They got the whole project done within about a couple of weeks and kept us posted throughout. … There was an emphasis on building it right and keeping the water out of the house, and that is a great comfort. I still smile every time I look at the house.",
+          "name": "Lane P."
+        },
+        {
+          "type": "prose",
+          "heading": "What Decides the Price",
+          "body": [
+            "Siding prices move with the size of the house and the number of stories. They move with how much trim there is, how many windows and corners the siding has to work around, and what the wall looks like once the old siding is off.",
+            "A plain wall goes quickly, and a good estimate accounts for that. A wall with a lot of cut-ins and a bad surprise behind it takes longer.",
+            "That's why we look at your house before we quote it. The estimate is free, and you'll know the price before the work starts."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Why Trim Matters More Than It Looks",
+          "body": [
+            "Most leaks in a sided wall start at an edge, not in the middle of a panel. The edges are the windows, the doors, the corners and the line under the roof.",
+            "New siding with old, cracked trim is a new wall with the same weak points. That's why we install siding and trim together."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Doing It in Stages",
+          "body": [
+            "You don't have to do the whole house at once. Start with the wall that's costing you the most, and plan the rest after.",
+            "Because the same crew does gutters, [new gutters](/gutter-installation-wichita-ks/) and siding can go in together or one after the other. Water at the roof edge is the thing that wrecks siding, so gutters are a smart partner for it.",
+            "We also paint inside and out, build decks, and install windows and doors, so the work that meets your siding can be done by the same crew."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes."
+            },
+            {
+              "q": "How long does a siding job take?",
+              "a": "It depends on the size of the house and what else is on the list. A whole-house project with siding, trim, paint, windows and gutters took about two weeks."
+            },
+            {
+              "q": "Will you keep me posted?",
+              "a": "Yes. We keep you posted while the work goes on."
+            },
+            {
+              "q": "Is there a discount?",
+              "a": "10% off for veterans and retirees."
+            },
+            {
+              "q": "Where do you work?",
+              "a": "Wichita and a 90-mile radius around it."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get Your Siding Looked At",
+          "text": "Call (316) 210-0063. Tell us what you're seeing on your walls, and we'll give you a free estimate and an honest answer on repair or replace."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact GS Gutters LLC Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Wichita, Kansas",
+        "h1": "Contact GS Gutters LLC",
+        "sub": "Call (316) 210-0063 and tell us what's going on with your gutters, siding, paint, deck, windows or doors. The estimate is free.",
+        "primaryCta": {
+          "label": "Call (316) 210-0063",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Quiet Wichita street of homes with neat gutters and siding",
+          "brief": "quiet street of Wichita-style homes with neat gutters and siding, houses on the right, the street leading off to the left, calm soft sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Send a Message",
+          "body": [
+            "Calling is the quickest way to reach us. Nelson and his crew will talk you through what your house needs.",
+            "If you'd rather write, the form takes your name, phone number, email, address and a message about the job."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What Helps Us Quote It",
+          "list": [
+            "What you're seeing: water over the gutter edge, siding that's cracked or loose, peeling paint, a soft deck board.",
+            "Which part of the house it's on.",
+            "Whether you want it repaired or replaced, or you're not sure yet. That's fine."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "He showed up on time for the estimate and started exactly when he said he would.",
+          "name": "Dake U."
+        },
+        {
+          "type": "prose",
+          "heading": "Where We Work",
+          "body": [
+            "Our office is at 1243 N Poplar St, Wichita, KS 67214. We work in Wichita and in a 90-mile radius around it.",
+            "Not sure whether you're in range? Call and ask."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Estimates and Discounts",
+          "text": "Estimates are free. We take 10% off for veterans and retirees."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "I'm Nelson Galdamez, and I founded GS Gutters LLC, an insured Wichita company. We do gutters, siding, painting, decks, floors, windows and doors.",
+    "why": [
+      "Owner-led by Nelson Galdamez",
+      "Insured company",
+      "Free estimates",
+      "10% off for veterans and retirees"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your customers hire you for the whole outside of the house. Lane P. hired you for siding, trim, paint, five windows, a garage door and new gutters in one project. Luis R. came back for a deck after you did his siding, paint and gutters.",
+      "Your website says gutters. The top of your homepage promises “Superior Gutter Solutions” with no headline, so Google files you as a gutter company, and people searching for siding or a deck in Wichita don't find you.",
+      "So we built a demo that says exterior remodeling company in Wichita at the very top, gives gutter installation and siding installation their own pages, and puts your reviews next to the work they describe."
+    ],
+    "cardsHeading": "Be the Exterior Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls, and how we fix it.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The first page people see, and the one Google reads to learn what you do.",
+        "problems": [
+          "The top of your homepage says “Superior Gutter Solutions” and has no main headline, so Google never sees siding, paint or decks.",
+          "On a phone, your homepage sits blank for about two and a half seconds before your name appears.",
+          "None of your 52 reviews is shown anywhere."
+        ],
+        "fixes": [
+          "A headline that says exterior remodeling company in Wichita, KS, right at the top.",
+          "Your name and number on screen the moment the page opens.",
+          "Every service listed, with reviews beside each."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/gutter-installation-wichita-ks/",
+        "title": "Gutter Installation",
+        "why": "Gutter installation is the work your customers praise most.",
+        "problems": [
+          "Your gutters page has no main headline, so “gutter installation Wichita” has nothing to land on.",
+          "Nearly all of your 52 reviews are about gutter work, and not one is on the page."
+        ],
+        "fixes": [
+          "A headline that says gutter installation in Wichita, KS.",
+          "A page about new gutters alone, with reviews beside each section."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/siding-installation-wichita-ks/",
+        "title": "Siding Installation",
+        "why": "Siding is the biggest job your reviews describe after gutters.",
+        "problems": [
+          "Siding shares one short page with painting, decks, floors, windows and doors, so a Wichita siding search finds a single line.",
+          "Your gallery page is a heading and about 100 photos with no words, so Google reads nothing."
+        ],
+        "fixes": [
+          "A page for siding installation in Wichita, KS, and nothing else.",
+          "Siding reviews beside the work they describe."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "The page where interest turns into a call.",
+        "problems": [
+          "Your site runs on http:// without the padlock, even on the form page.",
+          "The form has no spam protection, and the email at the very top shows info@gsguttersllc.com but opens a Gmail address."
+        ],
+        "fixes": [
+          "A call button in one tap on a secure page, plus your address, the area you cover and what to have ready."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great exterior company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "Form blocks spam",
+        "status": "Missing"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already call you fair, fast and professional. Book a strategy call with Fluid Frame, and we'll walk you through this demo and confirm your full list of services."
+    }
+  },
+  "onboardingQuestions": [
+    "Nelson's full name and how he wants to be introduced. The site and reviews give \"Nelson Galdamez\"; the surname is not in a state record.",
+    "Years in business. The site says \"over eight years of invaluable experience\", but no founding year is confirmed. What can we say?",
+    "Insurance and licensing: the site says \"as an insured company\". Is there a license, certificate or BBB listing to show?",
+    "Hours: the old site footer says Monday to Saturday, 7:00 AM to 5:00 PM. Is that current? We left hours off until confirmed.",
+    "Email: the site footer shows info@gsguttersllc.com but the top-bar link opens a Gmail address. Which should we show?",
+    "Is 1243 N Poplar St open to customers, or should the address stay off the site?",
+    "Which towns within the 90-mile radius do they work in most, so we can name them?",
+    "Services to confirm: windows and doors (installed or only trimmed and painted), floors, interior painting, kitchen remodels (one review), soffit, fascia and rotted-wood repair.",
+    "Gutter details: seamless aluminum? Gutter screen brand? Any warranty on gutters, siding or decks?",
+    "Does the 10% veterans and retirees discount, and the free estimate, apply to every service?",
+    "Logo file, brand colors and photos of finished siding, decks and gutters."
+  ]
+}

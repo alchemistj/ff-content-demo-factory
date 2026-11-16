@@ -1,0 +1,720 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Dan Dan The Window Man",
+    "slug": "dandan",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Exterior Remodeling Company",
+    "owners": [
+      "Rick"
+    ],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 448-4418",
+        "tel": "+13164488418"
+      },
+      {
+        "label": "Roofing",
+        "display": "(833) 972-7663",
+        "tel": "+18339727663"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "6810 W Kellogg Dr, Wichita, KS 67209",
+    "serviceArea": {
+      "summary": "Wichita and the Wichita metro area",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Free Estimates",
+    "Owner-Run in Wichita",
+    "Custom-Built Windows",
+    "Se Habla Español"
+  ],
+  "services": [
+    {
+      "name": "Window Replacement",
+      "route": "/window-replacement-wichita-ks/",
+      "blurb": "Custom-built replacement windows, measured and installed by our own crew."
+    },
+    {
+      "name": "Basement Windows",
+      "route": null,
+      "blurb": "New basement windows installed fast, with the same care as the rest of the house."
+    },
+    {
+      "name": "Picture Windows",
+      "route": null,
+      "blurb": "Large picture windows replaced so the view stays the best part of the room."
+    },
+    {
+      "name": "Door Replacement",
+      "route": "/door-replacement-wichita-ks/",
+      "blurb": "Entry, patio, side and French doors, custom-made to fit your opening and installed by our crew."
+    },
+    {
+      "name": "Vinyl Siding",
+      "route": null,
+      "blurb": "New siding in the style you choose at our showroom."
+    },
+    {
+      "name": "Gutters",
+      "route": null,
+      "blurb": "New gutters and downspouts, and repairs to the ones you have."
+    },
+    {
+      "name": "Roofing and Hail Damage Claims",
+      "route": null,
+      "blurb": "We work with your insurance adjuster on hail damage, and our own crews do the approved work."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "exterior remodeling company Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Owner-run on West Kellogg in Wichita",
+        "h1": "Exterior Remodeling Company in Wichita, KS — Dan Dan The Window Man",
+        "sub": "I'm Rick Timsah, and I own Dan Dan The Window Man. You talk to me before the job, and our own crew replaces your windows and doors. Call me for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 448-4418",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "New dark-framed windows on a Wichita brick ranch house",
+          "brief": "new dark-framed replacement windows on a brick ranch house, house on the right, open sky and lawn on the left, calm background behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "After getting a few quotes on replacing all my windows and doors in my 75 year home I was a little bit shocked on the various price ranges. Finally got a referral from a friend to call Rick at Dan Dan The Window Man and so glad I did! He explained the process to me and was very down to earth. His team was awesome and kept me informed with their schedule and what they would be doing throughout the day.",
+          "name": "Brooke B."
+        },
+        {
+          "type": "prose",
+          "heading": "You Deal With the Owner",
+          "body": [
+            "Get three quotes for the same windows and you can end up with three very different prices. It's hard to know who is quoting the job and who is quoting the commission.",
+            "When the owner quotes the job, nobody is paid to upsell you. I come out, look at what you have, explain your options in plain words and give you a price. You decide on your own time.",
+            "The person who gave you the price is the person you call if you have a question. That's how a small company works when the owner is the one on the phone."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Windows Are What We Do Most",
+          "body": [
+            "Most people call us about a window that stopped doing its job. A room that never gets comfortable. A sash that sticks or won't stay up.",
+            "Or fog between the panes, or traffic you can hear as if the window were open.",
+            "Fog and noise usually mean the seal has failed. Once it does, the window leaks air and noise no matter how clean the glass looks. You pay to heat and cool the street through it.",
+            "We replace double-hung, sliding, casement, picture, awning, shaped and basement windows. They're custom-built double-pane windows with Low-E glass and argon gas between the panes, made to fit your openings.",
+            "Replace one window, a few, or every window in the house. People do all three, and some come back for the rest once they see the first ones."
+          ],
+          "link": {
+            "label": "See window replacement →",
+            "route": "/window-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "I had Dan Dan install 7 windows and a patio door and I would highly recommend them to everyone. They were promt, professional and did a great job. Since the installation our house is much quieter, I should have done this sooner.",
+          "name": "Greg S."
+        },
+        {
+          "type": "split",
+          "heading": "Storm Damage and Insurance Claims",
+          "body": [
+            "Hail and summer storms crack glass, break seals and beat up roofs. Then an adjuster's estimate arrives, with paperwork you've never dealt with before.",
+            "Insurance pays for the approved work, so the company doing the work should be the one working the claim with you. We deal with your adjuster directly, and our own crews do the approved work."
+          ],
+          "image": {
+            "slot": "home-windows",
+            "alt": "Living room with a large new picture window",
+            "brief": "bright living room with a large picture window on the right, sheer curtains hanging still, the room opening to the left, calm neutral wall behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "They worked diligently with me throughout the insurance claim process to secure a full window replacement, making everything smooth and stress-free. The new black window frames completely transformed the look of my home, giving it a stunning, elegant finish. Their professionalism, attention to detail, and consistent communication stood out from start to finish—and I didn’t pay a single penny out of pocket..",
+          "name": "Lakesha B."
+        },
+        {
+          "type": "prose",
+          "heading": "Entry, Patio and French Doors",
+          "body": [
+            "A patio door you have to shoulder open. A front door with a draft around the edge. A side door that swells shut every summer.",
+            "Doors fail where they meet the house: the weatherstripping wears out, the threshold rots, the hinges sag and the slider track bends. A new door set in a good frame fixes the problem at its source.",
+            "We install entry, patio, French and side doors, and we often do them on the same visit as your windows so the frames and finishes match."
+          ],
+          "link": {
+            "label": "See door replacement →",
+            "route": "/door-replacement-wichita-ks/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "Rick, the owner, is easy to work with, very knowledgeable, straight forward, and diligent. The installation team was professional, efficient, and cleaned up the work site upon completion of my new patio door install.",
+          "name": "Tim D."
+        },
+        {
+          "type": "prose",
+          "heading": "Vinyl Siding and Gutters",
+          "body": [
+            "Water finds the weak spot at the edge of a house first. Old siding, rotted trim and gutters that no longer carry water away all let it in.",
+            "That matters when you're replacing a window, because new glass set in rotted trim won't stay tight for long. So we replace the trim along with the window.",
+            "We install vinyl siding, new gutters and downspouts, and repair gutters you already have. You choose the materials at our showroom at 6810 W Kellogg Dr."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Rick was very easy to work with and scheduling our job was super convenient with our busy schedules. The two man crew doing the job, lead by Harold Crandall was a breeze to work with. Very respectful and tidy throughout the 3 days of work. They swiftly removed the old window & rotted trim, cleaning up every step of the way.",
+          "name": "Joni M."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Job Goes",
+          "items": [
+            {
+              "title": "I come out.",
+              "text": "I look at your house, measure the openings and explain what you need and what it costs. You pick your products at the showroom on West Kellogg."
+            },
+            {
+              "title": "We order and schedule.",
+              "text": "Windows and doors are custom-built, so there's a wait before the crew can install. Plan on a couple of weeks. Our crews stay busy."
+            },
+            {
+              "title": "Our crew installs.",
+              "text": "We tell you what we'll be doing that day and keep you posted as we go."
+            },
+            {
+              "title": "We clean up.",
+              "text": "The old windows and trim go out with us, and we leave your house tidy."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Price and Financing",
+          "body": [
+            "Prices vary because windows and doors vary: the size, the style, the glass and how many openings you're doing. The estimate puts a real number on your house, and it's free.",
+            "If you'd rather spread out the cost, we offer financing through Synchrony Bank, with no monthly interest if you pay in full within 18 months. We take checks, Visa, MasterCard, Discover and American Express."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Wichita and the Metro Area",
+          "body": [
+            "Our showroom is at 6810 W Kellogg Dr in Wichita, and we work across the Wichita metro area. Se habla español."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions Before You Call",
+          "items": [
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes, for windows, doors and siding."
+            },
+            {
+              "q": "Will you push me to buy more than I need?",
+              "a": "No. I lay out your options, tell you the price and leave the decision to you."
+            },
+            {
+              "q": "How soon can the crew come?",
+              "a": "Plan on a couple of weeks after you order, since the windows and doors are built for your house. Your crew keeps you posted on the schedule."
+            },
+            {
+              "q": "Do I have to replace every window?",
+              "a": "No. Some people start with one or two and come back for the rest. Others do the whole house at once."
+            },
+            {
+              "q": "Do you work with my insurance company?",
+              "a": "Yes. After hail or a storm we deal with your adjuster and do the approved work ourselves."
+            },
+            {
+              "q": "What does your warranty cover?",
+              "a": "Our warranty covers our installation. Ask us for the paperwork on the window or door you're choosing, so you know exactly who covers what."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Straight Price on Your House",
+          "text": "Call and I'll come out, look at your windows, doors or siding, and give you a price with no pressure to sign that day. Dan Dan The Window Man, 6810 W Kellogg Dr, Wichita, KS 67209. Call (316) 448-4418."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/window-replacement-wichita-ks/",
+      "navLabel": "Window Replacement",
+      "keyword": "window replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Window replacement from the owner's showroom",
+        "h1": "Window Replacement in Wichita, KS — Dan Dan The Window Man",
+        "sub": "Rick Timsah, the owner, measures your openings, explains your options and gives you a price. Our own crew installs the windows and cleans up. Call us for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 448-4418",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "windows-hero",
+          "alt": "Newly installed double-hung window seen from outside",
+          "brief": "newly installed white double-hung window in tan siding, window on the right, plain siding and soft blurred lawn on the left, calm background behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I am very pleased with the replacement window product, but let's face it...it's all about the installation experience. Billy and Cory were very professional, left the job site clean, and I have beautifully installed windows.",
+          "name": "Stacy C."
+        },
+        {
+          "type": "split",
+          "heading": "How You Know a Window Is Done",
+          "body": [
+            "Some windows fail loudly. A sash that sticks, a crank that spins without moving anything, a window that won't stay up on its own.",
+            "Most fail quietly. The room never gets comfortable, you feel a draft on your hand at the glass, or you hear the road as if the window were open.",
+            "Fog between the panes is the clearest sign. A double-pane window is two sheets of glass with sealed air or gas between them. When the seal fails, that space fills with moist air and the window stops insulating.",
+            "After that, cleaning won't help. The glass unit has to be replaced, and on an older window the frame usually has worn out along with it."
+          ],
+          "image": {
+            "slot": "windows-styles",
+            "alt": "Row of three new windows along an exterior wall",
+            "brief": "row of three new windows along an exterior wall, windows on the left, lawn below"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Window Styles, and Where Each One Fits",
+          "body": [
+            "We replace double-hung, sliding, casement, picture, awning and shaped windows, and basement windows too. The right style depends on the opening and how you use the room.",
+            "**Double-hung** windows slide up and down and suit most older homes. **Sliders** slide side to side, which works for wide, short openings and basements. **Casements** crank outward on a hinge and press tight against the frame when closed.",
+            "**Picture windows** don't open at all, which means fewer parts to fail and more glass for the view. **Awning windows** hinge at the top, so you can leave them open in the rain. **Shaped windows** fill the odd openings, the arches and angles that a standard window won't fit.",
+            "Some openings are harder than others. Rick works out what fits instead of telling you it can't be done."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Rick provided a solution to a difficult window installation and was great to work with. The window looks great and would highly recommend.",
+          "name": "Andy H."
+        },
+        {
+          "type": "prose",
+          "heading": "What Goes Into Our Windows",
+          "body": [
+            "Our windows are custom-built double-pane windows with double-strength glass, a Low-E coating and argon gas between the panes. They exceed ENERGY STAR qualification criteria.",
+            "Low-E is a thin coating that reflects heat. It keeps your furnace heat inside in January and the sun's heat out in July. The argon between the panes slows heat down more than plain air does.",
+            "Replace one window, a few, or every window in the house. You don't have to do it all at once, and plenty of people start with the worst rooms and come back for the rest."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "From Estimate to Install Day",
+          "body": [
+            "**1. Rick comes out.** He looks at the windows you have, measures each opening and tells you what he would put in.",
+            "**2. You choose.** You pick your windows at our showroom at 6810 W Kellogg Dr, with the price in front of you.",
+            "**3. We order.** Your windows are custom-built to your measurements, so there is a wait.",
+            "Plan on two to three weeks before the crew can install. We stay busy.",
+            "**4. The crew installs.** We tell you what we'll be doing that day and keep you posted as we go.",
+            "**5. We clean up.** The old windows go out with us and we leave the job site tidy.",
+            "The wait is the part people ask about, so we give you a date to plan around."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Rick and his crew are nothing but stellar in being professional, courteous and providing a high quality product. Installation was 2 weeks before promised and a beautiful installation.",
+          "name": "Dwight S."
+        },
+        {
+          "type": "prose",
+          "heading": "Storm Damage and Insurance",
+          "body": [
+            "A hailstorm or a bad summer storm can crack glass and break seals, and then you're dealing with an adjuster and a claim.",
+            "We work with your adjuster through the claim, and our crew does the approved window work. You don't have to learn the process alone."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What It Costs and How to Pay",
+          "body": [
+            "A window price depends on the style, the size, the glass and how many openings you're doing. A large picture window costs more than a small basement slider, and a house of windows costs more than one.",
+            "That's why the estimate is free, and why it comes after Rick has measured. You get a real number for your house, and you decide on your own time.",
+            "We offer financing through Synchrony Bank, with no monthly interest if you pay in full within 18 months. We take checks, Visa, MasterCard, Discover and American Express."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Window Replacement",
+          "items": [
+            {
+              "q": "Will you try to sell me more windows than I need?",
+              "a": "No. Rick explains your options and the price, and you decide."
+            },
+            {
+              "q": "Do I have to replace every window?",
+              "a": "No. Start with the rooms that bother you most."
+            },
+            {
+              "q": "How do I keep up with the schedule?",
+              "a": "We tell you the plan before install day and keep you posted while we work."
+            },
+            {
+              "q": "What does the warranty cover?",
+              "a": "Our warranty covers our installation. Ask us for the paperwork on the windows you're choosing, so you know who covers what."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Throughout the process, Rick maintained clear communication regarding the window order and the installation schedule. His dedication to ensuring that I felt valued as a customer was evident.",
+          "name": "Nasia T."
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Free Window Estimate",
+          "text": "Call Rick and he'll come out, measure your windows and give you a price with no pressure to sign that day. Call (316) 448-4418. Se habla español."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/door-replacement-wichita-ks/",
+      "navLabel": "Door Replacement",
+      "keyword": "door replacement Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Entry, patio and French doors, installed",
+        "h1": "Door Replacement in Wichita, KS — Dan Dan The Window Man",
+        "sub": "A door that sticks, drafts or sags is one you fight with every day. Rick Timsah quotes the job himself and our own crew installs your new door. Call us for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 448-4418",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "doors-hero",
+          "alt": "New sliding patio door opening onto a Wichita back patio",
+          "brief": "back patio with a new sliding patio door, door on the right, patio and soft lawn on the left, calm background behind the text side, no readable text, no people, no tools"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "We used Dan Dan The Window Man for a patio door and window replacement after summer storms moved it up on the \"to-do\" list. From start to finish, it was easy (never did I think I would describe window shopping as \"easy\"). Rick was straightforward with our options, and there was zero upselling or pressure to purchase.",
+          "name": "Callie W."
+        },
+        {
+          "type": "split",
+          "heading": "Why a Door Wears Out",
+          "body": [
+            "A door opens and closes thousands of times a year, and the weather works on it from the outside the whole time.",
+            "The weatherstripping flattens and lets air through. The threshold at the bottom takes the water and, over the years, rots. The hinges loosen and the door sags until it rubs the frame.",
+            "On a patio slider, the rollers wear and the track bends. That's why you end up shoving the door open with your shoulder.",
+            "A new door in a good frame fixes the cause. Adjusting an old door fixes the symptom for a season."
+          ],
+          "image": {
+            "slot": "doors-entry",
+            "alt": "New entry door with sidelights on a Wichita front porch",
+            "brief": "new entry door with sidelights on a front porch, door on the right, porch posts and soft sky on the left, calm background behind the text side, no readable text, no people"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Can a Door Be Fixed Instead?",
+          "body": [
+            "Sometimes. If the door itself is sound and only the weatherstripping is tired, new seals may be all it needs.",
+            "Replace it when the threshold or frame has rotted, when the door has warped so it won't latch, or when a slider's track is bent. Those problems come back no matter how many times you adjust the door.",
+            "Rick looks at it with you and tells you which one you have. If the door is worth keeping, he says so."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The Doors We Install",
+          "body": [
+            "We install entry, patio, French and side doors. They're custom-manufactured, so they're made for your opening instead of pulled from a shelf.",
+            "**Entry doors** are the front of the house. The door, the frame and the seal around it decide how much of the draft you feel in the hall.",
+            "**Patio doors** are the biggest opening most houses have, and the leakiest when old. **French doors** swing on hinges and give you the wide opening with a tighter seal than an old slider.",
+            "**Side doors** get less attention, and they get a lot of use. A swollen side door that you slam every summer is worth replacing, not planing."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Bill came out and did a excellent job on my garage. Put in a new side door and a new window upstairs. Looks Great very happy.",
+          "name": "Trevor W."
+        },
+        {
+          "type": "prose",
+          "heading": "Doors and Windows on One Job",
+          "body": [
+            "Most people who call about a door also have windows on their list. We do both, and we often do them on the same visit.",
+            "One visit means one measuring appointment, one estimate and one crew. The frames and finishes match from the front door to the back window.",
+            "It also means the person who installs your door has seen the windows next to it, so the trim comes out right."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Replaced 3 windows, 2 doors . Very pleased with the work, everything fits well. Installer very knowledgeable and explained as he worked .",
+          "name": "Trevelyn G."
+        },
+        {
+          "type": "prose",
+          "heading": "From Estimate to Install",
+          "body": [
+            "**1. Rick comes out.** He looks at your door, measures the opening and looks at the frame around it.",
+            "**2. You choose.** You pick your door at our showroom at 6810 W Kellogg Dr.",
+            "**3. We order.** Doors are custom-built, so there is a wait. Plan on a couple of weeks before the crew can install.",
+            "**4. The crew installs.** We set the new door in the frame and tell you what we're doing as we go.",
+            "**5. We clean up.** The old door goes out with us.",
+            "A rotted threshold or frame is common on an old door. We deal with it while we're there, so the new door sits in a sound opening and stays tight."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What It Costs and How to Pay",
+          "body": [
+            "A door's price depends on the type, the size and what the opening needs. A patio door costs more than a side door, and a rotted frame adds work.",
+            "The estimate is free and Rick gives you a number for your house. If you'd like to spread the cost, we offer financing through Synchrony Bank, with no monthly interest if you pay in full within 18 months.",
+            "We take checks, Visa, MasterCard, Discover and American Express."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Door Replacement",
+          "items": [
+            {
+              "q": "Can you replace a door and windows together?",
+              "a": "Yes, and it's the most common way people book it."
+            },
+            {
+              "q": "Will you push me toward the most expensive door?",
+              "a": "No. Rick lays out your options and the price, and you decide."
+            },
+            {
+              "q": "What does the warranty cover?",
+              "a": "Our warranty covers our installation. Ask us for the paperwork on the door you're choosing, so you know who covers what."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Free Door Estimate",
+          "text": "Call Rick and he'll come out, measure your door and give you a price with no pressure to sign that day. Call (316) 448-4418. Se habla español."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Dan Dan The Window Man Wichita KS",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Talk to the owner",
+        "h1": "Contact Dan Dan The Window Man",
+        "sub": "The fastest way to reach Rick Timsah is to call. If you'd rather write, send a message and tell us what you're replacing.",
+        "primaryCta": {
+          "label": "Call (316) 448-4418",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Send a Message",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "New entry door with sidelights on a Wichita home",
+          "brief": "showroom entrance with a glass door and window display, building on the right, parking lot and soft sky on the left, calm background behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Send a Message",
+          "body": [
+            "**Call (316) 448-4418** to talk to us about windows, doors, siding or gutters. Rick will set up a free estimate at your house.",
+            "Or send us a message with your name, your phone number and the work you're thinking about. We'll follow up with you."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to Have Ready",
+          "body": [
+            "You don't need measurements. Rick measures at the estimate. It helps if you can tell us:"
+          ],
+          "list": [
+            "Which windows or doors you want replaced, and roughly how many",
+            "What's wrong with them: fog, drafts, sticking, noise, rot",
+            "Whether a storm or an insurance claim is involved",
+            "Your address, so we know where to come"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Rick was on top of every tiny detail, and was clear on communication.",
+          "name": "Simon K."
+        },
+        {
+          "type": "prose",
+          "heading": "Visit the Showroom",
+          "body": [
+            "Dan Dan The Window Man 6810 W Kellogg Dr Wichita, KS 67209",
+            "You pick your windows and doors at the showroom. We work across the Wichita metro area. Se habla español."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Payment and Financing",
+          "text": "We take checks, Visa, MasterCard, Discover and American Express. We also offer financing through Synchrony Bank, with no monthly interest if you pay in full within 18 months."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "We're Dan Dan The Window Man, an owner-run exterior remodeling company on West Kellogg Drive in Wichita. We replace windows and doors, install vinyl siding and gutters, and handle hail damage claims.",
+    "why": [
+      "You work with the owner, Rick Timsah",
+      "Free estimates on windows, doors and siding",
+      "Warranty on our installation",
+      "Financing through Synchrony Bank"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your customers say it plainly: you're \"straightforward\" with \"zero upselling or pressure,\" the installers \"left the job site clean,\" and the price is fair. You hold a 4.7 on 44 Google reviews.",
+      "Your site shows none of it. On a phone your number sits past the edge of the screen, the top of the homepage splits between windows and hail roofing, and you're never named.",
+      "So we rebuilt it around an owner who answers straight and a crew that leaves the house clean."
+    ],
+    "cardsHeading": "Be the Exterior Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo: what costs you calls, and the fix.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn what you do and where.",
+        "problems": [
+          "On a phone the page is twice as wide as the screen. Your number and half your menu sit past the edge, so callers scroll sideways to find you.",
+          "The top of the page is three headlines: windows, hail roofing claims, and Wichita. Google can't tell whether you're a window company or a roofer.",
+          "\"Here's what our customers are saying...\" has nothing under it and you're never named, so visitors miss the praise that wins you jobs."
+        ],
+        "fixes": [
+          "Your number one tap away, with the whole menu on screen.",
+          "A headline that says exterior remodeling company in Wichita, KS.",
+          "You introduced as the owner, in your own voice, with a real review beside each point."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. That becomes the prescription: how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/window-replacement-wichita-ks/",
+        "title": "Window Replacement",
+        "why": "Windows are about three quarters of your written reviews, yet their page is short.",
+        "problems": [
+          "The Windows page is two paragraphs, a feature list and two PDF buttons: no review, nothing on install day, and little for Google to rank."
+        ],
+        "fixes": [
+          "A full page for window replacement in Wichita, KS.",
+          "Styles, glass, install steps and payment, each beside a real review."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/door-replacement-wichita-ks/",
+        "title": "Door Replacement",
+        "why": "Door jobs come up in six of your reviews, and your Doors page is two short paragraphs.",
+        "problems": [
+          "The Doors page has no reviews and nothing on how a door job goes.",
+          "Doors share a page with siding, so neither one ranks on its own."
+        ],
+        "fixes": [
+          "One full page for door replacement in Wichita, KS, with reviews from your door jobs.",
+          "Siding and gutters stay as service cards for now."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn't think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where interest turns into a call.",
+        "problems": [
+          "Your site says 10 to 5 and your Birdeye profile says 8 to 5, so a customer can't tell when to call.",
+          "Your contact page promises a reply in 24 to 48 hours, and your siding page says you return calls on weekends."
+        ],
+        "fixes": [
+          "Both numbers one tap, each labeled.",
+          "One set of hours and promises, once you confirm them."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great exterior company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Phone number dials correctly",
+        "status": "Looks good"
+      },
+      {
+        "label": "Whole menu fits a phone screen",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Looks good"
+      },
+      {
+        "label": "Reviews shown where customers decide",
+        "status": "Needs work"
+      },
+      {
+        "label": "No leftover template pages",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already make the case. Book a strategy call with Fluid Frame, and we'll walk through this demo with you and confirm every service you offer."
+    }
+  },
+  "onboardingQuestions": [
+    "How does Rick Timsah want to be introduced on the site (owner, general manager), and who is the \"Dan\" in the company name? No person named Dan is confirmed, so the site never mentions one.",
+    "Real business hours: the current site says Monday to Friday, 10:00 AM to 5:00 PM and Birdeye says 8:00 AM to 5:00 PM. Hours are left off the demo until confirmed.",
+    "Which email address should customers use? The current site shows contact@ddtrm.com. It is not in our verified facts, so the demo shows no email.",
+    "What does the warranty cover and for how long? The old site says an exclusive lifetime warranty and a 3-year glass breakage warranty; Rick's reply to one review says his warranty covers the installation. The demo says only that the warranty covers the installation.",
+    "Which window brand does Rick install today? The old site links a ProVia warranty PDF and lists Pro-Via and Quaker windows, but ProVia's dealer locator did not list the company, so no brand is named. Are the windows still custom-built and American-made?",
+    "Licenses and certifications to verify, with numbers: Kansas lead-based renovator (KDHE), Class B building contractor, Kansas licensed roofer, and Owens Corning. Is the company insured? None of it appears on the demo.",
+    "Years in business: the earliest Google review is 2018 and Rick's reply to a 2025 review says over 12 years. What founding year can we use?",
+    "Full list of services to confirm: gutters, basement and picture windows, roofing and hail claims, metal buildings, Smart Lap and concrete siding, aluminum window and door wraps, garage doors, storm doors, window repair.",
+    "Do they want roofing and hail damage claims on the new site, and should the (833) 972-ROOF number show? The demo shows it as the roofing line on the homepage and contact page.",
+    "Service area: which towns beyond Wichita should be named? The old site says only the Wichita metro area. Hillsboro appears in one review.",
+    "Electronic payments: one reviewer asked for them. The old site lists checks, Amex, Discover, MasterCard and Visa. Can they take payment by link or online?",
+    "Do they want to keep the Synchrony Bank financing offer (no monthly interest if paid in full within 18 months) exactly as worded?",
+    "Showroom: is it open to walk-ins during business hours, or by appointment?",
+    "Legal business name, logo file and brand colors. Who controls the dandanthewindowman.com domain (the site is a Hibu build)?"
+  ]
+}

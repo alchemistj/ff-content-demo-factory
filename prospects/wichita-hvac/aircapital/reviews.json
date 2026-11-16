@@ -1,0 +1,286 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "aircapital-hvac-wichita",
+  "place": {
+    "name": "Air Capital Heating and Air",
+    "placeId": "ChIJgTISpJcXliURBzdA3robQik",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Air%20Capital%20Heating%20and%20Air&query_place_id=ChIJgTISpJcXliURBzdA3robQik",
+    "address": "",
+    "phone": "(316) 990-1911",
+    "rating": 5,
+    "totalReviewCount": 27
+  },
+  "pulledAt": "2026-11-09T18:02:45.419Z",
+  "requestedMax": 100,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxRVV6QmxhM3BOVjFsVFVqTk5hMjVrVVVwRVlVRRAB",
+      "reviewer": "Wichita B.",
+      "rating": 5,
+      "text": "Juan was great!  He explained everything that he was doing, what parts needed to be repaired or replaced, and explained all of the options.  He cleaned the unit thoroughly and everything's working great!  I highly recommend Air Capital!",
+      "publishedAt": "2026-10-25T03:24:53.369Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxRVV6QmxhM3BOVjFsVFVqTk5hMjVrVVVwRVlVRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOk1EUzBla3pNV1lTUjNNa25kUUpEYUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tkTFpuRXRObTB0Y2sxRE4weFJha05OYlcxMFRYYxAB",
+      "reviewer": "Crystal M.",
+      "rating": 5,
+      "text": "Great friendly service. Fixed my air conditioner fast and with no hassle.",
+      "publishedAt": "2026-10-05T19:55:04.954Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkTFpuRXRObTB0Y2sxRE4weFJha05OYlcxMFRYYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOkdLZnEtNm0tck1DN0xRakNNbW10TXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25wbmNFZFZjRzFsV2pBM1Z6bGpUMkYyZG1Zd04wRRAB",
+      "reviewer": "J D.",
+      "rating": 5,
+      "text": "We had just moved in and the HVAC gave out on us during a brutal heatwave. One oh one call and Air Capital had a team out fixing our unit and had it running like it was brand new. The crew was incredible professional and I'd call them again should I need further assistance with my HVAC.",
+      "publishedAt": "2026-09-08T21:47:54.925Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wbmNFZFZjRzFsV2pBM1Z6bGpUMkYyZG1Zd04wRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOnpncEdVcG1lWjA3VzljT2F2dmYwN0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25aelowaHFZMlpVVFZWeVYydzRRazVyVlc0dGFrRRAB",
+      "reviewer": "Sophia L.",
+      "rating": 5,
+      "text": "Very quick reliable, and leave you with a clear understanding on what’s going on!<br>After servicing my unit, I was left feeling happy with who I chose to go with! 10/10",
+      "publishedAt": "2026-09-03T17:40:57.299Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aelowaHFZMlpVVFZWeVYydzRRazVyVlc0dGFrRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOnZzZ0hqY2ZUTVVyV2w4Qk5rVW4takE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGWWNqTllja3BXVW5GVGQxa3dTMnhMVFRsTE1WRRAB",
+      "reviewer": "Oscar M.",
+      "rating": 5,
+      "text": "Called and had service done the same day within hours. The technician was very honest and friendly as well as did a great job explaining what was wrong with our A/C. They knew exactly what they were doing. Very thankful and happy we called. I would recommend this company to everyone.",
+      "publishedAt": "2026-08-31T02:10:12.437Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGWWNqTllja3BXVW5GVGQxa3dTMnhMVFRsTE1WRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOlFYcjNYckpWUnFTd1kwS2xLTTlLMVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SNVYwMXVWbTFXY2pWWFZsQnFOVnBxWVhWR1puYxAB",
+      "reviewer": "Sabrina F.",
+      "rating": 5,
+      "text": "They replaced a full hvac system in a very timely manner with very very competitive pricing.",
+      "publishedAt": "2026-08-29T04:47:20.237Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SNVYwMXVWbTFXY2pWWFZsQnFOVnBxWVhWR1puYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOnR5V01uVm1WcjVXVlBqNVpqYXVGZnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GRU5rdDBjakJ1WDNVNVFXaG5lVnBhYkROWVoyYxAB",
+      "reviewer": "Absalon B.",
+      "rating": 5,
+      "text": "We were thoroughly impressed with the exceptional service we received. The team arrived on time, demonstrated a high level of professionalism throughout their visit. Their work was completed efficiently and effectively. We also found their services to be very affordable and they will work around your needs. We highly recommend their company for any heating and air conditioning issues. A top tier company for sure.",
+      "publishedAt": "2026-08-27T02:14:16.468Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GRU5rdDBjakJ1WDNVNVFXaG5lVnBhYkROWVoyYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOmFENkt0cjBuX3U5QWhneVpabDNYZ2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsV1NIYzRkR2cxUmpkVVNVOUxaMkphV2t4R1pYYxAB",
+      "reviewer": "Briton B.",
+      "rating": 5,
+      "text": "The best in the biz! Great customer service, knowledgeable, and affordable. Was able to get us worked in less than 12hrs from contacting them. Fast and friendly service. Will absolutely recommend them to everyone I know.",
+      "publishedAt": "2026-08-21T01:03:06.640Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsV1NIYzRkR2cxUmpkVVNVOUxaMkphV2t4R1pYYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOklWSHc4dGg1RjdUSU9LZ2JaWkxGZXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pJNFYyTnBjMUpQVUVOa1dGOW5VMlpwWldwaVZHYxAB",
+      "reviewer": "Juan C.",
+      "rating": 5,
+      "text": "Good costumer service",
+      "publishedAt": "2026-08-20T17:24:20.022Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pJNFYyTnBjMUpQVUVOa1dGOW5VMlpwWldwaVZHYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOjI4V2Npc1JPUENkWF9nU2ZpZWpiVGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s4Mk1YSjRVbDlZZWxKRWRqRlZibm96TlRScE1rRRAB",
+      "reviewer": "Jayci G.",
+      "rating": 5,
+      "text": "Will recommend this company to everyone. I called Reddi Industries originally and it took them 4 hours to have someone reach out to me just to get on their schedule. When I reached out to Air Capital Heating and Air they showed up within an hour and fixed the issue. They were very informative and reasonable priced!",
+      "publishedAt": "2026-08-19T17:24:01.660Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s4Mk1YSjRVbDlZZWxKRWRqRlZibm96TlRScE1rRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOk82MXJ4Ul9YelJEdjFVbnozNTRpMkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGWlFXbHFialJOYkROVE1qWkNkak13U2xkYVIxRRAB",
+      "reviewer": "Hannah M.",
+      "rating": 5,
+      "text": "My AC motor stopped working and they were able to make it out within an hour of calling and get my unit fixed. The communication, service and price were great! 10/10 recommend.",
+      "publishedAt": "2026-08-18T15:46:20.286Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGWlFXbHFialJOYkROVE1qWkNkak13U2xkYVIxRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOkFZQWlqbjRNbDNTMjZCdjMwSldaR1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pJeE1UTm5TRXBzY0MxUmVWbFdRbHBwUmxGTlFtYxAB",
+      "reviewer": "Aaron S.",
+      "rating": 5,
+      "text": "Amazing communication through the whole process. Quick to respond, great prices and great service. Customer for life!",
+      "publishedAt": "2026-08-13T22:54:42.343Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pJeE1UTm5TRXBzY0MxUmVWbFdRbHBwUmxGTlFtYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOjIxMTNnSEpscC1ReVlWQlppRlFNQmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCU09VNDJlRVl5ZVRONmJ6QmxjVloxTWxJemMzYxAB",
+      "reviewer": "Elizabeth H.",
+      "rating": 5,
+      "text": "They came out quickly and did a tune up on our AC. They were very professional and had great communication about what they could do and what they would recommend! Highly recommend them.",
+      "publishedAt": "2026-08-13T15:48:04.516Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCU09VNDJlRVl5ZVRONmJ6QmxjVloxTWxJemMzYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOlBSOU42eEYyeTN6bzBlcVZ1MlIzc3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25ObVQyaDFNSEZMYURCTVVYSjNXVWg2V1dNMFNIYxAB",
+      "reviewer": "Tammy S.",
+      "rating": 5,
+      "text": "106 degrees today and they were out quickly to fix our AC.  Great service!  Kind and honest! Highly recommend Air Capital Heating and cooling",
+      "publishedAt": "2026-08-11T23:16:19.590Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ObVQyaDFNSEZMYURCTVVYSjNXVWg2V1dNMFNIYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOnNmT2h1MHFLaDBMUXJ3WUh6WWM0SHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT210b2QwTjZPWEpEWmpkdVdXNVhhSEpEWkVwYU0xRRAB",
+      "reviewer": "Daniel Q.",
+      "rating": 5,
+      "text": "Really happy with the service. They were friendly, showed up when they said they would, and got everything taken care of without any hassle. You can tell they know what they’re doing and actually care about doing a good job. Definitely recommend them if you need any heating or AC work 👌🏻",
+      "publishedAt": "2026-08-11T22:59:17.333Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT210b2QwTjZPWEpEWmpkdVdXNVhhSEpEWkVwYU0xRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOmtod0N6OXJDZjduWW5XaHJDZEpaM1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCdFFUWTVZekowZG1WTllUaERNbVJ3TFZSTFpWRRAB",
+      "reviewer": "Maria F.",
+      "rating": 5,
+      "text": "My system was giving me issues and the hottest days of the month. And  Juan W/ air capital showed up and resolved issue within a couple hours at a very reasonable price.<br>Highly recommended",
+      "publishedAt": "2026-08-11T22:07:40.485Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCdFFUWTVZekowZG1WTllUaERNbVJ3TFZSTFpWRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOlBtQTY5YzJ0dmVNYThDMmRwLVRLZVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tNM1dHdGFkVTl4VXpaQk1IWnllVEk1Yms5TVJsRRAB",
+      "reviewer": "Sandra L.",
+      "rating": 5,
+      "text": "Grate service, reasonably priced and friendly staff !!!",
+      "publishedAt": "2026-08-10T09:23:05.401Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tNM1dHdGFkVTl4VXpaQk1IWnllVEk1Yms5TVJsRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOkM3WGtadU9xUzZBMHZyeTI5bk9MRlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCdWFHZDROR2RQVGpGUWJHeGpZMmR6ZWt4d1dYYxAB",
+      "reviewer": "Carlos F.",
+      "rating": 5,
+      "text": "My AC died on the hottest day of the Kansas summer, and Air Capital Heating and Air showed up like the cavalry.<br><br>Let me set the scene: it’s 104°F, my house feels like the inside of a toaster oven, and I’m googling “how long can a person survive without AC” like it’s a legitimate medical question. I call Air Capital expecting the usual “we can fit you in next Tuesday” runaround.<br><br>Instead, they showed up SAME DAY. The tech was friendly, explained exactly what was wrong (RIP capacitor, you served us well), didn’t try to upsell me on a whole new unit like some places do, and had cold air blasting through my vents faster than I could finish my iced coffee.<br><br>Fair pricing. No games. No “let me talk to my manager” nonsense. Just honest work from people who clearly know HVAC inside and out.<br><br>Wichita summers are no joke, and neither is Wichita winter — so having a heating and air company you actually trust is basically a survival requirement out here. Air Capital just earned a customer for life.<br><br>If you’re on the fence: stop scrolling, save their number, thank me later. 🥵➡️🥶",
+      "publishedAt": "2026-08-10T03:51:53.614Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCdWFHZDROR2RQVGpGUWJHeGpZMmR6ZWt4d1dYYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOjBuaGd4NGdPTjFQbGxjY2dzekxwWXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tZeWRsZGpNRUpQVWxoR1VYQnllVnBJUnpRM2VtYxAB",
+      "reviewer": "Valeria Q.",
+      "rating": 5,
+      "text": "Excellent service and attention.",
+      "publishedAt": "2026-08-10T03:25:04.204Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tZeWRsZGpNRUpQVWxoR1VYQnllVnBJUnpRM2VtYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOkYydldjMEJPUlhGUXByeVpIRzQ3emc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCM2MwZFlVVEl6WWw5WlRsODNMVlpXZHkxeWJXYxAB",
+      "reviewer": "Yeni T.",
+      "rating": 5,
+      "text": "I highly recommend Air Capital Heating & Air. They provided excellent service, were professional and friendly, and their pricing was affordable. I truly appreciate their great work and would definitely use them again!",
+      "publishedAt": "2026-08-10T02:07:51.641Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCM2MwZFlVVEl6WWw5WlRsODNMVlpXZHkxeWJXYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOjB3c0dYUTIzYl9ZTl83LVZWdy1ybWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2twbVFYaHJibGRXT0hwbFVFbHBYMk5UWlRCUGJGRRAB",
+      "reviewer": "ElpiterSV",
+      "rating": 5,
+      "text": "Excellent work—very reliable and very professional.",
+      "publishedAt": "2026-08-10T01:49:39.405Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twbVFYaHJibGRXT0hwbFVFbHBYMk5UWlRCUGJGRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOkpmQXhrbldWOHplUElpX2NTZTBPbFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25aTU9IRnRTVE15Y3pSdWR6TjVZbFZXYTBSS1pXYxAB",
+      "reviewer": "Victor V.",
+      "rating": 5,
+      "text": "Outstanding service throughout the whole process from the first call, appointment, and installation.<br>Installers are very professional and friendly.<br>I highly recommend using Air Capital heating and air!",
+      "publishedAt": "2026-08-10T01:21:47.472Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aTU9IRnRTVE15Y3pSdWR6TjVZbFZXYTBSS1pXYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOnZMOHFtSTMyczRudzN5YlVWa0RKZWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tJelNGaEpWSFF6WkhacUxVWjZNVmg2Wms1SGNVRRAB",
+      "reviewer": "Jose S.",
+      "rating": 5,
+      "text": "Very professional workers and excellent to work around!!",
+      "publishedAt": "2026-08-10T00:25:25.827Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tJelNGaEpWSFF6WkhacUxVWjZNVmg2Wms1SGNVRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOkIzSFhJVHQzZHZqLUZ6MVh6Zk5HcUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kUU9Ib3Ribk16VVhwQmNYcGplV3BmWXprMFMzYxAB",
+      "reviewer": "Dulce G.",
+      "rating": 5,
+      "text": "Great costumer service, showed up to my house same day I called. They got me up and running that same day! Would recommend to everyone!",
+      "publishedAt": "2026-08-09T00:36:29.850Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kUU9Ib3Ribk16VVhwQmNYcGplV3BmWXprMFMzYxAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOmdQOHotbnMzUXpBcXpjeWpfYzk0S3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25JeGJIWlZTMWhSTmxaeVdsTnNNRmh5YlU1R1RsRRAB",
+      "reviewer": "Mai D.",
+      "rating": 5,
+      "text": "This is an amazing company! They’re new to market but years of experience between the owners. Very fast, responsive and very fair prices!",
+      "publishedAt": "2026-08-08T17:04:52.177Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25JeGJIWlZTMWhSTmxaeVdsTnNNRmh5YlU1R1RsRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOnIxbHZVS1hRNlZyWlNsMFhybU5GTlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21vM1ZERkZhMGhQWkdSc2MwZ3djbnBrZHpGc2JFRRAB",
+      "reviewer": "juvenal F.",
+      "rating": 5,
+      "text": "Competitive pricing w professional results.<br>Very very attentive  W/ knowledgeable techs",
+      "publishedAt": "2026-08-01T04:57:49.892Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21vM1ZERkZhMGhQWkdSc2MwZ3djbnBrZHpGc2JFRRAB!2m1!1s0x0:0x29421bbade403707!3m1!1s2@1:CAIQACodChtycF9oOmo3VDFFa0hPZGRsc0gwcnpkdzFsbEE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WM1RqQldXSEJ5WldZelprOUhibGhOZDB0YVFXYxAB",
+      "reviewer": "Javier C.",
+      "rating": 5,
+      "publishedAt": "2026-08-08T18:34:48.323Z"
+    }
+  ]
+}
