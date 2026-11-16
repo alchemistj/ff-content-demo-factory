@@ -127,7 +127,7 @@ We'd go through these on the onboarding call. Each is a place where two things w
 1.  **Brand.** Your FAQ says you install Comfortmaker equipment, and we couldn't find you in Comfortmaker's dealer finder. One review says you replaced a system with a Rheem. Which brands do you install?
 2.  **Years.** Your About text says the company was established in 2022 and also says it's backed by more than 10 years of experience. What do you want said?
 3.  **Address.** Your site shows "Lincoln, NE and surrounding areas" and no street address. A BBB search result lists "Roettger's Heating And Cooling, LLC" in Roca, NE. Where are you based?
-4.  Hours. Your site lists no hours, and your FAQ says you offer emergency service. When do you answer the phone?
+4.  **Hours.** Your site lists no hours, and your FAQ says you offer emergency service. When do you answer the phone?
 
 ### Want a website like this for your business?
 
@@ -151,6 +151,7 @@ Buttons: Call (402) 314-3612 / Contact us
   - Speak Directly With Matt
   - Honest Recommendations
   - Maintenance Memberships
+  - Customers Describe the AC Running Again Within Hours
 
 "The phone was answered right away, and Matt was available to take care of our needs quickly and efficiently." — Dave M.
 
@@ -219,7 +220,7 @@ Heat out, AC out, or a system you want checked before the season: call (402) 314
 
 # AC Repair in Lincoln, NE — Roettger's Heating and Cooling
 
-When your air conditioner stops cooling, call (402) 314-3612 and talk to Matt. From warm air to unusual noises, we troubleshoot and fix cooling problems quickly, and we explain what we find.
+When your air conditioner stops cooling, call (402) 314-3612 and talk to Matt. From warm air to unusual noises, we troubleshoot and fix cooling problems, and customers describe being back up and running within hours. We explain what we find.
 
 Buttons: Call (402) 314-3612 / Contact us
 
@@ -232,9 +233,9 @@ Buttons: Call (402) 314-3612 / Contact us
 
 "Matt came out within an hour of me calling, diagnosed the problem, and fixed it within 20 minutes!" — Ben U.
 
-### Back Up and Running the Same Day
+### When the AC Quits
 
-When the AC quits, waiting a week isn't an option. Customers describe their air conditioner running again within hours of calling.
+Waiting a week isn't an option. Here is what one customer saw.
 
 "I got home from work and my air conditioner wasn't working I made one phone call and he said he'd be on his way. He got me up and running in about an hour." — Laurie F.
 
@@ -455,11 +456,11 @@ Call (402) 314-3612, or send us a message.
 **Inventory items, used or left out**
 
   - Services (7): all seven used. AC Repair and Air Conditioner Replacement get their own pages. Heating System Repair, Furnace Installation & Replacement, Heating Maintenance & Tune-Ups, AC Maintenance & Tune-Ups and Maintenance Memberships are on Home (Heating, Cooling, Maintenance and Memberships sections).
-  - Differentiators (6): locally owned (Home, trust bars); speak directly with Matt (Home, both service pages, Contact); honest recommendations and free estimates (Replacement, with honest recommendations also on Home); treat as our own (Home hero); "more than 10 years" left out because it conflicts with 2022 and years are disputed. The "as if it were my own" line on About is covered by the "as if it were our own" wording on Home.
+  - Differentiators (6): locally owned (Home strip); speak directly with Matt (Home, both service pages, Contact); honest recommendations and free estimates (Replacement, with honest recommendations also on Home); treat as our own (Home hero); "more than 10 years" left out because it conflicts with 2022 and years are disputed. The "as if it were my own" line on About is covered by the "as if it were our own" wording on Home.
   - Unusual offers (3): Wisetack financing (Replacement page only, so financing is said once on the demo); maintenance membership (Home, no price because the site gives none); Comfortmaker, locally supplied (Replacement page).
   - Review themes (7): speed (AC Repair); heads-up before arrival (Home, Contact, AC Repair); honest, no pressure (Replacement, Home); explains the work (Home, AC Repair); named staff and the owner answers (Home, Contact; staff not named in page copy); clean work site (Replacement); fair price (AC Repair; the Replacement page leaves price to the estimate).
   - Left out on purpose: Dawn S. (thermostat batteries and filters), Sandy (mini-split cleaning) and Melissa E. (business location). Mini-split work is not named on the site, so I did not add it as a service. Also left out: Glenn F., Janel C., William T., Dianna K., Lori W., Trevor S., Slavik S., Ryan B., Patrick K. and others whose stories repeat a theme already carried by a used quote. Not used: the FAQ "signs my system needs attention" list (a generic signs list), the "maintenance lowers energy bills" FAQ answer (no figure, claim already carried by the membership benefits), and the family line beyond Jessica and the two boys. Review stories that name a time or price are used only where the copy around them does not repeat the number.
-  - Financing, free estimate and quote lines appear once each on the business pages (Replacement). The trust bar on the AC Repair page says "Honest Pricing", which is the site's phrase.
+  - Financing, free estimate and quote lines appear once each on the business pages (Replacement).
   - No SRA proof block was supplied in the brief or the working files I read, so none is on the strategy page.
 
 **Facts to verify with Matt**
@@ -475,4 +476,4 @@ Call (402) 314-3612, or send us a message.
 9.  Pre-sale inspection: written from one review (Ethan V.), supported by the site's "system inspections, tune-ups, and cleaning". Confirm it is a regular offer.
 10. Remove the stray /cart page and the "FAQs 2" page name. These are on the strategy page as problems.
 
-**Cut after checker review:** "Many Repairs Are One Part", "Fixed Before a Closing", "A Diagnosis You Can Follow", "Installed Without Rushing" and "A Tidy Work Site" stated review-derived process as company policy, so they are gone with their quotes (Jane B., Charli H., Marcus B., Manuel R., River K.). Remaining review-derived lines say what customers report. **Nov 16 correction:** AC Repair and Replacement expanded past 700 words without quotes using hedged general trade knowledge only (new sections carry no quotes and no business claims).
+**Cut after checker review:** "Many Repairs Are One Part", "Fixed Before a Closing", "A Diagnosis You Can Follow", "Installed Without Rushing" and "A Tidy Work Site" stated review-derived process as company policy, so they are gone with their quotes (Jane B., Charli H., Marcus B., Manuel R., River K.). Remaining review-derived lines say what customers report. Nov 16 backport (judgment pass): one strip, on Home only, 5 items (Locally Owned in Lincoln, Speak Directly With Matt, Honest Recommendations, Maintenance Memberships, AC running again within hours per customers). Service-page strips removed. AC Repair states speed once, in the hero; the section below only carries the Laurie F. quote. No FAQ blocks added: the pages already answer what the facts allow. No review counts or ratings. Comfortmaker stays only as the site states it and is on the confirm list. **Nov 16 correction:** AC Repair and Replacement expanded past 700 words without quotes using hedged general trade knowledge only (new sections carry no quotes and no business claims).

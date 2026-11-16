@@ -3,15 +3,23 @@
 
 ## Strategy page
 
+Badge: Free demo site built for Rainforcing Roofing and Exteriors
+
+We already did the work. Here's a Rainforcing Roofing and Exteriors website that tells Peoria who you are and gets the phone ringing.
+
+Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
+
+We built Rainforcing the first five pages of that kind of website. More on that below.
+
 **Why we built this site**
 
-Your reviews keep saying the same two things: Miguel stays with them through the whole job, and your team handles the insurance company. Your homepage barely says either. Reviewers name Miguel again and again.
+Your reviews keep saying the same two things: Miguel stays with them through the whole job, and your team handles the insurance company. Your homepage barely says either.
 
 > They stayed with me closely throughout entire process!!! Especially Miguel!!!
 >
 > — Kimberly J.
 
-So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and gives roof replacement and insurance storm restoration a page each. Contact and this page make five. Your other pages we left alone.
+So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and gives roof replacement and insurance storm restoration a page each. Your other pages we left alone.
 
 **The demo, page by page**
 
@@ -20,7 +28,7 @@ So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and giv
 *Why it matters:* Google reads it to learn who you are, and most people see it first.
 
 **Current site problem**
-- Nobody on your team is named in your own words, though your reviews name Miguel again and again.
+- Nobody on your team is named in your own words, though your reviews name him.
 - Insurance help, which your reviews praise, gets one clause. Hail victims can't tell you handle claims.
 - "Rainforcig" and "we've you taken care of" are typos, and "roofing company" repeats in most paragraphs.
 
@@ -85,7 +93,6 @@ Every page set up behind the scenes so Google and AI tools like ChatGPT know exa
 
 **What a full build includes**
 
-*This demo is the first five pages of a full build.*
 
 Gets you found
 - Every service on your website and your Google profile, telling the same story
@@ -95,20 +102,19 @@ Gets you found
 
 Earns their trust
 - Reviews on every page, matched to the service
-- About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
-- A strip at the top of every page with your rating and credentials, so a customer sees why to pick you right away
+- About and owner pages that show who does the work
+- A trust bar that shows what makes you different
 
 Turns visitors into calls
-- Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range.
-- A call-and-book bar that stays on screen on phones, where most of your visitors are. That's why the 91 matters: Google ranks on mobile speed because a slow page lets down the people on phones
+- Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
+- A call-and-book bar that stays on screen on phones
 - A contact form that blocks spam
 
 Keeps working after launch
 - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
 - Your site watched around the clock for downtime.
 - Google indexing and your Google visibility checked every day.
-- Menus, contact links and forms tested in a real browser twice a day.
-- New team members, booking systems and new services, updated for you
+- Page links, buttons and contact forms tested in a real browser twice a day.
 - Updated when Google and AI tools change how they read websites
 - You never have to know what to ask for
 
@@ -123,6 +129,8 @@ On a short onboarding call, we'd confirm four things.
 
 **Want a website like this for your business?**
 
+Book a call and we'll settle those four with you and walk you through this demo.
+
 Book a no-obligation call, or text us: (417) 373-2773
 
 ## Home — Roofing Company in Peoria, IL — Rainforcing Roofing and Exteriors
@@ -135,7 +143,7 @@ You get a straight price before work starts. We inspect your roof with a drone, 
 
 **Buttons:** Call (309) 989-3279 | Get a Free Estimate
 
-*Strip:* GAF Certified | Licensed, Bonded and Insured | Free Drone Roof Inspection | Peoria and Central Illinois
+*Strip:* GAF Certified | Licensed, Bonded and Insured | Free Drone Roof Inspection | Customers describe same-day service | Peoria and Central Illinois
 
 > Miguel was extremely knowledgeable, explained everything in detail, was always on time, and was very personable. … This company was honest, efficient, reasonably priced, and used quality materials for our roof.
 >
@@ -191,7 +199,7 @@ Every job comes with our No-Mess Guarantee. Before work starts we cover landscap
 
 ## Who Stands Behind the Work
 
-GAF is a large roofing shingle manufacturer, and it runs a certification program for the roofers who install its products. We're a GAF Certified roofing company, and we're BBB accredited. The Better Business Bureau, which rates local businesses, gives Rainforcing an A+ rating.
+GAF is a large roofing shingle manufacturer, and it runs a certification program for the roofers who install its products. We're a GAF Certified roofing company. The Better Business Bureau, which rates local businesses, gives Rainforcing an A+ rating.
 
 We're licensed, bonded and insured. Insurance covers accidents on a job, and a bond is a financial guarantee that usually protects customers if a contractor doesn't meet its obligations.
 
@@ -215,6 +223,8 @@ Monday to Saturday, 7 AM to 8 PM, and Sunday, 8 AM to 3 PM.
 **Do you do small jobs?**
 Yes. We repair leaks and storm damage as well as replace whole roofs.
 
+**How fast can you get to a leak?** Customers describe same-day service. Call and tell us where you see water, and we'll tell you what we can do and when.
+
 ## Tell Us What's Going On With Your Roof
 
 Call (309) 989-3279 and we'll set up a time to look at it.
@@ -227,11 +237,10 @@ Insurance storm restoration, Peoria and Central Illinois
 
 # Insurance Storm Restoration in Peoria, IL — Rainforcing Roofing and Exteriors
 
-After hail or wind, we inspect the roof, document the damage and work through the claim steps with you. Call (309) 989-3279 for a free inspection.
+After hail or wind, we inspect the roof, document the damage and work through the claim steps with you. Customers have also described a quick emergency repair when water was coming in. Call (309) 989-3279 for a free inspection.
 
 **Buttons:** Call (309) 989-3279 | Request a Free Inspection
 
-*Strip:* Free Drone Inspection | Photo-Documented, Itemized Estimates | Peoria and Central Illinois
 
 > Made the process very easy , fought insurance so I didn't have too. Excellent work
 >
@@ -309,11 +318,10 @@ Roof replacement, Peoria and Central Illinois
 
 # Roof Replacement in Peoria, IL — Rainforcing Roofing and Exteriors
 
-We look at the roof and tell you whether it needs replacing. Call (309) 989-3279 and we'll come look.
+We look at the roof and tell you whether it needs replacing. Customers describe crews that finish quickly, one roof in a single day. Call (309) 989-3279 and we'll come look.
 
 **Buttons:** Call (309) 989-3279 | Request an Estimate
 
-*Strip:* 10-Year Workmanship Warranty | Free 5-Year Maintenance Plan on Qualifying Projects | Peoria and Central Illinois
 
 > Rainforcing Roofing was amazing to work with and made the whole process super easy! They delivered on everything they said they would, and my roof looks great!
 >
@@ -407,7 +415,6 @@ Tell us what's going on with your roof, siding or gutters. If it's urgent, pleas
 
 **Buttons:** Call (309) 989-3279 | Email Us
 
-*Strip:* Free Estimates | Open Seven Days | Peoria and Central Illinois
 
 > They did an amazing job. The communication was on point.
 >
@@ -442,7 +449,7 @@ We usually set a time to come look at the roof. Miguel Rivera, our owner, is oft
 ## Notes (not page copy)
 
 **Word counts** (by script; "without quotes" excludes blockquotes, buttons, trust bar and caption lines; "with" is everything on the page)
-- Strategy page: 983 without quotes, 996 with.
+- Strategy page: about 1,000 without quotes (badge, headline, subheading and full-build list counted), recount before sending.
 - Home — Roofing Company in P: 919 without quotes, 1090 with.
 - Insurance Storm Restoration: 949 without quotes, 1123 with.
 - Roof Replacement — Roof Rep: 963 without quotes, 1106 with.
@@ -450,13 +457,13 @@ We usually set a time to come look at the roof. Miguel Rivera, our owner, is oft
 - Strategy is at or under 1,000 words including the full-build list; home, both service pages and contact clear their minimums without quotes.
 
 **Credentials and sources**
-- BBB: the A+ rating is CONFIRMED on bbb.org search results ("BBB Rating: A+") and is stated once on home. "BBB accredited" is their own claim (one town page, /roofing-in-west-peoria-il/), stated once on home as theirs; the bbb.org listing does not confirm it, so it is also the fourth "What we'd confirm" question.
+- BBB: the A+ rating is CONFIRMED on bbb.org search results ("BBB Rating: A+") and is stated once on home. "BBB accredited" is their own claim (one town page, /roofing-in-west-peoria-il/); the bbb.org listing does not confirm it, so it was removed from the home copy and is the fourth "What we'd confirm" question.
 - GAF Certified: the business's own claim (/, /about-us/, /roof-replacement/). NOT confirmed: the GAF contractor locator returned 403. Used only as "GAF Certified", defined once on home as a manufacturer program. "GAF Certified Plus" (/miguel-rivera/, /roof-replacement/, /gutters/) is left out; the strategy page asks which is current. **Check the locator before this goes out.**
 - Licensed, bonded and insured: the business's own claim (/roofing-in-peoria/storm-damage-roof-repair/, /roofing-in-peoria/residential-roofing/, /roofing-in-peoria/siding/, /roofing-in-peoria/emergency-roof-repair/). No license number or insurer on the site; not confirmed. Stated as their claim on home only, with plain definitions of insurance and bond (hedged general knowledge).
 - 10-year workmanship warranty: their claim (/roof-replacement/, /financing/, /gutters/). Terms are not on the site. Used on the roof replacement page only.
 - Free 5-year maintenance plan, "$3,000 value", projects over $25,000, "for a limited time": their claim with its own terms (/roof-replacement/, /roofing-in-peoria/residential-roofing/). The value is unverified. Replacement page only; worded "which we value at $3,000".
 - GoodLeap financing, "$0 down", "no prepayment penalties", deductible coverage: their claim (/financing/, /insurance-claims/). Stated once on the roof replacement page; the insurance page does not repeat it. "Most decisions take less than two minutes" is left out as an absolute.
-- Free drone inspection, "free, no-obligation": their claim (/roofing-in-peoria/storm-damage-roof-repair/, /insurance-claims/). Said in full on home (FAQ); the insurance page hero says "free inspection".
+- Free drone inspection, "free, no-obligation": their claim (/roofing-in-peoria/storm-damage-roof-repair/, /insurance-claims/). Said in full on home (FAQ); the insurance page hero says "free inspection". Backport pass Nov 16: one strip only, on home (5 items). Strips removed from both service pages and contact. Speed claim at one-review strength: home strip plus one home FAQ, replacement hero, insurance hero. No ratings or review counts. Strategy page has the badge, approved headline and subheading, and the "first five pages" line; full-build list follows FULL_BUILD_LINES; a CTA sentence follows the confirm list.
 - Veteran incentives and priority scheduling: their claim (/about-us/). Size not stated, so the copy says "ask us what applies."
 - Miguel Rivera as owner: confirmed on his own page (/miguel-rivera/, "founder and owner-operator") and by reviews that say "the owners". Used by first name on home and contact.
 

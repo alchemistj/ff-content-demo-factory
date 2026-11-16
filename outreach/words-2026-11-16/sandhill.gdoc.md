@@ -10,6 +10,8 @@ Draft for review. Sources: the business's own site, Google reviews, facts.md. Qu
 
 **Subhead:** Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
 
+We built Sandhill Roofing the first five pages of that kind of website. More on that below.
+
 **Buttons:** View the Demo Site / See What Changed
 
 ### Why we built this site
@@ -79,16 +81,18 @@ So we led with what your reviews prove: a roof looked at, a straight answer, and
 
 **Earns their trust:** Reviews on every page, matched to the service. About and owner pages that show who does the work, which build authority with Google and AI and trust with customers.
 
-**Turns visitors into calls:** About 80% of visitors are on a phone, which is why we build for a mobile speed score of 91 or higher. A contact form that blocks spam.
+**Turns visitors into calls:**
+
+  - Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
+  - A call-and-book bar that stays on screen on phones
+  - A contact form that blocks spam
 
 **Keeps working after launch:**
 
   - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
   - Your site watched around the clock for downtime.
   - Google indexing and your Google visibility checked every day.
-  - Menus, contact links and forms tested in a real browser twice a day.
-
-The demo covers the first five pages.
+  - Page links, buttons and contact forms tested in a real browser twice a day.
 
 ### What we'd confirm with you
 
@@ -104,7 +108,7 @@ Book a time to talk. Text us: (417) 373-2773
 
 **Hero:** **Headline:** Roofing Contractor in Lincoln, NE — Sandhill Roofing **Subhead:** Roofing, storm damage repair, siding, gutters, windows and doors. We'll tell you what your roof needs, and what it doesn't. **Buttons:** Call (402) 890-6460 / Get a Free Quote
 
-**Strip:** Family-owned in Lincoln · Lifetime workmanship warranty on roofing · Roofing, siding, gutters, windows and doors · Serving Eastern Nebraska
+**Strip:** Family-owned in Lincoln · Roofing, siding, gutters, windows and doors · Homes and businesses · Customers describe same-night replies · Serving Eastern Nebraska
 
 "Dusty is very knowledgeable and explained everything that needed to be done with my roof. He didn't make me feel pressured or try to sell me on things that I didn't need." — mike B.
 
@@ -176,9 +180,8 @@ Call us at [(402) 890-6460](tel:+14028906460) and tell us what you're seeing. We
 
 ## Roof Replacement — Roof Replacement in Lincoln, NE — Sandhill Roofing
 
-**Hero:** **Headline:** Roof Replacement in Lincoln, NE — Sandhill Roofing **Subhead:** We look at your roof first and tell you whether it needs replacing. If it does, you choose the material and our crew does the work. **Buttons:** Call (402) 890-6460 / Get a Free Quote
+**Hero:** **Headline:** Roof Replacement in Lincoln, NE — Sandhill Roofing **Subhead:** We look at your roof first and tell you whether it needs replacing. If it does, you choose the material and our crew does the work. Customers describe quick visits and a fast install. **Buttons:** Call (402) 890-6460 / Get a Free Quote
 
-**Strip:** Free roof replacement estimate · Asphalt, steel, cedar shake and more · Homes and businesses · Lincoln and Eastern Nebraska
 
 "He came out quickly, gave me a clear and detailed explanation of the condition of my roof, and answered all of my questions without trying to push unnecessary work." — Alyssa T.
 
@@ -254,9 +257,8 @@ Call [(402) 890-6460](tel:+14028906460) and we'll set a time to look at your roo
 
 ## Storm Damage — Storm Damage Repair in Lincoln, NE — Sandhill Roofing
 
-**Hero:** **Headline:** Storm Damage Repair in Lincoln, NE — Sandhill Roofing **Subhead:** Wind and heavy rain can damage your roof, siding, windows, doors and gutters at once. We repair all of it, from the first site visit to the final walkthrough. **Buttons:** Call (402) 890-6460 / Get a Free Quote
+**Hero:** **Headline:** Storm Damage Repair in Lincoln, NE — Sandhill Roofing **Subhead:** Wind and heavy rain can damage your roof, siding, windows, doors and gutters at once. We repair all of it, from the first site visit to the final walkthrough. Customers describe repairs done quickly. **Buttons:** Call (402) 890-6460 / Get a Free Quote
 
-**Strip:** Roof, siding, window, door and gutter repair · Emergency tarping · Water damage restoration · Lincoln and Eastern Nebraska
 
 "After storm damage, he took care of everything and it was pain free!" — Jana V.
 
@@ -360,4 +362,4 @@ If you'd rather talk, call [(402) 890-6460](tel:+14028906460). Our owner, Dusty 
 
 ## Notes (not page copy)
 
-(Notes section unchanged from the doc: word counts, general advice, credentials, inventory, claims needing the owner's word, facts to verify, rules applied. Only edit: "trust bar only" now reads "strip only".)
+(Notes in the Google Doc updated Nov 16 backport: one home strip, service strips removed, lifetime warranty out of strip, no FAQs added.)

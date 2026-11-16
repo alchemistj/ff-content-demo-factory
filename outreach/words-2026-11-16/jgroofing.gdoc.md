@@ -95,7 +95,7 @@ Today your site gives storm damage and insurance one sentence. Roof replacement 
 
 **What a full build includes**
 
-*This demo is the first five pages of a full build.*
+**
 
 Gets you found
 
@@ -112,7 +112,7 @@ Earns their trust
 
 Turns visitors into calls
 
-- Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. About 80% of visitors are on a phone, and a slow page loses them.  
+- Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.  
 - A call-and-book bar that stays on screen on phones  
 - A contact form that blocks spam
 
@@ -122,13 +122,13 @@ Keeps working after launch
 - Your site watched around the clock for downtime.  
 - Google indexing and your Google visibility checked every day.  
 - Page links, buttons and contact forms tested in a real browser twice a day.  
-- New team members, booking systems and new services, updated for you  
+-   
 - Updated when Google and AI tools change how they read websites  
 - You never have to know what to ask for
 
 **What we'd confirm with you**
 
-Three things to sort out together:
+Three things to sort out together. Book a call and we'll go through them with you.
 
 - Your site prints (309) 567-8236, but the "Call or Text" button dials (309) 316-3652. Which one rings you?  
 - Your site says you're certified with GAF. We couldn't confirm it on GAF's own directory, so let's look at it together.  
@@ -216,13 +216,15 @@ A business roof gets the same estimate, the same schedule and the same clean-up 
 
 We are licensed, insured and bonded, and BBB Accredited with an A+ rating. We've been accredited since 2020, and BBB says accreditation shows a business operates honestly and with integrity.
 
-We want you satisfied, and we stay until the job is done right.
+
 
 ## Questions
 
 **Do you charge for an estimate?** No. Our estimates are free for all our roofing services.
 
 **Where do you work?** Peoria and the Central Illinois area. Call to confirm we cover your town.
+
+**How long does a roof replacement take?** Customers often describe a job of one to two days, though a bigger roof, bad weather or rotted wood can add time.
 
 **Do you do small jobs?** Yes. We repair leaks and missing shingles as well as replacing whole roofs.
 

@@ -110,13 +110,13 @@ Your site says it once, in the drain paragraph, then gives all eight services th
 **Earns their trust**
 
 - Reviews on every page, matched to the service
-- About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
-- A strip at the top of every page with your rating and credentials, so a customer sees why to pick you right away
+- About and owner pages that show who does the work
+- A trust bar that shows what makes you different
 
 **Turns visitors into calls**
 
-- Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range
-- A call-and-book bar that stays on screen on phones, where most of your visitors are. That's why the 91 matters: Google ranks on mobile speed because a slow page lets down the people on phones
+- Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
+- A call-and-book bar that stays on screen on phones
 - A contact form that blocks spam
 
 **Keeps working after launch**
@@ -124,8 +124,7 @@ Your site says it once, in the drain paragraph, then gives all eight services th
 - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
 - Your site watched around the clock for downtime.
 - Google indexing and your Google visibility checked every day.
-- Menus, contact links and forms tested in a real browser twice a day.
-- New team members, booking systems and new services, updated for you
+- Page links, buttons and contact forms tested in a real browser twice a day.
 - Updated when Google and AI tools change how they read websites
 - You never have to know what to ask for
 
@@ -150,7 +149,7 @@ Wickey Plumbing is a plumbing company serving Fort Wayne and Northeast Indiana. 
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 
-*Trust line:* Christian-Owned | Veteran-Owned | Family-Run | 4.9 on Google, 88 Reviews
+*Trust line:* Christian-Owned | Veteran-Owned | Family-Run | Homes and businesses | Customers describe same-day visits
 
 ### Who we are
 
@@ -202,7 +201,7 @@ We serve homes and businesses in Fort Wayne and across Northeast Indiana, includ
 
 # Water Heater Repair & Installation in Fort Wayne, IN — Wickey Plumbing
 
-We repair, replace and install water heaters of every type, including tankless, for homes and businesses in Fort Wayne and Northeast Indiana. If yours is leaking, making noises, running out of hot water quickly or getting old, we can help you decide between repairing and replacing it. Call (260) 409-5128.
+We repair, replace and install water heaters of every type, including tankless, for homes and businesses in Fort Wayne and Northeast Indiana. If yours is leaking, making noises, running out of hot water quickly or getting old, we can help you decide between repairing and replacing it. Customers describe same-day visits for water heater problems. Call (260) 409-5128.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 
@@ -266,7 +265,7 @@ I called and they were out same day for a water heater issue. Got it fixed with 
 
 # Drain Cleaning & Sewer Lines in Fort Wayne, IN — Wickey Plumbing
 
-We clear clogs from a slow kitchen sink or clogged toilet to a fully backed-up sewer line, and we repair and replace sewer lines that have failed from age, shifting soil or tree roots. If you have recurring clogs, gurgling drains or a sewage smell, call (260) 409-5128 and tell us what you're seeing.
+We clear clogs from a slow kitchen sink or clogged toilet to a fully backed-up sewer line, and we repair and replace sewer lines that have failed from age, shifting soil or tree roots. If you have recurring clogs, gurgling drains or a sewage smell, call (260) 409-5128 and tell us what you're seeing. Customers have had us out the day after they called.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 

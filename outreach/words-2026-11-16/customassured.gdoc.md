@@ -1,12 +1,12 @@
 # Custom Assured Mechanical Demo – Words – Draft
 
-Draft for review. Sources: the business's own site, Google reviews, facts.md. Quotes are word for word.
+Badge: Free demo site built for Custom Assured Mechanical. Draft for review. Sources: the business's own site, Google reviews, facts.md. Quotes are word for word.
 
 ## Strategy page
 
-# We built Custom Assured Mechanical a website that says what your customers say.
+# We already did the work. Here's a Custom Assured Mechanical website that tells Fort Wayne who you are and gets the phone ringing.
 
-Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
+Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be. We built Custom Assured Mechanical the first five pages of that kind of website. More on that below.
 
 [View the Demo Site] [See What Changed]
 
@@ -20,7 +20,7 @@ Lance is our guy.
 
 Your reviews say all of that. Your site says little of it. The homepage has no phone number, and no page lets a phone visitor tap to call.
 
-So we built the first five pages around what your reviews already prove. Anything we could not check we left out and put in the questions below.
+So we built the demo around what your reviews already prove. Anything we could not check we left out and put in the questions below.
 
 ### The demo, page by page
 
@@ -108,12 +108,12 @@ Call and form tracking that shows which pages and towns your leads come from.
 
 ### What a full build includes
 
-The demo is the first five pages. A full build starts with the foundation, then adds what we guarantee after launch.
+A full build starts with the foundation, then adds what we guarantee after launch.
 
 - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
 - Your site watched around the clock for downtime.
 - Google indexing and your Google visibility checked every day.
-- Menus, contact links and forms tested in a real browser twice a day.
+- Page links, buttons and contact forms tested in a real browser twice a day.
 - About and owner pages that show who does the work, which builds trust with customers and with Google and AI tools
 
 ### What we'd confirm with you
@@ -513,7 +513,7 @@ Great staff from office personnel to technicians. Great products and service fro
 | Furnace Replacement | 840 | 982 |
 | Contact | 273 | 323 |
 
-**Service pages (Nov 16 revision):** both now pass 700 words without quotes. Added general trade knowledge in the owner's voice, hedged ("usually", "often", "in most cases"): what usually fails, what a visit usually covers, carbon monoxide, filter and humidifier care, before-you-call checks, gas smell or alarm steps, repair-vs-replace rules of thumb, sizing, a typical replacement day and the furnace-plus-A/C question. Business claims are unchanged and sourced to site/, facts.md or reviews.json. The general-knowledge figures (filter intervals, furnace age, repair-cost rule, efficiency ranges, detector expiry) are trade rules of thumb, not Custom Assured promises; check them against how Rod actually works. Still unanswered and worth asking Rod: what a Club visit covers, Club price and terms, whether "same technician" and "we call you" are policy, how a replacement runs for them, lender, and guarantee terms. Nov 16 checker pass on the business pages: jargon explained once, do-it-yourself steps cut to essentials, repeats removed (brand repair, gas smell, hours, Club visit contents, convenience, emergency), review-based claims softened to usually/often, guarantee and free-quote lines hedged, the hours conflict and website talk removed from Contact, and quote-ending runs broken up. Counts above are approximate script counts after this pass. The site has no case studies to use. Home passes 550.
+**Service pages (Nov 16 revision):** both now pass 700 words without quotes. Added general trade knowledge in the owner's voice, hedged ("usually", "often", "in most cases"): what usually fails, what a visit usually covers, carbon monoxide, filter and humidifier care, before-you-call checks, gas smell or alarm steps, repair-vs-replace rules of thumb, sizing, a typical replacement day and the furnace-plus-A/C question. Business claims are unchanged and sourced to site/, facts.md or reviews.json. The general-knowledge figures (filter intervals, furnace age, repair-cost rule, efficiency ranges, detector expiry) are trade rules of thumb, not Custom Assured promises; check them against how Rod actually works. Still unanswered and worth asking Rod: what a Club visit covers, Club price and terms, whether "same technician" and "we call you" are policy, how a replacement runs for them, lender, and guarantee terms. Nov 16 checker pass on the business pages: jargon explained once, do-it-yourself steps cut to essentials, repeats removed (brand repair, gas smell, hours, Club visit contents, convenience, emergency), review-based claims softened to usually/often, guarantee and free-quote lines hedged, the hours conflict and website talk removed from Contact, and quote-ending runs broken up. Counts above are approximate script counts after this pass. Nov 16 backport judgment pass: the doc was already free of speed claims, FAQs and review counts, so none were added (no FAQ: pages already answer their questions). Strategy page got the badge, the approved headline and the first-five-pages line under the subhead; the repeat later was removed; the browser-test line now reads as approved. Home strip left as is (3 items, no ratings). The site has no case studies to use. Home passes 550.
 
 ### Credentials and sources
 
