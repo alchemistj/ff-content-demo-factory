@@ -92,6 +92,6 @@ Note: no avatars/electrical file and no Fort Wayne electrician competitor file e
 ## Two money services
 
 1. **Electrical troubleshooting and repair.** The most material: site copy on three pages, plus about a dozen reviews with specific jobs (loose wire found in 30 minutes, Sabine B., John D., scott H., Jackie M., Tom S.). **Honest 700 words?** Only with the owner call. The site gives about 40 usable words on it, and the FAQ answers are blank. Reviews can cover maybe half a page without padding.
-2. **Outdoor and indoor lighting installation.** Site copy on the residential and upgrades pages, and about six reviews (Chad W., wendy K., Brent S., Darlene T., Satwik K., Mary H.). **Honest 700 words?** No. The site gives about 25 usable words and six short reviews. It would need the owner call and a lot of padding.
+2. **Outdoor and indoor lighting installation.** Site copy on the residential and upgrades pages, and about five reviews (wendy K., Brent S., Darlene T., Satwik K., Mary H.). **Honest 700 words?** No. The site gives about 25 usable words and five short reviews. It would need the owner call and a lot of padding.
 
 Not chosen: panel upgrade (qualify.md's guess). The site describes it in one sentence, and only two reviews discuss it (Ross N., Sabine B.). Thin.

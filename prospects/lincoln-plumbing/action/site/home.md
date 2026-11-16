@@ -1,6 +1,6 @@
-# http://www.actionlincoln.com
+# https://www.actionlincoln.com
 
-- Fetched: 2026-11-16T04:18:41.451Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:20:25.539Z (rendered in a real browser)
 - HTTP: 200
 - Title: Action Plumbing, Heating, A/C, Electrical - Lincoln, NE
 - H1: Home
