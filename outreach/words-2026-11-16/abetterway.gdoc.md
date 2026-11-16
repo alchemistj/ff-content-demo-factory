@@ -366,7 +366,6 @@ Our replacements generally tear the old roof off down to the bare wood, so we ca
 
   
 
-*Strip:* GAF Certified Roofers | Tear-Off to Bare Wood | Lincoln and Nearby Towns
 
   
 
@@ -519,7 +518,6 @@ After hail or wind, we look at your roof and Maria helps you through the insuran
 
   
 
-*Strip:* Free Storm Damage Assessment | Insurance Claim Help | GAF Certified Roofers | Lincoln and Nearby Towns
 
   
 

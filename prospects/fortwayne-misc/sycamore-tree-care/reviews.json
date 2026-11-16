@@ -1,0 +1,742 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "fortwayne-tree-sycamore",
+  "place": {
+    "name": "Sycamore Tree Care",
+    "placeId": "ChIJ2X0H3SOMYQcRvo99ng6jLD4",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sycamore%20Tree%20Care&query_place_id=ChIJ2X0H3SOMYQcRvo99ng6jLD4",
+    "address": "",
+    "phone": "(260) 458-7322",
+    "rating": 5,
+    "totalReviewCount": 122
+  },
+  "pulledAt": "2026-11-16T05:44:03.618Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR6alB5MTBnRRAB",
+      "reviewer": "Sharlin W.",
+      "rating": 5,
+      "text": "They were professional and great to work with. Bonus: it was so fun to see how they cut down the trees. :)",
+      "publishedAt": "2026-11-09T12:51:06.699Z",
+      "ownerResponse": "Thank you Sharlin! It was fun working out there!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR6alB5MTBnRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgIDzjPy10gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0cE5XZGhSV1pMUlhWa1ZHVlJaVWcyYkZKRGRFRRAB",
+      "reviewer": "Karl K.",
+      "rating": 5,
+      "text": "Joe Paden's response to my request for assessment of a potentially dangerous tree was prompt and professional. His written report of the assessment was exactly what I needed.",
+      "publishedAt": "2026-11-06T15:12:30.953Z",
+      "ownerResponse": "Thanks Karl, we were glad to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0cE5XZGhSV1pMUlhWa1ZHVlJaVWcyYkZKRGRFRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOktpNWdhRWZLRXVkVGVRZUg2bFJDdEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tVeVgwcFlia3RRYURGbU5rdzRMVzlET1hKTFRGRRAB",
+      "reviewer": "Pete H.",
+      "rating": 5,
+      "text": "Very good care of my trees. Personnel are very informative and attentive to tree care.",
+      "publishedAt": "2026-11-03T22:51:30.872Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tVeVgwcFlia3RRYURGbU5rdzRMVzlET1hKTFRGRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOkUyX0pYbktQaDFmNkw4LW9DOXJLTFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2prMlYxUnlURFUxYldSNWVYYzRhbWRXYlZneU0wRRAB",
+      "reviewer": "Martin G.",
+      "rating": 5,
+      "text": "Well done from making the arrangements through clean up. Workers were personable and thorough. I especially appreciated Elliot’s attention to detail and being a good communicator. 👍👍👍",
+      "publishedAt": "2026-10-29T15:08:08.971Z",
+      "ownerResponse": "Thank you! We will let Elliot know!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2prMlYxUnlURFUxYldSNWVYYzRhbWRXYlZneU0wRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOjk2V1RyTDU1bWR5eXc4amdWbVgyM0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT213dFNFZzVRVmhCTms1QlRFRm9kVkY2Y0VJdFpXYxAB",
+      "reviewer": "Barbara M.",
+      "rating": 5,
+      "text": "Prompt, reliable and cost efficient.",
+      "publishedAt": "2026-10-19T12:08:26.014Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT213dFNFZzVRVmhCTms1QlRFRm9kVkY2Y0VJdFpXYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOmwtSEg5QVhBNk5BTEFodVF6cEItZWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGRVVqUnpWakl4YTI5d1RtMVBURmR5VTJoWldWRRAB",
+      "reviewer": "Kenny B.",
+      "rating": 5,
+      "text": "The guys were very professional and did an amazing. Would highly recommend",
+      "publishedAt": "2026-10-05T16:23:41.374Z",
+      "ownerResponse": "Thanks Kenny!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGRVVqUnpWakl4YTI5d1RtMVBURmR5VTJoWldWRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOlFEUjRzVjIxa29wTm1PTFdyU2hZWVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toT2FYQTBNMEZXUkdzMlV6SmFSakpDTjJwNlMzYxAB",
+      "reviewer": "Sam L.",
+      "rating": 5,
+      "text": "Sycamore Tree Care did a fantastic job taking down a large maple tree that was very close to our house and fence. They came in 50% cheaper then other tree services in the area. I would definitely recommend giving them a call.",
+      "publishedAt": "2026-09-03T13:45:47.387Z",
+      "ownerResponse": "Thanks Sam! It was great working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toT2FYQTBNMEZXUkdzMlV6SmFSakpDTjJwNlMzYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOkhOaXA0M0FWRGs2UzJaRjJCN2p6S3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tkR1NuaFBRVmxwWWt4a1NVSkpiVE55YlZoTlVVRRAB",
+      "reviewer": "Kerry D.",
+      "rating": 5,
+      "text": "Chris and team did a fantastic job removing my tree and stump. Very personable and professional team. I highly recommend Sycamore Tree Care.",
+      "publishedAt": "2026-08-31T12:54:34.387Z",
+      "ownerResponse": "Thanks Kerry!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tkR1NuaFBRVmxwWWt4a1NVSkpiVE55YlZoTlVVRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOkdGSnhPQVlpYkxkSUJJbTNybVhNUUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201c1pFeExkRzlrTWpkR1JIRmlZMU5uUWtVd2RIYxAB",
+      "reviewer": "Jeff F.",
+      "rating": 4,
+      "text": "They did a great job, very professional and cleaned up well.",
+      "publishedAt": "2026-08-12T00:55:43.100Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201c1pFeExkRzlrTWpkR1JIRmlZMU5uUWtVd2RIYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOm5sZExLdG9kMjdGRHFiY1NnQkUwdHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGTFlVbEpaMjVhYm1vMFdGTXpZbGQ0VW1KckxWRRAB",
+      "reviewer": "Tom O.",
+      "rating": 5,
+      "text": "Easy to work with. Very efficient and good cleanup. Very nice crew, I enjoyed having them on the job.",
+      "publishedAt": "2026-07-31T22:44:45.848Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGTFlVbEpaMjVhYm1vMFdGTXpZbGQ0VW1KckxWRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOkFLYUlJZ25abmo0WFMzYld4UmJrLVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xRGQyNU5WMGgzVkZKMFdXMTFYekl4ZEVKbVdHYxAB",
+      "reviewer": "Gailya G.",
+      "rating": 5,
+      "text": "We have had bagworm infestations at least twice, but our tree is too tall for me to safely spray to the top.  Sycamore Tree Care was responsive, answered my questions, and came out promptly when the season was appropriate for spraying.  I don’t see any new bag worms.  Thanks for a job well done!!",
+      "publishedAt": "2026-07-21T13:24:24.537Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xRGQyNU5WMGgzVkZKMFdXMTFYekl4ZEVKbVdHYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOm1Dd25NV0h3VFJ0WW11XzIxdEJmWGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2paTmRYWnpWMGxqVUVkZk1YbDBRVXhDTkZCSVZIYxAB",
+      "reviewer": "Laura B.",
+      "rating": 5,
+      "text": "Sycamore Tree handled removal of a very large tree, ground out multiple stumps, removed dead shrubs and cleared out volunteer trees in heavy shrubbery and pruned and shaped multiple shrubs and hedges. They arrived exactly when they said they would both days and worked hard the whole time. They did a great job at the removals and pruning and were immaculate about their cleanup. They consulted with us multiple times while here about specifically how we wanted things done. Fairly expensive, but really very fair considering all they did. I will definitely use them again as needed. Could not be happier about the quality of their work.",
+      "publishedAt": "2026-06-05T14:09:51.613Z",
+      "ownerResponse": "Thanks Laura, we were glad to help, and you were great to work for!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2paTmRYWnpWMGxqVUVkZk1YbDBRVXhDTkZCSVZIYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOjZNdXZzV0ljUEdfMXl0QUxCNFBIVHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sUWRsZzNNa2x4Tkdrd2FEUTVVMGRvU0dwVWIwRRAB",
+      "reviewer": "Tess S.",
+      "rating": 5,
+      "text": "Sycamore Tree Care was very quick to respond when I contacted them for a quote.  Joe came to our property and addressed all of my questions and concerns about pruning and fertilizing a big tree in our yard. They quickly scheduled the work and did a great job cleaning up all the branches that were cut.",
+      "publishedAt": "2026-05-28T02:05:44.292Z",
+      "ownerResponse": "Thank you!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sUWRsZzNNa2x4Tkdrd2FEUTVVMGRvU0dwVWIwRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOnlQdlg3MklxNGkwaDQ5U0doSGpUb0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21RelFYUlZjazV6ZHpCek0zZEJMVjlzWDFKblFsRRAB",
+      "reviewer": "Tom B.",
+      "rating": 5,
+      "text": "I've used Joe's group many times and they always perform professionally and efficiently. And they never leave a mess. I can't tell that they've been here!",
+      "publishedAt": "2026-05-23T16:56:15.337Z",
+      "ownerResponse": "Thanks Tom! Always great to hear the encouragement!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21RelFYUlZjazV6ZHpCek0zZEJMVjlzWDFKblFsRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOmQzQXRVck5zdzBzM3dBLV9sX1JnQlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0TU0wWk5WbEpKTm1aVmVXUTViQzFEVlZKdVVWRRAB",
+      "reviewer": "J T.",
+      "rating": 5,
+      "text": "I wouldn't use any other company. They do very good work and couldn't be happier with customer service, knowledge, and communication. Very affordable too.",
+      "publishedAt": "2026-05-15T17:39:42.316Z",
+      "ownerResponse": "Awesome, thanks for the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0TU0wWk5WbEpKTm1aVmVXUTViQzFEVlZKdVVWRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOktMM0ZNVlJJNmZVeWQ5bC1DVVJuUVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214d1VFZzJiR3hoWnpSU2JrdDVRamhLWDNsb2JVRRAB",
+      "reviewer": "Aubrey B.",
+      "rating": 5,
+      "text": "Sycamore Tree Care has demonstrated their professional, knowledgeable, and careful removal and pruning of trees to our property more than once. We have been so impressed by their attentive work in our tight-spaced residential area. They are an easy recommendation for all tree care!",
+      "publishedAt": "2026-04-17T21:54:30.775Z",
+      "ownerResponse": "Thank you, Aubrey! You guys were great to work for!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214d1VFZzJiR3hoWnpSU2JrdDVRamhLWDNsb2JVRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOmxwUEg2bGxhZzRSbkt5QjhKX3lobUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CSFIwSjFUa1pqUTBWblUwaEdRVUo2VEdWRk1FRRAB",
+      "reviewer": "Matt A.",
+      "rating": 5,
+      "text": "We recently moved and were looking for a Master Arborist to help us evaluate our property and provide guidance about the overall health of our trees. After talking with Sycamore Tree Care we knew they were the right partner. Not only was their team highly knowledgable/experienced, but the were incredibly respectful throughout the process. Their honest recommendations helped us develop a plan to prioritize immediate needs vs. upcoming needs. And they did an incredible job taking down few trees, pruning, and handling clean up. Their prices were fair and we'll definitely be working with them again!",
+      "publishedAt": "2026-04-14T15:39:48.002Z",
+      "ownerResponse": "Glad to hear! Thanks for choosing to work with us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CSFIwSjFUa1pqUTBWblUwaEdRVUo2VEdWRk1FRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOnBHR0J1TkZjQ0VnU0hGQUJ6TGVFMEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1TWRsSndibXRtUVRSTmIxOHhjMFZmUzJrdGExRRAB",
+      "reviewer": "sheila C.",
+      "rating": 5,
+      "text": "We had a great experience with Sycamore Tree Care! Their team was professional, knowledgeable, and truly cared about the health of our trees. They worked efficiently and left our space clean and safe. Highly recommend for any tree care needs!",
+      "publishedAt": "2026-03-29T01:49:12.488Z",
+      "ownerResponse": "That's great to hear! Your review of our work is exactly what we strive for!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1TWRsSndibXRtUVRSTmIxOHhjMFZmUzJrdGExRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOk5MdlJwbmtmQTRNb18xc0VfS2kta1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sUU1sUjJObmRXT1ZWck1rWTRSamhSUnpSS1kxRRAB",
+      "reviewer": "Ross F.",
+      "rating": 5,
+      "text": "Highly recommend Sycamore Tree Service! They did a fantastic job removing a tree from my property. The crew was professional, arrived on time, and worked safely. They even completely cleaned up the yard before they left. Great communication and fair pricing. Five stars!",
+      "publishedAt": "2026-03-27T16:41:50.696Z",
+      "ownerResponse": "Thanks Kurt, great working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sUU1sUjJObmRXT1ZWck1rWTRSamhSUnpSS1kxRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOnlQMlR2NndWOVVrMkY4RjhRRzRKY1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21RMlFWbzVOV05yTjBkWmNFbEZOblZpYW1Fd09VRRAB",
+      "reviewer": "Kelley N.",
+      "rating": 5,
+      "text": "Sycamore Tree Care did an excellent job. They removed all the deadwood, pruned the tree beautifully, and their cleanup was outstanding. All branches and debris were taken care of thoroughly. Highly recommend their professional and efficient service.",
+      "publishedAt": "2026-03-21T14:04:41.106Z",
+      "ownerResponse": "Thanks Kelley! It was great working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21RMlFWbzVOV05yTjBkWmNFbEZOblZpYW1Fd09VRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOmQ2QVo5NWNrN0dZcElFNnViamEwOUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WQ2VGTTRlSEpHVTB0a2JuWlFhbmxGYm5JMVZHYxAB",
+      "reviewer": "Anne G.",
+      "rating": 5,
+      "text": "Trimmed per instructions and request.<br>The clean-up was great!  They even cleaned up a few branches and leaves that were already there!",
+      "publishedAt": "2026-01-15T20:09:44.157Z",
+      "ownerResponse": "Thanks Anne!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WQ2VGTTRlSEpHVTB0a2JuWlFhbmxGYm5JMVZHYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOmVCeFM4eHJGU0tkbnZQanlFbnI1VGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taeWVuZzBVbXBSU0UxalUwdFRZMkZyUlRsYVUwRRAB",
+      "reviewer": "Wayne F.",
+      "rating": 5,
+      "text": "We had a very large Oak Tree with two beaches hanging over our garage.",
+      "publishedAt": "2026-01-14T20:20:57.726Z",
+      "ownerResponse": "Thanks for the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taeWVuZzBVbXBSU0UxalUwdFRZMkZyUlRsYVUwRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOkZyeng0UmpRSE1jU0tTY2FrRTlaU0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ZeWFFSlRjSFpsTm1kSGJXRk9PSFp5UzNoUE1uYxAB",
+      "reviewer": "Bernie C.",
+      "rating": 5,
+      "text": "The work Sycamore Tree  Service did was excellent and prompt. I would recommend them to serve you with any tree service you might need.",
+      "publishedAt": "2025-11-12T19:14:17.086Z",
+      "ownerResponse": "Thanks Bernie!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ZeWFFSlRjSFpsTm1kSGJXRk9PSFp5UzNoUE1uYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOmYyaEJTcHZlNmdHbWFOOHZyS3hPMnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKVmFVMXVVV3RYWXkxcU9GUnRhSGw2UVdkRlEwRRAB",
+      "reviewer": "William H.",
+      "rating": 5,
+      "text": "Sycamore Tree Care was recommended by a friend. Contact was easy, set schedule for inspection on what I needed done. Received quote via email, I accepted the quote and was added to their schedule. From first contact to job being completed it was about a month. If I need tree service again, I will use Sycamore.",
+      "publishedAt": "2025-10-10T14:59:02.522Z",
+      "ownerResponse": "Thank you WIlliam, we are glad to be of service!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKVmFVMXVVV3RYWXkxcU9GUnRhSGw2UVdkRlEwRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOjJVaU1uUWtXYy1qOFRtaHl6QWdFQ0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25Ock5qY3pkVEJxVjBadGMzRlZZMnB6TUZOdGVuYxAB",
+      "reviewer": "Brian M.",
+      "rating": 5,
+      "text": "We had Sycamore Tree Care treat our Ash tree and we couldn’t be more pleased with the experience. The team was courteous, professional, and extremely knowledgeable. They took the time to explain the process, making everything clear and informative. Pricing was very reasonable, and the quality of service was excellent.<br>It’s refreshing to work with a company that truly cares about both their customers and the health of the trees. Even gave me some pointers on how to care for my other trees on the property.<br>Highly recommend Sycamore Tree Care!<br>They will be our first call for tree care and maintenance moving forward.<br>Thanks Sycamore Tree Care team!",
+      "publishedAt": "2025-09-19T13:17:38.751Z",
+      "ownerResponse": "Thanks Brian! It was great working for you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25Ock5qY3pkVEJxVjBadGMzRlZZMnB6TUZOdGVuYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOnNrNjczdTBqV0Ztc3FVY2pzMFNtenc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xVGFuZHRkQzA0ZURnMlkyWXRWblpJTTNSTGNtYxAB",
+      "reviewer": "Patricia J.",
+      "rating": 5,
+      "text": "Responsive, knowledgeable, reasonable nice people. Very good experience",
+      "publishedAt": "2025-08-25T19:04:42.319Z",
+      "ownerResponse": "Thank you, we were happy to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xVGFuZHRkQzA0ZURnMlkyWXRWblpJTTNSTGNtYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOm1TandtdC04eDg2Y2YtVnZIM3RLcmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xONk5qWnRUVzlEUW1sd2RIaFJZME5oTVc5Q2EyYxAB",
+      "reviewer": "Susan M.",
+      "rating": 5,
+      "text": "Sycamore Tree Care<br>From the very beginning, it has been a great experience. Jessica came to my home to give me a quote. It was very reasonable for the work I wanted done.<br>On the day the work was to be done, the crew showed up about 8 am. It was a very hot day to boot. Joe introduced himself and the other guys. The work was completed exactly as I requested. My property was left in impeccable shape. Clean up was extremely good.<br>Would not hesitate to use them again. I highly recommend them!<br>Susan M",
+      "publishedAt": "2025-08-12T21:24:47.570Z",
+      "ownerResponse": "That's great to hear, thanks Susan!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xONk5qWnRUVzlEUW1sd2RIaFJZME5oTVc5Q2EyYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOlN6NjZtTW9DQmlwdHhRY0NhMW9Ca2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaMVNVcExXWFZhWlVGT2JVTktWakZUVEhoMlZYYxAB",
+      "reviewer": "Nate H.",
+      "rating": 5,
+      "text": "Joe was great to work with and took time to answer all my questions about the health of my trees. His crew was skilled and professional and did an excellent job cleaning up after the work was done. I would highly recommend this company.",
+      "publishedAt": "2025-07-28T20:58:39.158Z",
+      "ownerResponse": "Thanks Nate, we appreciate that and we were happy to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaMVNVcExXWFZhWlVGT2JVTktWakZUVEhoMlZYYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOlZ1SUpLWXVaZUFObUNKVjFTTHh2VXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCdk5FbHFVVk0xU3pRdFYyeFhZblZGZEY4dGFHYxAB",
+      "reviewer": "lindsey S.",
+      "rating": 3,
+      "text": "Reached out to Sycamore on 5/16 for a pruning of our ash tree, as well as treating it for ash bore. Jessica was great of calling me back and getting a free quote set up. She came out within a day or two and explained everything in detail. The quote was sent to us on the 20th and had issues of it coming in blank. Jessica resent it quickly on the 21st and we accepted both of the services which would be over $1200. Scheduling was a bit tricky to deal with. Had to call multiple times throughout our time working with them as they never tell you when they are going to come. Called on the 4th of June as we hadn’t heard anything regarding either service. They said we had been scheduled and just weren’t informed of it. Thought this was a simple mistake and understood. Joe came out on the 9th to treat our one Ash tree and then he pointed out we had a second baby one growing that he also offered to treat. He was super great to work with and helpful in explaining and answering questions. The pruning team came on the 10th to cut out the dead of our large ash tree. They were maybe here two hours between setting up their stuff, clean up, and trimming. Unfortunately they did only get 1/3-1/2 of the dead out of the tree. Seemed like they worked on one side and didn’t bother to go on the other side or look up in the tree. They also left dead limbs hanging on other limbs, which also defeated the purpose of them coming out and what we asked for. We gave them a call to let them know our concerns especially with the price we were going to be paying which was 850 for the pruning alone. Joe was great of coming out on the 16th first thing in the morning and he agreed that the job was not done satisfactorily and that we would be scheduled again. Fast forward to July 1st, today and we are still waiting for our job to be completed. Reached out again yesterday to see if we were going to be scheduled and they said they would add us for today. Still waiting for them to show. We thought the price we were quoted was fair and we were really happy with the treatment and initial discussions but now that we will be nearly 2 months of the initial conversations for this job is quite disappointing. Check their work before paying and make sure you are satisfied as they are quick to send out bills and ask for payment. Just disappointing with the service and lack of communication from this group in regards to pruning.<br><br>Update: came back out this afternoon and finished the job. Happy that they care about customers feedback and want to do a good job, makes you want to recommend them. Excellent job cleaning up all branches both times as well. Thank you guys for making it right!",
+      "publishedAt": "2025-07-01T19:46:35.248Z",
+      "ownerResponse": "Glad we could get it done for you in the end. Sorry for all of the delays!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCdk5FbHFVVk0xU3pRdFYyeFhZblZGZEY4dGFHYxAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOlBvNElqUVM1SzQtV2xXYnVFdF8taGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xNlJGbDZRVk5LYTJNeWVFVmhkV0prWVVNNVlWRRAB",
+      "reviewer": "Matthew L.",
+      "rating": 5,
+      "text": "A tree fell into our backyard, and I called Sycamore Tree Service. Joe arrived a short time later to check it out.<br><br>He let me know that - because of the location of the tree (in the grassy area, between the sidewalk and the street) - the city likely would take care of it. Joe even followed up with me later, to let me know that was, in fact, the case.<br><br>Very honest. Impressive.",
+      "publishedAt": "2025-06-20T15:47:04.001Z",
+      "ownerResponse": "Thanks Matt! I really appreciate you taking the time to fill this out! - Joe",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xNlJGbDZRVk5LYTJNeWVFVmhkV0prWVVNNVlWRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CAIQACodChtycF9oOm16RFl6QVNKa2MyeEVhdWJkYUM5YVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VOaUM2NXVFc0pybEJBEAE",
+      "reviewer": "Gail M.",
+      "rating": 5,
+      "text": "We called Sycamore to get a quote for removing several trees from our property.  A Sycamore rep came out and assessed our trees and property and made great suggestions - some in which we didn't even know was a choice . Their quote was made within a day or 2 (Memorial Day weekend). They then called and set a time to start. They arrived exactly when they said they would! Four of their staff were on site to get the job done. All gentlemen were friendly, professional, and treated our property and the neighbor's with respect. They did the job exactly how we wanted it done and did a fantastic job in cleaning up afterwards. Very happy with service.",
+      "publishedAt": "2025-06-04T18:14:11.667Z",
+      "ownerResponse": "That's great to hear, exactly what we shoot for! Thanks for being so awesome to work for!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VOaUM2NXVFc0pybEJBEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKENiC65uEsJrlBA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VQR3RvSWlJM05fVlFnEAE",
+      "reviewer": "Bob F.",
+      "rating": 5,
+      "text": "Large Tree Limb blew down so I researched Sycamore Tree Reviews ALL GIOOD ! Called Jessica. She was out the next day to estimate the work. Reasonable price ! About a week later crew was at site early and in two hours or less had everything CLEAN. Well Done ! Thanks !",
+      "publishedAt": "2025-05-28T21:33:00.549Z",
+      "ownerResponse": "Thanks Bob! Glad we could help out!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VQR3RvSWlJM05fVlFnEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEPGtoIiI3N_VQg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VQMnh4Si0xdUs2WE13EAE",
+      "reviewer": "Travis H.",
+      "rating": 5,
+      "text": "Scheduling process was easy and Joe is very knowledgeable and great to work with.  Love that their company is intentionally investing in the next generation.",
+      "publishedAt": "2025-05-21T12:04:34.881Z",
+      "ownerResponse": "Thank you! We appreciate that!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VQMnh4Si0xdUs2WE13EAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEP2xxJ-1uK6XMw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VKRGE2OEs5My0tTjlnRRAB",
+      "reviewer": "Logan V.",
+      "rating": 5,
+      "text": "Fantastic company took care of our downed tree in a fast and professional manner. Don't hesitate to call this company for any tree service you may need.",
+      "publishedAt": "2025-05-21T02:00:44.239Z",
+      "ownerResponse": "Thanks for the kind review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VKRGE2OEs5My0tTjlnRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEJDa68K93--N9gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VLMmU3WXFCOVk3NVpnEAE",
+      "reviewer": "Renee S.",
+      "rating": 5,
+      "text": "I contacted Sycamore for tree removal a while back. I had two that were very old and potential dangers that were removed on two different occasions. After I got their initial quote, I didn't bother getting any others. The cost was less than I had budgeted.<br><br>Both times, the process of getting things scheduled was efficient. I feel like I bothered Jessica too much, but she was awesome at answering my questions. The crew was prompt, respectful, and efficient. It was so impressive to watch them work together on the ground and in the tree. Excellent experiences both times, and I plan to have the final one removed later this year. By Sycamore, of course!",
+      "publishedAt": "2025-05-16T12:24:04.210Z",
+      "ownerResponse": "That's awesome to hear Renee and it was great working with you!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VLMmU3WXFCOVk3NVpnEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEK2e7YqB9Y75Zg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURvaGMtSlpnEAE",
+      "reviewer": "Amy Y.",
+      "rating": 5,
+      "text": "Sycamore Tree Care did a great job for me!  I needed my large tree pruned, and my 4 shrubs in front of the house trimmed and shaped - they were really a mess, lol.  The guys did a great job!  They worked with precision, and were very careful working with my beloved tree.  They were also super polite, professional, and kind.  I highly recommend them to anyone who wants a job very well done!  Thank you!",
+      "publishedAt": "2025-04-26T21:02:21.740Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURvaGMtSlpnEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMDohc-JZg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURveXFTM1hnEAE",
+      "reviewer": "Austin J.",
+      "rating": 5,
+      "text": "I had Sycamore Tree Care out to offer some advice and prune some of the fruit trees we have in our backyard. They were able to coach us on the health and nutrition of these trees while removing all the dead branches.  They also cleaned up their work meticulously. They are a local company and you can tell they care about their reputation.",
+      "publishedAt": "2025-04-23T17:14:16.539Z",
+      "ownerResponse": "Thanks Austin!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURveXFTM1hnEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMDoyqS3Xg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNvb1lUeDlRRRAB",
+      "reviewer": "Mike C.",
+      "rating": 5,
+      "text": "Can't say enough good things about this company. Very professional and helpful from start to finish. I would highly recommend their service.",
+      "publishedAt": "2025-04-17T14:39:30.018Z",
+      "ownerResponse": "Thanks! It was great working for you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvb1lUeDlRRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMCooYTx9QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURucVBQRGNnEAE",
+      "reviewer": "Chad D.",
+      "rating": 5,
+      "text": "These guys did a excellent job took care of a tree limb that was very close to a electrical wire took it down and cleaned up I highly recommend them.",
+      "publishedAt": "2025-04-02T23:18:27.465Z",
+      "ownerResponse": "Appreciate the recommendation, we do our best to keep safety our number one priority.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURucVBQRGNnEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgIDnqPPDcg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUR3dmVqMkt3EAE",
+      "reviewer": "Rebecca F.",
+      "rating": 5,
+      "text": "The crew worked quickly and efficiently and cleaned up the brush more than expected. They cost half the price than another company that quoted us and did an amazing job!",
+      "publishedAt": "2025-03-27T19:07:29.399Z",
+      "ownerResponse": "Glad to hear you appreciated are work!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUR3dmVqMkt3EAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMDwvej2Kw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3bWV6N2dBRRAB",
+      "reviewer": "Jared P.",
+      "rating": 5,
+      "text": "Best Tree service company around! Great customer service, communication, skillful work and proper cleanup. I will definitely be hiring them again in the future. Highly recommend!",
+      "publishedAt": "2025-03-19T19:44:49.355Z",
+      "ownerResponse": "Thank you for the high praise!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3bWV6N2dBRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMCwmez7gAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURRNDgzWUxnEAE",
+      "reviewer": "Diana A.",
+      "rating": 4,
+      "text": "Jessica was quick and to the point. Personal and professional. Everything happen on time as planned. It was a small job and it got done.",
+      "publishedAt": "2025-03-13T20:32:56.310Z",
+      "ownerResponse": "Thanks Diana!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURRNDgzWUxnEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMDQ483YLg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURncC1mc09BEAE",
+      "reviewer": "Nate C.",
+      "rating": 5,
+      "text": "Clean work, with excellent knowledge and close attention to detail.  Absolutely recommend.",
+      "publishedAt": "2025-02-28T03:15:51.935Z",
+      "ownerResponse": "Thanks , we appreciate it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURncC1mc09BEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMDgp-fsOA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURnaXFyMzdnRRAB",
+      "reviewer": "Hockeymom",
+      "rating": 5,
+      "text": "The guys were great!!  They rang my doorbell and told me they were going to be trimming the tree!  They were thoughtful about which branches they cut and then cleaned up after!!  Wow!  They even rang the bell again to let me know they were finished :)",
+      "publishedAt": "2025-02-23T23:13:06.310Z",
+      "ownerResponse": "That's great to hear that everything went well and looks right afterwards, thanks!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURnaXFyMzdnRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMDgiqr37gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURnMExlak93EAE",
+      "reviewer": "Kevin D.",
+      "rating": 5,
+      "text": "No complaints of Any kind! Sycamore made sure everything was safe & secure before they did any work.<br>They cleaned up Everything! If we ever need any more tree service we definitely will call them again!<br>And their prices are unbeatable!",
+      "publishedAt": "2025-02-22T03:06:46.998Z",
+      "ownerResponse": "Thanks so much!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURnMExlak93EAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMDg0LejOw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNEN3YzeVlnEAE",
+      "reviewer": "J P.",
+      "rating": 5,
+      "text": "They did an excellent job. We're really happy with their work.",
+      "publishedAt": "2025-02-20T16:02:03.101Z",
+      "ownerResponse": "Thanks, glad to hear it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNEN3YzeVlnEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICD7v3yYg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNnN2JPb013EAE",
+      "reviewer": "Colby K.",
+      "rating": 5,
+      "text": "The team was prompt, professional and cordial.  Cleanup was very good.",
+      "publishedAt": "2025-02-20T01:11:53.859Z",
+      "ownerResponse": "Great to hear it, thanks for working with us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNnN2JPb013EAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMCg7bOoMw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNBLTg2VXd3RRAB",
+      "reviewer": "Scott S.",
+      "rating": 5,
+      "text": "I had to wait for the ground to thaw to be able to inspect the stump removal sites.  All is as expected and Chris did a great job cleaning up the site.",
+      "publishedAt": "2025-02-04T19:09:46.496Z",
+      "ownerResponse": "Great to hear it Scott! We'll pass on the praise to Chris!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNBLTg2VXd3RRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgMCA-86UwwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURfaUlDUlRREAE",
+      "reviewer": "Dan T.",
+      "rating": 5,
+      "text": "The cleanup on the job was good.",
+      "publishedAt": "2025-01-21T01:52:33.700Z",
+      "ownerResponse": "Thanks Dan!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfaUlDUlRREAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgID_iICRTQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQzOUotZDNRRRAB",
+      "reviewer": "Doug B.",
+      "rating": 5,
+      "text": "Sycamore Tree Care scheduled the trimming of our oak tree, to eliminate the dead branches and clear other away from our garage, gazebo, and utility lines.<br>The crew arrived on time, confirmed what we wanted, worked efficiently, and cleaned up afterwards. Always a good crew to work with<br>Prompt, polite, and professional. 👍<br>Below are some before and after shots showing their service.",
+      "publishedAt": "2024-12-19T17:41:26.448Z",
+      "ownerResponse": "Thanks Doug!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzOUotZDNRRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgID39J-d3QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR2NnFPNlRnEAE",
+      "reviewer": "John G.",
+      "rating": 5,
+      "text": "Great tree company. Easy to work with and did a great job!",
+      "publishedAt": "2024-12-19T15:10:29.867Z",
+      "ownerResponse": "Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2NnFPNlRnEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgIDv6qO6Tg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2X3JMYkRnEAE",
+      "reviewer": "Reed M.",
+      "rating": 5,
+      "text": "Very courteous and professional. Job well done including cleanup. Priced as originally quoted. Highly recommend!",
+      "publishedAt": "2024-12-11T13:42:55.445Z",
+      "ownerResponse": "Thanks Reed, it was a pleasure working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2X3JMYkRnEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICv_rLbDg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNQaTZ6MzlnRRAB",
+      "reviewer": "Elizabeth Q.",
+      "rating": 5,
+      "text": "They did a great job. I would recommend them to anyone. Thanks very much.",
+      "publishedAt": "2024-11-27T23:42:59.019Z",
+      "ownerResponse": "Thank you Elizabeth we appreciate it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNQaTZ6MzlnRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICPi6z39gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNQZ3FUU21BRRAB",
+      "reviewer": "Bob M.",
+      "rating": 5,
+      "text": "Very good job cleaning out a large tree in our backyard. The staff members were all courteous and efficient. I would recommend Sycamore Tree Care without hesitation.",
+      "publishedAt": "2024-11-22T13:52:41.081Z",
+      "ownerResponse": "Thanks Bob!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNQZ3FUU21BRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICPgqTSmAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQzMHZXeHZRRRAB",
+      "reviewer": "Greg C.",
+      "rating": 5,
+      "text": "Excellent work! Price was good, quality was great.",
+      "publishedAt": "2024-11-13T19:29:35.456Z",
+      "ownerResponse": "Thanks Greg, we always appreciate kind words!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQzMHZXeHZRRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgID30vWxvQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYc3VyWUZBEAE",
+      "reviewer": "Jim K.",
+      "rating": 5,
+      "text": "I don’t know if I’ve ever witnessed a better display of teamwork.  Every guy there had a role and was constantly executing their role.  The efficiency of the team was outstanding.  The attention to detail, work performed and clean up exceeded my expectations.  I highly recommend Sycamore Tree Care for any tree removal needs.",
+      "publishedAt": "2024-10-25T19:41:43.638Z",
+      "ownerResponse": "Thanks Jim, it was great working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYc3VyWUZBEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgIDXsurYFA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYb3NuMnlnRRAB",
+      "reviewer": "Cory M.",
+      "rating": 5,
+      "text": "I had a tree and stump removed. Sycamore gave me a very reasonable quote. The crew that did the work was very professional and friendly. I was very impressed with their services. I would definitely recommend Sycamore Tree Care any day of the week.<br>Thank you Sycamore!!",
+      "publishedAt": "2024-10-25T12:59:54.728Z",
+      "ownerResponse": "Thanks Cory!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYb3NuMnlnRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgIDXosn2ygE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNYbmVEa1p3EAE",
+      "reviewer": "john S.",
+      "rating": 5,
+      "text": "They were very professional and fast. They did an excellent job and an extensive clean up afterwards. We would highly recommend them to anyone needing any tree work done.",
+      "publishedAt": "2024-10-19T13:39:38.784Z",
+      "ownerResponse": "Thank you !",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNYbmVEa1p3EAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICXneDkZw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNYMHZ2el93RRAB",
+      "reviewer": "James",
+      "rating": 5,
+      "text": "Sycamore tree care is a great company.  We have used their service a few times and each time they exceeded our expectations.  Reliable, quality work at a very reasonable price.  We recently had some Basswood trees that are dying and Joe took the time to research what might be the problem and then came and took soil samples and submitted them to lab for analysis.  He did all of this and didn’t charge me anything for his time.  Joe and Jess are great to work with and are very knowledgeable and professional!!!!",
+      "publishedAt": "2024-10-14T21:57:30.985Z",
+      "ownerResponse": "Thanks! It's always great to work with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNYMHZ2el93RRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICX0vvz_wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURua2NmZHlRRRAB",
+      "reviewer": "KIMBERLY H.",
+      "rating": 5,
+      "text": "Joe and his team were excellent. They knew exactly what they were doing and they did a great job on cleanup!",
+      "publishedAt": "2024-10-06T21:16:40.459Z",
+      "ownerResponse": "Thanks Kimberly!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURua2NmZHlRRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgIDnkcfdyQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURudHFUNGZ3EAE",
+      "reviewer": "Linda M.",
+      "rating": 5,
+      "text": "This pleasant team did a really good job of removing a large, diseased tree.  They also removed dead wood from other large trees and did an amazing clean up job.  We are very pleased.",
+      "publishedAt": "2024-10-05T17:53:01.433Z",
+      "ownerResponse": "Glad to hear , it was a pleasure working with you Linda.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURudHFUNGZ3EAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgIDntqT4fw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNueGFERUZ3EAE",
+      "reviewer": "Terry H.",
+      "rating": 5,
+      "text": "Excellent service !  True professionals !  Joe and his crew were great.  Highly recommend them !",
+      "publishedAt": "2024-09-27T21:36:02.680Z",
+      "ownerResponse": "Thanks Terry!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNueGFERUZ3EAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICnxaDEFw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNuOXZDVk1nEAE",
+      "reviewer": "Lee K.",
+      "rating": 5,
+      "text": "Fast and competent.  Good service.",
+      "publishedAt": "2024-09-25T22:18:55.470Z",
+      "ownerResponse": "Thanks for the compliments!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNuOXZDVk1nEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICn9vCVMg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNubHBXZk1nEAE",
+      "reviewer": "John L.",
+      "rating": 5,
+      "text": "Excellent service and amazing cleanup after tree was removed!",
+      "publishedAt": "2024-09-25T17:50:24.471Z",
+      "ownerResponse": "Thanks John, it was great working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNubHBXZk1nEAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICnlpWfMg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNIemNUNTVBRRAB",
+      "reviewer": "Stacey M.",
+      "rating": 5,
+      "text": "Excellent experience. Joe was very professional and knowledgeable in advising the overall health and treating of our Ash and Arborvitae trees. He took soil samples and provided a written health report for our mature Arborvitae tree line that could be in jeopardy due to new construction soil runoffs with suggestions on how to save them as well. We greatly respect and appreciate his expertise!",
+      "publishedAt": "2024-09-07T14:03:12.109Z",
+      "ownerResponse": "Thanks Stacey! It was great working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIemNUNTVBRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICHzcT55AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNINmZPVHFBRRAB",
+      "reviewer": "Stan W.",
+      "rating": 5,
+      "text": "We’re pleased with the initial inspection of the trees, explaining the health & treatment of these trees. We appreciate you working with us to solve the issue. Thank you",
+      "publishedAt": "2024-09-06T12:12:15.540Z",
+      "ownerResponse": "No problem Stan, glad to help.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNINmZPVHFBRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICH6fOTqAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNIbHI3YVd3EAE",
+      "reviewer": "Michael A.",
+      "rating": 5,
+      "text": "Joe Paden went over-and-above in addressing our residential tree management needs.  In addition to treating our magnolia trees for a scale infestation, he undertook soil testing and extended guidance in handling several other tree concerns we had.<br><br>The fees charged for his service have been very reasonable, and I would definitely recommend Sycamore Trees to anyone seeking tree treatment and/or arboreal expertise.",
+      "publishedAt": "2024-09-04T15:35:56.094Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNIbHI3YVd3EAE!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICHlr7aWw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNIc0tDODJRRRAB",
+      "reviewer": "Cheryl B.",
+      "rating": 5,
+      "text": "Joe, Jessica and the crew did a great job. They worked efficiently and safely. They brought all the necessary tools and equipment to complete the job. Worked great as a team. Highly recommend!",
+      "publishedAt": "2024-08-31T05:58:20.597Z",
+      "ownerResponse": "Thanks Cheryl, glad you were happy with the work!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIc0tDODJRRRAB!2m1!1s0x0:0x3e2ca30e9e7d8fbe!3m1!1s2@1:CIHM0ogKEICAgICHsKC82QE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KeVRVUXdaRTVGZUZaWGNuUlBOemg2WmxkQ2RVRRAB",
+      "reviewer": "Lynn R.",
+      "rating": 5,
+      "publishedAt": "2025-08-28T17:21:57.374Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VMV3k0cm1vMjlYYU13EAE",
+      "reviewer": "Susan W.",
+      "rating": 5,
+      "publishedAt": "2025-05-14T23:51:15.441Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNvZ2ItRFVnEAE",
+      "reviewer": "Deanna Y.",
+      "rating": 5,
+      "publishedAt": "2025-04-17T13:22:32.789Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2d3RMVDhBRRAB",
+      "reviewer": "Mark L.",
+      "rating": 5,
+      "publishedAt": "2024-12-18T19:57:17.085Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNQMHBqQ0t3EAE",
+      "reviewer": "Robert F.",
+      "rating": 5,
+      "publishedAt": "2024-11-22T22:06:14.833Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYdU82VUZnEAE",
+      "reviewer": "Amber H.",
+      "rating": 5,
+      "publishedAt": "2024-10-24T00:12:46.272Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURIeE1fYU53EAE",
+      "reviewer": "Steve C.",
+      "rating": 5,
+      "publishedAt": "2024-09-12T16:00:12.129Z"
+    }
+  ]
+}
