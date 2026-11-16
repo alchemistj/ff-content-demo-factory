@@ -231,11 +231,13 @@ Water reaches your house through a service line, and the city's water utility of
 
 ### Sump pumps
 
-A sump pump sits in a pit in the basement floor and pushes groundwater out of the house. Fort Wayne basements take on water during spring thaws and heavy rain, and a pump that has run for years tends to fail when it is working hardest. A power outage during the same storm can stop a pump that is healthy, so a battery backup is worth asking about. Homeowners have called us to replace a sump pump, including after hours.
+A sump pump sits in a pit in the basement floor and pushes groundwater out of the house. Fort Wayne basements take on water during spring thaws and heavy rain, and a pump that has run for years tends to fail when it is working hardest. A power outage during the same storm can stop a pump that is healthy, so a battery backup is worth asking about.
 
 > Called today with a sump pump issue and the problem was resolved the same day after hours with a new American made, which I appreciate, sump pump. The premium for overtime service was not exponential. Mark was very knowledgeable, personable, and seemingly efficient. Took time to explain the situation to me and how the new one work in an easily receivable manner. Should I have any other home issues come up, that they can handle under their umbrella of available services, I'll be calling them.
 >
 > — Holly D.
+
+Homeowners have called us to replace a sump pump, including after hours.
 
 ### Water heaters
 
@@ -247,11 +249,13 @@ A tank water heater commonly lasts 8 to 12 years. When it is old and leaking fro
 
 ### Toilets, drains and sewer lines
 
-A toilet that will not flush correctly is often a clog or a worn part inside the tank, so pulling it off the floor is rarely the first step, and it can damage the wax seal and flooring. A drain that backs up in more than one fixture usually points past the fixture to the main sewer line. Older Fort Wayne neighborhoods are more likely to have clay or cast iron sewer pipe, and tree roots can enter the joints of such pipe. Our site lists leak detection and system diagnostics to find where the problem actually sits.
+A toilet that will not flush correctly is often a clog or a worn part inside the tank, so pulling it off the floor is rarely the first step, and it can damage the wax seal and flooring. A drain that backs up in more than one fixture usually points past the fixture to the main sewer line.
 
 > I’m new to the area and am so happy to have an honest and fair company like  Hattersley  . We were about to attempt to fix the toilet ourselves by ripping it out of the floor and are so happy we did not!! Hattersley not only fixed the problem without any invasive or damaging solutions  but taught me exactly what to try in case we ever have a similar issue . They have a the heart of a teacher !
 >
 > — Emma H.
+
+Older Fort Wayne neighborhoods are more likely to have clay or cast iron sewer pipe, and tree roots can enter the joints of such pipe. Our site lists leak detection and system diagnostics to find where the problem actually sits.
 
 ### Water damage and your insurance
 
@@ -263,11 +267,13 @@ Insurance policies differ, but sudden damage, such as a burst pipe, is often tre
 
 ### Water softeners, filters and faucets
 
-Much of northern Indiana often has hard water, which is water with a lot of dissolved minerals, and a water softener is a common answer. Homeowners have called us about a water softener that was not working right. A new softener that does not produce soft water right away is often a connection or setting problem, so it is worth having someone check it.
+Much of northern Indiana often has hard water, which is water with a lot of dissolved minerals, and a water softener is a common answer.
 
 > We recently installed a water softener that was not producing soft water right away.  I was skeptical on which company to call but once I read the reviews on Hattersley I immediately called.  Mark came out the next day to check the connections and test the water.   Mark is very personable, professional and explained what was going on in layman's terms which is important to me since I don't know a lot about water softeners and plumbing.  I would highly recommend Hattersley!  We will definitely be calling to get a quote on our next project.
 >
 > — Lisa C.
+
+Homeowners have called us about a water softener that was not working right. A new softener that does not produce soft water right away is often a connection or setting problem, so it is worth having someone check it.
 
 ### Gas lines and backflow testing
 
@@ -311,21 +317,23 @@ Most no-heat calls on a gas furnace come down to a short list:
 
 ### Heat pumps
 
-A heat pump heats by moving warmth from outdoors in, and cools the same way in reverse. In freezing weather it periodically melts frost off its outdoor coil, so some steam or dripping is often normal. In the coldest weather many heat pumps switch to electric backup heat, which costs more to run, so a jump in the electric bill is worth asking about. A heat pump that blows cold air for more than a few minutes, or an outdoor unit buried in ice, is worth a call.
+A heat pump heats by moving warmth from outdoors in, and cools the same way in reverse. In freezing weather it periodically melts frost off its outdoor coil, so some steam or dripping is often normal. In the coldest weather many heat pumps switch to electric backup heat, which costs more to run, so a jump in the electric bill is worth asking about.
 
 > Had Mark come and fix my heat pump. He had it figured out and back working in no time. I've had Mark work on stuff before when he was with other companies he worked for. He knows his stuff and works very hard at finding and fixing the problem and has a solution in no time. A Hattersley & Sons should be very thankful and proud to have such a great worker and person on their team! Highly recommended Mark for anything you have an issue with.
 >
 > — Anthony J.
 
+A heat pump that blows cold air for more than a few minutes, or an outdoor unit buried in ice, is worth a call.
+
 ### Air conditioning in humid heat
 
 Indiana summers bring humid heat, and an air conditioner pulls moisture out of the air as well as cooling it. When one stops, a house often turns clammy before it turns hot. Most no-cooling calls come down to a weak capacitor, the part that gives a motor its starting jolt, a worn contactor, the switch that sends power to the outdoor unit, a failed fan motor, a clogged drain line or a refrigerant leak. An air conditioner does not use up its refrigerant, so a system that needs more has a leak, and adding refrigerant without finding the leak usually means doing it again.
 
-If you see ice on the indoor coil or the thick copper line, turn the system off and let it thaw before calling. Do not chip it off.
-
 > Mark was very responsive when I called and told him my AC was out. It was supposed to be a hot humid weekend and he meet me first thing Friday morning to fix me up. Would recommend to anyone.
 >
 > — Nick H.
+
+If you see ice on the indoor coil or the thick copper line, turn the system off and let it thaw before calling. Do not chip it off.
 
 ### Repair or replace?
 
@@ -335,11 +343,13 @@ One failure usually ends the discussion: a cracked heat exchanger, the metal cha
 
 ### Big heating and cooling jobs we have done
 
-Our project list shows how we handle heating and cooling at scale. At Carroll High School we added a boiler room and hot water and chilled water systems (chilled water carries cooling through a building) throughout a renovated building, and the work was done during normal school hours, with big pushes in the summer, so students never went without heating or air conditioning. At Handley Elementary in LaPorte we installed air conditioning in a building over 50 years old, with a timeframe of less than 60 days, and changed its steam heating to hot water. Phase I of Indiana Tech's geothermal loop, also on our project list, uses vertical wells 400 feet deep. A geothermal system takes advantage of the steady temperature of the ground to heat and cool buildings.
+Our project list shows how we handle heating and cooling at scale. At Carroll High School we added a boiler room and hot water and chilled water systems (chilled water carries cooling through a building) throughout a renovated building, and the work was done during normal school hours, with big pushes in the summer, so students never went without heating or air conditioning. At Handley Elementary in LaPorte we installed air conditioning in a building over 50 years old, with a timeframe of less than 60 days, and changed its steam heating to hot water.
 
 > Will 100% use again. Service was amazing. Almost like a friend or family was fixing our furnace.
 >
 > — Amy K.
+
+Phase I of Indiana Tech's geothermal loop, also on our project list, uses vertical wells 400 feet deep. A geothermal system takes advantage of the steady temperature of the ground to heat and cool buildings.
 
 ### A check before each season
 
