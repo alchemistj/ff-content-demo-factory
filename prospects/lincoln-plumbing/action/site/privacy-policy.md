@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/privacy-policy
 
-- Fetched: 2026-11-16T04:21:12.001Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:28:44.100Z (rendered in a real browser)
 - HTTP: 200
 - Title: Privacy Policy | Action Plumbing, Heating, A/C, Electrical - Lincoln, NE
 - H1: Privacy Policy | Privacy Policy
-- tel: links: tel:+14027994969, tel:402-799-4969
+- tel: links: tel:+14025760708, tel:402-576-0708
 - Words: 943
 
 ---
