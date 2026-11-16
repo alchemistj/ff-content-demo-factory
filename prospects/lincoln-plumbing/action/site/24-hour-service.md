@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/24-hour-service
 
-- Fetched: 2026-11-16T04:27:31.595Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:33:06.765Z (rendered in a real browser)
 - HTTP: 200
 - Title: 24-Hour Service | Action Plumbing, Heating, A/C, Electrical - Lincoln, NE
 - H1: 24-Hour Service
-- tel: links: tel:+14025760708, tel:402-576-0708, tel:4025760708
+- tel: links: tel:+14024091929, tel:402-409-1929, tel:4024091929
 - Words: 391
 
 ---
