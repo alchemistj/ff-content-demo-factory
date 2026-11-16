@@ -88,7 +88,7 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 #### 4. Contact
 
-Why it matters: most visitors are on phones, and some will call someone else rather than hunt for the number.
+Why it matters: about 80% of visitors are on a phone, and some will call someone else rather than hunt for the number.
 
 **Current site problem**
 
@@ -267,7 +267,7 @@ The Custom Priority Club is our maintenance membership. Every system needs profe
 
 In most cases a breakdown is a small part that had been wearing for a while. It shows up on the coldest night or the hottest afternoon because that is when the system works hardest.
 
-On furnaces, the usual causes are a dirty flame sensor, a worn igniter, a clogged filter that lets the furnace overheat, and a tired blower motor or capacitor. On air conditioners, the usual causes are a dirty outdoor coil, a weak capacitor, low refrigerant from a leak, and a condensate drain that has clogged.
+On furnaces, the usual causes are a dirty flame sensor, a worn igniter, and a blower motor or capacitor that is wearing out. On air conditioners, the usual causes are a dirty outdoor coil, a weak capacitor, low refrigerant from a leak, and a condensate drain that has clogged.
 
 Most of these are cheap to deal with when found early and expensive when they stop the system on a holiday weekend. Finding them early is most of what maintenance is for.
 
@@ -291,7 +291,7 @@ Your technician is there to work on the equipment and to answer your questions.
 
 Exactly what a visit covers differs by company and by system, so ask our office for the Club's list. On most heating visits, a technician will usually look at the burners, the flame sensor, the igniter, the blower and the venting, check the filter, and measure how the furnace is running. On most cooling visits, the usual work is cleaning the outdoor coil, checking the drain and the electrical parts, and confirming the system cools the way it should.
 
-A visit often ends with a plain report: what is fine, what is wearing and what to plan for. You should expect a straight answer to "can this wait?"
+A visit often ends with a plain report: what is fine, what is wearing and what to plan for. It is fair to ask for a straight answer to "can this wait?"
 
 > They come twice a year and inspect the equipment and clean the drains, answer our questions and replace the air filter.
 >
@@ -412,13 +412,13 @@ Older furnaces were often 60 to 80 percent efficient, and current models run fro
 
 Furnace size should come from the house, not from the size of the old furnace. A sound quote usually rests on the home's heat loss, the condition of the ductwork, the venting and the gas line. Ask any contractor, us included, how the size was figured.
 
-Most replacements take a day, and a few take longer when the ductwork or venting needs changes. Expect the old furnace to be disconnected and removed, the new one set, connected and vented, and then started up and tested. Expect to be shown how the thermostat works before the crew leaves.
+Most replacements take a day, and a few take longer when the ductwork or venting needs changes. The usual steps are removing the old furnace, setting, connecting and venting the new one, and then starting it up and testing it. Ask to be shown how the thermostat works before the crew leaves.
 
 Ask for the model number, the efficiency rating and the warranty length in writing, and keep them with your records.
 
 ### Free Quotes, Scheduled When You Want
 
-Quotes are always free and can be scheduled at your convenience. Call our office at (260) 496-8400 to arrange a time.
+Call our office at (260) 496-8400 to arrange a time that suits you.
 
 ### Installed by Our Own Team
 
@@ -436,7 +436,7 @@ Our installers replace furnaces and air conditioners.
 
 ### Replacing the Furnace and the Air Conditioner Together
 
-The indoor coil sits on top of the furnace and works with the outdoor air conditioner. Replacing only one part can leave a mismatched pair, so it is worth asking whether doing both at once makes sense. In most cases, an air conditioner older than ten to twelve years on a furnace that is due makes the question worth asking.
+The indoor coil often sits on top of the furnace and works with the outdoor air conditioner. Replacing only one can leave a mismatched pair, so ask whether doing both at once makes sense. In most cases the question is worth asking when the air conditioner is older than ten to twelve years and the furnace is due.
 
 ### Financing
 
@@ -478,6 +478,14 @@ Email julie@customassured.com or use the message form. Tell us your name, how to
 - The brand, if you know it. We repair any brand.
 - What it is doing, or what you want done.
 - Whether you are a homeowner, a business or building new.
+- For a furnace or air conditioner, how old it is and roughly how long it has had the problem.
+- Any noise, smell or error light, and whether the thermostat is on. A photo of the model label on the unit is often useful, if you can take one safely.
+
+If something smells like gas, leave the house first and call from outside.
+
+### After You Reach Us
+
+When you call, expect the conversation to start with what the equipment is doing. If you write, include a phone number so we can call you back. Ask whatever you want to know about timing, because the answer depends on the job.
 
 ### Paying a Bill
 
@@ -491,18 +499,18 @@ Invoice numbers are at the top of your invoice or on the right side of your work
 >
 > — Mike W.
 
-## Notes for Ruth (not page copy)
+## Notes (not page copy)
 
 ### Word counts (script count; buttons and headings included)
 | Page | Without quotes | With quotes |
 |---|---|---|
 | Strategy | 990 | 996 (trimmed by checker to fit the 1,000 limit; review counts removed, questions cut to 3) |
 | Home | 654 | 894 |
-| HVAC Maintenance | 337 | 633 |
-| Furnace Replacement | 287 | 430 |
-| Contact | 197 | 250 |
+| HVAC Maintenance | 818 | 1114 |
+| Furnace Replacement | 826 | 968 |
+| Contact | 310 | 360 |
 
-**Shortfall, honest:** neither service page reaches 700 words without quotes. Maintenance is 337 and Furnace is 287, with 9 and 6 headed sections. I did not pad. They need Rod's answers: what a maintenance visit covers, Club price and terms, whether "same technician" and "we call you" are policy, how a furnace replacement runs (sizing, steps, timing), lender, and guarantee terms. Contact is 250 only with its quote; 197 without. Home passes 550.
+**Service pages (Nov 16 revision):** both now pass 700 words without quotes. Added general trade knowledge in the owner's voice, hedged ("usually", "often", "in most cases"): what usually fails, what a visit usually covers, carbon monoxide, filter and humidifier care, before-you-call checks, gas smell or alarm steps, repair-vs-replace rules of thumb, sizing, a typical replacement day and the furnace-plus-A/C question. Business claims are unchanged and sourced to site/, facts.md or reviews.json. The general-knowledge figures (filter intervals, furnace age, repair-cost rule, efficiency ranges, detector expiry) are trade rules of thumb, not Custom Assured promises; check them against how Rod actually works. Still unanswered and worth asking Rod: what a Club visit covers, Club price and terms, whether "same technician" and "we call you" are policy, how a replacement runs for them, lender, and guarantee terms. Contact is 246 with its quote; 193 without. Home passes 550.
 
 ### Credentials and sources
 - None confirmed on a certifier's own site; none checked this pass. Defined once, on Home only, as the site states them: Rod's unnamed "certifications, accreditations, and training"; Casey's Technical Certificate from Ivy Tech; Julie's Communications degree (Purdue University Fort Wayne); Kim's business degree. Verify before sending.

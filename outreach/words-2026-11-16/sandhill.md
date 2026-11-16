@@ -195,7 +195,7 @@ Call us at [(402) 890-6460](tel:+14028906460) and tell us what you're seeing. We
 
 ### Does the Roof Need Replacing?
 
-Before we talk about a new roof, we find out whether you need one. A leak doesn't always mean the roof is finished, and sometimes the leak isn't coming from the roof at all. When one spot has failed, we repair that spot. When the damage is spread across the roof, or the roof is sagging or letting sunlight through the roof boards, it may be time to replace it. Roofs also wear out with age, and the longer you wait, the bigger the problem can get.
+Before we talk about a new roof, we find out whether you need one. Not every leak points to a worn-out roof. When one spot has failed, we repair that spot. When the damage is spread across the roof, or the roof is sagging or letting sunlight through the roof boards, it may be time to replace it. Roofs also wear out with age, and the longer you wait, the bigger the problem can get.
 
 Either way, we tell you what we found, and you decide.
 
@@ -225,7 +225,7 @@ We install a range of roofing materials: asphalt, stone coated steel, steel, sta
 
 ### Helping You Decide
 
-You get a detailed estimate with your choices laid out, and we explain each one. When the choice comes down to how the roof will look, we find samples so you can see them in person.
+Your estimate lays out the choices, and we explain each one. When the choice comes down to how the roof will look, we find samples so you can see them in person.
 
 > "What I loved most about this experience is Dusty indulging my indecisiveness and having and/or finding samples to help with any decision I had to make."
 > — Monica R.
@@ -241,14 +241,14 @@ On an average house, a tear-off and new roof often take a day or two, though the
 
 ### If You're Selling the House
 
-If the roof has to be done before a closing date, tell us the date when you call. We have replaced roofs for people who needed to close on time, and we plan the work around your date.
+A roof sometimes has to be done before a closing date, and good weather in that window can be short. We have replaced roofs for people who needed to close on time.
 
 > "I had to get a new roof put on a property I was selling in order to close by a certain date. Dusty got the job done in the small window of nice weather and did a great job."
 > — Steve G.
 
 ### The Warranty and After the Job
 
-Every new roof we install carries a lifetime workmanship warranty, whichever material you choose. And if something needs attention after we leave, call us and we'll come back.
+Our roofing work carries a lifetime workmanship warranty. And if something needs attention after we leave, call us and we'll come back.
 
 > "Dusty provided a detailed estimate with a few choices and then his crew executed the plan as described. … There was a slight oversight area but Dusty was out not the next day but the next morning and made it right."
 > — Tim L.
@@ -314,7 +314,7 @@ Inside, wet insulation and drywall often need to dry out quickly. In many cases 
 
 ### Working With Your Insurance Company
 
-On your behalf, we deal directly with your insurance carrier, from the first site visit to the final walkthrough. Our claims managers are highly trained and qualified. Trying to keep track of what needs to be done and when, while you sort through the damage, wears you out, so we keep you updated at every step.
+On your behalf, we deal directly with your insurance carrier. Our claims managers are highly trained and qualified. Trying to keep track of what needs to be done and when, while you sort through the damage, wears you out, so we keep you updated at every step.
 
 We can't promise what your insurance company will decide. Our estimate covers the damage we can see, at current market values. If we find more damage once the work starts, it is charged separately.
 
@@ -376,6 +376,10 @@ We come out and look, explain what we found and give you a free quote. If the an
 > "Had a small leak and I called Dusty. He came out on a really nasty and windy day to take care of it for us. Great to see such service."
 > — Scott H.
 
+### What to Have Ready
+
+Not required, but it saves time: any earlier inspection or repair estimate for the roof, and your insurance policy number if a claim is open. It also helps to tell us the best times to reach you.
+
 ### Call Us
 
 If you'd rather talk, call [(402) 890-6460](tel:+14028906460). Our owner, Dusty Rieck, would rather hear from you before a small problem gets bigger.
@@ -390,12 +394,12 @@ If you'd rather talk, call [(402) 890-6460](tel:+14028906460). Our owner, Dusty 
 | Home | 662 | 203 | 865 |
 | Roof Replacement | 893 | 170 | 1,063 |
 | Storm Damage | 728 | 105 | 833 |
-| Contact | 190 | 32 | 222 |
+| Contact | 250 | 32 | 282 |
 
 **Length and the general advice.**
 - Roof Replacement and Storm Damage are each over 700 words without quotes. The added sections (what usually fails, repair or replace, before you call, what a visit looks like, first steps after a storm, what storms usually do, deductibles, repair or replace after a storm) are general trade knowledge, hedged ("usually", "often", "in most cases"). None of it states a business service, price, speed, guarantee or promised step. Each is advice to the homeowner or a description of how roof visits usually go.
 - Safety advice matches on both pages: stay off the roof, look from the ground, step only on attic framing.
-- Contact is about 28 under 250 with quotes. Facts are phone, email, hours and area only; no address is confirmed.
+- Contact is about 250 without quotes (added a short "What to Have Ready" section). Facts are phone, email, hours and area only; no address is confirmed.
 - Roof Replacement and Storm Damage are under 10 sections. Material does not support more without repeating.
 
 **Credentials.** None claimed on the site or anywhere else, so none are defined. Marvin, Hayfield, Provia and Bayer Built are products the site says it offers, named once on home as "brands such as", not as credentials. Malarkey appears only in a reviewer's words and is not used.

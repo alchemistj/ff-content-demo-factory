@@ -167,7 +167,7 @@ Winter snow, ice dams and summer storms are hard on Peoria roofs, and a small pr
 
 ## Siding
 
-New siding changes how the whole house looks, and it takes the same weather your roof does. Many homeowners have us do the siding along with the roof, so one crew finishes the outside of the house.
+New siding changes how the whole house looks, and it takes the same weather your roof does. Customers have had us do the siding along with the roof, so one crew finishes the outside of the house.
 
 > Our house looks amazing! Like a totally different house with our new siding!
 >
@@ -260,7 +260,7 @@ Repeated freezing and thawing also loosens old sealant and cracks brittle shingl
 
 ## When Water Is Already Coming In
 
-A leaking roof can't wait on a long schedule. You need someone to come look and give you a price without a wait. Jose comes to your house promptly, and the estimate follows.
+A leaking roof shouldn't sit on a long schedule. Tell us where you see water when you call, and Jose comes to your house to look.
 
 > I needed a roof quickly due to leaks. JG Roofing quickly provided me with a very competitive quote and within a week, I had a new, high quality roof installed (in very challenging weather conditions).
 >
@@ -278,19 +278,15 @@ A full replacement from us covers:
 - Gutters, fascia and soffit, when they need replacing too
 - Clean-up when we finish
 
-You don't have to hire us for all of it. A roof alone is a common job, and the rest is there if the house needs it.
-
 ## Asphalt Shingles or Metal
 
-Traditional asphalt shingles are the common choice, and we customize them to your needs. A metal roof gives you long-lasting protection and a sleek, modern look, and we are one of the most readily available metal roof contractors in the area.
+We install both asphalt shingles and metal roofs.
 
-Which one fits depends on your house and your budget. Jose helps you choose, and the estimate shows you the price of each.
+Which one fits depends on your house and your budget. Jose helps you choose.
 
 ## Your Estimate and Your Price
 
 Jose gives you the estimate at your house, after he's looked at the roof. Amanda explains the charges, so you know what you're paying for and what any extra costs.
-
-Reply quickly and the work moves quickly. When you call, we get you on the schedule.
 
 > Best of all was the speed between the time we contacted them for an estimate and the time the project was complete. And for a very reasonable price!
 >
@@ -298,7 +294,7 @@ Reply quickly and the work moves quickly. When you call, we get you on the sched
 
 ## Replacement Day
 
-A replacement is quick work for our crew, and you get the timeframe before we start. A large roof, or a house and garage together, can take a couple of days.
+You get the timeframe before we start.
 
 You don't have to supervise. The crew arrives, tears off the old roof, installs the new one and closes it in.
 
@@ -308,7 +304,7 @@ You don't have to supervise. The crew arrives, tears off the old roof, installs 
 
 ## Clean-Up
 
-The job isn't done until your property is clean. The crew cleans up as it goes and again when the roof is finished. That includes the shingles, the old roofing and the debris around your house.
+The job isn't done until your property is clean. The crew cleans up when the roof is finished. That includes the shingles, the old roofing and the debris around your house.
 
 > They even were kind enough to do an extra few sweeps around the house to make sure there were no nails left behind for our dog to step on.
 >
@@ -316,7 +312,7 @@ The job isn't done until your property is clean. The crew cleans up as it goes a
 
 ## Garage, Gutters and the Rest of the Roofline
 
-If you have a garage, we can replace that roof on the same visit. If your gutters are old, new ones go up once the roof is finished. We also install gutter guards, and we replace fascia and soffit.
+We also replace garage roofs. If your gutters are old, new ones go up once the roof is finished. We also install gutter guards, and we replace fascia and soffit.
 
 If your siding is next, one crew can handle that too.
 
@@ -379,9 +375,7 @@ Your insurance company decides what it covers. We help you through everything ar
 
 ## Handling the Insurance Communication
 
-You shouldn't have to work out the steps alone. We are trained to work with insurance from start to finish, so you have someone who can talk to your insurance company with you.
-
-Amanda explains the process and answers your questions, so you know what to expect during the replacement.
+You shouldn't have to work out the steps alone. Customers say we helped with communication with their insurance company, and Amanda answers your questions along the way.
 
 > Amanda came and patiently explained the claim process and what to expect during the replacement process. She responded to all of my questions. Jose and his crew did a wonderful job. The roof was torn off, replaced and cleaned up in the timeframe that Amanda gave me.
 >
@@ -391,7 +385,7 @@ Amanda explains the process and answers your questions, so you know what to expe
 
 Every policy and every insurer is different, so what follows is the usual shape, not a promise. You report the damage. The insurance company often sends an adjuster to look at the roof and writes an estimate of what it will cover. You then have a deductible to pay, and the settlement may be paid in more than one step.
 
-Many policies pay either the replacement cost or the actual cash value of the roof, and the difference can be large on an older roof. The adjuster's estimate and a contractor's estimate don't always match. When they don't, ask questions and ask for the reasons in writing. The insurance company decides what it covers. We can't promise an outcome, and we don't.
+Many policies pay either the replacement cost or the actual cash value of the roof, and the difference can be large on an older roof. The adjuster's estimate and a contractor's estimate don't always match. When they don't, ask questions and ask for the reasons in writing. We can't promise an outcome, and we don't.
 
 ## Charges Your Insurance Doesn't Cover
 

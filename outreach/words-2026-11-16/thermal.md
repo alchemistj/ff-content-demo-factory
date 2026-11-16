@@ -115,6 +115,8 @@ Heating and cooling failures happen at night and on weekends, when the office is
 
 Call and ask us what the visit will cost. Then you decide whether it needs a technician tonight or can wait until morning.
 
+Some failures can wait. No cooling on a mild night usually can. No heat in freezing weather often can't, especially with small children, older family members or anyone ill in the house, because pipes can freeze too. If you are unsure, call and describe what the system is doing.
+
 > Our AC failed after hours and I called TSI after an Internet search. They promptly returned my call. Upfront they told me an after hour service call would cost much more than waiting until the next day. So we decided to wait. A very friendly tech called me almost immediately and told me he would come between 7 and 8 am the next morning which he did.
 >
 > — Bob W.
@@ -138,6 +140,8 @@ A residential maintenance agreement includes two inspections a year. Emergency, 
 ### For your business
 
 We repair and replace rooftop units, chillers, boilers, furnaces and air conditioners for offices, industrial complexes and everything between. We inspect, diagnose and repair heating and cooling controls, service air purification and humidity control, and supply air compressors for commercial and industrial use. We aim to make repairs and replacements without stopping your workday.
+
+When a unit fails in a business, the lost work often costs more than the repair. Tell us what depends on it, whether that is a cooler full of stock, a server room or a shift of staff, so we know how urgent it is.
 
 > I had a problem with my walk in cooler. supervisor Jeff came in and sent me two guys Joe and Derek. … And I know who to call anytime I have a problem really appreciate you guys thank you
 >
@@ -215,9 +219,25 @@ We fix air conditioning systems and service the components of all makes and mode
 
 Being available when you need us is part of quality service, so we provide emergency service for residential and commercial customers.
 
+### Before you call
+
+Two checks take a few minutes and sometimes solve it. Set the thermostat to cool, a few degrees below the room temperature, and replace its batteries if the screen is blank. Then look at the breaker panel for a tripped switch, and at the filter. A clogged filter often restricts airflow enough that the coil ices over and cooling stops. If you find ice on the indoor coil or the refrigerant line, turn the system off and let it thaw.
+
+If you reset a breaker and it trips again, leave it off and call us. In most cases that points to a real electrical fault. Please don't open the outdoor unit's panels either. Its capacitors can hold a charge after the power is off.
+
+### What usually fails
+
+Most no-cooling calls come from a short list of parts. A weak capacitor often keeps the compressor or fan from starting. A worn contactor can leave the outdoor unit humming without running. A clogged condensate drain can trip a safety switch that shuts the system off. A dirty outdoor coil usually makes the system run long and cool poorly. A refrigerant leak generally needs to be found and repaired before more refrigerant goes in.
+
+### What a repair visit usually involves
+
+Most diagnoses follow a similar order. The technician typically asks what the system did and when, checks the thermostat and the power supply, then tests the electrical parts and the refrigerant side. Starting there often finds the cause without taking anything else apart.
+
 ### Replacing an air conditioner
 
 When your current A/C is old or can't be repaired, we provide a replacement. If you are building, we outfit your new home or building with an A/C system customized to your construction plans.
+
+Repair or replace is a judgment about the whole system, not the part alone. In most cases a capacitor, contactor or fan motor is worth repairing at any age. A failed compressor or a leaking coil on an older unit is harder to justify. Systems built before about 2010 often use R-22 refrigerant, which is no longer produced, so even a leak repair on one can cost a large share of a new system.
 
 > Our family was in a tough situation with our AC unit. TSI was understanding of the situation and prompt with their response. From start to finish, they were professional and never made me feel uncomfortable when asking probably too many questions.
 >
@@ -251,7 +271,7 @@ In spring, before the summer heat arrives. A check ahead of the heat costs less 
 
 **Is my A/C leaking refrigerant?**
 
-Delayed or longer cooling cycles and ice on your evaporator coils are the signs of a leak. If you think yours is leaking, we'll inspect it.
+Delayed or longer cooling cycles and ice on your evaporator coils are the signs of a leak, though a clogged filter can ice a coil too. If you think yours is leaking, we'll inspect it.
 
 **What should I do with my A/C in winter?**
 
@@ -283,6 +303,24 @@ We repair, install and maintain furnaces and heat pumps for Peoria homes and bus
 
 Heating failures strike suddenly, often on the chilliest days. After you contact us, we arrive promptly to inspect, assess and diagnose your heating problem. We find the source of the problem and make a plan to fix it.
 
+Many furnaces flash a code on the control board that points toward the failed part, so a technician will usually check the thermostat, the power and that code first.
+
+### Before you call
+
+If the furnace won't start, check three things. Make sure the thermostat is set to heat, above the room temperature, and replace its batteries if it has them. Check the breaker and the switch on or near the furnace. It looks like a light switch and often gets turned off by accident. Then look at the filter, because a packed one can make a furnace overheat and shut itself off.
+
+If the furnace starts and then stops again, call us. Resetting it over and over rarely fixes the cause.
+
+### Gas smell and carbon monoxide
+
+If you smell gas, don't switch anything on or off, lights included. Leave the house, then call your gas utility or 911 from outside.
+
+Gas and propane furnaces can produce carbon monoxide when something is wrong, and you can't smell it. If a carbon monoxide alarm sounds, get everyone outside and call 911 first. Call us after the house is cleared.
+
+### What usually fails
+
+On gas furnaces, a dirty flame sensor or a worn igniter often keeps the burners from staying lit. A failing inducer or blower motor commonly stops a furnace from starting or running. In electric furnaces, a burned-out heating element or a failed relay is a frequent cause. Parts like these are usually repairable once the technician has found them.
+
 We repair electric, gas and propane furnaces, and we can fix any part or component. We service all heating models and components, so the brand on your furnace doesn't change who you call.
 
 > I’ve used TSI for routine repairs/inspection of my furnace.  Heath is extremely knowledgeable and pricing is very fair.  Because of the service they’ve provided me, they were the first ones I called when my parents furnace went out in the middle of the winter.  I’m extremely thankful for how quickly Heath responded in this emergency.
@@ -292,6 +330,8 @@ We repair electric, gas and propane furnaces, and we can fix any part or compone
 ### Repair or replace?
 
 If your system is over 20 years old and the repair will cost more than 50% of a new replacement, we generally recommend you upgrade. If the system is newer, or the repair costs less, a repair is the usual answer.
+
+A cracked heat exchanger is the main exception to repairing first. Because it can let combustion gases into the home, it usually means a new furnace, even on a fairly young one. A furnace that needs one repair after years without any is a different case from one on its third repair in a season.
 
 Four situations lead people to ask the question: frequent repairs, equipment that isn't keeping up, odd noises or smells, and a system 20 years old or more. Tell us which you have when you call.
 
@@ -309,13 +349,15 @@ For businesses, we make minor and major furnace repairs on all brands, makes and
 
 We repair heat pumps with refrigerant leaks, broken valves and electrical failures, among other problems. If your heat pump is a decade old or older, we replace it with a new system, which saves you the cost of repeated repairs. Our heat pump maintenance covers the filters, blowers and electrical components.
 
+In cold weather a heat pump's outdoor unit runs defrost cycles, and a little steam or meltwater around it is usually normal. Thick ice that doesn't clear is worth a call.
+
 > On a cold winter day we made the correct call, Thermal Services, Inc.
 >
 > — Jim B.
 
 ### Keeping the furnace ready for winter
 
-We schedule thorough routine maintenance and checks for furnaces. Our fall checkups prepare your heating system for winter. Rotate your furnace filter monthly, which lets air circulate better and prevents backup. Our goal is to keep you, your family and your employees comfortable and secure through the winter.
+We schedule thorough routine maintenance and checks for furnaces. Our fall checkups prepare your heating system for winter. Our goal is to keep you, your family and your employees comfortable and secure through the winter.
 
 > Dylan and Cameron got here within an hour of my call, troubleshot, ran to the hardware store and were done and cleaned up in what seemed like no time at all.
 >
@@ -379,19 +421,19 @@ We serve homes in Peoria and the towns around it. For businesses, we work in Peo
 
 **Button:** Call (309) 699-3333
 
-## Notes for Ruth (not page copy)
+## Notes (not page copy)
 
 **Word counts (visible words counting hero, headings, buttons;).**
 
 | Page | Words with quotes | Words without quotes |
 |---|---|---|
 | Strategy page | 999 | 974 |
-| Home | 926 | 507 |
-| Air Conditioning Repair | 719 | 509 |
-| Furnace Repair | 705 | 473 |
-| Contact | 251 | 218 |
+| Home | 1010 | 590 |
+| Air Conditioning Repair | 1058 | 846 |
+| Furnace Repair | 1024 | 791 |
+| Contact | 245 | 212 |
 
-Home is 550+ only with quotes (507 in our own words). The two service pages and contact clear their minimums with quotes counted; the service pages are about 460 to 510 in our own words, so they lean on the reviews and the site's Q&A for length. Nothing was padded.
+Home (550+) and both service pages (700+) now clear their minimums without counting review quotes (Nov 16 correction). The added length is hedged general trade knowledge in the owner's voice, not sourced business claims: what usually fails, checks before calling (thermostat, breaker, filter), gas smell and carbon monoxide safety, repair-or-replace rules of thumb (the R-22 refrigerant point, cracked heat exchangers), what a diagnosis usually involves, heat pump defrost, and when a failure can wait until morning. Every business claim still traces to site/, facts.md or reviews.json. The added advice never gives an inspection frequency, so the site's conflict (once yearly vs twice-annual, strategy item 3) stays open. The furnace filter advice now appears once (the Q&A).
 
 **Credentials and their sources.** None is confirmed, so none is on any page.
 - "Trust A+ BBB Rated Company" (site home and promotions). The BBB profile link returned HTTP 403 with a bot challenge, so no rating could be read. Needs a manual check at bbb.org.

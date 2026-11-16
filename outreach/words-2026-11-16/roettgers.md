@@ -86,7 +86,7 @@ Every page in your menu loads and your phone number is tap-to-call on every page
 
 ### What a full build includes
 
-The demo is the first five pages. A full build covers the rest of your services too. About 80% of visitors are on a phone, which is why the 91 speed score below matters.
+The demo is the first five pages. A full build covers the rest of your services too.
 
 **Gets you found**
 - Every service on your website and your Google profile, telling the same story
@@ -105,9 +105,10 @@ The demo is the first five pages. A full build covers the rest of your services 
 - A contact form that blocks spam
 
 **Keeps working after launch**
-- New team members, booking systems and new services, updated for you
-- Updated when Google and AI tools change how they read websites
-- You never have to know what to ask for
+- Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
+- Your site watched around the clock for downtime.
+- Google indexing and your Google visibility checked every day.
+- Menus, contact links and forms tested in a real browser twice a day.
 
 ### What we'd confirm with you
 
@@ -159,6 +160,10 @@ When the temperatures drop, you need a heating system you can count on. From str
 
 > "Kaden & Matt have been extremely helpful and super friendly throughout this process. We are happy we chose to use them for our new furnace." — Chelle S.
 
+### Before You Call About No Heat
+
+A few checks are worth a minute, and they help whoever you call. Make sure the thermostat is set to heat and above the room temperature. Check that the furnace's power switch and breaker are on, and that the supply vents and returns aren't blocked by furniture or rugs. If you smell gas, leave the house and call your gas utility or 911 from outside. If a carbon monoxide alarm goes off, get everyone outside and call 911. Don't try to relight or repair a gas furnace yourself.
+
 ### Cooling
 
 When the summer heat hits, we fix [AC problems](/ac-repair-lincoln-ne/), from warm air to unusual noises. When a system can't be saved, we help you choose the right unit and handle a professional installation of your [new air conditioner](/air-conditioner-replacement-lincoln-ne/). AC tune-ups keep the system efficient and help prevent unexpected breakdowns.
@@ -174,9 +179,9 @@ Routine maintenance means a system inspection, a tune-up and a cleaning, for you
 
 > "I'm so glad I got the service plan. He checked out everything and cleaned inside and out, he was very thorough. It was also nice to not have a bill." — Martha R.
 
-### Selling Your Property? We Can Look the System Over First
+### Inspections When a Home Is for Sale
 
-System inspections and cleaning are part of what we do, including when a buyer wants the heating and cooling looked over before closing.
+System inspections and cleaning are part of our maintenance work. One customer had the furnace looked over while getting the house ready to sell.
 
 > "Kaden came by and while inspecting everything he found a weak capacitor in the furnace, provided a quote and replaced it for us so the next owners of our home are good to go!" — Ethan V.
 
@@ -228,7 +233,7 @@ Most "AC not cooling" calls come down to a short list of causes. In most cases i
 - **A refrigerant leak.** Refrigerant isn't used up like fuel, so a system that's low usually has a leak somewhere. Topping it off without finding the leak often means the same problem comes back.
 - **A frozen evaporator coil.** Often caused by restricted airflow, from a dirty filter or a blocked vent, or by low refrigerant. Ice blocks the air, and the system blows warm.
 - **A dirty outdoor coil.** Grass clippings, leaves and cottony seeds can pack the unit and keep it from shedding heat.
-- **A failed contactor or fan motor.** Both are common wear parts, and both often announce themselves with a unit that clicks, buzzes or runs without the fan turning.
+- **A failed contactor or fan motor.** Both are common wear parts, and both often show up as a unit that clicks, buzzes or runs without the fan turning.
 - **A clogged condensate drain.** Many systems shut themselves off when the drain backs up, which can look like a dead air conditioner.
 
 ### Check These Before You Call
@@ -251,7 +256,7 @@ Customers report calling about a broken AC on a holiday weekend and getting a fa
 
 A visit usually starts with questions: what the system is doing, when it started and whether anything changed. Then the technician typically checks the thermostat, the power to the unit, the airflow, the temperature drop across the coil, the refrigerant pressures and the electrical parts.
 
-Once the cause is found, you should hear what failed, what the repair involves and what it will cost before any work begins. Many repairs use parts that are on the truck. Occasionally a part has to be ordered, which can add a day or more.
+Once the cause is found, you should hear what failed and what the repair involves. Many repairs use parts that are on the truck. Occasionally a part has to be ordered, which can add a day or more.
 
 ### Honest Pricing
 
@@ -271,7 +276,7 @@ On a hot day, close blinds, run fans and watch anyone who is elderly, very young
 
 Ask what failed and whether other parts are likely to be next. A new part in a system that's otherwise in good shape is usually a good repair. The same part in a system that has already needed several repairs deserves a harder look.
 
-Older systems may use a refrigerant that's no longer made. That can make a leak repair expensive, and it's one reason an older unit sometimes costs more to keep than to replace. A good repair should be explained in plain words, with the cost stated before the work starts.
+Older systems may use a refrigerant that's no longer made. That can make a leak repair expensive, and it's one reason an older unit sometimes costs more to keep than to replace. A good repair should be explained in plain words.
 
 ### If the AC Can't Be Saved
 
@@ -307,7 +312,7 @@ If your system is more than 10 years old, needs frequent repairs, or isn't keepi
 
 ### How the Decision Usually Works
 
-A common rule of thumb is to compare the repair bill with the cost of a new system. If the repair is more than about half of that, replacement often makes more sense. Age matters too. A major failure, such as a compressor or a large refrigerant leak, on an older unit often tips the answer toward replacement.
+A common rule of thumb is to compare the repair bill with the cost of a new system. If the repair is more than about half of that, replacement often makes more sense. Age matters too. A major failure, such as a compressor or a large refrigerant leak, on an older unit often points toward replacement.
 
 A failed capacitor, contactor or fan motor on a system in decent shape is usually a repair. If you've paid for two or three repairs in a short stretch, that pattern is worth weighing.
 
@@ -340,9 +345,9 @@ Customers report a replacement installed the next day or the next business day.
 
 ### While You Wait for a New System
 
-If the old unit is still running but making grinding, squealing or banging noises, shut it off. Running it can do more damage, and a failing compressor can leave you without cooling sooner than you planned. Don't try to remove or open the old unit yourself.
+If the old unit is still running but struggling, a failing compressor can leave you without cooling sooner than you planned, so don't wait for the hottest week to get an estimate. Don't try to remove or open the old unit yourself.
 
-Until the new one is in, close blinds in the afternoon, run fans and keep water handy. Heat affects older adults, young children and pets first, so keep an eye on them.
+Until the new one is in, keep water handy and keep an eye on older adults, young children and pets. Heat affects them first.
 
 ### The Right Unit for Your Space and Budget
 
@@ -385,6 +390,10 @@ Customers report being scheduled a day or two out when they contact us on a week
 
 > "Contacted them on a Saturday and got scheduled for Monday. Tech arrived early and I was informed through text which was nice." — Mary S.
 
+### Have This Ready When You Call
+
+The more we know up front, the better. It helps to have the model number from the label on the equipment, where the equipment is (attic, basement, closet or outdoor pad) and whether the thermostat is showing a message or blinking light. Mention anything that changed recently, such as a power outage, new filters or a storm. If there are pets or a locked gate, tell us so the technician can get to the system.
+
 ### Where We Work
 
 We serve Lincoln, NE and surrounding areas, for homes and for businesses.
@@ -404,15 +413,15 @@ Call (402) 314-3612, or send a message with the form above.
 **Two services chosen:** AC Repair and Air Conditioner Replacement (the two money services in inventory.md). Both now pass 700 words without quotes. The site gives one sentence for each, plus the FAQ and the financing page for replacement, so the added depth is hedged general trade knowledge in the owner's voice (usual failures, checks before calling, safety, repair-or-replace rules of thumb, what a visit and a replacement usually involve). It makes no new business claims. Owner input still useful: process, after-hours answer, hours, equipment line.
 
 **Word counts** (computed from the page copy above; "with quotes" includes the quote text and names; "without quotes" removes quote blocks and their captions; headings, bullets, trust bar and buttons count):
-- Home: 655 with quotes, 472 without quotes
-- AC Repair: 973 with quotes, 840 without quotes
-- AC Replacement: 846 with quotes, 731 without quotes
-- Contact: 238 with quotes, 188 without quotes
-- Strategy: 954 with quotes, 954 without quotes
+- Home: about 770 with quotes, about 596 without quotes
+- AC Repair: about 990 with quotes, about 862 without quotes
+- AC Replacement: about 870 with quotes, about 756 without quotes
+- Contact: about 340 with quotes, about 288 without quotes
+- Strategy: about 1,000 or fewer
 
 **Strategy page length:** kept at or under 1,000 words.
 
-**Section counts:** Home 11 (hero, then ten), AC Repair 11 (hero, then ten), Replacement 13 (hero, then twelve), Contact 7 (hero plus six).
+**Section counts:** Home 11 (hero, then ten), AC Repair 11 (hero, then ten), Replacement 11 (hero, then ten), Contact 7 (hero plus six).
 
 **Credentials and their sources**
 - None confirmed. The site states no license, insurance, warranty, certification or award. Nothing is defined on Home because there is nothing to define.
