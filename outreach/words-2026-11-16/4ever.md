@@ -397,23 +397,23 @@ Call (260) 234-2252 and we'll set up your visit.
 ## Notes (not page copy)
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip; "with" is everything on the page)
-- Strategy: 979 without quotes, 994 with (the one quote, the badge, headline, subheading and full-build list all counted). Under the 1,000-word limit.
-- Home: 818 without quotes, 951 with.
-- Standing Seam Metal Roofing: 1008 without quotes, 1088 with. Meets 700+.
-- Interlocking Metal Shingle Roofing: 723 without quotes, 825 with. Meets 700+ without padding, with the product cards turned into two looks and the 3/12 rule explained, but it is the thinner of the two services, as inventory said.
-- Contact: 263 without quotes, 299 with.
+- Strategy: 933 without quotes, 947 with (the one quote; badge, headline, subheading and full-build list counted). Under the 1,000-word limit.
+- Home: 935 without quotes, 1035 with.
+- Standing Seam Metal Roofing: 1033 without quotes, 1103 with. Meets 700+.
+- Interlocking Metal Shingle Roofing: 858 without quotes, 902 with. Meets 700+ without padding: the six product cards became two looks (colors, matte finish, 28-gauge steel, Class 4), plus the 3/12 rule, the four-side lock, the country-home job, the HOA question and the stone-coated comparison.
+- Contact: 269 without quotes, 297 with.
 
 **Credentials and sources** (none checked on a certifier's own site; each is the business's claim, stated as theirs)
 - Manufacturer-certified crews: `/about`, `/warranty`, `/faq`. Not checked; no manufacturer named. Defined once, on home. Strategy asks which manufacturers.
 - Lifetime, non-prorated, transferable workmanship warranty: `/warranty`, `/faq`. Home only. Copy follows `/warranty` (workmanship), not the `/faq` wording that says "product and installation" (conflict, see below).
 - Insurance (general liability, workers' comp, auto, umbrella): `/faq`. Not checked.
-- 4.8 on Google from 299 reviews: `reviews.json`. The site's "350 reviews, 4.90" is not used.
+- 4.8 on Google from 299 reviews: `reviews.json`, on the home strip only. The site's "350 reviews, 4.90" is not used. The strategy page gives no counts.
 - EDCO Class 4 impact rating on the slate and shake lines: product cards on `/metal-shingles`; stated as the manufacturer's listing. Not checked on EDCO's site. The "over 140 mph" wind claim and "highest available" wording on the FAQ were left out.
 - Nearly 2,000 roofs since 2016 and Travis Sliger as owner: `/about`, `/faq`, `/team`; reviews and his Google replies are signed "Travis".
 
 **Conflicts kept out of the copy**
 - Phones: (866) 504-2777, (260) 234-2252, (317) 765-0508. Pages use (260) 234-2252 (Fort Wayne office on `/contact`, Google profile). The 866 and 317 numbers appear only in "What we'd confirm". The Noblesville office address is on Contact without its phone.
-- `/about` says no windows, siding or gutters; reviews (Dana J., Kenneth B., Shasta G., Craig M., Duff R., Jeff E.) describe siding, gutters and skylight windows. Copy asserts neither. Gutter-color matching (a `/videos` clip) is used only as matching samples to the existing gutters; the Duff R. quote is about a gutter color suggestion.
+- `/about` says no windows, siding or gutters; reviews (Dana J., Kenneth B., Shasta G., Craig M., Duff R., Jeff E.) describe siding, gutters and skylight windows. Copy asserts neither. Gutter-color matching is the site's own `/videos` clip, used only as matching samples to the existing gutters; the Duff R. quote is about a gutter color suggestion.
 - `/about` and `/commercial-agricultural` say no standalone repair calls; reviews (Marcus W., M M., Chrisi B., Greg M.) describe repair fixes. The no-repair line is not used.
 - `/faq` says "We only do metal. No shingles."; the company sells metal shingles. Not used.
 - `/` and `/systems` say five systems, but `/systems` also says "the same four systems" and lists three. Not used.
@@ -424,10 +424,10 @@ Call (260) 234-2252 and we'll set up your visit.
 - Services: standing seam and interlocking shingles have pages. Stone-coated steel, exposed fastener, paint systems and commercial and agricultural are cards on home; the strategy page's full-build lines cover future pages. Stone-coated steel is also named in the shingle page's comparison question. The Vice Lock low-slope version is a phrase on home only. The 3/12 minimum is explained on the shingle page; the 4/12 exposed-fastener rule is left as "where the slope allows".
 - Differentiators: owner measures (home, strategy), one trade since 2016 (home), answer before we quote and honest "no" (home, John S.), education before persuasion (home), on-site forming with no horizontal laps (standing seam), certified crews and nearly 2,000 roofs (home), no published prices (home). All used.
 - Unusual offers: second-opinion inspection (home, standing seam; the offer comes from reviews Andy S. and William R., not the site, so it is worded "usually" and sits in facts to verify; the `/videos/inspect-before-you-install` clip is actually about checking the wood under the old roof, used on the standing seam page). Financing (home, once). Gutter color matching (standing seam). Branded systems 4Ever Armored (standing seam) and 4Ever Fortress (not named; the shingle page describes the system without the brand, and EDCO and Vicwest are named once); 4Ever Guard not named. Lifetime warranty (home). Fast install (home, Tim T.). Rental refusal (Karrie N. 1-star): not used; not on the site.
-- Review themes: hands-on owner (Sarah R.), honest (John S.; Sally Z. on strategy), clean site (Tim T.), fast (Tim T. and "one to three days"), named office staff (Kristin P., Noah, role not stated because reviews disagree on whether he is sales or project manager). Also used: Andy S., William R., Duff R., Jonathan C., Matt R., Marie K.
+- Review themes: hands-on owner (Sarah R.), honest (John S.; Sally Z. on strategy), clean site (Tim T.), fast (Tim T. and "one to three days"), named office staff (Kristin P., Noah, role not stated because reviews disagree on whether he is sales or project manager). Also used: Andy S., William R., Duff R., Jonathan C., Marie K. Matt R. (noise) left out so the noise idea appears once.
 - Not quoted: Tyler G. (2 stars, communication), william G. (1 star, leak message), Karrie N. (1 star). All the 1 and 2 star reviews concern follow-up after the job. Not on the strategy page; worth raising with the owner on the call.
 - Left out: Michigan license and business ID (outside the Fort Wayne market), the no-license-required remark for Indiana and Ohio, "15 to 30 percent" energy savings and the $46,031 vs $151,640 cost example (unsourced), Facebook link typo, Platinum Metals is named once on the standing seam page.
-- Case study: the country-home shingle job (`/videos/house-doesn-t-have-to-look-like-a-barn`) is on the shingle page, retold without the homeowner's name. The Kendallville hail job is not used.
+- Case study: the country-home shingle job (`/videos/house-doesn-t-have-to-look-like-a-barn`, about $500 per wind repair) is on the shingle page, retold without the homeowner's name. The Kendallville hail video (`/videos/inspect-before-you-install`) is used for its lesson only, in "What We Check Before We Quote" on the standing seam page, without naming the job.
 - Not used from the strategy-page guide: SRA proof block, header and the "View page" buttons are template content, not written here.
 
 **Facts to verify**
@@ -436,6 +436,9 @@ Call (260) 234-2252 and we'll set up your visit.
 - Which manufacturers certify the crews.
 - Whether Travis is on site "while the crew works" as a rule. Copy says "I also try to be" and relies on Sarah R. and Joe A. (not quoted).
 - Hours: Monday to Saturday, 8 a.m. to 8 p.m. Eastern, from `/contact`. Nothing on Sunday is stated.
-- The 90-minute drive: from the Fort Wayne service-area page; `/contact` lists three offices' counties in a 56-county reach.
+- The 90-minute drive: the site's service-area line says "roughly a 90-minute drive" of both offices; another service-area page says Fort Wayne works within about 100 miles. Contact's town list (New Haven, Auburn, Columbia City, Huntington, Bluffton, Decatur, Kendallville) is from the site's service-area pages.
+- Home, weight and lifespan answers come from the site's videos (building codes allow two layers; heaviest metal roof about half the weight of asphalt; 50 to 70 years concealed fastener, 30 to 35 exposed fastener).
+- The "buyers pay extra" claim was removed: the site's video says metal adds value, so the home line now says only that a metal roof pays back over decades.
+- Noise: stays on the standing seam page only (Matt R.'s steel-shingle quote is not used, so the idea appears once).
 - "About 80% of visitors are on a phone" is from the brief, not a source I checked.
 - General trade knowledge (ice dams, snow guards, plank wood under old roofs, how to read a paint warranty, slope as rise over run) is hedged background drawn from the business's own guides and articles; it makes no business claim.
