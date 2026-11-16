@@ -409,15 +409,15 @@ Call 319-900-5497 and we'll set up a time.
 
 ## Notes (not page copy)
 
-**Rebuild reason:** Both. SEO: the homepage, concrete and deck headlines are bare or slogans and never say Cedar Rapids; design: the site is a dated WordPress/Elementor build with four phone numbers and thin service pages.**
+**Rebuild reason: Both. SEO: the homepage, concrete and deck headlines are bare or slogans and never say Cedar Rapids; design: the site is a dated WordPress/Elementor build with four phone numbers and thin service pages.**
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
 
-- Strategy page: 1052 without quotes, 1074 with.
-- Home: 639 without quotes, 740 with.
-- Concrete: 726 without quotes, 837 with.
-- Decks: 786 without quotes, 860 with.
-- Contact: 256 without quotes, 291 with.
+- Strategy page: 1140 without quotes, 1170 with.
+- Home: 587 without quotes, 688 with.
+- Concrete: 720 without quotes, 831 with.
+- Decks: 776 without quotes, 850 with.
+- Contact: 232 without quotes, 267 with.
 
 **Credentials and sources** (none confirmed on a certifier's own site; each is the business's claim, stated as theirs)
 
