@@ -160,7 +160,7 @@ When you call, we ask what the system is doing and gather the details about your
 
 Furnaces tend to fail on the coldest night, and air conditioners on the hottest afternoon. We offer 24/7 emergency service, and a technician can be headed your way after one call to (812) 589-9338.
 
-Evansville summers are hot and humid, and winters often drop below freezing for stretches. A house with no cooling in July or no heat in January is not a problem to leave until Monday, and for older residents or small children it can become a safety problem within hours.
+Evansville summers are hot and humid, and winters often drop below freezing for stretches. A house with no cooling in July or no heat in January is not a problem to leave until Monday, and for older residents or small children it can become a safety problem quickly.
 
 ### Equipment Matched to Your Home, Not to a Brand
 
@@ -440,10 +440,10 @@ Call (812) 589-9338 and we'll set up your visit.
 ## Notes (not page copy)
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
-- Strategy: 1147 without quotes, 1189 with (fixed full-build list and four cards; over the ~1,000 soft cap, with the fixed lines about 450 of it).
-- Home: 974 without quotes, 1073 with.
-- Furnace Repair: 1012 without quotes, 1130 with.
-- Air Conditioning: 1063 without quotes, 1203 with.
+- Strategy: 1129 without quotes, 1149 with (fixed full-build list and four cards; over the ~1,000 soft cap, with the fixed lines about 450 of it).
+- Home: 937 without quotes, 1036 with.
+- Furnace Repair: 978 without quotes, 1096 with.
+- Air Conditioning: 1045 without quotes, 1185 with.
 - Contact: 286 without quotes, 324 with.
 
 **Credentials and sources** (none checked on a certifier's or manufacturer's own site; each is the business's claim, stated as theirs)
@@ -451,7 +451,7 @@ Call (812) 589-9338 and we'll set up your visit.
 - Certified to install and service most major manufacturers; repairs all major brands: `/faq/what-brands...`, `/heating`. Home only (service page says "all major brands" once for repair).
 - "Licensed technicians": generic on every service page. Not used in copy (no license body named).
 - EPA-certified vs EPA-licensed: conflict, so neither is in copy. Strategy asks.
-- 24/7 emergency service: `/heating`, `/air-conditioning` bullets, and the business after-hours FAQ ("emergency line is answered 24/7"). Stated as their claim. Reviews: Scott S. ("24/7"), Rodney H. (Saturday in 100-degree heat).
+- 24/7 emergency service: `/heating`, `/air-conditioning` bullets, and the business after-hours FAQ ("emergency line is answered 24/7"). Stated as their claim. Review: Rodney H. (Saturday in 100-degree heat). Scott S.'s "24/7" review is no longer used. The strategy page says the home page never mentions 24/7.
 - Free replacement estimates: `/heating` (furnace replacement). Copy says "furnace replacement estimates are free"; AC replacement's estimate is not stated on the site, so confirm it covers AC too.
 - Financing: heating page, once ("financing is available"). No lender named, because the site contradicts itself.
 - Family-owned, built from two local businesses, one van: `/about-us`. The year 2018 is left out (conflict).
@@ -463,7 +463,7 @@ Call (812) 589-9338 and we'll set up your visit.
 - EPA-certified vs EPA-licensed. In strategy only.
 - Residential maintenance plan: only Barbara W.'s review; the site describes agreements for businesses. In strategy only. Not quoted.
 - "150+ Happy Customers Served This Year" (testimonials): no source, not used.
-- Speed: "usually within a day, often the same day" is read from reviews (Thomas B. same day, Taylor M. within 24 hours, Rodney H. Saturday, Addison E.). It is not stated on their site as a promise, so it is worded "usually/often" and not as policy. "Same-day residential repairs" on the About page supports it.
+- Speed: read from four reviews (Thomas B. same day, Taylor M. within 24 hours, Rodney H. Saturday, Addison E.), so it is said at review strength, never as a company promise: "Customers describe a technician within a day, often the same day." Once on each service page (hero only, no speed FAQ). On home: once in the strip and once in the section ("A Technician Within a Day" heading); the hero and the speed FAQ do not repeat it. "Same-day residential repairs" on the About page supports it.
 - Hours: no posted hours were found on the pages, so no hours appear in copy. Facts to verify.
 - Anita A.'s review (quote $866, paid $947 plus $32 card fee) contradicts any "no surprises" price claim. No such claim is made. The Prices section only says prices depend on the part or system.
 - Roger G. (3 stars, wrong filter brought three times) and Brian C. (work order closed with nothing done): not quoted, not used.
@@ -472,8 +472,8 @@ Call (812) 589-9338 and we'll set up your visit.
 - Services: furnace repair, replacement, heat pump repair and installation, tune-ups, controls and thermostats (heating page); AC repair, maintenance, replacement, indoor air quality, mini-splits (AC page). Controls and thermostats appear on the heating page only, not again on the AC page. Generators and commercial (all six generator services and all five commercial services) are in home sections only, because there are no reviews about them to support separate pages.
 - Differentiators: family-owned and two merged businesses (home); not pushing a single brand (home); 24/7 emergency (home strip, home, contact); one-day installs (home FAQ); free replacement estimates (strip, home, heating); test the system and tidy up (home, heating); bring us in early on plans (home); written report after each visit (home). "Neighbors" and "treats your home like our own" are left out as filler. "Experience, honesty and a personal touch" and "Satisfaction guaranteed" are left out (filler, and the guarantee is unspecified).
 - Multi-location one point of contact: home and contact. Plan-reading for new construction: home.
-- Review themes: speed (Thomas B., Rodney H., Addison E.; Taylor M. and Scott S. on strategy), named staff (Jake in Helena L. and Suzanne, Clint in Palladian C. and Addison E., Robert in Faith R.), fair price (Ron A., Jonathan F., Jesse P., Palladian C.), explained the work (Suzanne), clean workspace (K K.'s "cleaned up well" is not in the trimmed quote; Brian H. is unused). Allen, Wayne and the other names appear only in unused reviews. Wayne Opel is named as owner in one review (K K.); he is not named in copy because the site never names an owner.
-- Site testimonials (Viola Johnson, Kevin Storey, Michael Molinet, Andrew Hayes): not in `reviews.json`, so not verifiable on Google and not quoted. The strategy page names them only to point at the repeated block.
+- Review themes: speed (Thomas B., Rodney H., Addison E.; Taylor M. on strategy; Scott S. is cut), named staff (Jake in Helena L. and Suzanne, Clint in Palladian C. and Addison E., Robert in Faith R.), fair price (Ron A., Jonathan F., Jesse P., Palladian C.), explained the work (Suzanne), clean workspace (K K.'s "cleaned up well" is not in the trimmed quote; Brian H. is unused). Allen, Wayne and the other names appear only in unused reviews. Wayne Opel is named as owner in one review (K K.); he is not named in copy because the site never names an owner.
+- Site testimonials (Viola Johnson, Kevin Storey, Michael Molinet, Andrew Hayes): not in `reviews.json`, so not verifiable on Google and not quoted. The strategy page does not name them; it only says the same four repeat.
 - Case studies: the site has none. The Daikin pole-barn mini-split job (Susan Z.) and the one-day Evansville replacement (K K.) come from reviews and are quoted.
 - Left out: Indianapolis as a service area is mentioned once on home as "recent work" only; the site's "same-day residential repairs" line is used only as support. Rating-only reviews are not used.
 
@@ -481,9 +481,9 @@ Call (812) 589-9338 and we'll set up your visit.
 - Hours of operation (none found), and whether the emergency line is answered by a person at all hours.
 - Which year the company started, and whether "certified dealer" status is current for Ruud and American Standard.
 - Whether free estimates cover AC replacement as well as furnace replacement.
-- Whether "usually within a day, often the same day" matches what dispatch can really deliver.
+- Whether "a technician within a day, often the same day" (the customers' words) matches what dispatch can really deliver.
 - Whether homeowners can buy a maintenance plan.
 - The email address: `kwheatingandair@gmail.com` is on the contact page; the domain is kwheatingandcooling.com.
-- "About 80% of visitors are on a phone" is from the brief, not a source I checked.
+- "Most visitors are on a phone" is stated without a figure, so there is no number to source.
 - General trade knowledge is hedged background and not a business claim: furnace and AC lifespans, heat pump backup heat, R-22 phase-out in 2020, oversizing and humidity, gas smell and carbon monoxide steps, Evansville's humid summers and freezing winters, storms as a cause of outages.
 - The Daikin spelling "Daiken" is in the review quote as written.

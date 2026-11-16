@@ -4,6 +4,8 @@
 
 You write words only, as one Markdown file that becomes a Google Doc. Edit only your output file. Run no git, send nothing, create no sessions.
 
+**Strips and hedging (FF architect, Nov 16):** one strip per doc, on Home only, under the hero buttons, max 5 items (no service-page strips, no second or third bar). Hedge claims that need proof; never hedge plain process steps ("We schedule the work once the claim is approved").
+
 ## Read first, in full
 1. **The models:**
    - `examples/approved-copy/` (sra, window-dudes, greene-planet);

@@ -12,6 +12,8 @@ Josh and the FF architect found patterns in their own full passes on Sterling an
 
 **Mechanical repeat count (required, FF architect Nov 16):** run `python3 scripts/check-repeats.py outreach/words-2026-11-16/<slug>.md` (or the saved `<slug>.gdoc.md`). Any FAIL (speed or 24/7 phrases more than twice on one business page) must be fixed and the script re-run until it prints no FAIL. Review WARN lines with judgment.
 
+**Strips and hedging (FF architect, Nov 16):** one strip per doc, on Home only, under the hero buttons, max 5 items (no service-page strips, no second or third bar). Hedge claims that need proof; never hedge plain process steps ("We schedule the work once the claim is approved").
+
 ## Read first
 - `docs/briefs/DOC-CHECK-BRIEF.md`. Checklist items 94–104 in `docs/JOSH-CHECKLIST.md` are the new ones.
 - `docs/writer-guides/FULL_BUILD_LINES.md`. Its approved lines are the only allowed wording.

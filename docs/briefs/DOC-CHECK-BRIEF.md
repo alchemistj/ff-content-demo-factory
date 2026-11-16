@@ -53,6 +53,8 @@ You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-
 
 Edit nothing else. Run no git, send nothing, create no sessions.
 
+**Strips and hedging (FF architect, Nov 16):** one strip per doc, on Home only, under the hero buttons, max 5 items (no service-page strips, no second or third bar). Hedge claims that need proof; never hedge plain process steps ("We schedule the work once the claim is approved").
+
 ## FAIL conditions (send back)
 - **Missing inventory:** a differentiator, unusual offer or service from inventory.md is missing and not listed as consciously left out.
 - **Invented business claims:** services, credentials, speed, guarantees, prices or promised process not in `site/`, `facts.md` or `reviews.json`, including process steps inferred from reviews. Do NOT cut hedged general trade knowledge (what usually fails, what to check, safety, repair-vs-replace, what a visit involves); it is expected.
