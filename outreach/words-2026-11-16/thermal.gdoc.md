@@ -214,7 +214,7 @@ Heating or cooling down? Call (309) 699-3333, or request an appointment.
 
 # Air Conditioning Repair in Peoria, IL — Thermal Services Inc
 
-We repair, install and maintain air conditioners for Peoria homes and businesses. Ductless splits and chillers too. One customer had cooling back by 10:30 after an 8 AM call. Call (309) 699-3333.
+We repair, install and maintain air conditioners for Peoria homes and businesses. Ductless splits and chillers too. Call (309) 699-3333.
 
 **Buttons:** Call (309) 699-3333 / Request an Appointment
 
