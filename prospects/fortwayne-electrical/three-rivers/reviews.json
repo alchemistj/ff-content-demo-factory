@@ -1,0 +1,710 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "fortwayne-electrical-threerivers",
+  "place": {
+    "name": "Three Rivers Electric",
+    "placeId": "ChIJmWqMGuX7FYgRnyxAOhSa1xc",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Three%20Rivers%20Electric&query_place_id=ChIJmWqMGuX7FYgRnyxAOhSa1xc",
+    "address": "3020 Congressional Pkwy Ste B, Fort Wayne, IN 46808",
+    "phone": "(260) 908-8700",
+    "rating": 4.9,
+    "totalReviewCount": 219
+  },
+  "pulledAt": "2026-11-16T04:12:43.794Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21rMWEyNW9XbTlITTNwTWQxbEphREIxUm5SNVlsRRAB",
+      "reviewer": "Richard D.",
+      "rating": 5,
+      "text": "Great job! Taylor and Tyler persisted until the repaired every break on the yard light connection.",
+      "publishedAt": "2026-11-11T21:09:19.665Z",
+      "ownerResponse": "Thank you, Richard! We think Kyle is pretty great, too. We appreciate the review and choosing Three Rivers Electric. We're always here to help! <br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21rMWEyNW9XbTlITTNwTWQxbEphREIxUm5SNVlsRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOmk1a25oWm9HM3pMd1lJaDB1RnR5YlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCT1FsOWhNbEJsYzNadldrVnphbVpmYVhSWVVuYxAB",
+      "reviewer": "Mark",
+      "rating": 5,
+      "text": "Fantastic service and very polite when explaining i wired the gfi outlet wrong.  Thank you!",
+      "publishedAt": "2026-11-11T15:53:11.999Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCT1FsOWhNbEJsYzNadldrVnphbVpmYVhSWVVuYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlBOQl9hMlBlc3ZvWkVzamZfaXRYUnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pka2NuVndlbGxLYVcxaVZFODBURXQxZVZOZk0yYxAB",
+      "reviewer": "Teri J.",
+      "rating": 5,
+      "text": "Very fast service and reasonable price!! Definitely would use them again!",
+      "publishedAt": "2026-11-07T15:02:37.600Z",
+      "ownerResponse": "Happy to help with your bathroom repair! We're always here to help and thank you for the awesome review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pka2NuVndlbGxLYVcxaVZFODBURXQxZVZOZk0yYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjdkcnVwellKaW1iVE80TEt1eVNfM2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wdVVWOVJiSHB5YzI1V1UwdFhVM1pHTUVadk5GRRAB",
+      "reviewer": "Mike",
+      "rating": 5,
+      "text": "Installed two new light switches, one correcting an improper installation done by an electrician from another company.  Given a 1 hour time frame for when they would arrive and they arrived right on time.  Quickly completed the desired work and even helped out on a couple of other electrical issues we were having.  Great company.  Will definitely use them again.",
+      "publishedAt": "2026-11-04T15:30:43.984Z",
+      "ownerResponse": "Thank you for the shockingly good review! We’re glad we could get those switches flipped, fix what needed fixing, and help tackle a few extra electrical hiccups along the way! We believe in doing the job right and never leaving our customers in the dark. We appreciate you choosing Three Rivers Electric and look forward to keeping the sparks flying (in all the right ways)!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wdVVWOVJiSHB5YzI1V1UwdFhVM1pHTUVadk5GRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOmpuUV9RbHpyc25WU0tXU3ZGMEZvNFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSalUwZzVhVzVFYW5KRU9ERk1kV0V3VVdsYU1VRRAB",
+      "reviewer": "Andrew P.",
+      "rating": 1,
+      "text": "Are you kidding me your charging $75.00 for an estimate Don't think I'm dealing with people who do this, estimates are to be free.So I'll find a diff company ,wow this is ridiculous!!",
+      "publishedAt": "2026-10-27T21:08:41.249Z",
+      "ownerResponse": "Thank you for taking the time to share your feedback. We appreciate the opportunity to clarify our estimate process, even though you ultimately decided not to move forward with our services.<br><br>As mentioned, we do charge a fee for our estimates. As a licensed and insured company, we take pride in providing knowledgeable, professional service. Our electricians participate in company-funded continuing education to stay up to date with industry standards and best practices. Preparing a thorough and accurate estimate requires time, expertise, and company resources. While we understand that free estimates are appealing, we believe it’s important to fairly compensate our team for their time and expertise.<br><br>We understand that every customer has different expectations, and we appreciate you considering our company. We wish you all the best and would be happy to assist you with any electrical needs in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSalUwZzVhVzVFYW5KRU9ERk1kV0V3VVdsYU1VRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjRjU0g5aW5EanJEODFMdWEwUWlaMUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kwNVNVY3RUM3BSVmsxamNtaE9jbkpMZGxKM1YxRRAB",
+      "reviewer": "Mary G.",
+      "rating": 5,
+      "text": "Three rivers electric did an excellent job. Very fair price, great communication, on time, professional team. Highly recommend.",
+      "publishedAt": "2026-10-27T11:12:48.193Z",
+      "ownerResponse": "Thanks for the great review! We like to hear we were fair, clear, and punctual - we're not shocked and do not want you to be either! We appreciate the recommendation and are happy to power what matters.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kwNVNVY3RUM3BSVmsxamNtaE9jbkpMZGxKM1YxRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOi05SUctT3pRVk1jcmhOcnJLdlJ3V1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsbFQyWTFNa2xpY2xWU1p5MWZWa1JLZG5WV2RtYxAB",
+      "reviewer": "Caleb S.",
+      "rating": 5,
+      "text": "Three Rivers Electric was very responsive and was able to squeeze me in on short notice. The electrician, Kyle, resolved our problem with our outlets quickly and gave us a bit of education as to why some of our outlets went out.",
+      "publishedAt": "2026-10-23T17:49:49.736Z",
+      "ownerResponse": "Thanks for the stellar review! We're thrilled Kyle was able to get you plugged back in and didn't keep you in the dark! We're always here to help, solve the problem, and share a little know how along the way! We appreciate you choosing Three Rivers Electric!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsbFQyWTFNa2xpY2xWU1p5MWZWa1JLZG5WV2RtYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlllT2Y1MkliclVSZy1fVkRKdnVWdmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kUExXRmlaa1JSU0MxdlR6aEdVamhtUTFwS1oyYxAB",
+      "reviewer": "Timothy S.",
+      "rating": 5,
+      "text": "Easy to work with. Provided exactly the service quoted with no BS. On time and efficient.",
+      "publishedAt": "2026-10-13T15:48:29.728Z",
+      "ownerResponse": "We love this review, thanks! We believe in keeping our word, showing up on time, and keeping the BS breaker switched OFF! Just good work, fair service, and no shocking surprises. Thanks for trusting us with your electrical needs! P.S. We're glad the escape artist is back home - hope they agree with your purr-fect review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kUExXRmlaa1JSU0MxdlR6aEdVamhtUTFwS1oyYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOndPLWFiZkRRSC1vTzhGUjhmQ1pKZ2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSd1RqUXpSM0JwZVdzMVFqZ3daVTV5T1VkRU5sRRAB",
+      "reviewer": "tonya F.",
+      "rating": 5,
+      "text": "The guys who came out were very knowledgeable and professional.  Very pleased with their work.",
+      "publishedAt": "2026-10-13T10:32:57.763Z",
+      "ownerResponse": "Thanks for the awesome review! Our guys really know their stuff —  not  too shocking, we hope! We’re glad you’re happy with the work and appreciate you choosing us. We’ll keep the lights on and the bad jokes coming!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSd1RqUXpSM0JwZVdzMVFqZ3daVTV5T1VkRU5sRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjRwTjQzR3BpeWs1QjgwZU5yOUdENlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsR2MzVkJkemMxU3pCZlNtZHdRMnBtTUVSRFNGRRAB",
+      "reviewer": "Thomas P.",
+      "rating": 5,
+      "text": "They were on time, professional, and courteous. They did a good job.",
+      "publishedAt": "2026-10-11T17:48:03.832Z",
+      "ownerResponse": "Thank you for the great review! We believe in showing up on time, doing the job right, and leaving the good energy behind!  We appreciate your trust in our team!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsR2MzVkJkemMxU3pCZlNtZHdRMnBtTUVSRFNGRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOllGc3VBdzc1SzBfSmdwQ2pmMERDSFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkTmVuWmlTbTlxVmkxYWJIWlVjRWw2V2tOV1RYYxAB",
+      "reviewer": "Brad Q.",
+      "rating": 5,
+      "text": "Great work and courteous",
+      "publishedAt": "2026-10-09T15:59:13.789Z",
+      "ownerResponse": "Thanks for the great review! We always aim to keep our customers happy and the sparks where they belong! We appreciate your business and are glad our work and manners were both up to code!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkTmVuWmlTbTlxVmkxYWJIWlVjRWw2V2tOV1RYYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjdNenZiSm9qVi1abHZUcEl6WkNWTXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5VlUxUlhMUzFLUXpNd2NGRkZURVJTYVhBME0yYxAB",
+      "reviewer": "Scott B.",
+      "rating": 5,
+      "text": "This is the second time I've used this company and the second time they have sent somebody out who is very polite knows what they're doing and gets the job completed in a very timely matter. And if I ever need to use them again, you bet, I will. As far as pricing, I think they are the most reasonable in town.",
+      "publishedAt": "2026-10-08T15:24:50.270Z",
+      "ownerResponse": "Thank you for the review! We appreciate it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5VlUxUlhMUzFLUXpNd2NGRkZURVJTYVhBME0yYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOl9VU1RXLS1KQzMwcFFFTERSaXA0M2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxRWRESkJSblphTVZFMWFYUjNUV3hWVnpGWmVtYxAB",
+      "reviewer": "Rob W.",
+      "rating": 5,
+      "text": "They did a great job getting my EV charger set up. Everything was finished and looked very good.",
+      "publishedAt": "2026-10-01T19:32:39.575Z",
+      "ownerResponse": "Thanks for the great review! We’re glad we could get your EV charger powered up and ready to roll! Consider us officially charged up about your kind words! Thanks for trusting us with the job!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxRWRESkJSblphTVZFMWFYUjNUV3hWVnpGWmVtYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOk1EdDJBRnZaMVE1aXR3TWxVVzFZemc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2psU1JFTktWREpUU0RWUVNGQnVhVTV3YUVaa04wRRAB",
+      "reviewer": "tim H.",
+      "rating": 5,
+      "text": "The 2 guys that came out and did the work were great! Friendly, knowledgeable, and kept everything neat and tidy! I will definitely refer you to friends and family.  And the gentlemen that came out for the estimate was also great to work with,  he gave me a suggestion for a company that ended up getting the contract to install my new mini split. All the prices were the best also.",
+      "publishedAt": "2026-09-30T20:38:25.094Z",
+      "ownerResponse": "Thanks so much for the fantastic review! We're thrilled to hear our team left your space neat & tidy and that Kyle's recommendation worked out. We love a good referral and like to do the same for our trusted friends! <br><br>We appreciate the opportunity to keep your home powered up and running right! Thanks again for choosing Three Rivers Electric - we'll be here when you need us, tools in hand!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psU1JFTktWREpUU0RWUVNGQnVhVTV3YUVaa04wRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjlSRENKVDJTSDVQSFBuaU5waEZkN0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wTFJXODFiMHBmVVc1dldqSlZXbk0wYTNaMU5IYxAB",
+      "reviewer": "lu",
+      "rating": 5,
+      "text": "Professional, on time and acceptable prices. Thanks guys!<br>Anybody looking for electricians,  go local, go Three Rivers Electric!",
+      "publishedAt": "2026-09-21T15:15:32.300Z",
+      "ownerResponse": "Thanks for the awesome review and for trusting Three Rivers Electric. We appreciate your business and are always happy to power what matters and  keep your breakers behaving themselves!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wTFJXODFiMHBmVVc1dldqSlZXbk0wYTNaMU5IYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOmpLRW81b0pfUW5vWjJVWnM0a3Z1NHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xrNU9IbFFRa0ZqTmxKRVQxTmlNWGt4Vm10cWRHYxAB",
+      "reviewer": "Robert W.",
+      "rating": 5,
+      "text": "I have nothing but 110% satisfied words to use for the guys that came out and help me get a power line in my AC unit. The two gentlemen that were here stood in poured down rain and kneeling down in puddles of water to get the job done. I've owned three different businesses and I would have hired these two guys any day of the week. Three Rivers is now my go-to company on all electrical problems for myself and a mobile home park that I run and manage. Even in my best days I will not stood out in the rain like these two guys did for me. I can't say enough for three rivers sending me help within 2 hours of a phone call. Top of the list in my world",
+      "publishedAt": "2026-09-18T12:51:04.178Z",
+      "ownerResponse": "Wow! 110% is a score we’ll gladly take! <br><br>Thank you so much for the amazing review and for recognizing Taylor & Tyler. Apparently, when it comes to getting the job done, they have decided that puddles are not just child's play and rain is merely a minor inconvenience. We’re incredibly proud of our team and their commitment to taking care of our customers—no matter what Mother Nature throws at them.<br><br>We truly appreciate your trust in Three Rivers and being your go-to electrical company. We’ll keep doing our best to stay at the top of your list! <br><br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xrNU9IbFFRa0ZqTmxKRVQxTmlNWGt4Vm10cWRHYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlk5OHlQQkFjNlJET1NiMXkxVmtqdGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGUE1VTlZhM1pqUXkxRldYUmxXbGxSWmtwQ2NYYxAB",
+      "reviewer": "John I.",
+      "rating": 5,
+      "text": "Great work, and knowledgeable at what they do, Very nice staff and Understanding. Thank you so much for all they done.",
+      "publishedAt": "2026-09-17T21:10:20.081Z",
+      "ownerResponse": "Thanks, John ! We appreciate the kind words and are amped to hear you had a positive experience with our team and that little spark of great customer service too! Being able to help you in an emergency is the icing on the cake! <br><br>We appreciate the support and trust. We'll be here whenever you need us - powering what matters.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGUE1VTlZhM1pqUXkxRldYUmxXbGxSWmtwQ2NYYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlFPMUNVa3ZjQy1FWXRlWllRZkpCcXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25aelRYZzRXUzB3UTA1c05qUkVZVkZuV0VkSU9WRRAB",
+      "reviewer": "Dave D.",
+      "rating": 5,
+      "text": "Professional job great guys doing installation, great work performance and excellent job for completion",
+      "publishedAt": "2026-09-17T15:07:47.419Z",
+      "ownerResponse": "Thanks for the amazing review! We're glad our team was able to help you with your emergency and didn't leave you in the dark! <br><br>We'll pass your kind words along to Taylor & Tyler - with praise like this, they'll be a little more 'charged' than usual! <br><br>Thanks for the trust - it's appreciated! <br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aelRYZzRXUzB3UTA1c05qUkVZVkZuV0VkSU9WRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOnZzTXg4WS0wQ05sNjREYVFnWEdIOVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tOUWNIQnhPR0ZxTjFSelZEUmFWbkoyV0hGNFJXYxAB",
+      "reviewer": "Nathan P.",
+      "rating": 5,
+      "text": "So grateful for three rivers electric company for fixing our breaker and the price was just right not to high and I would recommend this company thanks to Ryan and Kyle",
+      "publishedAt": "2026-09-11T21:10:01.624Z",
+      "ownerResponse": "Thank you so much for the awesome review! ⚡ We’re glad Ryan and Kyle got that breaker back in action without your wallet needing a breaker of its own! 😂 We truly appreciate the recommendation and are happy we could get you powered up. We’ll definitely pass along the shout-out to Ryan and Kyle!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOUWNIQnhPR0ZxTjFSelZEUmFWbkoyV0hGNFJXYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOkNQcHBxOGFqN1RzVDRaVnJ2WHF4RWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toWk9HaDRSakpIVVROaWVHeDNPVXhtWlUxQ2JIYxAB",
+      "reviewer": "John N.",
+      "rating": 5,
+      "text": "Friendly employees. Woke up to a breaker that tripped and no power to the master bath and garage. Located the problem quickly to an outdoor fixture and had the parts to fix it right there! Loved that I got a text when the crew was on the way and I could track their location. Which was great so I could leave the dogs out until the last minute and put them up when I saw them pull down the street. Would recommend!",
+      "publishedAt": "2026-09-05T23:06:19.823Z",
+      "ownerResponse": "Thank you for the awesome review! ⚡ We’re glad our team was able to find the culprit, have the parts ready to go, and get your power back without turning your garage and bathroom into a permanent camping experience. 😂<br><br>And we LOVE hearing that the team-tracking feature helped with the most important part of the visit: getting the dogs secured before the electricians arrived! 🐶<br><br>Thanks for trusting Three Rivers Electric Company—and for the recommendation. We’ll keep the power on and the dog escapes to a minimum!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toWk9HaDRSakpIVVROaWVHeDNPVXhtWlUxQ2JIYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOkhZOGh4RjJHUTNieGx3OUxmZU1CbHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT205TlIxRkVUV0ZmWWxKV09EbE1aMjV3WjIxMmRWRRAB",
+      "reviewer": "Joe G.",
+      "rating": 5,
+      "text": "I was impressed with Taylor and Tyler. They was on time and explained to me what needed done and fixed the problem.  I would suggest them for any electrical problem you may have.",
+      "publishedAt": "2026-09-04T02:22:53.233Z",
+      "ownerResponse": "Thank you for the awesome review! We’re so happy that Taylor and Tyler  provided the customer service we're known for, explained everything, and got your electrical problem shocked back into shape! ⚡😂 <br><br>We really appreciate the recommendation and are glad we could get everything working again. We’ll be sure to let the guys know they earned some serious brownie points!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205TlIxRkVUV0ZmWWxKV09EbE1aMjV3WjIxMmRWRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOm9NR1FETWFfYlJWODlMZ25wZ212dVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaek9HUm9NMlozUldNeE5sOUtVbmt6TTNSbVkwRRAB",
+      "reviewer": "Alphonse",
+      "rating": 5,
+      "text": "Great job, thanks",
+      "publishedAt": "2026-09-02T16:22:54.852Z",
+      "ownerResponse": "Thank you! ⚡ We’re glad we could get the job done right! We really appreciate you choosing Three Rivers Electric!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaek9HUm9NMlozUldNeE5sOUtVbmt6TTNSbVkwRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlZzOGRoM2Z3RWMxNl9KUnkzM3RmY0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CV1ExbHhka1ZvU1RKM2IzUnlPVjlOVFV3elYyYxAB",
+      "reviewer": "Midge S.",
+      "rating": 5,
+      "text": "I had Solar panels removed from my house roof yesterday<br>2 very dependable polite young men were sent over & I’m very pleased with all.<br>It took several hours cuz of the unexpected thunderstorm",
+      "publishedAt": "2026-09-02T13:32:34.707Z",
+      "ownerResponse": "Thank you so much for the great review! ⚡ We’re thrilled to hear you were happy with our team and the work they did. We’ll make sure Taylor & Tyler  know they earned some serious brownie points! 😄<br><br>As for the rain… apparently Mother Nature wanted to supervise the job! ⛈️😂 Thankfully, our guys didn’t let a little rain ruin the day. We appreciate your patience and are so glad everything was completed safely and to your satisfaction!<br><br>Thanks again for choosing Three Rivers Electric!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CV1ExbHhka1ZvU1RKM2IzUnlPVjlOVFV3elYyYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOnBWQ1lxdkVoSTJ3b3RyOV9NTUwzV2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kdVVqY3dOR1JHZG5sSE5VWlNaR3BZWWt4c1ptYxAB",
+      "reviewer": "Jeff L.",
+      "rating": 5,
+      "text": "Job was done correctly, quickly, and correctly.",
+      "publishedAt": "2026-09-01T20:47:22.093Z",
+      "ownerResponse": "Thank you for the kind review! We're delighted we could get the job done quickly and right! We appreciate your business and trust.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kdVVqY3dOR1JHZG5sSE5VWlNaR3BZWWt4c1ptYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOmduUjcwNGRGdnlHNUZSZGpYYkxsZmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tacFZXVTNjell6WVZGcFYzRkdZVTA1YUdKSFYxRRAB",
+      "reviewer": "Joel M.",
+      "rating": 5,
+      "text": "They had a hard time with our house, not their fault at all. Ryan stuck with it and did a great job",
+      "publishedAt": "2026-08-26T18:03:19.845Z",
+      "ownerResponse": "Thank you for the great review! Sounds like your house decided to give Ryan a little extra homework that day! 😄 We’re glad he stuck with it, rolled with the challenges, and got the job done. We really appreciate your understanding—and we’ll make sure Ryan gets the well-deserved shout-out! We look forward to seeing you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tacFZXVTNjell6WVZGcFYzRkdZVTA1YUdKSFYxRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOkZpVWU3czYzYVFpV3FGYU05aGJHV1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxbWNDMWlaM0ZsVmpnNGJYWllUbnBITUU0elRWRRAB",
+      "reviewer": "Chuck M.",
+      "rating": 5,
+      "text": "I highly recommend Three Rivers.  Their team is professional, courteous, knowledgeable, and communicates well every step of the way.",
+      "publishedAt": "2026-08-26T13:54:02.886Z",
+      "ownerResponse": "Thank you, Chuck! It was our pleasure to help get you all set up! We appreciate the great review, also. Enjoy your new shed!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxbWNDMWlaM0ZsVmpnNGJYWllUbnBITUU0elRWRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOi1mcC1iZ3FlVjg4bXZYTnpHME4zTVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxSlIzWXpSeTF2TXpsc2FtWlFNRkJqWlZOUmRsRRAB",
+      "reviewer": "Sherri H.",
+      "rating": 5,
+      "text": "The guys were very professional and very friendly. They did outstanding work! I will be using them again!! 🙂",
+      "publishedAt": "2026-08-24T19:57:27.159Z",
+      "ownerResponse": "Thank you, Sherri! It was our pleasure to help and we appreciate the review! We look forward to seeing you again - we're always here and happy to help!<br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxSlIzWXpSeTF2TXpsc2FtWlFNRkJqWlZOUmRsRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOi1JR3YzRy1vMzlsamZQMFBjZVNRdlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0WWMzQjZRbE50TTNwWVVHNVpRbUpIZG14MVIzYxAB",
+      "reviewer": "Steven S.",
+      "rating": 5,
+      "text": "The condo we bought for my son use use during college, came with some minor electrical issues in which Three Rivers Electric we friendly and thorough in their work.",
+      "publishedAt": "2026-08-20T03:19:43.376Z",
+      "ownerResponse": "Thank you, Steve! We appreciate the review and were more than happy to help! We hope your son has an awesome College experience! <br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t0WWMzQjZRbE50TTNwWVVHNVpRbUpIZG14MVIzYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOktYc3B6QlNtM3pYUG5ZQmJHdmx1R3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsWlRXWkNZWGRVUkdsR1MxOUxlbHBHVDFFeFRVRRAB",
+      "reviewer": "Terry F.",
+      "rating": 4,
+      "text": "Very friendly and professional. We requested an itemized bill for parts and labor. We did not receive after multiple requests. There was a lack of communication on just how the installation of wiring was supposed to be done so it resulted in a delay of completion and an extra sixty miles round trip to their shop. All in all very accommodating and would definitely recommend three rivers electric for installation of your solar panels.",
+      "publishedAt": "2026-08-19T17:51:05.195Z",
+      "ownerResponse": "Thank you for the review, Terry! <br><br>We'd like to clarify a few things... we did provide an itemized invoice, after your initial request. <br><br>As for the 'installation of wiring' issue, when you did not provide the adapter, we wired your Camper for a standard adapter. When you called us and informed us that it was not the adapter you had, we came to your house - 60+ miles round trip - and completed it at no charge. This was after making accommodations and price concessions to do the install at our facility to avoid making said trip. <br><br>We certainly appreciate the recommendation and hope your enjoy your Camper!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsWlRXWkNZWGRVUkdsR1MxOUxlbHBHVDFFeFRVRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOklZTWZCYXdURGlGS19LelpGT1ExTUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WaVNYaGFaakppVlRkWmR6RlBMVloxTFZBdGVVRRAB",
+      "reviewer": "Travis J.",
+      "rating": 5,
+      "text": "Very friendly. Knowledgeable. Will use them again if the need arises...",
+      "publishedAt": "2026-08-18T18:33:45.172Z",
+      "ownerResponse": "Thanks for the review! We appreciate it & look forward to helping you again.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WaVNYaGFaakppVlRkWmR6RlBMVloxTFZBdGVVRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOnViSXhaZjJiVTdZdzFPLVZ1LVAteUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21kT09XeGxRblZETTE5NVVEUTBOR3c1ZFhGRVozYxAB",
+      "reviewer": "George P.",
+      "rating": 5,
+      "text": "Showed up on time and got the job done!",
+      "publishedAt": "2026-08-18T14:29:51.518Z",
+      "ownerResponse": "Thanks for the review, George! We're happy to get everything working again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21kT09XeGxRblZETTE5NVVEUTBOR3c1ZFhGRVozYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOmdOOWxlQnVDM195UDQ0NGw5dXFEZ3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GWFMwSTJRbFkxY2pCUllrZEJWaTF6VVZwME4zYxAB",
+      "reviewer": "Steve B.",
+      "rating": 5,
+      "text": "Service was prompt and Kyle was quick to investigate the cause and remedy the issue.",
+      "publishedAt": "2026-08-17T13:40:21.205Z",
+      "ownerResponse": "Thanks, Steve! We're happy Kyle was able to get everything resolved for you! We appreciate the five stars, too!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GWFMwSTJRbFkxY2pCUllrZEJWaTF6VVZwME4zYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOnFXS0I2QlY1cjBRYkdBVi1zUVp0N3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSMk1YUkJPSHAyYlRrMFl6azBaekUxVVVOMlgxRRAB",
+      "reviewer": "Henry I.",
+      "rating": 5,
+      "text": "Showed up on time,  friendly, and did good work! On top of working in a unfair conditions!!! Ryan got her done. My experience was great. Would recommend 👌",
+      "publishedAt": "2026-08-13T05:21:29.821Z",
+      "ownerResponse": "Thank you for the review! We’re happy to help and fix your storm damage! We appreciate the great review & kind words about Ryan!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSMk1YUkJPSHAyYlRrMFl6azBaekUxVVVOMlgxRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjR2MXRBOHp2bTk0Yzk0ZzE1UUN2X1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSYU4yOHpVVUpYVTJGamNqVlpXVTVaY25aM2RWRRAB",
+      "reviewer": "Aaron B.",
+      "rating": 5,
+      "text": "Estimate was provided quickly. Team listened to my concerns and worked with me on solutions throughout the process. Communication was great! Team provided excellent work! I would recommend them to anyone looking for electrical work!",
+      "publishedAt": "2026-08-11T21:50:48.153Z",
+      "ownerResponse": "Thank you, Aaron! It was our pleasure. We hope you enjoy your new swim spa!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSYU4yOHpVVUpYVTJGamNqVlpXVTVaY25aM2RWRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjRaN28zUUJXU2FjcjVZWU5ZcnZ3dVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SRVNUWnhYMFJNY0hCRGRWazVVRGhJVlMxQlQzYxAB",
+      "reviewer": "Mike H.",
+      "rating": 5,
+      "text": "On time.<br>Reasonable price.<br>Quality work.",
+      "publishedAt": "2026-08-11T15:21:49.070Z",
+      "ownerResponse": "Mike, It was our pleasure to help with your lighting! We appreciate the review as well!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SRVNUWnhYMFJNY0hCRGRWazVVRGhJVlMxQlQzYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOnRESTZxX0RMcHBDdVk5UDhIVS1BT3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5MFZXTlJXbmRrWTJwR1NXMTJSSHBNTmt0aGVVRRAB",
+      "reviewer": "MidnightRain38",
+      "rating": 5,
+      "text": "Ryan and Tyler came and was very very polite and professional and had the problem fixed in less then an hour",
+      "publishedAt": "2026-07-29T20:28:22.596Z",
+      "ownerResponse": "We're happy to help with your service claim! Thank you for the great review for Ryan & Tyler! We appreciate the acknowledgement of their hard work and we agree, they're pretty great!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5MFZXTlJXbmRrWTJwR1NXMTJSSHBNTmt0aGVVRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOk90VWNRWndkY2pGSW12RHpMNktheUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pScmFtMVhTV05sYzB0V1R6VkxZMUF6UTJ4cFVIYxAB",
+      "reviewer": "Crissy M.",
+      "rating": 5,
+      "text": "Just wanted to sing the praises of Three Rivers Electric. We had a bit of electrical work to be done. It was scheduled fast and the workers were delightful, clean and treated our home with care. I HIGHLY recommend them if you need electrical work done.",
+      "publishedAt": "2026-07-29T12:39:23.263Z",
+      "ownerResponse": "Thanks, Crissy! We were happy to help get everything ready to go! We wish you the best with your new chapter! Thank you for the review, always our pleasure.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pScmFtMVhTV05sYzB0V1R6VkxZMUF6UTJ4cFVIYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjRram1XSWNlc0tWTzVLY1AzQ2xpUHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCSGJuSjNUVTl1UzIxb1JGaHBSeTFQVkZSbVQyYxAB",
+      "reviewer": "Leo",
+      "rating": 5,
+      "text": "Reliability is 100%",
+      "publishedAt": "2026-07-24T19:48:01.778Z",
+      "ownerResponse": "Thanks, Leo! We're always happy to help. We look forward to hearing from you again. We appreciate the review. <br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCSGJuSjNUVTl1UzIxb1JGaHBSeTFQVkZSbVQyYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlBHbnJ3TU9uS21oRFhpRy1PVFRmT2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201blVqbG5kSFJzU2xWd1UxUlJTMGh0TWxKSVFsRRAB",
+      "reviewer": "todd Y.",
+      "rating": 5,
+      "text": "Wonderful company employee fixed our problem luckily split our electric service compt4-ever thank you 3 rivers",
+      "publishedAt": "2026-07-14T01:37:44.526Z",
+      "ownerResponse": "We're happy to help, Todd! Thanks for the great review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201blVqbG5kSFJzU2xWd1UxUlJTMGh0TWxKSVFsRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOm5nUjlndHRsSlVwU1RRS0htMlJIQlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xNMGR6aFdhemhHYTFWNmJHNVBNbGROTlc0M2JGRRAB",
+      "reviewer": "Brian C.",
+      "rating": 5,
+      "text": "This company does great work and very easy to work with, have contracted with them in past and will use them in future",
+      "publishedAt": "2026-07-09T14:30:01.478Z",
+      "ownerResponse": "Thank you for the review and continued partnership! We are always here and happy to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xNMGR6aFdhemhHYTFWNmJHNVBNbGROTlc0M2JGRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlM0dzhWazhGa1V6bG5PMldNNW43bFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wUlluWlZTSGREV1RsSGJqZzJPWEowUVdveE5YYxAB",
+      "reviewer": "Kelly G.",
+      "rating": 5,
+      "text": "Excellent",
+      "publishedAt": "2026-07-08T14:19:42.382Z",
+      "ownerResponse": "Thanks, Kelly! We're always here and happy to help. We appreciate the review. <br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wUlluWlZTSGREV1RsSGJqZzJPWEowUVdveE5YYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOmpRYnZVSHdDWTlHbjg2OXJ0QWoxNXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkcFJFeE1abGN4T0dWWU5tTTFMVXRWVWxad1JuYxAB",
+      "reviewer": "Bob P.",
+      "rating": 5,
+      "text": "Prompt. Professional. Affordable, great work. 👌",
+      "publishedAt": "2026-07-07T16:43:36.762Z",
+      "ownerResponse": "Thanks, Bob! We're thrilled we were able to help you so quickly! We appreciate the review, too.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkcFJFeE1abGN4T0dWWU5tTTFMVXRWVWxad1JuYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjdpRExMZlcxOGVYNmM1LUtVUlZwRnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxVU5sSklTa2RUY0VKTVIwSnBkVmt5YldKRGJYYxAB",
+      "reviewer": "Jessica B.",
+      "rating": 3,
+      "text": "Got right to work.  Listen to the problem I was having and tried to figure out what was wrong.  Changed a few outdated fuse boxes outside and got one to work.",
+      "publishedAt": "2026-06-24T16:27:57.482Z",
+      "ownerResponse": "Thank you.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxVU5sSklTa2RUY0VKTVIwSnBkVmt5YldKRGJYYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOi1UNlJISkdTcEJMR0JpdVkybWJDbXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21WSWJHcG1VV015YzI1TWFFVkVRbFJoTWt3eGVGRRAB",
+      "reviewer": "Bernice D.",
+      "rating": 5,
+      "text": "They were great. They didn't take no breaks and they were patient and polite. I would recommend them to all my friends and family. Thank you for all your help",
+      "publishedAt": "2026-06-24T15:55:16.122Z",
+      "ownerResponse": "It was our pleasure to help you, Bernice. We appreciate the review and endorsement! We're always here and happy to help. <br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21WSWJHcG1VV015YzI1TWFFVkVRbFJoTWt3eGVGRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOmVIbGpmUWMyc25MaEVEQlRhMkwxeFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSUlkzaHZaakZ0WW1WMU1WWnROR3cwUVdsMU1sRRAB",
+      "reviewer": "Josh W.",
+      "rating": 5,
+      "text": "The team showed up on time and were very professional. They identified and fixed the issue very quickly.",
+      "publishedAt": "2026-06-22T14:35:38.740Z",
+      "ownerResponse": "Josh - We're glad we were able to get you powered back up quickly! We appreciate you picking Three Rivers Electric & the five star review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSUlkzaHZaakZ0WW1WMU1WWnROR3cwUVdsMU1sRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlRRY3hvZjFtYmV1MVZtNGw0QWl1MlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xUmJUUjNiMTl2VVROaVkyOXhPVU5MTmtGWVIyYxAB",
+      "reviewer": "Brandon B.",
+      "rating": 5,
+      "text": "Used 3 rivers again! Top notch service. People answering the phones really respectful. Techs very friendly and knowledgeable. Great response time. Will use once again in the future. Thank you again 3 rivers.",
+      "publishedAt": "2026-06-19T14:54:41.433Z",
+      "ownerResponse": "Thanks, Brandon! Always our pleasure to help out! We appreciate the review, continued patronage, and kind words about our team. We look forward to seeing you again.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xUmJUUjNiMTl2VVROaVkyOXhPVU5MTmtGWVIyYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOm1RbTR3b19vUTNiY29xOUNLNkFYR2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsb1FYZ3hUSGRVTFRSRk5HdElOMUJpTFRKNE5VRRAB",
+      "reviewer": "Gail T.",
+      "rating": 5,
+      "text": "I was very pleased the jobe was done  in a timely  manner and very efficient..very pleased..thank- you again Three Rivers..would call again for more electrical work🥰😊 Have a Blessed  Day!!..Thanks again!!",
+      "publishedAt": "2026-06-09T14:03:38.829Z",
+      "ownerResponse": "Thank you, Gail! It was our pleasure to help! We're always here and happy to do so! We love a happy Customer. <br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xsb1FYZ3hUSGRVTFRSRk5HdElOMUJpTFRKNE5VRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlloQXgxTHdULTRFNGtIN1BiLTJ4NUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pReWJuSk1NMDlvTFdJek5UQlBWamxFVG5BdGJVRRAB",
+      "reviewer": "lindak L.",
+      "rating": 5,
+      "text": "This was my first time doing business with this company.  I must say the tech was very professional and helpful.  I appreciate what was done.  May do more business with this company in the future.<br>Mrs Lymon-Mitchell",
+      "publishedAt": "2026-06-04T16:29:36.743Z",
+      "ownerResponse": "Thank you! We're always here to help and happy we could get your lights back on! We appreciate the five star review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pReWJuSk1NMDlvTFdJek5UQlBWamxFVG5BdGJVRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjQybnJMM09oLWIzNTBPVjlETnAtbUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sUlZ6UTNSbWRsUkVJdFMwNDFja2QxYlU5T1VXYxAB",
+      "reviewer": "Teresa W.",
+      "rating": 5,
+      "text": "Excellent service and communication. Friendly and professional. Great price.",
+      "publishedAt": "2026-06-04T14:57:54.095Z",
+      "ownerResponse": "Thank you, Teresa! We were happy to help! Enjoy your pool.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sUlZ6UTNSbWRsUkVJdFMwNDFja2QxYlU5T1VXYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOmlRVzQ3RmdlREItS041ckd1bU9OUWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCbmNubHhXblEwU21saVUwSkZWMlJ6VVhGNk1rRRAB",
+      "reviewer": "Denice B.",
+      "rating": 5,
+      "text": "They were prompt.and very helpful efficient under a insurance protection plan so was impressed on how quick they responded thank you",
+      "publishedAt": "2026-06-03T14:17:28.116Z",
+      "ownerResponse": "Thank you for the great review! It's our pleasure to assist in your warranty claim. We're always here and happy to help.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCbmNubHhXblEwU21saVUwSkZWMlJ6VVhGNk1rRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlBncnlxWnQ0SmliU0JFV2RzUXF6MkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tOak1WQldTRW8zV25saVVXZHJjMWhXVVVGWFJsRRAB",
+      "reviewer": "Kris M.",
+      "rating": 5,
+      "text": "Professional & prompt service.",
+      "publishedAt": "2026-05-28T11:51:38.330Z",
+      "ownerResponse": "Thank you for the review! It was our pleasure to help get things going for you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tOak1WQldTRW8zV25saVVXZHJjMWhXVVVGWFJsRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOkNjMVBWSEo3WnliUWdrc1hWUUFXRlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xwbFoxaE1NRGRwYkRkUFZXTklhakZUZG1oZlFuYxAB",
+      "reviewer": "FortWayne N.",
+      "rating": 5,
+      "text": "Great fast Service reasonable Price.",
+      "publishedAt": "2026-05-24T18:06:21.964Z",
+      "ownerResponse": "Thank you for the review! We’re always happy to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwbFoxaE1NRGRwYkRkUFZXTklhakZUZG1oZlFuYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOlplZ1hMMDdpbDdPVWNIajFTdmhfQnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCc1lUZE9RbWxLVTNGS1YxbG9hblJXTVVWSWFuYxAB",
+      "reviewer": "Nibor N.",
+      "rating": 5,
+      "text": "Wonderful, very experienced , was very helpful and knowledgeable .",
+      "publishedAt": "2026-05-18T16:37:25.054Z",
+      "ownerResponse": "We appreciate the kind words, great review, and you choosing Three Rivers Electric! We're always here & happy to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCc1lUZE9RbWxLVTNGS1YxbG9hblJXTVVWSWFuYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjBsYTdOQmlKU3FKV1loanRWMUVIanc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WT04zVTJVbkZEVW1adVIzRjRVR0V3ZFRVNFRrRRAB",
+      "reviewer": "MICHELLE S.",
+      "rating": 5,
+      "text": "Very pleasant to work with, attentive and on time. And the work way way better than i expected very grateful thankful and blessed to have found such a great company. Thank you",
+      "publishedAt": "2026-05-14T22:34:59.776Z",
+      "ownerResponse": "Thank you, so much Michelle! It’s always our pleasure to help! Amazing reviews like this make it that much sweeter. We appreciate you choosing Three Rivers Electric and taking the time to leave a review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WT04zVTJVbkZEVW1adVIzRjRVR0V3ZFRVNFRrRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOnVON3U2UnFDUmZuR3F4UGEwdTU4TkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toWVlsZGhYMFpJVmsxcVJHeG5OVGRqVTNSS2EyYxAB",
+      "reviewer": "Brenda W.",
+      "rating": 5,
+      "text": "Very polite 😊.Come in and did what he had to do.. That's my 1st time using the service from your company.",
+      "publishedAt": "2026-05-13T20:45:40.172Z",
+      "ownerResponse": "Thank you for choosing Three Rivers Electric & the great review. We appreciate it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toWVlsZGhYMFpJVmsxcVJHeG5OVGRqVTNSS2EyYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOkhYYldhX0ZIVk1qRGxnNTdjU3RKa2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KbWRtNDJkVGMwT0daWGJucHZja1IzVlc4MVVrRRAB",
+      "reviewer": "Valerie B.",
+      "rating": 4,
+      "text": "Great service",
+      "publishedAt": "2026-05-11T12:32:46.481Z",
+      "ownerResponse": "Thank you for the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KbWRtNDJkVGMwT0daWGJucHZja1IzVlc4MVVrRRAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOnJmdm42dTc0OGZXbnpvckR3VW81UkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxSFVURldjbE5GTTNsUGFUWm5TbnA2Tm5kbE9XYxAB",
+      "reviewer": "Karen R.",
+      "rating": 5,
+      "text": "This was the second time we had used this company.  They were recommended by our home warranty company.  Both times, the guys showed up online, used booties, installed and explained products, and then cleaned up afterward.  On top of that, they were charming, personable, and professional.   Will use them again.",
+      "publishedAt": "2026-05-07T12:12:35.587Z",
+      "ownerResponse": "Thank you for kind words about our team and the great review! We love repeat Customers. We're always here and happy to help!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxSFVURldjbE5GTTNsUGFUWm5TbnA2Tm5kbE9XYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOi1HUTFWclNFM3lPaTZnSnp6NndlOWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKdFp6aHdVSEJtWm0xRmJIYzVVRTVtZDFNNVVHYxAB",
+      "reviewer": "douglas L.",
+      "rating": 5,
+      "text": "A delight to work with",
+      "publishedAt": "2026-04-28T21:38:48.275Z",
+      "ownerResponse": "The delight was mutual! Thank you for the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pKdFp6aHdVSEJtWm0xRmJIYzVVRTVtZDFNNVVHYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOjJtZzhwUHBmZm1FbHc5UE5md1M5UGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ReE0zUTRZVWRFUlhZeGFqVllja1JUVnpGdlVuYxAB",
+      "reviewer": "Sable R.",
+      "rating": 5,
+      "text": "Taylor and Luke were great! Taylor answered all my questions, checked everything I asked them to look into, and answered all my questions thoroughly. I really appreciated their service.",
+      "publishedAt": "2026-04-28T19:58:44.622Z",
+      "ownerResponse": "Thank you so much! We're thrilled Taylor & Luke were able to assist with all of your needs. We're always here and happy to help! We appreciate the kind review as well. <br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ReE0zUTRZVWRFUlhZeGFqVllja1JUVnpGdlVuYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOmQxM3Q4YUdERXYxajVYckRTVzFvUnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2toYVMyMXNSbmxLYlRoRFdVeG1kMUZEYmpRMVYzYxAB",
+      "reviewer": "Jeremy S.",
+      "rating": 5,
+      "text": "So grateful for the great service.",
+      "publishedAt": "2026-04-17T09:10:49.371Z",
+      "ownerResponse": "Thank you so much! We are grateful for our wonderful Customers! We appreciate the review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2toYVMyMXNSbmxLYlRoRFdVeG1kMUZEYmpRMVYzYxAB!2m1!1s0x0:0x17d79a143a402c9f!3m1!1s2@1:CAIQACodChtycF9oOkhaS21sRnlKbThDWUxmd1FDbjQ1V3c%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSck5XZEdUVkp6YVdWM1puTTNRakpEVW5oUmJuYxAB",
+      "reviewer": "Rick T.",
+      "rating": 5,
+      "publishedAt": "2026-11-05T21:42:08.852Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21SRFQyWXhTRXRyWVZSS2RUUXhUamxvZW0xM2NWRRAB",
+      "reviewer": "Gerard A.",
+      "rating": 5,
+      "publishedAt": "2026-10-02T16:18:32.316Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21FNE9IQnBWVWhtVUd3eWFYZEVkWHBZUzA1WFZuYxAB",
+      "reviewer": "Scott F.",
+      "rating": 5,
+      "publishedAt": "2026-09-16T15:22:37.772Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCT1IyNTJRME5OUVVrNU5EZDFUQzFtVVhOa05HYxAB",
+      "reviewer": "Julie W.",
+      "rating": 5,
+      "publishedAt": "2026-09-14T21:10:07.534Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5SlQxaGtSak5vYWpsc2FWWm5VVWhxU2s5UFJuYxAB",
+      "reviewer": "thom J.",
+      "rating": 5,
+      "publishedAt": "2026-08-30T20:43:39.678Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xReVQxOU9UbWhmT0c1d2NHZGFURE0zYzJSelFrRRAB",
+      "reviewer": "Tevin W.",
+      "rating": 4,
+      "publishedAt": "2026-08-28T21:53:18.517Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KV1RXSjBkamxwUVZOSVpuSk9OMlJSWTNnM1lYYxAB",
+      "reviewer": "ADAM G.",
+      "rating": 5,
+      "publishedAt": "2026-08-06T14:14:12.809Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xsbVNsbG5SbFkzYm5wMU5IUkJhbHBZV0dGRmNYYxAB",
+      "reviewer": "Jonathan T.",
+      "rating": 5,
+      "publishedAt": "2026-08-05T12:14:06.289Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWYVZTMWFja2RrU2xSRldHTlhYMW81TkhoeFEwRRAB",
+      "reviewer": "Alicia E.",
+      "rating": 5,
+      "publishedAt": "2026-07-30T15:13:13.879Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tWclVXOUJhRVYyWW1sSWVIZ3hWa3RwVjNCdGNHYxAB",
+      "reviewer": "Suzy U.",
+      "rating": 5,
+      "publishedAt": "2026-07-09T20:15:57.475Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGbE5EWjJkV3ByYnpWeFlVWkJNM0pzY1VSYVdIYxAB",
+      "reviewer": "Ashley",
+      "rating": 5,
+      "publishedAt": "2026-06-29T17:34:26.091Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5ZlVIQTFiR2hOWjFVd0xXeG1SRVV0VlRGSGVuYxAB",
+      "reviewer": "jeffrey N.",
+      "rating": 5,
+      "publishedAt": "2026-06-22T13:41:55.499Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2paUE0zTjBVV04xWXpGc1JVd3RVMnBqZGxVNFYzYxAB",
+      "reviewer": "Susan K.",
+      "rating": 5,
+      "publishedAt": "2026-05-30T12:54:41.949Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taUmQySlVaemQzY0RKMWRUVk1jR1pCYUVONGFYYxAB",
+      "reviewer": "Bailey J.",
+      "rating": 5,
+      "publishedAt": "2026-05-21T18:10:39.029Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCRE5ITkJVbXczWDIxbE4waGxWWE4xTmpRM05tYxAB",
+      "reviewer": "Jennifer D.",
+      "rating": 5,
+      "publishedAt": "2026-05-15T20:21:04.556Z"
+    }
+  ]
+}
