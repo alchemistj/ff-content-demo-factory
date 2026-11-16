@@ -260,7 +260,7 @@ Hail damage often doesn't show from the ground. Hail can knock off the gritty co
 
 Sometimes the first estimate pays for a repair of the damaged spot, and the problem is that your shingle style isn't made anymore. New shingles in a different style may not match or seal the same way, so we document that the style was discontinued and submit the evidence for your insurance company to review.
 
-Code is the other common gap. A new roof often has to include things the old one didn't: a waterproof layer along the eaves and in the valleys where two slopes meet, a metal strip along the roof's edge, and better attic ventilation. If your estimate leaves those out, we cite your local building codes to your insurance company. Many policies include ordinance-or-law coverage, which helps pay for code-required upgrades, so check yours.
+Code is the other common gap. A new roof often has to include things the old one didn't: a waterproof layer along the lower edge of the roof and in the valleys where two slopes meet, a metal strip along the roof's edge, and better attic ventilation. If your estimate leaves those out, we cite your local building codes to your insurance company. Many policies include ordinance-or-law coverage, which helps pay for code-required upgrades, so check yours.
 
 ## What Turns Up Once the Old Roof Is Off
 
