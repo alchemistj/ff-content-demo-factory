@@ -20,7 +20,7 @@ Your Google reviews say it often: when a furnace or air conditioner stops, someo
 >
 > — Brittany W.
 
-Your homepage says neither. So the demo starts with the homeowner's call, across five pages: this one, home, repair, replacement and contact.
+Your homepage says none of this. So the demo starts with the homeowner's call, across five pages: this one, home, repair, replacement and contact.
 
 ### The demo, page by page
 
@@ -152,7 +152,7 @@ Lincoln winters drop below zero and summer afternoons pass 100 degrees, and that
 
 ### A technician who explains what failed
 
-You leave knowing which part failed, what each option would involve, and which one we recommend. Sometimes that is a quick repair. Sometimes it is a system that costs more to keep fixing than to replace, and we say so. Either way the decision stays with you, and we explain it in plain words so you can make it.
+Usually you leave knowing which part failed, what each option would involve, and which one we recommend. Sometimes that is a quick repair. Sometimes it is a system that costs more to keep fixing than to replace, and we say so.
 
 > James always provides great experience and service. He gives great advice and recommends affordable options.
 >
@@ -160,7 +160,7 @@ You leave knowing which part failed, what each option would involve, and which o
 
 ### Replacement and installation
 
-When a repair no longer makes sense, we [order and install a new furnace, air conditioner or heat pump](/heating-ac-replacement-lincoln-ne/), for a home or a business. We go through the options with you before you decide, so you know what you are choosing and why.
+When a repair no longer makes sense, we [order and install a new furnace, air conditioner or heat pump](/heating-ac-replacement-lincoln-ne/), for a home or a business.
 
 ### Daikin and other brands
 
@@ -192,7 +192,7 @@ A kitchen failure costs sales, spoils food and disappoints customers. We repair 
 
 ### Offices and other businesses
 
-We repair and replace commercial heating and cooling systems, and we can help them run more efficiently. Businesses also have our 24/7 response team, which can get you running again when a system fails. We encourage regular maintenance for the same reason as at home: a part found early costs less than a shutdown.
+We repair and replace commercial heating and cooling systems, and we can help them run more efficiently. Businesses also have our 24/7 response team, which can get you running again when a system fails. Regular maintenance is available for commercial systems too.
 
 > Been using Cool Concepts for years at our office. Our AC went out yesterday, I called the office around 11am. … One of the guys made it out office around 2:30pm. Found, fixed and cleaned everything up and was done by 3pm.
 >
@@ -226,7 +226,7 @@ Call (402) 483-2665 and tell us what it is doing, or request a quote.
 
 # Heating and AC Repair in Lincoln, NE — Cool Concepts
 
-When your furnace or air conditioner stops, we find what failed and explain it in plain words. Call (402) 483-2665.
+When your furnace or air conditioner stops, call (402) 483-2665 and tell us what it is doing.
 
 **Buttons:** Call (402) 483-2665 / Send a Request
 
@@ -248,7 +248,7 @@ If you smell gas, leave the house and call your gas utility or 911 from outside.
 
 ### What usually fails in an air conditioner
 
-If the outdoor unit hums but the fan or compressor doesn't start, a worn capacitor is often the cause. A capacitor is a small part that gives the motors the jolt they need to start. A failed fan motor in the outdoor unit leaves the system running hot and cooling poorly. Weak cooling often points to a refrigerant leak, because an air conditioner doesn't use up refrigerant. Water near the indoor unit is often a clogged drain line, the pipe that carries away the moisture the system pulls from your air, and many systems answer a clogged line by shutting the air conditioner off.
+If the outdoor unit hums but the fan or compressor (the pump at the heart of the cooling system) doesn't start, a worn capacitor is often the cause. A capacitor is a small part that gives the motors the jolt they need to start. A failed fan motor in the outdoor unit leaves the system running hot and cooling poorly. Weak cooling often points to a refrigerant leak, because an air conditioner doesn't use up refrigerant. Water near the indoor unit is often a clogged drain line, the pipe that carries away the moisture the system pulls from your air, and many systems answer a clogged line by shutting the air conditioner off.
 
 > AC went out, hottest day of the year of course. He was at my house within 2 hours after my call. AC was back on in 15 minutes.
 >
@@ -260,7 +260,7 @@ A furnace that lights and shuts off within seconds often has a dirty flame senso
 
 ### What a repair visit looks like
 
-We find the failed part and tell you what it is. Then we lay out your options: repair now, plan to replace later, or replace the system. When a part isn't on the truck, we often pick it up or order it. When the work is done, we usually clean up after ourselves.
+We usually find the failed part and tell you what it is. Then we lay out your options: repair now, plan to replace later, or replace the system. When a part isn't on the truck, we often pick it up or order it. When the work is done, we usually clean up after ourselves.
 
 > In 100 degree heat and a broken ac, we called Cool Concepts on a Friday night at 7pm and they came right on time at 10am on Saturday morning--despite being booked up for the day. He was able to solve the issue quickly and was extremely easy to work with (and even took his shoes off when he came inside.)
 >
@@ -324,7 +324,7 @@ Age is the first thing we look at. Air conditioners commonly last 12 to 15 years
 
 ### Your options, and your decision
 
-A free estimate puts the choices side by side: repair using parts for your current unit, or replace the whole system. We take care of the ordering and the installation, for homes and businesses. The decision is yours, and we want you comfortable with it.
+A free estimate puts the choices side by side: repair using parts for your current unit, or replace the whole system. We take care of the ordering and the installation, for homes and businesses. 
 
 > During the bidding process James asked me questions about what I wanted, and gave suggestions on what was needed to do the job right.
 >
@@ -336,7 +336,7 @@ A new system should fit your house, not just match the old unit's size. A proper
 
 ### Efficiency ratings
 
-Efficiency ratings are printed on every new unit. Air conditioners carry a SEER2 number, and furnaces an AFUE percentage, which is how much of the fuel becomes heat. Higher is better in both. Furnaces built decades ago often turn only 60 to 70 percent of their fuel into heat, and new gas furnaces are rated as high as 97 percent. A higher rating costs more up front and pays back over the years, and how fast depends on how much you run the system. Insulation, sealed windows and thermostat habits move your bill too.
+Efficiency ratings are printed on every new unit. Air conditioners carry a SEER2 number, which rates how much cooling you get for the electricity used, and furnaces an AFUE percentage, which is how much of the fuel becomes heat. Higher is better in both. Furnaces built decades ago often turn only 60 to 70 percent of their fuel into heat, and new gas furnaces are rated as high as 97 percent. A higher rating costs more up front and pays back over the years, and how fast depends on how much you run the system. Insulation, sealed windows and thermostat habits move your bill too.
 
 ### Heat pumps
 
@@ -352,7 +352,7 @@ Heated winter air in Nebraska often runs dry, and a whole-house humidifier adds 
 
 ### Install day
 
-A standard swap, with the new unit set where the old one was, often takes a day. New ductwork, a new location or an added humidifier takes longer. When one family's air conditioner failed in a summer heat wave in 2009, we ordered the unit and installed it the very next day. The old equipment comes out, the new equipment is set and connected, and the system is tested before the crew leaves.
+A standard swap, with the new unit set where the old one was, often takes a day. New ductwork, a new location or an added humidifier takes longer. When one family's air conditioner failed in a summer heat wave in 2009, we ordered the unit and installed it the very next day. The old equipment comes out, the new equipment is set and connected, and the system is usually tested before the crew leaves.
 
 > Great service, Great price. Replaced furnace, A/C, whole house humidifier and air purifier. In and out, quick, no mess left behind. Very courteous techs.
 >
@@ -360,7 +360,7 @@ A standard swap, with the new unit set where the old one was, often takes a day.
 
 ### What changes the price
 
-Size and efficiency set most of it. Ductwork repairs, a new location for the equipment, or a tight space to work in add to it. Replacing the furnace and air conditioner together costs more at once, and often costs less than two separate visits. We have worked out payment plans for customers who needed a new system on a set budget, so ask about one when you get your estimate.
+Size and efficiency set most of it. Ductwork repairs, a new location for the equipment, or a tight space to work in add to it. Replacing the furnace and air conditioner together costs more at once, and often costs less than two separate visits. On one past job we worked out a payment plan around a customer's budget, so ask when you get your estimate whether one could fit yours.
 
 ### Have this ready for your estimate
 
@@ -394,7 +394,7 @@ Call for anything that has stopped working, or send a request for a quote.
 
 (402) 483-2665
 
-If your heat or air conditioning has stopped, call rather than use the form, and tell us what the system is doing. We can often tell from that description what to bring.
+If your heat or air conditioning has stopped, call rather than use the form, and tell us what the system is doing. Say when it started and whether anything changed first.
 
 > I've used Cool Concepts for years and would not trust anyone else. James and his team are extremely knowledgeable and have even helped with an easy fix over the phone instead of charging us an after-hours service charge.
 >
@@ -423,6 +423,10 @@ Use the form for a quote or a job that can wait. Give us your name, phone number
 - For a restaurant, the kind of equipment and its brand
 - Your address, or at least your town
 
+### What happens next
+
+After you send a request, we usually get back to you to ask about the equipment and agree on a time for a visit. If you have the make and model number, which is often on a label on the unit, include it. A furnace or thermostat that shows an error code or a flashing light is worth mentioning too.
+
 ### Where we work
 
 We come to you in Lincoln and the towns around it. Tell us your town when you call or write, and we'll confirm we cover it. If you run a restaurant or other business, say so when you call, and tell us which equipment is down.
@@ -433,13 +437,13 @@ We come to you in Lincoln and the towns around it. Tell us your town when you ca
 
 | Page | With quotes | Without quotes |
 |---|---|---|
-| Strategy page | 996 | 978 |
-| Home | 950 | 751 |
-| Heating and AC Repair | 1185 | 974 |
-| Heating and AC Replacement | 963 | 808 |
-| Contact | 270 | 229 |
+| Strategy page | 983 | 981 |
+| Home | 890 | 691 |
+| Heating and AC Repair | 1191 | 981 |
+| Heating and AC Replacement | 964 | 809 |
+| Contact | 333 | 293 |
 
-Strategy is just under the 1,000-word cap (the SRA proof block is template and not counted here). Home and both service pages clear their minimums without quotes. Contact is 229 words without quotes and 270 with, so it clears 250 only with the quote; the page stays lean on purpose and nothing was padded.
+Strategy is just under the 1,000-word cap (the SRA proof block is template and not counted here). Home and both service pages clear their minimums without quotes. Contact is 293 words without quotes after a hedged what-happens-next and have-this-ready addition, with no new business claims.
 
 **Services chosen.** The two money services from inventory.md, each as one keyword: "Heating and AC Repair" and "Heating and AC Replacement". Home owns "HVAC Company". Suggested routes: /heating-ac-repair-lincoln-ne/ and /heating-ac-replacement-lincoln-ne/.
 
@@ -447,7 +451,7 @@ Strategy is just under the 1,000-word cap (the SRA proof block is template and n
 - "authorized Daikin dealer" and Daikin HVAC warranty service (repair-service.md): used on home. Daikin's dealer locator was not checked, so it is Unverified. Strategy item 2.
 - "local Amanda Heating and Air representative" (same page) conflicts with Daikin: left off, asked in strategy item 2.
 - "We are the Official Dealer of" (every footer) names no brand: left off, asked.
-- Payment plan (Petersen case study, one case): used once on replacement as "we have worked out payment plans ... ask". Strategy item 3.
+- Payment plan (Petersen case study, one case): used once on replacement as one past job, with "ask". Strategy item 3.
 - "over 20 years" technician experience (about-us.md) used once on home. "since 2005" used once on home. The commercial kitchen "20 years" line (repair-service.md) is a different claim and is not used.
 - Free estimates: once, on replacement. Onsite inspections: not claimed on their own.
 - No license, NATE or insurance statement exists; none claimed.
