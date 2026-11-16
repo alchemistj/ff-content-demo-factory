@@ -11,3 +11,6 @@
 **Verdict: PASS.** Commercial-heavy contractor (projects by market, college and civic work). Flag to the writer that residential fit is unclear.
 
 **Likely money services:** 24/7 emergency plumbing; plumbing repair.
+
+## 2026-11-16 decision log
+FF: homeowner pitch to a commercial-only firm isn't a fit. Decision: reframe the existing doc to commercial work (since 1856; hospitals, schools) in place; drop if the site can't carry two commercial service pages.
