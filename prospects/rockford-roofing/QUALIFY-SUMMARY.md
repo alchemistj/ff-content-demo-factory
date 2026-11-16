@@ -23,3 +23,8 @@ Warner flag: source shows a Lovable rebuild (warner-roofing-rebuild.lovable.app)
 - Danny's Roofing Xteriors: 404, no live site.
 
 Skipped by candidate list: Martin Exteriors, Everest, Feldco, First Contracting, Axis, HorizonRoof.
+
+## Orchestrator notes (2026-11-16)
+- Warner Roofing: SKIP for now. Page source shows a Lovable rebuild, which may be a current build by someone else (fails "no current agency build").
+- Premium Roofing Solutions: hold. The Google listing phone (815) 296-1306 differs from the site's (844) 997-6633, and the place ID looks off-region. Verify before any review pull.
+- Bufalo Contracting: next for a review pull.
