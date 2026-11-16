@@ -180,6 +180,10 @@ Origin note: most commit messages in #41 to #64 say only what changed, not why. 
 
 76. **Sent the right way.** PASS if it goes through the business's own contact form with honest name and reply details and a confirmation screenshot, and any blocked send goes to Josh's hand-send list. [ASSIGNMENT Demo outreach] Pages: outreach.
 
+77. **No two review quotes back to back.** PASS if copy sits between every pair of review quotes on every page (the models never stack them). [Nov 16 Josh] Pages: all.
+
+78. **The Homepage card's full-build line is the standard one.** PASS if its "A full build would also add" line matches FULL_BUILD_LINES.md line 8 exactly. [Nov 16 Josh; FULL_BUILD_LINES.md] Pages: strategy.
+
 ---
 
 ## Reviewer table (copy per demo)

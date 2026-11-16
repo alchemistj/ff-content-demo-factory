@@ -14,7 +14,9 @@ You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-
 - a report-style line;
 - website talk on a business page;
 - a quote that isn't word for word, or a quote used twice;
-- a vague strategy problem that could be specific.
+- a vague strategy problem that could be specific;
+- two review quotes back to back (move one);
+- the Homepage card's full-build line not matching FULL_BUILD_LINES.md's new standard line (replace it).
 
 Edit nothing else. Run no git, send nothing, create no sessions.
 

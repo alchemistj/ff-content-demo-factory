@@ -15,6 +15,7 @@ Pick the line that fits what that card's own problems show. Never repeat a line 
 5. Pages planned from what Google actually shows for each search, so every page targets something people really look for. (Any service page)
 6. Hourly speed monitoring that keeps your site fast for visitors on phones, and speed is something Google uses to rank you. (Homepage)
 7. Call and form tracking that shows which pages and towns your leads come from. (Biggest-money page)
+8. Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story. (Homepage card on every strategy page; approved by Josh 2026-11-16. Required as the Homepage card's "A full build would also add" line.)
 
 Removed, never use: "A redirect from every old page to its new home, so the rankings you’ve already earned carry over." The page cards tell the owner their site has problems, so promising to carry its rankings over sends a mixed message, and owners don't know what a redirect is.
 

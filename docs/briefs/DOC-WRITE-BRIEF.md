@@ -39,8 +39,10 @@ Write five pages:
   - No search-volume claims without real data.
   - "Why it matters" lines must be true.
   - The SRA proof block is fixed template content; never rewrite it.
+  - The Homepage card's "A full build would also add" line must be exactly FULL_BUILD_LINES.md line 8: "Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story."
 - **Hard rules:**
   - **Review quotes:** word for word, once each across the site. No review summaries.
+  - **No two review quotes back to back** anywhere on a page (the models never do it); put copy between them.
   - **The site:** no website talk on the business pages.
   - **Other companies:** no claims about them.
   - **Credentials:** defined once, on home, from the certifier's own site.
