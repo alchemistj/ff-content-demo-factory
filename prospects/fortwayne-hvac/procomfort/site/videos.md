@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/videos
 
-- Fetched: 2026-11-16T03:48:24.435Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:51:49.024Z (rendered in a real browser)
 - HTTP: 200
 - Title: HVAC Tips & Tricks Videos - Pro Comfort Heating & Cooling
 - H1: Videos

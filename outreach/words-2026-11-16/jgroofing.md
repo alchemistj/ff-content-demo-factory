@@ -13,8 +13,6 @@ Your reviews keep saying the same things: Amanda explains every step, Jose looks
 
 Today storm damage and insurance get one sentence. Roof replacement gets a paragraph of about 60 words. So we built the first five pages: the homepage, roof replacement, storm damage and insurance claims, contact, and this page. Roof repair, new-build roofs, shingles, metal roofs, siding and gutters are on the homepage. Each can get its own page in a full build.
 
-The storm page is the thinnest, because your site has one line on it. It comes from your reviews and never promises what an insurance company will pay.
-
 **The demo, page by page**
 
 ### 1. Homepage
@@ -40,7 +38,6 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 **Current site problem**
 - Replacement is one paragraph of about 60 words.
-- It never says who looks at the roof, how fast the crew works or that they clean up.
 - Nearly every paragraph on that page repeats "Peoria, IL" and "roofing contractors," "roofing companies" or "roofers." It reads as written for Google.
 
 **What the demo fixes**
@@ -58,7 +55,6 @@ Pages planned from what Google actually shows for each search, so every page tar
 **Current site problem**
 - One sentence covers insurance: "We are trained to work with insurance from start to finish."
 - Amanda and Jose appear only inside reviews, so nobody learns who does what.
-- On your Peoria page, storm damage is two words in the last paragraph.
 
 **What the demo fixes**
 - A page for storm damage and insurance claims.
@@ -75,11 +71,10 @@ A check of what your competitors offer, so services you didn't think to mention 
 **Current site problem**
 - The number printed on your site is (309) 567-8236. The "Call or Text" button dials (309) 316-3652.
 - The CONTACT button at the top of your site goes back to the homepage.
-- Your address and hours are only on the Peoria page, and no button at the top of your site leads there.
 
 **What the demo fixes**
 - One number, (309) 567-8236, the one on your Google profile, behind every tap-to-call button.
-- A contact page with address, hours, email and service area.
+- A contact page with address, hours, email and service area. Today the address and hours sit only on the Peoria page.
 - What to have ready when you call.
 
 **A full build would also add**
@@ -116,7 +111,7 @@ Keeps working after launch
 
 **What we'd confirm with you**
 
-Google and AI tools get different answers about your business in different places. Three to sort out together:
+Three things to sort out together:
 
 - Your site prints (309) 567-8236, but the "Call or Text" button dials (309) 316-3652. Which one rings you?
 - Your site says you're certified with GAF. We couldn't confirm it on GAF's own directory, so let's look at it together.
@@ -249,7 +244,7 @@ Replacement is the right call when the damage or wear is spread across the roof,
 
 ## Peoria Weather and Your Roof
 
-Peoria roofs go through freezing winters, heavy snow and hard summer storms. Ice dams can form at the edge of a roof where snow melts and refreezes, and an aging roof tends to fail in those seasons first. That's one reason we look at the whole roof, not only the spot that's leaking.
+Peoria roofs deal with seasonal temperature swings, snow accumulation and storm exposure. We know regional conditions like ice dams and storm damage, and we look at the whole roof, not only the spot that's leaking.
 
 ## When Water Is Already Coming In
 
@@ -307,12 +302,6 @@ The job isn't done until your property is clean. The crew cleans up as it goes a
 >
 > — Kayla T.
 
-## Comparing Roof Estimates
-
-If you're getting more than one estimate, compare them line by line. Check that each covers the same work: tearing off the old roof, replacing rotted wood, new underlayment, the roofing you chose, venting, gutters if you want them, and clean-up. Two prices only compare when they cover the same work.
-
-Ask when the crew could start, how long the job takes and who you can call with questions during it. Amanda answers ours.
-
 ## Garage, Gutters and the Rest of the Roofline
 
 If you have a garage, we can replace that roof on the same visit. If your gutters are old, new ones go up once the roof is finished. We also install gutter guards, and we replace fascia and soffit.
@@ -342,7 +331,7 @@ Storm damage, Peoria and Central Illinois
 
 # Storm Damage and Insurance Claims in Peoria, IL — JG Roofing and Company
 
-Hail and wind don't wait for a good time, and neither does your insurance company. We are trained to work with insurance from start to finish. Jose looks at your roof, Amanda explains each step of the claim, and we do the work once it's approved. Call or text us after the storm and we'll start with a look at the roof.
+We are trained to work with insurance from start to finish. After a hailstorm or other storm damage, Jose looks at your roof and Amanda explains each step of the claim. Call or text us and we'll start with a look at the roof.
 
 **Buttons:** Call (309) 567-8236 | Request an Estimate
 
@@ -354,49 +343,31 @@ Hail and wind don't wait for a good time, and neither does your insurance compan
 
 ## After the Hail
 
-Hail and wind damage doesn't always look like much from the ground. Bruised shingles, lifted edges and missing pieces let water in over time. Gutters, fascia and siding take the same hits, so one storm can mean work on the whole outside of the house.
+A hailstorm can damage more than the shingles. Customers have come to us for the roof, the gutters and the siding after a storm, so one team can look at the whole outside of the house.
 
-Peoria gets heavy snow and ice in winter and intense storms in warmer months. We look at the whole roofline and tell you what the roof needs, before you decide what to do about your claim.
-
-## Right After the Storm
-
-Stay off the roof. Walk around the house and take photos of what you can see from the ground: dented gutters, shingles in the yard, damaged siding. Move anything valuable out of a room that's under a leak.
-
-Then call your insurance company, and call us. Photos from the ground and a look at the roof from Jose give you a clear picture of what happened.
+Jose looks at your roof and tells you what it needs. Then you decide what to do about your claim.
 
 ## Who Does What in a Claim
 
-You own the claim. Your insurance company decides what it covers and what it pays. We never promise a number, we don't interpret your policy, and we won't guess at it.
-
-What we do is help you through the steps. Jose looks at the roof and tells you what it needs. Amanda explains the claim process and what to expect during the replacement.
+Your insurance company decides what it covers. We help you through everything around that. Jose looks at the roof and tells you what it needs. Amanda explains the claim process and what to expect during the replacement.
 
 > Amanda and Jose took the time to explain every single step, kept us updated constantly, and helped us understand exactly what was happening with our insurance company the whole way through.
 >
 > — Daniel G.
 
-## The Steps, in Order
+## Handling the Insurance Communication
 
-1. You call or text us after the storm.
-2. Jose comes out, looks at the roof and tells you what it needs.
-3. Your claim moves through your insurance company. Amanda explains each step as it comes up.
-4. Your insurance company decides what it covers.
-5. Amanda goes over the charges, including anything your insurance doesn't cover and any extras you choose.
-6. Once the claim is approved, we start the work and finish promptly.
-7. The old roof comes off, the new one goes on, and the property is cleaned up in the timeframe you were given.
+You shouldn't have to work out the steps alone. We are trained to work with insurance from start to finish, so you have someone who can talk to your insurance company with you.
+
+Amanda explains the process and answers your questions, so you know what to expect during the replacement.
 
 > Amanda came and patiently explained the claim process and what to expect during the replacement process. She responded to all of my questions. Jose and his crew did a wonderful job. The roof was torn off, replaced and cleaned up in the timeframe that Amanda gave me.
 >
 > — Rose H.
 
-## A Claim Takes Time
-
-A claim moves at your insurance company's pace, and that can take weeks or months. Amanda keeps you updated while you wait, so you aren't left guessing about what happens next.
-
-When approval comes, we're ready to schedule the work.
-
 ## Charges Your Insurance Doesn't Cover
 
-Some things on a job may fall outside what your insurance company pays, and some upgrades are your choice. Amanda explains every charge, so you know what the claim covers and what it doesn't.
+Amanda explains every charge, so you know what the claim covers and what it doesn't, and what is an extra you chose to add.
 
 > Amanda was always responsive to our questions, explaining all the charges for what insurance wouldn't cover and the extras we added on. Should this Illinois weather damage my roof again, I know who I am calling.
 >
@@ -404,9 +375,9 @@ Some things on a job may fall outside what your insurance company pays, and some
 
 ## Siding, Gutters, Fascia and Soffit
 
-Hail rarely stops at the shingles. We replace roofs, siding, fascia, soffit and gutters, so one team can take care of everything a storm damaged.
+We replace roofs, siding, fascia, soffit and gutters, so one team can take care of everything a storm damaged.
 
-When siding is part of the claim, matching it matters. A house with two different sidings looks unfinished, and that's worth raising early.
+Siding that is no longer made can be a problem. Amanda has handled that for a customer.
 
 > Our home had siding that was no longer manufactured and Amanda was able to have the proper research done in order to prove that so that our home would not be repaired in a way that it would have mismatched siding!
 >
@@ -414,12 +385,12 @@ When siding is part of the claim, matching it matters. A house with two differen
 
 ## When the Damage Is a Repair
 
-Not every storm means a new roof. Sometimes the damage is a leak or a few missing shingles. Jose looks at the roof and tells you whether it needs a repair or a replacement.
+Not every storm means a new roof. Jose looks at the roof and tells you whether it needs a repair or a replacement.
 
 ## Questions
 
 **Will insurance pay for my new roof?**
-That's your insurance company's decision, not ours. We can't promise what it will cover. We can look at the roof, tell you what we see and explain the steps.
+That's your insurance company's decision, not ours. We can look at the roof and explain the steps.
 
 **Does storm damage always mean a new roof?**
 No. Jose looks at the roof and tells you whether it needs a repair or a replacement.
@@ -478,10 +449,10 @@ Prefer to write? Send your name, phone, email and a few lines about the project.
 ## Notes for Ruth (not page copy)
 
 **Word counts (by script; "without quotes" excludes blockquotes, buttons and trust bar; "with" is everything on the page)**
-- Strategy: 1,055 without quotes, 1,073 with. Slightly over the 1,000 limit because the fixed full-build list is included; trim if the template adds its own chrome.
+- Strategy: about 970 without quotes, 989 with (full-build list included).
 - Home: 660 without quotes, 860 with.
-- Roof Replacement: 792 without quotes, 1,021 with.
-- Storm Damage and Insurance Claims: 730 without quotes, 970 with. Passes 700 but is the borderline page: about 250 words are general claim and hail knowledge, and the rest comes from the site's one line and reviews. Nothing padded.
+- Roof Replacement: 696 without quotes, 925 with. Four words under 700; logged as short, not padded. Removed the estimate-comparison and ice-dam sections (general knowledge); the weather section now uses only the site's own wording.
+- Storm Damage and Insurance Claims: about 450 without quotes, 690 with (by script). Under 700 on purpose: about 250 words of general claim and hail knowledge not in site/, facts.md or reviews.json were cut (after-storm safety steps, numbered claim steps, claim timeline, siding-match advice). Thin page; not padded back.
 - Contact: 288 without quotes (no quotes used), 295 with.
 
 **Credentials and sources**
@@ -512,6 +483,6 @@ Prefer to write? Send your name, phone, email and a few lines about the project.
 - Which towns "Central Illinois" covers. Pages say "call to confirm."
 - Whether Amanda is the owner or the office contact; whether Jose does estimates.
 - "Free estimate" says "free for all our roofing services" (site). It is stated on home only; the button labels say Free Estimate.
-- The storm and insurance page runs thin: its general claim-process lines (hail damage description, claim takes weeks or months, steps in order) are general trade knowledge, not JG policy. Reviewed against "never pad": the length comes from the claim steps and reviews, but this is the borderline page.
+- The storm page is now thin (see counts); general claim-process lines were removed.
 - "About 80% of visitors are on a phone" is from the brief, not a source I checked.
 - Strategy page: SRA proof block and Fluid Frame header, hero and "View page" buttons are fixed template content, not written here.

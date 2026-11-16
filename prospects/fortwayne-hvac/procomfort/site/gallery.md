@@ -1,14 +1,61 @@
 # https://www.myprocomfort.com/gallery
 
-- Fetched: 2026-11-16T03:47:57.448Z (rendered in a real browser)
-- HTTP: 403
-- Title: Request blocked
-- H1: Request blocked
-- tel: links: (none)
-- Words: 12
+- Fetched: 2026-11-16T03:51:08.608Z (rendered in a real browser)
+- HTTP: 200
+- Title: HVAC Photo Gallery | HVAC Service Company | Pro Comfort
+- H1: Our Gallery
+- tel: links: tel: +12603107721
+- Words: 162
 
 ---
 
-Request blocked
-This request was blocked by edge IP-blocking policy.
-IP-blocking enforcement
+Skip to main content
+Menu
+AC INSTALLATION
+AC REPAIR
+AC MAINTENANCE
+FURNACE INSTALLATION
+FURNACE REPAIR
+FURNACE MAINTENANCE
+THERMOSTAT INSTALLATION AND REPLACEMENT
+THERMOSTAT REPAIR
+THERMOSTAT MAINTENANCE
+AIR DUCT AND VENTS INSTALLATION SERVICES
+AIR DUCT AND VENTS REPAIR SERVICES
+AIR DUCT AND VENTS MAINTENANCE SERVICES
+INDOOR AIR QUALITY TESTING
+AIR QUALITY CLEANING SYSTEM INSTALLATION SERVICES
+AIR FILTERS
+DUCTLESS HEATING AND COOLING INSTALLATION
+DUCTLESS HEATING AND COOLING REPAIR
+DUCTLESS HEATING AND COOLING MAINTENANCE
+Photo Gallery
+Our Gallery
+We Proudly Serve the Following Cities and Surrounding Areas:
+Anderson, IN
+Auburn, IN
+Columbia City, IN
+Decatur, IN
+Fort Wayne, IN
+Leo-Cedarville, IN
+Marion, IN
+Monroeville, IN
+Muncie, IN
+New Haven, IN
+FORT WAYNE
+Pro Comfort Heating & Cooling LLC
+3020 Congressional Pkwy # G,
+Fort Wayne, IN 46808
+Phone: 260-310-7721
+HOURS OF OPERATION:
+M-F 8:00 AM - 4:30PM
+LICENSE#:
+Allen County-BD31623
+Indianapolis-HL1900005
+Anderson-111-22
+Goshen - 3885
+Peru - 2023-12
+Muncie - 93
+WE ACCEPT
+© 2026 Pro Comfort Heating & Cooling. All Rights Reserved. | Sitemap
+facebook
