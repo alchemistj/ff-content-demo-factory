@@ -69,6 +69,8 @@ def main(path, end):
         reqs.append({"deleteContentRange": {"range": {"startIndex": 1, "endIndex": end - 1}}})
     full = "".join(t + "\n" for t, _, _, _ in paras)
     reqs.append({"insertText": {"location": {"index": 1}, "text": full}})
+    # inserted paragraphs inherit the style of the paragraph at index 1 (e.g. a bullet); clear it first
+    reqs.append({"deleteParagraphBullets": {"range": {"startIndex": 1, "endIndex": 1 + u16(full)}}})
     idx, bullets = 1, []
     for text, style, bullet, spans in paras:
         n = u16(text)

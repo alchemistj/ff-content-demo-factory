@@ -188,10 +188,6 @@ Storm calls are urgent, and Premium offers emergency repairs to stop further dam
 >
 > — Tom C.
 
-### A Job Site Left Clean
-
-When the crew packs up, the job site is clean.
-
 ### Licensed and Insured in Illinois and Wisconsin
 
 Premium Roofing Solutions is licensed and insured in both states, and the subcontractors we work with are licensed and insured too. Our Illinois office is at 321 W State St, Suite 201, Rockford, and our Wisconsin office is at 3578 North Shore Drive, Delavan. We work on either side of the state line, and we offer flexible payment plans to suit your budget.
@@ -296,10 +292,6 @@ In Roscoe, the roof and siding on a two-story home had been damaged by weather. 
 
 We make emergency repairs right away to stop further damage, before the claim is settled and before the new roof goes on.
 
-> True to his word, he did show up a few hours later and nailed some roofing material over both holes - which I truly appreciated when it started to rain that night!
->
-> — Tom C.
-
 Water that gets in can mean leaks, mold and weakened wood, which is why the covering goes on first.
 
 > We had an emergency and they came and addressed it immediately .
@@ -393,7 +385,7 @@ Written from briefs @ 21550ef
   - Used: named project manager and insurance claim help (strategy, home, replacement and storm heroes, storm), adjuster meeting (home, storm), replacement (page), storm (page), repair, installation, inspection, siding, gutters, cedar shake, flat roofing, metal flashing (home list), commercial (home), solar (home services section), payment plans (home licensing section, once), insurer question (cut as timid), installation, siding, gutters and commercial now each a one-line Home grid item from their service pages (6-inch gutters and 2- to 3-inch hail are from the project write-ups), tarps and rain (replacement, storm), Class 3 and Class 4 shingles (replacement, storm), clean-up (replacement), keeps informed (home, storm), honest and does what they said (home, Tim K.), color samples (replacement, Mary M.), denied claim (storm, Cindy W.).
   - Case studies used: architectural shingle leak job and the black-shingle chimney job (replacement); northern Wisconsin hail and Roscoe (storm).
   - Left out: "red-carpet" and "premium experience" slogans, cedar cost range, "hundreds of roofs," 30-50 year warranty, "advanced technology" inspections, residential/commercial insurer logos (image only), "Roof Repair" as its own page, "Quality Craftsmanship"/"Dedication to Excellence" values (filler), "Community Focus."
-  - Quotes used once each: Kayla P., Natalie P., Garey H., Shawn C., Mary M., Colin S., Jim D., Susan W., Cindy W., Ben M., Tom C., Gale B., Shawn L. Home uses 3 quotes (Natalie P., Kayla P., Tom C.; Garey H. and Shawn C. now unused on Home); Kari S., Tim K., Brian B., Terri Y. and Alan S. unused; Shawn C. quoted from the second sentence on, so the owners line stays out. Not quoted: Charles W. and Derrick T. (long, insurer disputes), Rita R. (names an owner).
+  - Quotes used once each: Kayla P., Natalie P., Garey H., Shawn C., Mary M., Colin S., Jim D., Susan W., Cindy W., Ben M., Tom C., Gale B., Shawn L. Home uses 3 quotes (Natalie P., Kayla P., Tom C.; Tom C. is quoted on Home only, not Storm; Garey H. and Shawn C. now unused on Home); Kari S., Tim K., Brian B., Terri Y. and Alan S. unused; Shawn C. quoted from the second sentence on, so the owners line stays out. Not quoted: Charles W. and Derrick T. (long, insurer disputes), Rita R. (names an owner).
 
 **Facts to verify**
 
