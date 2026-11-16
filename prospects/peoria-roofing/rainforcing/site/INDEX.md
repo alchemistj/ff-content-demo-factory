@@ -1,6 +1,6 @@
 # Full text of the business's own site
 
-Fetched 2026-11-16T04:03:48.513Z from https://www.rainforcingroofing.com by scripts/fetch-site-text.mjs. Writers quote from these files, never from notes.
+Fetched 2026-11-16T04:10:08.214Z from https://www.rainforcingroofing.com by scripts/fetch-site-text.mjs. Writers quote from these files, never from notes.
 
 | File | URL | HTTP | Words | Title |
 |---|---|---|---|---|
@@ -64,3 +64,56 @@ Fetched 2026-11-16T04:03:48.513Z from https://www.rainforcingroofing.com by scri
 | mapleton-il-siding.md | https://www.rainforcingroofing.com/mapleton-il/siding | 200 | 1271 | Expert Siding in Mapleton, IL / Rainforcing Roofing |
 | mapleton-il-gutter-installation.md | https://www.rainforcingroofing.com/mapleton-il/gutter-installation | 200 | 1221 | Expert Gutter Installation in Mapleton, IL / Rainforcing Roofing |
 | roofing-in-pottstown-il-residential-roofing.md | https://www.rainforcingroofing.com/roofing-in-pottstown-il/residential-roofing | 200 | 1237 | Professional Residential Roofing in Pottstown, IL/ Rainforcing Roofing |
+| roofing-in-pottstown-il-storm-damage-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-pottstown-il/storm-damage-roof-repair | 200 | 1282 | Professional Storm Damage Roof Repair in Pottstown, IL,} / Rainforcing Roofing |
+| pottstown-il-storm-damage-roof-repair.md | https://www.rainforcingroofing.com/pottstown-il/storm-damage-roof-repair | 200 | 1269 | Professional Storm Damage Roof Repair in Peoria, IL / Rainforcing Roofing |
+| roofing-in-pottstown-il-emergency-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-pottstown-il/emergency-roof-repair | 200 | 1289 | 24/7 Emergency Roof Repair in Pottstown, IL |
+| roofing-in-pottstown-il-gutter-installation.md | https://www.rainforcingroofing.com/roofing-in-pottstown-il/gutter-installation | 200 | 1229 | Expert Gutter Installation in Pottstown, IL / Rainforcing Roofing |
+| metal-roofing.md | https://www.rainforcingroofing.com/metal-roofing | 404 | 14 | 1 |
+| pekin-il-residential-roofing.md | https://www.rainforcingroofing.com/pekin-il/residential-roofing | 200 | 1404 | #1 Professional Residential Roofing in Peoria, IL / Rainforcing Roofing |
+| roofing-in-pekin-il-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-pekin-il/roof-repair | 200 | 1243 | Professional Roof Repair in Pekin, IL / Rainforcing Roofing |
+| roofing-in-pekin-il-storm-damage-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-pekin-il/storm-damage-roof-repair | 200 | 1271 | Professional Storm Damage Roof Repair in Pekin, IL / Rainforcing Roofing |
+| roofing-in-pekin-il-emergency-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-pekin-il/emergency-roof-repair | 200 | 1279 | 24/7 Emergency Roof Repair in Pekin, IL / Rainforcing Roofing |
+| roofing-in-pekin-il-siding.md | https://www.rainforcingroofing.com/roofing-in-pekin-il/siding | 200 | 1271 | Expert Siding in Pekin, IL / Rainforcing Roofing |
+| roofing-in-pekin-il-gutter-cleaning.md | https://www.rainforcingroofing.com/roofing-in-pekin-il/gutter-cleaning | 200 | 1248 | Professional Gutter Cleaning in Pekin, IL / Rainforcing Roofing |
+| roofing-in-pekin-il-gutter-installation.md | https://www.rainforcingroofing.com/roofing-in-pekin-il/gutter-installation | 200 | 1221 | Expert Gutter Installation in Pekin, IL / Rainforcing Roofing |
+| roofing-in-tremont-il-residential-roofing.md | https://www.rainforcingroofing.com/roofing-in-tremont-il/residential-roofing | 200 | 1227 | Professional Residential Roofing in Tremont, IL / Rainforcing Roofing |
+| tremont-il-storm-damage-roof-repair.md | https://www.rainforcingroofing.com/tremont-il/storm-damage-roof-repair | 200 | 1269 | Professional Storm Damage Roof Repair in Peoria, IL / Rainforcing Roofing |
+| roofing-in-tremont-il-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-tremont-il/roof-repair | 200 | 1243 | Professional Roof Repair in Tremont, IL / Rainforcing Roofing |
+| roofing-in-tremont-il-storm-damage-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-tremont-il/storm-damage-roof-repair | 200 | 1271 | Professional Storm Damage Roof Repair in Tremont, IL / Rainforcing Roofing |
+| roofing-in-tremont-il-emergency-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-tremont-il/emergency-roof-repair | 200 | 1279 | 24/7 Emergency Roof Repair in Tremont, IL / Rainforcing Roofing |
+| roofing-in-tremont-il-siding.md | https://www.rainforcingroofing.com/roofing-in-tremont-il/siding | 200 | 1271 | Expert Siding in Tremont, IL / Rainforcing Roofing |
+| tremont-il-gutter-installation.md | https://www.rainforcingroofing.com/tremont-il/gutter-installation | 200 | 1284 | Expert Gutter Installation in Peoria, IL / Rainforcing Roofing |
+| roofing-in-washington-il-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-washington-il/roof-repair | 200 | 1243 | Professional Roof Repair in Washington, IL / Rainforcing Roofing |
+| roofing-in-washington-il-storm-damage-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-washington-il/storm-damage-roof-repair | 200 | 1271 | Professional Storm Damage Roof Repair in Washington, IL / Rainforcing Roofing |
+| washington-il-emergency-roof-repair.md | https://www.rainforcingroofing.com/washington-il/emergency-roof-repair | 200 | 1342 | Roofing in Peoria, IL / Rainforcing Roofing & Exteriors |
+| roofing-in-washington-il-siding.md | https://www.rainforcingroofing.com/roofing-in-washington-il/siding | 200 | 1271 | Expert Siding in Washington, IL / Rainforcing Roofing |
+| roofing-in-washington-il-gutter-installation.md | https://www.rainforcingroofing.com/roofing-in-washington-il/gutter-installation | 200 | 1221 | Expert Gutter Installation in Washington, IL / Rainforcing Roofing |
+| roofing-in-bloomington-il-residential-roofing.md | https://www.rainforcingroofing.com/roofing-in-bloomington-il/residential-roofing | 200 | 1227 | Professional Residential Roofing in Bloomington, IL / Rainforcing Roofing |
+| bloomington-il-roof-repair.md | https://www.rainforcingroofing.com/bloomington-il/roof-repair | 200 | 1303 | Expert Roof Insurance Claims in Peoria, IL - #1 Roofers - 3 Steps to Approval |
+| roofing-in-bloomington-il-storm-damage-roof-repair.md | https://www.rainforcingroofing.com/roofing-in-bloomington-il/storm-damage-roof-repair | 200 | 1271 | Professional Storm Damage Roof Repair in Bloomington, IL / Rainforcing Roofing |
+| bloomington-il-storm-damage-roof-repair.md | https://www.rainforcingroofing.com/bloomington-il/storm-damage-roof-repair | 200 | 1269 | Professional Storm Damage Roof Repair in Peoria, IL / Rainforcing Roofing |
+| roofing-in-bloomington-il-siding.md | https://www.rainforcingroofing.com/roofing-in-bloomington-il/siding | 200 | 1271 | Expert Siding in Bloomington, IL / Rainforcing Roofing |
+| roofing-in-bloomington-il-gutter-cleaning.md | https://www.rainforcingroofing.com/roofing-in-bloomington-il/gutter-cleaning | 200 | 1248 | Professional Gutter Cleaning in Bloomington, IL / Rainforcing Roofing |
+| bloomington-il-gutter-installation.md | https://www.rainforcingroofing.com/bloomington-il/gutter-installation | 200 | 1284 | Expert Gutter Installation in Peoria, IL / Rainforcing Roofing |
+| roofing-in-normal-il-residential-roofing.md | https://www.rainforcingroofing.com/roofing-in-normal-il/residential-roofing | 200 | 1227 | Professional Residential Roofing in Normal, IL / Rainforcing Roofing |
+| (failed) | https://www.rainforcingroofing.com/normal-il/storm-damage-roof-repair | error | 0 | page.waitForTimeout: Target page, context or browser has bee |
+| (failed) | https://www.rainforcingroofing.com/normal-il/roof-repair-normal-il | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/roofing-in-normal-il/storm-damage-roof-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/roofing-in-normal-il/emergency-roof-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/roofing-in-normal-il/siding | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/roofing-in-normal-il/gutter-installation | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/roofing-in-normal-il/gutter-cleaning | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/glasford-il/storm-damage-roof-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/glasford-il/residential-roofing | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/glasford-il/siding | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/glasford-il/gutter-installation | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/roof-insurance-claims | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/bartonville-il/roof-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/bartonville-il/storm-damage-roof-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/bartonville-il/emergency-roof-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/bartonville-il/gutter-cleaning-bartonville-il | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/dunlap-il/gutter-cleaning-dunlap-il | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/mapleton-il/roof-repair | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/mapleton-il/gutter-cleaning-mapleton-il | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/pekin-il/gutter-cleaning-pekin-il | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.rainforcingroofing.com/washington-il/gutter-cleaning-washington-il | error | 0 | page.goto: Target page, context or browser has been closed |
