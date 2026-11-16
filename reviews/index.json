@@ -471,6 +471,18 @@
       "pulledAt": "2026-11-16T04:09:13.898Z"
     },
     {
+      "slug": "fortwayne-roofing-4ever",
+      "name": "4Ever Metal Roofing",
+      "placeId": "ChIJ__8LEvXmFYgRl_IGjtzTIug",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 299,
+        "withText": 66,
+        "ratingOnly": 9
+      },
+      "pulledAt": "2026-11-16T04:24:00.733Z"
+    },
+    {
       "slug": "greenway-exteriors",
       "name": "Greenway Exteriors",
       "placeId": "ChIJAQC8MrzhuocR5qvlgPmfobc",
