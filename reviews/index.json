@@ -400,15 +400,15 @@
     },
     {
       "slug": "fortwayne-plumbing-borchelt",
-      "name": null,
-      "placeId": null,
-      "status": "invalid_request",
+      "name": "W C Borchelt & Sons Inc",
+      "placeId": "ChIJLwGX-6v9FYgRclM5JlnXeKc",
+      "status": "ok",
       "counts": {
-        "listingTotal": null,
-        "withText": 0,
-        "ratingOnly": 0
+        "listingTotal": 969,
+        "withText": 57,
+        "ratingOnly": 18
       },
-      "pulledAt": "2026-11-16T03:59:05.142Z"
+      "pulledAt": "2026-11-16T04:07:48.089Z"
     },
     {
       "slug": "greenway-exteriors",
