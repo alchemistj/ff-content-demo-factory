@@ -519,6 +519,18 @@
       "pulledAt": "2026-11-16T04:24:00.733Z"
     },
     {
+      "slug": "fortwayne-windows-busheys",
+      "name": "Bushey's Windows & Doors",
+      "placeId": "ChIJHV7XDffkFYgR1wDSfCfSEfU",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 843,
+        "withText": 74,
+        "ratingOnly": 1
+      },
+      "pulledAt": "2026-11-16T05:42:54.849Z"
+    },
+    {
       "slug": "greenway-exteriors",
       "name": "Greenway Exteriors",
       "placeId": "ChIJAQC8MrzhuocR5qvlgPmfobc",
