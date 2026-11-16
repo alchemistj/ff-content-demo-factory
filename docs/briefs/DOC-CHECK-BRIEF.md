@@ -4,6 +4,9 @@
 
 Checker: end your review by reading each page side by side with the closest Lovable build and client-site page; if Josh wouldn't be proud to send it, say BACK TO WRITER with why.
 
+**After any backport, read the page top to bottom for repetition; any fact more than twice on a page is a fail.** (FF architect, Nov 16)
+
+
 You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-2026-11-16/<slug>.md` against the same sources the writer used:
 - `docs/briefs/DOC-WRITE-BRIEF.md` (all of Josh's guidelines);
 - `docs/JOSH-CHECKLIST.md`;

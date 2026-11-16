@@ -1,5 +1,12 @@
 # Brief: one in-place backport pass on ONE finished doc (Sonnet)
 
+**This is a judgment pass, not a checklist stamped onto every doc** (FF architect, Nov 16, after 4Ever got worse). Before adding anything, check whether the page already says it. If it does, add nothing.
+- **Speed claim placement:** once in the home strip, once in the home hero OR the home FAQ (not both), and once per service page (hero OR FAQ, not both). Never more.
+- **FAQs:** a new FAQ question must answer something the page doesn't already say. If the page already has a good FAQ, or nothing new is left, add no FAQ. One FAQ block per page; every question **bold**; answers plain text; never turn an answer into a heading.
+- **No ratings or review counts** anywhere, strips included.
+- **Notes:** update the Notes to match every change (counts, strip contents, what was removed).
+- **Finish:** read each page top to bottom. Any fact said more than twice on a page is a fail; fix it before you reply.
+
 Josh and the FF architect found patterns in their own full passes on Sterling and Pro Comfort (Nov 16). Apply all of them to this doc in one pass, in place. Josh's standard: would he be proud to send it? Use `outreach/words-2026-11-16/4ever.md` as the bar.
 
 ## Read first
