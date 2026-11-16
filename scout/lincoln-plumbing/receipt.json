@@ -1,0 +1,26 @@
+{
+  "kind": "google-prospect-scout-receipt",
+  "status": "ok",
+  "slug": "lincoln-plumbing",
+  "request": {
+    "query": "plumber",
+    "location": "Lincoln, NE",
+    "maxPlaces": 40
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "IE0BKGxZJGMDqBDiq",
+    "datasetId": "fpaiIZXaSfynEGD61",
+    "attempts": 1,
+    "usageUsd": 0.1202
+  },
+  "counts": {
+    "returned": 40,
+    "advertisements": 0
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T03:53:03.896Z",
+  "finishedAt": "2026-11-16T03:53:24.717Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43800734005"
+}
