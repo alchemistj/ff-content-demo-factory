@@ -119,7 +119,7 @@ This demo is the first five pages. A full build starts by pulling every service 
 
 ### What we'd confirm with you
 
-1. **Homeowner calls.** Your reviews show water heaters, sump pumps and furnaces in houses, but your site says commercial. Do you want homeowner calls?
+1. **Homeowner work.** Your reviews show homeowners calling about water heaters, sump pumps and furnaces, but your site says commercial. Do you want more homeowner work?
 2. **Mark.** Your reviews keep praising a technician named Mark, but your staff pages list no Mark. May we name him?
 3. **Phone number.** Which number should homeowners call? We used (260) 341-0530 for service.
 4. **Memberships.** Your Affiliations page lists UA Local 166, MCAA, MSCA, BCA, the Chamber, NISBC and ASHRAE. Are all current?
@@ -136,7 +136,7 @@ Text us: (417) 373-2773
 
 # Plumbing and HVAC Company in Fort Wayne, IN — A. Hattersley & Sons
 
-Plumbing, heating and cooling repair for Fort Wayne homes, from a mechanical contractor at work since 1856. A mechanical contractor installs and services the plumbing, piping, heating and cooling inside a building. HVAC stands for heating, ventilation and air conditioning.
+A Fort Wayne mechanical contractor at work since 1856, on hospitals, colleges and schools. Homeowners have also called us for plumbing, heating and cooling trouble. A mechanical contractor installs and services the plumbing, piping, heating and cooling inside a building. HVAC stands for heating, ventilation and air conditioning.
 
 **Buttons:** Call (260) 341-0530 / Plumbing Repair
 
@@ -162,12 +162,12 @@ We provide a dedicated advisor who explains the recommended work and helps you m
 
 Our plumbers are union-trained, with deep expertise across a wide range of plumbing work.
 
-### What we do at your house
+### What homeowners call us for
 
-At homes, we handle:
+Homeowners have called us about plumbing trouble and about heating and cooling trouble, and each service page carries their words, with what usually goes wrong and why.
 
-- **Plumbing repair and emergencies:** leaks, broken valves, sump pumps, water heaters and toilets, sewer lines, water softeners and whole-house filters. See [Plumbing Repair](/plumbing-repair-fort-wayne-in/).
-- **Heating and cooling repair:** furnaces, heat pumps and air conditioners. See [Heating and Cooling Repair](/heating-and-cooling-repair-fort-wayne-in/).
+- [Plumbing Repair](/plumbing-repair-fort-wayne-in/)
+- [Heating and Cooling Repair](/heating-and-cooling-repair-fort-wayne-in/)
 
 ### Memberships we list
 
@@ -203,7 +203,7 @@ For plumbing, heating or cooling at your house, call (260) 341-0530.
 
 # Plumbing Repair in Fort Wayne, IN — A. Hattersley & Sons
 
-We repair plumbing in Fort Wayne homes, from a leaking valve to a sewer line, day or night. Call (260) 341-0530.
+Fort Wayne homeowners have called us for plumbing trouble, from a broken valve to a sump pump. Call (260) 341-0530.
 
 **Buttons:** Call (260) 341-0530 / See Our Work
 
@@ -219,11 +219,11 @@ Fort Wayne cold snaps are when pipes tend to split. Water freezes and expands, a
 
 Every household member who might need it should know where the main shutoff valve is, usually where the water line enters the house, often in the basement. Closing it stops the flow while you wait for help. If it will not close, or it leaks, that valve is itself a repair.
 
-We take calls at any hour, and a same-day visit is often possible, sometimes within a few hours.
+Our service department is available at any hour, and homeowners have described same-day visits, sometimes within a few hours.
 
 ### A broken valve and the city's side of the line
 
-Water reaches your house through a service line, and the city's water utility often owns the part up to the meter while you own the rest. If a shutoff valve fails, it can leave a house with no water and raise a fair question: whose problem is it? We can work with the utility when a repair sits on that line, and what we can do depends on which side the failure is on.
+Water reaches your house through a service line, and the city's water utility often owns the part up to the meter while you own the rest. If a shutoff valve fails, it can leave a house with no water and raise a fair question: whose problem is it? Which side of the line the failure is on decides who handles the repair, so it is worth asking before work starts.
 
 > Excellent business to work with. Came out same day to fix a valve that had broken shut and left my house without water. They coordinated with the City Water utility so I didn't have to. Technician who came on site was incredibly friendly, professional, and completed the job very quickly. I would not hesitate to call them for any of my plumbing needs in the future! A++
 >
@@ -231,7 +231,7 @@ Water reaches your house through a service line, and the city's water utility of
 
 ### Sump pumps
 
-A sump pump sits in a pit in the basement floor and pushes groundwater out of the house. Fort Wayne basements take on water during spring thaws and heavy rain, and a pump that has run for years tends to fail when it is working hardest. A power outage during the same storm can stop a pump that is healthy, so a battery backup is worth asking about. We replace sump pumps, including after hours.
+A sump pump sits in a pit in the basement floor and pushes groundwater out of the house. Fort Wayne basements take on water during spring thaws and heavy rain, and a pump that has run for years tends to fail when it is working hardest. A power outage during the same storm can stop a pump that is healthy, so a battery backup is worth asking about. Homeowners have called us to replace a sump pump, including after hours.
 
 > Called today with a sump pump issue and the problem was resolved the same day after hours with a new American made, which I appreciate, sump pump. The premium for overtime service was not exponential. Mark was very knowledgeable, personable, and seemingly efficient. Took time to explain the situation to me and how the new one work in an easily receivable manner. Should I have any other home issues come up, that they can handle under their umbrella of available services, I'll be calling them.
 >
@@ -239,7 +239,7 @@ A sump pump sits in a pit in the basement floor and pushes groundwater out of th
 
 ### Water heaters
 
-A tank water heater commonly lasts 8 to 12 years. When it is old and leaking from the tank itself, replacing it usually makes more sense than repairing it, because a leak in the tank wall cannot be patched. When the water is only lukewarm, the cause is often a failed heating element or thermostat, and a repair can be the smaller fix. We install tank and tankless models. A tankless water heater heats water as it flows, with no storage tank, so it is smaller and needs a different gas or electrical supply.
+A tank water heater commonly lasts 8 to 12 years. When it is old and leaking from the tank itself, replacing it usually makes more sense than repairing it, because a leak in the tank wall cannot be patched. When the water is only lukewarm, the cause is often a failed heating element or thermostat, and a repair can be the smaller fix. Homeowners have called us when a water heater failed. A tankless water heater heats water as it flows, with no storage tank, so it is smaller and needs a different gas or electrical supply.
 
 > Thank you so much for coming out in less then a few hours of the first call and then getting our new water heater in the next morning we can't thank you enough!
 >
@@ -247,7 +247,7 @@ A tank water heater commonly lasts 8 to 12 years. When it is old and leaking fro
 
 ### Toilets, drains and sewer lines
 
-A toilet that will not flush correctly is often a clog or a worn part inside the tank, so pulling it off the floor is rarely the first step, and it can damage the wax seal and flooring. A drain that backs up in more than one fixture usually points past the fixture to the main sewer line. Older Fort Wayne neighborhoods are more likely to have clay or cast iron sewer pipe, and tree roots can enter the joints of such pipe. Our plumbing work also covers leak detection and system diagnostics to find where the problem actually sits.
+A toilet that will not flush correctly is often a clog or a worn part inside the tank, so pulling it off the floor is rarely the first step, and it can damage the wax seal and flooring. A drain that backs up in more than one fixture usually points past the fixture to the main sewer line. Older Fort Wayne neighborhoods are more likely to have clay or cast iron sewer pipe, and tree roots can enter the joints of such pipe. Our site lists leak detection and system diagnostics to find where the problem actually sits.
 
 > I’m new to the area and am so happy to have an honest and fair company like  Hattersley  . We were about to attempt to fix the toilet ourselves by ripping it out of the floor and are so happy we did not!! Hattersley not only fixed the problem without any invasive or damaging solutions  but taught me exactly what to try in case we ever have a similar issue . They have a the heart of a teacher !
 >
@@ -263,7 +263,7 @@ Insurance policies differ, but sudden damage, such as a burst pipe, is often tre
 
 ### Water softeners, filters and faucets
 
-Much of northern Indiana often has hard water, which is water with a lot of dissolved minerals, and a water softener is a common answer. We install water softeners, whole-house filtration systems and kitchen faucets, including instant hot water dispensers. A new softener that does not produce soft water right away is often a connection or setting problem, so it is worth having someone check it.
+Much of northern Indiana often has hard water, which is water with a lot of dissolved minerals, and a water softener is a common answer. Homeowners have called us about a water softener that was not working right. A new softener that does not produce soft water right away is often a connection or setting problem, so it is worth having someone check it.
 
 > We recently installed a water softener that was not producing soft water right away.  I was skeptical on which company to call but once I read the reviews on Hattersley I immediately called.  Mark came out the next day to check the connections and test the water.   Mark is very personable, professional and explained what was going on in layman's terms which is important to me since I don't know a lot about water softeners and plumbing.  I would highly recommend Hattersley!  We will definitely be calling to get a quote on our next project.
 >
@@ -271,7 +271,7 @@ Much of northern Indiana often has hard water, which is water with a lot of diss
 
 ### Gas lines and backflow testing
 
-Our plumbing work also covers natural gas systems. If you smell gas, leave the house, do not touch a light switch, and call the gas utility from outside. We also do backflow prevention and cross-connection testing, a check that keeps water from flowing backward into the drinking supply. Homes meet this on a lawn sprinkler line, and whether yours needs a yearly test depends on local utility rules, so ask us before assuming.
+Our site lists natural gas systems among our plumbing work. If you smell gas, leave the house, do not touch a light switch, and call the gas utility from outside. Our site also lists backflow prevention and cross-connection testing, a check that keeps water from flowing backward into the drinking supply. Homes meet this on a lawn sprinkler line, and whether yours needs a yearly test depends on local utility rules, so ask us before assuming.
 
 Water problem at any hour? Call (260) 341-0530.
 
@@ -281,7 +281,7 @@ Water problem at any hour? Call (260) 341-0530.
 
 # Heating and Cooling Repair in Fort Wayne, IN — A. Hattersley & Sons
 
-We repair furnaces, heat pumps and air conditioners in Fort Wayne homes. HVAC stands for heating, ventilation and air conditioning. Call (260) 341-0530.
+Fort Wayne homeowners have called us for furnace, heat pump and air conditioner trouble. HVAC stands for heating, ventilation and air conditioning. Call (260) 341-0530.
 
 **Buttons:** Call (260) 341-0530 / See Our Work
 
@@ -389,10 +389,10 @@ The company moved to its Mobile Avenue building in 1955, and the office is still
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
-| Strategy | 965 | 998 |
-| Home | 698 | 840 |
-| Plumbing Repair | 765 | 1288 |
-| Heating and Cooling Repair | 957 | 1270 |
+| Strategy | 967 | 1000 |
+| Home | 667 | 809 |
+| Plumbing Repair | 766 | 1289 |
+| Heating and Cooling Repair | 959 | 1272 |
 | Contact | 287 | 320 |
 
 Counts include headings, bullets and the H1, and leave out the button lines. All pages meet their minimums without quotes (home 550+, services 700+, contact 250+, strategy 1,000 or fewer). The two service pages are mostly hedged trade knowledge tied to Fort Wayne; their site pages are about 125 words each, so the services themselves (water heaters, sump pumps, furnaces and so on) rest on reviews, not on the site. See "Facts to verify".
@@ -407,7 +407,7 @@ Counts include headings, bullets and the H1, and leave out the button lines. All
 - Fabrication shops in Fort Wayne and Lafayette, "tested up to 40,000 PSI": fabrication page, attributed ("our site says").
 - 24 hours a day, 7 days a week: contact-us page. Used on Contact only.
 
-**Review-inferred, hedged.** Quick and same-day visits ("often", "sometimes within a few hours"), after-hours sump pump replacement, the city utility coordinating on a broken valve, installing and servicing tank and tankless water heaters, softeners, whole-house filters, toilets, sewer lines, furnace, heat pump and AC repair, and yearly maintenance checks for some homeowners. Each appears once.
+**Review-inferred, hedged.** The site is commercial-only, so every homeowner service is worded as what homeowners have called about ("Homeowners have called us…"), never as a standing offer, and each sits next to a quote that shows it: a broken valve and the city utility (Darren C.), an after-hours sump pump replacement (Holly D.), a failed water heater (Crystal B.), a toilet (Emma H.), a water softener (Lisa C.), a furnace (Patti M.), a heat pump (Anthony J.), an air conditioner (Nick H.) and a furnace repair (Amy K.). Same-day visits are "often" or "sometimes within a few hours". Tankless water heater installs, softener and filter installs, kitchen faucets and yearly maintenance checks are no longer stated; the water heater and softener lines are trade knowledge only. Site claims (since 1856, project list, affiliations, 24 hours a day, leak detection, natural gas, backflow) stay in the business's voice.
 
 **Reviews.** 16 quotes, word for word, each used once, no two back to back, no reviewer twice (Strategy: Lisa K.; Home: Kenny S., Christopher L., G G.; Plumbing: Brian T., Darren C., Holly D., Crystal B., Emma H., Sharon F., Lisa C.; HVAC: Patti M., Anthony J., Nick H., Amy K.; Contact: Allayna B.). Not quoted: Nanci E. appears twice in the pull (nanci E., Nanci E.), likely one person, so neither used.
 

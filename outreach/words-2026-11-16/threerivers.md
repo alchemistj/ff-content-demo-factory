@@ -154,17 +154,17 @@ Three Rivers Electric is a locally owned electrical company at 3020 Congressiona
 
 ### The people behind the work
 
-Nate Cardelli, PhD, is our president and owner. Shelly Barton is our executive vice president, and Kyle Couch, a Master Electrician, is vice president of operations. Our electricians are Adam, Andy, Josh, Luke, Ryan, Taylor and Tyler, and between us we have more than 125 years of combined experience. We are licensed and insured, and our electricians take part in company-funded continuing education, so they stay current on electrical codes and methods.
+Nate Cardelli, PhD, is our president. Shelly Barton is our executive vice president, and Kyle Couch, a Master Electrician, is vice president of operations. Our electricians are Adam, Andy, Josh, Luke, Ryan, Taylor and Tyler, and they take part in company-funded continuing education, so they stay current on electrical codes and methods.
 
 > Great job! Taylor and Tyler persisted until the repaired every break on the yard light connection.
 >
 > — Richard D.
 
-No job is too small, and that includes a single outlet, a light switch or a ceiling fan. Safe, dependable and trustworthy is how we describe ourselves.
+We take on a single outlet, a light switch or a ceiling fan as readily as a larger job. Safe, dependable and trustworthy is how we describe ourselves.
 
 ### Electrical work for your home
 
-Two of the bigger jobs have their own pages. [Electrical panel upgrades](#), including 100 amp to 200 amp changes and the meter base and riser that go with them, are for homes that have outgrown their service. [Whole-home rewiring and breaker repair](#) covers old wiring, tripping breakers and outlets that went dead.
+Two of the bigger jobs have their own pages. [Electrical panel upgrades](#), including moving from 100 amp to 200 amp service (amps measure how much electricity the house can draw at once) and replacing the meter base and riser, the outdoor box and pipe that bring power in, are for homes that have outgrown their service. [Whole-home rewiring and breaker repair](#) covers old wiring, tripping breakers and outlets that went dead.
 
 The rest of our residential work:
 
@@ -172,7 +172,7 @@ The rest of our residential work:
 - Ceiling fans, surge protection and smart devices. Surge protection is a device that limits the damage when a voltage spike comes through your lines.
 - Data cabling, receptacles (the outlets) and light switches
 - Generator installation, including transfer switches. A transfer switch lets a generator power your house without sending electricity back out onto the utility's lines, which is a danger to line crews.
-- EV charger installation. The charger needs its own circuit, so the panel is worth a look first.
+- EV charger setup, as one customer's review below shows
 
 > They did a great job getting my EV charger set up. Everything was finished and looked very good.
 >
@@ -184,7 +184,7 @@ If your project isn't on the list, call. We'll tell you whether it's a fit.
 
 We install and maintain lighting for homes and businesses: interior, exterior, landscape and security lighting, fixture replacement, lamp and bulb replacement, and lighting remodels and design updates. We also install exterior light posts and seasonal or holiday lights.
 
-If you're moving to LED, the fixture itself usually matters. Older fluorescent fixtures have a ballast, the part that regulates power to the tube, and it is often the thing that fails or has to be taken out when the lights are converted. We replace ballasts and handle LED upgrades. Fixtures outdoors should be rated for wet locations, since water in a fixture is a common reason for a tripped breaker.
+If you're moving to LED, the fixture itself usually matters. Older fluorescent fixtures have a ballast, the part that regulates power to the tube, and it is often the thing that fails or has to be taken out when the lights are converted. We replace ballasts and handle LED upgrades. Fixtures outdoors should be rated for wet locations, meaning made to handle rain and moisture.
 
 ### Businesses and housing developments
 
@@ -194,11 +194,11 @@ For existing businesses, new commercial spaces and housing developments, we hand
 >
 > — Robert W.
 
-Our low voltage team handles structured cabling, phone systems, audio and visual systems, and theatrical lighting and rigging, for businesses, industrial spaces and homes. Low voltage means the wiring for data, phones, sound and video, which carries far less power than your outlets.
+Our low voltage team handles structured cabling (organized network and phone wiring), phone systems, audio and visual systems, and theatrical lighting and rigging, for businesses, industrial spaces and homes. Low voltage means the wiring for data, phones, sound and video, which carries far less power than your outlets.
 
 ### Solar, and ways to pay for it
 
-We install residential and commercial solar, including ground-mount, roof-mount and ballasted systems, and larger solar fields. We also clean and maintain panels and inspect inverters, the equipment that turns what your panels make into power your house uses. We have also taken solar panels down for customers.
+We install residential and commercial solar, including ground-mount, roof-mount and ballasted systems (weighted down instead of bolted through the roof), and larger solar fields. We also clean and maintain panels and inspect inverters, the equipment that turns what your panels make into power your house uses. We have also taken solar panels down for customers.
 
 > I had Solar panels removed from my house roof yesterday
 > 2 very dependable polite young men were sent over & I’m very pleased with all.
@@ -249,21 +249,27 @@ Most panel changes need a permit and an inspection by the local building departm
 
 Code also calls for clear working space in front of a panel, often about three feet. Closets, shelving and finished basement walls built around an old panel sometimes mean the panel has to move, which adds work to the job.
 
-> Given a 1 hour time frame for when they would arrive and they arrived right on time.
->
-> — Mike
-
 ### Meter base and riser
 
 The meter base is the box on the outside of the house that the utility meter plugs into. The riser is the pipe that carries wires up from the meter to where the utility's lines connect, usually near the roof. Rust, storm damage or a riser pulled loose by a falling branch are common reasons to replace them. The utility generally owns the meter and its own wires, so the part on the house side is the electrician's, and the two sides are scheduled together.
 
 ### Surge protection, generators and EV chargers
 
-These all connect at the panel. A whole-home surge protector is usually fitted there, and a generator's transfer switch connects through it. An EV charger often needs its own dedicated 40 or 50 amp circuit, and a hot tub or swim spa can need something similar. A crowded panel is often what limits those projects, so we look at it first.
+These all connect at the panel. A whole-home surge protector is usually fitted there, and a generator's transfer switch connects through it. An EV charger often needs its own dedicated 40 or 50 amp circuit, and a hot tub or swim spa can need something similar. A crowded panel is often what limits those projects, so it is worth checking first.
 
 ### What decides the price
 
 Panel pricing differs from house to house, and the details that move it are things a look at your house settles. They include the size of the upgrade, whether the service cable, meter base and riser are replaced, how far the panel is from the meter, whether it has to move, and the permit. Every one is worth asking about, since each can change the number.
+
+### What a visit for panel work often looks like
+
+A visit usually starts with looking at the panel, the meter and the space around them, and with a few questions about what the house runs. Arrival windows are common in this trade, so ask for one when you book.
+
+> Given a 1 hour time frame for when they would arrive and they arrived right on time.
+>
+> — Mike
+
+Electricians often explain what they find and what each part of the work involves before starting, and tidy up when they finish, since the work can mean dust and open walls near the panel.
 
 > This was the second time we had used this company.  They were recommended by our home warranty company.  Both times, the guys showed up online, used booties, installed and explained products, and then cleaned up afterward.  On top of that, they were charming, personable, and professional.   Will use them again.
 >
@@ -363,6 +369,14 @@ Call (260) 908-8700, or email Office@3RiversElectric.Net. We're at 3020 Congress
 
 Tell us what is happening and where, whether it is one outlet, one room or the whole house. Add when it started, anything you've noticed such as a tripping breaker or a warm outlet, and whether you want a repair, a new installation or an estimate. For a panel, a rewire or a lighting project, tell us the age of the house and what you'd like to change.
 
+### What happens after you call
+
+Someone usually starts with a few questions about what you described. Some problems can be sorted out on the phone, and others need an electrician to see the work in person before there is a price or a plan. A visit is often easier to schedule when you can say which days and times suit you.
+
+### What to have ready
+
+If you can, note which breaker in the panel is involved, or which outlets and lights have lost power. A photo of the panel, the outlet or the fixture helps when words are hard to find, and so does anything printed on a label, such as an appliance's power rating. If the work is for a rental, a condo or a home you just bought, mention who owns it and who can be there when we arrive.
+
 ### Our estimates
 
 We charge a fee for estimates, because a thorough, accurate one takes an electrician's time and expertise. Ask about the fee when you call, so it's no surprise.
@@ -375,9 +389,7 @@ We charge a fee for estimates, because a thorough, accurate one takes an electri
 
 If you see smoke or flames, or smell something burning, get everyone outside and call 911 before you call us. If a breaker keeps tripping or an outlet sparks, call us and stop using that outlet or appliance until an electrician has looked.
 
-### Where we work
-
-Our office is in Fort Wayne, and we serve homes and businesses in Fort Wayne and across Northeast Indiana. If you're not sure your project fits, call us and we'll sort it out on the phone.
+If you're not sure your project fits, call us and we'll sort it out on the phone.
 
 **Buttons:** Call (260) 908-8700 / Request an Estimate
 
@@ -385,17 +397,17 @@ Our office is in Fort Wayne, and we serve homes and businesses in Fort Wayne and
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
-| Strategy | ~960 | ~990 |
-| Home | ~730 | ~895 |
-| Electrical Panel Upgrades | ~965 | ~1,060 |
-| Whole-Home Rewiring & Breaker Repair | ~900 | ~1,120 |
-| Contact | ~225 | ~280 |
+| Strategy | ~930 | ~965 |
+| Home | ~730 | ~880 |
+| Electrical Panel Upgrades | ~1,050 | ~1,125 |
+| Whole-Home Rewiring & Breaker Repair | ~900 | ~1,105 |
+| Contact | ~345 | ~385 |
 
 Counts include headings, bullets and the H1, and leave out button lines. Home and both service pages clear their minimums (550 / 700 / 700) without quotes; the strategy page is under 1,000.
 
-**Service pages.** Both are mostly hedged general trade knowledge (older Fort Wayne housing, 60/100 amp service and fuse boxes, load calculations, permits and utility disconnects, knob-and-tube, cloth and aluminum wiring, GFCI and arc-fault protection). Business claims come only from the site and reviews. The panel page has the thinnest source material: the site gives one bullet and reviews give no panel-upgrade job, so its quotes (Mike, Karen R.) are about the visit, not the panel. Meter base and riser are covered on the panel page. Per the assignment, rewiring and breaker repair share one page.
+**Service pages.** Both are mostly hedged general trade knowledge (older Fort Wayne housing, 60/100 amp service and fuse boxes, load calculations, permits and utility disconnects, knob-and-tube, cloth and aluminum wiring, GFCI and arc-fault protection). Business claims come only from the site and reviews. The panel page has the thinnest source material: the site gives one bullet and reviews give no panel-upgrade job, so its two quotes (Mike, Karen R.) are about the visit, not the panel, so they sit together under "What a visit for panel work often looks like" with copy between them. Meter base and riser are covered on the panel page. Per the assignment, rewiring and breaker repair share one page.
 
-**Credentials (own-site claims only, stated once on Home).** Licensed & Insured (not verified: no license lookup done); 125+ years combined team experience (a team claim, not a company age; no founding year used); locally owned; Kyle Couch, Master Electrician (unverified); Nate Cardelli, PhD, President & Owner, Shelly Barton, EVP (from the About page); Indiana Energy Independence Fund "one of the only approved contractors in Northeast Indiana" and Smart-E loan (stated as their claim; approval not confirmed); Wisetack and Synchrony Home financing. Company-funded continuing education is from the owner's reply to Andrew P.
+**Credentials (own-site claims only, stated once on Home).** Licensed & Insured (not verified: no license lookup done); 125+ years combined team experience (a team claim, not a company age; no founding year used); locally owned; Kyle Couch, Master Electrician (unverified); Nate Cardelli, PhD (site says President & Owner; copy says only "president" until ownership is confirmed), Shelly Barton, EVP (from the About page); Indiana Energy Independence Fund "one of the only approved contractors in Northeast Indiana" and Smart-E loan (stated as their claim; approval not confirmed); Wisetack and Synchrony Home financing. Company-funded continuing education is from the owner's reply to Andrew P.
 
 **Estimate fee.** Source is the owner's reply to Andrew P. (1 star); the $75 figure is the reviewer's, so no amount is used. Stated once, on Contact. Andrew P.'s review is not quoted.
 
