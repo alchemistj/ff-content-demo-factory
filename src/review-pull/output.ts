@@ -3,7 +3,7 @@
  * A failed run still leaves a receipt and an index row. reviews.md is only written when the pull is ok.
  */
 
-import { existsSync, mkdirSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readdirSync, readFileSync, renameSync, rmSync, writeFileSync } from "node:fs";
 import { join, resolve, sep } from "node:path";
 import { pullApifyPlaces, redactSecret, type ApifyPullResult } from "./apify.js";
 import { checkIdentity } from "./identity.js";
@@ -321,6 +321,54 @@ function publish(
     version: 1,
     places,
   } satisfies ReviewIndexFile);
+}
+
+/**
+ * Rebuild reviews/index.json from the slug folders on disk. Used when two pulls
+ * for different slugs race to push review-data: the loser resets to the remote
+ * branch, restores its own folder, and rebuilds the index instead of merging it.
+ * A folder with reviews.json keeps its last good row even if its newest receipt failed.
+ */
+export function rebuildIndex(outDir: string): ReviewIndexFile {
+  const root = resolve(outDir);
+  const places: ReviewIndexRow[] = [];
+  const names = existsSync(root) ? readdirSync(root, { withFileTypes: true }) : [];
+  for (const entry of names) {
+    if (!entry.isDirectory() || !isValidSlug(entry.name)) continue;
+    const dir = join(root, entry.name);
+    const reviewsPath = join(dir, "reviews.json");
+    const receiptPath = join(dir, "receipt.json");
+    if (existsSync(reviewsPath)) {
+      const file = JSON.parse(readFileSync(reviewsPath, "utf8")) as GoogleReviewFile;
+      places.push({
+        slug: entry.name,
+        name: file.place?.name ?? null,
+        placeId: file.place?.placeId ?? null,
+        status: "ok",
+        counts: {
+          listingTotal: file.place?.totalReviewCount ?? null,
+          withText: file.reviews?.length ?? 0,
+          ratingOnly: file.ratingOnly?.length ?? 0,
+        },
+        pulledAt: file.pulledAt,
+      });
+    } else if (existsSync(receiptPath)) {
+      const receipt = JSON.parse(readFileSync(receiptPath, "utf8")) as ReviewPullReceipt;
+      places.push({
+        slug: entry.name,
+        name: null,
+        placeId: null,
+        status: receipt.status,
+        counts: receipt.counts,
+        pulledAt: receipt.finishedAt,
+      });
+    }
+  }
+  places.sort((left, right) => left.slug.localeCompare(right.slug));
+  const index: ReviewIndexFile = { kind: "google-review-pull-index", version: 1, places };
+  mkdirSync(root, { recursive: true });
+  writeJson(join(root, "index.json"), index);
+  return index;
 }
 
 function loadIndex(outDir: string): ReviewIndexFile {

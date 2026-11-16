@@ -5,7 +5,7 @@ import { tmpdir } from "node:os";
 import { dirname, join, resolve } from "node:path";
 import test from "node:test";
 import { fileURLToPath } from "node:url";
-import { MISSING_TOKEN_DETAIL, executeReviewPull, type ReviewIndexFile, type ReviewPullReceipt } from "./output.js";
+import { MISSING_TOKEN_DETAIL, executeReviewPull, rebuildIndex, type ReviewIndexFile, type ReviewPullReceipt } from "./output.js";
 
 const repoRoot = resolve(dirname(fileURLToPath(import.meta.url)), "../..");
 const fixture = JSON.parse(
@@ -223,6 +223,33 @@ test("the CLI exits 0 only for help and writes the missing-token message", () =>
     assert.equal(receipt.status, "missing_token");
     assert.equal(receipt.trigger, "cli");
     assert.equal(existsSync(join(outDir, "cli-missing", "reviews.json")), false);
+  } finally {
+    rmSync(outDir, { recursive: true, force: true });
+  }
+});
+
+test("rebuildIndex restores every slug from its folder and keeps the last good row", async () => {
+  const outDir = tempDir();
+  try {
+    const good = await run(outDir, { mapsUrl: "place_id:ChIJfakekodesroofing0001", slug: "kodes-roofing" }, {
+      token: TOKEN,
+      fetchImpl: succeededFetch([fixture]),
+      now: () => new Date("2026-10-23T18:00:00.000Z"),
+    });
+    assert.equal(good.status, "ok");
+    await run(outDir, { mapsUrl: "https://example.com/nope", slug: "kodes-roofing" }, { token: TOKEN });
+    await run(outDir, { mapsUrl: "https://example.com/nope", slug: "other-roofing" }, { token: TOKEN });
+    rmSync(join(outDir, "index.json"));
+    const index = rebuildIndex(outDir);
+    assert.deepEqual(
+      index.places.map((place) => [place.slug, place.status]),
+      [
+        ["kodes-roofing", "ok"],
+        ["other-roofing", "invalid_request"],
+      ],
+    );
+    assert.equal(index.places[0]?.pulledAt, good.finishedAt);
+    assert.deepEqual(readJson(join(outDir, "index.json")), index);
   } finally {
     rmSync(outDir, { recursive: true, force: true });
   }
