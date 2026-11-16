@@ -1,0 +1,29 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "ozark-ashs-barber-lookup",
+  "place": {
+    "name": "Ash's Barber Collective",
+    "placeId": "ChIJ8bZtIFBxz4cR5BpeENYruuQ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Ash's%20Barber%20Collective&query_place_id=ChIJ8bZtIFBxz4cR5BpeENYruuQ",
+    "address": "5104 N 22nd St, Ozark, MO 65721",
+    "phone": "(417) 380-3078",
+    "rating": 4.9,
+    "totalReviewCount": 34
+  },
+  "pulledAt": "2026-11-16T05:20:10.312Z",
+  "requestedMax": 1,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xabVYxaGlaMjVoVkdsM2RUTmZWVEpUT1hsa1MzYxAB",
+      "reviewer": "Levi B.",
+      "rating": 5,
+      "text": "Ashley is the only person I've found in the area that cuts my hair just the way I like it every time!",
+      "publishedAt": "2026-04-21T17:04:46.924Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xabVYxaGlaMjVoVkdsM2RUTmZWVEpUT1hsa1MzYxAB!2m1!1s0x0:0xe4ba2bd6105e1ae4!3m1!1s2@1:CAIQACodChtycF9oOlZmV1hiZ25hVGl3dTNfVTJTOXlkS3c%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": []
+}

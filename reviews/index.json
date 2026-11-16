@@ -807,6 +807,18 @@
       "pulledAt": "2026-11-09T02:09:21.938Z"
     },
     {
+      "slug": "ozark-ashs-barber-lookup",
+      "name": "Ash's Barber Collective",
+      "placeId": "ChIJ8bZtIFBxz4cR5BpeENYruuQ",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 34,
+        "withText": 1,
+        "ratingOnly": 0
+      },
+      "pulledAt": "2026-11-16T05:20:10.312Z"
+    },
+    {
       "slug": "peoria-plumbing-gk",
       "name": "G/K Brothers Plumbing & HVAC",
       "placeId": "ChIJgXvZTFo9G4YR8_fsYd6BalM",
