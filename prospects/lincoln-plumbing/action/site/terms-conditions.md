@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/terms-conditions
 
-- Fetched: 2026-11-16T04:28:50.507Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:47:46.072Z (rendered in a real browser)
 - HTTP: 200
 - Title: Terms & Conditions | Action Plumbing, Heating, A/C, Electrical - Lincoln, NE
 - H1: Terms & Conditions
-- tel: links: tel:+14025760708, tel:402-576-0708
+- tel: links: tel:+14024091929, tel:402-409-1929
 - Words: 107
 
 ---

@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/specials
 
-- Fetched: 2026-11-16T04:28:18.747Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:47:41.227Z (rendered in a real browser)
 - HTTP: 200
 - Title: Specials & Promotions | Action Plumbing, Heating, A/C, Electrical - Lincoln, NE
 - H1: Specials & Promotions
-- tel: links: tel:+14025760708, tel:402-576-0708
+- tel: links: tel:+14024236960, tel:402-423-6960
 - Words: 162
 
 ---
