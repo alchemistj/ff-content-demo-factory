@@ -543,6 +543,18 @@
       "pulledAt": "2026-11-16T04:24:00.733Z"
     },
     {
+      "slug": "fortwayne-roofing-faze",
+      "name": "Faze Roofing and Construction",
+      "placeId": "ChIJ8z_1XXgZXSURy2XDVYya1aM",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 258,
+        "withText": 139,
+        "ratingOnly": 11
+      },
+      "pulledAt": "2026-11-16T06:01:31.307Z"
+    },
+    {
       "slug": "fortwayne-tree-sycamore",
       "name": "Sycamore Tree Care",
       "placeId": "ChIJ2X0H3SOMYQcRvo99ng6jLD4",
