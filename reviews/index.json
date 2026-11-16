@@ -207,6 +207,18 @@
       "pulledAt": "2026-11-01T20:54:26.900Z"
     },
     {
+      "slug": "cedarrapids-roofing-cutter",
+      "name": "Cutter Construction",
+      "placeId": "ChIJf3KzhKL55IcR_K3LKNRp4Lg",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 193,
+        "withText": 68,
+        "ratingOnly": 7
+      },
+      "pulledAt": "2026-11-16T05:07:43.375Z"
+    },
+    {
       "slug": "comforttechs-lincoln",
       "name": "COMFORTTECHS",
       "placeId": "ChIJbS3QcJi_locRFO4zrEhUpoQ",
