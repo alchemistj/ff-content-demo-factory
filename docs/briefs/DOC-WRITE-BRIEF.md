@@ -27,6 +27,7 @@ Write five pages:
 - **The full-build list:**
   - Lead with the foundation: every service and differentiator pulled out of the owner's head and onto the site.
   - The rest are things we actually guarantee: Google visibility and indexing monitoring, uptime, and page-speed checks.
+  - Monitoring claims: the only allowed wording is the section "Keeps working after launch (verified monitoring facts, from Reports, 2026-11-16)" in docs/writer-guides/FULL_BUILD_LINES.md.
   - Mobile is most visitors (about 80%). That's why the 91 speed score matters: it doesn't let mobile visitors down.
   - About and owner pages build authority with Google and AI, and trust with customers.
   - Only the standard lines, with the scope truthful: the demo is "the first five pages".
