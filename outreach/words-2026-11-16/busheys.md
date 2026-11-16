@@ -10,17 +10,21 @@
 
 Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here's a demo of what yours could be.
 
+We built Bushey's Windows & Doors the first five pages of that kind of website. More on that below.
+
 **Buttons:** View the Demo Site / See What Changed
 
 ### Why we built this site
 
-Your reviews keep naming the people who stood in the customer's house. One put it this way:
+Your reviews keep naming the people in the customer's house:
 
 > Phil did an excellent job installing our storm door. He was very thorough and paid attention to detail.
 >
 > — Cheri G.
 
-Your site says "Installed by Bushey's team – no subcontractors," but no review and no installer's name sits next to it. Customers name your crew; your website doesn't. So the demo has five pages: this one, the homepage, replacement windows, entry and storm doors, and contact. Patio doors sit on the homepage.
+Your site says "Installed by Bushey's team – no subcontractors," but no review or installer's name sits next to it.
+
+So the demo opens with Windows and Doors in Fort Wayne, IN, and gives replacement windows and entry and storm doors a page each.
 
 ### The demo, page by page
 
@@ -30,13 +34,13 @@ Your site says "Installed by Bushey's team – no subcontractors," but no review
 
 **Current site problem**
 - The headline is "Your clear choice," which names neither windows nor Fort Wayne, so Google has little to match to a search.
-- The whole page is about 140 words, and "Trusted by local homeowners" has no proof beside it, so a visitor has to take your word for it.
-- Your crew, your awards and your process are on four other pages, so most visitors never see them together.
+- The page is about 140 words, and "Trusted by local homeowners" has no proof beside it, so visitors must take your word for it.
+- Your crew, awards and process are on four other pages, so most visitors never see them together.
 
 **What the demo fixes**
 - A headline that says replacement windows and doors in Fort Wayne, IN.
-- Your own-crew claim, your process and your awards on one page.
-- Reviews beside the work they praise.
+- Your own-crew claim, process and awards on one page.
+- Reviews beside the work.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -46,9 +50,9 @@ Google and AI tools can only repeat what's written down. We get every service, c
 *Why it matters:* A window is a big purchase that people research first.
 
 **Current site problem**
-- The headline is "Windows from Infinity® by Marvin®," with no Fort Wayne and no word "replacement," so a search for replacement windows in Fort Wayne has little to find.
-- The page is about 240 words, and the answers on glass, inserts and fogged panes sit in a separate FAQ, so a buyer comparing windows doesn't find them here.
-- Your window reviews about clean-up and stained trim appear nowhere on it, so the proof stays off the page that needs it.
+- The headline is "Windows from Infinity® by Marvin®," with no Fort Wayne or "replacement," so Google has little to match.
+- The page is about 240 words, and answers on glass, inserts and fogged panes sit in a separate FAQ, so buyers comparing windows miss them.
+- Your window reviews about clean-up and stained trim appear nowhere on it, so the proof stays off the page.
 
 **What the demo fixes**
 - A Fort Wayne page for replacement windows alone.
@@ -63,9 +67,9 @@ A check of what your competitors offer, so services you didn't think to mention 
 *Why it matters:* A front door is a visible, personal choice.
 
 **Current site problem**
-- Entry doors and storm doors share one page under the headline "Entry & storm doors from ProVia®," with no Fort Wayne, so neither job ranks for its own search.
-- Signet, Ascent, Legacy, SPECTRUM, DECORATOR and DELUXE are bullet lists with no help choosing, so a buyer can't tell which suits their door.
-- Customers who praise Phil's storm door installs are not on that page, so a visitor never sees who would do the work.
+- Entry and storm doors share one page headed "Entry & storm doors from ProVia®," with no Fort Wayne, so neither ranks for its own search.
+- Six ProVia lines are bullet lists with no help choosing, so a buyer can't tell which suits their door.
+- Reviews that praise Phil's storm door installs are not on that page, so a visitor never sees who does the work.
 
 **What the demo fixes**
 - A Fort Wayne page for entry and storm doors.
@@ -80,9 +84,9 @@ Pages planned from what Google actually shows for each search, so every page tar
 *Why it matters:* It's where a visitor becomes a call.
 
 **Current site problem**
-- Three test copies of the contact page, with the same form, are in your sitemap, so Google may index pages you never meant to publish.
+- Three test copies of the contact page, with the same form, are in your sitemap, so Google may index pages you never published.
 - Your towns appear only in a drop-down, never in words, so a search from Auburn or Warsaw has nothing to match.
-- Nothing says what the free consultation covers, so a visitor is left unsure what they're asking for.
+- Nothing says what the free consultation covers, so visitors don't know what they're asking for.
 
 **What the demo fixes**
 - One contact page with phone, address and hours at the top.
@@ -122,10 +126,10 @@ This demo is the first five pages of a full build.
 
 ### What we'd confirm with you
 
-1. **Founding year.** Your About page says "Since 1968" and also says Al Bushey founded Bushey Construction in 1958. Which year do you want us to print?
-2. **Customer numbers.** Your FAQ says about 1,500 installations a year, and your About page says more than 15,000 customers. Which number is right?
+1. **Founding year.** Your About page says "Since 1968" and also dates Al Bushey's founding to 1958. Which year should we print?
+2. **Customer claims.** Your FAQ and your About page describe how many customers you serve in different ways. Which claim do you want us to stand behind?
 3. **BBB.** We confirmed your A+ rating, but not that you are accredited. Are you?
-4. **Financing.** Your FAQ says yes to financing, and the page it links to wouldn't open for us. What are the terms you'd like stated?
+4. **Financing.** Your FAQ says yes to financing, and the page it links to wouldn't open for us. What terms should we state?
 
 ### Want a website like this for your business?
 
@@ -225,7 +229,7 @@ We replace windows in Fort Wayne homes with Infinity by Marvin fiberglass window
 
 ### Why we sell one window
 
-Infinity by Marvin is the only replacement window we sell. It is built from Ultrex, Marvin's own fiberglass material, which Marvin says has eight times the strength of vinyl. The reason we picked fiberglass has to do with the weather. Fort Wayne often runs from near zero in January to the 90s in July, and any window frame expands and contracts with that swing. Vinyl can move enough over the years to loosen the seal around the glass, which lets in drafts or moisture. Fiberglass holds its shape better, so the seal stays tight, and Marvin builds Infinity to resist warping, fading and failing.
+Infinity by Marvin is the only replacement window we sell. It is built from Ultrex, Marvin's own fiberglass material, which Marvin says has eight times the strength of vinyl. Fiberglass suits the weather here. Fort Wayne often runs from near zero in January to the 90s in July, and any window frame expands and contracts with that swing. Vinyl can move enough over the years to loosen the seal around the glass, which lets in drafts or moisture. Fiberglass holds its shape better, so the seal stays tight, and Marvin builds Infinity to resist warping, fading and failing.
 
 ### The inside of your window
 
@@ -257,7 +261,7 @@ Moisture on the inside of the glass in winter is usually humidity from showers, 
 
 ### Measured for your house
 
-Windows are made to order, so the measurements matter. After you choose, we come back and measure every opening, allowing for frames that aren't perfectly square, which in an older house they often aren't. A window made a fraction too small leaves a gap you will feel as a draft, so accuracy here saves trouble later. Made-to-order windows often take several weeks to arrive. We give you a timeline, updates along the way and confirmed installation dates.
+Windows are made to order, so the measurements matter. After you choose, we come back and measure every opening. Older houses often have frames that aren't perfectly square, and a window made a fraction too small leaves a gap you will feel as a draft. Made-to-order windows often take several weeks to arrive. We give you a timeline, updates along the way and confirmed installation dates.
 
 One customer had us take down and reinstall plantation shutters around the new windows.
 
@@ -354,7 +358,7 @@ Not every doorway is simple. Double doors, wide openings and doors in an older h
 A door made to order usually takes weeks, not days. We give you a timeline and installation dates once you order.
 
 **Can I replace only the storm door?**
-Yes. Storm doors are installed on their own, and the casing can be replaced at the same time when it needs it.
+Yes. Storm doors are installed on their own.
 
 **What does the finish coverage on Signet and Ascent include?**
 It covers the finish, which is different from covering everything about a door. Your consultant goes through the written terms for the door you choose.
@@ -408,15 +412,15 @@ Call (260) 456-1247 and tell us what you need. If you'd rather stop in, we're at
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
-| Strategy | ~1,090 | ~1,110 |
+| Strategy | ~1,045 | ~1,070 |
 | Home | ~910 | ~1,100 |
-| Replacement Windows | ~905 | ~1,050 |
-| Entry and Storm Doors | ~875 | ~1,020 |
+| Replacement Windows | ~890 | ~1,030 |
+| Entry and Storm Doors | ~860 | ~1,010 |
 | Contact | ~300 | ~320 |
 
 Counts include headings, bullets and the H1, and leave out button lines. The strategy page runs over the 1,000 soft cap because it carries the full-build list. Home and both service pages clear 550 / 700 / 700 without quotes.
 
-**Service pages chosen.** Replacement windows and entry and storm doors. Windows reach 700+ only because the site FAQ (glass, insert vs full-frame, fogged panes, winter installs) and hedged trade knowledge fill what the 238-word windows page lacks; the business claims stay at what the site says. Patio doors (306 words) sit on Home as one section.
+**Service pages chosen.** Replacement windows and entry and storm doors. Windows reach 700+ with the site FAQ (glass, insert vs full-frame, fogged panes, winter installs) and hedged general trade knowledge (fiberglass vs vinyl, U-value and SHGC, what to look for in a frame); every business claim stays at what the site says, and the measuring and install-day lines are the site's own process. Patio doors (306 words) sit on Home as one section.
 
 **Credentials (own-site claims, stated once on Home).** BBB A+ rating (rating confirmed on BBB's listing; accreditation not confirmed, so copy says "rating" only); ProVia Platinum Dealer Award since 2016 (awards page; unconfirmed); Infinity by Marvin President's Circle Partner 2025, first in its market group and sixth nationwide, and Elite Sales Consultants for Jared Lencke and Brian Harter (awards page; unconfirmed); Home Builders Association Remodeler of the Year 2014 (awards page); liability and workers' compensation insurance (FAQ claim, in Home FAQ only). Finish warranties 15 and 10 years on Signet and Ascent (doors page, ProVia site unread).
 

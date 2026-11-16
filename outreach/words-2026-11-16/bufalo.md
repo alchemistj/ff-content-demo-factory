@@ -11,39 +11,39 @@ Your reviews say the same thing in different words: your people look at the roof
 >
 > — Sue U.
 
-Your site says "quality materials" and "excellent craftsmanship," which every roofer says. So the lead we'd put up front is the one your reviews prove: honest first, and we'll tell you when a repair is enough. We built the first five pages around it: the homepage, roof replacement, storm damage and insurance claims, contact, and this page. Siding, windows, gutters, metal roofs, ice dams and commercial roofs are on the homepage, and each can get its own page in a full build.
+Your site says "quality materials" and "excellent craftsmanship," which every roofer says. The lead your reviews prove is honest advice first. We built Bufalo Contracting the first five pages of that kind of website. More on that below. Siding, windows, gutters, metal roofs, ice dams and commercial roofs can each get a page in a full build. So the demo opens with roofing in Rockford, IL, and gives roof replacement and storm damage and insurance claims a page each.
 
 **The demo, page by page**
 
 ### 1. Homepage
 
-*Why it matters:* It's where someone who found you on Google decides in seconds whether you're the roofer to call.
+*Why it matters:* It's where someone from Google decides in seconds whether you're the roofer to call.
 
 **Current site problem**
-- The big headline is "Bufalo Contracting has repaired over 10,000 roofs." It names no trade and no town, so Google and a stranger have to guess what you do and where.
-- Storm damage gets half a sentence and insurance claims get none, so the help your reviews praise most is the part a visitor never sees.
-- The four customer comments on the page are not in your Google reviews, and one is signed with a username, so they carry less weight than your real ones.
+- The headline, "Bufalo Contracting has repaired over 10,000 roofs," names no trade and no town, so Google and a stranger have to guess what you do and where.
+- Storm damage gets half a sentence and insurance claims appear only in the menu, so the help your reviews praise most never reaches a visitor.
+- The four customer comments aren't in your Google reviews, and one is signed with a username, so they carry less weight than your real ones.
 
 **What the demo fixes**
-- A headline with the trade, the town and your name: "Roofing Contractor in Rockford, IL — Bufalo Contracting."
-- Storm damage and insurance claims get their own section, next to replacement and repair.
-- Google reviews sit beside the service each one proves, with honest advice first.
+- A headline with the trade, town and name: "Roofing Contractor in Rockford, IL — Bufalo Contracting."
+- Storm damage and insurance claims get their own section.
+- Google reviews sit beside the service each one proves.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 ### 2. Roof Replacement
 
-*Why it matters:* It's the biggest job you sell, and the one where a homeowner wants to know what happens before they sign.
+*Why it matters:* It's your biggest job, and the one where a homeowner wants to know what happens before they sign.
 
 **Current site problem**
-- The page headline is just "Roof Replacement," with no town, so Google can't tell which area the page is for and you lose searches from Rockford homeowners.
-- The page says a replacement takes "several days," your FAQ says "one to three days," and your reviews say a day or less, so a homeowner can't tell what to expect.
-- Nothing on the page says how to tell a repair from a replacement, so a worried homeowner has to ask or look elsewhere.
+- The headline is just "Roof Replacement," with no town, so Rockford searches go elsewhere.
+- The page says "several days," your FAQ says "one to three days," and your reviews say a day or less, so a homeowner can't tell what to expect.
+- Nothing says how to tell a repair from a replacement, so a worried homeowner has to ask or look elsewhere.
 
 **What the demo fixes**
 - "Roof Replacement in Rockford, IL — Bufalo Contracting" at the top.
-- The demo leaves the number of days out until you tell us which answer is right.
+- No number of days until you tell us which answer is right.
 - A plain rule for repair versus replacement, what a replacement includes, and what the day looks like.
 
 **A full build would also add**
@@ -51,17 +51,17 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 ### 3. Storm Damage and Insurance Claims
 
-*Why it matters:* After hail or wind, a homeowner needs a roof looked at and a claim started, often at the same time.
+*Why it matters:* After hail or wind, a homeowner needs a roof looked at and a claim started, often at once.
 
 **Current site problem**
-- Storm help is spread over five pages (storm restoration, hail, wind, ice damage, insurance claims), so a homeowner after a storm has to guess which one to open.
-- The insurance page says you "receive the full benefits entitled to you." Only the insurance company decides that, so a homeowner who has been burned before reads it as a warning sign.
-- Nothing says what to do in the first hours or how a claim usually goes, so people call you with questions the page could have answered.
+- Storm help is spread over five pages (storm restoration, hail, wind, ice damage, insurance claims), so a homeowner has to guess which one to open.
+- The insurance page says you "receive the full benefits entitled to you." Only the insurance company decides that, so a burned homeowner reads it as a warning sign.
+- Nothing says what to do in the first hours or how a claim usually goes, so people call with questions the page could answer.
 
 **What the demo fixes**
 - One page for storm damage, hail, wind and the insurance claim.
-- It says plainly that the insurance company decides what it covers, and what you do around that.
-- First steps after a storm, and how a claim usually goes, in plain words.
+- It says plainly that the insurance company decides what it covers.
+- First steps after a storm, and how a claim usually goes.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
@@ -72,18 +72,16 @@ A check of what your competitors offer, so services you didn’t think to mentio
 
 **Current site problem**
 - The page lists one address, one number and "Open 24 Hours," but no towns, so someone in Roscoe or Janesville can't tell whether you come to them.
-- It says nothing about what to have ready or what happens after the call, so a caller in the middle of a storm has to work it out alone.
+- It says nothing about what to have ready or what to do after a storm, so a caller has to work it out alone.
 
 **What the demo fixes**
-- Your towns, listed in one place, with the address, number and hours.
-- What to have ready when you call, and what the first visit looks like.
+- Your towns in one place, with the address, number and hours.
+- What to have ready when you call, and what to do if a storm hit.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
 
 **What a full build includes**
-
-*This demo is the first five pages of a full build.*
 
 **Gets you found**
 - Every service on your website and your Google profile, telling the same story
@@ -113,10 +111,10 @@ Call and form tracking that shows which pages and towns your leads come from.
 
 Four things to sort out together:
 
-- Which phone numbers should customers call? Your site shows (779) 368-0256, and the Better Business Bureau lists (779) 368-0349, (815) 494-0793 and (855) 528-3256 as well.
-- The Better Business Bureau also lists 810 S Main St in Belvidere. Is that an office?
+- Which phone numbers and addresses should customers use? Your site shows (779) 368-0256. The Better Business Bureau also lists (779) 368-0349, (815) 494-0793, (855) 528-3256 and 810 S Main St in Belvidere.
 - Your site says "15 years of being in business" on one page and "over a decade" on others. What year did you start?
 - Every page says "Our state roofing licenses:" with nothing after it. Which licenses, and what are the numbers?
+- Your site calls you a top contractor for CertainTeed vinyl and polymer siding. Is that an official CertainTeed program we can point to?
 
 Send us your answers on a call and we'll fix the pages before you look at them again.
 
@@ -152,7 +150,7 @@ That order matters most in the weeks after a big storm, when crews knock on door
 
 ## Roof Replacement
 
-When a roof is old, leaking in more than one place, or damaged across most of its slopes, replacing it is usually cheaper than patching it again and again. A replacement here means removing the old shingles and the waterproof layer beneath them, checking the wood under them for rot, putting down a new waterproof layer, replacing the metal strips that seal around chimneys and vents, and laying new shingles or metal. We cover your plants and driveway while we work, haul away the debris, and plan the job around the weather.
+When a roof is old, leaking in more than one place, or damaged across most of its slopes, replacing it is usually cheaper than patching it again and again. A replacement here means removing the old shingles and the waterproof layer beneath them, checking the wood under them for rot, putting down a new waterproof layer, replacing the metal strips that seal around chimneys and vents, and laying new shingles or metal.
 
 > Many of my neighbors commented on how impressed they were with how quickly the job was completed (about half a day).
 >
@@ -176,7 +174,7 @@ Asphalt shingles are the most common roof in Rockford, and they hold up well to 
 
 ## Siding and Windows
 
-If you've just had a new roof and the siding looks tired next to it, we do siding too: vinyl, plus wood, fiber cement and stone. We also replace windows, which is worth a look if your rooms are drafty or the glass has fogged between the panes. We are a 5 star contractor for CertainTeed vinyl and polymer siding.
+If you've just had a new roof and the siding looks tired next to it, we do siding too: vinyl, plus wood, fiber cement and stone. We also replace windows, which is worth a look if your rooms are drafty or the glass has fogged between the panes.
 
 > Outstanding jobs. They did our roof, siding and gutters in 3 days.
 >
@@ -200,7 +198,7 @@ We roof houses and we roof businesses, including flat roofs. Customers have also
 
 ## Who Stands Behind the Work
 
-We are BBB Accredited with an A+ rating. BBB, the Better Business Bureau, says accreditation shows a business operates honestly and with integrity.
+We are BBB Accredited with an A+ rating. BBB is the Better Business Bureau.
 
 ## Paying for It
 
@@ -277,7 +275,7 @@ Ask for the price in writing, with what's included and what would cost extra, su
 
 ## Replacement Day
 
-You don't have to supervise. Before work starts, we cover your plants and driveway and set up the barriers. The crew tears off the old roof, repairs the wood if it needs it, and puts the new roof on. A roof is exposed while the old layer is off, so replacements are usually planned around the forecast.
+You don't have to supervise. The crew tears off the old roof, repairs the wood if it needs it, and puts the new roof on. A roof is exposed while the old layer is off, so replacements are usually planned around the forecast.
 
 > Eddie walked us through every step, our neighbors really appreciated him talking to them to let them know the work was going on and they'd be respectful of the area, and all of the workers were very polite.
 >
@@ -293,7 +291,7 @@ A roof job drops shingle bits, nails and old paper across the yard. We keep the 
 
 > Kept us notified about changes in schedule. 100% cleanup after completion of job.
 >
-> — T-Mac T.
+> — Google review
 
 ## Gutters, Siding and the Rest of the Roofline
 
@@ -389,7 +387,7 @@ That depends on your policy and the insurance company. We can inspect the roof a
 As soon as it's safe. Water that gets in can lead to mold and rot.
 
 **Do you work on businesses after a storm?**
-Yes. We roof businesses as well as homes, and our site says we help with insurance claims on both.
+Yes. We roof businesses as well as homes, and we help with insurance claims on both.
 
 ## Hurt by a Storm?
 
@@ -432,7 +430,7 @@ We serve northern Illinois and southern Wisconsin: Rockford, Loves Park, Machesn
 
 ## Emergencies and Free Inspections
 
-If water is coming in or a storm just hit, call any hour. Our site says emergency service is available 24/7. Inspections are free for everything else too, whether it's an old roof you're wondering about or siding that's tired.
+If water is coming in or a storm just hit, call any hour. Emergency service is available 24/7. Inspections are free for everything else too, whether it's an old roof you're wondering about or siding that's tired.
 
 ## Notes (not page copy)
 
