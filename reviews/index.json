@@ -399,6 +399,18 @@
       "pulledAt": "2026-11-09T12:51:51.325Z"
     },
     {
+      "slug": "fortwayne-electrical-sterling",
+      "name": "Sterling Electric",
+      "placeId": "ChIJ42_cKd38FYgRKkxGaetV7rM",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 146,
+        "withText": 59,
+        "ratingOnly": 16
+      },
+      "pulledAt": "2026-11-16T04:11:28.573Z"
+    },
+    {
       "slug": "fortwayne-plumbing-borchelt",
       "name": "W C Borchelt & Sons Inc",
       "placeId": "ChIJLwGX-6v9FYgRclM5JlnXeKc",
