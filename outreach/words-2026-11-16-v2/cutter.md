@@ -38,21 +38,21 @@ Mike and Bryan Cutter are twin brothers, born and raised in Cedar Rapids. Your h
 
 **A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what sets you apart onto your site and Google profile, so they tell one story.
 
-### 2. Concrete
+### 2. Masonry
 
-*Why it matters:* The work your customers write about most.
+*Why it matters:* Your reviews describe brick repair, chimney work, a stone front and foundation waterproofing.
 
 **Current site problem**
 
-- The tab says "20 Years of Quality Work," the page "over a decade," so a customer can't tell which to believe.
-- The headline is just "Concrete." Cedar Rapids is in a line below, so Google has little to match to a local concrete search.
-- The page has none of the regraded driveway or the truck kept off the old driveway that your reviews describe, so a homeowner with a sinking slab can't see you've solved that.
+- The tab says "Masonry from Cedar Rapid's #1 Definitive Team of Expert Pros," with nothing behind the "#1" and a missing s in "Rapid's," so a customer who spots it trusts the rest of the page less.
+- The headline is just "Masonry." Cedar Rapids is in a line below, so Google has little to match to a local masonry search.
+- The two masons who make the page's case, Duane Eash and Joe Luchtenburg, appear at the bottom, below the pitch and the testimonials, so most visitors never reach them.
 
 **What the demo fixes**
 
-- A headline that says Concrete Contractor in Cedar Rapids, IA, and no years we can't pin down.
-- The drainage job and clean-up from your reviews, in the customers' own words.
-- Your free sealer offer in plain words.
+- A headline that says Masonry Contractor in Cedar Rapids, IA, with no "#1" we can't back.
+- Duane and Joe, with their experience, in the middle of the page.
+- The chimney, old-house and foundation jobs your reviews describe, in the customers' own words.
 
 **A full build would also add** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
@@ -374,19 +374,19 @@ Call 319-900-5497 and we'll set up a time.
 
 Written from briefs @ 21550ef
 
-**Rebuild reason:** Both. SEO: the homepage, concrete and deck headlines are bare or slogans and never say Cedar Rapids; design: the site is a dated WordPress/Elementor build with four phone numbers and thin service pages.
+**Rebuild reason:** Both. SEO: the homepage, masonry and deck headlines are bare or slogans and never say Cedar Rapids; design: the site is a dated WordPress/Elementor build with four phone numbers and thin service pages.
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
 
-- Strategy page: 1039 without quotes, 1061 with.
+- Strategy page: 1063 without quotes, 1085 with.
 - Home: 570 without quotes, 699 with.
-- Concrete: 347 without quotes, 480 with.
-- Decks: 381 without quotes, 518 with.
+- Masonry: 280 without quotes, 413 with.
+- Decks: 375 without quotes, 512 with.
 - Contact: 147 without quotes, 182 with.
 
 **Rewrite basis:** tone reset from the rejected Nov 16 evening version. Home and service pages now use the site's own words as the main material, with reviews as the fact check. The how-to and explainer sections of the earlier version (frost depth, permits, driveway steps, composite-vs-wood, which-boards-fit, FAQ) and the glossary asides are cut. Pages now lead with the Cutter twins, the Trex Pro claim and the free sealer, say what is included, use reviews only as quotes (never retold), and put a call to action after each section.
 
-**Same two service pages as before:** Concrete and Decks. The site's concrete and deck pages plus 22 and 11 review mentions still support them over roofing (7 mentions).
+**Service pages: Masonry replaces Concrete (swap, FF call).** Concrete failed the blind taste check three times. Table of other services, site words and review mentions: Roofing 1191 / 7; Siding 1320 / 5; Masonry 1188 / 8 jobs (reviews 1, 13, 18, 25, 36, 37, 47, 49) plus two named masons and two site testimonials; Additions 1021 / 8 (garage and sunroom mentions overlap); Garages 986 / few; Basements 1215 / 1; General contracting 921 / few; Residential projects 995 / few; Snow removal 870 / 0; Model home 744 / 0. Masonry has the most distinct review jobs and a named-mason differentiator; Roofing leans on the unconfirmed GAF claim and the derecho paragraph about other companies. Decks stays.
 
 **Credentials and sources** (none confirmed on a certifier's own site; each is the business's claim, stated as theirs)
 
@@ -395,7 +395,7 @@ Written from briefs @ 21550ef
 - Trex Pro Platinum Certified, "highest designation Trex offers": /services/decks/. Trex page returned 403. Stated as theirs on home (strip and credentials list) and in the Decks lead; Lila T. is quoted on Decks.
 - GAF certified installers: /services/roofing/. Not checked. The 50-year System Plus number is left out (strength not confirmed); copy says "GAF's own warranty".
 - Better Business Bureau: /about-us/, /services/siding/. Copy says member, the weaker wording. BBB profile returned 520.
-- Free estimates "on standard jobs": /. Free sealer with installation: /services/concrete/; terms not confirmed.
+- Free estimates "on standard jobs": /. (site/home.md: "call us at 319-533-2164 today for FREE estimates on standard jobs"); used on the Home strip only. Free sealer with installation (/services/concrete/) is no longer used since Concrete has no page; it remains in one Home bullet.
 - Trex boards' warranty against fading and staining (25, 35, 50 years by line): /services/decks-trex-decking/ and /services/decks/; stated as Trex's, not ours. Railing warranty figures cut.
 - NFC programs: /financing/; third-party, terms theirs.
 - Insurance adjuster line: /services/general-contractor/, home only.
@@ -420,18 +420,19 @@ Written from briefs @ 21550ef
 - Basement "resume" line (quite a few basements): too vague to state; basements named once.
 - Site testimonials not in reviews.json (Floyd Van Auken, Rick Zettler, Deb Washburn and others): not quoted; quotes come only from reviews.json.
 - Trex colour names and railing product lines: brand names, left out. The which-boards-fit and composite-vs-wood explainers are cut.
-- Roofing, siding, masonry, additions, garages, basements, general contracting, residential projects, model home, snow removal: named on home; no own pages in this demo.
-- Review themes used (quotes only, once each): no surprises (Judy P.), garage addition (Tyler A.), roof and siding (Amanda B.), leak repair (Jim H.), clean-up (David C.), cracked driveway (Christy), drainage (Mark B.), truck and buggy (Seth H.), spring list (Deb W.), replaced deck (Amanda B., #54), Trex Pro (Lila T.), hidden window (Bryce), covered deck (David M.), Bryan (Marcillina B.), "born here" (Cory H., strategy). Not used: Daniel H. second-story rebuild, Amanda B. clean-up (#50 is used on Home), Floyd A. patio, Ken A. french doors, Todd J. brick repair, critical reviews (calls not returned; raised in "What we'd confirm").
+- Roofing, siding, concrete, additions, garages, basements, general contracting, residential projects, model home, snow removal: named on home; no own pages in this demo.
+- Review themes used (quotes only, once each): no surprises (Judy P.), garage addition (Tyler A.), roof and siding (Amanda B.), leak repair (Jim H.), stone front (Diana P.), chimney (jim J.), old brick house (Todd J.), basement entrance (Lora D.), replaced deck (Amanda B., #54), Trex Pro (Lila T.), hidden window (Bryce), covered deck (David M.), Bryan (Marcillina B.), "born here" (Cory H., strategy). Not used: Daniel H. second-story rebuild, Floyd A. patio, Ken A. french doors, the concrete reviews (David C., Christy, Mark B., Seth H., Deb W.) now that Concrete is not a page, critical reviews (calls not returned; raised in "What we'd confirm").
 - Home-page claims "keep you informed" rest on Judy P., Tyler A. and Diana P. (reviews 51, 38, 25); the "five masons" and "frame-to-finish" lines are the site's own claims.
-- Concrete page: "you call and we put together your estimate", "we explain each step and when" (reviews 27, 56, 59), "on time" (reviews 15, 19, 22, 30, 48), "cleans up each day" (11 reviews), "truck off your driveway" (Seth H.) and "plywood over the lawn" (Floyd A.) are stated as claims; the last two rest on two reviews each, verify. "Shifting slabs often trace back to drainage" is a general trade fact; the regrade rests on Mark B. FAQ: sealer (site), asphalt (Steve T., one job, written as one job), parking and basketball court (site).
-- Concrete and Decks are short because the site's own pages are short; nothing padded. Review-only job details (waterproofing, 113-year-old porch, french doors, patio shapes) are left out so no review is retold. Every relevant site/ file (concrete, decks, Trex boards, railings) is used.
+- Masonry page: Duane Eash and Joe Luchtenburg, "five masons", residential and commercial, pressure washing and sealing, and "brick, block, stone, glass block, chimneys, foundations" are the site's claims (masonry page, FAQ and concrete page), stated as theirs; "both work on our crews" assumes they are current employees, verify. "Old houses" rests on Todd J., Lora D. and the site's Victorian-home testimonial. Foundations and basement entrances rest on Lora D., Jordan C. and the same testimonial; chimneys on jim J. and carol I. Quotes: Diana P., jim J., Todd J., Lora D., each once. Not used: Mark F. brick wall, Brenda C. commercial brick, carol I. chimney, Jordan C. foundation. Site's "work closely with top local roofing contractors" left out (other companies). "Established in 2005" left out (years conflict). Home also carries the five-masons line and the chimney-with-roof line, so the Masonry page does not repeat them beyond one "team of five" mention.
+- Decks is short because the site's own deck page is short; nothing padded. Every relevant site/ file (decks, Trex boards, railings, masonry, concrete for the sealer line) is used.
 - Decks page: "Andy comes out for your estimate and works with you on the design" rests on reviews 31 and 45 (verify his role); "rebuilds, including second-story, and wood-to-Trex swaps" on reviews 5, 9, 10, 31, 54; samples, conversion and "first estimate to the last hand rail" are the site's words. Quotes: Amanda B. (replacement), Bryce (hidden window), Lila T. (Trex Pro), Dick W. (railings), David M. (covered deck); Daniel H. no longer quoted.
 
 **Facts to verify**
 
 - Which phone is live and answered; none called.
 - Hours Monday to Friday, 7 a.m. to 6 p.m. (/contact); no weekend hours stated.
-- Free sealer terms and whether it applies to every installation.
+- Free sealer terms (Home bullet only).
+- Whether Duane Eash and Joe Luchtenburg are current employees.
 - Whether Trex Pro Platinum, GAF and BBB status are current.
 - Whether the derecho roof work can be stated more strongly.
 - Whether "design, bid, build" and "we walk you through every step" (site claims) are how every job runs.
