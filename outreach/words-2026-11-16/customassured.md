@@ -194,7 +194,7 @@ We tailor each job to what you need, whether you are a homeowner, a business or 
 >
 > — Roger M.
 
-For a new build, we can help with the HVAC design as well as the installation.
+We take on new construction as well as existing homes and businesses.
 
 > I have been a customer for well over 10 years built two homes and a pole barn would not call anyone else … Their expertise has been a tremendous help with our last two homes both with HVAC design as well as our maintenence.
 >
@@ -275,7 +275,7 @@ We try to send the same technician every time. A technician who has worked on yo
 >
 > — Samantha R.
 
-When the same person returns, you can ask about what he did last time.
+A technician who has worked on your system before knows its history.
 
 > In fact, I believe we have had the same technician for the entire 7 years. He is focused on our service and does a great job. It is great to have someone who you familiar with and can trust!
 >
@@ -363,7 +363,7 @@ Our installation team puts in your new furnace, and our service technicians are 
 >
 > — Kari M.
 
-Our installers also replace systems we installed years ago.
+Our installers replace furnaces and air conditioners.
 
 > They installed the original unit 24 years ago in my parent’s home and always provided great service. I’m now the owner of the home and it was time for a new unit. Lance and Logan installed a new unit and they did a great job.
 >
@@ -431,3 +431,43 @@ Invoice numbers are at the top of your invoice or on the right side of your work
 > — Mike W.
 
 ## Notes for Ruth (not page copy)
+
+### Word counts (script count; buttons and headings included)
+| Page | Without quotes | With quotes |
+|---|---|---|
+| Strategy | 1,391 | 1,397 (over the 1,000-word strategy limit; trim or let the template cards carry it) |
+| Home | 654 | 894 |
+| HVAC Maintenance | 337 | 633 |
+| Furnace Replacement | 287 | 430 |
+| Contact | 197 | 250 |
+
+**Shortfall, honest:** neither service page reaches 700 words without quotes. Maintenance is 337 and Furnace is 287, with 9 and 6 headed sections. I did not pad. They need Rod's answers: what a maintenance visit covers, Club price and terms, whether "same technician" and "we call you" are policy, how a furnace replacement runs (sizing, steps, timing), lender, and guarantee terms. Contact is 250 only with its quote; 197 without. Home passes 550.
+
+### Credentials and sources
+- None confirmed on a certifier's own site; none checked this pass. Defined once, on Home only, as the site states them: Rod's unnamed "certifications, accreditations, and training"; Casey's Technical Certificate from Ivy Tech; Julie's Communications degree (Purdue University Fort Wayne); Kim's business degree. Verify before sending.
+- Bryant: "proud to offer Bryant products" only (Home). Not called a dealer or certified.
+- No license number anywhere.
+
+### Inventory items left out, and why
+- "175 years of combined HVAC experience": possible year dispute with eight people named; asked on the strategy page.
+- The site's three testimonials (Elizabeth, Kathy, Tom): not verifiably real, first names only. Google reviews used instead.
+- Rick A. (4 stars, explains the work): only 5-star reviews are quoted. Explains-the-work theme carried by Karen H., Montana S., Fred K.
+- Reviews with a one-word name (Lee, Billi, MauiMauMau): can't be attributed.
+- John R.: owner reply names someone else; not used.
+- Most of the 66 reviews are unquoted (each quote is used once); named-technician, long-relationship and fair-price themes are covered by the quotes used.
+- "Around the clock" appears only on Contact, not on Home, until the hours conflict is settled.
+- Bill-pay mobile tip ("click just to the right of Make a Payment"), the cart, and privacy page: website talk or not business copy.
+- Strategy report card not written (not in the brief); template can supply it.
+- SRA proof block is template content; not included.
+- Site's hero slogan and "the job isn't complete until you're satisfied" used on Home once; guarantee, financing and free-quote lines only on Furnace.
+- In-house sheet metal: said once, in Casey's history on Home.
+
+### Facts to verify
+1. Hours: office Monday to Friday 9 to 4 vs service "available around the clock"; whether the "emergency no." is a separate number.
+2. "We try to send the same technician" and "twice a year" for the Club are from reviews, not the site. "Office contacts you" matches the Club's "We contact you" benefit.
+3. Club price, terms, visit contents, and whether it is still offered. Whether a humidifier is on the same visit.
+4. Lender, guarantee terms; "Whatever it takes®" use.
+5. Service area beyond Fort Wayne; Kim/Julie/Kelly office contact; "Inc." vs "INC."
+6. Whether Julie is Casey's wife (site says "better half"); copy just says they work together.
+7. Strategy numbers: about 22 maintenance reviews, about 9 install reviews, about a dozen long-tenure reviews come from inventory.md counts of the 66 pulled.
+8. Hero tap-to-call and the "Pay Bill" page destination were not verified.

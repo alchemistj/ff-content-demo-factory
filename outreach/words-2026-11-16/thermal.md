@@ -44,7 +44,7 @@ The first page a Peoria homeowner or business owner lands on, and the page Googl
 - **What the demo fixes:** A top headline that reads "HVAC Company in Peoria, IL — Thermal Services Inc", with a call button and an appointment button on the first screen.
 - **What the demo fixes:** A section on after-hours emergency calls, with one customer's own words about a night call, right under the top of the page.
 - **What the demo fixes:** The maintenance agreement and its no-extra-after-hours-rate terms on the homepage, in plain words.
-- **A full build would also add:** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
+- **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **2. Air Conditioning Repair**
 
@@ -210,17 +210,11 @@ Our technicians have seen every kind of heating and cooling malfunction, damage 
 >
 > — Maggie D.
 
+Integrity, transparency, sincerity, respect and communication are the values our team upholds every day.
+
 > Luke was ABSOLUTELY AMAZING!!! He helped us and even checked back in after the fact!!!
 >
 > — Melissa G.
-
-> I’ve never had an HVAC company send someone as knowledgeable, quick, clean-cut, and kind as Luke Murphy!
->
-> — Tim W.
-
-> Been working with this crew for years and they always do a great job getting things taken care of or making it right if they need to. Great company to do business with!
->
-> — Ryan J.
 
 ### Straight answers
 
@@ -232,7 +226,13 @@ We make recommendations based on what we find, and we explain them so you can de
 
 ### Locally owned and operated
 
-We know how harsh the temperatures in our area can be. We treat your property, and the people you care about, like our own.
+We know how harsh the temperatures in our area can be.
+
+> Been working with this crew for years and they always do a great job getting things taken care of or making it right if they need to. Great company to do business with!
+>
+> — Ryan J.
+
+We treat your property, and the people you care about, like our own.
 
 > I am a high school teacher, and I am part of a leadership team that puts together a student-led event every year that provides community resources to our families and awards scholarships to two of our students. TSI sponsors our t-shirts. We used the money from the t-shirt sales to give out two scholarships worth close to $1,300 each. Without their support, this would not have been possible.
 >
@@ -262,7 +262,9 @@ We repair, install and maintain air conditioners for Peoria homes and businesses
 
 Our summers can get dangerously hot, and that makes people and animals uncomfortable and unsafe. When your system stops working, call us. We arrive promptly, inspect the components of your system, and make a plan to restore it quickly.
 
-We fix air conditioning systems and service the components of all makes and models. We repair for homes and businesses alike.
+We fix air conditioning systems and service the components of all makes and models. We repair for homes and businesses alike. Whether your system is malfunctioning or you want it ready for summer, we bring the expertise, guidance and equipment to improve its performance.
+
+Being available when you need us is part of quality service, so we provide emergency service for residential and commercial customers.
 
 ### Replacing an air conditioner
 
@@ -332,7 +334,7 @@ We repair, install and maintain furnaces and heat pumps for Peoria homes and bus
 
 Heating failures strike suddenly, often on the chilliest days. After you contact us, we arrive promptly to inspect, assess and diagnose your heating problem. We find the source of the problem and make a plan to fix it.
 
-We repair electric, gas and propane furnaces, and we can fix any part or component.
+We repair electric, gas and propane furnaces, and we can fix any part or component. We service all heating models and components, so the brand on your furnace doesn't change who you call.
 
 > I’ve used TSI for routine repairs/inspection of my furnace.  Heath is extremely knowledgeable and pricing is very fair.  Because of the service they’ve provided me, they were the first ones I called when my parents furnace went out in the middle of the winter.  I’m extremely thankful for how quickly Heath responded in this emergency.
 >
@@ -352,6 +354,8 @@ Four situations lead people to ask the question: frequent repairs, equipment tha
 
 We install heating systems of all brands and models, and we install carefully. In a new home or building, we make recommendations and install the heating system.
 
+For businesses, we make minor and major furnace repairs on all brands, makes and models. When a business needs a new furnace, we remove the old one carefully and install the new one.
+
 ### Heat pumps
 
 We repair heat pumps with refrigerant leaks, broken valves and electrical failures, among other problems. If your heat pump is a decade old or older, we replace it with a new system, which saves you the cost of repeated repairs. Our heat pump maintenance covers the filters, blowers and electrical components.
@@ -362,7 +366,7 @@ We repair heat pumps with refrigerant leaks, broken valves and electrical failur
 
 ### Keeping the furnace ready for winter
 
-We schedule thorough routine maintenance and checks for furnaces. Our fall checkups prepare your heating system for winter. Rotate your furnace filter monthly, which lets air circulate better and prevents backup.
+We schedule thorough routine maintenance and checks for furnaces. Our fall checkups prepare your heating system for winter. Rotate your furnace filter monthly, which lets air circulate better and prevents backup. Our goal is to keep you, your family and your employees comfortable and secure through the winter.
 
 > Dylan and Cameron got here within an hour of my call, troubleshot, ran to the hardware store and were done and cleaned up in what seemed like no time at all.
 >
@@ -437,9 +441,17 @@ We serve homes in Peoria and the towns around it. For businesses, we work in Peo
 
 ## Notes for Ruth (not page copy)
 
-**Word counts (visible words counting hero, headings, buttons; NOTE counts are computed by script, see the table below).**
+**Word counts (visible words counting hero, headings, buttons;).**
 
-COUNTS_PLACEHOLDER
+| Page | Words with quotes | Words without quotes |
+|---|---|---|
+| Strategy page | 2018 | 1978 |
+| Home | 926 | 507 |
+| Air Conditioning Repair | 719 | 509 |
+| Furnace Repair | 705 | 473 |
+| Contact | 303 | 270 |
+
+Home is 550+ only with quotes (507 in our own words). The two service pages and contact clear their minimums with quotes counted; the service pages are about 460 to 510 in our own words, so they lean on the reviews and the site's Q&A for length. Nothing was padded.
 
 **Credentials and their sources.** None is confirmed, so none is on any page.
 - "Trust A+ BBB Rated Company" (site home and promotions). The BBB profile link returned HTTP 403 with a bot challenge, so no rating could be read. Needs a manual check at bbb.org.
@@ -457,7 +469,7 @@ COUNTS_PLACEHOLDER
 - Generators have no page of their own. They are in the homepage's home section (install, repair, maintenance) and the free sizing line. Boilers, geothermal, humidifiers, iWave, Pelican and air compressors are on the homepage in short form. The iWave site sentence ("eliminates hydrogen particles...") and the humidifier and purifier health claims (sinus, snoring, asthma) are left out: they are unclear or medical, and the brief says match claim strength.
 - Commercial chiller, RTU, controls and air compressors: used on the homepage (commercial section) and the A/C page (chillers).
 - The site's A/C and furnace Q&A items, the filter and boiler-noise and HVAC-noise answers: used on the two service pages. Duct cleaning ("No, we do not clean air ducts") is left out: it is an exclusion and adds nothing to a money page.
-- Review themes: fast response (Ben T., LaVonne S., Troy T., Chris J.), honest and no upsell (Ben T., Ian B., Joe M.), named technicians (Luke reviews on home; Heath in Chris J.; Jeff in Ben T. and Mohamed K.; Patrick in Jim B.), clean work (Drew B., Troy T.), explains the problem (Ian B., Tina W. on strategy, Jim B.), same customers for years (Ryan J.). All used.
+- Review themes: fast response (Ben T., LaVonne S., Troy T., Chris J.), honest and no upsell (Ben T., Ian B., Joe M.), named technicians (Luke reviews on home, Maggie D. and Melissa G.; Heath in Chris J.; Jeff in Ben T. and Mohamed K.; Patrick in Jim B.), clean work (Drew B., Troy T.), explains the problem (Ian B., Tina W. on strategy, Jim B.), same customers for years (Ryan J.). All used.
 - The same fast-response theme also rests on Reflex's review, left out (see reviews below).
 - Brad S.'s Sunday review ("when no other company we called would pick up the phone") is on the strategy page only. It makes a claim about other companies, so it is not on any business page.
 - Named technicians' roles are unknown. Names appear only inside review quotes.
@@ -467,7 +479,7 @@ COUNTS_PLACEHOLDER
 - Lonny H. (4 stars) and William O. (2 stars): only 5-star reviews with words are quoted. The 2-star review is about a commercial bill and an unanswered discount request. Do not claim "no complaints".
 - Mary M.: names "Nathanial Shackow", a disputed spelling (strategy item 5).
 - Todd H., Art B.: the typos can't be fixed in a quote, and Mohamed K. and Brad R. already cover business work.
-- Jesse W. (Luke): the fourth Luke review, repeats the three on home.
+- Tim W. and Jesse W. (both about Luke): the home page keeps one review of him back to back with copy between, and Maggie D. and Melissa G. already carry the theme.
 - One-word names: Jed (no last initial, not quoted).
 - Short generic five-star lines (Marian L., Chris C., Scott B., Rufus J., Jesse B., Sandi K., Jeremy Y., Betsy W., David B., Amar S., Mohammed A., Tim N., Hailey S., Cedric V., Joe A., Ron V., Mary M.): they add no detail beyond what the quoted reviews prove.
 
