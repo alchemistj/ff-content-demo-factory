@@ -4,13 +4,11 @@
 
 ## Strategy page
 
-**Badge:** Free demo site built for Action Plumbing, Heating, A/C & Electrical
-
 # We already did the work. Here's an Action Plumbing, Heating, A/C & Electrical website that tells Lincoln who you are and gets the phone ringing.
 
 **Subheading:** Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
 
-**Proof (fixed in the template):** two Google Maps images from SRA Roofing:
+**Proof (fixed template block):**
 
 - "Before (June)"
 - "30 days after launch (Aug 27)"
@@ -18,8 +16,6 @@
 Proof line: "In the first month after we rebuilt SRA Roofing's website and Google profile, they went from missing on Google Maps in most of Springfield to the top 10 across two-thirds of it. On Google Search, they went from 342 views to 5,530."
 
 We built Action the first five pages of that kind of website. More on that below.
-
-**Buttons:** View the Demo Site / See What Changed
 
 ### Why we built this site
 
@@ -29,81 +25,79 @@ You have 1,214 Google reviews at 4.9 stars. Mike W. put it this way:
 >
 > — Mike W.
 
-Your site says none of it. The top of your homepage reads "Delivering Expertise, Respect, & Honest Services," with no trade and no town. So the demo opens with what you do and where, and gives heating and AC and water heaters a page each.
-
-Here's the details:
+Your homepage says none of it. So the demo opens with what you do and where, with a page each for heating and AC and water heaters.
 
 ### The demo, page by page
 
 **1. Homepage**
 
-**Why it matters:** This is what Google reads first to learn what you do and where.
+**Why it matters:** This is what Google reads first about you.
 
 **Current site problem**
 
-- No trade or town at the top, so Google can't tell you're a plumber in Lincoln.
+- The top reads "Delivering Expertise, Respect, & Honest Services." No trade, no town.
 - No services are listed on the page itself.
-- Your own trenching crew, which spares you outside contractors, is on the sewer page only.
+- Your own trenching crew is on the sewer page only.
 
 **What the demo fixes**
 
 - A headline: Plumbing, Heating and AC in Lincoln, NE.
-- Every service in plain words.
-- A trenching crew section and your credentials explained.
+- Every service, in plain words.
+- A trenching crew section, and credentials explained.
 
 **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **2. Heating & AC**
 
-**Why it matters:** Where heating and AC repair searches in Lincoln land.
+**Why it matters:** Where AC and heating repair searches land.
 
 **Current site problem**
 
 - The heading is just "Heating & AC."
-- Nothing covers a furnace that quits at night or a gas smell, though reviews show fast help in a December cold snap.
-- Answers like "it could require maintenance. Call ACTION." name no cause. No review is on the page.
+- Nothing covers a furnace quitting at night, or gas smell.
+- Answers like "it could require maintenance" name no cause. No review is on the page.
 
 **What the demo fixes**
 
 - A headline: Heating and AC Repair in Lincoln, NE.
-- What usually fails, gas smell steps and an after-hours section.
+- What usually fails, gas smell steps, after-hours help.
 - Reviews beside what each proves.
 
 **A full build would also add:** Call and form tracking that shows which pages and towns your leads come from.
 
 **3. Water Heaters**
 
-**Why it matters:** Where water heater replacement searches in Lincoln land.
+**Why it matters:** Where water heater searches land.
 
 **Current site problem**
 
 - The heading is just "Water Heaters."
-- It says 12 to 14 years of life. Your video page says 8 to 12.
-- No review is on the page, and nothing says you take a leaking-tank call at night.
+- Life is 12 to 14 years here, 8 to 12 on your video page.
+- No review, and nothing says you take a leaking-tank call at night.
 
 **What the demo fixes**
 
 - A headline: Water Heater Replacement in Lincoln, NE.
-- Repair or replace, tank or tankless and warranty claims in plain words.
-- A leaking-tank section, an after-hours section and three reviews.
+- Repair or replace, tank or tankless, warranty.
+- A leaking-tank section and three reviews.
 
 **A full build would also add:** A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
 
 **4. Contact**
 
-**Why it matters:** Where people find your number, hours and address.
+**Why it matters:** Where people find your number and hours.
 
 **Current site problem**
 
-- Five phone numbers appear. Google and customers can't tell which is yours.
-- It says 24/7, then offers appointments Monday to Friday only, and lists no hours.
-- No towns are named. David City and Columbus have their own page.
+- Five phone numbers. Which is yours?
+- It says 24/7, offers appointments Monday to Friday, and lists no hours.
+- No towns are named, though David City and Columbus have a page.
 
 **What the demo fixes**
 
 - One number, from your Google listing.
-- Day-or-night calls said plainly, with the address.
-- Your towns named.
+- Day-or-night calls, plainly.
+- Towns named.
 
 **A full build would also add:** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
 
@@ -134,8 +128,6 @@ Here's the details:
 - Your site watched around the clock for downtime.
 - Google indexing and your Google visibility checked every day.
 - Menus, contact links and forms tested in a real browser twice a day.
-- Updated when Google and AI tools change how they read websites
-- You never have to know what to ask for
 
 ### What we'd confirm with you
 
@@ -143,8 +135,8 @@ On a short onboarding call, we'd confirm four things.
 
 1. We used (402) 423-6960, from your Google listing. Is that your main line?
 2. Your pages say "over 50 years," "55 years" and "more than 60 years." Which should we use?
-3. Your Contact page says 24/7, and no page lists office hours. What hours should Google show?
-4. Your plumbing page says a water heater needs no flushing unless you're on well water. Your video page says flush once a year. Which should we say?
+3. Your Contact page says 24/7, but no page lists hours. What hours should Google show?
+4. Your plumbing page says no water heater flushing unless you're on well water. Your video page says flush yearly. Which should we say?
 
 ### Want a website like this for your business?
 
