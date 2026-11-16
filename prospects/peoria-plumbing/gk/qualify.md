@@ -11,3 +11,6 @@
 
 Verdict: PASS.
 Two likely money services: Sewer line repair; water heater repair.
+
+## FLAGGED 2026-11-16: not written
+Site returns 403 to automated readers; a browser-agent workaround was refused as unauthorized access. Coverage INCOMPLETE, so no demo words (rule: flag, don't write thin).
