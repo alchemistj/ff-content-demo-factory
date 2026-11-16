@@ -19,7 +19,7 @@ People say Faze guides them through the insurance claim after a storm.
 >
 > — Karli R.
 
-Your homepage opens with "Indiana | Ohio Roofing, Siding & Remodeling Contractor." It never says Fort Wayne, or in your own words that you handle the claim.
+Your homepage opens with "Indiana | Ohio Roofing, Siding & Remodeling Contractor." It never says Fort Wayne or that you handle the claim.
 
 So the demo opens with Roofing Contractor in Fort Wayne, IN, and gives roof replacement and siding a page each.
 
@@ -36,8 +36,8 @@ So the demo opens with Roofing Contractor in Fort Wayne, IN, and gives roof repl
 
 **What the demo fixes**
 - A headline that says Roofing Contractor in Fort Wayne, IN.
-- Storm damage and insurance help up front, in your words.
-- Fort Wayne's neighborhoods and nearby towns named, not just "Indiana."
+- Storm damage and insurance help up front.
+- Fort Wayne's neighborhoods and nearby towns named.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -48,7 +48,7 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 **Current site problem**
 - The page is called "Roofing Services" with no Fort Wayne, so Google reads it as a general page.
-- Seven roof types get two lines each and nothing on what a replacement involves, so a customer can't judge a quote.
+- Seven roof types get two lines each, so a customer can't judge a quote.
 - Insurance help appears only in quotes at the bottom, so the page never says you offer it.
 
 **What the demo fixes**
@@ -61,17 +61,17 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 ### 3. Siding Replacement
 
-*Why it matters:* It's a whole-house job, and people compare carefully before they call.
+*Why it matters:* It's a whole-house job, and people compare before they call.
 
 **Current site problem**
-- The headline, "Trusted Siding Company for Repair & installation," never says Fort Wayne.
+- The headline, "Trusted Siding Company for Repair & installation," omits Fort Wayne, so Fort Wayne siding searches pass it by.
 - Four siding types get two lines each, so customers can't compare them.
-- The metal-framed house you re-sided is on your blog, not the siding page, so visitors never see proof you handle odd houses.
+- Your blog's metal-framed house job isn't on the siding page, so visitors never see proof you handle odd houses.
 
 **What the demo fixes**
 - A headline that says Siding Replacement in Fort Wayne, IN.
-- Vinyl, fiber cement, composite and metal compared in plain words.
-- The metal-stud job, with the screws and the windows, told on the page.
+- Four siding materials compared in plain words.
+- The metal-stud job told on the page.
 
 **A full build would also add**
 Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
@@ -81,14 +81,13 @@ Every page set up behind the scenes so Google and AI tools like ChatGPT know exa
 *Why it matters:* It's where a homeowner with storm damage decides to call.
 
 **Current site problem**
-- Your Fort Wayne roofing page's call button dials (260) 238-8381, not the site's main number, so a customer who taps it may reach a different line.
-- The page names no towns, so a customer can't tell if you cover their street.
-- Nothing says what to have ready or what happens next, so a first-time caller hesitates.
+- No towns are named, so a customer can't tell if you cover their street.
+- Nothing says what to have ready or what happens next, so a first-timer hesitates.
 
 **What the demo fixes**
-- One number, (260) 226-8800, first.
+- Your phone number first, one tap away.
 - The 11 Indiana towns you serve, named.
-- What to have ready for a roof or siding call, and what usually happens next.
+- What to have ready, and what usually happens next.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
@@ -123,16 +122,16 @@ Call and form tracking that shows which pages and towns your leads come from.
 
 On a short onboarding call, we'd confirm four things.
 
-- Your homepage says "Indiana | Ohio" and lists towns in both states, while your service-area page names only Indiana towns. Which towns do you serve?
-- Your homepage says you're open Monday to Friday, 9 to 5, and your Fort Wayne roofing page says "Open 24 hours." Which is right?
-- Your roofing page says to replace when repairs cost more than half a new roof, and your homepage says when more than 30% of the roof is damaged. Which rule do you use?
-- Your Fort Wayne roofing page's call button dials (260) 238-8381, and the rest of the site dials (260) 226-8800. Which number should customers call?
+- Your homepage says "Indiana | Ohio" and lists towns in both states, but your service-area page names only Indiana. Which towns do you serve?
+- Your homepage says Monday to Friday, 9 to 5; your Fort Wayne roofing page says "Open 24 hours." Which is right?
+- Your roofing page says replace when repairs cost over half a new roof; your homepage says when over 30% is damaged. Which rule do you use?
+- Your Fort Wayne roofing page dials (260) 238-8381; the rest of the site dials (260) 226-8800. Which number should customers call?
 
 **Want a website like this for your business?**
 
 Book a call and we'll walk you through this demo.
 
-**[Book a no-obligation call](about:blank)** · Text us: (417) 373-2773
+**[Book a no-obligation call]** · Text us: (417) 373-2773
 
 ## Home — Roofing Contractor in Fort Wayne, IN — Faze Construction
 
@@ -238,7 +237,7 @@ If ice builds up along the roof edge in winter, the cause may be warm air leakin
 
 Asphalt shingles are the most common roof on houses, and we install them in architectural styles, which are thicker and layered. We also install metal, tile, slate, flat, low-slope and wood-shake roofs. Metal roofs are often built to last 50 years or more, and a natural slate roof can last a century.
 
-Hail is a regular part of Indiana storms, so impact-rated shingles are worth asking about. Class 4 is the highest hail rating, and some insurers discount premiums for it, so check with yours.
+Hail is a regular part of Indiana storms, so impact-rated shingles are worth asking about. Class 4 is the highest hail rating, and some companies discount premiums for it, so ask yours.
 
 > He suggested a shingle that would solve an issue that I hadn’t even considered.
 >
@@ -258,7 +257,7 @@ Most roof replacements take one to three days, longer for a large or complicated
 
 ### Storm Damage and Your Roof Claim
 
-After hail or high wind, a roof can have damage you can't see from the ground, which is why the free inspection comes first. If you file a claim, your insurer's adjuster, the person who inspects the damage, usually visits too, and we set up the job around that visit. The insurer, not the roofer, decides what a claim covers, so no contractor can promise approval.
+After hail or high wind, a roof can have damage you can't see from the ground, which is why the free inspection comes first. If you file a claim, your insurer's adjuster, the person who inspects the damage, usually visits too, and we set up the job around that visit. The claim decision isn't the roofer's, so no contractor can promise approval.
 
 Customers often describe the same order: an inspection, the adjuster's visit, the insurer's approval, then a date on the schedule.
 
@@ -412,15 +411,15 @@ Call (260) 226-8800 and tell us about your roof or siding.
 **Rebuild reason:** SEO. The homepage headline reads "Indiana | Ohio Roofing, Siding & Remodeling Contractor" with no Fort Wayne, and the siding, gutters and window pages name no city (qualify.md).
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip; "with" is everything on the page)
-- Strategy: 1139 without quotes, 1167 with (the one quote; badge, headline, subheading and full-build list counted). About 140 over the soft 1,000 cap, mostly the fixed full-build list; kept for four full cards
-- Home: 616 without quotes, 720 with
-- Roof Replacement: 1122 without quotes, 1221 with. Meets 700+ without padding
-- Siding Replacement: 1139 without quotes, 1167 with (the one quote; badge, headline, subheading and full-build list counted). About 140 over the soft 1,000 cap, mostly the fixed full-build list; kept for four full cardsI
-- Contact: 264 without quotes, 288 with
+- Strategy: 1052 without quotes, 1084 with (badge, headline, subheading and full-build list counted); trimmed from 1,139 by cutting repetition from the cards and "Why we built". The full-build list is untouched
+- Home: 566 without quotes, 691 with
+- Roof Replacement: 1116 without quotes, 1232 with. Meets 700+ without padding
+- Siding Replacement: 969 without quotes, 1103 with
+- Contact: 264 without quotes, 293 with
 
 **Credentials and sources** (none checked on a certifier's own site; each is the business's claim, stated as theirs)
 - Locally owned and operated: `/about`, home. Home only, and the strip.
-- A+ rating from the Better Business Bureau: `/roofing` ("recognized for an A+ rating"). Not checked on bbb.org. Home only, once.
+- A+ rating from the Better Business Bureau: `/roofing`. Not confirmed on bbb.org, so cut from the copy.
 - Warranty "covers absolutely everything we touch": home. No terms given. The copy says it covers the work we do, from the nails to the final coat of paint, and tells the reader to ask what a warranty covers. David E.'s "transferable warranty" sentence was cut from his siding quote.
 - Free property inspection: home, `/roofing`, `/contact`, `/services`.
 - Insurance claim help: `/fort-wayne` ("we'll take care of all the needed documents") and the reviews. The site's "hundreds of storm claims" is not used (no count to back it).
