@@ -156,7 +156,7 @@ Zach Wickey, our technician, handles many of the visits, and Josh goes out on ca
 
 ### How we work out what's wrong
 
-Plumbing problems tend to look alike from the outside: water on a floor, a slow drain, no hot water. What's behind them can be a ten-minute fix or a bigger repair, so we start with the diagnosis and explain what we find in plain words. Often that means showing you the problem itself, in a photo or in the old part we took out. When there is more than one way to fix something, we go over the options and what each costs before we start. We aim to give you the price up front, so there are no surprises.
+Plumbing problems tend to look alike from the outside: water on a floor, a slow drain, no hot water. What's behind them can be a ten-minute fix or a bigger repair, so we start with the diagnosis and explain what we find in plain words. Often that means showing you the problem in a photo. When there is more than one way to fix something, we go over the options and what each costs before we start. We aim to give you the price up front, so there are no surprises.
 
 > I felt like, finally someone fixed the problem. Did a great job, showed us pictures of what was wrong. No one wants to lay in an attic on insulation to get the job done but this company did. Thanks!
 >
@@ -164,7 +164,7 @@ Plumbing problems tend to look alike from the outside: water on a floor, a slow 
 
 ### When it can't wait
 
-A burst pipe, a backed-up drain or a water heater that has quit doesn't fit a schedule. We offer after-hours emergency service, so call any day of the week and tell us what's happening. That lets us bring the right parts. Visits are often the same day or the next morning, depending on what the schedule allows.
+A burst pipe, a backed-up drain or a water heater that has quit rarely waits for a good time. We offer after-hours emergency service, so call any day of the week and tell us what's happening. That lets us bring the right parts. Visits are often the same day or the next morning, depending on what the schedule allows.
 
 > Great experience. They were able to come out first thing the next morning, quickly figured out the issue, and took care of it without trying to sell me on work I didn’t need.
 >
@@ -172,7 +172,7 @@ A burst pipe, a backed-up drain or a water heater that has quit doesn't fit a sc
 
 ### Our monthly membership
 
-Plumbing problems seldom arrive at a good time, and the bills are hard to predict. Our monthly membership is meant to take some of that out. Members get service discounts, reduced service-call fees and extended warranties.
+Repair bills are hard to predict. Our monthly membership is meant to take some of that out. Members get service discounts, reduced service-call fees and extended warranties.
 
 We also offer an Annual Whole-Home Plumbing Maintenance and Safety Inspection, a full check of your plumbing that flags small problems early, before they become expensive emergencies. A check like this commonly covers the water heater, the shutoff valves, visible pipes, drains and the sump pump, and in this part of Indiana the outdoor faucets before the first hard freeze.
 
@@ -182,7 +182,7 @@ On one Fort Wayne job, after we installed a 50-gallon natural gas water heater, 
 
 Two of our jobs have their own pages: [water heater repair and installation](#), and [drain cleaning and sewer lines](#). The rest of what we do:
 
-- **Gas line services.** Repair and installation of gas lines for water heaters, ranges, dryers, fireplaces and outdoor grills. Gas work has to be done safely and to code. If you smell gas, leave the house and call 911 or your gas utility from outside before you call us.
+- **Gas line services.** Repair and installation of gas lines for water heaters, ranges, dryers, fireplaces and outdoor grills. Gas work has to be done safely and to code.
 - **Fixture repair and installation.** Faucets, toilets, sinks and other fixtures, whether you are fixing a drip or upgrading. A running toilet or dripping faucet can add to the water bill more than people expect. We have replaced a failing kitchen faucet in Fort Wayne and installed a customer-supplied kitchen sink with its faucet, drain and emergency stops, the small shutoff valves under a sink that let you stop the water to one fixture.
 - **Whole-house repiping.** In older homes, pipes can corrode on the inside, which shows up as rusty water, low pressure or leaks that keep returning. When patching is no longer enough, repiping replaces the failing pipes throughout the house.
 - **Sump and sewage pumps.** A sump pump sits in a pit in the basement floor and pushes groundwater outside, which matters in heavy Indiana rain and spring thaw. A sewage pump does the same for waste from a basement bathroom. In Huntertown we replaced a failing sump pump and added a sewage pump with a high water alarm, which sounds if the pit starts to fill.
@@ -232,7 +232,7 @@ Some tank heaters, called power-vent models, use a fan to push exhaust out throu
 
 A replacement is more than swapping the tank. The old unit comes out, the water lines, gas or electric connection and shutoff valves are connected to the new one, and the system is tested before we leave. Some jobs call for extras.
 
-An expansion tank is a small tank on the cold water line that absorbs the extra volume of water as it heats. In a house with a check valve or pressure regulator on the incoming line, that extra water has nowhere to go, and pressure can rise and strain the heater and the fixtures. We have installed expansion tanks on Fort Wayne water heaters, and many homes need one, so it is worth asking.
+An expansion tank is a small tank on the cold water line that absorbs the extra volume of water as it heats. In a house with a one-way valve or pressure regulator on the incoming water line, that extra water has nowhere to go, and pressure can rise and strain the heater and the fixtures. We have installed expansion tanks on Fort Wayne water heaters, and many homes need one, so it is worth asking.
 
 Cold weather matters for heaters in unheated garages. On one Fort Wayne job we installed a 40-gallon electric heater with an expansion tank in a garage, insulated the water lines and added heat tape, an electric cable that warms a pipe in freezing weather.
 
@@ -244,11 +244,11 @@ If you bought the heater yourself, we install customer-supplied units too. On jo
 
 ### Gas, safety and the settings that matter
 
-If you smell gas near a heater, leave the house and call 911 or your gas utility from outside. Gas heaters need to vent their exhaust, which can contain carbon monoxide, so a carbon monoxide alarm near the heater is widely recommended. Gas line repair for water heaters is part of our work.
+Gas heaters need to vent their exhaust, which can contain carbon monoxide, so a carbon monoxide alarm near the heater is widely recommended. Gas line repair for water heaters is part of our work.
 
 Every tank heater has a temperature and pressure relief valve, a safety valve with a pipe running down the side of the tank. If it drips or discharges, call us, and do not cap it. A thermostat setting of about 120 degrees Fahrenheit is commonly recommended to lower the risk of scalds.
 
-### Before you call
+### What helps before the visit
 
 It helps to know whether the heater is gas or electric, what the label says about its age and size, where it sits, and whether there is water on the floor or only no hot water. If there is water around the tank, shutting off the supply to the heater limits the damage, and on an electric heater so does turning off its breaker.
 
@@ -296,15 +296,15 @@ The usual signs are slow drains that return every few months, or a tub that gurg
 
 A drain camera is a small camera on a flexible cable that is pushed down the line to show the pipe from the inside. It can reveal roots, a dip, a crack, a joint that has slipped, or a section that has collapsed. That helps decide between clearing the line, repairing a short section and replacing more of it.
 
-A camera has limits. A bad bend, a collapsed section or heavy buildup can stop it before it reaches the problem. On a slow main line in Fort Wayne, the condition of the pipe kept our camera from reaching the cause. We explored the options, and the customer chose to hold off for now. When that happens, you still leave knowing what was found and what the choices are.
+A camera has limits. A bad bend, a collapsed section or heavy buildup can stop it before it reaches the problem. On a slow main line in Fort Wayne, the condition of the pipe kept our camera from reaching the cause. We explored the options, and the customer chose to hold off for now. Even then, the visit usually shows something about the line and what the options are.
 
 ### When a pipe has to be replaced
 
-A short repair is often less costly than replacing the whole line, but if the pipe is in poor shape throughout, repeated spot repairs can add up. We have done both. A pipe under a concrete floor is harder to reach. In one New Haven home a collapsed pipe beneath the slab was causing serious drainage problems. We broke up the concrete, dug out the damaged pipe and replaced it, then used a camera to confirm there were no other problems. We backfilled the hole, poured new concrete and reset the toilet once the new floor was in.
+A short repair is often less costly than replacing the whole line, but if the pipe is in poor shape throughout, repeated spot repairs can add up. We have done both. A pipe under a concrete floor is harder to reach. In one New Haven home a collapsed pipe beneath the concrete floor was causing serious drainage problems. We broke up the concrete, dug out the damaged pipe and replaced it, then used a camera to confirm there were no other problems. We backfilled the hole, poured new concrete and reset the toilet once the new floor was in.
 
 ### Clogs with a reason behind them
 
-Some clogs come from what goes down the drain. Cooking grease cools and hardens inside pipes. Wipes sold as flushable often don't break up the way toilet paper does. Hair builds up in tub drains. Store-bought chemical drain cleaners often don't dissolve roots or grease, can be hard on older pipes, and can burn whoever opens the pipe next, so mention it if you used one.
+Some clogs come from what goes down the drain. Wipes sold as flushable often don't break up the way toilet paper does, and store-bought chemical drain cleaners often don't dissolve roots or grease, can be hard on older pipes, and can burn whoever opens the pipe next, so mention it if you used one.
 
 Water softeners are another source. A softener cleans itself by flushing water out through a drain line, and if that line is partly blocked, the water can back up onto the floor.
 
@@ -316,7 +316,7 @@ Water softeners are another source. A softener cleans itself by flushing water o
 
 A basement drain that backs up in a heavy storm is not always a problem with your own pipe. Some older parts of Fort Wayne are served by combined sewers, which carry storm water and household waste in the same pipe, and a surge in the street main can push water back toward a house. A backwater valve, a one-way valve in the sewer line that stops flow from coming back in, is one option that is sometimes used. Whether it suits a house depends on the line and the basement, and the city and the homeowner usually look after different sections of the pipe, so it helps to know where your line connects.
 
-### Before you call
+### What to tell us about the drain
 
 Tell us which drains are affected, how long it has been going on, and whether it comes and goes. Mention a water softener, recent landscaping or tree work, and anything you have already poured down the drain. If water is coming up in a basement, stay out of standing water that may have been in contact with sewage.
 
@@ -334,11 +334,11 @@ Call (260) 409-5128, or email wickeyplumbing@gmail.com. We serve Fort Wayne and 
 
 ### What to tell us
 
-Tell us what is happening and where: a slow drain, no hot water, a leak, a smell of gas. Say when it started and whether it comes and goes. For a water heater, the age and size on the label and whether it runs on gas or electricity help. For a drain, tell us which fixtures are slow and whether a basement drain has backed up.
+Tell us what is happening and where: a slow drain, no hot water, a leak, a smell of gas. Say when it started, whether it comes and goes, and anything you have already tried. For a water heater, its age and whether it runs on gas or electricity help. For a drain, which fixtures are slow helps.
 
 ### What usually happens next
 
-We usually start with a few questions, and some problems can be sorted out over the phone. Others need a plumber to see the work in person before there is a plan or a price. If you can tell us which days and times suit you, we can try to work around them.
+We usually start with a few questions, and some problems may be sorted out over the phone. Others need a plumber to see the work in person before there is a plan or a price. If you can tell us which days and times suit you, we can try to work around them.
 
 A plumber is coming into your home, so we try to leave it as we found it.
 
@@ -348,7 +348,7 @@ A plumber is coming into your home, so we try to leave it as we found it.
 
 ### Our estimates
 
-We give free estimates. Some jobs, such as swapping a standard water heater, can often be priced from a phone call. Others need a visit first, particularly when the cause isn't clear, as with a drain that keeps backing up. In both cases we aim to explain what we find before any work begins.
+We give free estimates. Some jobs can be priced from a few questions. Others need a visit first, particularly when the cause isn't clear, as with a drain that keeps backing up.
 
 > I called on Wickey plumbing for an estimate. Picture of technician sent BEFORE visit for safety purposes - loved that! Zach was informative, professional, & courteous. I will call on WICKEY PLUMBING for my future needs. Thanks Zach and Wickey Plumbing!
 >
@@ -356,7 +356,7 @@ We give free estimates. Some jobs, such as swapping a standard water heater, can
 
 ### If it's urgent
 
-If you smell gas, leave the house and call 911 or your gas utility from outside, then call us. If water is running and you can't stop it, close the main water shutoff, usually near where the water line enters the house, and call right away. If a water heater is leaking, shutting off the supply to it limits the damage until we get there.
+If you smell gas, leave the house and call 911 or your gas utility from outside, then call us. If water is running and you can't stop it, close the main water shutoff, usually near where the water line enters the house, and call right away.
 
 Call (260) 409-5128 and tell us what you need.
 
@@ -366,15 +366,15 @@ Call (260) 409-5128 and tell us what you need.
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
-| Strategy | ~945 | ~975 |
-| Home | ~830 | ~915 |
-| Water Heater Repair & Installation | ~1,050 | ~1,170 |
-| Drain Cleaning & Sewer Lines | ~1,005 | ~1,215 |
-| Contact | ~315 | ~390 |
+| Strategy | ~951 | ~980 |
+| Home | ~806 | ~890 |
+| Water Heater Repair & Installation | ~1,051 | ~1,175 |
+| Drain Cleaning & Sewer Lines | ~1,017 | ~1,227 |
+| Contact | ~274 | ~348 |
 
 Counts include headings, bullets and the H1, and leave out button lines. Home (550+) and both service pages (700+) clear their minimums without quotes. Strategy stays under 1,000 words counting everything on the page. Contact has no minimum and is short on purpose.
 
-**Voice docs missing.** `docs/voice/JOSH-VOICE.md` and `docs/voice/ff2-global-copy-rules.md` do not exist in this repo. The strategy page follows the structure and tone of the other 2026-11-16 drafts (for example `threerivers.md`) and the approved Jon's Plumbing build, not those two files.
+**Voice.** The strategy page was checked against `docs/voice/JOSH-VOICE.md` and `docs/voice/ff2-global-copy-rules.md` on 2026-11-16: short direct lines, no banned phrases, CTA after "What we'd confirm".
 
 **Service pages.** Chosen from inventory.md: water heaters and drain cleaning. Inventory judged drains "probably not" 700 words from the site alone. Both pages reach 700+ with hedged general trade knowledge (hard water and scale, tank life, repair-or-replace rule of thumb, tank vs tankless, power-vent, expansion tanks, garage freeze protection, older clay tile / cast iron / pressed-fiber sewer lines, dips in the line, tree roots, camera limits, combined sewers and backwater valves). Business claims come only from `site/`, reviews and the job notes on the area pages. Drain page has the thinnest business material (one site paragraph, four reviews, three job notes), so it leans on trade knowledge and is the one to read hardest.
 
