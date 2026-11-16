@@ -1,0 +1,26 @@
+{
+  "kind": "google-prospect-scout-receipt",
+  "status": "ok",
+  "slug": "evansville-roofing",
+  "request": {
+    "query": "roofing contractor",
+    "location": "Evansville, IN",
+    "maxPlaces": 40
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "2PHWBU8pgTIgb5H88",
+    "datasetId": "6yyFdCBZxnPZLbjYH",
+    "attempts": 1,
+    "usageUsd": 0.1202
+  },
+  "counts": {
+    "returned": 40,
+    "advertisements": 1
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T04:47:28.409Z",
+  "finishedAt": "2026-11-16T04:47:49.394Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43806165904"
+}
