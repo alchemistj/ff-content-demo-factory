@@ -116,6 +116,8 @@ Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a
 Your site watched around the clock for downtime.
 Google indexing and your Google visibility checked every day.
 Page links, buttons and contact forms tested in a real browser twice a day.
+Updated when Google and AI tools change how they read websites
+You never have to know what to ask for
 What we'd confirm with you
 On a short onboarding call, we'd confirm four things.
 
@@ -134,8 +136,7 @@ Repairs, replacements and new installations for Lincoln homes and businesses, fr
 
 Buttons: Call (402) 423-6960 / Request Service
 
-Differentiators: Family-owned · 24-hour service · Homes and businesses · Warranty repair center for AO Smith, State and Bradford White · Customers describe same-day visits
-Trust bar: NATE-Certified Technicians · BBB Accredited, A+ Rated · Factory Authorized Carrier Dealer · Our Own Trenching Crew
+Strip: Family-owned · 24-hour service · NATE-certified technicians · Our own trenching crew · Customers describe same-day visits
 One Company for Plumbing, Heating, AC and Electrical
 When the water heater quits, the furnace stops or a breaker keeps tripping, you shouldn't have to work out which company handles which. One team handles all of it, for homes and for businesses.
 
@@ -171,7 +172,7 @@ Heating, AC and plumbing emergencies don't wait for office hours, so we offer 24
 
 Before a plumber arrives, you get a text with a short description of who is coming, including how many years they've been in the field.
 Questions Before You Call
-How fast can you get here? Usually the day you call, often in a few hours.
+How fast can you get here? Customers describe same-day visits, some within a few hours.
 
 Same day service. Austin explained everything well.
 
@@ -287,7 +288,7 @@ If your heat or AC isn't working, call (402) 423-6960 and tell us what it's doin
 Water Heaters — Water Heater Replacement in Lincoln, NE — Action Plumbing, Heating, A/C & Electrical
 Fact line: Water Heaters · Tank and Tankless · 24-Hour Service
 Water Heater Replacement in Lincoln, NE — Action Plumbing, Heating, A/C & Electrical
-The shower runs cold, or there's water at the base of the tank. We repair and replace water heaters in Lincoln. Customers describe quick service, and one had hot water by noon after leaving an after-hours message. Call (402) 423-6960.
+The shower runs cold, or there's water at the base of the tank. We repair and replace water heaters in Lincoln. Customers describe quick service. Call (402) 423-6960.
 
 Buttons: Call (402) 423-6960 / Request Service
 Repair, Replacement and New Installation

@@ -180,7 +180,7 @@ We replace and repair roofs across the Evansville area, and when a storm does th
 
 **Buttons:** Call (812) 455-0231 · Free Roof Inspection
 
-**Strip:** GAF Master Elite · GAF 2-Star President's Club · Licensed and insured in Indiana · Since 2018 · Own crew, no subcontractors · Homes and businesses · Customers describe one-day replacements
+**Strip:** GAF Master Elite · GAF 2-Star President's Club · Own crew, no subcontractors · Licensed and insured in Indiana · Customers describe one-day replacements
 
 ### After a Storm, We Walk the Claim With You
 
@@ -276,7 +276,7 @@ Call (812) 455-0231 and tell us what happened. The office is open Monday to Frid
 
 ## Roof Replacement — Roof Replacement in Evansville, IN — The Way Construction
 
-We replace asphalt shingle roofs on homes in Evansville and the towns around it. Customers describe a full replacement done the same day it starts. The prices on this page are real ranges, and your written estimate gives you the exact number. Call (812) 455-0231.
+We replace asphalt shingle roofs on homes in Evansville and the towns around it. Customers describe most roofs done in a day. The prices on this page are real ranges, and your written estimate gives you the exact number. Call (812) 455-0231.
 
 **Buttons:** Call (812) 455-0231 · Free Roof Inspection
 
@@ -356,7 +356,7 @@ One thing I especially appreciated was that, because I'm not comfortable with he
 
 ### Replacing a Roof After an Insurance Claim
 
-If a claim is behind the replacement, customers have had us start the work once it was approved. Insurance companies often pay in stages, with a first payment when the claim is approved and the rest after the work is done, so ask yours how it pays before the crew arrives.
+If a claim is behind the replacement, we schedule the work once the claim is approved. Insurance companies often pay in stages, with a first payment when the claim is approved and the rest after the work is done, so ask yours how it pays before the crew arrives.
 
 If the old roof comes off and the wood underneath is worse than anyone could see from above, tell your insurance company right away. Photos of that damage give you a record to send them.
 
@@ -374,7 +374,7 @@ Call (812) 455-0231 and tell us about the roof. We'll set a time to look at it.
 
 ## Roof Repair — Roof Repair in Evansville, IN — The Way Construction
 
-A roof leak rarely shows up where the water gets in. We trace it to the spot where it enters, photograph it and repair that spot. Customers describe a quick response and repairs done quickly. Call (812) 455-0231.
+A roof leak rarely shows up where the water gets in. We trace it to the spot where it enters, photograph it and repair that spot. Customers describe fast repairs, with before-and-after photos. Call (812) 455-0231.
 
 **Buttons:** Call (812) 455-0231 · Free Roof Inspection
 
