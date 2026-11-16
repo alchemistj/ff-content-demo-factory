@@ -46,3 +46,78 @@ Length follows the real material. Never pad toward a number. (Withdrawn Nov 16: 
 ### R6: Speed claims at one-review strength
 A speed claim is said plainly when the business's site or several reviews back it, or it's left out. Never "customers describe…". (Withdrawn Nov 16: "speed claims at one-review strength".)
 - taste check only (R1 and R3 catch the usual wording)
+
+## Mined from Josh's ComfortTechs comments and JOSH-CHECKLIST.md (Nov 16)
+Sources: CT = Josh's comments on the ComfortTechs approved doc (1NX5HrJtf2-0DMpbyvpsmZa4HlfinjtT-Wr9bOewksD8). CL = `docs/JOSH-CHECKLIST.md` item number. `level: warn` prints WARN, not FAIL: a person or the taste check decides.
+
+### R7: Efficiency numbers that mean nothing to a customer
+"60% efficiency", "up to 98%": Josh: "efficiency numbers that doesn't even mean anything to me". (CT; CL 6)
+- pages: business
+- where: body
+- regex: \b(up to )?\d{2}(\.\d)?\s?%\s*(efficien\w*|afue)|\bafue\b|\bseer2?\b|\bhspf\b
+
+### R8: Hedged after-hours lines
+"No 24/7 promise": say plainly that they come out after hours. (CT, Contact card)
+- pages: all
+- where: body
+- regex: \bno 24/7 promise\b|\bnot a 24/7\b|\bwithout a 24/7\b
+
+### R9: Talking about the website on business pages
+"each has its own page", "on this page", "the form asks", "send the form any hour". (CL 17, 89)
+- pages: business
+- where: body
+- regex: \b(each has its own page|on this page|our site lists|check out our|learn more (on|about)|the form asks|send (us )?the form)\b
+
+### R10: Filler, even when it's lifted from their site
+"years of experience", "good hands", "finish the job right", "is part of what we do", "when it comes to". (CL 94, 17)
+- pages: business
+- where: body
+- regex: \byears of experience\b|\bgood hands\b|\bfinish(ing)? the job right\b|\bis (all )?part of what we do\b|\bis all about\b|\bwhen it comes to\b
+
+### R11: Notes to the owner on business pages
+"to be confirmed", "on our onboarding call", "posted hours are X, but…": conflicts belong on the strategy page. (CL 16, 97)
+- pages: business
+- where: body
+- regex: \bto be confirmed\b|\bonboarding call\b|\bwe'?d confirm\b|\bposted hours (are|say)\b
+
+### R12: Curt or grudging lines
+"we deal with it", "Judge us by the reviews", "can't lean on a reputation". Be warm and promise something. (CL 15)
+- pages: business
+- where: body
+- regex: \bwe deal with it\b|\bjudge us by\b|\bcan'?t lean on a reputation\b
+
+### R13: Legal suffix in the business name
+"Dream Makers LLC Heating and Cooling" → "Dream Makers Heating and Cooling". (CL 7)
+- pages: business
+- where: body
+- regex: \b(LLC|L\.L\.C\.|Inc\.)(?=[\s,.)]|$)
+
+### R14: Leftover template or placeholder text
+(CL 34, 36)
+- pages: business
+- where: body
+- regex: \blorem ipsum\b|\bplaceholder\b|\bcoming soon\b|\byour text here\b|\bTBD\b
+
+### R15: Unnamed awards and credentials
+"many other customer service awards", "award-winning": name each one and say what it means. (CT; CL 8)
+- pages: business
+- where: body
+- level: warn
+- regex: \bmany other (customer service )?awards?\b|\baward[- ]winning\b
+
+### R16: Unexplained trade jargon
+tear-off, decking, flashing, ACV, RTUs, TPO, EPDM, coping, soffit, fascia: a plain word or a one-line explanation. (CL 80, 88)
+- pages: home, service
+- where: body
+- level: warn
+- regex: \b(tear-?off|decking|flashing|ACV|RTUs?|TPO|EPDM|coping|soft metals?|soffit|fascia)\b
+
+### Judgment only (taste check and DOC-CHECK, no regex)
+- Vague "What the demo fixes" / "Current site problem" bullets; fixes that don't move the needle (CT).
+- A vague keyword line where a search-volume number exists (CT).
+- A speed-score line without the mobile reason (CT).
+- A thin home page ending in a one-line FAQ and a bare "Call us" (CT; CL 84, 93).
+- Copy that retells the review next to it (CL 46). Two quotes back to back, or three sections in a row ending in a quote (CL 77, 93).
+- A service sold twice on one page (CL 32). "Home" wording under a "home or business" heading (CL 23).
+- Advice that ignores how the trade works (CL 20). A paragraph that doesn't cover its heading (CL 21). Forced metaphors (CL 18).
+- Opening on after-hours cost before the plan is explained (CL 19). DIY step-by-step instructions (CL 91).

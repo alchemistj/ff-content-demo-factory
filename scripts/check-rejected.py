@@ -20,7 +20,7 @@ def load_rules():
         if not m:
             continue
         r = {"id": m.group(1), "title": m.group(2).strip()}
-        for key in ("pages", "where", "regex", "check"):
+        for key in ("pages", "where", "regex", "check", "level"):
             km = re.search(rf"^- {key}: (.+)$", block, re.M)
             if km:
                 r[key] = km.group(1).strip()
@@ -72,7 +72,7 @@ def parts(lines):
         s = l.strip()
         if not s or s.startswith(">") or s.startswith("— ") or s.startswith("# "):
             continue
-        if s.startswith("**buttons") or s.startswith("buttons:") or s.lower().startswith(("**strip", "strip:")):
+        if s.lower().lstrip("*").startswith(("buttons", "button:", "strip", "trust bar", "badge")):
             continue
         if s.startswith("#"):
             seen_head = True
@@ -100,8 +100,9 @@ def main(paths):
                     for s in where:
                         m = re.search(r["regex"], s, re.I)
                         if m:
-                            bad = True
-                            print(f"FAIL {fn} | {name[:40]} | {r['id']} {r['title'][:50]} | …{s[max(0, m.start()-30):m.end()+30]}…")
+                            lvl = "WARN" if r.get("level") == "warn" else "FAIL"
+                            bad = bad or lvl == "FAIL"
+                            print(f"{lvl} {fn} | {name[:40]} | {r['id']} {r['title'][:50]} | …{s[max(0, m.start()-30):m.end()+30]}…")
                 if r.get("check", "").startswith("keyword-stuffing"):
                     joined = " ".join(body)
                     for phrase in set(re.findall(r"\b((?:[A-Z][\w&'-]*\s){1,4}in [A-Z][a-z]+(?: [A-Z][a-z]+)?, [A-Z]{2})\b", joined)):
