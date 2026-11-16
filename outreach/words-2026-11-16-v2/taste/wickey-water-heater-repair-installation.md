@@ -2,40 +2,46 @@
 
 # Water Heater Repair & Installation in Fort Wayne, IN — Wickey Plumbing
 
-Few problems disrupt a household like no hot water. We repair, replace and install water heaters of all types, including tankless, for homes and businesses in Fort Wayne and Northeast Indiana. Leaking, making strange noises, running out of hot water quickly or simply getting old: call (260) 409-5128 and we'll help you decide whether to repair or replace it.
+When your water heater quits, we come out the same day or the next morning. A licensed and insured Indiana plumber repairs or installs it, and you hear the price before we start.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 
-### Honest advice on repair or replace
+### We install the heater that fits your house
 
-We never push you toward more than you need. You get honest, upfront pricing, and every installation is done by a licensed and insured Indiana plumber and backed by our satisfaction guarantee and warranty. Whether it's a quick repair or a full replacement, you hear the options and the price first.
+We repair, replace and install water heaters of all types, including tankless. We install 40- and 50-gallon electric and gas heaters in basements and garages, and when you've bought the heater yourself, we remove the old one, connect the new one and test it. A Fort Wayne customer had us install a power-vent heater on a 40-gallon propane tank.
+
+We walk you through tank versus tankless so you choose the system for your home and budget. Tankless units deliver endless hot water and save space.
+
+Every installation is backed by our satisfaction guarantee and warranty. Call (260) 409-5128 for a free estimate on your install.
+
+### Repair first, replace when it makes sense
+
+Leaking, making strange noises, running out of hot water quickly or simply getting old: we look at the heater and tell you whether to repair or replace it. We never push you toward more than you need.
 
 > Give this place a call for ALL your plumbing needs. I called and they were out same day for a water heater issue. Got it fixed with no issues and could not have been more pleasant. Very affordable too compared to anyone else I have used!! No unnecessary sales pitch or work that didn’t apply.
 >
 > — Bryan R.
 
-### Tank or tankless
+### Repairs we finish
 
-We walk you through the pros and cons so you choose the right system for your home and budget. A tankless heater heats water only when a tap is open, delivers endless hot water and saves space. Customers have had us install tank heaters in basements and garages, electric, gas and propane power-vent (a heater with a fan to push exhaust out).
+At a Leo-Cedarville home, a diagnostic check found a bad circuit board and a cut wire. We ordered the replacement board, and Zach Wickey finished the repair. Call us with a heater that won't heat and we'll find the cause before we quote the fix.
+
+### Garages and cold spaces
+
+At a Fort Wayne garage we installed a 40-gallon electric heater with an expansion tank, insulated the water lines and added heat tape, so the pipes are protected when it freezes. Cold garage or basement, tell us where the heater sits and we'll set it up for it.
 
 > Called Wickey Plumbing to replace my water heater. He came out within an hour and a half and completed the job quickly and professionally. Very knowledgeable about the difference in brands and made sure my choice was an informed one.
 >
 > — Aaron V.
 
-### Jobs we've done
+### Gas heaters
 
-- **A bad board in Leo-Cedarville.** A diagnostic check found a malfunctioning circuit board and a cut wire. We ordered a replacement board, and Zach Wickey finished the repair.
-- **A garage in Fort Wayne.** A customer's faulty heater became a new 40-gallon electric heater with an expansion tank, a small tank that takes up the extra pressure as water heats. We insulated the water lines and added heat tape, an electric cable that keeps a pipe from freezing.
-- **A power-vent heater in Fort Wayne.** A customer had us install a power-vent heater on a 40-gallon propane tank, and we confirmed it was working before we left.
-- **A heater installed wrong.** For one customer, the original installation of a 50-gallon electric heater was incorrect. We reversed the setup and installed a new one, and it now runs with no leaks.
-- **Heaters you bought yourself.** In New Haven and in Fort Wayne, customers supplied their own heater. We removed the old one, connected the new one and tested it.
+We also repair and install the gas lines that feed water heaters, done safely and to code, so the heater and its gas line come from one plumber.
 
 > Zach Wickey installed my gas hot water heater for a flip home I am renovating. He came out in a timely manner, always responded to texts & calls, & did his work very efficiently. The new water heater looks great!!!
 >
 > — Glenn A.
 
-### Call us before the cold shower
-
-If your water heater has quit, call (260) 409-5128. We offer after-hours emergency service, and we come out the same day or the next morning. Ask for a free estimate.
+Hot water out? Call (260) 409-5128. We offer after-hours emergency service.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote

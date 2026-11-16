@@ -2,54 +2,57 @@
 
 # Electrical Troubleshooting & Repair in Fort Wayne, IN — Sterling Electric
 
-A dead outlet, power out in part of the house, lights that flicker, a breaker that won't stay on. Sterling Electric finds the cause and fixes what is actually wrong.
+Our licensed team has 17 years in the trade, and we find the real problem before we recommend a fix. A loose wire gets a loose-wire repair. A failed panel gets a new panel. We tell you which, and we don't sell you extras you didn't need.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate
 
-### We diagnose first
+### Find it, fix it, and keep you informed
 
-We find the cause, tell you what it is, and fix that. One customer's bathrooms lost power after a plumber worked behind the wall. Sterling sent one electrician, and the answer was a loose wire, not a new breaker box (the breaker is the switch in the panel that shuts a circuit off when it's overloaded).
+Residential and commercial, we trace the fault, explain what we found, and repair it. We keep you informed from the first call to the final walkthrough. We work to current electrical codes, and we keep the job site tidy, wiring included.
 
-> Sterling sent an electrician with no middle man. Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes …
+> They took time to diagnose the problem fix it and not upsell extras we didn't need.
 >
-> — James A.
+> — Renee S.
 
-### Out fast
+Tell us what's happening and we'll give you a clear, upfront quote. **Call (260) 404-1802.**
 
-Call about a sparking outlet or a dead room and we're out the same day. One customer called about a sparking outlet and had the work done that day, in the pouring rain.
+### What we repair
 
-> I was in a pinch and needed quick service. Sterling came out same day and restored power to 3 rooms in my home!
->
-> — Charlene R.
-
-### The tricky ones too
-
-When a fault is hard to track down, we stay on it until it's fixed. One customer called, and the electrician arrived soon after and got to work on a problem that turned out to be tricky.
-
-> Jim arrived soon after my initial call.  He immediately got to work tracking down what turned out to be a tricky problem.   He got it repaired quickly.
->
-> — John D.
-
-Another customer called and had the problem solved within 24 hours. A third had other issues found and repaired in the same visit.
-
-### Repairs of every size
-
-Switches, outlets and light fixtures replaced, wiring repaired after storm damage, old wiring removed. One customer had three switches and a light fixture replaced, and two other fixtures fixed, in an hour.
+- Power out in a room, a bathroom or part of the house
+- Sparking outlets
+- Loose or damaged wiring, including repairs after storm damage
+- Switch, outlet and light fixture replacements
+- Old wiring removed
+- Panels replaced and upgraded, and breakers labeled so you know what each one controls
 
 > Repairs included removing knob and tub wiring, replacing light fixtures, wiring repairs after a storm took out two rooms of a house, switch and outlet replacements, etc.
 >
 > — Jackie M.
 
-### When the panel is the problem
+### A fast call-out
 
-Sometimes the panel itself has to go. Then we tell you what we found and why, and replace it. A customer had a whole panel replaced.
+A dead room or a sparking outlet can't wait, so a Sterling electrician comes out the same day or within 24 hours of your call.
+
+> I was in a pinch and needed quick service. Sterling came out same day and restored power to 3 rooms in my home!
+>
+> — Charlene R.
+
+Call (260) 404-1802 and tell us what you see.
+
+### Told you need a new panel? Get ours first
+
+We replace and upgrade panels, and we say so when yours is the problem. When it isn't, we fix what is.
+
+> Sterling sent an electrician with no middle man. Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes …
+>
+> — James A.
+
+We replaced a customer's whole panel, too.
 
 > I needed my whole electric panel replaced and they were very easy to work with …
 >
 > — Ross N.
 
-### Tell us what's happening
-
-Call (260) 404-1802, or ask for an estimate. We'll give you a clear, upfront quote.
+**Call (260) 404-1802 or ask for an estimate.** One electrician, a clear answer and a clear, upfront quote.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate

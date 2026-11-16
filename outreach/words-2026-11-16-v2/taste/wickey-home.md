@@ -2,60 +2,62 @@
 
 # Plumber in Fort Wayne, IN — Wickey Plumbing
 
-Fort Wayne's veteran-owned, family-run plumber. Honest, full-service plumbing for homes and businesses across Fort Wayne and Northeast Indiana, with upfront pricing and no surprises. We come out the same day or the next morning. Call (260) 409-5128.
+Fort Wayne plumbing that gets to your house the same day or the next morning, from a veteran-owned, family-run company that gives you the price before the work starts. Drains, water heaters, gas lines, pumps and water quality, for homes and businesses across Fort Wayne and Northeast Indiana.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 
 **Strip:** Veteran-owned | Family-run | Christian-owned | Free estimates | After-hours emergency service
 
-### Honest work, and the price up front
+### The price comes before the work
 
-Wickey Plumbing is led by Josh Wickey, a Christian and U.S. Army veteran and a licensed, insured Indiana plumbing contractor who has worked as a plumber in Northeast Indiana since 2016, in residential and industrial plumbing. The promise is simple: do honest work, treat people right, and be upfront and transparent every step of the way. We give back to the veteran and local causes that matter to our community.
+Wickey Plumbing is led by Josh Wickey, a Christian and U.S. Army veteran and a licensed, insured Indiana plumbing contractor who has worked as a plumber in Northeast Indiana since 2016, in residential and industrial plumbing. Zach Wickey is our technician, and Josh goes out on calls too.
 
-Zach Wickey is our technician. Josh goes out on calls too. We tell you what's wrong in plain language and give you the price before we start. You get free estimates, a satisfaction guarantee, and a plumber who doesn't push you toward more than you need.
+You get a free estimate, upfront pricing, and a satisfaction guarantee. We tell you what's wrong in plain language, and we don't push you toward more than you need. Call (260) 409-5128 and tell us what's going on.
 
 > I felt like, finally someone fixed the problem. Did a great job, showed us pictures of what was wrong. No one wants to lay in an attic on insulation to get the job done but this company did. Thanks!
 >
 > — Tina S.
 
-### Water heaters
+### Water heaters, repaired or installed
 
-No hot water stops a household. We repair, replace and install water heaters of all types, including tankless units, which heat water only when a tap is open. If yours is leaking, making strange noises, running out of hot water quickly or getting old, we help you decide whether to repair or replace it. Every installation is backed by our satisfaction guarantee and warranty.
+We repair, replace and install water heaters of all types, including tankless. We install 40- and 50-gallon electric and gas heaters, in basements and garages, and we install the heater you bought yourself: we remove the old one, connect the new one and test it. A Fort Wayne customer had us install a power-vent heater on a 40-gallon propane tank. If yours is leaking, noisy, running out of hot water or getting old, we tell you whether to repair or replace it, and what each costs.
+
+Hot water out? Call (260) 409-5128 and we'll price the repair or the replacement before we start.
 
 ### Drains and sewer lines
 
-From a slow kitchen sink and a clogged toilet to a fully backed-up sewer line, we clear it and get to the root of the problem instead of treating the symptom, so the clog stays gone. We also repair and replace sewer lines that have failed from age, shifting soil or tree roots, for homes and businesses.
+We clear everything from a slow kitchen sink and a clogged toilet to a backed-up sewer line, and we find what is causing recurring clogs, gurgling drains and sewage smells. When a sewer line has failed from age, shifting soil or tree roots, we repair or replace it. In New Haven we broke up a concrete floor, replaced a collapsed pipe under it, checked the line with a camera, poured new concrete and reset the toilet.
+
+Call (260) 409-5128 with a drain that won't clear and we'll tell you the price before we start.
 
 ### When it can't wait
 
-A burst pipe, a backed-up drain or a water heater that has quit can't wait for a convenient day. We offer after-hours emergency service, and when you call, we come out the same day or the next morning.
+A burst pipe, a backed-up drain or a water heater that has quit can't wait. We offer after-hours emergency service, and we're at your door the same day or the next morning.
 
 > Great experience. They were able to come out first thing the next morning, quickly figured out the issue, and took care of it without trying to sell me on work I didn’t need.
 >
 > — Michael C.
 
-### Everything else under the sink and in the walls
+### Gas, fixtures, repiping, pumps and water quality
 
-- **Gas lines.** Repair and installation for water heaters, ranges, dryers, fireplaces and outdoor grills, done safely and to code. If you smell gas or suspect a leak, call us.
-- **Fixtures.** Faucets, toilets and sinks, whether you're fixing a drip or upgrading for a remodel, with no hidden fees. In Fort Wayne we replaced a failing kitchen faucet, and for another customer installed their own kitchen sink with its faucet, drain and four new shutoff valves.
-- **Whole-house repiping.** In an older home, pipes corrode and leak. When repairs are no longer enough, we replace the failing plumbing with new piping throughout.
-- **Sump and sewage pumps.** A sump pump keeps groundwater out of your basement in heavy Indiana rain and spring thaw. In Huntertown we replaced a failing sump pump and added a sewage pump and a high-water alarm.
+- **Gas lines.** Repair and installation for water heaters, ranges, dryers, fireplaces and outdoor grills, done safely and to code. Smell gas or suspect a leak? Call us.
+- **Fixtures.** Faucets, toilets and sinks, for a drip or a remodel. In Fort Wayne we replaced a failing kitchen faucet, and installed a customer's own kitchen sink with its faucet, drain and four new shutoff valves.
+- **Whole-house repiping.** When patching an older home's corroded, leaking pipes is no longer enough, we replace the failing plumbing with new piping throughout.
+- **Sump and sewage pumps.** In Huntertown we replaced a failing sump pump and added a sewage pump and a high-water alarm.
 - **Water quality.** Water softeners, whole-house filters and reverse osmosis (RO) drinking water systems, plus water testing so you know what is in your water. At one Leo-Cedarville home we installed a softener and a whole-house filter.
 
-### A monthly membership, and a yearly check
+### Join the monthly membership
 
-Repair bills are hard to predict. Our money-saving monthly membership gives members service discounts, reduced service-call fees and extended warranties.
-
-We also offer an Annual Whole-Home Plumbing Maintenance and Safety Inspection, which assesses your whole system and flags small problems before they turn into emergencies. Ask about both when you call.
+Members get service discounts, reduced service-call fees and extended warranties. We also offer an Annual Whole-Home Plumbing Maintenance and Safety Inspection that assesses your whole system and flags small problems before they turn into emergencies. Ask about both when you call (260) 409-5128.
 
 ### Where we work
 
-Fort Wayne, New Haven, Leo-Cedarville, Huntertown, Avilla, Garrett, Auburn, Roanoke and Corunna, and the rest of Northeast Indiana. We serve homes and businesses.
+Fort Wayne, New Haven, Leo-Cedarville, Huntertown, Avilla, Garrett, Auburn, Roanoke and Corunna, and the rest of Northeast Indiana, for homes and businesses.
 
 > I called Wickey Plumbing to get a second opinion on a leak in my basement and they exceeded all expectations: promptness, communication, availability, price, quality of work. I'm happy to add a good plumber to my network now.
 >
 > — Robert C.
 
-Call (260) 409-5128 and tell us what you need.
+Call (260) 409-5128, tell us what you need, and get the price before we start.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
