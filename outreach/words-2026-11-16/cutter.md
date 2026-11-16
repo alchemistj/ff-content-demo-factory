@@ -13,7 +13,7 @@ We built Cutter the first five pages of that kind of website. More on that below
 
 **Why we built this site**
 
-Mike and Bryan Cutter are twin brothers, born and raised in Cedar Rapids, and your roofing page says you were here through the derecho. Your homepage opens with "Exceptional Construction Services at Competitive Prices." Anyone could say that. It never says Cedar Rapids, and the twins don't show up until a paragraph below the service buttons.
+Mike and Bryan Cutter are twin brothers, born and raised in Cedar Rapids. Your homepage opens with "Exceptional Construction Services at Competitive Prices." It never says Cedar Rapids, and the twins don't show up until a paragraph below the service buttons.
 
 Your customers say the part your homepage skips.
 
@@ -21,7 +21,7 @@ Your customers say the part your homepage skips.
 >
 > — Cory H.
 
-So the demo opens with General Contractor in Cedar Rapids, IA, puts the brothers and the town in the first lines, and gives concrete and decks a page each, the two jobs your reviews describe most.
+So the demo opens with General Contractor in Cedar Rapids, IA, puts the brothers up top, and gives concrete and decks a page each, the jobs your reviews describe most.
 
 **The demo, page by page**
 
@@ -30,14 +30,14 @@ So the demo opens with General Contractor in Cedar Rapids, IA, puts the brothers
 *Why it matters:* This is what Google reads to learn who you are.
 
 **Current site problem**
-- The headline says nothing about Cedar Rapids or what kind of contractor you are. The city is only in the line at the top of the browser tab.
-- The line asking for a free estimate gives 319-533-2164, but the number at the top, the only one you can tap to call, is 319-900-5497.
-- The derecho story is only on your roofing page, so most visitors never see it.
+- The headline never says Cedar Rapids or what kind of contractor you are. The city is only in the browser tab.
+- The free estimate line gives 319-533-2164, but the only number you can tap to call is 319-900-5497.
+- The derecho story is only on your roofing page.
 
 **What the demo fixes**
 - A headline that says General Contractor in Cedar Rapids, IA.
-- Mike and Bryan, born and raised here, and the derecho, in the first screen.
-- One number, 319-900-5497, at the top and the bottom, and a short strip under the buttons with your license number and what makes you different.
+- Mike and Bryan, born and raised here, and the derecho, on the first screen.
+- One number, 319-900-5497, and a short strip under the buttons with your license number and what makes you different.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -47,14 +47,14 @@ Google and AI tools can only repeat what's written down. We get every service, c
 *Why it matters:* The work your customers write about most.
 
 **Current site problem**
-- The browser tab says "20 Years of Quality Work," while the page itself says "over a decade" and "decades of combined experience." Three different experience claims.
+- The browser tab says "20 Years of Quality Work," while the page says "over a decade."
 - The headline is just "Concrete." Cedar Rapids is in a line below it.
-- Nothing says what a Cedar Rapids winter does to a driveway, or what a pour day is like, even though your reviews describe crews cleaning up daily and protecting lawns.
+- Nothing says what winter does to a driveway or what a pour day is like, though your reviews do.
 
 **What the demo fixes**
-- A headline that says Concrete Contractor in Cedar Rapids, IA, with no years we can't pin down.
-- A section on why Cedar Rapids driveways crack and sink, and what to ask about the ground under a new one.
-- Pour-day details with customers' words beside them, and your free sealer offer stated plainly.
+- A headline that says Concrete Contractor in Cedar Rapids, IA, and no years we can't pin down.
+- Why Cedar Rapids driveways crack and sink, and what to ask about the ground.
+- Pour-day details with customers' words beside them, and your free sealer offer in plain words.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
@@ -64,14 +64,14 @@ Pages planned from what Google actually shows for each search, so every page tar
 *Why it matters:* The page that has to back up your Trex Pro Platinum claim.
 
 **Current site problem**
-- The browser tab calls you "Deck Builder #1 Best in Cedar Rapids," and the page says "Cedar Rapids #1 deck builder," with nothing behind it. The line under the headline reads "Cedar Rapid's Choice for Decks," missing the s.
-- Iowa winters never come up. Your reviews describe rebuilding a second-story deck and a hidden window under another, and the page covers none of it.
-- The boards and railings are on two other pages, in brand names like Transcend and Lineage that mean little to someone searching for a deck builder.
+- The browser tab says "Deck Builder #1 Best in Cedar Rapids," with nothing behind it. The line below reads "Cedar Rapid's Choice for Decks," missing the s.
+- Iowa winters never come up, though your reviews describe rebuilding a second-story deck.
+- Boards and railings sit on two other pages, under brand names like Transcend and Lineage.
 
 **What the demo fixes**
 - A headline that says Deck Builder in Cedar Rapids, IA, without a "#1" we can't back.
-- A section on freeze and thaw, footings and rebuild-or-resurface.
-- Boards and railings explained in plain words, with the jobs your reviews describe.
+- Freeze and thaw, footings and rebuild-or-resurface, covered.
+- Boards and railings in plain words, with the jobs your reviews describe.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn't think to mention still get their own pages.
@@ -81,14 +81,14 @@ A check of what your competitors offer, so services you didn't think to mention 
 *Why it matters:* It's where someone decides whether to call.
 
 **Current site problem**
-- Four numbers across your site: 319-900-5497, 319-533-2164, 319-550-7665 on Contact, and 319-348-3255 on the Trex page.
-- The Contact page opens with a pitch about "certifications and exclusive warranties" before it tells you what to do.
-- The towns you serve, Iowa City, Coralville and Hiawatha, appear only on your FAQ page.
+- Four different phone numbers across your site.
+- The Contact page opens with a pitch about "certifications and exclusive warranties."
+- Iowa City, Coralville and Hiawatha appear only on your FAQ page.
 
 **What the demo fixes**
 - One number, 319-900-5497, first, with your hours, Monday to Friday, 7 a.m. to 6 p.m.
 - Address, email and what to have ready.
-- Your towns named in one place.
+- Your towns in one place.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
@@ -123,14 +123,14 @@ Keeps working after launch
 
 On a short onboarding call, we'd confirm four things.
 
-- Your site lists 319-900-5497, 319-533-2164, 319-550-7665 and 319-348-3255. Which number should Cedar Rapids customers call?
-- Your homepage says "over 20 years" and "since 2005," while your concrete page says "over a decade." Which should every page and listing use?
-- Trex's and the Better Business Bureau's own pages wouldn't load when we checked. Can you send your current Trex Pro Platinum and BBB records?
-- Your About page promises a consultation the same week and an estimate the next, but a few reviews say a call went unanswered. What turnaround should we put in writing?
+- Your site lists 319-900-5497, 319-533-2164, 319-550-7665 and 319-348-3255. Which should Cedar Rapids customers call?
+- Your homepage says "over 20 years," your concrete page "over a decade." Which should we use?
+- Trex's and the Better Business Bureau's pages wouldn't load. Can you send your Trex Pro Platinum and BBB records?
+- Your About page promises a consultation the same week, but a few reviews say a call went unanswered. What turnaround should we put in writing?
 
 **Want a website like this for your business?**
 
-Book a call and we'll walk you through this demo, and you can tell us which of those four to fix first.
+Book a call and we'll walk you through it.
 
 **[Book a no-obligation call]** · Text us: (417) 373-2773
 
@@ -150,7 +150,7 @@ We were here for the 2020 derecho and worked on Cedar Rapids homes in the months
 
 ### A Person to Call, Not a Number
 
-On most jobs you'll often deal with Bryan or Mike directly, so there is someone who knows your project when you pick up the phone. We build with our own crews and bring in specialist subcontractors where a trade needs one, and we manage all of it so you don't have to call five companies.
+On most jobs you'll often deal with Bryan or Mike directly, so there is someone who knows your project when you pick up the phone. We bring in specialist subcontractors where a trade needs one, and we manage the whole job so you don't have to call five companies.
 
 > Bryan kept me informed on what was happening so there were no surprises.
 >
@@ -180,13 +180,13 @@ A garage or an addition rarely starts with drawings. It starts with an idea. We 
 ### What Stands Behind the Work
 
 - **License.** We're licensed and insured, and our license number is C103142.
-- **Trex Pro Platinum.** Trex is a composite decking brand. Platinum is, in Trex's own words, the highest designation it gives its installers.
+- **Trex Pro Platinum.** Trex is a composite decking brand. Platinum is the highest designation Trex offers its installers.
 - **GAF certified installers.** GAF makes roofing shingles, and a roof we install can come with GAF's own warranty.
 - **Better Business Bureau.** The BBB is a nonprofit that tracks how businesses handle customer complaints. We've been members every year we've participated.
 
 ### Roofs, Siding and Leaks That Run Deeper Than They Look
 
-A roof or siding job often turns up damage nobody could see from the ground, and a leak can start in one place and show up in another. We repair and replace roofs and siding, and we have masons on our own crews, so a chimney or a brick wall can be fixed in the same visit as the roof beside it.
+A roof or siding job often turns up damage nobody could see from the ground, and a leak can start in one place and show up in another. We repair and replace roofs and siding, and we also do masonry, so a chimney or a brick wall can be handled in the same project as the roof beside it.
 
 > Cutter dug into a very complex leak repair project that became way bigger than anyone had anticipated.
 >
@@ -236,7 +236,7 @@ Slope matters as much as depth. Water should run away from your foundation and g
 
 ### What a Driveway Replacement Looks Like
 
-The old driveway comes out, whether it's cracked concrete or worn asphalt. Customers have also had us replace an asphalt driveway with concrete. The ground is leveled, the rock base goes down, and wood forms set the shape and the slope. Then the concrete is poured, smoothed and cut with control joints, which are shallow grooves that give the slab a planned place to crack instead of a random one.
+The old driveway comes out, whether it's cracked concrete or worn asphalt. The ground is leveled, the rock base goes down, and wood forms set the shape and the slope. Then the concrete is poured, smoothed and cut with control joints, which are shallow grooves that give the slab a planned place to crack instead of a random one.
 
 Concrete keeps gaining strength for weeks after it's poured. A new slab is often ready for foot traffic in a day or two, and for cars after about a week, but the timing depends on the weather and the mix, so follow your installer's word on the day.
 
@@ -264,7 +264,7 @@ A concrete job leaves behind wood scraps, spilled rock and dirt on the street. C
 
 ### The Free Sealer
 
-Sealer soaks into the surface and helps keep out water and salt, which are what freeze-thaw and de-icing do the most damage with. The sealer we use is PROSOCO SingleStep, made for concrete. When you schedule your installation with us, we include it free of charge. Sealers often need a fresh coat every few years, so ask the installer what the manufacturer recommends for yours.
+Sealer soaks into the surface and helps keep out water and salt, which are what freeze-thaw and de-icing do the most damage with. The sealer we use is made for concrete. When you schedule your installation with us, we include it free of charge. Sealers often need a fresh coat every few years, so ask the installer what the manufacturer recommends for yours.
 
 ### Booking Your Pour
 
@@ -273,16 +273,6 @@ Most concrete in Cedar Rapids is poured from spring through fall, and spring fil
 > The estimate was done within a week and we were one of the first on the list this spring.
 >
 > — Deb W.
-
-### Questions About Concrete in Cedar Rapids
-
-**How long does a driveway take?** Driveway and step jobs are often done in two to three days, and the weather can change that.
-
-**Is sealer extra?** No. When you schedule your installation, we include the sealer free of charge.
-
-**Will new concrete crack?** Almost all concrete cracks eventually. Control joints and a solid base decide where and how much.
-
-**Can you replace my asphalt driveway?** Customers have had us replace one with concrete, so ask us about yours.
 
 ### Ready to Talk About Your Concrete?
 
@@ -308,7 +298,7 @@ We keep physical samples so you can see the colors and textures in person. A boa
 
 ### Which Boards Fit Your Household
 
-A lower-traffic deck with no pets or small children can do well with an entry-level board, and its cosmetic wear takes longer to bother you. A busy household with kids, dogs or frequent cookouts will usually be happier with a top-tier board, because it scratches less. If your deck sits in direct sun, Trex's top line is made to stay cooler underfoot during an Iowa summer.
+A lower-traffic deck with no pets or small children can do well with an entry-level board, and its cosmetic wear takes longer to bother you. A busy household with kids, dogs or frequent cookouts will usually be happier with a top-tier board, because it scratches less.
 
 ### What Iowa Winters Do to a Deck
 
@@ -320,7 +310,7 @@ The most common place for water damage is where the deck attaches to the house, 
 
 A deck frame in good shape can often stay. If only the boards, the railing and the stairs are worn, resurfacing may be all you need, and it usually costs far less than starting over. If the frame is soft, rotted or sized wrong for what it carries, the next layer of boards just hides the problem, and a rebuild is the honest answer.
 
-Old decks also hide surprises. A joist layout that doesn't suit new boards, or a window covered when the old deck was built, can change the plan once the old boards come off. That's why we look at the frame before giving a price you can rely on.
+Old decks also hide surprises. Framing that doesn't suit new boards, or a window covered when the old deck was built, can change the plan once the old boards come off. That's why we look at the frame before giving a price you can rely on.
 
 > Cutter Construction did an outstanding job tearing down and rebuilding our second-story deck. From start to finish, they were professional, fairly priced, and delivered exceptional craftsmanship.
 >
@@ -332,7 +322,7 @@ Most decks need a building permit, and the city inspects the footings and framin
 
 ### Railings, Stairs and Finishing Touches
 
-Railings change how a deck looks and how open it feels. Common choices are composite rails in black or white, aluminum with round or square balusters, steel mesh, glass panels for an open view, and cable. A cocktail rail adds a wide flat cap that holds a drink, which is handy if you entertain.
+Railings change how a deck looks and how open it feels. Common choices are composite rails in black or white, aluminum with round or square spindles, steel mesh, glass panels for an open view, and cable. A cocktail rail adds a wide flat cap that holds a drink, which is handy if you entertain.
 
 Another finish is a picture frame border, a ring of boards laid around the edge of the deck and along each step. It hides the cut ends of the boards and gives the deck a finished edge.
 
@@ -348,11 +338,7 @@ A roof over part of a deck keeps the sun and rain from shutting down the evening
 >
 > — David M.
 
-### Questions About Decks in Cedar Rapids
-
-**Do you build with wood?** Yes. Trex is our first choice for composite, and we can build in wood if that's what you want.
-
-**Can you put new boards on my old deck?** If the frame is sound, usually. We look at the frame first, so you know whether resurfacing or a rebuild is the better buy.
+### Two Quick Questions About Decks
 
 **Do composite boards get hot?** Dark colors in direct sun can run hot, and Trex's top line is made to stay cooler. Samples held in the sun tell you more than a catalog.
 
@@ -414,12 +400,14 @@ Call 319-900-5497 and we'll set up a time.
 
 ## Notes (not page copy)
 
+**Rebuild reason: Both.** SEO: the homepage headline never says Cedar Rapids, the concrete and deck headlines are bare or slogans, and the deck tab claims "#1" with nothing behind it. Design: the site is a dated WordPress/Elementor build with four phone numbers and thin service pages.
+
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
-- Strategy page: 1248 without quotes, 1269 with.
-- Home: 684 without quotes, 777 with.
-- Concrete: 837 without quotes, 943 with.
-- Decks: 867 without quotes, 937 with.
-- Contact: 256 without quotes, 289 with.
+- Strategy page: 1085 without quotes, 1107 with.
+- Home: 680 without quotes, 781 with.
+- Concrete: 750 without quotes, 861 with.
+- Decks: 798 without quotes, 872 with.
+- Contact: 264 without quotes, 299 with.
 
 **Credentials and sources** (none confirmed on a certifier's own site; each is the business's claim, stated as theirs)
 - License C103142: footer on every page. Not looked up. Home only.
