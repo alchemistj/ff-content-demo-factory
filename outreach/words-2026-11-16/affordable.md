@@ -20,13 +20,13 @@ Your reviews keep saying you beat the other quotes, finished in a day and left t
 >
 > — Jon V.
 
-Your site makes the price promise too, but states its condition far down the page. So we built five pages: homepage, roof replacement, asphalt shingle roofing, contact and this one. Metal and gutters are on the homepage.
+Your site makes the price promise too, but states its condition far down. So we built five pages: homepage, roof replacement, asphalt shingle roofing, contact and this one. Metal and gutters are on the homepage.
 
 ### The demo, page by page
 
 #### 1. Homepage
 
-*Why it matters:* It's the page most people see first, and it carries your price guarantee.
+*Why it matters:* Most people see it first, and it carries your price guarantee.
 
 **Current site problem**
 - The top says "best prices, guaranteed" with no condition. "As long as someone has similar credentials" appears further down.
@@ -73,7 +73,7 @@ View page
 **What the demo fixes**
 - Duration and Oakridge explained, with wind ratings and colors.
 - Each warranty said once.
-- Four reviews beside color, nailing and install details.
+- Four reviews beside color and install details.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
@@ -86,7 +86,7 @@ View page
 
 **Current site problem**
 - The estimate form has seven required fields. The roof replacement page's form asks for name and phone.
-- Two phones and two emails, one AOL, with no word on who answers which.
+- Two phones, two emails (one AOL), no word on who answers which.
 - The headline, "Get Your Free Roof Estimate", never says Fort Wayne or your name.
 
 **What the demo fixes**
@@ -168,7 +168,7 @@ Buttons: Call (260) 402-3549 / Get a Free Estimate
 
 Being family owned allows us to keep our costs low and pass the savings on to you. We work to avoid inflated prices and to keep our pricing fair and honest.
 
-Two quotes for the same roof can land far apart, and the usual reason is that they cover different work: a different shingle line, a different amount of decking, or a different ventilation plan. When you hold quotes side by side, check that each one describes the same job.
+Two quotes for the same roof can land far apart, and the usual reason is that they cover different work: a different shingle line, a different amount of roof-board repair, or a different ventilation plan. When you hold quotes side by side, check that each one describes the same job.
 
 > Even with the same materials quoted to me by three other roofing companies, they had the lowest price by thousands of dollars.
 >
@@ -188,7 +188,7 @@ We are fully licensed and insured, and have been for over a decade. When you cal
 
 We are BBB Accredited with an A+ rating. BBB says accreditation shows a business operates honestly and with integrity.
 
-Owens Corning's contractor directory for Fort Wayne lists us as a Preferred Contractor. Owens Corning makes the shingles we install most.
+Owens Corning's contractor directory for Fort Wayne lists us as a Preferred Contractor.
 
 ### Roof Replacement
 
@@ -425,7 +425,7 @@ If you'd rather write, send your name, your phone number and a few words about t
 
 ### What Happens After You Call
 
-We set a time and come out to inspect your roof in person. We walk you through what we find and give you an honest quote on the spot, with no pressure.
+We set a time and come out to inspect your roof in person. We usually walk you through what we find and can often give you an honest quote on the spot, with no pressure.
 
 > Nick was very professional, explained the process and answered all my questions without a long sales pitch. Install day went exactly as he described.
 >
