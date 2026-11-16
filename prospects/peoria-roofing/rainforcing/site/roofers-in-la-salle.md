@@ -1,6 +1,6 @@
 # https://www.rainforcingroofing.com/roofers-in-la-salle
 
-- Fetched: 2026-11-16T04:01:01.112Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:05:28.960Z (rendered in a real browser)
 - HTTP: 200
 - Title: Top 1 Roofers in La Salle, IL [Get Your Storm Restoration Quote]
 - H1: Secure Your Home with Trusted Roofers in La Salle, IL

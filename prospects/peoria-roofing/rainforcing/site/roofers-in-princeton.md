@@ -1,6 +1,6 @@
 # https://www.rainforcingroofing.com/roofers-in-princeton
 
-- Fetched: 2026-11-16T04:01:04.278Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:05:32.619Z (rendered in a real browser)
 - HTTP: 200
 - Title: Top Roofers in Princeton | #1 Storm Damage Experts (Free Audit)
 - H1: Your Reliable Choice for Roofers in Princeton, IL

@@ -1,6 +1,6 @@
 # https://www.rainforcingroofing.com/financing
 
-- Fetched: 2026-11-16T04:02:02.547Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:06:26.551Z (rendered in a real browser)
 - HTTP: 200
 - Title: Flexible Roof & Exterior Financing in Peoria, IL | $0-down options GoodLeap Partnership
 - H1: Flexible Roof & Exterior Financing in Peoria, IL

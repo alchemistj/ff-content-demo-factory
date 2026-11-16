@@ -14,13 +14,13 @@ Your site shapes your Google ranking, what AI says about your business, and how 
 
 ### Why we built this site
 
-Your Google reviews say the same thing again and again: when a furnace or air conditioner stops, someone shows up fast, finds what failed and explains it. One put the first part this way:
+Your Google reviews say it again and again: when a furnace or air conditioner stops, someone shows up fast, finds what failed and explains it. One put the first part this way:
 
 > Called this morning at 9:15 and by 9:35, James had arrived to work on our furnace.
 >
 > — Brittany W.
 
-Your homepage never says how fast you come or that you explain the problem. So the demo starts with the homeowner's call. It has five pages: this one, homepage, heating and AC repair, heating and AC replacement and contact.
+Your homepage never says how fast you come or that you explain the problem. So the demo starts with the homeowner's call, across five pages: this one, homepage, heating and AC repair, replacement and contact.
 
 ### The demo, page by page
 
@@ -28,15 +28,15 @@ Your homepage never says how fast you come or that you explain the problem. So t
 
 *Current site problems*
 
-- Your top headline reads "What You Should Know About Cool Concepts" and your browser tab ends "Services Nebraska". Neither says Lincoln or heating, so searches for them have nothing to match.
-- Its one reason to choose you is aimed at restaurants and businesses, and no review appears, so a homeowner with a dead furnace has no proof.
-- A video box at the top showed an error message when we loaded it, and the page runs 222 words, so there is little for Google to read.
+- Your top headline is "What You Should Know About Cool Concepts" and your browser tab ends "Services Nebraska". Neither says Lincoln or heating.
+- Its one reason to choose you is aimed at restaurants and businesses, and no review appears, so a homeowner has no proof.
+- A video box at the top showed an error message, and the page runs 222 words.
 
 *What the demo fixes*
 
 - A headline that reads "HVAC Company in Lincoln, NE — Cool Concepts".
-- A homeowner section first, with reviews that show how fast you come. Restaurants and businesses get their own sections.
-- No video box, and a full-length page that covers what you do and who calls you.
+- Homeowners first, with reviews that show how fast you come. Businesses get their own sections.
+- No video box, and a full-length page.
 
 **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
@@ -45,14 +45,14 @@ Your homepage never says how fast you come or that you explain the problem. So t
 *Current site problems*
 
 - Your browser tab reads "Appliance Repair Services | Refrigeration Repair NE" and the page has no headline, so nothing says AC or furnace repair in Lincoln.
-- The "Residential" section repeats the "Prevention" paragraph word for word and talks about commercial kitchen appliances, so a homeowner reads restaurant copy.
-- No review, no word on how fast you come and nothing on what a visit includes, so a worried homeowner gets no answer on speed.
+- The "Residential" section repeats the "Prevention" paragraph word for word and talks about commercial kitchens.
+- No review, no word on how fast you come and nothing on what a visit includes.
 
 *What the demo fixes*
 
 - A headline that reads "Heating and AC Repair in Lincoln, NE — Cool Concepts".
-- A page written for homeowners. Commercial kitchens are covered on the homepage.
-- Five reviews matched to the repair, what usually fails, what to check before you call and what a visit looks like.
+- A page written for homeowners.
+- Five reviews, what usually fails, what to check before you call and what a visit looks like.
 
 **A full build would also add:** Call and form tracking that shows which pages and towns your leads come from.
 
@@ -60,15 +60,15 @@ Your homepage never says how fast you come or that you explain the problem. So t
 
 *Current site problems*
 
-- The page runs 241 words with no headline, and the browser tab reads "Replacement - Cool Concepts". It never names a furnace, an air conditioner, a heat pump or Lincoln.
+- The page runs 241 words with no headline, and its browser tab reads "Replacement - Cool Concepts". It never names a furnace, an air conditioner or Lincoln.
 - It never says when to repair and when to replace. That answer is one line on your FAQ page.
-- Its only proof is a 2009 case study on another page, which shows the technician as "1234 James", and no review.
+- Its only proof is a 2009 case study on another page, which shows the technician as "1234 James".
 
 *What the demo fixes*
 
 - A headline that reads "Heating and AC Replacement in Lincoln, NE — Cool Concepts".
-- A repair-or-replace section, with heat pumps, sizing and what install day looks like.
-- Four reviews of real replacements, and the 2009 family's story on the page.
+- A repair-or-replace section, with heat pumps, sizing and install day.
+- Four reviews of real replacements, and the 2009 family's story.
 
 **A full build would also add:** A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
 
@@ -76,21 +76,21 @@ Your homepage never says how fast you come or that you explain the problem. So t
 
 *Current site problems*
 
-- The "Request An Estimate" button goes to a page that doesn't exist, so a visitor ready to ask hits a dead end.
-- Two email addresses: coolconceptsne@gmail.com at the top and coolconcepts@neb.rr.com in the contact block. Customers can't tell which reaches you.
-- The form asks "How did you find us?", not what is wrong or whether it is a home or a business, and no hours are listed.
+- The "Request An Estimate" button goes to a page that doesn't exist.
+- Two emails, coolconceptsne@gmail.com at the top and coolconcepts@neb.rr.com below.
+- The form asks "How did you find us?", not what is wrong or whether it is a home or a business.
 
 *What the demo fixes*
 
 - A call button and a form that both work.
 - One email address, next to your phone number and street address.
-- A form that asks for the service, home or business, and what is going on.
+- A form that asks the service, home or business, and what is going on.
 
 **A full build would also add:** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
 
 ### What a full build includes
 
-This demo is the first five pages. A full build starts by pulling every service you offer, and everything that makes you different, out of your head and onto the site, so nothing you do is left for Google or a customer to guess. About 80% of visitors are on a phone, which is why the 91 speed score below matters.
+This demo is the first five pages. About 80% of visitors are on a phone, which is why the 91 speed score below matters.
 
 **Gets you found**
 
@@ -123,9 +123,9 @@ This demo is the first five pages. A full build starts by pulling every service 
 
 ### What we'd confirm with you
 
-1. **Hours and 24/7.** Your homepage says "24/7 service" and your repair page says "our 24/7 response team", both about businesses. No page gives hours or says if homes get it. Who answers at night? We left hours and 24/7 for homes off.
-2. **Dealer status.** Your repair page says "authorized Daikin dealer" and "local Amanda Heating and Air representative", and every page ends "We are the Official Dealer of" and stops. Which brands are right? We used Daikin as your claim and left Amanda off.
-3. **Email, James and payment plans.** Which email should customers use? We used coolconceptsne@gmail.com. Is the "1234 James" in your case study a technician or the owner? Is the payment plan in that story still offered? We wrote it as "ask about a payment plan".
+1. **Hours and 24/7.** Your homepage says "24/7 service" and your repair page "our 24/7 response team", both about businesses. No page gives hours. Do homes get 24/7?
+2. **Dealer status.** Your repair page says "authorized Daikin dealer" and "local Amanda Heating and Air representative", and every page ends "We are the Official Dealer of" and stops. Which is right? We used Daikin and left Amanda off.
+3. **Email, James and payment plans.** Which email do customers use? We used coolconceptsne@gmail.com. Is "1234 James" in your case study a technician or the owner? Is that story's payment plan still offered?
 
 ### Want a website like this for your business?
 
@@ -161,7 +161,7 @@ You leave knowing which part failed, what each option would involve, and which o
 
 ### Replacement and installation
 
-When a repair no longer makes sense, we order and install a new furnace, air conditioner or heat pump, for a home or a business. We go through the options with you before you decide, so you know what you are choosing and why. A [replacement](/heating-ac-replacement-lincoln-ne/) usually starts with a visit to look at the system you have now.
+When a repair no longer makes sense, we order and install a new furnace, air conditioner or heat pump, for a home or a business. We go through the options with you before you decide, so you know what you are choosing and why. Starting with [replacement](/heating-ac-replacement-lincoln-ne/) options, not a sales pitch, is how we work.
 
 ### Daikin and other brands
 
@@ -179,7 +179,7 @@ Heating and cooling equipment does best with a visit every year, and our service
 
 We take on the jobs around your system too. A smart thermostat only helps if its settings and wiring match your furnace and air conditioner, so we set it up to work with them. Dryer vents collect lint, and a clogged vent makes a dryer work harder and raises the risk of a fire, so we clean and replace them, and we check where the vent exits the house. We also connect gas dryers, which means a proper gas connection and a check for leaks.
 
-> They’re very knowledgeable with the Internet of things devices. I have a nest thermostat and they were able to help make sure it was configured correctly with my HVAC unit.
+> They're very knowledgeable with the Internet of things devices. I have a nest thermostat and they were able to help make sure it was configured correctly with my HVAC unit.
 >
 > — Christopher C.
 
@@ -237,11 +237,11 @@ When your furnace or air conditioner stops, we find what failed and explain it i
 
 ### When the system stops
 
-Furnaces and air conditioners tend to fail when they run the most, on the coldest nights and the hottest afternoons. A house that stays far too cold or too hot for long is a health risk for babies, older adults and pets, so call as soon as you know the system isn't keeping up. Tell us what you see and hear: no air, warm air, no heat, a noise, a smell, water near the unit. That description helps us decide what to bring.
+A house that stays far too cold or too hot for long is a health risk for babies, older adults and pets, so call as soon as you know the system isn't keeping up. Tell us what you see and hear: no air, warm air, no heat, a noise, a smell, water near the unit. That description helps us decide what to bring, and it often tells us where to start.
 
 ### Check these before you call
 
-Two minutes of checking sometimes ends the problem. Make sure the thermostat is set to heat or cool, with the setting above or below the room temperature, and that its batteries are fresh. Look at your breaker panel for a tripped breaker, and at the switch on or near the furnace, which looks like a light switch and is sometimes turned off by accident. Check the air filter: a filter packed with dust restricts airflow, and restricted airflow can shut a furnace down or freeze the indoor coil of an air conditioner. If all of that looks right, leave the panels closed and call us.
+Two minutes of checking sometimes ends the problem. Make sure the thermostat is set to heat or cool, with the setting above or below the room temperature, and that its batteries are fresh. Look at your breaker panel for a tripped breaker, and at the switch on or near the furnace, which looks like a light switch and is sometimes turned off by accident. Check the air filter: a filter packed with dust restricts airflow, and restricted airflow can shut a furnace down or freeze the indoor part of an air conditioner. If all of that looks right, leave the panels closed and call us.
 
 ### Gas smell and carbon monoxide: safety first
 
@@ -249,7 +249,7 @@ If you smell gas, leave the house and call your gas utility or 911 from outside.
 
 ### What usually fails in an air conditioner
 
-The outdoor unit hums but the fan or compressor doesn't start: a worn capacitor is often the cause, and a worn contactor, the electrical switch that powers the unit, is another. A failed condenser fan motor leaves the unit running hot and cooling poorly. Cooling that is weak but not absent often points to a refrigerant leak, because an air conditioner doesn't use up refrigerant. Water near the indoor unit is often a clogged condensate drain, and many systems shut the air conditioner off when that drain backs up.
+If the outdoor unit hums but the fan or compressor doesn't start, a worn capacitor is often the cause. A capacitor is a small part that gives the motors the jolt they need to start. A failed fan motor in the outdoor unit leaves the system running hot and cooling poorly. Weak cooling often points to a refrigerant leak, because an air conditioner doesn't use up refrigerant. Water near the indoor unit is often a clogged drain line, the pipe that carries away the moisture the system pulls from your air, and many systems answer a clogged line by shutting the air conditioner off.
 
 > AC went out, hottest day of the year of course. He was at my house within 2 hours after my call. AC was back on in 15 minutes.
 >
@@ -257,11 +257,11 @@ The outdoor unit hums but the fan or compressor doesn't start: a worn capacitor 
 
 ### What usually fails in a furnace
 
-A furnace that starts, lights and shuts off within seconds often has a dirty flame sensor. One that clicks and never lights often has a worn igniter, a part that wears out with use. A blower that won't run, or runs weakly, is often a failed motor or capacitor. A furnace that overheats and shuts down usually has restricted airflow from a dirty filter or blocked vents. High-efficiency furnaces also drain water, and a clogged drain or an iced or blocked outside vent can stop them in a hard freeze.
+A furnace that lights and shuts off within seconds often has a dirty flame sensor, the small rod that confirms the burner is lit. One that clicks and never lights often has a worn igniter, the part that lights the burner. A blower that won't run, or runs weakly, is often a failed motor. A furnace that overheats and shuts down usually has restricted airflow from a dirty filter or blocked vents. High-efficiency furnaces also drain water, and a clogged drain or an iced-over outside vent pipe can stop them in a hard Lincoln freeze.
 
 ### What a repair visit looks like
 
-We find the failed part and tell you what it is. Then we lay out your options: repair now, plan to replace later, or replace the system. If the part isn't on the truck, we pick it up or order it. When the work is done, we clean up after ourselves.
+We find the failed part and tell you what it is. Then we lay out your options: repair now, plan to replace later, or replace the system. When a part isn't on the truck, we often pick it up or order it. When the work is done, we usually clean up after ourselves.
 
 > In 100 degree heat and a broken ac, we called Cool Concepts on a Friday night at 7pm and they came right on time at 10am on Saturday morning--despite being booked up for the day. He was able to solve the issue quickly and was extremely easy to work with (and even took his shoes off when he came inside.)
 >
@@ -269,7 +269,7 @@ We find the failed part and tell you what it is. Then we lay out your options: r
 
 ### When a repair is the right call
 
-A repair usually makes sense when one part has failed, such as a capacitor, igniter, sensor or motor, and the rest of the system has years left. Older doesn't mean worn out. When one family's older air conditioner failed in a summer heat wave, we arrived the next morning and had it repaired that same hour. If repairs start to add up, our replacement page covers how to decide.
+A repair usually makes sense when one part has failed, such as a capacitor, motor, sensor or igniter, and the rest of the system has years left. Older doesn't mean worn out. When one family's older air conditioner failed in a summer heat wave, we arrived the next morning and had it repaired that same hour. When repairs keep coming back or the failed part is the compressor, we'll tell you if replacing would cost less over time.
 
 > Called on Sunday - was here on Monday to fix the air! Got it fixed in about 30 minutes. James is very nice, and let us know the different options we could do.
 >
@@ -321,7 +321,7 @@ When repairs stop making sense, we help you choose the right system, order it an
 
 ### Repair or replace?
 
-Age is the first thing we look at. Air conditioners commonly last 12 to 15 years, gas furnaces often 15 to 20 and heat pumps 10 to 15, though upkeep and use change that. When a system is in its last years and a repair would cost about half of a new one, or you keep repairing it, replacing usually makes more sense. Air conditioners built before about 2010 often use R-22 refrigerant, which is no longer produced, so a refrigerant leak on one is often expensive to fix.
+Age is the first thing we look at. Air conditioners commonly last 12 to 15 years, gas furnaces often 15 to 20 and heat pumps 10 to 15, though upkeep and use change that. When a system is in its last years and a repair would cost about half of a new one, or you keep repairing it, replacing usually makes more sense. Air conditioners built before about 2010 often use R-22, an older refrigerant that is no longer produced, so a leak on one is often expensive to fix.
 
 ### Your options, and your decision
 
@@ -333,15 +333,15 @@ A free estimate puts the choices side by side: repair using parts for your curre
 
 ### Sizing a system to your house
 
-A new system should fit your house, not just match the old unit's size. A proper sizing looks at your square footage, insulation, windows, ductwork and how much sun the house gets. An air conditioner that is too large often cools the air quickly and shuts off before it removes much humidity, which leaves rooms damp and cool. One that is too small runs nearly nonstop on hot days. Leaky or undersized ducts can hold back even a well-sized system, so we look at them too.
+A new system should fit your house, not just match the old unit's size. A proper sizing looks at your square footage, insulation, windows, ductwork and how much sun the house gets. An air conditioner that is too large often cools the air quickly and shuts off before it removes much humidity, which leaves rooms damp and cool. One that is too small runs nearly nonstop on hot days. Leaky or undersized ducts can hold back even a well-sized system, so they are worth checking before you spend on new equipment.
 
 ### Efficiency ratings
 
-Air conditioners carry a SEER2 rating and furnaces an AFUE rating, and higher numbers mean less energy for the same comfort. Furnaces built decades ago often turn only 60 to 70 percent of their fuel into heat, and new gas furnaces are rated as high as 97 percent. A higher rating costs more up front and pays back over the years, and how fast depends on how much you run the system. Insulation, sealed windows and thermostat habits move your bill too, so the equipment is only part of it.
+Efficiency ratings are printed on every new unit. Air conditioners carry a SEER2 number, and furnaces an AFUE percentage, which is how much of the fuel becomes heat. Higher is better in both. Furnaces built decades ago often turn only 60 to 70 percent of their fuel into heat, and new gas furnaces are rated as high as 97 percent. A higher rating costs more up front and pays back over the years, and how fast depends on how much you run the system. Insulation, sealed windows and thermostat habits move your bill too.
 
 ### Heat pumps
 
-A heat pump heats and cools with one outdoor unit. Many Nebraska homes pair one with a gas furnace as backup for the coldest days, and newer cold-climate models handle low temperatures better than older ones. We replace heat pumps, and we help you work out which setup fits your house.
+A heat pump heats and cools with one outdoor unit. Many Nebraska homes keep a gas furnace as backup for the coldest days, and newer models built for cold weather handle low temperatures better than older ones. We replace heat pumps, and we help you work out which setup fits your house.
 
 > James came out to check out our broken heat pump (we knew it was going to need replaced). He took the panel off and explained what went wrong in a way that I could understand. He had a crew out to install a new one right away.
 >
@@ -353,7 +353,7 @@ Heated winter air in Nebraska often runs dry, and a whole-house humidifier adds 
 
 ### Install day
 
-A standard swap, with the new unit set where the old one was, often takes a day. New ductwork, a new location or an added humidifier takes longer. When one family's air conditioner failed in a summer heat wave in 2009, we ordered the unit and installed it the very next day. We remove the old equipment, set and connect the new, test it and show you how it runs.
+A standard swap, with the new unit set where the old one was, often takes a day. New ductwork, a new location or an added humidifier takes longer. When one family's air conditioner failed in a summer heat wave in 2009, we ordered the unit and installed it the very next day. The old equipment comes out, the new equipment is set and connected, and the system is tested before the crew leaves.
 
 > Great service, Great price. Replaced furnace, A/C, whole house humidifier and air purifier. In and out, quick, no mess left behind. Very courteous techs.
 >
@@ -361,7 +361,7 @@ A standard swap, with the new unit set where the old one was, often takes a day.
 
 ### What changes the price
 
-Size and efficiency set most of it, then the equipment's features, such as a two-stage or variable-speed blower. Ductwork repairs, a new location, or a tight space to work in add to it. Replacing the furnace and air conditioner together costs more at once, and often costs less than two separate visits.
+Size and efficiency set most of it. Ductwork repairs, a new location for the equipment, or a tight space to work in add to it. Replacing the furnace and air conditioner together costs more at once, and often costs less than two separate visits. We have worked out payment plans for customers who needed a new system on a set budget, so ask about one when you get your estimate.
 
 ### Have this ready for your estimate
 
@@ -409,7 +409,7 @@ Email: coolconceptsne@gmail.com
 
 ### Request a quote
 
-Use the form for a quote or a job that can wait. Give us your name, phone number and email, then choose:
+Use the form for a quote or a job that can wait. Give us your name, phone number, email and, if you can, your address, then choose:
 
 - The service: heating, cooling, replacement, yearly service, or commercial kitchen equipment
 - Whether it is for a home or a business
@@ -426,7 +426,7 @@ Use the form for a quote or a job that can wait. Give us your name, phone number
 
 ### Where we work
 
-We come to you in Lincoln and the towns around it. Tell us your town when you call or write, and we'll confirm we cover it.
+We come to you in Lincoln and the towns around it. Tell us your town when you call or write, and we'll confirm we cover it. If you run a restaurant or other business, say so when you call, and tell us which equipment is down.
 
 ## Notes (not page copy)
 
