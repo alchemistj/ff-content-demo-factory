@@ -747,6 +747,18 @@
       "pulledAt": "2026-11-09T02:09:21.938Z"
     },
     {
+      "slug": "peoria-plumbing-gk",
+      "name": "G/K Brothers Plumbing & HVAC",
+      "placeId": "ChIJgXvZTFo9G4YR8_fsYd6BalM",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 104,
+        "withText": 71,
+        "ratingOnly": 4
+      },
+      "pulledAt": "2026-11-16T04:16:44.026Z"
+    },
+    {
       "slug": "pioneer-peoria",
       "name": "Pioneer Roofing",
       "placeId": "ChIJbVmv0ztZCogR4RO0wHMGcZg",

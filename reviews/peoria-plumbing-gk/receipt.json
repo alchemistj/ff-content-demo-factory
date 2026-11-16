@@ -1,0 +1,28 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "peoria-plumbing-gk",
+  "request": {
+    "mapsUrl": "place_id:ChIJgXvZTFo9G4YR8_fsYd6BalM",
+    "maxReviews": 75,
+    "expectedPhone": "3092205100",
+    "expectedName": "Brothers"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "Oe6fU4pDON9Vmej06",
+    "datasetId": "0UwTRpXFM706tqPr2",
+    "attempts": 1,
+    "usageUsd": 0.042699999999999995
+  },
+  "counts": {
+    "listingTotal": 104,
+    "withText": 71,
+    "ratingOnly": 4
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T04:16:12.504Z",
+  "finishedAt": "2026-11-16T04:16:44.026Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43803035020"
+}
