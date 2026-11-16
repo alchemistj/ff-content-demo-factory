@@ -13,7 +13,7 @@ We built 4Ever the first five pages of that kind of website. More on that below.
 
 **Why we built this site**
 
-Travis is named in 37 of 66 written Google reviews. People say he tells them the truth, even when it costs a sale.
+People say Travis tells them the truth, even when it means they don't need a new roof.
 
 > one of the most honest business owners that I have ever encountered
 >
@@ -21,7 +21,7 @@ Travis is named in 37 of 66 written Google reviews. People say he tells them the
 
 Your homepage opens with "A metal roof is a one-time decision. Here is how to make it well." Nothing there says Fort Wayne or Travis.
 
-So the demo opens with Metal Roofing Contractor in Fort Wayne, IN, and gives standing seam and interlocking metal shingles a page each. Here's the details:
+So the demo opens with Metal Roofing Contractor in Fort Wayne, IN, and gives standing seam and interlocking metal shingles a page each.
 
 **The demo, page by page**
 
@@ -32,12 +32,12 @@ So the demo opens with Metal Roofing Contractor in Fort Wayne, IN, and gives sta
 **Current site problem**
 - The headline never says Fort Wayne.
 - "Travis still measures roofs" is on the About page, not here.
-- It says "350 reviews, 4.90." Google shows 299 at 4.8.
+- It says "350 reviews, 4.90." Google shows a different count and rating.
 
 **What the demo fixes**
 - A headline that says Metal Roofing Contractor in Fort Wayne, IN.
 - Travis up front: he still measures roofs.
-- Credentials, warranty and Google rating stated plainly, once.
+- Your lifetime warranty in plain words, and what the next owner gets if you sell.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -48,13 +48,13 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 **Current site problem**
 - The headline never says Fort Wayne.
-- Noise, pitch and hail, the questions callers ask most, sit behind taps.
+- Noise, pitch and hail sit behind taps.
 - "The system I trust most" never says who "I" is, and no review sits beside it.
 
 **What the demo fixes**
 - A headline that says Standing Seam Metal Roofing in Fort Wayne, IN.
 - Noise, pitch and hail answered in the open.
-- What a Fort Wayne winter does to a roof, with a review beside it.
+- A Fort Wayne winter section, in "we" voice, with customers' words beside the roof.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
@@ -65,13 +65,13 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 **Current site problem**
 - No Fort Wayne in the headline.
-- Six product cards use names like ArrowLine and Infiniti. Nobody searches those.
+- Six product cards use names like ArrowLine and Infiniti, which mean little in a search.
 - Two common questions sit behind taps.
 
 **What the demo fixes**
 - A headline that says Interlocking Metal Shingle Roofing in Fort Wayne, IN.
 - Two looks, slate and wood shake, with the makers named.
-- Both answered in plain text.
+- Stone-coated steel and old-shingle questions, answered in plain text.
 
 **A full build would also add**
 Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
@@ -116,11 +116,12 @@ Keeps working after launch
 - Your site watched around the clock for downtime.
 - Google indexing and your Google visibility checked every day.
 - Menus, contact links and forms tested in a real browser twice a day.
-- New team members, booking systems and new services, updated for you
 - Updated when Google and AI tools change how they read websites
 - You never have to know what to ask for
 
 **What we'd confirm with you**
+
+On a short onboarding call, we'd confirm four things.
 
 - Your buttons dial (866) 504-2777, Fort Wayne lists (260) 234-2252 and Noblesville (317) 765-0508. Which number should Fort Wayne customers call?
 - Your About page says no windows, siding or gutters, but reviews mention all three. Which is right?
@@ -151,13 +152,13 @@ I started 4Ever Metal Roofing in 2016, after years in the trade, and I still mea
 
 ### One Trade, Since 2016
 
-Doing one thing is how the details get learned, and the details decide whether a metal roof lasts. We've put on nearly 2,000 metal roofs since 2016, working from offices in Fort Wayne and Noblesville.
+Doing one thing is how the details get learned, and the details decide whether a metal roof lasts. We've put on nearly 2,000 metal roofs since 2016, from our home base in Fort Wayne and a second office in Noblesville, across Indiana, Ohio and Michigan.
 
 We explain every roof the same way: what it is, what it does well, where it fails, who it fits and who it doesn't. If you decide against metal, or against us, you'll still have made the decision with the full picture. That's the point.
 
 ### We'll Tell You Before We Quote If Metal Is the Wrong Roof
 
-Some houses shouldn't get a metal roof. If you plan to sell in the next few years, metal likely won't earn back its cost, because buyers don't reliably pay extra for it. If the goal is the lowest price that passes inspection, a screw-down metal roof costs less, and you should know that. If we think metal is wrong for your house, we'll say so on the phone, before anyone talks numbers.
+Some houses shouldn't get a metal roof. If you plan to sell in a couple of years, metal is probably not the right fit, because a metal roof pays you back over decades, not a few years. If the goal is the lowest price that passes inspection, a screw-down metal roof costs less, and you should know that. If we think metal is wrong for your house, we'll say so on the phone, before anyone talks numbers.
 
 > He was very honest and told us that we're not currently in need of a new roof.
 >
@@ -174,7 +175,7 @@ Some houses shouldn't get a metal roof. If you plan to sell in the next few year
 
 ### A Second Look at a Roof Someone Else Installed
 
-If you have doubts about a metal roof another company put on, ask us to look at it. That visit usually ends with photos and a written report of what we found.
+If you have doubts about a metal roof another company put on, ask us to look at it. That visit usually ends with photos and a written report of what we found. The most useful part is the sorting: which problems will cause trouble down the road and which are only cosmetic, so you know what is worth pushing the installer on and what to let go.
 
 > More importantly, he took the time to explain which issues could potentially cause problems down the road and which were primarily cosmetic.
 >
@@ -188,7 +189,7 @@ The paint warranty is a separate document from the manufacturer. Read its color-
 
 ### Install Day
 
-Most installs take one to three days, and we protect the landscaping and driveway and sweep the property for nails before we leave.
+Most installs take one to three days, and we protect the landscaping and driveway while the crew works. When the roof is done, the crew walks the yard, the flower beds, the driveway and the street edge with a rolling magnet. An old roof coming off scatters nails and a new metal roof adds offcuts and screws, so one pass is never enough, and we go over it more than once.
 
 > Our roof was completed in one day, and not a single piece of scrap left behind, could not tell that anyone was even there.
 >
@@ -196,25 +197,17 @@ Most installs take one to three days, and we protect the landscaping and drivewa
 
 ### Price and Financing
 
-We don't publish prices, because two houses the same size can land far apart. Slope matters, and so does how cut-up the roof is, since every valley, chimney and wall is detail work. So do repairs to the wood under the old roof, and the system and paint you choose. You get a written quote after we measure.
+We don't publish prices, because two houses the same size can land far apart. Slope matters, and so does how cut-up the roof is, since every valley, chimney and wall is detail work. So do repairs to the wood under the old roof, and the system and paint you choose.
 
 We offer financing through third-party lenders, including zero-down programs for qualified homeowners. The terms, rates and approval are the lender's, and we won't push you toward it. If the rate, any promotional period and any penalty for paying early aren't in writing, don't sign.
 
-### Where We Work
+### Questions Before You Call
 
-Fort Wayne is home base, at 1911 Production Rd. Our second office is in Noblesville. We install across Indiana, Ohio and Michigan, within roughly a 90-minute drive of either office. Nearby towns include New Haven, Auburn, Columbia City, Huntington, Bluffton, Decatur and Kendallville.
+**How long does a metal roof last?** A concealed-fastener roof with little maintenance can often last 50 to 70 years before it needs paint, and a screw-down roof with yearly maintenance often lasts 30 to 35. Asphalt tends to last 15 to 20, which is why people who have re-roofed twice start asking about metal.
 
-### How Long Does a Metal Roof Last?
+**Will a metal roof be too heavy for my house?** No. Local building codes allow at least two layers of roofing, and even our heaviest metal roof weighs about half what asphalt shingles do per square foot, so it adds no stress to the structure.
 
-A properly installed metal roof often lasts 50 years or more, which is why people who have re-roofed asphalt twice tend to ask about it.
-
-### Will My Homeowners Association Allow Metal?
-
-Many do approve modern metal roofing. We can provide product documentation and samples for the approval.
-
-### Is a Metal Roof Safe in a Thunderstorm?
-
-Metal doesn't attract lightning, and steel doesn't burn, which adds fire safety if a strike does happen.
+**Is a metal roof safe in a thunderstorm?** A metal roof doesn't change the odds of a lightning strike. Height and location decide that. If one hits, steel spreads the energy across the panel and doesn't burn, where wood shake and asphalt can ignite. A metal roof is not a lightning protection system, though.
 
 ### Talk It Through
 
@@ -234,13 +227,15 @@ Mechanically seamed panels are the kind we install, and we call ours 4Ever Armor
 
 ### What a Fort Wayne Winter Asks of a Roof
 
-Northeast Indiana freezes and thaws over and over between December and March. Snow melts against the warm part of the roof, runs to the cold edge and refreezes there, and the water can back up under the roofing. Metal doesn't make that impossible, and anyone who says it does is selling something.
+Northeast Indiana often freezes and thaws over and over between December and March. Snow melts against the warm part of the roof, runs to the cold edge and refreezes there, and the water can back up under the roofing. Metal doesn't make that impossible.
 
-What a mechanically seamed roof changes is what the backed-up water finds. There are no horizontal seams and no exposed fasteners for it to get past. The locked seam also handles standing water, snow and ice better than a snapped one. Snow often lets go of a metal roof all at once, so we talk through where snow guards belong above doors, walks and decks.
+What a mechanically seamed roof changes is what the backed-up water finds. There are no horizontal seams and no exposed fasteners for it to get past. The locked seam also handles standing water, snow and ice better than a snapped one. Snow often lets go of a metal roof all at once, so we talk through where snow guards, small stops that hold snow on the roof, belong above doors, walks and decks. They clamp onto the seam without drilling a hole.
 
-### Panels Formed on Your Driveway
+### Panels Formed on Your Driveway, Painted at the Mill
 
-The roll-former comes on a trailer, and the steel coil comes with it. We buy the coil from Platinum Metals, a regional partner in Grabill, Indiana, and form the panels in their 1.5-inch profile. A 30-foot panel comes off the machine as one piece and goes up as one piece, eave to ridge, with no horizontal joint in it. Clear the driveway the night before, because it's ours for the job.
+The roll-former comes on a trailer, and the steel coil comes with it. We buy the coil from Platinum Metals, a regional partner in Grabill, Indiana, and form the panels in their 1.5-inch profile. A 30-foot panel comes off the machine as one piece and goes up as one piece, from the bottom edge of the roof to the peak, with no horizontal joint in it. Clear the driveway the night before, because it's ours for the job.
+
+The coil arrives already painted, from the mill. On almost every standing seam roof we do, that's a polyester-based paint from AkzoNobel or Sherwin-Williams. A longer-lasting premium paint is available on one steel thickness if you ask, and it's uncommon on houses.
 
 ### What We Check Before We Quote
 
@@ -254,47 +249,37 @@ We walk the roof and the attic first. The wood under the old roof matters as muc
 - Panels cut short and overlapped because they weren't formed to length.
 - Panels cut with an abrasive saw. Hot filings stick to the paint and rust in place, so we cut with shears.
 
-### What It Does Well, and What It Costs
+### What It Does Well, What It Costs, and Who It Fits
 
 It keeps water out instead of managing it after it gets in. It needs far less upkeep than a screw-down roof, and the paint tends to hold longer because there are no fastener heads baking in the sun. It looks the way most people picture a metal roof.
 
-It costs more up front, about the same as a good interlocking metal shingle, because it takes more labor, more skill and seaming equipment. It pays that back in what it doesn't ask of you later.
+It costs more up front because it takes more labor, more skill and seaming equipment. It pays that back in what it doesn't ask of you later.
 
-### The Paint on the Steel
-
-The coil arrives already painted, from the mill. On almost every standing seam roof we do, that's a polyester-based paint from AkzoNobel or Sherwin-Williams. A longer-lasting premium paint is available on one steel thickness if you ask, and it's uncommon on houses. Color and texture read differently on a screen than on a roof, so we bring physical samples to the house.
+It fits a homeowner who wants the least upkeep over the longest time and plans to stay. If your roof is very cut-up and you don't like the look of vertical seams, interlocking metal shingles are worth a look.
 
 ### Matching Gutter Color Before the Roof Is Ordered
 
-Before anything is ordered, we hold color samples against your existing gutters and downspouts and photograph each match, so the color isn't a surprise on install day.
+Before anything is ordered, someone goes up the ladder and holds color samples against your existing gutters and downspouts. From the ground an old gutter can read off-white, and next to a sample it turns out to be plain white that has weathered. Downspouts are often a different color than the gutters, too. We photograph each match for you, so the color isn't a surprise on install day.
 
 > I'm glad they suggested the Dark Bronze guttering, because that really does look good with the roof, as well as gives an overall better look on the house.
 >
 > — Duff R.
 
-### Who Standing Seam Fits, and Who It Doesn't
-
-It fits a homeowner who wants the least upkeep over the longest time and plans to stay. If the budget is built around the lowest upfront number, a well-installed screw-down roof costs less. If your roof is very cut-up and you don't like the look of vertical seams, interlocking metal shingles are worth a look.
-
 ### Seams on a Roof Someone Else Installed
 
-If a standing seam roof was put on and something looks off, ask us to look. We check whether the seams are fully closed, how the clips were set and how the roof was finished around chimneys and walls, then photograph what we find.
+On a standing seam roof someone else installed, we check whether the seams are fully closed, how the clips were set and how the roof was finished around chimneys and walls. A seam left unclosed, a clip fastened wrong or a chimney detailed like an asphalt roof can look fine for a season or two and then show up in the first hard winter.
 
 > I reached out to 4Ever Roofing to inspect my newly installed standing seam metal roof, which had been done by another company. We had concerns about the quality of the work, and I wanted a professional second opinion.
 >
 > — William R.
 
-### Is Standing Seam Noisy in the Rain?
+### Questions About Standing Seam
 
-Over solid wood and a waterproof layer, a standing seam roof is about as loud as an asphalt roof. The tin-roof-on-a-barn sound comes from panels over open framing with nothing underneath. Houses have solid wood under the roof.
+**Is standing seam noisy in the rain?** Over solid wood and a waterproof layer, a standing seam roof is about as loud as an asphalt roof. The tin-roof-on-a-barn sound comes from panels over open framing with nothing underneath. Houses have solid wood under the roof.
 
-### What Pitch Does Standing Seam Need?
+**What pitch does standing seam need?** Mechanically seamed panels can go to very low slopes when the details are designed for it. Snap-lock should stay on steeper, fast-draining roofs.
 
-Mechanically seamed panels can go to very low slopes when the details are designed for it. Snap-lock should stay on steeper, fast-draining roofs.
-
-### Will Standing Seam Dent in Hail?
-
-Steel panels can take cosmetic dents in large hail, the same as a car hood, and the roof keeps keeping water out. Most insurers recognize that, but some write cosmetic-damage exclusions on metal, so read your policy.
+**Will standing seam dent in hail?** Steel panels can take cosmetic dents in large hail, the same as a car hood, and the roof keeps keeping water out. Most insurers recognize that, but some write cosmetic-damage exclusions on metal, so read your policy.
 
 ### Ready to Compare Quotes?
 
@@ -308,7 +293,7 @@ Steel shingles, stamped to look like slate or wood shake, that lock together on 
 
 ### A Metal Roof That Doesn't Look Like a Barn
 
-A recent job shows why people choose it. A country home was losing asphalt shingles to the wind, and every storm meant another repair bill. The owners came to us as a referral from a past client. They wanted something permanent, and they liked how a metal shingle looks. That's the usual reason: you want metal performance and a shingle appearance.
+A recent job shows why people choose it. A country home was losing asphalt shingles to the wind, and every wind storm meant paying about $500 to repair them. The owners came to us as a referral from a past client. They wanted something permanent, and they liked how a metal shingle looks. That's the usual reason: you want metal performance and a shingle appearance.
 
 > I chose a metal roof that looks like shingles and could not be happier.
 >
@@ -326,31 +311,29 @@ Slope is written as rise over run. A 3/12 roof rises 3 inches for every 12 inche
 
 - Installed below the minimum slope.
 - Installed by a crew that hasn't done it before. The locking order is unforgiving, and if the first row is started wrong, the mistake repeats across the whole roof.
-- Poorly designed products. Only a few manufacturers make an interlocking shingle that handles water well. We install EDCO's because of how it's built, not because of the name.
+- Poorly designed products. In our experience, only a few manufacturers make an interlocking shingle that handles water well. We install EDCO's because of how it's built, not because of the name.
 
 ### Slate and Shake Looks, From Two Makers
 
-We install steel shingles from EDCO and Vicwest, in slate and in wood-shake looks, in a range of colors. EDCO lists its slate and shake lines as Class 4 impact rated, the top hail rating, and the manufacturer's paperwork for each line is there for you to read before you decide. Some interlocking lines carry a longer-lasting premium paint and some don't, and we won't claim a paint brand we can't source for that line. Bring your color questions, because we bring samples.
+We install steel shingles from EDCO and Vicwest, in slate and in wood-shake looks, in a range of colors. EDCO's shake and slate lines come in as many as 18 colors, and one EDCO shake has a matte, textured finish that hides the shine metal usually has. Vicwest's shingles are made of 28-gauge steel, which is a measure of thickness.
+
+EDCO lists its slate and shake lines as Class 4 impact rated, the top hail rating, and the manufacturer's paperwork for each line is there for you to read before you decide. Some interlocking lines carry a longer-lasting premium paint and some don't, and we won't claim a paint brand we can't source for that line. Bring your color questions, because we bring physical samples to the house. Color and texture read differently on a screen than on a roof.
 
 ### Complex Roofs and Older Houses
 
-An interlocking shingle handles roofs with a lot of hips and valleys well. Older houses bring their own quirks, and the crew has to fit the roof to them rather than the other way around.
+An interlocking shingle handles roofs with a lot of hips and valleys well, and those are places where a roof often leaks when the detail work is rushed. Each hip and valley is a spot where shingles have to be cut and fitted, and the four-side lock only holds if the crew has done it before. Older houses bring their own quirks, and the crew has to fit the roof to them rather than the other way around.
 
 > Our house had its own quirks to deal with since it is a 1855 brick farmhouse but the team did an excellent job installing the roof.
 >
 > — Jonathan C.
 
-### Is It Loud in the Rain?
+### Will My Homeowners Association Allow It?
 
-Metal shingles go over solid wood, an attic and insulation, the same as any other roof on a house. A metal roof isn't louder in the rain than shingles are.
-
-> We had a BIG storm after the install and our home is dry as a bone, and the noise was so minimal it sounded like drops on a thick blanket over our heads, our toddler slept right through it no problem, and so did we!
->
-> — Matt R.
+Many HOAs approve modern metal roofing, and an interlocking shingle reads as slate or shake from the street, so it is often the one we bring to a board. We can provide product documentation and samples for the approval. Get the color and style approved in writing before anything is ordered, and remember the roof still needs to be at or above the 3/12 minimum slope.
 
 ### What It Costs, and Who It Fits
 
-It costs more up front than a screw-down metal roof, in the same range as a mechanically seamed standing seam roof. The price comes from skilled installation, and there aren't many crews with real experience, and from a short list of manufacturers.
+It costs more up front, in the same range as a mechanically seamed standing seam roof. The price comes from skilled installation, because there aren't many crews with real experience, and from a short list of manufacturers.
 
 It fits a homeowner who wants metal performance and a shingle appearance, has a roof at or above the minimum slope, and wants the least reliance on what's under the metal. It doesn't fit anyone comparing on price alone. If you like the vertical-seam look, standing seam is the simpler choice.
 
@@ -380,7 +363,7 @@ Tell us about the house and what you're hoping to do. We're open Monday to Satur
 
 ### Email
 
-info@4evermetalroofing.com. A person in one of our offices reads it and replies, usually within a business day.
+info@4evermetalroofing.com. Someone from one of our offices usually replies within a business day.
 
 ### What to Have Ready
 
@@ -391,7 +374,7 @@ info@4evermetalroofing.com. A person in one of our offices reads it and replies,
 
 ### What Happens After You Call
 
-If metal is a poor fit for the house, we say so then. If it might fit, we set a time to measure the roof and walk the attic. The visit covers the roof and attic, the systems that fit the slope and the details, the finishes, the warranty paperwork, timelines and a written quote.
+We start by asking about the roof and what you're hoping for. If metal might fit, we set a time to come out and measure. At the visit we go over the systems that fit the slope and the details, the finishes, the warranty paperwork and timelines, and you get a written quote.
 
 > Noah was extremely helpful in answering all our questions in a timely manner, and the price was in line with what we were looking to spend.
 >
@@ -405,7 +388,7 @@ If metal is a poor fit for the house, we say so then. If it might fit, we set a 
 
 ### Where We Work
 
-We install across Indiana, Ohio and Michigan, within roughly a 90-minute drive of our Fort Wayne and Noblesville offices. If your house is near the edge, call and we'll tell you honestly whether we can get there.
+We install across northeast Indiana, northwest Ohio and southern Michigan, within roughly a 90-minute drive of our Fort Wayne and Noblesville offices. Nearby towns include New Haven, Auburn, Columbia City, Huntington, Bluffton, Decatur and Kendallville. If your house is near the edge, call and we'll tell you honestly whether we can get there.
 
 ### Call Today
 
