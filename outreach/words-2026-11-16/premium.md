@@ -134,6 +134,8 @@ Book a call and we'll walk you through this demo.
 
 ## Home — Roofing Contractor in Rockford, IL — Premium Roofing Solutions
 
+# Roofing Contractor in Rockford, IL — Premium Roofing Solutions
+
 We replace and repair roofs, siding and gutters for homeowners and businesses in Rockford, Beloit, Janesville and the towns around them. When a storm damages your roof, a named project manager works your insurance claim with you. Call (844) 997-6633 for a free inspection.
 
 **Buttons:** Call (844) 997-6633 · Ask a Question
@@ -162,11 +164,11 @@ Premium Roofing Solutions is licensed and insured in both Illinois and Wisconsin
 
 ### Why We're in Business
 
-Plenty of homeowners know someone who had a bad time with a roofer. We say it plainly: the local roofing industry has pitfalls, and we're in business to offer a better experience. We know some competitors are better known and spend more on advertising.
+We started this company to give homeowners a better roofing experience: say what we'll do, then do it.
 
 > Ownership and staff, said what they would do, and more importantly did what they said.
 >
-> — tim K.
+> — Tim K.
 
 ### Questions Before You Call
 
@@ -191,6 +193,8 @@ We may still work with them. Call and tell us who it is.
 Call (844) 997-6633, tell us what the roof looks like and what the weather did, and we'll set up the inspection.
 
 ## Roof Replacement — Roof Replacement in Rockford, IL — Premium Roofing Solutions
+
+# Roof Replacement in Rockford, IL — Premium Roofing Solutions
 
 A roof replacement takes the old roof off and puts a new one on, with the wood underneath checked first. We do it for homes in Rockford and across northern Illinois and southern Wisconsin. Call (844) 997-6633 for a free inspection and estimate.
 
@@ -258,6 +262,8 @@ Call (844) 997-6633 and tell us about the roof. We'll set up a free inspection.
 
 ## Storm Restoration — Storm Restoration in Rockford, IL — Premium Roofing Solutions
 
+# Storm Restoration in Rockford, IL — Premium Roofing Solutions
+
 Hail, high wind and heavy rain can damage a roof, siding and gutters in a single storm. We repair and rebuild homes after severe weather in Rockford and across northern Illinois and southern Wisconsin, and a named project manager works your insurance claim with you. Call (844) 997-6633.
 
 **Buttons:** Call (844) 997-6633 · Ask a Question
@@ -291,8 +297,6 @@ Claims differ by insurer and by policy, so read this as the usual order, not a p
 3. **The adjuster visit.** The adjuster comes to the house. We can meet them there and point out the full scope of the damage.
 4. **The estimate.** It usually shows replacement cost value, what a new roof costs, and actual cash value, which is that figure minus depreciation, the value the roof has lost to age. It also shows your deductible, the amount you pay first. We go through it with you line by line.
 5. **After approval.** You get a written proposal that matches the approved scope. When the work is done, we send the paperwork needed to close the claim.
-
-When a claim is approved, the homeowner's share is usually the deductible. That's general, not a promise, because policies differ.
 
 ### When a Claim Is Denied or Paid Short
 
@@ -331,6 +335,8 @@ In most cases it covers sudden damage from a covered event such as hail, wind or
 Yes. We do roof, siding, gutter and structural repairs in one project, and customers have had all three done together.
 
 ## Contact — Contact Premium Roofing Solutions, Rockford, IL
+
+# Contact Premium Roofing Solutions in Rockford, IL
 
 Call or send a message. Tell us what the storm did or what the roof is doing, and we'll set up a free inspection.
 
@@ -404,7 +410,7 @@ Call (844) 997-6633 and tell us about the roof.
 - Used: insurance claim by named manager (home, storm, strategy), replacement, storm, repair/installation/inspection (home list and FAQ), siding and gutters (home, storm FAQ), commercial (home), cedar shake and solar (replacement and home FAQ), flat roof (home), tarps (replacement), payment plans (home FAQ, once), Class 4 shingles (replacement, storm), clean-up (replacement quote), keeps informed and named managers (home, contact), honest (home quote, Tim K.).
 - Case studies used: architectural shingle job (replacement), northern Wisconsin hail and Roscoe (storm). Cedar shake page used in the replacement FAQ.
 - Left out: "red-carpet" and "premium experience" slogans, cedar cost range ($15,000–$35,000+, unverified), "hundreds of roofs," 30–50 year warranty, "advanced technology" inspections, solar installer claims, residential/commercial insurer logos (image), Roof Repair as a page (too thin).
-- Quotes used once each: Kayla P., Natalie P., tim K., Steve S., Colin S., Shawn C., Cindy W., Tom C., Shawn L. Not quoted: Charles W., Derrick T. (long, emoji, insurer dispute), Rita R. (names an owner).
+- Quotes used once each: Kayla P., Natalie P., Tim K., Steve S., Colin S., Shawn C., Cindy W., Tom C., Shawn L. Not quoted: Charles W., Derrick T. (long, emoji, insurer dispute), Rita R. (names an owner).
 
 **Facts to verify**
 - Which phone is live.
