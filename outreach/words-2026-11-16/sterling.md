@@ -156,7 +156,7 @@ When the lights flicker or a breaker keeps shutting off, the cause is often smal
 - **Ceiling fan installation.** Fans need a box built to hold their weight and movement, so we check what is in the ceiling first.
 - **Outdoor lighting installation.** Lampposts, motion lights and other outdoor fixtures.
 - **Troubleshooting and repairs.** Finding what has stopped working and fixing it.
-- **Electrical permits and inspections.** Many electrical jobs need a permit from your local building office and an inspection afterward, and we handle both as part of the work.
+- **Electrical permits and inspections.** Many electrical jobs need a permit from your local building office and an inspection afterward, and we help with both.
 - **Panel labeling.** A clear label for every breaker, so anyone in the house can tell what each one controls.
 - **Meter base replacement.** The meter base is the box on the outside wall where the utility's meter plugs in; it can wear out or get damaged.
 
@@ -166,7 +166,7 @@ Residential and commercial work are both part of what we do.
 
 Most panels last for decades, and a breaker that trips is often a sign of one overloaded circuit or one worn part, not a bad panel. A new panel usually makes sense when the old one has rust or water damage, has no room for the new circuits you need, is an old fuse box, or has breakers that no longer hold. Work inside a panel stays with a licensed electrician, because the main wires into it stay live even when the breakers are off. We tell you what we see and why before anyone buys anything.
 
-> … I needed my whole electric panel replaced and they were very easy to work with and very reasonable prices for the great quality work they did!
+> I needed my whole electric panel replaced and they were very easy to work with …
 >
 > — Ross N.
 
@@ -180,11 +180,11 @@ Houses built a century ago may still have knob-and-tube wiring, an early system 
 
 ### Licensed, with 17 years behind the work
 
-Our licensed team brings 17 years of experience to every residential and commercial project. We work to meet current electrical codes, the safety rules inspectors check work against, and we keep you informed with updates through the job. If a plan changes, you hear about it from us.
+Our licensed team brings 17 years of experience to every residential and commercial project. We work to meet current electrical codes, the safety rules inspectors check work against, and we keep you informed with updates through the job. If a plan changes, you hear about it from us. From the first call to the final walkthrough, we aim to show up on time, work with care and finish the job right, so you can leave your home in good hands.
 
 ### A clean job site
 
-We keep work areas tidy, and that includes the wiring. Cables that are routed neatly are easier to trace and repair the next time someone works on them.
+We keep work areas tidy, and that includes the wiring. Cables that are routed neatly are easier to trace and repair the next time someone works on them, and they leave the walls and ceilings looking as they did before we came. A tidy job also means less to clean up when we leave, and fewer surprises for whoever opens that wall next, whether that is us or another trade. When we need to cut into a wall, we try to keep the opening as small as the job allows.
 
 > These guys did a great job. Made extra effort to keep wire routing as clean as possible. Their work looks like it was original to the house.
 >
@@ -192,7 +192,7 @@ We keep work areas tidy, and that includes the wiring. Cables that are routed ne
 
 ### Security cameras and other jobs
 
-Not every job fits a service list. We also install security camera systems, and we take the time to show you how to use them once they are running.
+Not every job fits a service list, and electrical work reaches further than outlets and panels. We also install security camera systems. Cameras need power and a network connection at each spot, so the wiring route matters as much as the camera, and we plan it with you before anything is mounted. Once a system is running, we often take the time to show you how to use it.
 
 > Phil did an excellent job installing our cameras. He was very patient throughout the entire process, took the time to explain everything clearly, and made sure we understood how to use the camera system.
 >
@@ -278,7 +278,7 @@ Replacing a switch, outlet or fixture is a small repair, and it is the right one
 
 Storms can take out several rooms at once through a surge, a damaged service line or water in a fixture. Old wiring and a wiring fault can look alike from the room, which is why a trace comes first. If more than the problem you called about turns up, we tell you what we found, and you decide what to fix and when.
 
-> Very knowledgeable, great price to fix the issue and repaired other issues. Would highly recommend to call first.
+> Very knowledgeable, … and repaired other issues. Would highly recommend to call first.
 >
 > — scott H.
 
@@ -302,7 +302,7 @@ Outdoor and indoor lighting, new switches and ceiling fans, installed with the w
 
 We install outdoor lighting, including lampposts and motion lights, and custom lighting packages. Where a light goes depends on what it is for: a path, a driveway, an entry door or a back patio. Outdoor fixtures and wiring must be rated for wet conditions, since water in a fixture or connection is a common cause of outdoor failures. Outdoor outlets and lighting circuits are also usually protected by GFCI, the shut-off device that stops power in a fraction of a second when it senses leakage, as it might through water.
 
-> Fantastic service experience and reasonable pricing. Would highly recommend, George did a great job installing our lamppost and motion lights!
+> … George did a great job installing our lamppost and motion lights!
 >
 > — wendy K.
 
@@ -312,7 +312,7 @@ A motion light switches on when it senses movement, which suits a back door or a
 
 ### Running power to a lamppost
 
-A lamppost out in the yard needs its own wire run from the house, usually buried. Burial depth and protection rules vary with the type of cable, and your local inspector may check the work, so we plan the route before digging. We also try to avoid the sprinkler lines, tree roots and future garden beds.
+A lamppost out in the yard needs its own wire run from the house, usually buried. Burial depth and protection rules vary with the type of cable, and your local inspector may check the work, so we plan the route before digging. Sprinkler lines, tree roots and future garden beds are worth planning around.
 
 > On time. Very efficient service..replaced three switches, replaced light fixture and fixed two other fixtures in an hour.
 >
@@ -328,7 +328,7 @@ A three-way switch lets you control one light from two places, such as the top a
 
 ### Wafer lights and recessed lighting
 
-Wafer lights are thin LED discs that fit into a small hole in the ceiling. They need much less space above the ceiling than older recessed cans, so they work where a can would not fit. Insulation, ceiling height and what is above the room decide how many lights to use and how to place them. Dimmers also matter: a dimmer that is not made for LEDs can make them flicker or buzz, so we match the two.
+Wafer lights are thin LED discs that fit into a small hole in the ceiling. They need much less space above the ceiling than older recessed cans, so they work where a can would not fit. Insulation, ceiling height and what is above the room decide how many lights to use and how to place them. Dimmers also matter: a dimmer that is not made for LEDs can make them flicker or buzz, so we match the two. A light that flickers is often a loose connection, a worn switch or a mismatched dimmer, not a bad bulb or fixture, so we check those first.
 
 ### Ceiling fans
 
@@ -340,7 +340,7 @@ A ceiling fan weighs more than a light and moves as it runs, so the box in the c
 
 ### New rooms, new circuits
 
-Converting a loft or finishing a basement changes what each room needs. We start with the outlets, switches and lights you want, then work out which circuits can carry them. New wiring often needs a permit and an inspection, which we handle with the work. Smoke alarms are part of the plan too, since a new bedroom usually needs one.
+Converting a loft or finishing a basement changes what each room needs. We start with the outlets, switches and lights you want, then work out which circuits can carry them. New wiring often needs a permit and an inspection, which we can help with. Smoke alarms are part of the plan too, since a new bedroom usually needs one.
 
 > We converted our loft to a 4th bedroom and needed a light switch moved, a smoke alarm installed and an outlet added. All work done as promised and on time. George was very friendly and knowledgeable. Would recommend!
 >
@@ -353,10 +353,6 @@ A hot tub usually needs its own dedicated circuit with GFCI protection, a discon
 > Had a great experience with Jim at Sterling Electric. We had to install our hot tub and a few light fixtures. Jim explained the entire process in details and gave a couple of options based on our budget. The project took a day and it all went pretty smooth.
 >
 > — Satwik K.
-
-### Fixtures that flicker or buzz
-
-A fixture that flickers is often a loose connection, a worn switch or a mismatched dimmer, not a bad bulb or fixture. We check the connections first and replace only what is at fault.
 
 ## Contact — Contact Sterling Electric in Fort Wayne, IN
 
