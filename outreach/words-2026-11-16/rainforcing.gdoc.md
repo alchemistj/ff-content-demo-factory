@@ -5,7 +5,7 @@
 
 **Why we built this site**
 
-Your reviews keep saying the same two things: Miguel stays with them through the whole job, and your team handles the insurance company. Your website says neither. 27 of your 55 reviews name Miguel.
+Your reviews keep saying the same two things: Miguel stays with them through the whole job, and your team handles the insurance company. Your homepage barely says either. Reviewers name Miguel again and again.
 
 > They stayed with me closely throughout entire process!!! Especially Miguel!!!
 >
@@ -20,8 +20,8 @@ So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and giv
 *Why it matters:* Google reads it to learn who you are, and most people see it first.
 
 **Current site problem**
-- Nobody on your team is named outside the reviews, though 27 of 55 reviews name Miguel.
-- Insurance help, which 20 of your reviews praise, gets one clause. Hail victims can't tell you handle claims.
+- Nobody on your team is named in your own words, though your reviews name Miguel again and again.
+- Insurance help, which your reviews praise, gets one clause. Hail victims can't tell you handle claims.
 - "Rainforcig" and "we've you taken care of" are typos, and "roofing company" repeats in most paragraphs.
 
 **What the demo fixes**
@@ -135,7 +135,7 @@ You get a straight price before work starts. We inspect your roof with a drone, 
 
 **Buttons:** Call (309) 989-3279 | Get a Free Estimate
 
-*Trust bar:* GAF Certified | Licensed, Bonded and Insured | Free Drone Roof Inspection | Peoria and Central Illinois
+*Strip:* GAF Certified | Licensed, Bonded and Insured | Free Drone Roof Inspection | Peoria and Central Illinois
 
 > Miguel was extremely knowledgeable, explained everything in detail, was always on time, and was very personable. … This company was honest, efficient, reasonably priced, and used quality materials for our roof.
 >
@@ -231,7 +231,7 @@ After hail or wind, we inspect the roof, document the damage and work through th
 
 **Buttons:** Call (309) 989-3279 | Request a Free Inspection
 
-*Trust bar:* Free Drone Inspection | Photo-Documented, Itemized Estimates | Peoria and Central Illinois
+*Strip:* Free Drone Inspection | Photo-Documented, Itemized Estimates | Peoria and Central Illinois
 
 > Made the process very easy , fought insurance so I didn't have too. Excellent work
 >
@@ -313,7 +313,7 @@ We look at the roof and tell you whether it needs replacing. Call (309) 989-3279
 
 **Buttons:** Call (309) 989-3279 | Request an Estimate
 
-*Trust bar:* 10-Year Workmanship Warranty | Free 5-Year Maintenance Plan on Qualifying Projects | Peoria and Central Illinois
+*Strip:* 10-Year Workmanship Warranty | Free 5-Year Maintenance Plan on Qualifying Projects | Peoria and Central Illinois
 
 > Rainforcing Roofing was amazing to work with and made the whole process super easy! They delivered on everything they said they would, and my roof looks great!
 >
@@ -407,7 +407,7 @@ Tell us what's going on with your roof, siding or gutters. If it's urgent, pleas
 
 **Buttons:** Call (309) 989-3279 | Email Us
 
-*Trust bar:* Free Estimates | Open Seven Days | Peoria and Central Illinois
+*Strip:* Free Estimates | Open Seven Days | Peoria and Central Illinois
 
 > They did an amazing job. The communication was on point.
 >
