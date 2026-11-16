@@ -32,7 +32,7 @@ Taylor and Luke were great\! Taylor answered all my questions, checked everythin
 
 Today those words sit on Google, not on your site. Your site lists first names, but nothing connects them to a job, and no review appears on it.
 
-So the demo says Electrician in Fort Wayne, IN, which is what Google needs from your homepage, and gives panel upgrades and rewiring a page each.
+So the demo says Electrician in Fort Wayne, IN, and gives panel upgrades and rewiring a page each.
 
 Your other services are on the homepage.
 
@@ -217,7 +217,7 @@ Here's the details:
 
 1.  **Estimate fee.** Your reply to a 1-star review says you charge for estimates. What is the fee?
 2.  **Hours.** Your site posts none. Do you come out after hours?
-3.  **Energy Independence Fund.** Your site says you're one of the only approved contractors in Northeast Indiana. Can we see the approval?
+3.  **Energy Independence Fund.** Your site says you're one of the only approved contractors in Northeast Indiana. Are you still an approved contractor?
 4.  **Towns.** Your site says Northeast Indiana. Which towns do you want named?
 
 ### Want a website like this for your business?
@@ -240,7 +240,7 @@ Three Rivers Electric is a locally owned electrical company at 3020 Congressiona
 
   
 
-*Trust line:* Locally Owned | 125+ Years Combined Team Experience | Licensed & Insured | Financing Available | One customer had help within 2 hours of a call
+*Trust line:* Locally Owned | 125+ Years Combined Team Experience | Licensed & Insured | Financing Available
 
   
 
@@ -268,7 +268,7 @@ We take on a single outlet, a light switch or a ceiling fan as readily as a larg
 
 ### Electrical work for your home
 
-Two of the bigger jobs have their own pages. [Electrical panel upgrades](https://docs.google.com/document/d/1z7OGOqDfLmlf-25U_h03-b_WhMwnxKFI5CuOvWDdkFw/edit?ouid=115134465837398423536#), including moving from 100 amp to 200 amp service (amps measure how much electricity the house can draw at once) and replacing the meter base and riser, the outdoor box and pipe that bring power in, are for homes that have outgrown their service. [Whole-home rewiring and breaker repair](https://docs.google.com/document/d/1z7OGOqDfLmlf-25U_h03-b_WhMwnxKFI5CuOvWDdkFw/edit?ouid=115134465837398423536#) covers old wiring, tripping breakers and outlets that went dead.
+Two of the bigger jobs have their own pages. [Electrical panel upgrades](about:blank), including moving from 100 amp to 200 amp service (amps measure how much electricity the house can draw at once) and replacing the meter base and riser, the outdoor box and pipe that bring power in, are for homes that have outgrown their service. [Whole-home rewiring and breaker repair](about:blank) covers old wiring, tripping breakers and outlets that went dead.
 
   
 
@@ -438,7 +438,7 @@ Tell us the age of the house, what the panel looks like and what you want it to 
 
 # Whole-Home Rewiring & Breaker Repair in Fort Wayne, IN — Three Rivers Electric
 
-We rewire whole homes and replace breakers across Fort Wayne, and customers have called on short notice and been squeezed in. If a breaker keeps tripping, an outlet went dead or a house still has wiring from another era, call (260) 908-8700 and tell us what's happening.
+We rewire whole homes and replace breakers across Fort Wayne, and one customer called on short notice and was squeezed in. If a breaker keeps tripping, an outlet went dead or a house still has wiring from another era, call (260) 908-8700 and tell us what's happening.
 
   
 
@@ -604,6 +604,8 @@ If you're not sure your project fits, call us and we'll sort it out on the phone
 
 ## Notes (not page copy)
 
+**Rebuild reason: SEO. The homepage top says "Reliable Service. Locally Owned." with no electrician or Fort Wayne, and services are one-word tiles.**
+
 |  |  |  |
 | :-: | :-: | :-: |
 | \\\~\\\~\\\~ | \\\~\\\~\\\~ | \\\~\\\~\\\~ |
@@ -653,7 +655,7 @@ Counts include headings and bullets and leave out button lines. Home and both se
 
   
 
-**Backport pass (Nov 16). Added the first-five-pages line under the strategy subhead and removed its repeat; set the full-build speed and browser-test lines to the approved wording; took the estimate fee and the Energy Independence Fund / Smart-E claims out of the copy (confirm items); cut two filler lines on Home; added one speed mention to the home strip and one to the rewiring hero (no speed source for panels). No FAQs added: the pages already answer what a customer asks. One strip, Home only, five items, no ratings.**
+**Backport pass (Nov 16). Added the first-five-pages line under the strategy subhead and removed its repeat; set the full-build speed and browser-test lines to the approved wording; took the estimate fee and the Energy Independence Fund / Smart-E claims out of the copy (confirm items); cut two filler lines on Home; added one speed mention to the rewiring hero (no speed source for panels). No FAQs added: the pages already answer what a customer asks. One strip, Home only, four items, no ratings.**
 
   
 

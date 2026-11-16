@@ -4,7 +4,7 @@ Draft for review. Sources: the business's own site, Google reviews, facts.md. Qu
 
 ## Strategy page
 
-**Built for A. Hattersley & Sons**
+**Free demo site built for A. Hattersley & Sons**
 
 ### We already did the work. Here's an A. Hattersley & Sons website built for Fort Wayne facility managers.
 
@@ -28,64 +28,88 @@ Your site has the evidence behind that: a $9.2 million neurological center, a $6
 
 **1. Homepage**
 
+*Why it matters:* A facility manager looking for a mechanical contractor needs to see in seconds that you handle hospitals, schools and plants like theirs.
+
 **Current site problem**
 
   - The main headline is just "A. Hattersley & Sons". It doesn't say what you do or where. Google can't tell you're a commercial mechanical contractor in Fort Wayne.
+
   - The homepage says "Over 160 Years", the Our Story page says "170+ years" and the Organization page says "over a century".
+
   - Only three projects appear, all colleges, with one line each. No review appears.
 
 **What the demo fixes**
 
   - A headline that says Commercial Mechanical Contractor in Fort Wayne, IN.
+
   - One start date, 1856, with hospital, school and college work named.
+
   - Projects grouped by kind of building, with what each one involved.
 
 **A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **2. Commercial Plumbing**
 
+*Why it matters:* When a pipe fails in an occupied building, a facility manager needs to know who does commercial work and answers after hours.
+
 **Current site problem**
 
   - The headline is the one word "Plumbing", and the page is about 125 words. It has no commercial and no Fort Wayne.
+
   - Nine capabilities are listed with no explanation. An owner has to already know what a grease interceptor is.
+
   - 24/7 emergency service has its own 47-word page, and the plumbing page shows no review or project.
 
 **What the demo fixes**
 
   - A headline that says Commercial Plumbing in Fort Wayne, IN.
+
   - Each capability explained in plain words, with what it protects.
+
   - Monroe Primary School's renovation, a late-night emergency review, and after-hours help on the same page.
 
 **A full build would also add** Call and form tracking that shows which pages and towns your leads come from.
 
 **3. Commercial HVAC**
 
+*Why it matters:* A facility manager with an aging chiller or boiler needs a contractor who can work while the building stays in use.
+
 **Current site problem**
 
   - The headline is "HVAC", with no city and no building type, so Google can't place you in Fort Wayne.
+
   - Fifteen capabilities are listed, and ventilation and exhaust appear twice, as "ventilation and exhaust" and "exhaust and ventilation".
+
   - No project or review is on it, though your school and campus jobs are your strongest proof.
 
 **What the demo fixes**
 
   - A headline that says Commercial HVAC in Fort Wayne, IN.
+
   - Systems grouped by what they do and explained.
+
   - The Carroll High School, Handley Elementary and Indiana Tech jobs as proof.
 
 **A full build would also add** A check of what your competitors offer, so services you didn't think to mention still get their own pages.
 
 **4. Contact**
 
+*Why it matters:* In an emergency, a facility manager has no time to guess which number to call.
+
 **Current site problem**
 
   - Two phone numbers appear, (260) 341-0530 above the form and (260) 483-6473 under the map, with no label on the second. Someone with a burst pipe may not know which to call.
+
   - The form's subjects are General Inquiry, Information Request and Other, not emergency or project.
+
   - Most of the page's words are drop-down lists of states and countries.
 
 **What the demo fixes**
 
   - Both numbers, with what each is for.
+
   - The address and what to have ready.
+
   - Emergencies, maintenance and new projects, split.
 
 **A full build would also add** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
@@ -95,37 +119,52 @@ Your site has the evidence behind that: a $9.2 million neurological center, a $6
 **Gets you found**
 
   - Every service on your website and your Google profile, telling the same story
+
   - Each service gets its own page or shares one, based on what Google shows for that search
+
   - Every town you serve, on your website and your Google profile
+
   - Built so Google and AI tools can read every page
 
 **Earns their trust**
 
   - Reviews on every page, matched to the service
+
   - About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
+
   - A strip at the top of every page with what makes you different, so a customer sees why to pick you right away
 
 **Turns visitors into calls**
 
   - Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
+
   - A call-and-book bar that stays on screen on phones
+
   - A contact form that blocks spam
 
 **Keeps working after launch**
 
   - Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
+
   - Your site watched around the clock for downtime.
+
   - Google indexing and your Google visibility checked every day.
+
   - Page links, buttons and contact forms tested in a real browser twice a day.
+
   - Updated when Google and AI tools change how they read websites
+
   - You never have to know what to ask for
 
 ### What we'd confirm with you
 
-1.  **Phone number.** Which of your two numbers, (260) 341-0530 or (260) 483-6473, should facility managers call for service?
-2.  **Hospital jobs.** On the hospital jobs on your project list, did you do the plumbing, the heating and cooling, or both?
-3.  **Medical gas.** Which body certifies your medical gas work?
-4.  **Memberships.** Are all the memberships on your Affiliations page current?
+  - **Phone number.** Which of your two numbers, (260) 341-0530 or (260) 483-6473, should facility managers call for service?
+
+  - **Hospital jobs.** On the hospital jobs on your project list, did you do the plumbing, the heating and cooling, or both?
+
+  - **Medical gas.** Which body certifies your medical gas work?
+
+  - **Memberships.** Are all the memberships on your Affiliations page current?
 
 ### Want a website like this for your business?
 
@@ -141,7 +180,7 @@ Text us: (417) 373-2773
 
 A Fort Wayne mechanical contractor at work since 1856 on commercial, industrial and institutional buildings: hospitals, colleges, schools and plants. A mechanical contractor designs, installs and maintains the plumbing, piping, heating and cooling inside a building. HVAC stands for heating, ventilation and air conditioning.
 
-### **Buttons: Call (260) 341-0530 / Commercial Plumbing**
+**Buttons:** Call (260) 341-0530 / Commercial Plumbing
 
 Strip: In Fort Wayne since 1856 · Hospitals, colleges, schools and plants · Design/build under one company · Fabrication shops in Fort Wayne and Lafayette
 
@@ -186,9 +225,13 @@ Wonderful company to work with. Their customer service is fantastic and they are
 We list these affiliations:
 
   - **UA Local 166,** the local union for plumbers and pipefitters.
+
   - **MCAA,** the Mechanical Contractors Association of America, and **MSCA,** the Mechanical Service Contractors of America, which serves heating and cooling service contractors.
+
   - **BCA,** the Building Contractors Association, and **The Chamber,** the business group for Northeast Indiana.
+
   - **NISBC,** the Northeast Indiana Sustainable Business Council. It runs a training series called Bright Green Business, on sustainable practices for companies.
+
   - **ASHRAE,** the society that writes standards for heating, refrigeration and air conditioning.
 
 ### Giving back
@@ -198,6 +241,7 @@ Northeast Indiana has been good to us, and we give back with what we do best. We
 ### What we do
 
   - Commercial Plumbing
+
   - Commercial HVAC
 
 For a project or a service call, call (260) 341-0530.
@@ -334,10 +378,11 @@ Our office is at 3939 Mobile Ave in Fort Wayne, where the company has been since
 
 ## Notes
 
+**Rebuild reason: SEO. The headline is just the company name, and the plumbing and HVAC pages are one-word headlines with no city or "commercial".**
+
 Reframed to commercial on FF's call (Nov 16).
 
 | Page | Words without quotes | Words with quotes |
-| :-: | :-: | :-: |
 | Strategy | 970 | 988 |
 | Home | 889 | 935 |
 | Commercial Plumbing | 765 | 808 |
@@ -351,9 +396,13 @@ Counts include headings, bullets and the H1, and leave out the button lines. Hom
 **Credentials (all stated as the business's own claim; none checked at the source).** Defined once, on Home.
 
   - Since 1856, Alfred Hattersley, B.W. Oakley purchase, Main Street, 1955 incorporation and Mobile Avenue move, 2022 Lafayette branch: home, our-story. "Oldest mechanical contractor in Indiana" is worded "we call ourselves".
+
   - Union-trained plumbers: plumbing page. UA Local 166, MCAA, MSCA, BCA, The Chamber, NISBC, ASHRAE: affiliations page. Not checked at the sources.
+
   - Medical gas "installation and certification": plumbing page; no certifying body named, so none is named in copy (strategy question 3).
+
   - Dedicated advisor, integrity/open communication/efficiency: home, mission-vision. Design/build, warranty and long-term maintenance (no terms given): design-build. Fabrication shops in Fort Wayne and Lafayette, tested up to 40,000 PSI: fabrication.
+
   - 24 hours a day, 7 days a week: contact-us. Used on Contact only.
 
 **Reviews.** Three quotes, word for word, each used once, no two back to back: Strategy, Kenneth S.; Home, Erin W.; Plumbing, Brian T. Few of the 53 reviews fit commercial work (most are homes), so the pages lean on project facts from the site instead. Kenny S. (2020, "Best union mechanical contractor around...") is probably the same person as Kenneth S., so it is not used.
@@ -363,24 +412,41 @@ Counts include headings, bullets and the H1, and leave out the button lines. Hom
 **Inventory items left out, and why.**
 
   - Lipton Tea, Salin Bank, Concord Junior High, Fort Wayne Museum of Art: same proof as the ones used (Lipton repeats the Sara Lee move); adding them would repeat the point.
+
   - Residential reviews and every homeowner service (water heaters, sump pumps, toilets, softeners): the demo is commercial only on FF's call.
+
   - Review themes: fast response (21 reviews) is used once (Brian T.); Brandon R. (8:15 call, 10:00 arrival) and similar are home calls, not used. Honest, no surprise costs: Erin W. only; others are home jobs. Named technician "Mark" (30 reviews): not on the site's staff pages, not used. Clean worksite (3 reviews): thin and mostly home jobs.
+
   - Negative reviews (Nathan S. "They only do commercial", Zachary A., blake S., Hanah S.): not used or answered.
+
   - Staff names: the two staff pages disagree, and the owner is unconfirmed. No one is named.
+
   - "Over 160 years", "170+ years", "over a century": disputed, so copy uses only "since 1856".
+
   - "Family-owned" (2021 review): conflicts with the site (last Hattersley family member left in 1967). Not quoted.
+
   - BBB profile: the page returned HTTP 403, so unconfirmed and left out.
+
   - Financing, prices, membership plans: none on the site, none in copy.
 
 **Facts to verify.**
 
   - Project scope: the project pages say what each building is, not which trade Hattersley did, except Handley (general contractor on the HVAC renovation), Carroll (boiler room and water systems), Monroe (HVAC and plumbing renovation), Indiana Tech (geothermal) and King's Hawaiian, Sara Lee (equipment moves). Copy words the others as "our project list". Strategy question 2.
+
   - Phone: (260) 341-0530 is the service line, (260) 483-6473 the main office. Strategy question 1.
+
   - Medical gas certification body: not named on the site (strategy question 3).
+
   - Memberships and union claims: not checked (strategy question 4).
+
   - Hours: only "24 hours a day, 7 days a week" for the service department.
+
   - Trade-knowledge statements (grease interceptors, backflow test schedules, steam-to-hot-water conversion, VAV savings, geothermal efficiency, summer-break scheduling, which parts wear first) are general and hedged. They are not business claims.
+
   - Service-page links on Home use placeholder slugs (/commercial-plumbing-fort-wayne-in/, /commercial-hvac-fort-wayne-in/).
+
   - "Schools: Fort Wayne, Elkhart, LaPorte and South Bend": from Carroll, Concord, Handley and Monroe project pages. Concord's scope is unstated.
-  - The 80% mobile figure, the 91 speed score, the Homepage card's line 8 and the four monitoring lines come from the brief and FULL\_BUILD\_LINES.md.
+
+  - The 80% mobile figure, the 91 speed score, the Homepage card's line 8 and the four monitoring lines come from the brief and FULL_BUILD_LINES.md.
+
   - Backport pass (Nov 16): added the first-five-pages line under the strategy subhead and one Home strip (4 items, no speed or review claims). No FAQ added: each page already answers its questions and Contact says which number to call. No new speed claim: the reviews that show speed are home calls. No ratings or review counts anywhere. Full-build list: removed the unapproved new-team-members line, gave the call-and-book bar its own bullet, set the browser-test line to the approved wording.

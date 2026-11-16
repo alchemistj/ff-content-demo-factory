@@ -334,7 +334,7 @@ Fort Wayne and the towns around it, across northeast Indiana. If you aren't sure
 ### Our Name
 Affordable Roofing is the name we work under. Our legal name is Affordable Construction & Exteriors Corp., which is how BBB lists us if you look us up.
 ## Notes (not page copy)
-Rebuild reason: SEO. The contact headline "Get Your Free Roof Estimate" never says Fort Wayne or the business name, and the shingle page and blog tab names don't match what the pages cover.
+**Rebuild reason: SEO. The contact headline "Get Your Free Roof Estimate" never says Fort Wayne or the business name, and the shingle page and blog tab names don't match what the pages cover.**
 Two services chosen: Roof Replacement and Asphalt Shingle Roofing (the two money services in inventory.md). Roof Replacement uses the site's cost page, warranty and financing facts plus hedged trade knowledge. Asphalt uses the site's Duration vs Oakridge, shingle-life and winter posts for business facts, plus hedged trade knowledge. The trade-knowledge sections (repair-or-replace, where water gets in, ice and heat, what wears a roof out, nailing) carry no new business claims. Asphalt is the thinnest of the two sources; it reaches 700 words only by using the Duration vs Oakridge material, as inventory.md predicted.
 
 Word counts (computed from the page copy above. "With quotes" includes quote text and names. "Without quotes" removes quote blocks and captions. Headings, bullets, trust bar, fact line and buttons count):

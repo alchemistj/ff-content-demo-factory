@@ -36,7 +36,7 @@ They stayed with me closely throughout entire process\!\!\! Especially Miguel\!\
 
   
 
-So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and gives roof replacement and insurance storm restoration a page each. Your other pages we left alone.
+So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and gives roof replacement and insurance storm restoration a page each.
 
   
 
@@ -52,7 +52,7 @@ So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and giv
 
   
 
-  - Nobody on your team is named in your own words, though your reviews name him.
+  - Your site never names Miguel, the owner your reviews name.
   - Insurance help, which your reviews praise, gets one clause. Hail victims can't tell you handle claims.
   - "Rainforcig" and "we've you taken care of" are typos, and "roofing company" repeats in most paragraphs.
 
@@ -161,7 +161,7 @@ So the demo says Roofing Company in Peoria, IL, names Miguel at the top, and giv
   
   
 
-Gets you found
+**Gets you found**
 
   
 
@@ -172,7 +172,7 @@ Gets you found
 
   
 
-Earns their trust
+**Earns their trust**
 
   
 
@@ -182,7 +182,7 @@ Earns their trust
 
   
 
-Turns visitors into calls
+**Turns visitors into calls**
 
   
 
@@ -192,7 +192,7 @@ Turns visitors into calls
 
   
 
-Keeps working after launch
+**Keeps working after launch**
 
   
 
@@ -349,8 +349,6 @@ If you're a veteran or on active duty, we offer incentives and priority scheduli
 **Do you do small jobs?** Yes. We repair leaks and storm damage as well as replace whole roofs.
 
   
-
-**How fast can you get to a leak?** Customers describe same-day service. Call and tell us where you see water, and we'll tell you what we can do and when.
 
 ## Tell Us What's Going On With Your Roof
 
@@ -648,6 +646,8 @@ We usually set a time to come look at the roof. Miguel Rivera, our owner, is oft
 
 ## Notes (not page copy)
 
+**Rebuild reason: SEO. Titles read as ad copy ("\#1 Roofers", "\[Unmatched\] ... Top 1 Roofers"), and replacement and residential roofing share one H1.**
+
 **Word counts** (by script; "without quotes" excludes blockquotes, buttons, trust bar and caption lines; "with" is everything on the page)
 
   
@@ -671,7 +671,7 @@ We usually set a time to come look at the roof. Miguel Rivera, our owner, is oft
   - 10-year workmanship warranty: their claim (/roof-replacement/, /financing/, /gutters/). Terms are not on the site. Used on the roof replacement page only.
   - Free 5-year maintenance plan, "$3,000 value", projects over $25,000, "for a limited time": their claim with its own terms (/roof-replacement/, /roofing-in-peoria/residential-roofing/). The value is unverified. Replacement page only; worded "which we value at $3,000".
   - GoodLeap financing, "$0 down", "no prepayment penalties", deductible coverage: their claim (/financing/, /insurance-claims/). Stated once on the roof replacement page; the insurance page does not repeat it. "Most decisions take less than two minutes" is left out as an absolute.
-  - Free drone inspection, "free, no-obligation": their claim (/roofing-in-peoria/storm-damage-roof-repair/, /insurance-claims/). Said in full on home (FAQ); the insurance page hero says "free inspection". Backport pass Nov 16: one strip only, on home (5 items: GAF Certified, licensed/bonded/insured, free drone inspection, customers describe same-day service, towns). Strips removed from both service pages and contact. Speed claim, written at one-review strength (Adnan M. "Same day service", Jeremy "within one day", Adam T. "quick emergency repair"): home strip plus one new home FAQ (5 questions), replacement hero, insurance hero. No ratings or review counts anywhere. Strategy page now has the badge, approved headline and subheading, and the "first five pages" line; the repeated "This demo is the first five pages" line and the "again and again" repeats were removed; full-build list follows FULL\_BUILD\_LINES (unapproved update line and rating strip line removed); a CTA sentence follows the confirm list.
+  - Free drone inspection, "free, no-obligation": their claim (/roofing-in-peoria/storm-damage-roof-repair/, /insurance-claims/). Said in full on home (FAQ); the insurance page hero says "free inspection". Backport pass Nov 16: one strip only, on home (5 items: GAF Certified, licensed/bonded/insured, free drone inspection, customers describe same-day service, towns). Strips removed from both service pages and contact. Speed claim, written at one-review strength (Adnan M. "Same day service", Jeremy "within one day", Adam T. "quick emergency repair"): home strip, replacement hero, insurance hero. No ratings or review counts anywhere. Strategy page now has the badge, approved headline and subheading, and the "first five pages" line; the repeated "This demo is the first five pages" line and the "again and again" repeats were removed; full-build list follows FULL\_BUILD\_LINES (unapproved update line and rating strip line removed); a CTA sentence follows the confirm list.
   - Veteran incentives and priority scheduling: their claim (/about-us/). Size not stated, so the copy says "ask us what applies."
   - Miguel Rivera as owner: confirmed on his own page (/miguel-rivera/, "founder and owner-operator") and by reviews that say "the owners". Used by first name on home and contact.
 

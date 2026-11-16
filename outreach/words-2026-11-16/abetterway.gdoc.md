@@ -36,7 +36,7 @@ We had a great experience with this roofing company\! They were professional, ho
 
   
 
-Look at your storm page. It never says you help with insurance claims, and how you replace a roof is buried in a 2013 article. So we built the homepage, roof replacement, storm damage and insurance claims, and contact pages. Your other services live on the homepage.
+Look at your storm page. It never says you help with insurance claims, and how you replace a roof is buried in a 2013 article. So the demo opens with Roofing Company in Lincoln, NE, and gives roof replacement and storm damage and insurance claims a page each.
 
   
 
@@ -161,7 +161,7 @@ Look at your storm page. It never says you help with insurance claims, and how y
   
   
 
-Gets you found
+**Gets you found**
 
   
 
@@ -172,7 +172,7 @@ Gets you found
 
   
 
-Earns their trust
+**Earns their trust**
 
   
 
@@ -182,7 +182,7 @@ Earns their trust
 
   
 
-Turns visitors into calls
+**Turns visitors into calls**
 
   
 
@@ -192,7 +192,7 @@ Turns visitors into calls
 
   
 
-Keeps working after launch
+**Keeps working after launch**
 
   
 
@@ -358,7 +358,7 @@ Roof replacement in Lincoln and nearby towns
 
 # Roof Replacement in Lincoln, NE — A Better Way Construction & Roofing
 
-Our replacements generally tear the old roof off down to the bare wood, so we can check the boards underneath and replace any that are damaged before the new roof goes on. Customers describe an estimate and finished roof work within a week. Call us and we'll set up a time to look at yours.
+Our replacements generally tear the old roof off down to the bare wood, so we can check the boards underneath and replace any that are damaged before the new roof goes on. Call us and we'll set up a time to look at yours.
 
   
 
@@ -557,7 +557,7 @@ A great company\! As a first time home owner and first time going through insura
 
   
 
-— Social H.
+— Social H., Google review
 
 ## How a Claim Usually Goes
 
@@ -693,7 +693,7 @@ Prefer to write? Send your name, phone, email and a few lines about the project,
 
   
 
-  - Strategy: about 1,000 with the badge block and the full-build list. The GAF certificate question moved from the confirm list to Facts to verify, because GAF appears in page copy as the business's own claim; the confirm list now asks about the Rocky and Sue / Alex and Mary names. Speed claim placement: home strip and hero once each; replacement and storm heroes once each; no extra FAQ questions added because each page's sections already answer them. No ratings or review counts anywhere.
+  - Strategy: about 1,000 with the badge block and the full-build list. The GAF certificate question moved from the confirm list to Facts to verify, because GAF appears in page copy as the business's own claim; the confirm list now asks about the Rocky and Sue / Alex and Mary names. Speed claim placement: home strip and hero once each; storm hero once; no extra FAQ questions added because each page's sections already answer them. No ratings or review counts anywhere.
   - Home: about 810 without quotes, about 980 with (two filler lines cut, one hero line added). 11 sections. Strip: Free Estimates, GAF Certified Roofers, Insurance Claim Help, Customers describe quick work. No FAQ block on home.
   - Roof Replacement: 1,308 without quotes, 1,505 with. 12 sections. Hedged trade knowledge (repair vs replace by age, where roofs fail, ventilation and ice dams, wind ratings, winter installs, replacement day, how to compare estimates) is general knowledge, not a business claim. Business claims come from the site (tear off to bare deck, new felt, new flashing, nails not staples, venting specialty, GAF warranties).
   - Storm Damage and Insurance Claims: 805 without quotes, 1,058 with. 11 sections. The insurer decides coverage; no outcome is promised. Business claims: free storm assessment, Maria helps with insurance claims, Alex evaluates the roof, local office (all from site or reviews). The claim steps, deductible and cash-value explanations are hedged general knowledge.
