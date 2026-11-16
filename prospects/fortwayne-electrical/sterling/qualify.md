@@ -12,3 +12,7 @@
 
 Verdict: PASS.
 Likely money services: Electrical panel upgrade; Electrical troubleshooting and repair.
+
+## Re-qualify, Nov 16 (FF Architect call, demo rerun under briefs 21550ef)
+- Test 3 (enough real material): SKIP. The site names no person, offer or process, and its three service pages (residential, commercial, upgrades and repairs) run about 280 words each. In the rerun, both service pages (troubleshooting/repair, lighting) failed the blind taste check three times, and no other service has more than a list name or one sentence.
+- Verdict update: SKIP. Dropped from the rerun; nothing was written to its Google Doc. Its slot is not refilled.
