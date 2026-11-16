@@ -1,0 +1,750 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "fortwayne-garagedoor-tonys",
+  "place": {
+    "name": "Tony's Garage Door Service LLC",
+    "placeId": "ChIJ2Z-ZPev9FYgRLo128g4WDss",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Tony's%20Garage%20Door%20Service%20LLC&query_place_id=ChIJ2Z-ZPev9FYgRLo128g4WDss",
+    "address": "3471 Auer Dr, Fort Wayne, IN 46835",
+    "phone": "(903) 330-6287",
+    "rating": 5,
+    "totalReviewCount": 111
+  },
+  "pulledAt": "2026-11-16T05:46:28.779Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sSFIweGZhVkJDY0ZKa1FWcEZSRTAyU1ZGV1QyYxAB",
+      "reviewer": "Marcos H.",
+      "rating": 5,
+      "text": "Our garage door springs were replaced quickly and at a fair price.  He provided information and tips to extend the life of the springs. Excellent service and honest work.",
+      "publishedAt": "2026-11-13T22:20:54.822Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sSFIweGZhVkJDY0ZKa1FWcEZSRTAyU1ZGV1QyYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmlHR0xfaVBCcFJkQVpFRE02SVFWT2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGTlkwWTNiVmt6WXpoZk1YRk5PVUZGWDJ0aWNFRRAB",
+      "reviewer": "Mike C.",
+      "rating": 5,
+      "text": "I needed a new weather strip and a few hinges replaced. I call a few Garage door places and I was surprised at the price and they just wanted to sell me a door that I dont need. As I was searchin I came across Tony and he is great. The price was way less then the others he was here the same day and took care of it and the door works great and I dont need a new one. If any Garage door service save youeself time and money and call Tony. The guy knows his stuff. His daughter helps him sometimes and that was a plus also. A true family owned and in Fort Wayne. Very pleased.",
+      "publishedAt": "2026-11-12T14:27:50.048Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGTlkwWTNiVmt6WXpoZk1YRk5PVUZGWDJ0aWNFRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOkFNY0Y3bVkzYzhfMXFNOUFFX2ticEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21NeWVIQnhTR05WV2w4MFJHOHlhVVY2UzNKc2NYYxAB",
+      "reviewer": "Robin",
+      "rating": 5,
+      "text": "Had a lift cable snap and I called at 9:30am to see if they could fix it. They were at my house same day.  Excellent work. They not only replaced the cable but greased up all the moving parts. Door is smoother and quieter than it was before. Price was very reasonable. I would not hesitate to call Tony's again if I had an issue with my garage door.",
+      "publishedAt": "2026-10-21T22:33:00.131Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21NeWVIQnhTR05WV2w4MFJHOHlhVVY2UzNKc2NYYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmMyeHBxSGNVWl80RG8yaUV6S3JscXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSYU5YQm1TMlpKUWtWelRsbHRTWGd0VUc1aFUxRRAB",
+      "reviewer": "Greg W.",
+      "rating": 5,
+      "text": "Saturday morning I called Tony at 9:30. Gave me a quote, was at my house before 10am<br>Replaced both springs and done by 1030<br>Offered things I should do to keep door operating at peak efficiency. Lubed all pivot points. I would highly recommend Tony for your door needs",
+      "publishedAt": "2026-08-29T16:13:41.152Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSYU5YQm1TMlpKUWtWelRsbHRTWGd0VUc1aFUxRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOjRaNXBmS2ZJQkVzTlltSXgtUG5hU1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21NMldtOHpaMk5oYTBoU1dVbHpMWGxvVjNOWFdHYxAB",
+      "reviewer": "Cole C.",
+      "rating": 5,
+      "text": "I cannot say enough about the incredible service provided by Tony. We were stuck with a broken garage door spring, but Tony answered my call and showed up that same day to get it fixed. He is a true professional who clearly cares about his customers and takes pride in his work. If you ever have an issue with your garage, Tony is the only guy you need to call.",
+      "publishedAt": "2026-08-18T13:00:38.493Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21NMldtOHpaMk5oYTBoU1dVbHpMWGxvVjNOWFdHYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmM2Wm8zZ2Nha0hSWUlzLXloV3NXWGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201TE5rRlhaSFYwVkhKS00yaHZhRFZQVjNwalJYYxAB",
+      "reviewer": "Don W.",
+      "rating": 5,
+      "text": "We were experiencing an issue with our small garage door.  Called the business number on a Saturday evening and Tony was out early on Monday morning to quickly solve the problem.  A very decent, professional, and honest man!  We would definitely recommend his business to anyone in need of garage door service or replacement.",
+      "publishedAt": "2026-08-17T18:22:00.482Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201TE5rRlhaSFYwVkhKS00yaHZhRFZQVjNwalJYYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOm5LNkFXZHV0VHJKM2hvaDVPV3pjRXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCTVMxRXdNMHRRVm1wRFQzTldhMUJvTWpaUWIyYxAB",
+      "reviewer": "Austin M.",
+      "rating": 5,
+      "text": "Fair pricing & fixed quickly",
+      "publishedAt": "2026-08-05T16:23:23.042Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCTVMxRXdNMHRRVm1wRFQzTldhMUJvTWpaUWIyYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOjBMS1EwM0tQVmpDT3NWa1BoMjZQb2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OVWRuQjFXRTQzWlZwZlFtbEVUbUozWlVGZk9GRRAB",
+      "reviewer": "Rebecca Q.",
+      "rating": 5,
+      "text": "I called Tony's Garage Door Service at 7pm on a Friday night. I got home put my garage door down and the spring snapped.Tony was there within an hour and had it completely fixed quickly. He was professional and personable. He did great work and charged a very fair price, especially for later on a weekend evening.  I will definitely use him again for any of my garage door needs. I highly recommend Tony!!",
+      "publishedAt": "2026-07-25T10:42:32.122Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OVWRuQjFXRTQzWlZwZlFtbEVUbUozWlVGZk9GRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOnNUdnB1WE43ZVpfQmlETmJ3ZUFfOFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCemJVOU9iekpQWWt4T1RrRkphamRWTWxGM1dtYxAB",
+      "reviewer": "Janet D.",
+      "rating": 5,
+      "text": "Tony did a fabulous repair on our 16ft garage door. Replaced the seal, rollers and adjusted our door. On time and very professional. Very nice guy! He will my brother's Reg's garage door guy. Will recommend him to anyone who needs reliable service.",
+      "publishedAt": "2026-07-21T17:08:31.709Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCemJVOU9iekpQWWt4T1RrRkphamRWTWxGM1dtYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOjBzbU9ObzJPYkxOTkFJajdVMlF3Wmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pCS1FVcGhUVU5MWTNkM1psRkZRV3BmTUdkaWRtYxAB",
+      "reviewer": "nicholas C.",
+      "rating": 5,
+      "text": "Jeff from Tony’s garage door service  Just left . I called yesterday afternoon and they came out the very next day . I have a large heavy double garage door Jeff fixed the issue as well as answered all my questions i had about garage doors and repairs . super great guy and I won’t be going anywhere else for any garage doors issues. would recommended these fine folks to my own grandma . Very low cost repairs and even inspected and lubed all the rollers and hinges . was worried I’d get an out of this world repair bill that was not at all the case glad I called them .",
+      "publishedAt": "2026-07-09T17:58:17.813Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pCS1FVcGhUVU5MWTNkM1psRkZRV3BmTUdkaWRtYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOjBKQUphTUNLY3d3ZlFFQWpfMGdidmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taRlZWcHVOVUpuZW1oV1J6RkNibkJCYUhsQldHYxAB",
+      "reviewer": "Kristi",
+      "rating": 5,
+      "text": "I called every garage company in town for an emergency fix during the evening;; they either could not come until next day or did not answer. Tony answered and was fixing my door within the hour. He was super fast, friendly, and affordable!! Thanks Tony!!!",
+      "publishedAt": "2026-07-05T01:18:42.401Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taRlZWcHVOVUpuZW1oV1J6RkNibkJCYUhsQldHYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOkZFVVpuNUJnemhWRzFCbnBBaHlBWGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sTmNsUkRjM2t4T1dkSVZFRkRWV2xUWDJrNWExRRAB",
+      "reviewer": "Andrew C.",
+      "rating": 5,
+      "text": "Called on a Sunday for a jammed trolley and he was out in under an hour. Amazing service!",
+      "publishedAt": "2026-06-16T03:35:41.163Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sTmNsUkRjM2t4T1dkSVZFRkRWV2xUWDJrNWExRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOnlNclRDc3kxOWdIVEFDVWlTX2k5a1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kRVpsSTVjMmh0ZDB4alVXTktjbFJCTm1FNGVVRRAB",
+      "reviewer": "Joel S.",
+      "rating": 5,
+      "text": "Same day service, very nice and incredibly reasonable. Will definitely use Tony's again! I needed some parts and while he was there, I asked him about a loose garage door chain that I was told by a competitor just needed replaced along with my garage door opener. He showed me, exactly what the problem was with my chain, a loose bolt that needed tightened! Has worked perfectly ever since. He gained my trust and my service down the road as well!",
+      "publishedAt": "2026-06-13T23:26:07.192Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kRVpsSTVjMmh0ZDB4alVXTktjbFJCTm1FNGVVRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOndEZlI5c2htd0xjUWNKclRBNmE4eUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT200dFNXbFNVVGxUVkRoMWJGQlpTMTl0VkZaSlVHYxAB",
+      "reviewer": "Anne H.",
+      "rating": 5,
+      "text": "We had tried everything to get our garage door to operate properly and nothing worked.  We called Tony and within 20 mins, he diagnosed and fixed the problem.   Very professional and genuinely nice to deal with.<br><br>If you need maintenance on your garage doors, call Tony!!",
+      "publishedAt": "2026-06-06T00:41:40.091Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT200dFNXbFNVVGxUVkRoMWJGQlpTMTl0VkZaSlVHYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOm4tSWlSUTlTVDh1bFBZS19tVFZJUGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oWmFXMVhVRWRKZWtWR1pFOU1ObE5VTW1WbFZGRRAB",
+      "reviewer": "Shamma R.",
+      "rating": 5,
+      "text": "Our experience with Tony was excellent. He replaced our 90+ year old garage door. It was a complex job that needed framing work, but Tony made it possible. He gave us a very fair quote and completed the work within a day. Would highly recommend his work.",
+      "publishedAt": "2026-06-01T20:50:19.669Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oWmFXMVhVRWRKZWtWR1pFOU1ObE5VTW1WbFZGRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmhZaW1XUEdJekVGZE9MNlNUMmVlVFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21Gek5WcEpkV2x0U25keWN6Tldla3N3V0dKdE0wRRAB",
+      "reviewer": "Mary H.",
+      "rating": 5,
+      "text": "If you like hometown politeness and good service, this is the company for you! We've used Tony twice now for garage door repairs and for a new garage door. He guided us through picking out colors and design, and his choices were the BEST! Installation was so fast and uneventful, I couldn't believe it was finished already! And Tony also gave us pointers on winterizing and general upkeep. It's a joy to hire a company like this. No pressure. Just good communication, good work, and good people! Thank you, Tony!",
+      "publishedAt": "2026-05-29T12:55:59.970Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21Gek5WcEpkV2x0U25keWN6Tldla3N3V0dKdE0wRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmFzNVpJdWltSndyczNWekswWGJtM0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CclJrSmtRVGgwVlRWRE1sTkZhMWRCTTNjeE5tYxAB",
+      "reviewer": "lApinan L.",
+      "rating": 5,
+      "text": "The guy got here on time and get right on fixing the garage door in a timely fashion and with reasonable price.",
+      "publishedAt": "2026-05-23T19:31:31.329Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CclJrSmtRVGgwVlRWRE1sTkZhMWRCTTNjeE5tYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOnBrRkJkQTh0VTVDMlNFa1dBM3cxNmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214ZmNVdHVlbTFETkRWeFF6QlpNRUZ3VDNGdVVYYxAB",
+      "reviewer": "Brendan M.",
+      "rating": 5,
+      "text": "Best price in town and provided a fast, efficient installation. Thanks you!",
+      "publishedAt": "2026-05-11T20:56:36.422Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214ZmNVdHVlbTFETkRWeFF6QlpNRUZ3VDNGdVVYYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmxfcUtuem1DNDVxQzBZMEFwT3FuUXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xOVVltVXRNRGRhT1dzNExTMWphVkJYZHpWWVlVRRAB",
+      "reviewer": "Sean D.",
+      "rating": 5,
+      "text": "Fast, honest, knowledgeable, and efficient. Thanks, Tony!",
+      "publishedAt": "2026-05-05T21:16:04.588Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOVVltVXRNRGRhT1dzNExTMWphVkJYZHpWWVlVRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOlNUYmUtMDdaOWs4LS1jaVBXdzVYYUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25wSFFWUjJka1ZoTW5sRGFtdGtSWGxtUVhWTE1WRRAB",
+      "reviewer": "justin C.",
+      "rating": 5,
+      "text": "Contacted him at 6pm on a Monday night and he was here by 7 for a broken spring.quick and very well priced. He even oiled the rollers and said he checked everything else and looked good.",
+      "publishedAt": "2026-05-04T23:46:48.727Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wSFFWUjJka1ZoTW5sRGFtdGtSWGxtUVhWTE1WRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOnpHQVR2dkVhMnlDamtkRXlmQXVLMVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoWWVrUlRWRGRpTVhKSGFXUm9ORnBFVERFeE1IYxAB",
+      "reviewer": "Jasmin B.",
+      "rating": 5,
+      "text": "Tony is a awesome guy helped us with a door and was very nice and friendly",
+      "publishedAt": "2026-04-10T17:50:25.020Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoWWVrUlRWRGRpTVhKSGFXUm9ORnBFVERFeE1IYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOlhYekRTVDdiMXJHaWRoNFpETDExMHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pWSE5YbHpRM0ozWVZoMlZGVjNlRE53VTFSdVEyYxAB",
+      "reviewer": "J&R H.",
+      "rating": 5,
+      "text": "Tony responded promptly, Came in to look at the garage door And replaced it the next day. His price is excellent, and the job was professionally done. Thank you, Tony and helper!",
+      "publishedAt": "2026-04-10T15:27:53.929Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWSE5YbHpRM0ozWVZoMlZGVjNlRE53VTFSdVEyYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOjVHNXlzQ3J3YVh2VFV3eDNwU1RuQ2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xwTlVuaEpVWE5pUkRkek1sSkxjV1pUYVRVM2IxRRAB",
+      "reviewer": "Jake S.",
+      "rating": 5,
+      "text": "Friday morning, my garage door won’t open, won’t budge and I am stuck with my car in the garage.  I called Tony at 8:06 AM and by 8:55 AM, less than hour later, he showed up and had my door working.  Literally less than an hour from when I even called, it was done! I am stunned at how quickly not only Tony was able to get here, but also replace a broken spring and do some general maintenance. Though I did not price shop, I will say that his price was significantly lower than I was expecting.  If you need work on your garage door, Tony should be your first call.",
+      "publishedAt": "2026-04-10T13:28:31.341Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwTlVuaEpVWE5pUkRkek1sSkxjV1pUYVRVM2IxRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOlpNUnhJUXNiRDdzMlJLcWZTaTU3b1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kQ1UxaE5WSGhRTmtwWGJHZENVV1pDVjFkWk5VRRAB",
+      "reviewer": "Tyler N.",
+      "rating": 5,
+      "text": "Called Tony at 10pm on a Sunday answered first ring. Came to my house Monday morning quoted me a great price. Got my garage door fixed and working better than it did before. Highly recommend.",
+      "publishedAt": "2026-03-16T14:25:53.339Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kQ1UxaE5WSGhRTmtwWGJHZENVV1pDVjFkWk5VRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOndCU1hNVHhQNkpXbGdCUWZCV1dZNUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kV2RXMHRhM1k0VjJSTlpHRm9VbUpoVjJkalNWRRAB",
+      "reviewer": "Lauren",
+      "rating": 5,
+      "text": "Tony showed up fast and was super nice. Great work and will definitely call again when needed!",
+      "publishedAt": "2026-03-14T19:48:52.037Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kV2RXMHRhM1k0VjJSTlpHRm9VbUpoVjJkalNWRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOndWdW0ta3Y4V2RNZGFoUmJhV2djSVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21SalFYb3hiR05qVG1GQlYyNUllVTR6ZHpZdFRVRRAB",
+      "reviewer": "Brianna V.",
+      "rating": 5,
+      "text": "Incredibly prompt, quick service, great prices, and kind guys!!",
+      "publishedAt": "2026-03-04T17:07:58.367Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SalFYb3hiR05qVG1GQlYyNUllVTR6ZHpZdFRVRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmRjQXoxbGNjTmFBV25IeU4zdzYtTUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25oMVpVVjRURFJSVVZaSFQxRTVTMG8wTmtWVldIYxAB",
+      "reviewer": "SevereCobra",
+      "rating": 5,
+      "text": "Came immediately at 11:30pm and got done within 40 minutes and fixed the garage door no problem would always recommend to use tonys",
+      "publishedAt": "2026-02-27T05:39:25.971Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oMVpVVjRURFJSVVZaSFQxRTVTMG8wTmtWVldIYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOnh1ZUV4TDRRUVZHT1E5S0o0NkVVWHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OUk1FNUdUMjVyWkhoTVoyMWhkV1pzV1hjNFZVRRAB",
+      "reviewer": "Skylar",
+      "rating": 5,
+      "text": "Came in and fixed everything I messed up lol, answered my late night call and was there the next morning. Thanks Tony!",
+      "publishedAt": "2026-02-16T16:17:37.736Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OUk1FNUdUMjVyWkhoTVoyMWhkV1pzV1hjNFZVRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOnNRME5GT25rZHhMZ21hdWZsWXc4VUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201bk9XeEdTbkpqYXpkWWNHWXlVMGg0YW5Gck9XYxAB",
+      "reviewer": "Larry S.",
+      "rating": 5,
+      "text": "Fantastic! They know what they are doing and they did it fast. Got me in on their runs. I can't thank them enough.",
+      "publishedAt": "2026-01-16T16:28:30.581Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201bk9XeEdTbkpqYXpkWWNHWXlVMGg0YW5Gck9XYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOm5nOWxGSnJjazdYcGYyU0h4anFrOWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WU2Exb3dkSFY0Y0hFNVVtdDVNMnhXTVZRNGFGRRAB",
+      "reviewer": "Andy G.",
+      "rating": 5,
+      "text": "Highly recommend Tony. VERY quick response time and very professional. Good price with great quality of work.",
+      "publishedAt": "2026-01-08T16:02:54.112Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WU2Exb3dkSFY0Y0hFNVVtdDVNMnhXTVZRNGFGRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOnVSa1owdHV4cHE5Umt5M2xWMVQ4aFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGVlpXeE1XR3gxWkRSTE9IUkRkRGhKYjJSVGNVRRAB",
+      "reviewer": "Randy S.",
+      "rating": 5,
+      "text": "Tony was prompt, professional, and efficient in replacing our garage door spring.<br>I appreciate his garage door service and recommend him.",
+      "publishedAt": "2026-01-03T16:11:34.161Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGVlpXeE1XR3gxWkRSTE9IUkRkRGhKYjJSVGNVRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOlFVZWxMWGx1ZDRLOHRDdDhJb2RTcUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KRGVXNXllRkZrY0ZoVVVqRnRSVWxTZFhRNFMwRRAB",
+      "reviewer": "Donna W.",
+      "rating": 5,
+      "text": "Tony and Jeff did an excellent job installing our new garage door opener and fixed the mistakes from our previous company. Fast friendly service and will use again if we ever need anything. Fair price and fast installation.",
+      "publishedAt": "2025-11-18T17:35:53.433Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KRGVXNXllRkZrY0ZoVVVqRnRSVWxTZFhRNFMwRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmJDeW5yeFFkcFhUUjFtRUlSdXQ4S0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s0dGFrbHBhVmd5VEhFNE1rdDBhMjFNY1RnMVgwRRAB",
+      "reviewer": "Jacob M.",
+      "rating": 5,
+      "text": "Great experience. Broken spring fixed up same day and my door is back in business.",
+      "publishedAt": "2025-11-18T14:29:48.558Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s0dGFrbHBhVmd5VEhFNE1rdDBhMjFNY1RnMVgwRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOk4taklpaVgyTHE4Mkt0a21McTg1X0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xneGJtOVVaa1ZhT0hGQ1QycG1hM05DVGtjeGFHYxAB",
+      "reviewer": "Jim H.",
+      "rating": 5,
+      "text": "I would recommend Tony to anyone needs a garage door repair. He was fast clean and did GREAT work. He is a people person too, we carried a good conversation the whole time he worked. Check everything plus oiled all the points too to ensure good lubrication. I give his company 5 stars! Thanks Tony your my garage door guy!",
+      "publishedAt": "2025-11-18T00:08:36.701Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xneGJtOVVaa1ZhT0hGQ1QycG1hM05DVGtjeGFHYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOlgxbm9UZkVaOHFCT2pma3NCTkcxaGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sV1pWRlBWMkZPWTBkMk4zUkpaRXBuU2tjMk0yYxAB",
+      "reviewer": "Vaughn T.",
+      "rating": 5,
+      "text": "Quick dependable and reasonable. They are the best",
+      "publishedAt": "2025-10-17T17:29:50.751Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sV1pWRlBWMkZPWTBkMk4zUkpaRXBuU2tjMk0yYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOnlWZVFPV2FOY0d2N3RJZEpnSkc2M2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wbGFrZExXbXB6U0RWT1VtNUdRVkp5VnpkR2EzYxAB",
+      "reviewer": "Nathaniel H.",
+      "rating": 5,
+      "text": "Couldn’t be happier with the outstanding service. Garage door wouldn’t shut and he was out within an hour fixing it. A real life saver. Highly recommend Tony to anyone needing their garage door fixed promptly. He did a great job explaining and his price was very reasonable.",
+      "publishedAt": "2025-08-07T23:14:59.366Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wbGFrZExXbXB6U0RWT1VtNUdRVkp5VnpkR2EzYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmplakdLWmpzSDVOUm5GQVJyVzdGa3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kM1NsUkxiVTFOTURGRE9URm1XbE16VlZVNFVHYxAB",
+      "reviewer": "Marilyn V.",
+      "rating": 5,
+      "text": "Tony came within an hour to repair our door that a cable  needed  rewound.  What a blessing to have the problem taken care of before night.     Thank you Tony!",
+      "publishedAt": "2025-07-29T01:29:43.655Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kM1NsUkxiVTFOTURGRE9URm1XbE16VlZVNFVHYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOnd3SlRLbU1NMDFDOTFmWlMzVVU4UGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGT1FqaGxkbnBpT1UxbVJUSkpUR1UzZVdGV00wRRAB",
+      "reviewer": "Nathan S.",
+      "rating": 5,
+      "text": "Tony got to the house and replaced our spring within the hour. Is a blast to talk to, explained everything and more than reasonable. Would recommend to ANYBODY that wants affordable and efficient repairs!",
+      "publishedAt": "2025-07-15T18:42:26.134Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGT1FqaGxkbnBpT1UxbVJUSkpUR1UzZVdGV00wRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOjFOQjhldnpiOU1mRTJJTGU3eWFWM0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KWGJEUkRRVEZrWlY5SGJuUkpOSGhpZFRkbE9HYxAB",
+      "reviewer": "Steven P.",
+      "rating": 5,
+      "text": "One of the cables that holds tension on my garage door broke.  I called them at 6 PM and they were at my door 10AM the next day.   They were scheduled for 11AM but were able to get there an hour early.<br><br>They replaced both cables, the hardware the cables hook onto at the bottom of the door,  and a hinge that broke.  The markup on parts was minimal.   I googled the parts I thought I'd need.  The parts cost is very reasonable.   The labor cost was also very reasonable.<br><br>Could I have done this myself?  Sure.   Would it have taken me all day on a Saturday when I could be relaxing with my family?  Yes.<br><br>Definitely worth the price.  If I ever need anything involving a garage door in the future,  I'm going here.",
+      "publishedAt": "2025-07-10T19:03:17.358Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KWGJEUkRRVEZrWlY5SGJuUkpOSGhpZFRkbE9HYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOmJXbDRDQTFkZV9HbnRJNHhidTdlOGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsTFJVNVJNR2xwVTE5dmJ6QTBaRXRvUzBwTU9YYxAB",
+      "reviewer": "Sara F.",
+      "rating": 5,
+      "text": "I called at 8:10 p.m. on a Tuesday night and my springs were replaced by 9:45 p.m. and for a great price! He doesn't mess around and does a wonderful job. Thank you so very much for coming out the same night and getting it fixed so quickly.",
+      "publishedAt": "2025-06-25T02:01:47.842Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsTFJVNVJNR2xwVTE5dmJ6QTBaRXRvUzBwTU9YYxAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CAIQACodChtycF9oOklLRU5RMGlpU19vbzA0ZEtoS0pMOXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VNbTRucWZjbnJtaERnEAE",
+      "reviewer": "Rick L.",
+      "rating": 5,
+      "text": "Called and came within 20 minutes.    Replaced garage door springs with no issues at a extremely competive price.",
+      "publishedAt": "2025-06-09T13:16:03.188Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VNbTRucWZjbnJtaERnEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEMm4nqfcnrmhDg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VKX0N2NGlOeDlhaDV3RRAB",
+      "reviewer": "Michael B.",
+      "rating": 5,
+      "text": "Great service and quick repair of a broken spring and replacement of the other on a double bay garage door. Best price in Fort Wayne.",
+      "publishedAt": "2025-06-06T18:10:31.121Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VKX0N2NGlOeDlhaDV3RRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEJ_Cv4iNx9ah5wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VNMkNwY21zNjVyQ013EAE",
+      "reviewer": "David",
+      "rating": 5,
+      "text": "Fast does great work",
+      "publishedAt": "2025-05-23T00:16:18.997Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VNMkNwY21zNjVyQ013EAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEM2Cpcms65rCMw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VQSFZ3NXUtcmVHOER3EAE",
+      "reviewer": "Rhonda P.",
+      "rating": 5,
+      "text": "Just had Tony come to my house to replace a garage door spring.  He arrived within an hour of the call & repaired the door so I could get my car out of the garage!  Cost $300.00 for the whole job.  Greatful for his work!",
+      "publishedAt": "2025-05-21T18:18:39.572Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VQSFZ3NXUtcmVHOER3EAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEPHVw5u-reG8Dw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNZLXJfczhBRRAB",
+      "reviewer": "Becky B.",
+      "rating": 5,
+      "text": "Not only did he give us an immediate quote on the phone but arrived at our house within 10 minutes of our phone call and took him 30 minutes from start to finish to replace two springs. Super personable and would recommend to anyone.  Thanks Tony!!",
+      "publishedAt": "2025-05-03T20:01:30.744Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNZLXJfczhBRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCY-r_s8AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNvNl9PRW9BRRAB",
+      "reviewer": "Rechelle S.",
+      "rating": 5,
+      "text": "My garage door broke tonight…I thought it was going to be a major fix that would be super expensive.  Tony came within the hour, figured out the drum was blown out. Replaced the faulty parts and even provided maintenance tips. Quality work at a reasonable price! If you’re in need of garage door repairs or installation…I highly recommend Tony.  Thanks Tony",
+      "publishedAt": "2025-04-20T03:16:06.581Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNvNl9PRW9BRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCo6_OEoAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNvNm9yZFpnEAE",
+      "reviewer": "Lincoln",
+      "rating": 5,
+      "text": "Spring broke on my door, did a Google search for repair service. Tony's wasn't the first that came up but called several. None wanted to give me a straight price quote but wanted to come out first and if i didn't except thier price i would be charged a $100. It was late in the day and I was given a straight up price from Tony's. He even charged non emergency pricing for me. Thank you Tony for the fair quick friendly service. Highly recommend Tony's repair service",
+      "publishedAt": "2025-04-16T10:28:26.840Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNvNm9yZFpnEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCo6ordZg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNvNHZ5WmZ3EAE",
+      "reviewer": "Lindsay B.",
+      "rating": 5,
+      "text": "Prompt/same day service. Was able to give quote over phone. Arrived when he said he would and was respectful of property. Fair price. Would recommend!",
+      "publishedAt": "2025-04-15T19:52:57.424Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNvNHZ5WmZ3EAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCo4vyZfw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNJODRQbjl3RRAB",
+      "reviewer": "Avery M.",
+      "rating": 5,
+      "text": "My garage door went off track and the track was bent and couldn’t get the door to move at all. I called and within 30 minutes they arrived and fixed it! An hour from the time I called to them fixing it! Tony is amazing and can’t thank him enough for getting here so quickly! Also he is very nice and I will continue to do business with him!",
+      "publishedAt": "2025-04-04T16:02:20.802Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJODRQbjl3RRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCI84Pn9wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNJOXBLZEZnEAE",
+      "reviewer": "Luis S.",
+      "rating": 5,
+      "text": "Tony replaced both my garage doors. He was promt on coming to give me a quote and was able to get it done a few days later. He did a great job and I'll definitely recommend him to all my friends and family that need garage door replacement or repair. Thanks Tony",
+      "publishedAt": "2025-04-01T20:33:40.806Z",
+      "ownerResponse": "Thank you, Luis appreciate the business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNJOXBLZEZnEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCI9pKdFg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNJOHBhVWx3RRAB",
+      "reviewer": "Greg S.",
+      "rating": 5,
+      "text": "We needed a quick fix and they were out within the hour and had it fixed in no time.  Price was fair and service was spectacular.  Would highly recommend!",
+      "publishedAt": "2025-03-31T22:37:15.745Z",
+      "ownerResponse": "Thank you, Greg appreciate the business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJOHBhVWx3RRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCI8paUlwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNJdE9DanNRRRAB",
+      "reviewer": "George S.",
+      "rating": 5,
+      "text": "Tony.  Outstanding  Thanks. Come out ..replaced both cables..  & replace brackets that bent from cable breaking...both cables really rusted...everybody check your cables for rust...Call Tony he will fix it...before they break...Thanks Tony ..",
+      "publishedAt": "2025-03-30T17:04:02.937Z",
+      "ownerResponse": "Thank you, George appreciate the business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNJdE9DanNRRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCItOCjsQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUN3al8zZ09nEAE",
+      "reviewer": "Emily M.",
+      "rating": 5,
+      "text": "Tony and his crew came out quickly to replace my broken garage door springs for a good price! Thanks for your help!",
+      "publishedAt": "2025-03-22T01:47:53.821Z",
+      "ownerResponse": "Thank you we appreciate the business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUN3al8zZ09nEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCwj_3gOg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUN3anV6Q3h3RRAB",
+      "reviewer": "Jessica W.",
+      "rating": 5,
+      "text": "Can’t recommend Tony enough. Great communication and professional service.",
+      "publishedAt": "2025-03-18T21:10:46.042Z",
+      "ownerResponse": "Thank you, Jessica. We appreciate your business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUN3anV6Q3h3RRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCwjuzCxwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNnbWJ5STZRRRAB",
+      "reviewer": "Sheri C.",
+      "rating": 5,
+      "text": "We could not be happier with our service! Tony came ASAP, fitting us in between jobs on the same day that we called! Tony is very personable and will use him in the future🙋‍♀️🙋‍♂️",
+      "publishedAt": "2025-02-18T19:11:36.074Z",
+      "ownerResponse": "Thank you, We really appreciate it",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNnbWJ5STZRRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCgmbyI6QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNBeWZLR1NBEAE",
+      "reviewer": "Trent D.",
+      "rating": 5,
+      "text": "We had a door come off the tracks on a Sunday evening, which caused some other issues with the door. He came out within an hour and fixed all the problems we had, even doing a few things to our other door. He explained what happened and was extremely pleasant through the entire repair. A week later the cable came back off and he came out on a Saturday night and fixed it for no charge. I can’t say enough about the great service we received.  Highly recommend.",
+      "publishedAt": "2025-02-02T01:16:42.144Z",
+      "ownerResponse": "Thank you, Trent. We’re glad to help you out.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNBeWZLR1NBEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgMCAyfKGSA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNma3BfYjB3RRAB",
+      "reviewer": "Gena C.",
+      "rating": 5,
+      "text": "Called Thursday for pricing on replacement of springs. Came Friday morning,  replaced both springs within 40 minutes.  Very professional, friendly and so affordable.  Definitely will use him again 🤩",
+      "publishedAt": "2024-12-27T14:58:23.210Z",
+      "ownerResponse": "Thank you we really appreciate your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNma3BfYjB3RRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgICfkp_b0wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR2OTVhZU9nEAE",
+      "reviewer": "Denzel C.",
+      "rating": 5,
+      "text": "Tony Garage Door Service was a lifesaver. My garage door got off track on Christmas Eve night. I called him up and he came right out and took care of it. Great service and reasonable price. Highly recommend them!",
+      "publishedAt": "2024-12-25T04:12:03.070Z",
+      "ownerResponse": "Thank you Merry Christmas",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2OTVhZU9nEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgIDv95aeOg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2NzhYMlFBEAE",
+      "reviewer": "Ryan B.",
+      "rating": 5,
+      "text": "Super great guy. I called him at 9:30 p.m. on a Sunday. He came right out and replaced two broken springs and lubed the entire door in about an hour. Great service super fast and was a great guy too deal with. I will use no other then Tony's garage door service from now on.",
+      "publishedAt": "2024-12-16T04:14:33.817Z",
+      "ownerResponse": "Thanks Ryan that’s what our goal is to help the customer out when they’re in need thanks Ryan appreciate the kind words",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2NzhYMlFBEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgICv78X2QA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN2b2ZQOExBEAE",
+      "reviewer": "Jinuk S.",
+      "rating": 5,
+      "text": "My garage door stopped opening (It opened fine this morning.  when I got back, it only opened a few inches.)  Then, I realized that one of two spring was broken in half.   I called Tony who answered the call right away, came out on the same day, and everything is good to go in no time.   He even programmed my car openers and the wall opener (with 4 digit code).  Explained everything in detail and gave me options.  He did not half-force me.  Instead, he helped me make informed decision.   (i.e. asked me if I want to replace both spring or just the broken one.)  Thank you very much.",
+      "publishedAt": "2024-12-11T20:08:16.988Z",
+      "ownerResponse": "Thank you Jinuk  appreciate the business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN2b2ZQOExBEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgICvofP8LA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURQdmNpdFRREAE",
+      "reviewer": "Neill H.",
+      "rating": 5,
+      "text": "Cannot say enough good things about Tony’s service. From the time we called to the time our repair was complete was an hour and a half. Tony had been out working all day and was on his way home when we called. He came straight to our house instead and did a wonderful job. Very professional and informative. Competitive pricing and just an all around great company. Will definitely use his service again and recommend to others.",
+      "publishedAt": "2024-12-05T00:21:49.227Z",
+      "ownerResponse": "Thank you,",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURQdmNpdFRREAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgIDPvcitTQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURQemNMaWVnEAE",
+      "reviewer": "Steve B.",
+      "rating": 5,
+      "text": "Tony did an excellent, professional job putting in a new garage door opener for me on very short notice and on a very cold day. He explained everything about the job and replaced all the old broken & worn out components and had it all completed within 90 minutes. Also removed all the old parts for me and programmed the embedded remote in my car in addition to the two that came with the opener. Price was very reasonable.  Would definitely use Tony’s company again.",
+      "publishedAt": "2024-12-04T16:15:11.650Z",
+      "ownerResponse": "Thank you, Steve for the nice review. Appreciate your business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURQemNMaWVnEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgIDPzcLieg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzMWJ6SW9BRRAB",
+      "reviewer": "Aaron G.",
+      "rating": 5,
+      "text": "Have had then repair two different things and service/price were on point! Have them in my phone for the next time! 😬",
+      "publishedAt": "2024-11-07T17:20:47.646Z",
+      "ownerResponse": "Thank you, Aaron. Call anytime 24 hours.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzMWJ6SW9BRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgIC31bzIoAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURIcW9EU0t3EAE",
+      "reviewer": "Joseph J.",
+      "rating": 5,
+      "text": "He did an awesome job! Use him for your garage door needs. He came out the same day!",
+      "publishedAt": "2024-10-22T20:56:02.479Z",
+      "ownerResponse": "Thank you, Joseph appreciate you",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURIcW9EU0t3EAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgIDHqoDSKw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURuLTRQZkNBEAE",
+      "reviewer": "Casey M.",
+      "rating": 5,
+      "text": "Tony and Paige were absolutely amazing!<br><br>I called them in the morning with a broken chain and pulley, and they were able to come out the same day.<br>Not only did they quickly fix the issue, but they went the extra mile to inspect all the moving parts of my garage door.<br><br>I felt so confident in their work and appreciated their friendly, professional demeanor.<br><br>Highly recommend!",
+      "publishedAt": "2024-10-10T17:02:10.977Z",
+      "ownerResponse": "Thank you we appreciate the business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURuLTRQZkNBEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgIDn-4PfCA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURIazVDclN3EAE",
+      "reviewer": "Angie H.",
+      "rating": 5,
+      "text": "I needed to have a garage door seal replaced and was referred by friends to Tony who had recently done some work for them and they were very happy. Tony stopped by the same day I called to review the issue and was able to set up an appointment the following morning. The job took less time than he originally estimated and the price was very reasonable. He even checked the tracks and rails to confirm they were working properly and oiled to make run smoothly. I would definitely recommend Tony to anyone needing garage door service.",
+      "publishedAt": "2024-09-19T13:55:05.994Z",
+      "ownerResponse": "Thank you, Angie. Appreciate the business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURIazVDclN3EAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgIDHk5CrSw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNIamZxZ2d3RRAB",
+      "reviewer": "Brian W.",
+      "rating": 5,
+      "text": "Tony answered the phone on Labor Day and came out the next day. Excellent customer service, did a great job, and I will recommend him to anyone needing garage door service.",
+      "publishedAt": "2024-09-07T12:31:08.922Z",
+      "ownerResponse": "Thank you so much Brian appreciate you",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNIamZxZ2d3RRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgICHjfqggwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNINGF2WGx3RRAB",
+      "reviewer": "Evelyn H.",
+      "rating": 5,
+      "text": "Tony was great! I asked for pricing over the phone and he was able to be forward and give me a range for spring replacement. He did a fabulous job and was quick!",
+      "publishedAt": "2024-09-05T20:49:54.893Z",
+      "ownerResponse": "Thank you, Evelyn.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNINGF2WGx3RRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgICH4avXlwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ3M2VhUkpnEAE",
+      "reviewer": "garyrog1",
+      "rating": 5,
+      "text": "Called Tony about replacing a broken spring on my garage door. He showed up exactly when he said he would be there and completed the work in less time than his initial estimate. His work was excellent and priced fairly. I would highly recommend using Tony for any garage door work you may have.",
+      "publishedAt": "2024-08-27T13:18:56.239Z",
+      "ownerResponse": "Thank you we appreciate your business",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3M2VhUkpnEAE!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgID73eaRJg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURiMkk3RzBnRRAB",
+      "reviewer": "Steve R.",
+      "rating": 5,
+      "text": "Spring on the garage door broke, and called. From the time we hung up the phone, to when the door was fixed and he was pulling out of my driveway, was less than two hours! Extremely professional and prompt. Tony's just a good dude that will take care of you. Another one of the \"other guys\" said that they didn't work past 4:00, so they didn't get the job. Tony did.",
+      "publishedAt": "2024-08-01T20:39:52.519Z",
+      "ownerResponse": "Thank You, Steve were here for our customers. Our goal is to get you done the same day if possible thanks again appreciate the review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURiMkk3RzBnRRAB!2m1!1s0x0:0xcb0e160ef2768d2e!3m1!1s2@1:CIHM0ogKEICAgIDb2I7G0gE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pacFEwTkRiM2wxUWxWS1QwZHZOVTF1VG01UVMzYxAB",
+      "reviewer": "Nate M.",
+      "rating": 5,
+      "publishedAt": "2026-05-23T00:37:28.790Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sdWNsTTNTalZJYzJSR1FrSktaMFJqYmxCWlFVRRAB",
+      "reviewer": "Conner S.",
+      "rating": 5,
+      "publishedAt": "2025-10-12T00:30:38.477Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWd1UyRTVURmQ2WkZneVh6aHBaRVpJY2t0Rk0yYxAB",
+      "reviewer": "Sa H.",
+      "rating": 5,
+      "publishedAt": "2025-07-18T02:17:37.116Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkTVZFbHJWbE52UjFWdWMyaDNVMjlWUlU0MFgxRRAB",
+      "reviewer": "Mi R.",
+      "rating": 5,
+      "publishedAt": "2025-07-18T02:16:09.909Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURMNU12Tm1RRRAB",
+      "reviewer": "Zach",
+      "rating": 5,
+      "publishedAt": "2024-06-25T16:11:42.424Z"
+    }
+  ]
+}

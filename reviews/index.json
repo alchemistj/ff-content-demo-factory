@@ -459,6 +459,18 @@
       "pulledAt": "2026-11-16T04:12:43.794Z"
     },
     {
+      "slug": "fortwayne-garagedoor-tonys",
+      "name": "Tony's Garage Door Service LLC",
+      "placeId": "ChIJ2Z-ZPev9FYgRLo128g4WDss",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 111,
+        "withText": 70,
+        "ratingOnly": 5
+      },
+      "pulledAt": "2026-11-16T05:46:28.779Z"
+    },
+    {
       "slug": "fortwayne-hvac-poormans",
       "name": "Poormans Heating & Air",
       "placeId": "ChIJdX8QGPbkFYgR8hFwq7XmSFM",
