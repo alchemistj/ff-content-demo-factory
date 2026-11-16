@@ -140,7 +140,7 @@ Origin note: most commit messages in #41 to #64 say only what changed, not why. 
 
 ## G. Strategy page
 
-59. **Everything in the spec is on the page, in order**: hero, "Why we built this site", page cards (each with red problem, green "What the demo fixes", orange "A full build would also add", "View page"), report card, four-group full-build list, closing block. One `<h1>`, 1,000 words or fewer. [DoD 1.1, 1.2, 1.6, 1.7; Checklist 11] Pages: strategy.
+59. **Everything in the spec is on the page, in order**: hero, "Why we built this site", page cards (each with red problem, green "What the demo fixes", orange "A full build would also add", "View page"), report card, four-group full-build list, closing block. One `<h1>`, about 1,000 words (soft cap, spirit over letter; see #104). [DoD 1.1, 1.2, 1.6, 1.7; Checklist 11] Pages: strategy.
 
 60. **No star ratings and no score table.** PASS if the strategy page has no star rating, no review count and no score table or score note; the "Why we led with" paragraph stays. [#53; #64] Pages: strategy.
 
@@ -223,6 +223,18 @@ Origin note: most commit messages in #41 to #64 say only what changed, not why. 
 97. **"What we'd confirm" items stay out of page copy.** PASS if a search finds no minimum charges, "posted hours are X, but…" contrasts or disputed years in any page. [Nov 16 Josh] Pages: home, services, contact.
 
 98. **One-line or one-review claims keep their strength.** PASS if permits, cameras and similar are written as "Customers have also had us…", never as a general offer. [Nov 16 Josh] Pages: home, services.
+
+99. **"What the demo fixes" names the actual items.** PASS if each bullet names the real items (not "credentials in plain words") or the exact gap between what the reviews say and what the page says. [Nov 16 Josh, Pro Comfort] Pages: strategy.
+
+100. **Differentiators sit in a strip under the home hero buttons.** PASS if veteran owned, same-day, free estimates and similar are in a strip right under the hero buttons, not in the last home section. [Nov 16 Josh, Pro Comfort] Pages: home.
+
+101. **A service that conflicts with posted hours stays out of copy.** PASS if "emergency repair" (or similar) with 9-to-5 posted hours is in "What we'd confirm" and absent from page copy. [Nov 16 Josh, Pro Comfort] Pages: home, services, contact, strategy.
+
+102. **Trade-knowledge filler is not a business claim.** PASS if no line like "we size the replacement" appears without a source; otherwise it is general advice ("a replacement is usually sized to..."). [Nov 16 Josh, Pro Comfort] Pages: home, services.
+
+103. **Confirm-list items are real conflicts, and the CTA is a real sentence.** PASS if weak items are dropped and the CTA after "What we'd confirm" is a full sentence, not a repeat of the button label. [Nov 16 Josh, Pro Comfort] Pages: strategy.
+
+104. **Strategy length is a soft cap.** PASS if the strategy is about 1,000 words; slightly over (Pro Comfort ~1,074 with "Why it matters" lines; ComfortTechs) is fine when nothing is padded. [Nov 16 Josh, Pro Comfort] Pages: strategy.
 
 ---
 

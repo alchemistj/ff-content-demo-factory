@@ -26,6 +26,12 @@ You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-
 - filler copied from the business's own site ("years of experience", "good hands", "finish the job right", "X is part of what we do"): cut or replace with something specific;
 - speed claims the reviews support missing or timid: same day, within hours, at the reviews' strength, in the home hero/subheading, service-page heroes and FAQ;
 - home or either service page without a short FAQ (3-5 questions) at the ComfortTechs bar, or an FAQ using facts not in the doc;
+- strategy "What the demo fixes" bullets that are vague ("credentials in plain words"): must name the actual items or the exact gap between reviews and page;
+- differentiators (veteran owned, same-day, free estimates) missing from a strip right under the home hero buttons, or only in the last home section: move them;
+- a service that conflicts with posted hours (e.g. "emergency repair" with 9-to-5 hours) appearing in page copy: cut it, keep it in "What we'd confirm";
+- trade-knowledge filler turned into a business claim ("we size the replacement") with no source: rephrase as general advice;
+- weak "What we'd confirm" items (not real conflicts), or a CTA after it that just repeats the button label: fix;
+- strategy length: about 1,000 words is a soft cap (Pro Comfort ~1,074 is fine); don't fail on the number, fail on padding;
 - anything listed under "What we'd confirm" appearing in page copy (minimum charges, "posted hours are X, but…", disputed years): cut it from the copy;
 - a one-line or one-review claim (permits, cameras) written as a general offer: rewrite at that strength ("Customers have also had us…");
 - trade-knowledge filler not specific to this business's services and area;

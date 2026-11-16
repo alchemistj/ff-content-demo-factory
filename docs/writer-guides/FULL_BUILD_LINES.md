@@ -51,6 +51,6 @@ Use these four lines word for word on strategy pages:
 - "Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down."
 - "Your site watched around the clock for downtime."
 - "Google indexing and your Google visibility checked every day."
-- "Menus, contact links and forms tested in a real browser twice a day."
+- "Page links, buttons and contact forms tested in a real browser twice a day." (FF architect, Nov 16: matches Josh's Sterling pass)
 
 Never claim daily early-warning alerts; that isn't live yet.

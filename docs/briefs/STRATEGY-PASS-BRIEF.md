@@ -17,7 +17,10 @@ Josh, Nov 16: our writers own the strategy page now.
   - Use only problems verified on that page.
   - Every fix must be one the demo really makes; check against the doc's own business pages.
 - **Length and lines:**
-  - ≤1,000 words.
+  - About 1,000 words is a soft cap, spirit over letter (Pro Comfort ran ~1,074 with "Why it matters" lines; ComfortTechs also runs over). Don't pad or cut real content to hit it.
+  - "What the demo fixes" bullets name the actual items (never "credentials in plain words"), or name the exact gap between what the reviews say and what the page says.
+  - "What we'd confirm" items are real conflicts only (drop weak ones). The CTA after that section is a real sentence, not a repeat of the button label.
+  - A service the site claims that conflicts with its posted hours (e.g. "emergency repair" with 9-to-5 hours) stays in "What we'd confirm", out of page copy.
   - Banned: jargon such as "H1", "title tag", "menu", "footer" and "SEO".
   - Required: the "Here's a demo of yours" lead-in, if the guide or model has it.
   - "What we'd confirm" is 3–4 single questions, followed by the CTA.

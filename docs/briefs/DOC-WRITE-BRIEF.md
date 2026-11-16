@@ -36,7 +36,9 @@ Write five pages:
 - **Service pages carry hedged general trade knowledge** (what usually fails and why, what to check before calling, safety, repair-vs-replace rules, what happens on a visit), in the owner's voice, hedged ("usually", "often"). Only BUSINESS claims (services offered, credentials, speed, guarantees, prices, promised process) need a source in `site/`, `facts.md` or `reviews.json`. Trade knowledge must be specific to this business's services and area, tight, not filler. Reach 700+ words with substance, never padding; no repeats. Model: `examples/demo-drafts/comforttechs-lincoln-words.json` (furnace page).
 - **Cut shallow sections** that aren't Window Dudes deep. Card grids don't need headings. Keep blocks short. Home must not feel thin: a section of two sentences plus a quote is thin; give it real content or cut it, and never run three sections that each end in a quote.
 - **Strategy page:**
-  - "What we'd confirm" is 3-4 single questions, not bundles.
+  - "What we'd confirm" is 3-4 single questions, not bundles. Each is a real conflict (drop weak ones). The CTA after it is a real sentence, not a repeat of the button label.
+  - "What the demo fixes" bullets name the actual items (never "credentials in plain words"), or name the exact gap between what the reviews say and what the page says.
+  - Length: about 1,000 words is a soft cap (Pro Comfort ~1,074 with "Why it matters" lines; ComfortTechs also runs over). Spirit over letter.
   - Put the call to action after "What we'd confirm with you", not before.
   - No generic lead-in. Bridge from the reviews to the page plan.
   - Check each page's own problems; keyword stuffing differs from page to page.
@@ -66,6 +68,9 @@ Write five pages:
   - **One-line or one-review claims** (permits, cameras) are written at that strength ("Customers have also had us…"), never as a general offer.
   - **No metaphors or personification.**
   - **No generic "signs" lists.**
+  - **Differentiators strip:** differentiators (veteran owned, same-day, free estimates) go in a strip right under the home hero buttons, not in the last home section.
+  - **Service vs posted hours:** a service the site claims that conflicts with its posted hours (e.g. "emergency repair" with 9-to-5 hours) stays in "What we'd confirm" and out of page copy.
+  - **Trade-knowledge filler must not become a business claim** ("we size the replacement") unless a source supports it; otherwise phrase as general advice ("a replacement is usually sized to...").
   - **Keep advice consistent** across pages.
 
 ## Output
