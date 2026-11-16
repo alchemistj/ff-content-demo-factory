@@ -19,43 +19,9 @@ Pick the line that fits what that card's own problems show. Never repeat a line 
 
 Removed, never use: "A redirect from every old page to its new home, so the rankings you’ve already earned carry over." The page cards tell the owner their site has problems, so promising to carry its rankings over sends a mixed message, and owners don't know what a redirect is.
 
-## "What a full build includes" (four groups, word for word as on the Brown demo)
+## STALE, DO NOT USE: old "What a full build includes" sections were deleted on Nov 16 (FF architect). Writers copied them by mistake. The ONLY list to use is the CANONICAL block below.
 
-Updated 2026-11-09 to match the approved Brown demo and checklist rule 11.
-
-**Gets you found**
-- Every service on your website and your Google profile, telling the same story
-- Each service gets its own page or shares one, based on what Google shows for that search
-- Every town you serve, on your website and your Google profile
-- Built so Google and AI tools can read every page
-
-**Earns their trust**
-- Reviews on every page, matched to the service
-- About and owner pages that show who does the work
-- A trust bar that shows what makes you different
-
-**Turns visitors into calls**
-- Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range
-- A call-and-book bar that stays on screen
-- A contact form that blocks spam
-
-**Keeps working after launch**
-- New team members, booking systems and new services, updated for you
-- Updated when Google and AI tools change how they read websites
-- You never have to know what to ask for
-
-## Keeps working after launch (verified monitoring facts, from Reports, 2026-11-16)
-
-Use these four lines word for word on strategy pages:
-
-- "Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down."
-- "Your site watched around the clock for downtime."
-- "Google indexing and your Google visibility checked every day."
-- "Page links, buttons and contact forms tested in a real browser twice a day." (FF architect, Nov 16: matches Josh's Sterling pass)
-
-Never claim daily early-warning alerts; that isn't live yet.
-
-## CANONICAL "What a full build includes" list (FF architect, Nov 16; supersedes the two sections above)
+## CANONICAL "What a full build includes" list (FF architect, Nov 16; the only approved list)
 
 `scripts/check-repeats.py` compares every doc's list to this block word for word (straight or curly quotes both accepted). Copy it exactly.
 

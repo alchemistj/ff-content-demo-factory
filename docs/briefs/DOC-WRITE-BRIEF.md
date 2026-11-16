@@ -1,5 +1,19 @@
 # Brief: write ONE business's demo words, from scratch (Sonnet)
 
+## New patterns from FF's Josh-voice passes on Wickey, Big Dog and Cool Concepts (Nov 16). Check every one.
+- **No ratings or review counts in "What we'd confirm" either.** Example: "5.0 on Angi and Yelp vs 4.9 Google". Ask about the unnamed claim without the numbers.
+- **Plurals match the evidence.** One job note is "a customer had us install a power-vent heater", not "we've installed power-vent heaters".
+- **No unsourced business-voice process lines** ("we bring the right parts", "we try to leave it as we found it"). Cut them, or say what one customer noticed.
+- **Define each trade word once per page, the first time it appears** (adjuster, deductible, soffit, fascia, valley, eaves, TPO…). Never define it twice on a page.
+- **An FAQ answer must not repeat a paragraph on the same page.** Move the detail into the FAQ and cut it from the page, or drop the FAQ.
+- **Name a person in a review claim only if a quoted review backs it.** Say "customers name Jason", not "Jason and Matt" when only Jason is quoted.
+- **Keep Notes current after every edit:** word counts and every "said once" or "used on X" claim.
+- **Every strategy "Current site problem" bullet ends with what the problem costs the owner or the customer** ("…so a customer who taps it hits a dead end"), not a bare observation.
+- **The four cards' "A full build would also add" lines are all different and fit their page.** Homepage gets line 8 (FULL_BUILD_LINES.md); Contact gets call and form tracking (line 7).
+- **Notes "Rebuild reason" label is bold everywhere.**
+- **The full-build list is the CANONICAL block in FULL_BUILD_LINES.md only.** Any other version is stale.
+
+
 > "The architect's first job is QA: Josh is never deflated by what we call ready, and clients and prospects are never embarrassed by what they see. 'Passed the checks' is not 'ready'. Before a doc is called done, the architect reads it against the Lovable builds Josh QA'd, the client sites and Josh's comments, and asks whether Josh would be proud to send it." — Josh, Nov 16
 
 You write words only, as one Markdown file that becomes a Google Doc. Edit only your output file. Run no git, send nothing, create no sessions.

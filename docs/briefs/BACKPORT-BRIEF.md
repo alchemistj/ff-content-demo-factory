@@ -1,5 +1,19 @@
 # Brief: one in-place backport pass on ONE finished doc (Sonnet)
 
+## New patterns from FF's Josh-voice passes on Wickey, Big Dog and Cool Concepts (Nov 16). Check every one.
+- **No ratings or review counts in "What we'd confirm" either.** Example: "5.0 on Angi and Yelp vs 4.9 Google". Ask about the unnamed claim without the numbers.
+- **Plurals match the evidence.** One job note is "a customer had us install a power-vent heater", not "we've installed power-vent heaters".
+- **No unsourced business-voice process lines** ("we bring the right parts", "we try to leave it as we found it"). Cut them, or say what one customer noticed.
+- **Define each trade word once per page, the first time it appears** (adjuster, deductible, soffit, fascia, valley, eaves, TPO…). Never define it twice on a page.
+- **An FAQ answer must not repeat a paragraph on the same page.** Move the detail into the FAQ and cut it from the page, or drop the FAQ.
+- **Name a person in a review claim only if a quoted review backs it.** Say "customers name Jason", not "Jason and Matt" when only Jason is quoted.
+- **Keep Notes current after every edit:** word counts and every "said once" or "used on X" claim.
+- **Every strategy "Current site problem" bullet ends with what the problem costs the owner or the customer** ("…so a customer who taps it hits a dead end"), not a bare observation.
+- **The four cards' "A full build would also add" lines are all different and fit their page.** Homepage gets line 8 (FULL_BUILD_LINES.md); Contact gets call and form tracking (line 7).
+- **Notes "Rebuild reason" label is bold everywhere.**
+- **The full-build list is the CANONICAL block in FULL_BUILD_LINES.md only.** Any other version is stale.
+
+
 **This is a judgment pass, not a checklist stamped onto every doc** (FF architect, Nov 16, after 4Ever got worse). Before adding anything, check whether the page already says it. If it does, add nothing.
 - **Speed claim placement:** once in the home strip, once in the home hero OR the home FAQ (not both), and once per service page (hero OR FAQ, not both). Never more.
 - **FAQs:** a new FAQ question must answer something the page doesn't already say. If the page already has a good FAQ, or nothing new is left, add no FAQ. One FAQ block per page; every question **bold**; answers plain text; never turn an answer into a heading.
