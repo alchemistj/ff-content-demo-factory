@@ -23,6 +23,11 @@ You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-
 - unexplained trade jargon (tear-off, decking, flashing, ACV, RTUs, TPO, EPDM, curbs, coping, "soft metals", soffit, fascia, brand product names): plain phrase or explain once;
 - an idea repeated anywhere in the doc (same repair-or-replace line, insurer-decides line, tech explainer, staff-role line): one idea, one place;
 - review-inferred process or reply speed stated as policy or repeated: change to "usually"/"often", once;
+- filler copied from the business's own site ("years of experience", "good hands", "finish the job right", "X is part of what we do"): cut or replace with something specific;
+- speed claims the reviews support missing or timid: same day, within hours, at the reviews' strength, in the home hero/subheading, service-page heroes and FAQ;
+- home or either service page without a short FAQ (3-5 questions) at the ComfortTechs bar, or an FAQ using facts not in the doc;
+- anything listed under "What we'd confirm" appearing in page copy (minimum charges, "posted hours are X, but…", disputed years): cut it from the copy;
+- a one-line or one-review claim (permits, cameras) written as a general offer: rewrite at that strength ("Customers have also had us…");
 - trade-knowledge filler not specific to this business's services and area;
 - a thin section (two sentences plus a quote) on any page, or three sections in a row each ending in a quote: flag (writer adds content or cuts);
 - a repeat;

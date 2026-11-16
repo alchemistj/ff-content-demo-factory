@@ -214,6 +214,16 @@ Origin note: most commit messages in #41 to #64 say only what changed, not why. 
 
 93. **No thin sections or quote runs.** PASS if no section is two sentences plus a quote (real content or cut) and no three sections in a row each end in a quote. [Nov 16 Josh] Pages: all.
 
+94. **No filler, even from their own site.** PASS if a search finds no "years of experience", "good hands", "finish the job right" or "X is part of what we do" (or similar); each is cut or replaced with something specific. [Nov 16 Josh] Pages: all.
+
+95. **Review-backed speed claims go in confidently.** PASS if same day, within hours, etc. appear at the strength the reviews show, in the home hero/subheading, each service-page hero and the FAQ. [Nov 16 Josh, explicit OK] Pages: home, services.
+
+96. **Home and both service pages each have a short FAQ.** PASS if each has 3-5 questions at the ComfortTechs bar, using only facts already in the doc. [Nov 16 Josh] Pages: home, services.
+
+97. **"What we'd confirm" items stay out of page copy.** PASS if a search finds no minimum charges, "posted hours are X, but…" contrasts or disputed years in any page. [Nov 16 Josh] Pages: home, services, contact.
+
+98. **One-line or one-review claims keep their strength.** PASS if permits, cameras and similar are written as "Customers have also had us…", never as a general offer. [Nov 16 Josh] Pages: home, services.
+
 ---
 
 ## Reviewer table (copy per demo)

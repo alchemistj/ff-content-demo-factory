@@ -25,7 +25,7 @@ Write five pages:
 ## Josh's guidelines (intent, not rigid rules)
 - **Write for an owner who knows no jargon.** Never "trust bar", "menu", "footer", "title tag", "H1" or "SEO title". Say what it does for them.
 - **Specific beats vague.** Every problem and fix on the strategy page is one that matters, e.g. "your reviews say fast after-hours help; your site never says it".
-- **Say confidently what the reviews prove.** "Usually within a few hours" or "often the same day" is fine when several reviews show it. Quote them as proof.
+- **Say confidently what the reviews prove.** "Usually within a few hours" or "often the same day" is fine when several reviews show it. Quote them as proof. Josh explicitly OKs speed claims the reviews support (same day, within hours) at the strength the reviews show: put them in the home hero/subheading, the service-page heroes and the FAQ.
 - **The full-build list:**
   - Lead with the foundation: every service and differentiator pulled out of the owner's head and onto the site.
   - The rest are things we actually guarantee: Google visibility and indexing monitoring, uptime, and page-speed checks.
@@ -60,7 +60,10 @@ Write five pages:
   - **Absolute claims copied from their site** ("always", "never", "100%"): hedge them.
   - **Claim strength:** match the source exactly.
   - **Repeated lines:** financing, guarantee and quote lines once per site.
-  - **Years and owner:** no disputed years; don't name anyone as owner unless confirmed.
+  - **Years and owner:** no disputed years; don't name anyone as owner unless confirmed. Anything listed under "What we'd confirm" (minimum charges, hours contrasts like "posted hours are X, but…", disputed years) stays out of page copy entirely.
+  - **Filler from their own site is still filler:** "years of experience", "good hands", "finish the job right", "X is part of what we do": cut or replace with something specific.
+  - **FAQ:** home and both service pages each get a short FAQ (3-5 questions) like the ComfortTechs bar, using only facts already in the doc.
+  - **One-line or one-review claims** (permits, cameras) are written at that strength ("Customers have also had us…"), never as a general offer.
   - **No metaphors or personification.**
   - **No generic "signs" lists.**
   - **Keep advice consistent** across pages.
