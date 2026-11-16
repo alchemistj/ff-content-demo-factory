@@ -37,9 +37,9 @@ So the demo opens with Roofing Contractor in Rockford, IL, and gives roof replac
 
 **What the demo fixes**
 
+- Your named project manager, who meets your adjuster at the house, up front. Tyler, Brad and Tommy, the ones your customers name.
 - A headline that says Roofing Contractor in Rockford, IL.
-- Tyler, Brad and Tommy, the project managers your customers name, up front.
-- Your Illinois and Wisconsin license and insurance in plain words, and your two offices.
+- Nine services listed in plain words, from roof replacement to commercial roofing, plus your Illinois and Wisconsin license and insurance and your two offices.
 
 **A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
@@ -360,7 +360,7 @@ Written from briefs @ 21550ef
 
 **Word counts** (script count; "without quotes" excludes blockquotes, buttons and strip)
 
-  - Strategy: 1,031 without the quote, 1,057 with, incl. the canonical list (about 190 of it).
+  - Strategy: 1,051 without the quote, 1,077 with, incl. the canonical list (about 190 of it).
   - Home: 795 without quotes, 1102 with (strip and buttons counted only in "with").
   - Roof Replacement: 575 without quotes, 653 with.
   - Storm Restoration: 479 without quotes, 642 with.
