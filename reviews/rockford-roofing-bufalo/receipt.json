@@ -1,0 +1,28 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "rockford-roofing-bufalo",
+  "request": {
+    "mapsUrl": "place_id:ChIJZf1D8aTACIgRwzw_J6RkyW8",
+    "maxReviews": 75,
+    "expectedPhone": "7793680256",
+    "expectedName": "Bufalo"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "ycD7Z4R7qspWQsI5n",
+    "datasetId": "fvjnheq0WLpvFbs3S",
+    "attempts": 1,
+    "usageUsd": 0.042699999999999995
+  },
+  "counts": {
+    "listingTotal": 506,
+    "withText": 72,
+    "ratingOnly": 3
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T05:16:01.338Z",
+  "finishedAt": "2026-11-16T05:16:32.225Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43809081717"
+}

@@ -891,6 +891,18 @@
       "pulledAt": "2026-11-09T12:48:34.745Z"
     },
     {
+      "slug": "rockford-roofing-bufalo",
+      "name": "Bufalo Contracting",
+      "placeId": "ChIJZf1D8aTACIgRwzw_J6RkyW8",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 506,
+        "withText": 72,
+        "ratingOnly": 3
+      },
+      "pulledAt": "2026-11-16T05:16:32.225Z"
+    },
+    {
       "slug": "rods-hvac-wichita",
       "name": "Rods Cooling & Heating LLC",
       "placeId": "ChIJB3foALnmuocROUUPbmyBVgI",
