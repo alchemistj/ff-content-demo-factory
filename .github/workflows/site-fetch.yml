@@ -20,6 +20,9 @@ on:
         required: false
         default: "60"
         type: string
+  push:
+    paths:
+      - "site-requests/*.json"
 
 permissions:
   contents: write
@@ -32,6 +35,8 @@ env:
   SITE_URL: ${{ inputs.url }}
   SITE_SLUG: ${{ inputs.slug }}
   SITE_MAX: ${{ inputs.max }}
+  SITE_TRIGGER: ${{ github.event_name }}
+  EVENT_BEFORE: ${{ github.event.before }}
 
 jobs:
   fetch:
@@ -41,9 +46,42 @@ jobs:
       run:
         shell: bash
     steps:
-      - name: Validate inputs
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: true
+
+      - name: Resolve and validate inputs
         run: |
           set -euo pipefail
+          if [ "$SITE_TRIGGER" = "push" ]; then
+            zero="0000000000000000000000000000000000000000"
+            if [ -z "${EVENT_BEFORE}" ] || [ "$EVENT_BEFORE" = "$zero" ]; then
+              mapfile -t changed < <(git diff-tree --no-commit-id --name-only -r --diff-filter=AM "$GITHUB_SHA" -- 'site-requests/*.json')
+            else
+              mapfile -t changed < <(git diff --name-only --diff-filter=AM "$EVENT_BEFORE" "$GITHUB_SHA" -- 'site-requests/*.json')
+            fi
+            if [ "${#changed[@]}" -ne 1 ]; then
+              echo "This push must change exactly one site-requests/*.json file. Found ${#changed[@]}: ${changed[*]:-none}."
+              exit 1
+            fi
+            file="${changed[0]}"
+            if ! [[ "$file" =~ ^site-requests/[A-Za-z0-9._-]{1,80}\.json$ ]]; then
+              echo "Request file must be a single site-requests/*.json file. Got: ${file}"
+              exit 1
+            fi
+            if [ ! -f "$file" ]; then
+              echo "Request file ${file} is not in this commit."
+              exit 1
+            fi
+            SITE_URL=$(jq -r '.url // empty' "$file")
+            SITE_SLUG=$(jq -r '.slug // empty' "$file")
+            SITE_MAX=$(jq -r '(.max // "60") | tostring' "$file")
+          elif [ "$SITE_TRIGGER" != "workflow_dispatch" ]; then
+            echo "Unsupported trigger: $SITE_TRIGGER"
+            exit 1
+          fi
           if ! [[ "$SITE_SLUG" =~ ^[a-z0-9-]{2,60}$ ]]; then
             echo "slug must match ^[a-z0-9-]{2,60}$"
             exit 1
@@ -56,15 +94,14 @@ jobs:
             echo "max must be a whole number from 1 to 999"
             exit 1
           fi
+          {
+            echo "SITE_URL=${SITE_URL}"
+            echo "SITE_SLUG=${SITE_SLUG}"
+            echo "SITE_MAX=${SITE_MAX}"
+          } >> "$GITHUB_ENV"
 
       - name: Set work folder
         run: echo "SITE_WORK=${RUNNER_TEMP}/site-data" >> "$GITHUB_ENV"
-
-      - name: Check out
-        uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: true
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
