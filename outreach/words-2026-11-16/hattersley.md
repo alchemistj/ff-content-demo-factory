@@ -405,7 +405,7 @@ The company moved to its Mobile Avenue building in 1955, and the office is still
 | Heating and Cooling Repair | 959 | 1272 |
 | Contact | 287 | 320 |
 
-Counts include headings, bullets and the H1, and leave out the button lines. All pages meet their minimums without quotes (home 550+, services 700+, contact 250+, strategy 1,000 or fewer). The two service pages are mostly hedged trade knowledge tied to Fort Wayne; their site pages are about 125 words each, so the services themselves (water heaters, sump pumps, furnaces and so on) rest on reviews, not on the site. See "Facts to verify".
+Quote placement: on Plumbing and HVAC, quotes sit mid-section with copy after them in alternate sections, so no three sections in a row end in a quote. Counts include headings, bullets and the H1, and leave out the button lines. All pages meet their minimums without quotes (home 550+, services 700+, contact 250+, strategy 1,000 or fewer). The two service pages are mostly hedged trade knowledge tied to Fort Wayne; their site pages are about 125 words each, so the services themselves (water heaters, sump pumps, furnaces and so on) rest on reviews, not on the site. See "Facts to verify".
 
 **Credentials (all stated as the business's own claim; none checked at the source).** Used once, on Home.
 - Since 1856: home, mission-vision, our-story. Founder detail (Alfred Hattersley, 1856, Main Street near the courthouse; Mobile Avenue move, 1955): our-story.

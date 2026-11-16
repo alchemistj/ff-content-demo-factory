@@ -1,6 +1,6 @@
 # Full text of the business's own site
 
-Fetched 2026-11-16T04:25:58.641Z from http://www.actionlincoln.com by scripts/fetch-site-text.mjs. Writers quote from these files, never from notes.
+Fetched 2026-11-16T04:32:35.689Z from http://www.actionlincoln.com by scripts/fetch-site-text.mjs. Writers quote from these files, never from notes.
 
 | File | URL | HTTP | Words | Title |
 |---|---|---|---|---|
@@ -60,7 +60,50 @@ Fetched 2026-11-16T04:25:58.641Z from http://www.actionlincoln.com by scripts/fe
 | guides-heating-systems.md | https://www.actionlincoln.com/guides/heating-systems | 200 | 155 | Heating Systems / Action Plumbing, Heating, A/C, Electrical - Lincoln, NE |
 | guides-heat-pumps.md | https://www.actionlincoln.com/guides/heat-pumps | 200 | 163 | Heat Pumps / Action Plumbing, Heating, A/C, Electrical - Lincoln, NE |
 | guides-garbage-disposals.md | https://www.actionlincoln.com/guides/garbage-disposals | 200 | 172 | Garbage Disposals / Action Plumbing, Heating, A/C, Electrical - Lincoln, NE |
-| guides-clogged-toilets.md | https://www.actionlincoln.com/guides/clogged-toilets | 200 | 152 | Clogged Toilets / Action Plumbing, Heating, A/C, Electrical - Lincoln, NE |
-| guides-carbon-monoxide-safety.md | https://www.actionlincoln.com/guides/carbon-monoxide-safety | 200 | 186 | Carbon Monoxide Safety / Action Plumbing, Heating, A/C, Electrical - Lincoln, NE |
-| guides-action-advantage-club.md | https://www.actionlincoln.com/guides/action-advantage-club | 200 | 229 | The ACTION Advantage Club / Action Plumbing, Heating, A/C, Electrical - Lincoln, NE |
-| residential-node-7.md | https://www.actionlincoln.com/residential/node/7 | 404 | 9 | 404 / Action Plumbing, Heating, A/C, Electrical - Lincoln, NE |
+| (failed) | https://www.actionlincoln.com/guides/clogged-toilets | error | 0 | page.waitForTimeout: Target page, context or browser has bee |
+| (failed) | https://www.actionlincoln.com/guides/carbon-monoxide-safety | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/guides/action-advantage-club | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/residential/node/7 | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/node/7 | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/services/heating-ac | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/justin-kreifels | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/jordan-kreifels | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/dylan-kreifels | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/doug-kreifels | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/terry-kreifels | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/joel-fenton | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/allison | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/bret | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/ken-d | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/reese-h | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/don-s | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/dylan-g | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/justin-d | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/cory-c | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/josh-h | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/mike-k | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/troy-u | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/kaylon-c | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/richard-c | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/noel-h | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/adam-c | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/chad-f | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/laura-k | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/sue-u | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/kady | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/missy-c | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/terry-s | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/jillian-s | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/ashley-f | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/jana-r | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/profile/reagan-m | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/careers | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/news/action-launches-new-campaign-video-kent-pavelka | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/news/lincoln-choice-award-winner | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/news/signs-you-need-air-conditioner-repair-summer-hits | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/news/essential-guide-drain-cleaning-expert-insights-action | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/news/fall-home-maintenance-checklist-get-your-home-ready-winter | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/news/spring-home-maintenance-tips-prepare-your-home-warmer-weather | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/news/improving-your-indoor-air-quality-essential-guide | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/news/action-named-among-americas-fastest-growing-companies-inc-5000-list | error | 0 | page.goto: Target page, context or browser has been closed |
+| (failed) | https://www.actionlincoln.com/guides | error | 0 | page.goto: Target page, context or browser has been closed |
