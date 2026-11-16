@@ -20,6 +20,10 @@ Gate (b) hold, keyed to the BRIEFS VERSION (not the batch name, so splitting a r
       Where: <session or channel>, <date and time>
       max_docs: <N>
   An empty or incomplete approval file is refused. Past max_docs, a new approval is needed.
+  Optional, one line per folder, only when Josh names that business for the run:
+      override_qualify: <prospect folder> — <Josh's reason>
+  lets that one folder through gate (a) and prints the override in the GO line. qualify.md is
+  never edited for an override.
   Every admitted doc is logged in docs/batches/brief-<sha>.txt with its batch name.
 """
 import os
@@ -88,6 +92,17 @@ def read_approval(path):
     return int(cap.group(1)), None
 
 
+def qualify_overrides():
+    """{folder: reason} from the current version's approval file (validated in gate_batch)."""
+    path = os.path.join(ROOT, "docs", "batches", f"brief-{brief_sha()}.JOSH-APPROVED")
+    if not os.path.exists(path):
+        return {}
+    out = {}
+    for m in re.finditer(r"^override_qualify:\s*(\S+)\s*[—-]+\s*(\S.{5,})$", open(path, encoding="utf-8").read(), re.M):
+        out[m.group(1).strip().removeprefix("prospects/").rstrip("/")] = m.group(2).strip()
+    return out
+
+
 def gate_batch(folder, batch):
     d = os.path.join(ROOT, "docs", "batches")
     os.makedirs(d, exist_ok=True)
@@ -119,9 +134,14 @@ def main():
         return 2
     folder, batch = sys.argv[1], sys.argv[2]
     why = gate_qualify(folder)
+    note = ""
     if why:
-        print(f"BLOCK: {why}")
-        return 1
+        key = os.path.relpath(os.path.abspath(folder), os.path.join(ROOT, "prospects"))
+        reason = qualify_overrides().get(key)
+        if not reason:
+            print(f"BLOCK: {why}")
+            return 1
+        note = f"; QUALIFY OVERRIDE by Josh: {reason} (gate said: {why})"
     why, write = gate_batch(folder, batch)
     if why:
         print(f"BLOCK: {why}")
@@ -129,7 +149,7 @@ def main():
     if write:
         with open(write[0], "a") as f:
             f.write(write[1] + "\n")
-    print(f"GO (briefs {brief_sha()})")
+    print(f"GO (briefs {brief_sha()}){note}")
     return 0
 
 
