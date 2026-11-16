@@ -5,45 +5,45 @@
 
 **Why we built this site**
 
-Your reviews keep saying the same things: Jason and Matt answer every question, the roof goes on in a day, and the yard is clean when the crew leaves. Your site says little of that, and it leaves out things you do that your competitors may not mention at all.
+Your reviews keep saying the same things: Jason and Matt answer every question, the roof goes on in a day, and the yard is clean when the crew leaves. Your site says little of that.
 
 > After taking a good look, he told me I didn’t need a new roof yet.
 >
 > — josh C.
 
-That is the kind of answer your homepage already promises: "Repair or replace? Get an honest answer." So we built the first five pages: the homepage, roof replacement, storm damage and insurance claims, contact, and this page. Roof repair, metal roofing, gutters, gutter guards, soffit and fascia, siding and commercial roofing are on the homepage. Each can get its own page in a full build.
+That is the answer your homepage promises: "Repair or replace? Get an honest answer." So we built the first five pages: the homepage, roof replacement, storm damage and insurance claims, contact, and this page. Repair, metal roofing, gutters, siding and commercial roofing are on the homepage; each can get its own page in a full build.
 
 **The demo, page by page**
 
 ### 1. Homepage
 
-*Why it matters:* It's the page most people see first, and it has to say who you are, what you do and why to call.
+*Why it matters:* It's the page most people see first.
 
 **Current site problem**
-- Your reviews name Jason 18 times and Matt 10 times. The homepage asks visitors to "know who you're hiring" and names neither of them.
-- Your 15-year workmanship warranty and your insurance are not on the homepage. They are on the About and Warranty pages.
-- Insurance claim help, emergency tarping, commercial roofing and soffit and fascia are not among the seven services listed on the homepage.
+- It asks visitors to "know who you're hiring" and names neither Jason nor Matt, the two people your reviews name.
+- Your 15-year workmanship warranty and your insurance are not on it. They are on the About and Warranty pages.
+- Claim help, emergency tarping, commercial roofing and soffit and fascia are not among its seven listed services.
 
 **What the demo fixes**
 - Jason and Matt are named, with a customer's words about working with them.
-- The 15-year workmanship warranty and "insured contractor" are stated on the homepage, in your own words.
-- Every service you offer has a heading and a plain line, including claim help, tarping, commercial roofing and soffit and fascia.
+- The warranty and "insured contractor" are stated, in your own words.
+- Every service has a heading or a plain line.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 ### 2. Roof Replacement
 
-*Why it matters:* It's the job 14 of your reviews talk about, and the biggest decision a homeowner makes with you.
+*Why it matters:* It's the biggest job you sell.
 
 **Current site problem**
 - The page has no customer review on it.
-- It lists "Ask about current payment options," but your financing page says it will "confirm which options, if any, are currently available." The two pages don't agree.
-- Solar panel removal and reinstall, which you do during a replacement, is only in a link at the bottom of the page.
+- It says "Ask about current payment options"; your financing page says it will "confirm which options, if any, are currently available."
+- Solar panel removal and reinstall is only in a link at the bottom.
 
 **What the demo fixes**
-- Five reviews sit beside the parts of the job they prove: the one-day install and cleanup, a metal roof, when you pay, showing up when you said, and the price.
-- The payment line is gone from this page. Financing is said once, on the homepage, in the same words as your financing page.
+- Reviews sit beside the parts of the job they prove.
+- Financing is said once, on the homepage, in your financing page's words.
 - Solar panels get their own section, in plain steps.
 
 **A full build would also add**
@@ -51,16 +51,16 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 ### 3. Storm Damage and Insurance Claims
 
-*Why it matters:* A homeowner with hail damage and an insurance company on the phone is deciding who to trust, quickly.
+*Why it matters:* A homeowner with hail damage is deciding who to trust, quickly.
 
 **Current site problem**
-- Storm damage and insurance claims are two separate pages. The storm page runs 626 words and has no review. The claim page runs 2,146.
-- Your pages give four different timing promises: "within 24 hours" on the storm page, "within 24 to 48 hours" and "Response in under an hour" on the inspection page, and "within 48-72 hours of every major storm" in a hail guide.
-- Emergency tarping, which a customer praised in a review, is one line in a list on the storm page.
+- Storm damage and claims are two pages; the storm page has no review.
+- Your pages give four different timing promises: "within 24 hours," "within 24 to 48 hours," "Response in under an hour" and "within 48-72 hours of every major storm."
+- Emergency tarping, which a customer praised, is one line in a list.
 
 **What the demo fixes**
-- One page covers the storm, the inspection and the claim, with the line that your insurance company decides what it covers.
-- No promise of an hour count until you tell us which one is true. The page says what happens and in what order.
+- One page covers the storm, inspection and claim.
+- No hour count until you tell us which is true.
 - Tarping gets its own section with the customer's words.
 
 **A full build would also add**
@@ -71,14 +71,13 @@ A check of what your competitors offer, so services you didn't think to mention 
 *Why it matters:* It's where interest becomes a phone call or a visit.
 
 **Current site problem**
-- There is no email address on the contact page. team@bigdogroofing.org is on the About and Warranty pages only.
-- Your welcome to walk-ins is in a blog article about storm chasers, not on the contact page.
-- The page names no towns and doesn't say what to have ready when you call.
+- No email address. team@bigdogroofing.org is on the About and Warranty pages only.
+- Your welcome to walk-ins is in a blog article about storm chasers.
+- It names no towns and doesn't say what to have ready.
 
 **What the demo fixes**
-- Phone, email, address and hours together, with a line for people who want to stop by the office.
-- The towns you serve, listed.
-- A short list of what to have ready, and what to say if water is coming in.
+- Phone, email, address, hours and a walk-in line together.
+- The towns you serve, and what to have ready.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
@@ -114,12 +113,11 @@ Keeps working after launch
 
 **What we'd confirm with you**
 
-Four things to sort out together:
+Three things to sort out together:
 
-- Your contact page gives the address as 1690 Broadway Bldg 19, Ste 10 and also says "Located at Electric Works." Are those the same place, and where should a visitor park and walk in?
-- Your financing page names no lender, and a guide on your site says you offer financing plans. One customer mentions a finance option Jason found. Which options do you offer?
-- Two reviews say Jason and Matt are veterans, and your site doesn't say so. If it's true and you want it said, we'll add it.
-- Which inspection timing is true: within an hour, within 24 hours, 24 to 48 hours, or 48 to 72 hours after a storm?
+- Your contact page gives 1690 Broadway Bldg 19, Ste 10 and also "Located at Electric Works." Same place?
+- Your financing page names no lender, while a guide says you offer financing plans. Which options do you offer?
+- Which inspection timing is true: within an hour, 24 hours, 24 to 48 hours, or 48 to 72 hours?
 
 **Want a website like this for your business?**
 
@@ -149,17 +147,17 @@ There is no pressure to replace a roof that can still be repaired. You decide wh
 
 ## Roof Replacement
 
-A [roof replacement](/roof-replacement-fort-wayne-in/) here is a full tear-off to the deck, repair of any rotted or damaged decking, new underlayment, drip edge, flashing, and ice and water shield, then new shingles or metal. We install GAF Timberline HDZ shingles. We also install metal roofs, standing seam and corrugated, and we do roof repairs and gutter work in the same visit when the house needs it.
+A [roof replacement](/roof-replacement-fort-wayne-in/) here means stripping the old roof down to the wood deck, replacing any rotted boards, then installing a waterproof underlayer, metal edging and flashing (the metal strips that seal joints and edges), an adhesive ice-and-water membrane, and new shingles or metal. We install GAF Timberline HDZ shingles. We also install metal roofs, standing seam and corrugated, and we do roof repairs and gutter work in the same visit when the house needs it.
 
 If solar panels are on the roof, we plan the removal and reinstall with the solar team before tear-off.
 
 ## Roof Repair
 
-A ceiling stain or a missing shingle deserves a close look before anyone talks about a new roof. We find where the water is getting in, show you photos, and say whether a focused repair makes sense. Pipe boots, chimney flashing, ridge caps and wind-lifted shingles are the repairs we see most around Fort Wayne.
+A ceiling stain or a missing shingle deserves a close look before anyone talks about a new roof. We find where the water is getting in, show you photos, and say whether a focused repair makes sense. Cracked pipe boots (the rubber collars around vent pipes), chimney flashing, ridge caps and wind-lifted shingles are common repairs.
 
 ## Storm Damage and Insurance Claims
 
-After hail or wind, we photograph the damage so you have a record to share with your insurance company. We can meet the adjuster when you ask us to. Your insurance company decides what it covers, and we don't promise a claim outcome. When a roof is leaking, we tarp it first. Read more about [storm damage and insurance claims](/storm-damage-insurance-claims-fort-wayne-in/).
+After hail or wind, we photograph the damage so you have a record to share with your insurance company. We can meet the adjuster when you ask us to. Your insurance company decides what it covers, and we don't promise a claim outcome. When a roof is leaking, we tarp it first.
 
 ## Metal Roofing
 
@@ -195,7 +193,7 @@ We're locally rooted, based at Fort Wayne's Electric Works campus. We're not a f
 
 ## How Your Property Is Treated
 
-Before work begins, we talk through access, property protection, cleanup and the schedule. Ask us about any of it.
+Before work begins, we talk through access, property protection, cleanup and the schedule. On replacement day the crew usually sets ground tarps to protect shrubs and flower beds, and finishes by running a magnetic sweeper across the yard and driveway for stray nails. Some grass trampling can be unavoidable, so ask us about any of it beforehand.
 
 > Fair deal and fantastic communication.  They left the yard better than they found it.  Highly recommend
 >
@@ -203,7 +201,7 @@ Before work begins, we talk through access, property protection, cleanup and the
 
 ## Who Stands Behind the Work
 
-Every roof we install is backed by a 15-year craftsmanship warranty. If our workmanship fails, we come back and make it right, at no charge. The signed warranty document in your contract has the exact terms. We are an insured contractor.
+Our 15-year craftsmanship warranty covers our workmanship. If it fails, we come back and make it right at no charge. The signed warranty document in your contract has the exact terms. We are an insured contractor.
 
 ## Payment
 
@@ -225,7 +223,7 @@ Fort Wayne and Northeast Indiana, including New Haven, Huntertown, Leo-Cedarvill
 That depends on the roof. The inspection answers it, with photos.
 
 **Do you help with insurance claims?**
-Yes, on the contractor side. We document the damage and can meet the adjuster. Your insurance company makes the coverage decision.
+Yes, on the contractor side. We document the damage and can meet the adjuster.
 
 ## Let's Talk About Your Roof
 
@@ -257,7 +255,7 @@ Age matters. Asphalt roofs often last somewhere between 20 and 30 years, dependi
 
 ## Where Old Roofs Usually Fail
 
-The open field of shingles is rarely the first thing to give out. Water more often gets in where the roof meets something: a chimney, a sidewall, a skylight, a valley, or a pipe sticking through. The metal flashing and sealant at those spots wear out before the shingles do.
+The flat run of shingles is rarely the first thing to give out. Water more often gets in where the roof meets something: a chimney, a sidewall, a skylight, a valley, or a pipe sticking through. The metal flashing and sealant at those spots wear out before the shingles do.
 
 Rubber pipe boots are a common example. The rubber often cracks within about 10 years, and the leak shows up as a slow drip near a bathroom or kitchen vent stack. When we replace pipe boots, we prefer lead-wrapped boots, which usually outlast the shingles.
 
@@ -265,10 +263,10 @@ Water also travels. It can run along the rafters or the underlayment before it d
 
 ## What a Replacement Includes
 
-- Complete tear-off of the existing roof down to the deck
-- Inspection of the deck and repair of any rotted or damaged decking
+- Complete tear-off: the old roof stripped down to the wood deck
+- Inspection of the deck and repair of any rotted or damaged boards (decking)
 - Synthetic underlayment
-- New drip edge, flashing, and ice and water shield at the vulnerable areas
+- New drip edge (metal at the roof edge), flashing (metal that seals joints and penetrations), and ice and water shield (a sticky waterproof membrane) at the vulnerable areas
 - Shingles or metal roofing
 - Ridge vent for attic ventilation
 - Manufacturer's product warranty on GAF shingles and metal roofing, which is separate from our workmanship coverage
@@ -281,7 +279,7 @@ Drip edge is metal at the roof edge that directs water into the gutter and away 
 
 ## Tear-Off or a New Layer?
 
-Putting new shingles over old ones is usually a poor idea. The old roof hides the deck, so soft or rotted wood goes unseen. The extra weight and the extra layer can also shorten the new roof's life, and local code may limit how many layers a house can carry. A full tear-off lets us look at every square foot of deck, which is the only way to find what's under the old roof.
+Putting new shingles over old ones is usually a poor idea. The old roof hides the deck, so soft or rotted wood goes unseen. The extra weight and the extra layer can also shorten the new roof's life, and local code may limit how many layers a house can carry. A full tear-off (stripping everything to the deck) lets us look at every square foot of deck, which is the only way to find what's under the old roof.
 
 ## Asphalt or Metal
 
@@ -329,9 +327,6 @@ Panels on the roof usually have to come off before tear-off. A qualified solar o
 
 **Can you replace a roof in winter?**
 Often, on a clear day above freezing. Expect a reschedule or two if snow or ice comes.
-
-**Will insurance pay for my roof?**
-Your insurance company decides, not us. See our storm damage and insurance claims page.
 
 **Do I have to be home?**
 No. Many homeowners stay home, and some leave for the day.
@@ -404,7 +399,7 @@ When water is coming in, the first job is to stop it. We tarp exposed areas, boa
 
 After a big storm, out-of-town contractors often go door to door. Not every one of them is a problem, but a few habits are worth watching for. Be cautious about a large deposit before any work starts. Don't sign an assignment of benefits without understanding it, because it can hand control of your claim to the contractor. An offer to waive or absorb your deductible is a red flag, and Indiana law generally treats that as insurance fraud.
 
-We're not a fly-in franchise or a storm-chasing outfit. Our office is at Electric Works, in Fort Wayne.
+Our office is at Electric Works, in Fort Wayne, so you know where to find us after the storm.
 
 ## Repair or Replace After a Storm
 
@@ -422,9 +417,6 @@ Wind and hail don't stop at the shingles. We also repair siding, gutters, soffit
 
 **Should I file a claim?**
 We inspect, document the damage and explain whether filing makes sense before you call your insurance company. For deadlines, deductibles and premium effects, ask your agent or insurer.
-
-**Will insurance pay for a new roof?**
-That's your insurance company's decision. We can look at the roof and explain the construction side.
 
 **What if the damage is on a commercial building?**
 We document commercial roofs, gutters, coping and soft metals the same way.
@@ -488,11 +480,11 @@ We're based in Fort Wayne and work across Northeast Indiana: New Haven, Hunterto
 ## Notes (not page copy)
 
 **Word counts (by script; "without quotes" excludes blockquotes, buttons, trust bar and quote attributions; "with" is everything on the page)**
-- Strategy page: 1242 without quotes, 1263 with
-- Home: 848 without quotes, 1039 with
-- Roof Replacement: 1163 without quotes, 1351 with
-- Storm Damage and Insurance Claims: 991 without quotes, 1105 with
-- Contact: 342 without quotes, 348 with
+- Strategy page: 959 without quotes, 980 with (trimmed from 1,242)
+- Home: 877 without quotes, 1068 with
+- Roof Replacement: 1164 without quotes, 1352 with
+- Storm Damage and Insurance Claims: 968 without quotes, 1082 with
+- Contact: 341 without quotes, 347 with
 - Strategy count includes the full-build list. Service pages carry hedged general trade knowledge (what usually fails, safety, how claims and replacement days usually go) alongside sourced business claims.
 
 **Credentials and sources**
@@ -504,7 +496,7 @@ We're based in Fort Wayne and work across Northeast Indiana: New Haven, Hunterto
 - Owner: "Matt Yerington is the owner" is from the About page (OWNER/MEMBER). Jason's role is not stated anywhere, so he is named only as someone customers deal with.
 
 **Inventory items left out, and why**
-- Veteran-owned: two reviews only (Tracey P., 805Razor); the site doesn't say it. Neither review is quoted. Raised as a confirm item.
+- Veteran-owned: two reviews only (Tracey P., 805Razor); the site doesn't say it. Neither review is quoted. Not on the site, so not claimed; left for the onboarding call.
 - Financing: used once, on home, in the financing page's own cautious words. The guide's "offers financing plans" and eydie S.'s finance-option review are not used (conflict). Confirm item.
 - Free storm inspection "within 24 hours", "response in under an hour", "24 to 48 hours" and "48-72 hours": none used; they conflict. Confirm item.
 - "We don't collect payment until the work is completed" (insurance page) conflicts with the guide's deposit structure. Not stated as policy; only Dennis E.'s quote appears.
