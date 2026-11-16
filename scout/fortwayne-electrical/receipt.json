@@ -1,0 +1,26 @@
+{
+  "kind": "google-prospect-scout-receipt",
+  "status": "ok",
+  "slug": "fortwayne-electrical",
+  "request": {
+    "query": "electrician",
+    "location": "Fort Wayne, IN",
+    "maxPlaces": 40
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "MUvkuPPXYWzu4b7bw",
+    "datasetId": "6d4weaF4QgHzgt6Uh",
+    "attempts": 1,
+    "usageUsd": 0.1202
+  },
+  "counts": {
+    "returned": 40,
+    "advertisements": 0
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T03:54:10.105Z",
+  "finishedAt": "2026-11-16T03:54:31.473Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43800811236"
+}
