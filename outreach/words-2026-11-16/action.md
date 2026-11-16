@@ -263,7 +263,7 @@ We carry Carrier equipment. Our shop can fabricate parts on site to fit a job, a
 
 ### What a Visit Usually Looks Like
 
-You tell us what the system is doing. The technician usually looks for the cause before anything is replaced, and shows you what failed. Then you choose: repair it, or price a replacement. If the part you need isn't on the truck, it's reasonable to ask for a plan to keep you running until it arrives.
+You tell us what the system is doing. The technician usually looks for the cause before anything is replaced, and shows you what failed. Then you choose: repair it, or price a replacement.
 
 ### Furnace Problems and What Usually Causes Them
 
