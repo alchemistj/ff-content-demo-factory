@@ -74,7 +74,7 @@ Origin note: most commit messages in #41 to #64 say only what changed, not why. 
 
 29. **Each service page owns one different keyword** in its H1, title and slug, and no two pages target the same phrase. [DoD 2.11] Pages: service.
 
-30. **Length and section count.** PASS at: home 550+ words and 10 to 12 sections; service 700+ words and 10 to 12 sections; contact 250+ words and 5 to 7 sections. A page up to 15% under is logged as short, not padded. FAIL below that, and FAIL for padding. Short headed blocks under 60 words are merged. [DoD 2.6; Gates] Pages: business pages.
+30. **Length and section count.** PASS at: home 550+ words and 10 to 12 sections; service 700+ words and 10 to 12 sections; contact 250+ words and 5 to 7 sections. A page up to 15% under is logged as short, not padded. FAIL below that (add hedged trade knowledge: what usually fails and why, what to check, safety, repair-vs-replace, what a visit involves; only BUSINESS claims need a source), and FAIL for padding. Short headed blocks under 60 words are merged. [DoD 2.6; Gates] Pages: business pages.
 
 31. **Say each point once.** PASS if no sentence of 8+ words appears on more than two business pages (trust bar, footer and call band excepted); the owner's backstory is on one page; per page "24 hours" is at most 2, "pressure/pushy" at most 3, "satisfaction" at most 1; and no explanation repeats a point already made. FAIL on any repeat. (The Integrity after-hours story was told in two sections, then merged into one.) [DoD 2.7; #47; #62; #63; Gates sameness lint] Pages: all.
 

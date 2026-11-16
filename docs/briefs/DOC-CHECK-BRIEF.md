@@ -22,8 +22,8 @@ Edit nothing else. Run no git, send nothing, create no sessions.
 
 ## FAIL conditions (send back)
 - **Missing inventory:** a differentiator, unusual offer or service from inventory.md is missing and not listed as consciously left out.
-- **Invented content:** anything not in `site/`, `facts.md` or `reviews.json`, including process steps inferred from reviews.
-- **Thin page:** home under 550 words or a service page under 700, unless the notes honestly say so; flag thin pages either way.
+- **Invented business claims:** services, credentials, speed, guarantees, prices or promised process not in `site/`, `facts.md` or `reviews.json`, including process steps inferred from reviews. Do NOT cut hedged general trade knowledge (what usually fails, what to check, safety, repair-vs-replace, what a visit involves); it is expected.
+- **Thin page:** home under 550 words or a service page under 700 is a FAIL: send back to the writer to add trade knowledge, not padding.
 - **Shallow:** sections that aren't Window Dudes deep, or a home page that feels thin.
 - **Strategy page:**
   - jargon, a generic lead-in, or a CTA placed before "What we'd confirm";
@@ -35,6 +35,6 @@ Edit nothing else. Run no git, send nothing, create no sessions.
 Start with **READY** or **BACK TO WRITER**.
 - **Fixes:** one line per fix you made.
 - **Unfixed issues**, each with exactly what to change.
-- **Facts for the editor to verify.**
+- **Facts to verify.**
 
 Keep the reply under 120 words.

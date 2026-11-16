@@ -1,6 +1,6 @@
 # Brief: write ONE business's demo words, from scratch (Sonnet)
 
-You write words only, as one Markdown file that becomes a Google Doc for Josh's editor. Edit only your output file. Run no git, send nothing, create no sessions.
+You write words only, as one Markdown file that becomes a Google Doc. Edit only your output file. Run no git, send nothing, create no sessions.
 
 ## Read first, in full
 1. **The models:**
@@ -9,7 +9,7 @@ You write words only, as one Markdown file that becomes a Google Doc for Josh's 
    - Window Dudes is the depth bar.
 2. **The rules:** `/home/user/ff-astro-demos/docs/demo-definition-of-done.md` (home 550+ words, each service 700+, no fact said twice) and `docs/JOSH-CHECKLIST.md`. Every item is pass/fail.
 3. **The voice:** `docs/voice/JOSH-VOICE.md` and `docs/voice/ff2-global-copy-rules.md` for the strategy page. The business pages are in the owner's voice.
-4. **The business:** `inventory.md` (start here), `site/` (the full site text, which `site/COVERAGE.md` confirms complete), `reviews.json` and `facts.md`. These are the only facts you may use.
+4. **The business:** `inventory.md` (start here), `site/` (the full site text, which `site/COVERAGE.md` confirms complete), `reviews.json` and `facts.md`. These are the only sources for business facts (general trade knowledge is allowed, hedged).
 
 ## Pages
 Write five pages:
@@ -18,7 +18,7 @@ Write five pages:
 - **2 service pages**: the two money services from inventory.md, H1 `<Service> in <City>, <ST> — <Business>`;
 - **Contact**.
 
-**Every inventory item (service, differentiator, credential, unusual offer, review theme) is used, or listed in "Notes for Ruth" as consciously left out, with the reason.**
+**Every inventory item (service, differentiator, credential, unusual offer, review theme) is used, or listed in "Notes" as consciously left out, with the reason.**
 
 ## Josh's guidelines (intent, not rigid rules)
 - **Write for an owner who knows no jargon.** Never "trust bar", "menu", "footer", "title tag", "H1" or "SEO title". Say what it does for them.
@@ -31,6 +31,7 @@ Write five pages:
   - Mobile is most visitors (about 80%). That's why the 91 speed score matters: it doesn't let mobile visitors down.
   - About and owner pages build authority with Google and AI, and trust with customers.
   - Only the standard lines, with the scope truthful: the demo is "the first five pages".
+- **Service pages carry hedged general trade knowledge** (what usually fails and why, what to check before calling, safety, repair-vs-replace rules, what happens on a visit), in the owner's voice, hedged ("usually", "often"). Only BUSINESS claims (services offered, credentials, speed, guarantees, prices, promised process) need a source in `site/`, `facts.md` or `reviews.json`. Reach 700+ words with real, specific content; no padding, no repeats. Model: `examples/demo-drafts/comforttechs-lincoln-words.json` (furnace page).
 - **Cut shallow sections** that aren't Window Dudes deep. Card grids don't need headings. Keep blocks short. Home must not feel thin.
 - **Strategy page:**
   - Put the call to action after "What we'd confirm with you", not before.
@@ -65,10 +66,10 @@ Write `/home/user/ff-content-demo-factory/outreach/words-2026-11-16/<slug>.md` i
 ## <Service 1> — <H1>
 ## <Service 2> — <H1>
 ## Contact — <H1>
-## Notes for Ruth (not page copy)
+## Notes (not page copy)
 ```
 
-"Notes for Ruth" covers:
+"Notes" covers:
 - word counts per page, with and without quotes;
 - credentials and their sources;
 - inventory items left out, and why;
