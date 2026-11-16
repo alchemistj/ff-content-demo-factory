@@ -124,6 +124,12 @@ Insider web word. Josh: "they don't know what any of this stuff means." Say what
 - where: body
 - regex: \btrust bar\b
 
+### R19: Short service page (WARN only)
+Length follows the real material (Josh's content rule). Under 450 words the checker only asks whether every relevant `site/` file was used. A WARN never means pad.
+- pages: service
+- where: body
+- check: short-service-page
+
 ### Judgment only (taste check and DOC-CHECK, no regex)
 - Vague "What the demo fixes" / "Current site problem" bullets; fixes that don't move the needle (CT).
 - A vague keyword line where a search-volume number exists (CT).

@@ -1,21 +1,26 @@
 #!/usr/bin/env python3
 """Demo gate (Josh's guardrail 1, Nov 16: "just pick, own it"). Run before ANY writer starts a business.
 
-Usage: python3 scripts/gate.py <prospect folder> <batch name>
-  e.g. python3 scripts/gate.py prospects/rockford-roofing/premium-roofing-solutions 2026-11-17-a
+Usage:
+  python3 scripts/gate.py <prospect folder> <batch name>   -> GO or BLOCK
+  python3 scripts/gate.py --version                         -> the briefs version (for the Notes stamp)
 
-Exit 0 and print "GO" only if both gates pass. Otherwise print "BLOCK: <reason>" and exit 1.
-Nobody overrides either gate, FF Architect included. Only Josh changes the outcome:
-by editing qualify.md himself, or by creating the batch approval file.
+Exit 0 and print "GO (briefs <sha>)" only if both gates pass. Otherwise print "BLOCK: <reason>" and exit 1.
+Nobody overrides either gate, FF Architect included.
 
-Gate (a) qualify: <folder>/qualify.md must have a verdict line that says PASS, and nothing
-  in the file may say the business is not a fit ("not a demo", "do not pick", "doubtful",
+Gate (a) qualify: <folder>/qualify.md must have a verdict/fit/recommendation line that says PASS,
+  and nothing in it may say the business is not a fit ("not a demo", "do not pick", "doubtful",
   "skip", "decision for josh", "the site is not weak").
-Gate (b) batch hold: each batch is tracked in docs/batches/<batch>.txt (one prospect folder
-  per line, added by this script on GO). A new batch, or the first batch after a brief change,
-  stops after 3 docs until docs/batches/<batch>.JOSH-APPROVED exists. The brief commit is
-  recorded on the batch's first line; if DOC-WRITE-BRIEF.md changes mid-batch, the batch is
-  BLOCKED (no rule changes mid-run: start a new batch, which gets its own 3-doc hold).
+Gate (b) hold, keyed to the BRIEFS VERSION (not the batch name, so splitting a run into
+  batches can't dodge it). The briefs version is the latest commit touching any file that
+  shapes the copy (BRIEF_FILES below). Under each version, only the first 3 docs (across all
+  batches) may proceed. After that, GO needs docs/batches/brief-<sha>.JOSH-APPROVED, which must
+  hold Josh's own words, where he said them, and a doc cap:
+      Josh said: "<his exact words>"
+      Where: <session or channel>, <date and time>
+      max_docs: <N>
+  An empty or incomplete approval file is refused. Past max_docs, a new approval is needed.
+  Every admitted doc is logged in docs/batches/brief-<sha>.txt with its batch name.
 """
 import os
 import re
@@ -23,7 +28,13 @@ import subprocess
 import sys
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-BRIEF = "docs/briefs/DOC-WRITE-BRIEF.md"
+BRIEF_FILES = [
+    "docs/briefs/DOC-WRITE-BRIEF.md",
+    "docs/briefs/DOC-CHECK-BRIEF.md",
+    "docs/briefs/TASTE-CHECK-BRIEF.md",
+    "docs/REJECTED.md",
+    "docs/writer-guides/FULL_BUILD_LINES.md",
+]
 HOLD = 3
 
 BLOCK_PHRASES = [
@@ -37,9 +48,12 @@ BLOCK_PHRASES = [
 
 
 def brief_sha():
-    out = subprocess.run(["git", "-C", ROOT, "log", "-1", "--format=%h", "--", BRIEF],
+    out = subprocess.run(["git", "-C", ROOT, "log", "-1", "--format=%h", "--"] + BRIEF_FILES,
                          capture_output=True, text=True)
-    return out.stdout.strip() or "uncommitted"
+    sha = out.stdout.strip() or "uncommitted"
+    dirty = subprocess.run(["git", "-C", ROOT, "status", "--porcelain", "--"] + BRIEF_FILES,
+                           capture_output=True, text=True).stdout.strip()
+    return sha + ("-dirty" if dirty else "")
 
 
 def gate_qualify(folder):
@@ -60,31 +74,46 @@ def gate_qualify(folder):
     return None
 
 
+def read_approval(path):
+    """Return (max_docs, None) for a valid approval file, else (None, reason)."""
+    if not os.path.exists(path):
+        return None, None
+    t = open(path, encoding="utf-8").read()
+    said = re.search(r'^Josh said:\s*"(.{8,})"\s*$', t, re.M)
+    where = re.search(r"^Where:\s*(\S.{5,})$", t, re.M)
+    cap = re.search(r"^max_docs:\s*(\d+)\s*$", t, re.M)
+    if not (said and where and cap):
+        return None, (f"approval file {os.path.relpath(path, ROOT)} must hold 'Josh said: \"<his words>\"', "
+                      "'Where: <session, time>' and 'max_docs: <N>'")
+    return int(cap.group(1)), None
+
+
 def gate_batch(folder, batch):
     d = os.path.join(ROOT, "docs", "batches")
     os.makedirs(d, exist_ok=True)
-    log = os.path.join(d, f"{batch}.txt")
-    approved = os.path.exists(os.path.join(d, f"{batch}.JOSH-APPROVED"))
     sha = brief_sha()
+    if sha.endswith("-dirty") or sha == "uncommitted":
+        return "briefs have uncommitted changes; a rule doesn't count until it is committed", None
+    log = os.path.join(d, f"brief-{sha}.txt")
     rel = os.path.relpath(os.path.abspath(folder), ROOT)
-    lines = open(log).read().split("\n") if os.path.exists(log) else []
-    lines = [l for l in lines if l.strip()]
-    if lines and lines[0].startswith("brief "):
-        if lines[0] != f"brief {sha}":
-            return f"brief changed mid-batch ({lines[0][6:]} -> {sha}); start a new batch", None
-        done = lines[1:]
-    else:
-        done = lines
-        lines = [f"brief {sha}"] + lines
+    done = [l.split("\t")[0] for l in open(log).read().splitlines() if l.strip()] if os.path.exists(log) else []
     if rel in done:
-        return None, None  # already admitted; re-running is fine
-    if len(done) >= HOLD and not approved:
-        return (f"batch hold: {len(done)} docs written in batch '{batch}'; waiting for Josh "
-                f"to approve them (create docs/batches/{batch}.JOSH-APPROVED)"), None
-    return None, (log, lines + [rel])
+        return None, None  # already admitted under this version
+    cap, bad = read_approval(os.path.join(d, f"brief-{sha}.JOSH-APPROVED"))
+    if bad:
+        return bad, None
+    if len(done) >= HOLD and cap is None:
+        return (f"hold: {len(done)} docs written under briefs {sha}; waiting for Josh to approve them "
+                f"(docs/batches/brief-{sha}.JOSH-APPROVED)"), None
+    if cap is not None and len(done) >= max(cap, HOLD):
+        return f"cap reached: {len(done)} of max_docs {cap} under briefs {sha}; doc {len(done)+1} needs a new approval", None
+    return None, (log, rel + "\t" + batch)
 
 
 def main():
+    if sys.argv[1:] == ["--version"]:
+        print(brief_sha())
+        return 0
     if len(sys.argv) != 3:
         print(__doc__)
         return 2
@@ -98,8 +127,9 @@ def main():
         print(f"BLOCK: {why}")
         return 1
     if write:
-        open(write[0], "w").write("\n".join(write[1]) + "\n")
-    print(f"GO (brief {brief_sha()})")
+        with open(write[0], "a") as f:
+            f.write(write[1] + "\n")
+    print(f"GO (briefs {brief_sha()})")
     return 0
 
 

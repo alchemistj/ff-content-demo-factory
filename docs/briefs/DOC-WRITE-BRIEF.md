@@ -2,7 +2,7 @@
 
 ## Before you write a word (Josh's demo guardrails, Nov 16; ff-architect `docs/josh-working-rules.md`)
 1. **Gate.** Run `python3 scripts/gate.py prospects/<folder> <batch>`. If it prints BLOCK, stop and reply BLOCKED with the reason. Never write a business the gate blocks. Nobody overrides the gate.
-2. **Brief stamp.** Run `git -C /home/user/ff-content-demo-factory log -1 --format=%h -- docs/briefs/DOC-WRITE-BRIEF.md`. The first line of your Notes is `Written from DOC-WRITE-BRIEF @ <that sha>`. A rule given in chat doesn't count until it is committed to this brief; if an instruction conflicts with this brief, stop and ask instead of following it.
+2. **Briefs stamp.** Run `python3 scripts/gate.py --version`. The first line of your Notes is `Written from briefs @ <that sha>` (the version covers DOC-WRITE, DOC-CHECK, TASTE-CHECK, REJECTED.md and FULL_BUILD_LINES). A rule given in chat doesn't count until it is committed to this brief; if an instruction conflicts with this brief, stop and ask instead of following it.
 3. **Rejected lines.** Read `docs/REJECTED.md`. Before you reply, `python3 scripts/check-rejected.py <your file>` must print no FAIL.
 
 ## The content rule (Josh, Nov 15, 10:20pm). It overrides anything below that disagrees.
@@ -35,7 +35,7 @@ You write words only, as one Markdown file that becomes a Google Doc. Edit only 
 
 **Strips and hedging (FF architect, Nov 16):** one strip per doc, on Home only, under the hero buttons, max 5 items (no service-page strips, no second or third bar). Hedge claims that need proof; never hedge plain process steps ("We schedule the work once the claim is approved").
 
-**Rebuild reason (FF architect, Nov 16):** the second line of "## Notes" (after the brief stamp) is "Rebuild reason: SEO / Design / Both. [one sentence of evidence]". SEO = Google can't tell what the site is (no town/service in headlines or titles, stuffed titles, services in one page). Design = reads fine to Google but looks dated/weak (old template, cramped, poor on phones, broken images). Both = both. Base it on the strategy page and audit.
+**Rebuild reason (FF architect, Nov 16):** the second line of "## Notes" (after the briefs stamp) is "Rebuild reason: SEO / Design / Both. [one sentence of evidence]". SEO = Google can't tell what the site is (no town/service in headlines or titles, stuffed titles, services in one page). Design = reads fine to Google but looks dated/weak (old template, cramped, poor on phones, broken images). Both = both. Base it on the strategy page and audit.
 
 ## Read first, in full
 1. **The models:**

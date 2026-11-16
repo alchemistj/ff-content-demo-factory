@@ -1,7 +1,13 @@
-# Batches (Josh's guardrail 1: the 3-doc hold)
+# The 3-doc hold (Josh's guardrail 1)
 
-`scripts/gate.py <prospect folder> <batch>` records each admitted business in `<batch>.txt`. Its first line is the DOC-WRITE-BRIEF commit the batch runs on.
+The hold is keyed to the **briefs version**, not the batch name, so splitting a run into many small batches can't dodge it. The version is the latest commit touching any of: DOC-WRITE-BRIEF, DOC-CHECK-BRIEF, TASTE-CHECK-BRIEF, REJECTED.md, FULL_BUILD_LINES.md (`python3 scripts/gate.py --version`).
 
-- After 3 docs, the gate BLOCKS the batch until Josh approves them. Josh, or FF Architect quoting Josh's own words, creates `<batch>.JOSH-APPROVED`. Put the date and Josh's words in the file.
-- If DOC-WRITE-BRIEF.md changes mid-batch, the gate BLOCKS. Start a new batch name, which gets its own 3-doc hold. This is "no rule changes mid-run".
-- Name batches `<date>-<letter>`, e.g. `2026-11-17-a`.
+- `brief-<sha>.txt`: every doc admitted under that version, with its batch name (written by gate.py).
+- Under each version, the first 3 docs may proceed. After that, gate.py needs `brief-<sha>.JOSH-APPROVED`, holding:
+  ```
+  Josh said: "<his exact words>"
+  Where: <session or channel>, <date and time>
+  max_docs: <N>
+  ```
+  An empty or incomplete file is refused. Past `max_docs`, a new approval is needed.
+- Any change to those files is a new version, with its own 3-doc hold ("no rule changes mid-run"). Uncommitted changes BLOCK.

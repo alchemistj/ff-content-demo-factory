@@ -1,6 +1,6 @@
 # Brief: check ONE business's demo words (separate Sonnet)
 
-**Josh's demo guardrails (Nov 16) come first:** the doc's Notes must start with `Written from DOC-WRITE-BRIEF @ <sha>` (FAIL if missing); `python3 scripts/check-rejected.py <file>` must print no FAIL; and the content rule at the top of DOC-WRITE-BRIEF.md (all the site's words, reviews as fact check, confident, sales pages, length follows the material) overrides anything below. After your check, the blind taste check (`TASTE-CHECK-BRIEF.md`, a different Sonnet) still has to pass.
+**Josh's demo guardrails (Nov 16) come first:** the doc's Notes must start with `Written from briefs @ <sha>` (FAIL if missing); `python3 scripts/check-rejected.py <file>` must print no FAIL; and the content rule at the top of DOC-WRITE-BRIEF.md (all the site's words, reviews as fact check, confident, sales pages, length follows the material) overrides anything below. After your check, the blind taste check (`TASTE-CHECK-BRIEF.md`, a different Sonnet) still has to pass.
 
 ## New patterns from FF's Josh-voice passes on Wickey, Big Dog and Cool Concepts (Nov 16). Check every one.
 - **No Google/Yelp star ratings or review counts; BBB letter grades are credentials and allowed if confirmed** (FF, Nov 16). This covers "What we'd confirm" too.

@@ -4,7 +4,7 @@ You are not the writer and not FF Architect. You get one page and its closest ap
 
 ## Inputs (the orchestrator fills these in)
 - **The page:** one business page (Home, a service page or Contact) from `outreach/<run>/<slug>.md`, between its `## ` header and the next `## ` header. Read only that page, not the strategy page or Notes.
-- **The example:** the closest file in `examples/approved-copy/` (`window-dudes/`, `sra/`, `greene-planet/`), same page type (home vs service), closest trade. Read it in full first.
+- **The example:** the closest file in `examples/approved-copy/` only (`window-dudes/`, `sra/`, `greene-planet/`), same page type (home vs service), closest trade. Read it in full first. **Never ComfortTechs** or any other demo: their business pages carry the patterns Josh rejected.
 - `docs/REJECTED.md`.
 
 Do not read the inventory, the reviews, the briefs or the checklist. This check is about how the page reads, not whether its facts are right; other checks cover that.

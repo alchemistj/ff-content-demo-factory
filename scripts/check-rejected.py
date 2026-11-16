@@ -103,6 +103,10 @@ def main(paths):
                             lvl = "WARN" if r.get("level") == "warn" else "FAIL"
                             bad = bad or lvl == "FAIL"
                             print(f"{lvl} {fn} | {name[:40]} | {r['id']} {r['title'][:50]} | …{s[max(0, m.start()-30):m.end()+30]}…")
+                if r.get("check", "").startswith("short-service-page") and k == "service":
+                    n = sum(len(x.split()) for x in body)
+                    if n < 450:
+                        print(f"WARN {fn} | {name[:40]} | {r['id']} {n} words: did you use every relevant site/ file? (never pad)")
                 if r.get("check", "").startswith("keyword-stuffing"):
                     joined = " ".join(body)
                     for phrase in set(re.findall(r"\b((?:[A-Z][\w&'-]*\s){1,4}in [A-Z][a-z]+(?: [A-Z][a-z]+)?, [A-Z]{2})\b", joined)):
