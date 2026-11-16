@@ -8,13 +8,13 @@
 
 ### We built W C Borchelt & Sons a clearer Fort Wayne HVAC, plumbing and electrical website.
 
-Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
+Your site shapes your Google ranking, what AI says about you, and how easy you are to reach. Here’s a demo of what yours could be.
 
 **Buttons:** View the Demo Site / See What Changed
 
 ### Why we built this site
 
-Read your Google reviews and one story keeps coming back: the customer expected to hear "replace it" and heard what needed fixing, at a fair price. One put it this way:
+Read your Google reviews and one story keeps coming back: the customer expected "replace it" and heard what needed fixing, at a fair price. One put it this way:
 
 > RJ was professional, efficient and I believe honest in his assessment and fair with the price. And the problems are fixed.
 >
@@ -28,7 +28,7 @@ Your site never says that. Its home page has one review, about a furnace install
 
 **Current site problem**
 - The headline is "HEATING, AIR CONDITIONING, PLUMBING, ELECTRICAL & GENERATORS", with no Fort Wayne. Noble County is listed twice.
-- Its one review is a furnace installation, not the same-day AC fixes from Google.
+- Its one review is a furnace installation, not an AC fix.
 - "Family Owned and Operated since 1962" and the after-hours technician line sit on other pages.
 
 **What the demo fixes**
@@ -44,7 +44,7 @@ Google and AI tools can only repeat what's written down. We get every service, c
 **Current site problem**
 - Repair is one line in a list of 19 services.
 - No review on the site is about a repair, so the same-day AC fix and the 32-year-old furnace never show.
-- Nothing says what to check first, what usually fails, or repair versus replace.
+- Nothing says what usually fails, or repair versus replace.
 
 **What the demo fixes**
 - A Fort Wayne headline and a page of its own.
@@ -72,14 +72,13 @@ Pages planned from what Google actually shows for each search, so every page tar
 **4. Contact**
 
 **Current site problem**
-- The menu has no contact page; the numbers sit in the menu bar.
-- The footer reads "© 2035 by Site Name".
-- Emergency instructions differ between the Services page and the menu.
+- There is no contact page; the numbers sit in a bar at the top of each page.
+- The bottom of each page reads "© 2035 by Site Name".
+- Emergency instructions differ between the Services page and the top of the page.
 
 **What the demo fixes**
 - Address, phone, text number and hours in one place.
 - When to call and when a text can wait.
-- What to have ready.
 
 **A full build would also add**
 Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
@@ -119,7 +118,7 @@ This demo is the first five pages. A full build starts by pulling every service 
 
 ### What we'd confirm with you
 
-1. **After hours.** The Services page says to call 260-485-3412 after 4:30 PM; the menu says to follow the prompts. Which is right? We stated both.
+1. **After hours.** The Services page says to call 260-485-3412 after 4:30 PM; the top of the page says to follow the prompts. Which is right? We said only that an on-call technician takes emergency calls.
 2. **"Manablocks."** It's on your plumbing list, unexplained. What is it? We left it out.
 3. **PHCC.** It's on your Brands and Community pages, not as a membership. Are you a member? We left it out.
 4. **The one-star review.** A customer says a sump pump replacement was pushed when a $275 part fixed it. Will you answer it? The demo claims no promise.
@@ -142,7 +141,7 @@ Heating, air conditioning, plumbing, electrical work and generators for homes an
 
 ### When the answer is smaller than you feared
 
-A system that stops working has often failed at one part, and looking for that part first is usually the cheaper way to find out. One customer who asked us for a price after another company’s quote wrote:
+A system that stops working has often failed at one part, and looking for that part first is usually the cheaper way to find out. If another company has quoted a full replacement, it is reasonable to ask which part failed and what a repair would cost. Standard replacement quotes from us are generally complimentary. One customer who asked us for a price after another company’s quote wrote:
 
 > Plumbers were on time, very professional & worked efficiently. Cost was 1/2 of what I’d been quoted from another plumbing place.
 > Would definitely use them again for any plumbing job that arises at my home. I give them 5 stars!
@@ -161,10 +160,6 @@ A system that stops working has often failed at one part, and looking for that p
 
 We work on homes and on commercial buildings.
 
-> Love my furnace. As always Borchelt employees did a wonderful job installing my furnace. Very helpful in answering all questions and completing their mission to heat my home. Employees are very professional, friendly and dedicated in their work. Thank you so much for all that you do. God Bless!
->
-> — Susan W., Fort Wayne
-
 ### One company for heating, plumbing and electrical
 
 Having one company for all three saves a round of phone calls when a problem crosses trades. A water heater is a plumbing job that can also involve a gas line or a circuit. An air conditioner is a cooling job that depends on a working electrical supply. One customer used us for all of it:
@@ -181,7 +176,7 @@ Old houses are common in Fort Wayne, and electrical work in one often starts wit
 
 ### A service plan
 
-Our service plan includes two visits a year, so the system is checked before the cooling season and again before the heating season. Plan members get a waived diagnostic fee up to four times a year, a 10% discount on work related to the equipment on the agreement, 5% off a new HVAC installation and top priority service. Call the office for pricing.
+Our service plan includes two visits a year, which fits one before the cooling season and one before the heating season. Plan members get a waived diagnostic fee up to four times a year, a 10% discount on work related to the equipment on the agreement, 5% off a new HVAC installation and top priority service. Call the office for pricing.
 
 Regular checks matter more in some seasons than others. A cooling system is easier to check in spring than during the first week of 90-degree heat, and a furnace is easier to check in the fall than on the first freezing night. One customer noticed an extra benefit of her yearly visit:
 
@@ -191,13 +186,13 @@ Regular checks matter more in some seasons than others. A cooling system is easi
 
 ### New systems, estimates and financing
 
-When a repair stops making sense, we install new heating and cooling equipment. Standard replacement quotes are generally complimentary. Certain on-site visits, or calls from outside our area, may carry a diagnostic fee to cover travel and technician time, and we tell you beforehand if one applies.
+When a repair stops making sense, we install new heating and cooling equipment. Certain on-site visits, or calls from outside our area, may carry a diagnostic fee to cover travel and technician time, and we tell you beforehand if one applies.
 
 We offer financing through Synchrony for your next home project. Call the office for the options.
 
 ### Who you'll meet
 
-We opened our doors in May of 1962, and our founder, Wally, had been working in the business long before that. In 1993 his sons took over, and in 2020 they retired. Three owners from within the company took over, one of them from the Borchelt family, which makes us a third-generation family owned and operated company. Wally was known for helping anyone at any time, even if it meant showing up to work in his Sunday best.
+We opened our doors in May of 1962, and our founder, Wally, had been working in the business long before that. In 1993 his sons took over, and in 2020 they retired. Three owners from within the company took over, one of them from the Borchelt family, which makes us a third-generation family owned and operated company. Wally was known for helping anyone at any time, even if it meant showing up to work in his Sunday best. We sponsor or work closely with Foster Park Little League, the St Joseph Catholic School golf outing, Big Turkey Lake Fireworks and the Blue Jacket Fantasy of Lights.
 
 Customers often name the technician who came to the house, and they describe the same habit of explaining the work as it goes. One wrote:
 
@@ -205,13 +200,9 @@ Customers often name the technician who came to the house, and they describe the
 >
 > — Becky C.
 
-### In the community
-
-We sponsor or work closely with Foster Park Little League, the St Joseph Catholic School golf outing, Big Turkey Lake Fireworks and the Blue Jacket Fantasy of Lights.
-
 ### Hours and where we work
 
-We are open Monday to Friday, 8:00 AM to 4:30 PM. Saturday and Sunday are for emergency calls only. After 4:30 PM, on a weekend or on a holiday, call 260-485-3412 and follow the prompts to reach a skilled on-call technician.
+We are open Monday to Friday, 8:00 AM to 4:30 PM. Saturday and Sunday are for emergency calls only. After 4:30 PM, on a weekend or on a holiday, a skilled on-call technician takes emergency calls.
 
 We serve Allen, DeKalb, Whitley, Wells, Noble, Adams, Huntington, LaGrange, Steuben and Kosciusko counties in Indiana. Outside the city, many homes use propane and well water, and we can talk through what that means for the equipment you have.
 
@@ -359,9 +350,9 @@ Rumbling or popping from a tank is often sediment. Water in much of Indiana is h
 
 ### Repair or replace?
 
-A tank water heater commonly lasts around 8 to 12 years, and a tankless one often lasts longer. The age on the label decides less than what has failed. A new element, thermostat or valve can make sense on a heater that is otherwise sound. A heater near the end of its range that has begun leaking from the tank, or whose repair would cost about half the price of a new one, is usually better replaced. Replacing before the tank fails also lets you choose the day, instead of finding out on a holiday weekend.
+A tank water heater commonly lasts around 8 to 12 years, and a tankless one often lasts longer. The age on the label decides less than what has failed. A new element, thermostat or valve can make sense on a heater that is otherwise sound. A heater near the end of its range that has begun leaking from the tank, is usually better replaced. Replacing before the tank fails also lets you choose the day, instead of finding out on a holiday weekend.
 
-Sometimes a heater can’t be repaired and has to be replaced, and that can mean a second trip if the right size or model isn’t on the truck. One customer’s timeline shows how that went:
+Sometimes a heater can’t be repaired and has to be replaced. One customer’s timeline shows how that went:
 
 > I called Tuesday because our water heater stopped working on Labor Day they came in on Wednesday and unfortunately it couldn’t be fixed, came back today and replaced it. Very polite gentlemen, very professional, answered all my husband’s questions and made sure everything was running properly before leaving. I recommend them to everyone and would use them again and have used them in the past.
 >
@@ -379,7 +370,7 @@ Old shutoff valves are a risk in any replacement. A valve that hasn’t been tur
 
 ### Gas heaters, venting and safety
 
-A gas water heater vents its exhaust through a flue, the vent pipe above it, and a flue that is blocked, loose or poorly sloped can send exhaust gas, including carbon monoxide, into the house. After any replacement, the venting is worth checking, and a carbon monoxide alarm near the heater and the bedrooms is worth having. If you smell gas, don’t touch a switch. Go outside and call your gas utility or 911.
+A gas water heater vents its exhaust through a flue, the vent pipe above it, and a flue that is blocked, loose or poorly sloped can send exhaust gas, including carbon monoxide, into the house. After any replacement, the venting is worth checking, and a carbon monoxide alarm near the heater and the bedrooms is worth having.
 
 Temperature is a safety matter too. Many manufacturers suggest setting the thermostat around 120 degrees to reduce the risk of scalds, which matters most with children or older family members at home.
 
@@ -409,10 +400,6 @@ Call 260-485-3412 or text 260-231-1794. We are at 6332 Maplecrest Road, Fort Way
 
 The office is open Monday to Friday, 8:00 AM to 4:30 PM. Saturday and Sunday are emergency calls only. Texts sent after 4:30 PM are answered the next business day, so if the heat, water or power is out, call instead.
 
-> … The office let me know who would be coming and what time. He was on time and efficient at his job.
->
-> — Joyce M.
-
 ### What to tell us
 
 Tell us what the equipment is doing and when it started, so the right technician can come prepared.
@@ -424,7 +411,13 @@ Tell us what the equipment is doing and when it started, so the right technician
 
 ### Before we arrive
 
-Have the address and the best number to reach you on hand. If a leak is active, shutting off the water at the nearest valve usually limits the damage. If you smell gas or a carbon monoxide alarm sounds, leave the house and call 911 before you call us.
+Have the address and the best number to reach you on hand. Customers often mention that the office tells them who is coming and when. One wrote:
+
+> … The office let me know who would be coming and what time. He was on time and efficient at his job.
+>
+> — Joyce M.
+
+Other things to know: If a leak is active, shutting off the water at the nearest valve usually limits the damage. If you smell gas or a carbon monoxide alarm sounds, leave the house and call 911 before you call us.
 
 ### Where we work
 
@@ -435,6 +428,8 @@ Ready to talk? Call 260-485-3412.
 **Buttons:** Call 260-485-3412 / Text 260-231-1794
 
 ## Notes (not page copy)
+
+**Current word counts after the check (without quotes / with quotes):** Strategy page 928/959; Home 930/1173; AC and Furnace Repai 1198/1484; Water Heaters 978/1196; Contact 276/317. The table below predates the check.
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
@@ -453,7 +448,7 @@ Counts include headings, bullets and the H1 line, and leave out button lines. St
 - Brand lists are product makes they install, not certifications. Used as makes (Trane, York, Mitsubishi, Generac, Eaton on Home; State, A. O. Smith, Bradford White, Navien on Water Heaters).
 - Own-site offers, each used once: service plan, estimates and diagnostic-fee line, and Synchrony financing (Home); after-hours technician line (Home); "all brands" hedged to "many brands"; "top priority service" is in the plan.
 
-**Review use.** 19 quotes, each once across the document, none back to back, copy between all. Strategy: Kari G. Home: Danielle L., Susan W. (on their own site), Joanna J., Wendy W., John O., Becky C. AC and Furnace Repair: Chuck A., Mark S., Kerstin R., Cat B., Priscilla C., Joe R., Andrew F. Water Heaters: Jennifer B., David T., Karen Z., Steve S. Contact: Joyce M. (shortened with an ellipsis). The lead "fix what's broken" rests on Kari G., Danielle L., Kerstin R. and Priscilla C., and is written as what customers said, not as policy, because the 1-star review (Josh C., sump pump, $700 versus $275, no owner reply) says the opposite. That review is not quoted; it is in "What we'd confirm". The 2-star review (Lightning G., speeding) is not used. Review-inferred details ("often" or "usually" only): second trip when a heater can't be repaired (Karen Z.), customers naming technicians (about 20 reviews).
+**Review use.** 19 quotes, each once across the document, none back to back, copy between all. Strategy: Kari G. Home: Danielle L., Joanna J., Wendy W., John O., Becky C. AC and Furnace Repair: Chuck A., Mark S., Kerstin R., Cat B., Priscilla C., Joe R., Andrew F. Water Heaters: Jennifer B., David T., Karen Z., Steve S. Contact: Joyce M. (shortened with an ellipsis). The lead "fix what's broken" rests on Kari G., Danielle L., Kerstin R. and Priscilla C., and is written as what customers said, not as policy, because the 1-star review (Josh C., sump pump, $700 versus $275, no owner reply) says the opposite. That review is not quoted; it is in "What we'd confirm". The 2-star review (Lightning G., speeding) is not used. Review-inferred details ("often" or "usually" only): second trip when a heater can't be repaired (Karen Z.), customers naming technicians (about 20 reviews).
 
 **Inventory items left out, and why.**
 - "Manablocks": unexplained on the site. In "What we'd confirm".
@@ -469,6 +464,7 @@ Counts include headings, bullets and the H1 line, and leave out button lines. St
 - "OUR WORK" heading at the end of the Services page: empty on the live site, so there are no case studies or portfolio jobs to use.
 - "© 2035 by Site Name" footer placeholder: not quoted on business pages.
 - Hours "Sat & Sun - Emergency Calls Only": stated on Home and Contact as the site says it.
+- Susan W. quote (site's own review) cut to keep Home from stacking quote-ended sections; Home now has no after-hours phone routing, to keep the Services/menu conflict out of copy.
 
 **Facts to verify.**
 - After-hours routing (Services page versus menu).

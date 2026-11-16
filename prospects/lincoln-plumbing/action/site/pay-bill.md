@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/pay-bill
 
-- Fetched: 2026-11-16T04:20:15.724Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:27:49.232Z (rendered in a real browser)
 - HTTP: 200
 - Title: PAY BILL | Action Plumbing, Heating, A/C, Electrical - Lincoln, NE
 - H1: PAY BILL | PAY BILL
-- tel: links: tel:+14027994969, tel:402-799-4969
+- tel: links: tel:+14025760708, tel:402-576-0708
 - Words: 29
 
 ---

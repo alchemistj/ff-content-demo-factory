@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/commercial-services/electrical
 
-- Fetched: 2026-11-16T04:19:43.896Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:27:20.458Z (rendered in a real browser)
 - HTTP: 200
 - Title: Commercial Electrical Services | ACTION Electrical, Lincoln NE
 - H1: Commercial Electrical | Commercial Electrical
-- tel: links: tel:+14027994969, tel:402-799-4969
+- tel: links: tel:+14025760708, tel:402-576-0708
 - Words: 437
 
 ---

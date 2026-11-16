@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/company
 
-- Fetched: 2026-11-16T04:20:07.614Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:27:42.502Z (rendered in a real browser)
 - HTTP: 200
 - Title: Company | Action Plumbing, Heating, A/C, Electrical - Lincoln, NE
 - H1: Company | Company
-- tel: links: tel:+14027994969, tel:402-799-4969
+- tel: links: tel:+14025760708, tel:402-576-0708
 - Words: 271
 
 ---
