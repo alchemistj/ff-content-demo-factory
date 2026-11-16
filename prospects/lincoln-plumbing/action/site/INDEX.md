@@ -1,6 +1,6 @@
 # Full text of the business's own site
 
-Built 2026-11-16T04:48:04.622Z. Pages were rendered in a real browser (scripts/fetch-site-text.mjs for the first crawl; the same method for the sitemap pass). Writers quote from these files, never from notes. FAQ answers that are collapsed in the page (accordions) are in faq-answers.md.
+Built 2026-11-16T04:49:12.781Z. Pages were rendered in a real browser (scripts/fetch-site-text.mjs for the first crawl; the same method for the sitemap pass). Writers quote from these files, never from notes. FAQ answers that are collapsed in the page (accordions) are in faq-answers.md.
 
 | File | URL | HTTP | Words | Title |
 |---|---|---|---|---|
