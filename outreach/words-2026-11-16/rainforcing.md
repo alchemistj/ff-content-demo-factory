@@ -5,45 +5,45 @@
 
 **Why we built this site**
 
-Your customers keep telling the same story: Miguel stayed with them through the whole job, and your team dealt with the insurance company. Outside those reviews, your homepage never names Miguel and gives insurance one clause.
+Your customers keep telling the same story: Miguel stayed with them through the whole job, and your team handled the insurance company. Outside those reviews, your homepage never names Miguel.
 
 > They stayed with me closely throughout entire process!!! Especially Miguel!!!
 >
 > — Kimberly J.
 
-So we built the first five pages: the homepage, roof replacement, insurance storm restoration, contact, and this page. Your site already has pages for repairs, emergency repair, siding, gutters and commercial roofing, so we left those alone.
+So we built the first five pages: homepage, roof replacement, insurance storm restoration, contact and this page. Your pages for repairs, siding, gutters and commercial roofing we left alone.
 
 **The demo, page by page**
 
 ### 1. Homepage
 
-*Why it matters:* It's the page most people see first, and today it doesn't say who you deal with.
+*Why it matters:* It's the page most people see first, and it never says who you deal with.
 
 **Current site problem**
 - Outside the reviews, nobody on your team is named.
-- Insurance help, the thing customers praise most, gets one clause: "including complex insurance claims."
-- "Rainforcig Roofing" and "we've you taken care of" are typos, and "roofing company" repeats in most paragraphs, which reads as written for Google.
+- Insurance help, which customers praise most, gets one clause.
+- "Rainforcig" and "we've you taken care of" are typos, and "roofing company" repeats in most paragraphs, which reads as written for Google.
 
 **What the demo fixes**
-- Miguel, your owner, is named at the top, with a customer's words about working with him.
-- Storm damage and insurance claims get their own section, with what happens first.
-- Typos gone, plain wording, each idea said once.
+- Miguel, your owner, is named at the top.
+- Storm damage and insurance claims get their own section.
+- Typos gone, each idea said once.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 ### 2. Roof Replacement
 
-*Why it matters:* A new roof is one of the biggest jobs you sell, and the first thing this page shows is an offer.
+*Why it matters:* A new roof is one of your biggest jobs.
 
 **Current site problem**
-- Your replacement page and your residential roofing page share the same headline and the same opening offer, so Google has two near-copies to choose between.
-- That headline is a $3,000 maintenance plan for projects over $25,000, so a visitor with a smaller roof may read an offer that isn't for them.
-- The reviews under it include a siding repair and a vent-pipe leak, and the same set repeats on four other pages.
+- Your replacement page and residential roofing page share one headline and opening offer, so Google has two near-copies to choose between.
+- That headline is a plan for projects over $25,000, so a smaller job may read an offer that isn't for it.
+- The reviews under it include a siding repair and a vent-pipe leak, and repeat on four other pages.
 
 **What the demo fixes**
-- One page for roof replacement alone, headed "Roof Replacement in Peoria, IL."
-- It opens with repair or replace, then how a replacement goes. The 5-year plan comes later, with what it takes to qualify.
+- One page for roof replacement, headed "Roof Replacement in Peoria, IL."
+- It opens with repair or replace, then how a job goes. The plan comes later, with how to qualify.
 - Reviews from people who replaced a roof, each shown once.
 
 **A full build would also add**
@@ -51,17 +51,17 @@ Pages planned from what Google actually shows for each search, so every page tar
 
 ### 3. Insurance Storm Restoration
 
-*Why it matters:* After hail, the first question is who deals with the insurance company.
+*Why it matters:* After hail, the first question is who helps with the insurance company.
 
 **Current site problem**
-- "Xactimate," "Law & Ordinance provisions" and "depreciation funds" are never explained.
+- "Xactimate," "Law & Ordinance provisions" and "depreciation funds" go unexplained.
 - It says "Certified Insurance Restoration Experts" without saying who certified you, and says you "ensure your carrier covers" code upgrades, which promises someone else's decision.
-- Your reviews describe six months to almost a year. The page never says a claim can take that long.
+- Reviews describe six months to almost a year. The page never says claims can take that long.
 
 **What the demo fixes**
-- Plain words for the drone inspection, code upgrades and how payments usually arrive.
+- Plain words for the drone inspection, code upgrades and payments.
 - It says what you do and where your part ends.
-- A section on how long claims can take, in your customers' words.
+- How long claims can take, in your customers' words.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
@@ -72,13 +72,13 @@ Call and form tracking that shows which pages and towns your leads come from.
 
 **Current site problem**
 - The headline is "Contact rainforcing roofing today!" with your name in lowercase.
-- Hours sit at the very bottom, and no town is named anywhere on the page.
+- Hours sit at the very bottom, and no town is named.
 - The form requires an email but not a phone number.
 
 **What the demo fixes**
-- Your name spelled right, and a first line asking what's going on with the roof.
+- Your name spelled right, and a first line asking what's wrong with the roof.
 - Phone, hours, address and towns together.
-- What to have ready when you call, including your phone number, and one review.
+- What to have ready, including your phone number, and one review.
 
 **A full build would also add**
 Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
@@ -116,7 +116,7 @@ Keeps working after launch
 
 Four questions to sort out together:
 
-- Your site says "24/7 Emergency Roof Repair," but your hours end at 8 PM Monday to Saturday and 3 PM Sunday. Which is right?
+- Your site says "24/7 Emergency Roof Repair," but your hours end at 8 PM, and 3 PM Sunday. Which is right?
 - Your site says "GAF Certified" in some places and "GAF Certified Plus" in others, and GAF's own directory blocked us. Which is current?
 - Your site says you started in 2021 and also claims "over 20 years of roofing experience." Which should customers read?
 - Your site says "BBB accredited" on one page, but BBB's search listing shows only an A+ rating. Are you accredited?
@@ -155,7 +155,7 @@ Miguel founded Rainforcing and runs it himself. Before that he spent years on ro
 
 ## Storm Damage and Insurance Claims
 
-After hail or wind you have a damaged roof and an insurance company to deal with at once. We start with an inspection, help you file the claim, and meet your adjuster, the insurance company's inspector, at the house to go over the damage together.
+After hail or wind you have a damaged roof and an insurance company to deal with at once. We start with an inspection of the roof, help you file the claim, and meet your adjuster, the insurance company's inspector, at the house to go over the damage together. The goal is a roof that is documented, restored properly and cleaned up when we're done.
 
 > Allie worked so hard to get my insurance to cover what they should.
 >
@@ -167,7 +167,7 @@ When a roof is near the end of its life, we replace all of it. Asphalt shingle r
 
 ## Repairs and Emergency Leaks
 
-Not every roof needs replacing. We repair leaks around skylights and vent pipes, missing shingles, flat roofs and storm damage. If water is coming in, call us about emergency roof repair.
+Not every roof needs replacing. We repair leaks around skylights and vent pipes, missing shingles, flat roofs and storm damage, and a small repair is often the right answer when the rest of the roof is sound. If water is coming in, call us about emergency roof repair, and we'll tell you what we can do and when.
 
 > I had an issue with water leaking through vent pipe from the roof. Miguel jumped to my house when I found water leaking. He noticed main problem from the roof and suggested the solution.
 >
@@ -179,7 +179,7 @@ The roof is one part of the outside of your house. We also install and repair si
 
 ## Commercial Roofing
 
-We roof buildings too, for property managers and business owners in Peoria and Bloomington. Commercial roofs are often flat or nearly flat, and a leak can reach inventory and equipment quickly. We plan crews around your business hours to keep disruption down, and we can document wind or hail damage for your insurance company.
+We roof buildings too, for property managers and business owners in Peoria and Bloomington. Commercial roofs are often flat or nearly flat, and a leak can reach inventory and equipment quickly. We plan crews around your business hours to keep disruption down, and we can document wind or hail damage for your insurance company. Rooftop equipment, skylights and the edges where a flat roof meets a wall are the spots we check first, since those are where flat roofs often leak.
 
 ## A Yard You Can Walk Across When We Leave
 
@@ -266,7 +266,7 @@ Code is the other common gap. A new roof often has to include things the old one
 
 The boards under the old shingles sometimes turn out to be damaged or rotted, and you can only see that once the shingles are off. When that happens we photograph the boards, tell you what we found and send the added cost to your insurance company for review. Every claim is different.
 
-> Rainforcing's crew showed up precisely when promised. As soon as the job was started they found issues that required a complete tear off and all new sheathing. All communications with the insurance company regarding the additional costs were submitted professionally by Rainforcing and were approved.
+> Rainforcing’s crew showed up precisely when promised. As soon as the job was started they found issues that required a complete tear off and all new sheathing. All communications with the insurance company regarding the additional costs were submitted professionally by Rainforcing and were approved.
 >
 > — Bryan A.
 
@@ -280,15 +280,11 @@ Insurance companies also sometimes deny a claim or approve less than the roof ne
 >
 > — Brandi C.
 
-## What Your Policy Decides Before Anyone Climbs a Ladder
+## What Your Policy Decides, and What to Do If Water Is Coming In
 
 Two parts of your policy shape what a claim feels like. The first is the deductible, the part you pay yourself. For wind and hail, some deductibles are a percentage of your home's insured value rather than a flat dollar amount, which can be a surprise.
 
-The second is how the policy pays on a roof. Many pay in two parts: a first payment with the roof's age-related wear subtracted, called depreciation, and the rest after the work is done and proof is sent. That is why dated photos and receipts for any emergency work matter to the file.
-
-## If Water Is Coming In Now
-
-Call us. We can put a temporary tarp over the damaged area to keep more water out until the permanent repair. Many policies expect you to protect the house from further damage.
+The second is how the policy pays on a roof. Many pay in two parts: a first payment with the roof's age-related wear subtracted, called depreciation, and the rest after the work is done and proof is sent. That is why dated photos and receipts for any emergency work matter to the file. If water is coming in now, call us: we can put a temporary tarp over the damaged area to keep more water out until the permanent repair, and many policies expect you to protect the house from further damage.
 
 ## Questions
 
@@ -424,6 +420,8 @@ Tell us what's going on with your roof, siding or gutters. If it's urgent, pleas
 - **Address:** 8701 N University St, Suite A, Peoria, IL 61615
 - **Hours:** Monday to Saturday, 7 AM to 8 PM. Sunday, 8 AM to 3 PM.
 
+If water is coming in, call and tell us where you see it, inside and out. We'll tell you what to do next.
+
 ## What to Have Ready
 
 You don't need to know what the roof needs. A few details help us get started:
@@ -433,13 +431,9 @@ You don't need to know what the roof needs. A few details help us get started:
 - The date of the storm, if there was one, and whether you've contacted your insurance company
 - Photos from the ground or from inside, if you have them
 
-## If Water Is Coming In
-
-Call, and tell us where you see it, inside and out. We'll tell you what to do next.
-
 ## Where We Work
 
-We're based in Peoria and work across Central Illinois: Peoria, Bartonville, Dunlap, East Peoria, Mapleton, Pottstown, West Peoria, Manito, Morton, Pekin, Tremont, Washington, Bloomington, Normal, Germantown Hills, La Salle, Princeton and Glasford. If your town isn't listed, call and tell us where you are.
+We're based in Peoria and work across Central Illinois: Peoria, Bartonville, Dunlap, East Peoria, Mapleton, Pottstown, West Peoria, Manito, Morton, Pekin, Tremont, Washington, Bloomington, Normal, Germantown Hills, La Salle, Princeton and Glasford. If your town isn't listed, call and tell us where you are. We work on homes and on commercial buildings.
 
 ## After You Call
 

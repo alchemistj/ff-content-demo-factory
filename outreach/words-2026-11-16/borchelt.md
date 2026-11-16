@@ -438,10 +438,46 @@ Ready to talk? Call 260-485-3412.
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
-| Strategy | XXS | XXSQ |
-| Home | XXH | XXHQ |
-| AC and Furnace Repair | XXR | XXRQ |
-| Water Heaters | XXW | XXWQ |
-| Contact | XXC | XXCQ |
+| Strategy | 952 | 979 |
+| Home | 901 | 1205 |
+| AC and Furnace Repair | 1207 | 1499 |
+| Water Heaters | 1032 | 1248 |
+| Contact | 258 | 286 |
 
-PLACEHOLDER
+Counts include headings, bullets and the H1 line, and leave out button lines. Strategy is held to 1,000 words or fewer, quotes included. Home needs 550+ and each service page 700+ without quotes; all pass. Both service pages reach 700+ on hedged trade knowledge tied to Fort Wayne (hard water, 30-year-old houses, winter cold, humid summers, propane and well water outside the city), not on padding. Business claims on those pages come only from the site and reviews: repairs on many brands, water heaters and tankless, gas lines, the brand list, and the after-hours line (Home only).
+
+**Credentials (all the business's own claim; none checked at the source).**
+- Family owned and operated since 1962, founder Wally, sons took over 1993, three owners from within in 2020, one from the Borchelt family, third generation: about-us. The 1962 opening is stated as theirs and not disputed (a directory snippet also says 1962, not read in full). The three current owners are not named. Wally is named only because the site does.
+- PHCC: on the Brands and Community pages only, never as a membership, and no chapter source names the business. Not stated in the copy.
+- Licenses, insurance, bonding, NATE, EPA, warranties: none on the site, so none claimed. The hiring section mentions "licensed plumber" and "licensed electrician" only as job titles.
+- Brand lists are product makes they install, not certifications. Used as makes (Trane, York, Mitsubishi, Generac, Eaton on Home; State, A. O. Smith, Bradford White, Navien on Water Heaters).
+- Own-site offers, each used once: service plan, estimates and diagnostic-fee line, and Synchrony financing (Home); after-hours technician line (Home); "all brands" hedged to "many brands"; "top priority service" is in the plan.
+
+**Review use.** 19 quotes, each once across the document, none back to back, copy between all. Strategy: Kari G. Home: Danielle L., Susan W. (on their own site), Joanna J., Wendy W., John O., Becky C. AC and Furnace Repair: Chuck A., Mark S., Kerstin R., Cat B., Priscilla C., Joe R., Andrew F. Water Heaters: Jennifer B., David T., Karen Z., Steve S. Contact: Joyce M. (shortened with an ellipsis). The lead "fix what's broken" rests on Kari G., Danielle L., Kerstin R. and Priscilla C., and is written as what customers said, not as policy, because the 1-star review (Josh C., sump pump, $700 versus $275, no owner reply) says the opposite. That review is not quoted; it is in "What we'd confirm". The 2-star review (Lightning G., speeding) is not used. Review-inferred details ("often" or "usually" only): second trip when a heater can't be repaired (Karen Z.), customers naming technicians (about 20 reviews).
+
+**Inventory items left out, and why.**
+- "Manablocks": unexplained on the site. In "What we'd confirm".
+- PHCC: see above.
+- Speed theme ("on time", "same day", 28 reviews): used lightly (Chuck A., Andrew F.) and not promised as a standing practice. No response-time claim is made.
+- Named technicians (Cameron, Hayden, Mike, Seth, RJ, Chase): appear only inside quotes. No staff list, because only reviews name them and the site names no one.
+- Respect for property (steven Z., Karen O.): Cat B. is used; the others are left out as thin.
+- Community sponsorships: Foster Park Little League, St Joseph Catholic School golf outing, Big Turkey Lake Fireworks and Blue Jacket Fantasy of Lights are used. Allen Co. Right to Life, Aardvark Home Inspections and WaterOut are left out (a political cause and two other businesses, and the rules say no claims about other companies).
+- Electronic air cleaners, humidifiers, boilers, mini splits, thermostats: listed once on Home; trade knowledge on the repair page. No installs-only detail beyond the site.
+- Generator maintenance plans: one line on Home. No terms on the site.
+- Career postings and benefits: used in the Home "Work with us" section. The office@wcbsons.net address is used there only, not on Contact (domain differs from the site's own).
+- Text line 260-231-1794: used. The "emergency routing" conflict is in "What we'd confirm"; business pages state only what both sources agree on.
+- "OUR WORK" heading at the end of the Services page: empty on the live site, so there are no case studies or portfolio jobs to use.
+- "© 2035 by Site Name" footer placeholder: not quoted on business pages.
+- Hours "Sat & Sun - Emergency Calls Only": stated on Home and Contact as the site says it.
+
+**Facts to verify.**
+- After-hours routing (Services page versus menu).
+- Whether "Manablocks" is a service they want listed.
+- PHCC membership; any licenses or insurance they want stated.
+- Whether office@wcbsons.net is the right email for customers as well as applicants.
+- Service plan price, terms and what "waived diagnostic fee up to 4 times" covers; financing terms (Synchrony page has 12 words).
+- Whether the commercial work is "Residential & Commercial Services" in all trades (the site's heading).
+- Trade-knowledge statements (R-22 ended 2020, typical equipment lives, half-the-price rule, 120 degrees for scalds, sediment and anode rod, expansion tanks, hard Indiana water) are general and hedged, not business claims.
+- The 80% mobile figure, the 91 speed score and the SRA Roofing proof block are template content from the brief; the SRA block is not written here.
+- Service-page links use placeholder slugs: /ac-furnace-repair-fort-wayne-in/ and /water-heater-repair-fort-wayne-in/.
+- Full-build monitoring bullets use only the four verified lines in FULL_BUILD_LINES.md word for word; the Homepage card's last line is line 8 exactly.

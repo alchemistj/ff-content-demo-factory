@@ -39,7 +39,7 @@ Count: 5 offers (from reviews, unverified on site).
 
 ## Review themes
 
-Source: `reviews.json`, 75 requested, 75 with text in the file, plus 6 rating-only. Rating 4.8 from 252 reviews.
+Source: `reviews.json`, 69 reviews with text plus 6 rating-only (pulled 2026-11-16). Google rating 4.8 from 252 reviews.
 
 1. **Honest, not upselling.** Strongest theme.
    - Hannah M.: "Unlike the other company, they aren't here to sell you the most expensive solution they can"
@@ -58,7 +58,7 @@ Source: `reviews.json`, 75 requested, 75 with text in the file, plus 6 rating-on
 4. **Explains the work in plain words.**
    - Rick N.: "explained the process and details of install in terms that you could understand"
    - Bill C.: "explained things in a professional and understandable way"
-   - Heather L. and Steve S. also describe clear explanations.
+   - Steve S.: "Both Tyler & Luke explained everything and answered all my questions."
 5. **Clean work.**
    - Charles S.: "Nice clean installation."
    - Mike Y.: "Cleaned area and hauled out old system."
@@ -75,7 +75,7 @@ Note: Colette S. names "Mike Miller" for solutions. The Mike Shelburne count may
 | Address | 1417 Martin St, Fort Wayne, IN 46802 | `reviews.json` place.address (Google) |
 | Rating | 4.8 from 252 reviews | `reviews.json` (Google) |
 | Hours | not verified | site not read |
-| Years in business | not verified | site not read. Competitor notes list no company founding year for this business. |
+| Years in business | not verified | site not read |
 | Licenses | not verified | site not read |
 
 Conflicts:
