@@ -1,0 +1,28 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "fortwayne-tree-sycamore",
+  "request": {
+    "mapsUrl": "place_id:ChIJ2X0H3SOMYQcRvo99ng6jLD4",
+    "maxReviews": 75,
+    "expectedPhone": "2604587322",
+    "expectedName": "Sycamore"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "e3lnG0H9ENzjKnSFw",
+    "datasetId": "he4lkwTIwB8YgCa5M",
+    "attempts": 1,
+    "usageUsd": 0.0002
+  },
+  "counts": {
+    "listingTotal": 122,
+    "withText": 68,
+    "ratingOnly": 7
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T05:43:32.425Z",
+  "finishedAt": "2026-11-16T05:44:03.618Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43812061215"
+}

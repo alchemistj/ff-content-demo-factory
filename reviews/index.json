@@ -519,6 +519,18 @@
       "pulledAt": "2026-11-16T04:24:00.733Z"
     },
     {
+      "slug": "fortwayne-tree-sycamore",
+      "name": "Sycamore Tree Care",
+      "placeId": "ChIJ2X0H3SOMYQcRvo99ng6jLD4",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 122,
+        "withText": 68,
+        "ratingOnly": 7
+      },
+      "pulledAt": "2026-11-16T05:44:03.618Z"
+    },
+    {
       "slug": "fortwayne-windows-busheys",
       "name": "Bushey's Windows & Doors",
       "placeId": "ChIJHV7XDffkFYgR1wDSfCfSEfU",
