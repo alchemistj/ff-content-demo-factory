@@ -213,126 +213,134 @@ Call 319-900-5497 and tell us what you'd like to build or fix. Mike or Bryan wil
 
 ## Concrete — Concrete Contractor in Cedar Rapids, IA — Cutter Construction
 
-Mike and Bryan Cutter's crews pour driveways, sidewalks, steps, patios and garage slabs in Cedar Rapids, and when you schedule your installation, we include the sealer free of charge. Call 319-900-5497.
+Our concrete crews work for Bryan and Mike Cutter, twin brothers born and raised in Cedar Rapids. We pour driveways, sidewalks, steps, patios and garage slabs, and when you schedule your installation, the sealer is free. Call 319-900-5497.
 
 **Buttons:** Call 319-900-5497 · Request an Estimate
 
-### What We Pour
+### Driveways, Sidewalks, Steps and Patios
 
-- Driveway replacements, and parking areas added beside an existing driveway.
-- Sidewalks and front steps.
-- Patios.
-- Garage slabs.
-- Custom outdoor basketball courts.
-- The sealer, free with your installation.
-
-We explain each step of the job and when it will happen, and our crew cleans up before it leaves each day.
-
-> Very professional and clean. The crew that did our concrete pad cleaned up before they left every day. Concrete looks great.
->
-> — David C.
-
-Call 319-900-5497 and tell us what you'd like poured.
-
-### Replacing Cracked and Sinking Driveways
-
-We take out the cracked or sinking driveway and pour a new one, and we do the sidewalk with it.
+Driveways are most of our concrete work. We replace cracked and sinking driveways and the sidewalks beside them, pour front steps and patios, and pour garage slabs. We add parking areas next to an existing driveway, and we build custom outdoor basketball courts.
 
 > Cutter crew replaced original cracked/sinking residential concrete driveway and sidewalk. Everything you would hope for in a contractor. 12/10 would recommend.
 >
 > — Christy
 
-Call 319-900-5497 for a driveway estimate.
+### How a Job Runs
 
-### Drainage
+1. You call 319-900-5497, and we put together your estimate.
+2. We schedule your pour and explain each step and when it will happen.
+3. The crew shows up on time and works through the job.
+4. Before the crew leaves each day, it cleans up.
+5. Your sealer comes with the installation.
 
-Iowa winters freeze and thaw the water that sits against a slab, which is why drainage matters on every pour.
+Driveways and steps are work we finish in days, not weeks.
 
-> We had numerous concrete slabs shifting due to improper drainage. They regraded the driveway and now have the water channeling away from our foundation.
+> The crew Cutter sent over was very considerate and efficient. Did my driveway and steps in two days.
 >
-> — Mark B.
+> — John C.
 
-Call 319-900-5497 if your slabs are shifting.
+Call 319-900-5497 and we'll start your estimate.
 
-### Your Yard and Your Old Driveway
+### Clean at the End of Every Day
 
-We protect what's already there while we pour.
+Our crews pick up the wood scraps, rock and dirt before they leave, including anything that spills onto your driveway or the street.
+
+> Very professional and clean. The crew that did our concrete pad cleaned up before they left every day. Concrete looks great.
+>
+> — David C.
+
+### Your Lawn and Your Old Driveway
+
+We keep the concrete truck off your existing driveway, and we lay plywood where equipment crosses your lawn.
 
 > Did an amazing job, was able to get to it quickly, and above all else didn't risk driving the concrete truck on my driveway and used concrete buggy's.
 >
 > — Seth H.
 
-Call 319-900-5497 to get on the schedule.
+### Water Away From Your House
 
-### The Free Sealer
+Shifting slabs often trace back to drainage. We regrade driveways so the water runs off and away from your foundation.
 
-Our sealer keeps out the water and salt that damage concrete. Schedule your installation with us and we include it free of charge.
-
-### Get on the Spring List
-
-> The estimate was done within a week and we were one of the first on the list this spring.
+> We had numerous concrete slabs shifting due to improper drainage. They regraded the driveway and now have the water channeling away from our foundation.
 >
-> — Deb W.
+> — Mark B.
 
-Call early in the year to get on the spring list. Call 319-900-5497.
+Call 319-900-5497 if your driveway holds water.
+
+### Questions Before You Call
+
+**Is the sealer really free?** Yes. Our sealer keeps out the water and salt that damage concrete, and when you schedule your installation we include it free of charge.
+
+**Can you replace an asphalt driveway with concrete?** Yes. We've taken out a 33-year-old asphalt driveway and poured concrete in its place.
+
+**Can you add parking beside my driveway?** Yes. Parking additions are part of our concrete work, along with custom outdoor basketball courts.
+
+### Schedule Your Pour, Get the Sealer Free
+
+Call 319-900-5497 and schedule your installation. The sealer is free, and estimates are free on standard jobs.
 
 ## Decks — Deck Builder in Cedar Rapids, IA — Cutter Construction
 
-Mike and Bryan Cutter's crews build decks in Cedar Rapids as Trex Pro Platinum Certified installers, the highest designation Trex offers its installers. New decks, rebuilds and resurfacing, from the first estimate to the very last hand rail. Call 319-900-5497.
+Our deck crews work for Bryan and Mike Cutter, twin brothers born and raised in Cedar Rapids, and we are Trex Pro Platinum Certified, the highest designation Trex offers its installers. We take your project from the first estimate to the very last hand rail. Call 319-900-5497.
 
 **Buttons:** Call 319-900-5497 · Request an Estimate
 
-### What We Build
+### New Decks, Rebuilds and Wood-to-Trex Swaps
 
-- New decks, in Trex composite or wood.
-- Old decks converted to maintenance-free boards, repaired, or added on to.
-- Railings and stairs.
-- A roof line over part of the deck or patio.
-- Porches, and enclosed storage under a raised deck.
+We tear down and rebuild old decks, including second-story ones, and we replace worn wood decks with Trex. We also build new decks, repair existing ones, convert them to maintenance-free boards and add on to them.
 
-We take care of your project from the first estimate to the last hand rail.
-
-> Cutter Construction did an outstanding job tearing down and rebuilding our second-story deck. From start to finish, they were professional, fairly priced, and delivered exceptional craftsmanship.
+> Andy and crew did a fantastic job replacing our deck! Night and day difference from before. They were great to work with, honest, reliable and reasonably priced.
 >
-> — Daniel H.
+> — Amanda B.
 
-Call 319-900-5497 and tell us what you're picturing.
+### How a Deck Job Runs
 
-### Trex, Our First Choice
+1. Andy comes out for your estimate and works with you on the design.
+2. You choose your boards, in Trex composite or in wood.
+3. The crew builds your deck and cleans up as it goes.
+4. The last hand rail goes on, and you walk it with us.
 
-Trex is our first choice for composite. Its boards carry a warranty against fading and staining of 25 years on the entry-level line, 35 on the middle line and 50 on the top line. We keep physical samples, so you see the colors and textures in person before you choose.
-
-> We knew Trex was a quality product, but installation is the Key. Use a Trex Pro!
->
-> — Lila T.
-
-Call 319-900-5497 to see the samples.
-
-### Railings and Finishing Touches
-
-We install composite railings in black or white, aluminum with round or square balusters, steel mesh, glass panels and cable. Add a cocktail rail, a wide flat cap for setting down a drink, and finish the deck with a picture-frame border of boards around the edge and along each step.
-
-Call 319-900-5497 to plan your railings.
-
-### Rebuilds and Resurfacing
-
-We rebuild old decks, resurface ones that are sound, and add on to existing ones.
+Old decks hide surprises, and we handle what turns up under the boards as part of the rebuild.
 
 > Our project had several unique challenges with the existing deck, including changing the joist layout, removing a window that was hidden under the deck, and incorporating picture frame framing into the new deck design, but Andy and team handled everything perfectly.
 >
 > — Bryce
 
-Call 319-900-5497 to talk about your old deck.
+Call 319-900-5497 and we'll start your estimate.
 
-### Covered Decks and Storage Below
+### Trex Pro Platinum Installation
 
-We add a roof line over a deck or patio, so the sun and rain don't end your evening, and we build enclosed storage under a raised deck.
+Trex is our first choice for composite. Its boards carry a warranty against fading and staining of 25 years on the entry-level line, 35 on the middle line and 50 on the top line.
+
+> We knew Trex was a quality product, but installation is the Key. Use a Trex Pro!
+>
+> — Lila T.
+
+### Railings, Covered Decks and Storage Below
+
+We install composite railings in black or white, aluminum with round or square balusters, steel mesh, glass panels and cable, with a cocktail rail if you want a flat cap for your drink. We build porches and railings, add a roof line over a deck or patio, and build enclosed storage under a raised deck.
+
+> Cutter Construction did a great job on our new Trex deck with deck railing and porch railing.
+>
+> — Dick W.
+
+A covered deck with storage below is a design we work out with you.
 
 > We worked with Andy to design a covered Trex deck with enclosed storage area below.
 >
 > — David M.
 
-Call 319-900-5497 to plan your deck.
+### Questions Before You Call
+
+**Do you build with wood as well as Trex?** Yes. Trex is our first choice, and we build in wood too.
+
+**Can I see the board colors before I choose?** Yes. We keep physical samples, so you see the colors and textures in person.
+
+**Can you convert my old deck to maintenance-free boards?** Yes. We convert existing decks, repair them and add on to them.
+
+### Plan Your Deck With a Trex Pro Platinum Crew
+
+Call 319-900-5497 for your deck estimate. Estimates are free on standard jobs.
 
 ## Contact — Contact Cutter Construction, Cedar Rapids, IA
 
