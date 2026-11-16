@@ -267,11 +267,11 @@ Spring is the time to have your air conditioner checked, before the summer heat 
 
 **When should I have my A/C checked?**
 
-In spring, before the summer heat arrives. A check ahead of the heat costs less than an emergency repair.
+In spring, before the summer heat arrives, as described above.
 
 **Is my A/C leaking refrigerant?**
 
-Delayed or longer cooling cycles and ice on your evaporator coils are the signs of a leak, though a clogged filter can ice a coil too. If you think yours is leaking, we'll inspect it.
+Delayed or longer cooling cycles and ice on your evaporator coils are the signs of a leak. If you think yours is leaking, we'll inspect it.
 
 **What should I do with my A/C in winter?**
 
@@ -333,7 +333,7 @@ If your system is over 20 years old and the repair will cost more than 50% of a 
 
 A cracked heat exchanger is the main exception to repairing first. Because it can let combustion gases into the home, it usually means a new furnace, even on a fairly young one. A furnace that needs one repair after years without any is a different case from one on its third repair in a season.
 
-Four situations lead people to ask the question: frequent repairs, equipment that isn't keeping up, odd noises or smells, and a system 20 years old or more. Tell us which you have when you call.
+When you call, tell us how old the furnace is and what repairs it has had. That is most of what we need to talk it through.
 
 > The technicians, Dillon and Darrell, were very prompt, courteous, and professional. … Both units required some extra work as they were very antiquated.  It was clear that both men took no shortcuts and did honest and straightforward work. … Each took the initiative to keep me in the loop on any changes that needed to be made and gave me options and perspective when I asked them to talk me through decisions. Their answers focused on what would be in my best interests.
 >
@@ -411,6 +411,10 @@ Use the form for a regular visit. We do our best to respond within a few hours. 
 - Whether it is for a home or a business
 - What is going on, in your own words
 
+Have a few things ready: the make and age of the system if you know them, what it was doing when it stopped, and any error code on the unit or a message on the thermostat. A photo of the label on the unit helps if it is easy to reach. Please don't open panels to look.
+
+For anything that can't wait, call (309) 699-3333 instead of waiting on the form.
+
 > At 10 PM I called TSI.  The gentleman that answered was so helpful & patient.  He talked me through a few things to do to try to find the problem.
 >
 > — Linda K.
@@ -431,7 +435,7 @@ We serve homes in Peoria and the towns around it. For businesses, we work in Peo
 | Home | 1010 | 590 |
 | Air Conditioning Repair | 1058 | 846 |
 | Furnace Repair | 1024 | 791 |
-| Contact | 245 | 212 |
+| Contact | 290 | 257 |
 
 Home (550+) and both service pages (700+) now clear their minimums without counting review quotes (Nov 16 correction). The added length is hedged general trade knowledge in the owner's voice, not sourced business claims: what usually fails, checks before calling (thermostat, breaker, filter), gas smell and carbon monoxide safety, repair-or-replace rules of thumb (the R-22 refrigerant point, cracked heat exchangers), what a diagnosis usually involves, heat pump defrost, and when a failure can wait until morning. Every business claim still traces to site/, facts.md or reviews.json. The added advice never gives an inspection frequency, so the site's conflict (once yearly vs twice-annual, strategy item 3) stays open. The furnace filter advice now appears once (the Q&A).
 
