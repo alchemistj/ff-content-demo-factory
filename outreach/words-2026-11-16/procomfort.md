@@ -439,11 +439,11 @@ Ready to talk? Call 260-310-7721, or send the form.
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
-| Strategy | 1294 | 1338 |
-| Home | 705 | 941 |
-| Furnace Repair | 1183 | 1532 |
-| AC Repair | 1047 | 1226 |
-| Contact | 196 | 225 |
+| Strategy | 987 | 1032 |
+| Home | 737 | 979 |
+| Furnace Repair | 1200 | 1560 |
+| AC Repair | 1064 | 1246 |
+| Contact | 291 | 321 |
 
 Counts include headings and bullets, and the H1 line, and leave out the button lines. Home needs 550+ and each service page 700+ without quotes; all pass. The AC page reaches 700+ on hedged trade knowledge (what to check, what usually fails, the older R-22 refrigerant, heat pumps and ductless, mobile manufactured homes, repair or replace, spring tune-up), tied to Fort Wayne summers and to services the site lists. The AC page has the least site material of the two, so most of it is trade knowledge, not business claims.
 
@@ -463,7 +463,7 @@ Counts include headings and bullets, and the H1 line, and leave out the button l
 **Inventory items left out, and why.**
 - Air purifier "charge, capture, kill" process and "99% of viruses and bacteria rendered inactive": an unsourced health claim, per inventory.
 - "Ready replacement parts... we don't have to order and wait" (indoor-air-quality): reviews show parts being ordered (Gregory M., grandma S.), so the claim conflicts.
-- Satisfaction guarantee and workmanship warranty (air-conditioning-ac-repair, thermostat): no terms stated, and two one-star reviews say the company does not stand behind work. Asked in "What we'd confirm".
+- Satisfaction guarantee (air-conditioning-ac-repair) and workmanship guarantee (thermostat): restored once on Home as the business's own claim, no terms. The conflict with the one-star reviews is in "What we'd confirm".
 - Years in business ("6 years", "over 50 years" combined, "thirty years", "decades"): disputed, so none used. Owner not named: not on the site.
 - Commercial refrigeration and ice machines (hvac-services-commercial): that page names another company ("Guy's Air Conditioning and Heating"). Home uses only the home page's commercial line and the light-commercial page.
 - "A+-rated" BBB (mini-split page only) and HomeAdvisor Elite Service (one blog post): single unchecked mentions, so left out. BBB accreditation itself is used.
@@ -483,7 +483,7 @@ Counts include headings and bullets, and the H1 line, and leave out the button l
 - Ownership: veteran owned and operated versus "family-owned" on one page and one review.
 - Review count: the site widget says 130, Google shows 158 (4.8 stars, pulled 2026-11-15). Neither number is in the copy.
 - Phone 260-310-7721 and address 3020 Congressional Pkwy # G, Fort Wayne, IN 46808 are consistent across the site and Google. The Contact page spells "Parkway, Suite G".
-- Maintenance plan terms, financing terms and the guarantee: none on the site.
+- Maintenance plan terms, financing terms and the guarantee terms: none on the site.
 - Which of the six licenses cover Fort Wayne work, and whether the NATE and BBB claims are current.
 - Trade-knowledge statements (R-22 ended 2020, typical 15 to 20 years for a furnace and 12 to 15 for an air conditioner, the half-the-price rule, EPA refrigerant certification) are general and hedged; they are not business claims.
 - The 80% mobile figure, the 91 speed score and the SRA proof block are template content from the brief; the SRA block is not written here.
