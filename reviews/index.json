@@ -435,6 +435,18 @@
       "pulledAt": "2026-11-09T12:51:51.325Z"
     },
     {
+      "slug": "fortwayne-decks-knotjust",
+      "name": "Knot Just Decks",
+      "placeId": "ChIJSzKqI3fjFYgRd1BRv1RH6Wg",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 76,
+        "withText": 68,
+        "ratingOnly": 8
+      },
+      "pulledAt": "2026-11-16T05:54:13.360Z"
+    },
+    {
       "slug": "fortwayne-electrical-sterling",
       "name": "Sterling Electric",
       "placeId": "ChIJ42_cKd38FYgRKkxGaetV7rM",
