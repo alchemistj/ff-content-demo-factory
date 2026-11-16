@@ -8,7 +8,6 @@
 
 **Subheading:** Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
 
-**Proof (fixed template block):**
 
 - "Before (June)"
 - "30 days after launch (Aug 27)"
@@ -163,7 +162,7 @@ When the water heater quits, the furnace stops or a breaker keeps tripping, you 
 - **Plumbing:** repairs, pipe replacement, drain cleaning, new fixtures and backflow testing
 - **Electrical:** panel upgrades, breaker replacement, outlets and switches, lighting, surge protection, generator installation and EV charger installation
 - **Indoor air quality:** duct cleaning, humidifiers, filters and air purifiers
-- **Water quality:** water testing, water softeners, drinking-water filtration, reverse osmosis, iron and sulfur removal, and well water treatment
+- **Water quality:** water testing, water softeners, drinking-water filtration, reverse osmosis (a filter that usually cleans drinking water at one tap), iron and sulfur removal, and well water treatment
 
 [**Heating & AC**](/heating-ac-lincoln-ne/) Furnaces, air conditioners, heat pumps and yearly check-ups.
 
@@ -194,7 +193,7 @@ One way to tell where the trouble is: if only one sink is slow, the clog is usua
 
 ### Day or Night, and You Know Who's Coming
 
-Heating, AC and plumbing emergencies don't wait for office hours, so we offer 24-hour service for them, and our phones are answered live, day or night. No shortcuts, no pressure, just an honest recommendation.
+Heating, AC and plumbing emergencies don't wait for office hours, so we offer 24-hour service for them, and we aim to answer the phone live, day or night. No shortcuts, no pressure, just an honest recommendation.
 
 Before the technician arrives, you get a text with a photo and a short description of who is coming, including how long they've been in the field. A stranger at the door gets easier to welcome.
 
@@ -236,10 +235,6 @@ Businesses get the same crews. We do commercial plumbing, HVAC, electrical and u
 
 For a commercial job, call and ask for a bid.
 
-### Where We Work
-
-We serve Lincoln and the surrounding area. We now offer plumbing and HVAC service in David City and Columbus too.
-
 ### Call ACTION
 
 Call (402) 423-6960 and tell us what's going on.
@@ -250,7 +245,7 @@ Call (402) 423-6960 and tell us what's going on.
 
 # Heating and AC Repair in Lincoln, NE — Action Plumbing, Heating, A/C & Electrical
 
-The heat is out or the house won't cool. We repair and replace furnaces and air conditioners in Lincoln, and we take emergency calls day or night. Call (402) 423-6960.
+The heat is out or the house won't cool. We repair and replace furnaces and air conditioners in Lincoln. Call (402) 423-6960.
 
 **Buttons:** Call (402) 423-6960 / Request Service
 
@@ -310,7 +305,7 @@ If a carbon monoxide alarm goes off, get everyone into fresh air and call 911. C
 
 ### When It Quits After Hours
 
-A furnace that quits on a cold night or an air conditioner that quits in a heat wave can't wait for morning. We offer 24-hour heating and AC service, and our phones are answered live. Call (402) 423-6960 and tell us what the system is doing and who is at home.
+A furnace that quits on a cold night or an air conditioner that quits in a heat wave can't wait for morning. We offer 24-hour heating and AC service. Call (402) 423-6960 and tell us what the system is doing and who is at home.
 
 ### Repair or Replace?
 
@@ -320,20 +315,18 @@ Many systems begin to decline after 10 to 15 years, and older equipment is often
 
 For new equipment we offer a free, same-day estimate or a trusted second opinion. The free estimate doesn't cover service calls.
 
+Our guarantee: we'll respect your home as if it were our own and clean up after ourselves, and we provide a standard two-year labor warranty on any complete system replacement.
+
 > Excellent Service and the owners are stand up guys. We had to replace our heater and AC unit due to age and Action gave us the best quote of the 3 companies we called and installed it all fairly quickly. When a pretty big issue came up, one of the co-owners took action and solved it quickly, professionally and completely to our benefit, even at a small detriment to themselves. Would strongly recommend them for HVAC needs.
 >
 > — Jake R.
-
-### Our Guarantee
-
-We'll respect your home as if it were our own and clean up after ourselves. We provide a standard two-year labor warranty on any complete system replacement.
 
 ### Yearly Check-Ups
 
 A check each year finds a weak part before it fails on the coldest night. Our Home Protection Plans start with heating and cooling.
 
 - **Essential, $24.99 a month ($299 a year):** two heating and cooling visits a year, priority scheduling, a written record of your system's condition, and 10% off approved repairs
-- **Preferred, $39.99 a month ($479 a year):** adds a plumbing visit, including a water heater check, and waives dispatch fees on covered calls
+- **Preferred, $39.99 a month ($479 a year):** adds a plumbing visit, including a water heater check, and waives the fee for sending a technician on covered calls
 - **Total Home, $49.99 a month ($599 a year):** adds an electrical safety check
 
 Plans begin with a 12-month term.
@@ -356,7 +349,7 @@ If your heat or AC isn't working, call (402) 423-6960 and tell us what it's doin
 
 # Water Heater Replacement in Lincoln, NE — Action Plumbing, Heating, A/C & Electrical
 
-The shower runs cold, or there's water at the base of the tank. We repair and replace water heaters in Lincoln, and we take plumbing emergencies day or night. Call (402) 423-6960.
+The shower runs cold, or there's water at the base of the tank. We repair and replace water heaters in Lincoln. Call (402) 423-6960.
 
 **Buttons:** Call (402) 423-6960 / Request Service
 
@@ -396,7 +389,7 @@ A water heater that fails while it's under the maker's warranty is a different j
 
 ### When It Quits After Hours
 
-No hot water, or a leaking water heater, doesn't wait until Monday. Our 24-hour plumbing service covers both, and our phones are answered live, day or night. Call (402) 423-6960.
+No hot water, or a leaking water heater, doesn't wait until Monday. Our 24-hour plumbing service covers both. Call (402) 423-6960.
 
 > Once again, Action was incredibly responsive. I left a message after hours about my broken hot water heater and Ken called me at 7:00 the next morning to tell me that Zack would arrive at 800 am to install my new water heater. I had hot water once again by noon. Thanks a million, Zack and Action!!
 >
@@ -446,7 +439,7 @@ Call and tell us what's going on. Our lines are open day and night.
 
 **(402) 423-6960**
 
-If your heat or AC quits, your water heater leaks or a pipe bursts, call at any hour. Our 24-hour service covers heating, AC and plumbing, and our phones are answered live, day or night.
+If your heat or AC quits, your water heater leaks or a pipe bursts, call at any hour. Our 24-hour service covers heating, AC and plumbing, and we aim to answer live, day or night.
 
 ### What to Tell Us
 
@@ -477,7 +470,7 @@ Call (402) 423-6960 and we'll set up your visit.
 
 ## Notes (not page copy)
 
-**Word counts:** @@COUNTS@@
+**Word counts:** Strategy 996 (limit 1,000); Home 1072 with quotes, 918 without; Heating & AC 1451 with quotes, 1162 without; Water Heaters 1066 with quotes, 938 without; Contact 327 with quotes, 228 without. Counts are whitespace-separated words, headings, bullets, trust bar and buttons included; "without quotes" removes quote blocks and their captions.
 
 **Two services chosen:** Heating & AC and Water Heaters, the two money services in inventory.md. inventory.md judged water heaters unable to reach 700 words without repeating facts, so the water heater page leans on hedged trade knowledge (gas vs electric, relief valve, rust, tank vs tankless, what a warranty claim changes). It makes no new business claims.
 
@@ -502,8 +495,8 @@ Call (402) 423-6960 and we'll set up your visit.
 - Estimates: the homepage says free estimates are for new equipment and not valid on service calls, and the electrical FAQ says free same-day electrical estimates. The Heating page states the new-equipment version only, and says it once.
 
 **Inventory items, used or left out**
-- Services: Plumbing (Home list), Water heaters (own page), Heating & AC (own page), Electrical (Home list), Indoor air quality (Home list), Water quality (Home list), Sewer and water line repair (Home section), Home Protection Plan (Heating page), commercial plumbing, HVAC, electrical and utilities (Home commercial section), completed projects (Home: five of the 16 named, with their own pages' facts), 24-hour service (Home, both service pages, Contact), financing (Water Heater page, once), David City and Columbus (Home and Contact).
-- Differentiators: authorized dealer and warranty center (Home credentials, Water Heater warranty section); Carrier (Home credentials); own trenching (Home); in-house fabrication, aluminum welding, sheet metal, parts supply (Heating page); text with photo and bio before arrival (Home, as a customer-facing line from their plumbing FAQ; it is stated for plumbing on the site, so confirm it applies to HVAC visits); phones live (Home, both service pages, Contact); guarantee block (Heating page, once); Grade VI backflow operators (Home credentials); family-owned and founder (Home); honesty line "No shortcuts. No pressure. Just honest recommendations" (Home, once).
+- Services: Plumbing (Home list), Water heaters (own page), Heating & AC (own page), Electrical (Home list), Indoor air quality (Home list), Water quality (Home list), Sewer and water line repair (Home section), Home Protection Plan (Heating page), commercial plumbing, HVAC, electrical and utilities (Home commercial section), completed projects (Home: five of the 16 named, with their own pages' facts), 24-hour service (Home, both service pages, Contact), financing (Water Heater page, once), David City and Columbus (Contact).
+- Differentiators: authorized dealer and warranty center (Home credentials, Water Heater warranty section); Carrier (Home credentials); own trenching (Home); in-house fabrication, aluminum welding, sheet metal, parts supply (Heating page); text with photo and bio before arrival (Home, as a customer-facing line from their plumbing FAQ; it is stated for plumbing on the site, so confirm it applies to HVAC visits); phones live (Home, both service pages, Contact); guarantee block (Heating page, in Repair or Replace, once); Grade VI backflow operators (Home credentials); family-owned and founder (Home); honesty line "No shortcuts. No pressure. Just honest recommendations" (Home, once).
 - Unusual offers: Carrier Cool Cash is left out on purpose. Its sales period ends Nov 20, 2026 and installs by Dec 20, 2026, so it would be stale on a demo; it can be added as a live offer if wanted. Home Protection plans and prices (Heating page, with the 12-month term). Membership terms beyond the 12-month term (late fee, billing on file) left out as fine print. Financing (Water Heater page). Free estimate (Heating page). Expired 2024 "Sack Your Old Water Heater" promotion: not used, expired. Commercial "Request A Bid": Home says "call and ask for a bid".
 - Review themes: speed (Home FAQ quote, Mike W. on strategy, April B., Mark C.); named technicians (not named in copy except inside quotes; Austin in Teri T. and Rich E., Gage in Steve F., Ken and Zack in Mark C.); explains the work (Teri T., Rich E.); owns mistakes (Arjay7, Home); clean sites (Heating page guarantee wording, not a quote); long-time loyalty (Steve F., Michele K., Home line). Heather F. (3 stars: missed arrival window, $135 refunded after the owner called) is counter-evidence and is not quoted. Home does not promise arrival windows.
 - Quotes left out: Amy Z. (praises a flush), Valerio P., Roxie L., Terry O., Lyle W., Kady A. and the electrical and plumbing reviews not tied to a page. Each quote is used once across the site (strategy: Mike W.; Home: Teri T., Rich E., Arjay7, Ken B.; Heating: Steve F., April B., Corey C., Jake R.; Water Heater: Randy E., Motorcycle A., Mark C.; Contact: Michele K.).
