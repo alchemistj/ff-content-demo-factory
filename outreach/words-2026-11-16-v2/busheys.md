@@ -14,7 +14,7 @@ We built Bushey's Windows & Doors the first five pages of that kind of website. 
 
 **Why we built this site**
 
-Your reviews keep naming the people in the customer's house:
+Your reviews keep naming the people in the house:
 
 > Phil did an excellent job installing our storm door. He was very thorough and paid attention to detail.
 >
@@ -33,30 +33,29 @@ So the demo opens with Replacement Windows and Doors in Fort Wayne, IN, and give
 **Current site problem**
 
 - The headline is "Your clear choice," which names neither windows nor Fort Wayne, so Google has little to match a replacement-window search.
-- The page is about 140 words, and "Trusted by local homeowners" has no proof beside it, so visitors must take your word for it.
+- The page is about 140 words, and "Trusted by local homeowners" has no proof beside it, so visitors take your word for it.
 - Your crew, awards and process sit on four other pages, so a visitor never sees them together.
 
 **What the demo fixes**
 
 - A headline that says replacement windows and doors in Fort Wayne, IN.
-- Your own-crew claim, six-step process and four awards on one page.
-- Tina W.'s and Lance L.'s reviews beside the crew and the process.
+- Your own-crew claim, six-step process and four awards together, with Tina W.'s and Lance L.'s reviews beside them.
 
 **A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 ### 2. Replacement Windows
 
-*Why it matters:* A window is a big purchase that people research first.
+*Why it matters:* A window is a big purchase people research first.
 
 **Current site problem**
 
-- The headline is "Windows from Infinity® by Marvin®," with no Fort Wayne or "replacement," so Google has little to match.
+- The headline, "Windows from Infinity® by Marvin®," has no Fort Wayne or "replacement," so Google has little to match.
 - The page is about 240 words, and answers on inserts, full-frame and fogged panes sit in a separate FAQ, so a buyer never finds them.
 - Your reviews about trim and clean-up appear nowhere on it, so no customer vouches for the work.
 
 **What the demo fixes**
 
-- A Fort Wayne page for replacement windows alone.
+- A Fort Wayne page for replacement windows.
 - Infinity fiberglass, EverWood, inserts against full-frame, and fogged glass, each in plain words.
 - William S.'s EverWood, Kyle F.'s trim and Perry S.'s clean-up reviews beside the work.
 
@@ -68,7 +67,7 @@ So the demo opens with Replacement Windows and Doors in Fort Wayne, IN, and give
 
 **Current site problem**
 
-- Entry and storm doors share one page headed "Entry & storm doors from ProVia®," with no Fort Wayne, so neither ranks for its own search.
+- Entry and storm doors share one page headed "Entry & storm doors from ProVia®," with no Fort Wayne, so neither ranks alone.
 - Six ProVia lines are bullet lists with no help choosing, so a buyer can't tell which fits.
 - Reviews praising Phil's storm door installs are not on that page, so a visitor never sees who does the work.
 
@@ -93,8 +92,7 @@ So the demo opens with Replacement Windows and Doors in Fort Wayne, IN, and give
 **What the demo fixes**
 
 - One contact page with phone, address and hours at the top.
-- Your towns written out.
-- What the free consultation is, and who your sales consultants are.
+- Your towns written out, and what the free consultation is.
 
 **A full build would also add** Call and form tracking that shows which pages and towns your leads come from.
 
@@ -132,10 +130,10 @@ So the demo opens with Replacement Windows and Doors in Fort Wayne, IN, and give
 
 On a short onboarding call, we'd confirm four things:
 
-- Your About page says "Since 1968" and also dates Al Bushey's founding of Bushey Construction to 1958. Which year should we print?
+- Your About page says "Since 1968" and also dates Bushey Construction's founding to 1958. Which year should we print?
 - Your FAQ says about 1,500 installations a year; your About page says over 15,000 customers served. At 1,500 a year, that is about ten years of work. Which number is right?
-- We couldn't confirm on the Better Business Bureau's site that you are accredited, only the A+ rating. Are you accredited?
-- Your FAQ says yes to financing, and the page it links to wouldn't open for us. What terms should we state?
+- The Better Business Bureau's site shows your A+ rating but not accreditation. Are you accredited?
+- Your FAQ says yes to financing, but its linked page wouldn't open for us. What terms should we state?
 
 Book a no-obligation call and we'll walk you through this demo.
 
@@ -272,37 +270,35 @@ Call (260) 456-1247, tell us what you're seeing, and ask for a free in-home cons
 
 # Entry and Storm Doors in Fort Wayne, IN — Bushey's Windows & Doors
 
-We install ProVia entry and storm doors in Fort Wayne, custom-fitted to your doorway by our own crew. Call (260) 456-1247 to start with a free in-home consultation.
+The people who install your front door are our own employees, and your reviews name them: Phil, Tony, Jack, Kole. No subcontractors, no shortcuts and no pressure. Every ProVia door is custom-fitted to your home by our own crew. Call (260) 456-1247 to start with a free in-home consultation.
 
 **Buttons:** Call (260) 456-1247 / Request a Free Consultation
 
-### Why ProVia
+### You know who is at your door
 
-ProVia is the only entry and storm door line we carry. We chose it for its craftsmanship, its energy efficiency and the level of customization it offers, so you get the door you want and not the one in stock. Your front door is the first thing people see, so we help you balance looks, security and budget.
-
-### Fiberglass or steel
-
-Fiberglass doors capture the look of real wood grain. Steel doors are low-maintenance, in woodgrain or smooth painted finishes. We sell both, and we help you find the right fit for your home and your budget.
-
-### Signet fiberglass entry doors
-
-Signet has the most door styles and sidelite options in ProVia's line. A sidelite is a narrow glass panel beside the door. You can choose a smooth finish or a Cherry, Mahogany, Oak, Knotty Alder or Fir woodgrain finish. ProVia calls Signet structurally superior to traditional fiberglass doors, and it carries a 15-year finish warranty.
-
-### Ascent fiberglass entry doors
-
-Ascent is for the doorway that isn't a standard size. Widths and heights are custom in 1/8-inch steps. It comes in a White Oak woodgrain or a smooth fiberglass finish, in a variety of stains and colors, with styles including Inscribed doors and doors with Panel Planks. It carries a 10-year finish warranty.
+Your front door is the first thing people see, so we make sure you get it right the first time. You get personal guidance from your sales consultant on every ProVia product we carry, then our own installers fit it. Customers remember both.
 
 > Had a great experience from start to finish getting a new front door built and installed with Bushey's. My sales rep, Jared, was detailed and helped answer all my questions, and the installers, Jack and Kole were extremely professional and detailed.
 >
 > — Alex P.
 
-### Legacy steel doors
+Call (260) 456-1247 and ask for a free consultation.
 
-Legacy is made with 20-gauge steel. Gauge measures thickness, and a lower number means thicker steel. It is a great front door for home security, and you can give the two sides of the door different styles or finishes, so the outside matches your house and the inside matches your hall.
+### Why ProVia
 
-### Storm doors
+ProVia is the only entry and storm door line we carry. We chose it for its craftsmanship, its energy efficiency and the level of customization it offers, so you get the door you want and not the one in stock. Fiberglass doors capture the look of real wood grain, and steel doors are low-maintenance, in woodgrain or smooth painted finishes. We sell both, and we help you find the right fit for your home and your budget.
 
-A ProVia storm door adds insulation, improves ventilation and extends the life of your entry door through Northeast Indiana's toughest weather. We carry a full selection of ProVia storm doors, with five product lines and dozens of models, and we install them on their own as well as with a new entry door. Three of the lines:
+### Pick your door
+
+- **Signet fiberglass** has the most door styles and sidelite options in ProVia's line. A sidelite is a narrow glass panel beside the door. Choose a smooth finish or Cherry, Mahogany, Oak, Knotty Alder or Fir woodgrain. It carries a 15-year finish warranty.
+- **Ascent fiberglass** is for the doorway that isn't a standard size, with custom widths and heights in 1/8-inch steps. Choose White Oak woodgrain or a smooth finish in a variety of stains and colors, with styles including Inscribed doors and doors with Panel Planks. It carries a 10-year finish warranty.
+- **Legacy steel** is made with 20-gauge steel, and a lower gauge number means thicker steel. It is a great front door for home security, and the two sides can have different styles or finishes, so the outside matches your house and the inside matches your hall.
+
+Tell us which one you are leaning toward and we will show you the choices in your consultation. Call (260) 456-1247 or request a free in-home consultation.
+
+### Storm doors, installed on their own or with a new entry door
+
+A ProVia storm door adds insulation, improves ventilation and extends the life of your entry door through Northeast Indiana's toughest weather. We carry a full selection, with five product lines and dozens of models, and our own crew installs them. Three of the lines:
 
 - **SPECTRUM** comes in full-view, three-quarter-view and half-view aluminum styles. A retractable screen slides down out of sight, the aluminum walls are up to 20% thicker than the industry standard, and a reinforced, rust-resistant panel runs along the bottom.
 - **DECORATOR** is full-view glass, with beveled and stained-glass designs. A spring-loaded lock mounted flush with the frame secures the glass, which virtually eliminates rattles and air leaks. One style comes in an 8-foot height.
@@ -312,7 +308,9 @@ A ProVia storm door adds insulation, improves ventilation and extends the life o
 >
 > — Linda S.
 
-### Measured and made for your doorway
+Want a storm door like that one? Call (260) 456-1247.
+
+### Measured for your doorway
 
 Doors are made to order. We measure your opening before the order goes in, so the door arrives sized for it, and our own employees protect your home and fit it on installation day. One customer had us replace a storm door along with its casing, the trim around the door.
 
@@ -320,11 +318,15 @@ Doors are made to order. We measure your opening before the order goes in, so th
 >
 > — David K.
 
-Not every doorway is simple. Double doors, wide openings and older frames can take longer to fit.
+### An odd doorway is not a problem for our crew
+
+Double doors, wide openings and older frames are the jobs we fit, and customers have seen it.
 
 > Bushey's replaced 3 doors for us that were challenging sizes and situations. Phil did an outstanding job. He found solutions to unique issues and left everything looking great while remaining pleasant and professional when the job was not an easy one.
 >
 > — Steph G.
+
+Got a doorway that doesn't fit the standard? Call (260) 456-1247 and tell us what you have.
 
 ### Ready for a new door?
 
@@ -374,10 +376,10 @@ Written from briefs @ 21550ef
 
 | Page | Words without quotes | Words with quotes |
 | :-- | --: | --: |
-| Strategy | ~1,156 | ~1,180 |
+| Strategy | ~1,077 | ~1,101 |
 | Home | ~816 | ~983 |
 | Replacement Windows | ~433 | ~554 |
-| Entry and Storm Doors | ~581 | ~781 |
+| Entry and Storm Doors | ~673 | ~873 |
 | Contact | ~241 | ~282 |
 
 Counts include headings, bullets and the H1, and leave out button lines. The strategy page runs over the 1,000 soft cap because it carries the full-build list. Windows is under 450 words because that is the real material (R19 WARN: windows.md, f-a-q.md, replacement-process.md used; windows-gallery has no text).

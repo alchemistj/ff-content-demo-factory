@@ -14,35 +14,29 @@ We built Cutter the first five pages of that kind of website. More on that below
 
 **Why we built this site**
 
-Mike and Bryan Cutter are twin brothers, born and raised in Cedar Rapids. Your homepage opens with "Exceptional Construction Services at Competitive Prices." It never says Cedar Rapids, and the twins don't show up until a paragraph below the service buttons.
-
-Your customers say the part your homepage skips.
+Mike and Bryan Cutter are twin brothers, born and raised in Cedar Rapids. Your homepage opens with "Exceptional Construction Services at Competitive Prices." It never says Cedar Rapids, and the twins don't appear until below the service buttons.
 
 > I've known Brian and Mike for quite a few years and they constantly provide fantastic customer service and work.
 >
 > — Cory H.
 
-So the demo opens with General Contractor in Cedar Rapids, IA, and gives concrete and decks a page each, because those are the jobs your reviews describe most.
-
 **The demo, page by page**
 
 ### 1. Homepage
 
-*Why it matters:* This is what Google reads to learn who you are.
+*Why it matters:* Google reads this to learn who you are.
 
 **Current site problem**
 
-- The headline never says Cedar Rapids or what kind of contractor you are. The city is only in the browser tab, so someone searching for a Cedar Rapids contractor has little reason to pick you.
-- The free estimate line gives 319-533-2164, but the only number you can tap to call is 319-900-5497, so a customer who dials the first one may not reach you.
-- The derecho story is only on your roofing page, so a homeowner who never opens it never learns you were here when it hit.
+- The headline never says Cedar Rapids or what kind of contractor you are. The city is only in the browser tab, so a Cedar Rapids searcher has little reason to pick you.
+- The free estimate line gives 319-533-2164, but the number you can tap is 319-900-5497, so a customer who dials the first may not reach you.
 
 **What the demo fixes**
 
 - A headline that says General Contractor in Cedar Rapids, IA.
-- Mike and Bryan, born and raised here, on the first screen, with a short strip under the buttons for your license number and what makes you different.
-- Every service you offer named in plain words, from concrete to snow removal, with the jobs your reviews describe next to them.
+- Mike and Bryan, born and raised here, on the first screen, with a strip under the buttons for your license number and what sets you apart.
 
-**A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
+**A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what sets you apart onto your site and Google profile, so they tell one story.
 
 ### 2. Concrete
 
@@ -50,33 +44,32 @@ So the demo opens with General Contractor in Cedar Rapids, IA, and gives concret
 
 **Current site problem**
 
-- The browser tab says "20 Years of Quality Work," while the page says "over a decade," so a customer can't tell which to believe.
-- The headline is just "Concrete." Cedar Rapids is in a line below it, so Google has little to match to a Cedar Rapids concrete search.
-- Your reviews describe regrading a driveway so water runs away from a foundation, and a crew that keeps the truck off the old driveway. The page has none of it, so a homeowner with a sinking slab can't see you've solved that.
+- The tab says "20 Years of Quality Work," the page "over a decade," so a customer can't tell which to believe.
+- The headline is just "Concrete." Cedar Rapids is in a line below, so Google has little to match to a local concrete search.
+- The page has none of the regraded driveway or the truck kept off the old driveway that your reviews describe, so a homeowner with a sinking slab can't see you've solved that.
 
 **What the demo fixes**
 
 - A headline that says Concrete Contractor in Cedar Rapids, IA, and no years we can't pin down.
-- The drainage job and the clean-up your reviews describe, with the customers' own words beside them.
+- The drainage job and clean-up from your reviews, in the customers' own words.
 - Your free sealer offer in plain words.
 
 **A full build would also add** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 ### 3. Decks
 
-*Why it matters:* The page that has to back up your Trex Pro Platinum claim.
+*Why it matters:* It has to back up your Trex Pro Platinum claim.
 
 **Current site problem**
 
-- The browser tab says "Deck Builder #1 Best in Cedar Rapids," with nothing behind it. The line below reads "Cedar Rapid's Choice for Decks," missing the s. A customer who spots either one trusts the rest of the page less.
-- The page's testimonials never say what was built. Your Google reviews describe a rebuilt second-story deck and a covered deck with storage below, so a homeowner can't see the jobs you do.
-- Boards and railings sit on two other pages, under brand names like Transcend and Lineage, so a customer has to hunt through three pages to compare.
+- The tab says "Deck Builder #1 Best in Cedar Rapids," with nothing behind it, and the line below reads "Cedar Rapid's Choice for Decks," missing the s. A customer who spots either trusts the page less.
+- The testimonials never say what was built, though your Google reviews describe a rebuilt second-story deck and a covered deck with storage below, so a homeowner can't see your jobs.
+- Boards and railings sit on two other pages under brand names, so a customer hunts through three pages to compare.
 
 **What the demo fixes**
 
 - A headline that says Deck Builder in Cedar Rapids, IA, without a "#1" we can't back.
-- Boards and railings explained on one page in plain words.
-- The rebuilds and the covered deck from your reviews.
+- Boards and railings on one page in plain words, with the rebuilds and covered deck from your reviews.
 
 **A full build would also add** A check of what your competitors offer, so services you didn't think to mention still get their own pages.
 
@@ -87,13 +80,12 @@ So the demo opens with General Contractor in Cedar Rapids, IA, and gives concret
 **Current site problem**
 
 - Four different phone numbers across your site, so a customer may call one nobody answers.
-- The Contact page opens with a pitch about "certifications and exclusive warranties," so a customer ready to call reads a sales pitch first.
-- Iowa City, Coralville and Hiawatha appear only on your FAQ page, so someone in those towns can't tell you'd come to them.
+- The Contact page opens with a pitch about "certifications and exclusive warranties," so a customer ready to call reads a pitch first.
+- Iowa City, Coralville and Hiawatha appear only on your FAQ page, so someone there can't tell you'd come to them.
 
 **What the demo fixes**
 
-- One number, 319-900-5497, first, with your hours, Monday to Friday, 7 a.m. to 6 p.m.
-- Address and email.
+- One number, 319-900-5497, first, with hours Monday to Friday, 7 a.m. to 6 p.m., plus address and email.
 - Your towns in one place.
 
 **A full build would also add** Call and form tracking that shows which pages and towns your leads come from.
@@ -143,7 +135,7 @@ Book a no-obligation call and we'll walk you through this demo.
 
 ## Home — General Contractor in Cedar Rapids, IA — Cutter Construction
 
-Mike and Bryan Cutter are twin brothers, born and raised in Cedar Rapids, and we build concrete, decks, roofing, siding, masonry and additions for homes and businesses in Cedar Rapids and Iowa City. Call 319-900-5497.
+Mike and Bryan Cutter are twin brothers, born and raised in Cedar Rapids. Concrete, decks and additions for homes in Cedar Rapids and Iowa City. Call 319-900-5497.
 
 **Buttons:** Call 319-900-5497 · Request an Estimate
 
@@ -184,7 +176,7 @@ A garage or an addition rarely starts with drawings. It starts with an idea in s
 
 We repair and replace roofs and siding. A new roof from us comes with GAF's own warranty, because we install as a GAF certified installer. GAF makes roofing shingles. After a storm we work closely with your insurance adjuster, the company's inspector who decides what a claim covers,.
 
-A roof or siding job can turn up damage nobody saw from the ground, and a leak can start in one place and show up in another. Because we also do masonry, a chimney or a brick wall can be repaired in the same project as the roof beside it.
+Because we also do masonry, a chimney or a brick wall can be repaired in the same project as the roof beside it.
 
 ### Masonry and Repairs That Run Deeper Than They Look
 
@@ -217,7 +209,7 @@ Driveways, sidewalks, steps, patios and garage slabs, poured in Cedar Rapids by 
 
 ### Concrete for Cedar Rapids Homes
 
-Flatwork is the trade word for the concrete you walk and drive on, and it's most of what we pour. We replace cracked and sinking driveways, add parking beside an existing driveway, and pour sidewalks, front steps, patios and garage slabs. We build custom outdoor basketball courts too. One customer had us take out a 33-year-old asphalt driveway and put in concrete.
+Flatwork is the trade word for the concrete you walk and drive on, and it's most of what we pour. We replace cracked and sinking driveways, add parking beside an existing driveway, and pour sidewalks, front steps, patios and garage slabs. We build custom outdoor basketball courts too. One customer had us take out a 33-year-old asphalt driveway and put in concrete. Another had a driveway and steps done in two days, and a third had front steps and a side patio poured in a schedule we fit them into.
 
 > Cutter crew replaced original cracked/sinking residential concrete driveway and sidewalk. Everything you would hope for in a contractor. 12/10 would recommend.
 >
@@ -225,7 +217,7 @@ Flatwork is the trade word for the concrete you walk and drive on, and it's most
 
 ### Water Has to Go Somewhere
 
-Iowa winters freeze and thaw the water that sits against a slab, so where the water goes matters as much as the concrete itself. When slabs shift, drainage is often the reason, and one customer had us regrade a driveway to send the water away from the foundation.
+Iowa winters freeze and thaw the water that sits against a slab, so where the water goes matters as much as the concrete itself. When slabs shift, drainage is often the reason. One customer had us regrade a driveway to send the water away from the foundation, and another had us waterproof the foundation while we installed a new driveway.
 
 > We had numerous concrete slabs shifting due to improper drainage. They regraded the driveway and now have the water channeling away from our foundation.
 >
@@ -237,7 +229,7 @@ A patio can carry a curved edge, a seating wall or a border of river rock. One c
 
 ### Your Lawn and Your Old Driveway Stay Intact
 
-A loaded concrete truck is heavy, so one customer had us keep it off their driveway and bring the concrete to the forms in a concrete buggy, a hand-pushed cart. Another had plywood laid over the lawn wherever equipment crossed it.
+A loaded concrete truck is heavy, so one customer had us keep it off their driveway and bring the concrete to the forms in a concrete buggy, a hand-pushed cart. Another had plywood laid over the lawn wherever equipment crossed it, and a third was left with spotless ground and only a little area to reseed.
 
 > Did an amazing job, was able to get to it quickly, and above all else didn't risk driving the concrete truck on my driveway and used concrete buggy's.
 >
@@ -295,7 +287,7 @@ An entry-level board suits a lower-traffic deck, in a house without pets or youn
 
 ### Railings and the Finishing Touches
 
-Railings frame the whole deck. We install composite railings in black or white, aluminum with round or square balusters, steel mesh, glass panels for a clear view, and cable. A cocktail rail adds a wide flat cap that holds a drink if you entertain.
+Railings frame the whole deck, and Trex warranties its railings from 15 years on the entry-level steel to 50 on the top line. We install composite railings in black or white, aluminum with round or square balusters, steel mesh, glass panels for a clear view, and cable. A cocktail rail adds a wide flat cap that holds a drink if you entertain.
 
 > Cutter Construction did a great job on our new Trex deck with deck railing and porch railing.
 >
@@ -305,7 +297,7 @@ A picture-frame border, a ring of boards laid around the edge and along each ste
 
 ### Rebuilds With Surprises
 
-We rebuild old decks, resurface ones that are sound, and add on to existing ones. Old decks can hide surprises, and one customer's rebuild changed the framing under the boards.
+We rebuild old decks, resurface ones that are sound, and add on to existing ones. One customer replaced a 12 by 12 wood deck with a 12 by 16 Trex deck, and we kept the two-year-old framing underneath because it was in excellent condition, which kept them in budget. Another kept the original footprint and put in a two-tone Trex deck laid on a diagonal, and a third had us rebuild the deck and install new french doors to it. Old decks can hide surprises, and one customer's rebuild changed the framing under the boards.
 
 > Our project had several unique challenges with the existing deck, including changing the joist layout, removing a window that was hidden under the deck, and incorporating picture frame framing into the new deck design, but Andy and team handled everything perfectly.
 >
@@ -313,7 +305,7 @@ We rebuild old decks, resurface ones that are sound, and add on to existing ones
 
 ### Covered Decks, Porches and Storage Below
 
-A roof over part of a deck keeps the sun and rain from ending your evening. We add a roof line over a deck or patio, and we build porches and railings.
+A roof over part of a deck keeps the sun and rain from ending your evening. We add a roof line over a deck or patio, and we build porches and railings. One customer had us remove a 113-year-old porch and build a new one in the style of the old, updated to code where needed.
 
 > We worked with Andy to design a covered Trex deck with enclosed storage area below.
 >
@@ -371,11 +363,11 @@ Written from briefs @ 21550ef
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
 
-- Strategy page: 1177 without quotes, 1199 with.
-- Home: 649 without quotes, 750 with.
-- Concrete: 356 without quotes, 490 with.
-- Decks: 425 without quotes, 561 with.
-- Contact: 147 without quotes, 182 with.
+- Strategy page: 1079 without quotes, 1101 with.
+- Home: 664 without quotes, 729 with.
+- Concrete: 418 without quotes, 545 with.
+- Decks: 539 without quotes, 668 with.
+- Contact: 153 without quotes, 182 with.
 
 **Rewrite basis:** tone reset from the rejected Nov 16 evening version. Home and service pages now use the site's own words as the main material, with reviews as the fact check. The how-to sections of the earlier version (frost depth, permits, driveway replacement steps, "which boards" checklists, FAQ) are cut.
 
@@ -418,7 +410,7 @@ Written from briefs @ 21550ef
 - Home-page claims "keep you informed" rest on Judy P., Tyler A. and Diana P. (reviews 51, 38, 25); the "five masons" and "frame-to-finish" lines are the site's own claims.
 - Concrete page's one trade section: freeze and thaw is general trade knowledge; "often the reason" is hedged accordingly.
 - "Plywood goes down where equipment crosses your lawn" rests on one review (Floyd A.) and "hand cart" on Seth H.'s buggy; both stated as this crew's way of working on those jobs, so verify they are standard.
-- Concrete (356) and Decks (425) are short because the site's own concrete and deck pages are short; the length follows that material and the reviews, nothing padded. Every relevant site/ file (concrete, decks, Trex boards, railings) is used.
+- Concrete (418) and Decks (539) follow the real material. Added in the check from reviews.json and site/: waterproofing with a new driveway, driveway and steps in two days, steps and patio fitted into the schedule, spotless ground (Concrete); the 12 by 12 to 12 by 16 Trex swap that kept the sound framing, two-tone diagonal Trex deck (site testimonial, Judy Feldkamp), french doors, the 113-year-old porch, Trex railing warranties 15 to 50 years (Decks). Trex colour names and railing product lines stay out as brand names. Every relevant site/ file (concrete, decks, Trex boards, railings) is used.
 
 **Facts to verify**
 

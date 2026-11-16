@@ -3,15 +3,13 @@
 
 ## Strategy page
 
-**Free demo site built for Wickey Plumbing**
+**Badge:** Free demo site built for Wickey Plumbing
 
-### We already did the work. Here's a Wickey Plumbing website that tells Fort Wayne who you are and gets the phone ringing.
+**We already did the work. Here's a Wickey Plumbing website that tells Fort Wayne who you are and gets the phone ringing.**
 
 Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here's a demo of what yours could be.
 
 We built Wickey Plumbing the first five pages of that kind of website. More on that below.
-
-**Buttons:** View the Demo Site / See What Changed
 
 ### Why we built this site
 
@@ -21,77 +19,69 @@ Your reviews keep saying Zach explains the problem before he starts. One put it 
 >
 > — Kathy D.
 
-Your site says that once, in the drain paragraph, then gives all eight services the same closing lines. So the demo opens with Plumber in Fort Wayne, IN, and gives water heaters and drain cleaning a page each, built from your own words and your customers' jobs.
+Your site says that once, in the drain paragraph. So the demo opens with Plumber in Fort Wayne, IN, and gives water heaters and drain cleaning a page each, built from your own words and your customers' jobs.
 
 ### The demo, page by page
 
 **1. Homepage**
 
-*Why it matters:* Most people see it first.
-
 **Current site problem**
 
-- The membership is one line in a list of seven, with no price or terms, so a customer can't tell what it would save them.
+- The membership is one line in a list of seven, with no terms, so a customer can't tell what it would save them.
 - The same featured reviews sit on every page, whatever it is about, so none of them proves the service the visitor came for.
-- Several reviews describe same-day and next-morning visits. The page never says you come out fast, so a customer with a leak has no reason to call you first.
+- Several reviews describe same-day and next-morning visits, but the page never says you come out fast, so a customer with a leak has no reason to call you first.
 
 **What the demo fixes**
 
 - The membership gets its own section: discounts, reduced service-call fees and extended warranties.
-- Two reviews sit beside what they show: pictures of what was wrong, and a visit with no upsell.
+- Two reviews beside what they show: pictures of the problem, and a visit with no upsell.
 - A line near the top says you come out the same day or the next morning, with a customer's next-morning visit beside it.
 
 **A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **2. Water Heater Repair & Installation**
 
-*Why it matters:* No hot water sends people straight to Google.
-
 **Current site problem**
 
 - Water heaters share one Services page with seven other jobs, so Google has no page of its own to show for water heater repair in Fort Wayne.
-- Water heater jobs posted on your service-area pages, like a garage install with heat tape and a bad board, aren't on the services page, so a buyer never sees them.
+- Water heater jobs on your service-area pages, like a garage install with heat tape, aren't on the services page, so a buyer never sees them.
 - Its closing lines (licensed and insured, upfront pricing, serving Fort Wayne) are the same ones the other seven services use, so nothing tells a water heater buyer why you.
 
 **What the demo fixes**
 
-- Its own page, headlined Water Heater Repair & Installation in Fort Wayne, IN, built on your own promise to walk customers through tank versus tankless.
-- Your heat-tape install, your bad-board repair and your customer-supplied installs, in plain words.
-- Water heater reviews beside the work they describe.
+- Its own page, headlined Water Heater Repair & Installation in Fort Wayne, IN, built on your promise to walk customers through tank versus tankless.
+- Your heat-tape install, bad-board repair and customer-supplied installs, in plain words.
+- Water heater reviews beside the work.
 
 **A full build would also add** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 **3. Drain Cleaning & Sewer Lines**
 
-*Why it matters:* A drain that won't clear is another search people make in a hurry.
-
 **Current site problem**
 
 - Drain cleaning shares that same Services page, so nothing of its own shows for a clogged drain in Fort Wayne.
-- Gurgling drains and recurring clogs are called signs of a deeper problem, with no word on what it could be, so a worried homeowner learns nothing.
-- Your New Haven concrete-floor pipe job and Fort Wayne camera inspection aren't on the page, so the hardest drain work you do goes unseen.
+- Gurgling drains and recurring clogs are called signs of a deeper problem, with no word on what, so a worried homeowner learns nothing.
+- Your New Haven concrete-floor pipe job and Fort Wayne camera inspection aren't on the page, so your hardest drain work goes unseen.
 
 **What the demo fixes**
 
 - Its own page, Drain Cleaning & Sewer Lines in Fort Wayne, IN, built on your promise to get to the root of the problem.
-- Those two jobs, plus the kitchen drain you came back to fix, in plain words.
-- Drain reviews beside them: a garage drain, a tree root under a floor, advice for next time.
+- Those two jobs and the kitchen drain you came back to fix, in plain words.
+- Drain reviews beside them.
 
 **A full build would also add** A check of what your competitors offer, so services you didn't think to mention still get their own pages.
 
 **4. Contact**
 
-*Why it matters:* It's where a visitor becomes a call.
-
 **Current site problem**
 
 - The browser tab says just "Contact Us," so Google can't place you in Fort Wayne.
-- The page has no words of its own about what to tell you or what happens next, so a visitor sees only reviews and a footer.
+- The page has no words of its own, only reviews and a footer, so a visitor doesn't know what to tell you.
 - Free estimates appear only in a footer line, and the only location is "Fort Wayne, Indiana" in small print, so a visitor can't tell you cover their town.
 
 **What the demo fixes**
 
-- A browser tab and headline that say Contact Wickey Plumbing in Fort Wayne, IN. Phone and email at the top.
+- A browser tab and headline that say Contact Wickey Plumbing in Fort Wayne, IN.
 - Free estimates stated plainly.
 - The towns you work in, named.
 
@@ -164,7 +154,7 @@ No hot water stops a household. We repair, replace and install water heaters of 
 
 ### Drains and sewer lines
 
-From a slow kitchen sink and a clogged toilet to a fully backed-up sewer line, we clear it and get to the root of the problem instead of treating the symptom. We also repair and replace sewer lines that have failed from age, shifting soil or tree roots, for homes and businesses.
+From a slow kitchen sink and a clogged toilet to a fully backed-up sewer line, we clear it and get to the root of the problem instead of treating the symptom, so the clog stays gone. We also repair and replace sewer lines that have failed from age, shifting soil or tree roots, for homes and businesses.
 
 ### When it can't wait
 
@@ -177,7 +167,7 @@ A burst pipe, a backed-up drain or a water heater that has quit can't wait for a
 ### Everything else under the sink and in the walls
 
 - **Gas lines.** Repair and installation for water heaters, ranges, dryers, fireplaces and outdoor grills, done safely and to code. If you smell gas or suspect a leak, call us.
-- **Fixtures.** Faucets, toilets and sinks, whether you're fixing a drip or upgrading for a remodel. In Fort Wayne we replaced a failing kitchen faucet, and for another customer installed their own kitchen sink with its faucet, drain and four new shutoff valves.
+- **Fixtures.** Faucets, toilets and sinks, whether you're fixing a drip or upgrading for a remodel, with no hidden fees. In Fort Wayne we replaced a failing kitchen faucet, and for another customer installed their own kitchen sink with its faucet, drain and four new shutoff valves.
 - **Whole-house repiping.** In an older home, pipes corrode and leak. When repairs are no longer enough, we replace the failing plumbing with new piping throughout.
 - **Sump and sewage pumps.** A sump pump keeps groundwater out of your basement in heavy Indiana rain and spring thaw. In Huntertown we replaced a failing sump pump and added a sewage pump and a high-water alarm.
 - **Water quality.** Water softeners, whole-house filters and reverse osmosis (RO) drinking water systems, plus water testing so you know what is in your water. At one Leo-Cedarville home we installed a softener and a whole-house filter.
@@ -218,7 +208,7 @@ We never push you toward more than you need. You get honest, upfront pricing, an
 
 ### Tank or tankless
 
-We walk you through the pros and cons so you choose the right system for your home and budget. A tankless heater heats water only when a tap is open, delivers endless hot water and saves space. A tank heater stores hot water and reheats it as you use it. Customers have had us install tank heaters in basements and garages, electric, gas and propane power-vent.
+We walk you through the pros and cons so you choose the right system for your home and budget. A tankless heater heats water only when a tap is open, delivers endless hot water and saves space. Customers have had us install tank heaters in basements and garages, electric, gas and propane power-vent (a heater with a fan to push exhaust out).
 
 > Called Wickey Plumbing to replace my water heater. He came out within an hour and a half and completed the job quickly and professionally. Very knowledgeable about the difference in brands and made sure my choice was an informed one.
 >
@@ -321,11 +311,11 @@ Written from briefs @ 21550ef
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
-| Strategy page | 1141 | 1158 |
-| Home | 619 | 735 |
-| Water Heater Repair & Installation | 411 | 552 |
-| Drain Cleaning & Sewer Lines | 331 | 510 |
-| Contact | 104 | 169 |
+| Strategy page | 1064 | 1079 |
+| Home | 625 | 735 |
+| Water Heater Repair & Installation | 408 | 543 |
+| Drain Cleaning & Sewer Lines | 334 | 506 |
+| Contact | 103 | 165 |
 
 Counts include headings, bullets and the H1, and leave out button lines, the Home strip line and quote attributions. Length follows the material; no word targets.
 

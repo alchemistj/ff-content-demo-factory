@@ -10,92 +10,90 @@
 
 Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here's a demo of what yours could be.
 
-We built Sterling Electric the first five pages of that kind of website. More on that below.
+We built Sterling Electric the first five pages. More on that below.
 
 **Buttons:** View the Demo Site / See What Changed
 
 ### Why we built this site
 
-Some of your customers were told to buy something big, and your electrician found a smaller answer. One of them put it this way:
+Some customers were told to buy something big, and your electrician found a smaller answer:
 
 > I was told by two companies I needed a new electrical panel. … These guys are honest and have done good work.
 >
 > — Sabine B.
 
-Your site never says that. Your twelve services appear as bare names, such as "Electrical panel upgrade", with no word on what each one is or when it's the right call. Your reviews also show jobs the site never mentions, such as a whole-house rewire of a hundred-year-old house and security cameras, plus visits the same day. So the demo says Electrician in Fort Wayne, IN, which is what Google needs from your homepage, leads with finding the real problem first, and gives repairs and lighting a page each.
+Your site never says that. Your twelve services are bare names, and your reviews show jobs it never mentions, such as a whole-house rewire and security cameras. So the demo says Electrician in Fort Wayne, IN, leads with finding the real problem first, and gives repairs and lighting a page each.
 
 ### The demo, page by page
 
 **1. Homepage**
 
-*Why it matters:* It's the page most people see first, and it has to tell them you're an electrician in Fort Wayne.
+*Why it matters:* It's the page most people see first.
 
 **Current site problem**
 
-- The top of the page has no headline, so nothing tells a visitor or Google "electrician in Fort Wayne".
-- Fort Wayne appears only in the address at the bottom, and the name in your browser tab never says it, so someone searching for a Fort Wayne electrician has no reason to land on you.
-- Services are bare names and no review appears on the page, so a customer comparing three electricians sees nothing that sets you apart.
+- The top has no headline, and Fort Wayne appears only in the bottom address, so Google has no reason to show you for a Fort Wayne electrician search.
+- Services are bare names with no review, so a customer comparing three electricians sees nothing that sets you apart.
 
 **What the demo fixes**
 
 - A headline and browser tab name that say Electrician in Fort Wayne, IN.
-- All twelve services, each with a line on what it is, and the panel, breaker and meter base explained in plain words.
-- The way you work up top: you find the real problem first, then fix that, whether it's a loose wire or a new panel.
-- Reviews matched to the work: the second-quote saving, the clean wiring, the cameras and the whole-house rewire.
+- All twelve services, each with a line on what it is.
+- Find the real problem first, up top.
+- Reviews matched to the work: the second-quote saving, clean wiring, cameras and the rewire.
 
-**A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
+**A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and difference out of your head and onto your site and Google profile.
 
 **2. Electrical Troubleshooting & Repair**
 
-*Why it matters:* It's the page a customer reads when something has stopped working, and the one where your reviews are strongest.
+*Why it matters:* It's the page a customer reads when something has stopped working.
 
 **Current site problem**
 
-- It shares one page with panels and lighting, under the headline "Electrical System Upgrades & Repairs in the Community", so Google can't match it to someone searching for a repair in Fort Wayne.
-- Troubleshooting gets one short line, so a customer with a dead outlet finds no reason to pick you.
-- Your reviews describe a loose wire found and fixed in 30 minutes and power restored to three rooms, and none of it appears on the page, so a visitor never sees the proof.
+- It shares one page with panels and lighting, headed "Electrical System Upgrades & Repairs in the Community", so Google can't match it to a Fort Wayne repair search.
+- Troubleshooting gets one short line, so a customer with a dead outlet has no reason to pick you.
+- Reviews describe a loose wire fixed in 30 minutes and power restored to three rooms, none of it on the page, so a visitor never sees the proof.
 
 **What the demo fixes**
 
 - Its own page with a Fort Wayne headline.
 - The same-day line up top, with reviews of real repairs beside it.
-- Panels told straight: when a new one is the answer, and how a customer who was told to buy one found a smaller fix instead.
+- Panels told straight, including the customer who found a smaller fix.
 
-**A full build would also add** A check of what your competitors offer, so services you didn't think to mention still get their own pages.
+**A full build would also add** A check of what your competitors offer, so services you didn't mention still get pages.
 
 **3. Lighting Installation**
 
-*Why it matters:* Customers have had lampposts, three-way switches, wafer lights and fans installed, and this page shows a new customer it's work you do.
+*Why it matters:* It shows a new customer that lamppost, switch and fan work is something you do.
 
 **Current site problem**
 
-- Lighting is one phrase, "custom lighting packages", so a customer wanting a lamppost or a new switch has to guess whether you do it.
-- Ceiling fans appear on the home page as two words and nowhere else, so someone looking for a fan installer doesn't find you.
-- None of the jobs your customers describe (a basement switch plan, a loft turned bedroom, a hot tub) appear anywhere, so those customers' neighbors never see them.
+- Lighting is one phrase, "custom lighting packages", so a customer wanting a lamppost or a new switch must guess whether you do it.
+- Ceiling fans are two words on the home page, so a fan installer search doesn't find you.
+- The jobs your customers describe (a basement switch plan, a loft turned bedroom, a hot tub) appear nowhere, so their neighbors never see them.
 
 **What the demo fixes**
 
 - A Fort Wayne headline and its own page.
-- Lampposts, motion lights, three-way switches, wafer lights, ceiling fans and the hot tub job, named one by one.
-- Reviews tied to each of those jobs.
+- Lampposts, motion lights, three-way switches, wafer lights, ceiling fans and the hot tub job, each with its review.
 
-**A full build would also add** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
+**A full build would also add** Pages planned from what Google shows for each search.
 
 **4. Contact**
 
-*Why it matters:* It's where a visitor becomes a phone call.
+*Why it matters:* It's where a visitor becomes a call.
 
 **Current site problem**
 
-- There is no contact page; the address and hours sit at the very bottom of the home page, so a customer who wants to call has to hunt for the number.
-- Nothing tells a visitor what to say when they call, so a customer unsure what to ask for may not call at all.
-- Nothing mentions the smoke-or-flames case, so a worried visitor gets no direction.
+- There is no contact page; the address and hours sit at the bottom of the home page, so a customer who wants to call has to hunt for them.
+- Nothing tells a visitor what to say on the call, so a customer unsure what to ask for may not call.
+- Nothing covers the smoke-or-flames case, so a worried visitor gets no direction.
 
 **What the demo fixes**
 
-- A contact page with phone, address and email at the top, and the hours just below.
-- A short "what to tell us" section, so a caller who isn't sure what to ask for knows where to start.
-- One line that sends a smoke or flames emergency to 911 first.
+- A contact page with phone, address, email and hours.
+- A "what to tell us" section for callers unsure where to start.
+- One line sending a smoke or flames emergency to 911 first.
 
 **A full build would also add** Call and form tracking that shows which pages and towns your leads come from.
 
@@ -219,7 +217,7 @@ A dead outlet, power out in part of the house, lights that flicker, a breaker th
 
 ### We diagnose first
 
-Troubleshooting is following a fault back to its source. We find the cause, tell you what it is, and fix that. One customer's bathrooms lost power after a plumber worked behind the wall. Sterling sent one electrician, and the answer was a loose wire, not a new breaker box (the breaker is the switch in the panel that shuts a circuit off when it's overloaded).
+We find the cause, tell you what it is, and fix that. One customer's bathrooms lost power after a plumber worked behind the wall. Sterling sent one electrician, and the answer was a loose wire, not a new breaker box (the breaker is the switch in the panel that shuts a circuit off when it's overloaded).
 
 > Sterling sent an electrician with no middle man. Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes …
 >
@@ -232,6 +230,16 @@ Call about a sparking outlet or a dead room and we're out the same day. One cust
 > I was in a pinch and needed quick service. Sterling came out same day and restored power to 3 rooms in my home!
 >
 > — Charlene R.
+
+### The tricky ones too
+
+When a fault is hard to track down, we stay on it until it's fixed. One customer called, and the electrician arrived soon after and got to work on a problem that turned out to be tricky.
+
+> Jim arrived soon after my initial call.  He immediately got to work tracking down what turned out to be a tricky problem.   He got it repaired quickly.
+>
+> — John D.
+
+Another customer called and had the problem solved within 24 hours. A third had other issues found and repaired in the same visit.
 
 ### Repairs of every size
 
@@ -265,7 +273,7 @@ Outdoor and indoor lighting, new switches and ceiling fans, installed by Sterlin
 
 ### Outdoor lighting
 
-We install outdoor lighting for Fort Wayne homes: lampposts, motion lights and custom lighting packages. A lamppost needs its own wire run out from the house, so the route is worth planning before anyone digs.
+We install outdoor lighting for Fort Wayne homes: lampposts, motion lights and custom lighting packages.
 
 > … George did a great job installing our lamppost and motion lights!
 >
@@ -281,9 +289,9 @@ Moving a switch, adding one for a new light, or replacing a worn fixture is rout
 
 A three-way switch lets you control one light from two places, such as the top and bottom of a staircase. Wafer lights are thin ceiling lights that need less room above the ceiling than older recessed ones.
 
-### Ceiling fans need the right box
+### Ceiling fans
 
-A ceiling fan weighs more than a light and moves as it runs, so the box in the ceiling has to be rated to hold one. That is the first thing to settle before a fan goes in.
+Ceiling fans go in as part of the same visit as your switches and lights. One customer had two fans installed, and the crew arrived right on time.
 
 > Right on time and very professional. 2 fans installed.
 >
@@ -297,7 +305,9 @@ A converted loft or a new bedroom brings its own list: a switch moved, an outlet
 >
 > — Mary H.
 
-Another customer had us install a hot tub and a few light fixtures, with a couple of options based on their budget.
+Another customer had us install a hot tub and a few light fixtures. Jim explained the whole process and laid out a couple of options based on their budget, and the project took a day.
+
+One customer fit in as many odd jobs around the house as they could think of, and George got them all done in a day. It was their third time choosing Sterling.
 
 ### Tell us what you'd like lit
 
@@ -345,15 +355,15 @@ Written from briefs @ 21550ef
 
 | Page | Words without quotes | Words with quotes |
 | :-: | :-: | :-: |
-| Strategy page | 1300 | 1328 |
+| Strategy page | 1050 | 1078 |
 | Home | 568 | 685 |
-| Electrical Troubleshooting & Repair | 237 | 352 |
-| Lighting Installation | 278 | 401 |
+| Electrical Troubleshooting & Repair | 300 | 448 |
+| Lighting Installation | 295 | 418 |
 | Contact | 210 | 228 |
 
 Counts include headings, bullets and the H1, and leave out button lines.
 
-**Rewrite from the Nov 16 night version (Josh: bloggy).** Dropped the "what usually fails" lists, GFCI/AFCI and amps explainers, the "what to notice before you call" list, the lamppost-burial, lumens/kelvins and hot-tub-circuit explainers, the storm/old-wiring and the knob-and-tube trade explainers, and all five Home FAQs. Pages are built from the site's own claims (licensed team, 17 years, codes, clear communication, clean sites, on time, clear upfront quote) with reviews as the fact check. Lighting and Repair are short (about 400 and 350 words with quotes): the site gives a phrase or a line each and the rest is review jobs. Both get an R19 WARN; every site/ file was used (home, residential, upgrades and commercial pages), and nothing was padded.
+**Rewrite from the Nov 16 night version (Josh: bloggy).** Dropped the "what usually fails" lists, GFCI/AFCI and amps explainers, the "what to notice before you call" list, the lamppost-burial, lumens/kelvins and hot-tub-circuit explainers, the storm/old-wiring and the knob-and-tube trade explainers, and all five Home FAQs. Pages are built from the site's own claims (licensed team, 17 years, codes, clear communication, clean sites, on time, clear upfront quote) with reviews as the fact check. Lighting and Repair are short (about 420 and 450 words with quotes): the site gives a phrase or a line each and the rest is review jobs. Both get an R19 WARN; every site/ file was used (home, residential, upgrades and commercial pages), and nothing was padded.
 
 **Services kept.** Same two as before: troubleshooting and repair, and lighting. Panel upgrades again fail on material (one site sentence, two reviews), so panels sit inside Home and the repair page ("When the panel is the problem").
 
@@ -365,8 +375,8 @@ Counts include headings, bullets and the H1, and leave out button lines.
 - Insured, emergency service, outdoor lighting and signage for businesses: site FAQ questions with no answers. Out of copy. After-hours (Tom S.) is a confirm question (2) and stays out of page copy, as does the posted-hours conflict.
 - The $225 minimum and any price talk: out of copy, confirm question (3). "Honest pricing" and "fair prices" not stated: two 3-star reviews dispute price. Not used: Sam E., Robert K., Karah W., Ross N.'s price words, Brett H., Blake C.
 - George as a named technician: only inside quotes (wendy K., Mary H.). Jim as owner: not named on any page; owner and staff names are not a confirm question here, but "Jim (owner)" is in reviews for the full build's owner page.
-- Unused quotes: Mark S. (same day), Monique V., John D., Daniel J., Sadie B. (the home-addition line is paraphrased in one sentence, at one-review strength), Chad S., April M., isaiah G., Mike A. (supports the troops, one review), craig T. and others.
-- Review use: full quotes or excerpts are Jaidyn M., Adam G., Mark W., Mengal K., James A., Charlene R., Jackie M., Ross N., wendy K., Brent S., Chad W., Mary H. and Renee B.; Sabine B. is on the strategy page. Each once, none back to back. Darlene T. (three switches in an hour) is a one-sentence paraphrase on the Repair page, not quoted.
+- Unused quotes: Mark S. (same day), Monique V., Daniel J., Sadie B. (the home-addition line is paraphrased in one sentence, at one-review strength), Chad S., April M., isaiah G., Mike A. (supports the troops, one review), craig T. and others.
+- Review use: full quotes or excerpts are John D. (tricky fault, Repair), Jaidyn M., Adam G., Mark W., Mengal K., James A., Charlene R., Jackie M., Ross N., wendy K., Brent S., Chad W., Mary H. and Renee B.; Sabine B. is on the strategy page. Each once, none back to back. Darlene T. (three switches in an hour), Brianna S. (within 24 hours), scott H. (other issues repaired) and craig T. (odd jobs in a day, Lighting) are one-sentence paraphrases, not quoted. Jim's hot tub walk-through (Satwik K.) is paraphrased on Lighting.
 - Commercial: the site names no specific job, so Home has one short "For businesses" section from the site's own commercial benefits. Riser replacements (residential page): not used, the term needs explaining and no review backs it.
 - Security cameras (Mengal K.) and the home-addition ask (Sadie B.): one customer each, written at that strength. Hot tub (Satwik K.): one sentence on the Lighting page, one customer's job, no quote. Whole-house rewire (Mark W.): Home.
 - Case studies and portfolio: the site has none.

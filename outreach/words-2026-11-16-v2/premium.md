@@ -34,12 +34,11 @@ So the demo opens with Roofing Contractor in Rockford, IL, and gives roof replac
 
 - The headline never says Rockford, so Google can't tell where you work.
 - It never mentions the claim help customers thank you for, so a homeowner with a damaged roof has no reason to call you first.
-- A "red-carpet experience" with no person or job behind it sounds like every other roofer's pitch, so you look the same as the company whose commercial they heard on the radio.
 
 **What the demo fixes**
 
 - A headline that says Roofing Contractor in Rockford, IL.
-- Tyler, Brad and Tommy, the project managers your customers name, up front, with what customers say they do on a claim.
+- Tyler, Brad and Tommy, the project managers your customers name, up front.
 - Your Illinois and Wisconsin license and insurance in plain words, and your two offices.
 
 **A full build would also add** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -51,13 +50,13 @@ So the demo opens with Roofing Contractor in Rockford, IL, and gives roof replac
 **Current site problem**
 
 - No heading names Rockford, so a Rockford search has little to match.
-- Google's listing for the page calls you a "Wisconsin & N. Illinois" roofer, so a Rockford homeowner reads it as a company from somewhere else.
-- Nothing about what turns up under the old roof, so a buyer can't picture what a replacement involves, and your leaking-roof job sits unused on another page.
+- Google's listing for the page calls you a "Wisconsin & N. Illinois" roofer, so a Rockford homeowner reads you as an outsider.
+- Nothing about what turns up under the old roof, so a buyer can't picture a replacement, and your leaking-roof job sits unused elsewhere.
 
 **What the demo fixes**
 
 - A headline that says Roof Replacement in Rockford, IL.
-- Your leaking-roof job in plain words: shingles nailed over gapped boards, a ridge vent that was never cut open, a stone chimney fitted with custom metal.
+- Your leaking-roof job in plain words: shingles nailed over gapped boards, a ridge vent never cut open, a stone chimney fitted with custom metal.
 - Color samples brought to the house, and cedar-look roofs.
 
 **A full build would also add** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
@@ -68,14 +67,13 @@ So the demo opens with Roofing Contractor in Rockford, IL, and gives roof replac
 
 **Current site problem**
 
-- It explains storm restoration with "hurricanes," so it reads like copy borrowed from somewhere else and a Rockford homeowner stops trusting it.
-- Claim steps are five one-line items, with the real how-to in separate articles a worried homeowner never reaches.
-- A banner on every page is about Wisconsin storm damage, so a Rockford homeowner may think you're not local.
+- It explains storm restoration with "hurricanes," so it reads like borrowed copy and a Rockford homeowner stops trusting it.
+- Claim steps are five one-line items, with the real how-to in articles a worried homeowner never reaches.
 
 **What the demo fixes**
 
 - A headline that says Storm Restoration in Rockford, IL.
-- The five steps from first inspection to final cleanup, with the project manager who works your claim beside you.
+- The five steps, from first inspection to final cleanup.
 - Your northern Wisconsin hail job and your Roscoe claim job.
 
 **A full build would also add** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
@@ -88,11 +86,10 @@ So the demo opens with Roofing Contractor in Rockford, IL, and gives roof replac
 
 - No hours are posted, so a homeowner with a leak can't tell when anyone picks up.
 - No towns are listed, so a caller near the state line can't tell whether you come out to them.
-- The form carries a text-message marketing consent, a lot to read for a homeowner with one question, so some will call a roofer with a shorter form instead.
 
 **What the demo fixes**
 
-- Your phone number first, and the free inspection that follows a call.
+- Your phone number first, then the free inspection.
 - Both offices, Rockford and Delavan.
 - The Rockford-area and nearby Wisconsin towns you serve.
 
@@ -145,7 +142,7 @@ Book a no-obligation call and we'll walk you through this demo.
 
 # Roofing Contractor in Rockford, IL — Premium Roofing Solutions
 
-Premium Roofing Solutions replaces and repairs roofs, siding and gutters for homes and businesses in Rockford, Beloit, Janesville and the towns around them, and a named project manager works your insurance claim with you. Call (844) 997-6633 for a free inspection.
+A named project manager works your insurance claim with you, start to finish. Premium Roofing Solutions replaces and repairs roofs, siding and gutters in Rockford and nearby Wisconsin. Call (844) 997-6633 for a free inspection.
 
 **Buttons:** Call (844) 997-6633 · Ask a Question
 
@@ -153,9 +150,9 @@ Premium Roofing Solutions replaces and repairs roofs, siding and gutters for hom
 
 ### A Named Project Manager Works Your Claim With You
 
-After hail or a windstorm you have a damaged roof and an insurance claim at the same time. We work with your insurance company to keep the claim moving, and one project manager stays with you from the first inspection to the final cleanup. Customers name Tyler, Brad and Tommy as their project managers.
+After hail or a windstorm you have a damaged roof and an insurance claim at the same time. We keep the claim moving, and one project manager stays with you from the first inspection to the final cleanup. Customers name Tyler, Brad and Tommy as their project managers.
 
-We meet your adjuster at the house. The adjuster is the insurance company's inspector, the person who decides what the damage is worth, and we point out the damage in person so it all gets recorded. You hear from us at every step. Your policy decides what's covered and what your insurer pays, and we stay on the claim with you while it moves.
+We meet your adjuster at the house. The adjuster is the claim inspector who decides what the damage is worth, and we point out the damage in person so it all gets recorded. You hear from us at every step. Your policy decides what's covered, and we stay with you while the claim moves.
 
 > He made sure he was here to meet with our adjuster and point out all the areas that got damaged.
 >
@@ -189,13 +186,13 @@ Yes. We offer flexible payment plans to suit your budget.
 
 We do roofing, not solar installation. We work hand in hand with solar professionals, so the roof is ready for the panels.
 
-**What if my insurance company isn't one you've worked with?**
+**What if my policy is with a company you haven't worked with?**
 
 Call and tell us who it is. We may still work with them.
 
 ### Start With a Call
 
-Call (844) 997-6633, tell us what the roof looks like and what the weather did, and we'll set up your free inspection.
+Call (844) 997-6633, tell us what the roof looks like and what the weather did, and we'll book a time to come out.
 
 ## Roof Replacement — Roof Replacement in Rockford, IL — Premium Roofing Solutions
 
@@ -207,7 +204,7 @@ When your roof has reached the end of its life or taken more damage than a repai
 
 ### What a Replacement Looks Like
 
-We inspect the whole roof and give you a detailed, free estimate. Then we help you choose a material that fits your style and budget, from asphalt shingles to metal or tile, and we bring roof color samples to your house so you can see them against your siding. Our crew removes the old roof, repairs whatever is damaged underneath, and installs the new one.
+We inspect the whole roof and give you a detailed estimate. Then we help you choose a material that fits your style and budget, from asphalt shingles to metal or tile, and we bring roof color samples to your house so you can see them against your siding. Our crew removes the old roof, repairs whatever is damaged underneath, and installs the new one.
 
 We replace cedar shake and wood shingle roofs too. One customer replaced a cedar roof after hail with a composite cedar look in a color picked for the house.
 
@@ -247,7 +244,7 @@ Your yard is clean when we leave.
 
 ### Ready to Talk It Over?
 
-Call (844) 997-6633 and tell us about the roof. We'll set up your free inspection and estimate.
+Call (844) 997-6633 and tell us about the roof. We'll set up the inspection.
 
 ## Storm Restoration — Storm Restoration in Rockford, IL — Premium Roofing Solutions
 
@@ -269,7 +266,7 @@ Storm restoration means repairing and rebuilding what the storm damaged: the roo
 
 ### We Work Your Claim With You
 
-The adjuster is the insurance company's inspector, the person who values the damage. We meet the adjuster at your house and point out what we found, so it all gets seen and recorded. Your policy and your insurer decide what's covered. We stay on the claim with you and keep you informed at every step.
+The adjuster is the claim inspector who values the damage. We meet the adjuster at your house and point out what we found, so it all gets seen and recorded. Your policy decides what's covered. We stay on the claim with you and keep you informed at every step.
 
 > he came to look over the property for damage then came back to do a walk around with our insurance adjuster to make sure she saw and recorded everything.
 >
@@ -287,7 +284,7 @@ We handle roofing, siding, gutters and structural repairs in one project.
 
 In northern Wisconsin, 2- to 3-inch hailstones damaged a home's roof, siding and gutters. We replaced the roof with Class 4 impact-resistant shingles, the top rating for hail, repaired the siding, and installed 6-inch gutters to replace the dented ones. The goal was to leave the house better than it was before the storm.
 
-In Roscoe, the roof and siding on a two-story home had been damaged by weather. We inspected both and documented the damage to support the claim, handled the paperwork and dealt with the insurance company directly. We upgraded the roof to Class 4 shingles at no additional cost and replaced the siding.
+In Roscoe, the roof and siding on a two-story home had been damaged by weather. We inspected both and documented the damage to support the claim, handled the paperwork and dealt directly with the carrier. We upgraded the roof to Class 4 shingles at no additional cost and replaced the siding.
 
 ### Covering a Roof That's Open
 
@@ -321,7 +318,7 @@ Have your address ready, and if there was a storm, its date and your insurance c
 
 ### What Happens After You Call
 
-We set up a free inspection and a detailed free estimate, and you decide from there. If a storm is behind the damage, we start on your claim with you.
+We come out, look at the roof and give you an estimate, and you decide from there. If a storm is behind the damage, we start on your claim with you.
 
 > He scheduled an estimate for his next available time slot, answered any and all questions we had.
 >
@@ -347,4 +344,51 @@ Written from briefs @ 21550ef
 
 **Rebuild reason:** SEO. The homepage headline ("Roofing excellence for homes and businesses that deserve the absolute best") never says Rockford, the Roof Replacement page is titled "Roof Replacement Wisconsin & N. Illinois" and Storm Restoration is titled "Storm Restoration Services," and about 30 near-identical "Best Roofing Contractor" town pages repeat the same boilerplate.
 
-**Word counts** COUNTS_PLACEHOLDER
+**Word counts** (script count; "without quotes" excludes blockquotes, buttons and strip)
+
+  - Strategy: 1053 without the quote, 1079 with, incl. the canonical list (about 190 of it).
+  - Home: 553 without quotes, 637 with (strip and buttons counted only in "with").
+  - Roof Replacement: 575 without quotes, 653 with.
+  - Storm Restoration: 500 without quotes, 617 with.
+  - Contact: 176 without quotes, 207 with.
+  - Length follows the real material: the site's own replacement and storm pages are short, so the pages are built from them plus the project write-ups and quoted reviews.
+
+**Services chosen.** Same two as the current doc, Roof Replacement and Storm Restoration (inventory.md money services). Roof Repair stays a home-page item: the site's repair page is thin and only about 5 reviews are about repair.
+
+**Credentials and sources** (the business's own claims; none verified)
+
+  - Licensed and insured in Illinois and Wisconsin, subcontractors also licensed and insured: banner on every page and faqs. Home only.
+  - License numbers (IL 105.010492, WI DC-022300247) left out until looked up on the state lookups.
+  - "Certified Installers" and "Certification" headings: no certifying body, left out. BBB link not read, left out.
+  - No star rating or review count anywhere in copy or in the confirm list.
+
+**Conflicts kept out of copy** (confirm list or Notes only)
+
+  - Phone: (844) 997-6633 on site, (815) 296-1306 on Google. Copy uses the site's.
+  - Warranty: "comprehensive warranties" and "30-50 year" vs the FAQ saying details aren't on the site. No warranty line in copy.
+  - Replacement time: "2-4 days," "1-3 days," "2-5 days," "a day." Not stated in copy.
+  - Experience: "20 combined years" vs "decades," "hundreds of roofs." Not used.
+  - "In-house installation teams" vs FAQ "subcontractors we work with." In-house not used.
+  - Project page says plywood in one place and OSB in another: copy says "wood panels."
+  - Owners: reviews name Mike and Gabe; no owner named in copy.
+  - 24/7 emergency repair claim: not used. No posted hours, so none in copy.
+  - Service area: city pages list far-off towns (Green Bay, Oshkosh, Appleton, Madison, Chicago suburbs); Contact lists only Rockford-area IL and nearby WI towns.
+
+**Inventory items and why**
+
+  - Used: named project manager and insurance claim help (strategy, home, replacement and storm heroes, storm), adjuster meeting (home, storm), replacement (page), storm (page), repair, installation, inspection, siding, gutters, cedar shake, flat roofing, metal flashing (home list), commercial (home), solar (home FAQ), payment plans (home strip and FAQ), insurer not listed (home FAQ), tarps and rain (replacement, storm), Class 3 and Class 4 shingles (replacement, storm), clean-up (replacement), keeps informed (home, storm), honest and does what they said (home, Tim K.), color samples (replacement, Mary M.), denied claim (storm, Cindy W.).
+  - Case studies used: architectural shingle leak job and the black-shingle chimney job (replacement); northern Wisconsin hail and Roscoe (storm).
+  - Left out: "red-carpet" and "premium experience" slogans, cedar cost range, "hundreds of roofs," 30-50 year warranty, "advanced technology" inspections, residential/commercial insurer logos (image only), "Roof Repair" as its own page, "Quality Craftsmanship"/"Dedication to Excellence" values (filler), "Community Focus."
+  - Quotes used once each: Kayla P., Natalie P., Tim K., Mary M., Colin S., Jim D., Susan W., Cindy W., Tom C., Shawn L. Not quoted: Charles W. and Derrick T. (long, insurer disputes), Rita R. (names an owner).
+
+**Facts to verify**
+
+  - Which phone is live.
+  - That project managers meet the adjuster at the house: backed by Natalie P. and Susan W. and the site's claim pages, so verify before launch.
+  - Free inspection and free estimate wording (site claim).
+  - Roscoe "no additional cost" comes from the site's write-up; "full coverage" left out so no claim outcome is implied.
+  - "About 20 years" roof age is the site's.
+  - Class 4 as the top impact rating is general knowledge. Class 3 as "entry-level" is the site's project write-up.
+  - "Your yard is clean when we leave" rests on about 13 reviews mentioning clean-up, with Jim D. quoted.
+  - Customers naming Tyler, Brad and Tommy as project managers: Steve S., Kayla P. and Colleen B.
+  - Rockford-area town list is from the site's service-area pages.
