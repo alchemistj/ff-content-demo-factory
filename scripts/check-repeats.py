@@ -9,8 +9,50 @@ Pages start at "## " headings that contain an em dash (business pages) or are
 count as us repeating ourselves. Any phrase group that appears more than twice
 on one page prints FAIL. Exit code 1 if any FAIL.
 """
+import os
 import re
 import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def _norm(l):
+    l = l.strip().lstrip("-*").strip().strip("*").strip()
+    return l.replace("\u2019", "'").replace("\u2018", "'").replace("\u201c", '"').replace("\u201d", '"')
+
+
+def canonical_full_build():
+    t = open(os.path.join(HERE, "..", "docs", "writer-guides", "FULL_BUILD_LINES.md"), encoding="utf-8").read()
+    block = t.split("<!-- FULL-BUILD-START -->")[1].split("<!-- FULL-BUILD-END -->")[0]
+    return [_norm(l) for l in block.splitlines() if l.strip()]
+
+
+def check_full_build(text, fname):
+    """Return list of problems: the list after 'What a full build includes' must match canonical exactly."""
+    lines = text.splitlines()
+    idx = [i for i, l in enumerate(lines) if _norm(l.lstrip("#")) == "What a full build includes"]
+    if not idx:
+        return [f"FAIL {fname} | full-build list: heading 'What a full build includes' not found"]
+    want = canonical_full_build()
+    got = []
+    start = idx[0] + 1
+    for j in range(idx[0] + 1, min(idx[0] + 6, len(lines))):
+        if _norm(lines[j].lstrip("#")).startswith("Gets you found"):
+            start = j
+            break
+    for l in lines[start:]:
+        n = _norm(l.lstrip("#"))
+        if not n:
+            continue
+        if n.startswith("What we") or n.startswith("##") or len(got) >= len(want):
+            break
+        got.append(n)
+    probs = []
+    for i, w in enumerate(want):
+        g = got[i] if i < len(got) else "(missing)"
+        if g != w:
+            probs.append(f"FAIL {fname} | full-build line {i+1}: expected '{w[:70]}' got '{g[:70]}'")
+    return probs
 
 GROUPS = {
     "speed": r"same[- ]day|next[- ]day|within (a|one|24) (day|hours?)|within hours|within a few hours|within two hours|the same day",
@@ -58,6 +100,17 @@ def main(paths):
                     hard = group in HARD
                     bad = bad or hard
                     print(f"{'FAIL' if hard else 'WARN'} {path.split('/')[-1]} | {name[:40]} | {group}: {n} (limit {LIMIT})")
+        fname = path.split('/')[-1]
+        for p_ in check_full_build(text, fname):
+            bad = True
+            print(p_)
+        for name, lines in pages(text):
+            if name.startswith("Notes"):
+                continue
+            for l in lines:
+                if "docs.google.com" in l:
+                    bad = True
+                    print(f"FAIL {fname} | {name[:40]} | docs.google.com link in page copy (use about:blank): {l.strip()[:60]}")
         # Strip / trust bar lines outside Home, and FAQ questions repeated across pages
         faq = {}
         for name, lines in pages(text):
