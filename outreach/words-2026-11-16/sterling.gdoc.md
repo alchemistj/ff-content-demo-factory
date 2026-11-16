@@ -18,9 +18,9 @@ We built Sterling Electric the first five pages of that kind of website. More on
 
 Some of your customers were told to buy something big, and your electrician found a smaller answer. One of them put it this way:
 
-I was told by two companies I needed a new electrical panel. … These guys are honest and have done good work.
+> I was told by two companies I needed a new electrical panel. … These guys are honest and have done good work.
 
-— Sabine B.
+> — Sabine B.
 
 Your site never says that. Your twelve services appear as bare names, such as "Electrical panel upgrade", with no word on repair versus replacement. Your reviews also show jobs the site never mentions, such as cameras and a whole-house rewire, and a visit the same day. So the demo says Electrician in Fort Wayne, IN, which is what Google needs from your homepage, leads with finding the real problem first, and gives troubleshooting and lighting a page each.
 
@@ -122,9 +122,9 @@ Your site never says that. Your twelve services appear as bare names, such as "E
 
 **Keeps working after launch**
 
-- Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down
-- Your site watched around the clock for downtime
-- Google indexing and your Google visibility checked every day
+- Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
+- Your site watched around the clock for downtime.
+- Google indexing and your Google visibility checked every day.
 - Page links, buttons and contact forms tested in a real browser twice a day.
 - Updated when Google and AI tools change how they read websites
 - You never have to know what to ask for
@@ -150,7 +150,7 @@ Text us: (417) 373-2773
 
 # Electrician in Fort Wayne, IN — Sterling Electric
 
-Electrical repairs, installations and safety upgrades for homes and businesses in Fort Wayne and the area around it. Customers describe a visit the same day.
+Electrical repairs, installations and safety upgrades for homes and businesses in Fort Wayne and the area around it.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate
 
@@ -160,9 +160,9 @@ Licensed team · 17 years in the trade · Homes and businesses · Customers desc
 
 When the lights flicker or a breaker keeps shutting off, the cause is often smaller than a new panel or a rewire. A loose wire, a worn outlet or a single failed switch can look like a big problem from the outside. We test and trace the cause first, then tell you what the fix involves, so you decide with the facts in front of you.
 
-… I learned that not only was the original quote overinflated, but also not necessary.
+> … I learned that not only was the original quote overinflated, but also not necessary.
 
-— Jaidyn M.
+> — Jaidyn M.
 
 ### What we do
 
@@ -182,17 +182,17 @@ We take residential and commercial jobs.
 
 Most panels last for decades, and a breaker that trips is often a sign of one overloaded circuit or one worn part, not a bad panel. A new panel usually makes sense when the old one has rust or water damage, has no room for the new circuits you need, is an old fuse box, or has breakers that no longer hold, and work inside a panel stays with a licensed electrician. We tell you what we see and why before anyone buys anything.
 
-I needed my whole electric panel replaced and they were very easy to work with …
+> I needed my whole electric panel replaced and they were very easy to work with …
 
-— Ross N.
+> — Ross N.
 
 ### Older houses and new additions
 
 Houses built a century ago may still have knob-and-tube wiring, an early system of single wires run through porcelain supports. It was not designed for today's loads and often has damaged insulation, so it is usually replaced. When we rewire an older house, we plan the work to open as few walls as we can. For an addition or a loft turned into a bedroom, we usually start by asking what you need in each room, such as outlets, switches and lights, and lay out the options before we run a wire.
 
-I recommend Sterling Electric very highly and without reservation. All service was prompt and professional. I have a hundred year old house with knob and tube wiring that needed a whole house rewire. They did a great job of minimizing the number of holes needed to access the old wiring.
+> I recommend Sterling Electric very highly and without reservation. All service was prompt and professional. I have a hundred year old house with knob and tube wiring that needed a whole house rewire. They did a great job of minimizing the number of holes needed to access the old wiring.
 
-— Mark W.
+> — Mark W.
 
 ### Licensed, with 17 years behind the work
 
@@ -202,17 +202,17 @@ Our team is licensed, and we have been doing this work for 17 years, for homes a
 
 We keep work areas tidy, and that includes the wiring. Cables routed neatly are easier to trace and repair the next time someone opens that wall, whether that is us or another trade, and they leave the walls and ceilings looking as they did before we came. When we need to cut into a wall, we try to keep the opening as small as the job allows.
 
-These guys did a great job. Made extra effort to keep wire routing as clean as possible. Their work looks like it was original to the house.
+> These guys did a great job. Made extra effort to keep wire routing as clean as possible. Their work looks like it was original to the house.
 
-— Adam G.
+> — Adam G.
 
 ### Security cameras and other jobs
 
 Not every job fits a service list, and electrical work reaches further than outlets and panels. Customers have also had us install security cameras. Cameras need power and a network connection at each spot, so the wiring route matters as much as the camera, and it is worth planning before anything is mounted.
 
-Phil did an excellent job installing our cameras. He was very patient throughout the entire process, took the time to explain everything clearly, and made sure we understood how to use the camera system.
+> Phil did an excellent job installing our cameras. He was very patient throughout the entire process, took the time to explain everything clearly, and made sure we understood how to use the camera system.
 
-— Mengal K.
+> — Mengal K.
 
 ### Where we are
 
@@ -222,7 +222,7 @@ Our office is at 6814 Saint Joe Road, Fort Wayne, Indiana 46835. We are open Mon
 
 **What if it goes wrong outside office hours?** Call and tell us what is happening. We have helped customers outside office hours. If you see smoke or flames, leave the house and call 911 first.
 
-**How fast can you get here?** Customers describe a visit the same day, and within 24 hours at the longest. Call, tell us what is happening and we will tell you when we can be there.
+**How fast can you get here?** Customers describe a visit the same day. Call, tell us what is happening and we will tell you when we can be there.
 
 **Do I need a new panel?** Often not. A breaker that trips is frequently one overloaded circuit or one worn part. We test the circuit first and tell you what we see before anyone buys anything.
 
@@ -244,9 +244,9 @@ Power out in part of the house, an outlet that sparks, lights that flicker, a br
 
 Troubleshooting is the work of following a fault back to its source. Electricity runs through circuits, each a loop of wire from the panel through outlets, switches and lights, protected by a breaker, the switch in the panel that shuts a circuit off when something goes wrong. When something stops working, the cause can sit anywhere along that loop, often in a spot nowhere near the dead outlet or dark light. We test along the circuit with meters until we find where it breaks, which is usually quicker than swapping parts and hoping.
 
-Sterling sent an electrician with no middle man. Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes …
+> Sterling sent an electrician with no middle man. Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes …
 
-— James A.
+> — James A.
 
 ### What to notice before you call
 
@@ -272,11 +272,11 @@ Other causes we often see:
 
 ### When the power is out in part of the house
 
-A dead room or a few dead outlets is often one failed connection or one tripped protective device, not a house-wide problem, which is why we trace before replacing anything. Power that goes out in several rooms at once points toward a shared circuit. A fault that comes and goes, or one that starts after other work in the walls, usually points to a loose or pinched wire. Because the fix is often small, a visit can get a room back on the same day.
+A dead room or a few dead outlets is often one failed connection or one tripped protective device, not a house-wide problem, which is why we trace before replacing anything. Power that goes out in several rooms at once points toward a shared circuit. A fault that comes and goes, or one that starts after other work in the walls, usually points to a loose or pinched wire. Because the fix is often small, getting a room back on is often a short visit.
 
-I was in a pinch and needed quick service. Sterling came out same day and restored power to 3 rooms in my home!
+> I was in a pinch and needed quick service. Sterling came out same day and restored power to 3 rooms in my home!
 
-— Charlene R.
+> — Charlene R.
 
 ### Sparks, heat and burning smells
 
@@ -286,9 +286,9 @@ Sparks from an outlet, a plug that is hot to the touch, a buzzing panel or a bur
 
 A panel does wear out, but it is rarely the cause of one dead room or a breaker that trips now and then. The problem is frequently one breaker, one device or one connection, so we look at the circuit first. If the panel turns out to be the fault, we aim to explain why before any work starts.
 
-They took time to diagnose the problem fix it and not upsell extras we didn't need.
+> They took time to diagnose the problem fix it and not upsell extras we didn't need.
 
-— Renee S.
+> — Renee S.
 
 ### Repair or replace
 
@@ -298,17 +298,17 @@ Replacing a switch, outlet or fixture is a small repair, and it is the right one
 
 A storm can take out several rooms at once through a power surge, a damaged line from the utility or water in a fixture. Old wiring and storm damage can look alike from inside the room, which is why a trace comes first. Repairs after a storm range from replacing a few outlets to rewiring a section of the house, and we can say which one you are facing once we have tested.
 
-Repairs included removing knob and tub wiring, replacing light fixtures, wiring repairs after a storm took out two rooms of a house, switch and outlet replacements, etc.
+> Repairs included removing knob and tub wiring, replacing light fixtures, wiring repairs after a storm took out two rooms of a house, switch and outlet replacements, etc.
 
-— Jackie M.
+> — Jackie M.
 
 ### What else we find while we are there
 
 Some repairs are urgent and some can wait. A hot outlet needs attention right away, while a tripping breaker on an overloaded circuit may only need some of the load moved. If we find other problems while we are tracing the first one, such as a worn outlet nearby or an unlabeled panel, we tell you which are urgent and which can wait, and you decide what gets fixed that day.
 
-Very knowledgeable, … and repaired other issues. Would highly recommend to call first.
+> Very knowledgeable, … and repaired other issues. Would highly recommend to call first.
 
-— scott H.
+> — scott H.
 
 ### Questions About Electrical Troubleshooting in Fort Wayne
 
@@ -330,9 +330,9 @@ Outdoor and indoor lighting, new switches and ceiling fans, installed with the w
 
 We install outdoor lighting, including lampposts and motion lights, and custom lighting packages. Where a light goes depends on what it is for: a path, a driveway, an entry door or a back patio. Outdoor fixtures and wiring must be rated for wet conditions, since water in a fixture or connection is a common cause of outdoor failures. Outdoor outlets and lighting circuits usually need GFCI protection, a shut-off that cuts power in a fraction of a second if it senses electricity leaking, as it might through water.
 
-… George did a great job installing our lamppost and motion lights!
+> … George did a great job installing our lamppost and motion lights!
 
-— wendy K.
+> — wendy K.
 
 ### Motion lights, timers and dusk-to-dawn sensors
 
@@ -342,17 +342,17 @@ A motion light switches on when it senses movement, which suits a back door or a
 
 A lamppost out in the yard needs its own wire run from the house, usually buried. Burial depth and protection rules vary with the type of cable, and your local inspector may check the work, so the route is worth planning before digging. Sprinkler lines, tree roots and future garden beds are worth planning around.
 
-On time. Very efficient service..replaced three switches, replaced light fixture and fixed two other fixtures in an hour.
+> On time. Very efficient service..replaced three switches, replaced light fixture and fixed two other fixtures in an hour.
 
-— Darlene T.
+> — Darlene T.
 
 ### Switches that make sense in the house
 
 A three-way switch lets you control one light from two places, such as the top and bottom of a staircase. Setting one up often means running a wire between the two switches. We ask how you move through the room before deciding where each switch goes. Moving a switch, or adding one for a new light, is also routine work for us.
 
-We wanted a three-way switch added for our stairs, create a separate switch for new wafer lights, install wafer lighting on an existing switch, and make our outlets always live versus being on a switch. Job completed and looks great!
+> We wanted a three-way switch added for our stairs, create a separate switch for new wafer lights, install wafer lighting on an existing switch, and make our outlets always live versus being on a switch. Job completed and looks great!
 
-— Brent S.
+> — Brent S.
 
 ### Wafer lights and recessed lighting
 
@@ -362,17 +362,17 @@ Wafer lights are thin LED discs that fit into a small hole in the ceiling. They 
 
 A ceiling fan weighs more than a light and moves as it runs, so the box in the ceiling has to be rated to hold a fan. An ordinary light-fixture box may not be. We check what is up there before the fan goes in, and fit the right box when it is needed. Fans also need a switch plan: a wall switch for the light, one for the fan, or a remote.
 
-Right on time and very professional. 2 fans installed.
+> Right on time and very professional. 2 fans installed.
 
-— Chad W.
+> — Chad W.
 
 ### New rooms, new circuits
 
 Converting a loft or finishing a basement changes what each room needs. We start with the outlets, switches and lights you want, then work out which circuits can carry them. New wiring often needs a permit and an inspection, so ask us about yours. Smoke alarms are part of the plan too, since a new bedroom usually needs one.
 
-We converted our loft to a 4th bedroom and needed a light switch moved, a smoke alarm installed and an outlet added. All work done as promised and on time. George was very friendly and knowledgeable. Would recommend!
+> We converted our loft to a 4th bedroom and needed a light switch moved, a smoke alarm installed and an outlet added. All work done as promised and on time. George was very friendly and knowledgeable. Would recommend!
 
-— Mary H.
+> — Mary H.
 
 ### Choosing fixtures and bulbs
 
@@ -382,9 +382,9 @@ Brightness is measured in lumens, and the color of the light in kelvins: lower n
 
 A hot tub usually needs its own circuit with GFCI protection, a shut-off switch within sight of the tub, and wiring sized for the tub's load. Requirements differ by model and by local code, so check the tub's manual and talk to us before the tub arrives. That way the electrical side is ready on delivery day.
 
-Had a great experience with Jim at Sterling Electric. We had to install our hot tub and a few light fixtures. Jim explained the entire process in details and gave a couple of options based on our budget. The project took a day and it all went pretty smooth.
+> Had a great experience with Jim at Sterling Electric. We had to install our hot tub and a few light fixtures. Jim explained the entire process in details and gave a couple of options based on our budget. The project took a day and it all went pretty smooth.
 
-— Satwik K.
+> — Satwik K.
 
 ### Questions About Lighting Installation in Fort Wayne
 
@@ -410,9 +410,9 @@ We're open Monday to Saturday, 8:00 AM to 4:00 PM, and closed on Sunday.
 
 Tell us what is happening and where, whether it is one outlet, one room or the whole house. Add when it started, anything you've noticed, such as a burning smell or a tripping breaker, and whether you want a repair, a new installation or an estimate. For a lighting or panel project, tell us the room or the part of the yard and what you'd like to change.
 
-I was on the phone and in person they were extremely helpful
+> I was on the phone and in person they were extremely helpful
 
-— Renee B.
+> — Renee B.
 
 ### If it's urgent
 

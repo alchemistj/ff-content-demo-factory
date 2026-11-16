@@ -13,7 +13,7 @@ We built Gavlinski Roofing & Construction the first five pages of that kind of w
 
 **Why we built this site**
 
-Your customers keep telling the same story: Brian is on the job.
+Several of your customers say the same thing: Brian is on the job.
 
 > Brian was at the job site every day, ensuring everything went smoothly and was done correctly.
 >
@@ -57,7 +57,7 @@ Google and AI tools can only repeat what's written down. We get every service, c
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 ### 3. Roof Repair and Storm Damage
-*Why it matters:* After a storm or a leak, this is the page someone in Peoria needs tonight.
+*Why it matters:* After a storm or a leak, this is the page someone in Peoria needs fast.
 
 **Current site problem**
 - Repair and storm damage are two more lines in the same list, with no page and no Peoria in a headline.
@@ -151,14 +151,14 @@ The people on your roof work for us. That means the crew that starts your job is
 
 - **Roof inspections.** A look at the whole roof, so you know what shape it's in before there is a problem.
 - **Roof repair and maintenance.** Fixing what's leaking or worn, and finding why.
-- **Complete roof replacement.** The old roof comes off and a new one goes on, often in a day.
+- **Complete roof replacement.** The old roof comes off and a new one goes on.
 - **Asphalt shingles.** The most common roofing material on houses, in a range of colors.
 - **Metal roofing.** A longer-lasting option that costs more up front.
 - **Storm damage repair.** Hail, wind and fallen limbs, with a free damage assessment.
 
 ### Old, Steep and Unusual Roofs
 
-Roofs in older Peoria neighborhoods aren't always simple. They can be steep, cut up by dormer windows and chimneys, or made of materials that aren't common now. Customers have had us remove a slate roof, repair the openings underneath and add new windows in the roof.
+Roofs in older Peoria neighborhoods aren't always simple. They can be steep, cut up by dormer windows and chimneys, or made of materials that aren't common now. One customer had us remove a slate roof, repair the openings underneath and add new windows in the roof.
 
 > We had an 106 year old slate roof; the Gavlinski roofing team removed that, repaired holes, put in 3 new dormer windows, and a skylight.
 >
@@ -182,7 +182,7 @@ An old roof sheds nails, and a new one sheds offcuts. A crew usually has to swee
 
 **Do you look at a roof that isn't leaking yet?** Yes, roof inspections and assessments are on our list. An inspection usually covers the shingles, the edges, the places the roof meets chimneys and walls, and anything that sticks through the roof, such as pipes and vents. Catching a loose piece early is usually cheaper than a repair after water gets in.
 
-**Do you work on garages and other buildings?** Customers have also had us replace the roof on a church and on a storage garage.
+**Do you work on garages and other buildings?** Yes. Several customers have had us roof a garage, and one had us replace the roof on a church.
 
 ### Call Brian's Team
 
@@ -198,7 +198,7 @@ A complete roof replacement means the old roof comes off, the wood underneath ge
 
 A replacement usually starts early. The crew covers the plants and the ground around the house, then strips the old shingles off in sections so the house is never open to the sky longer than it has to be. Once the old layer is gone, the wood underneath is checked, and anything soft gets replaced. Then a waterproof layer goes down, the new shingles go on, and the pieces around pipes, vents and chimneys get fitted.
 
-Many houses are done in a day. A bigger or more complicated roof can take two or three, and a rain delay stretches it. One customer said the job was done a lot sooner than they were told.
+Many houses are done in a day. A bigger or more complicated roof can take two or three, and a rain delay stretches it. One customer's roof was done in one day, as promised.
 
 > completed the job as he told me he would which was in 1 day.
 >
@@ -245,7 +245,7 @@ Central Illinois summers are hot and humid, and an attic that can't breathe bake
 Most roofs are cleared of nails and scraps more than once. Crews often walk the yard with a magnet, and some come back the next day for another pass, because a nail in a tire is a much bigger problem than a nail in a roof. 
 > They came back the next day to do another lap around the yard to make sure all debris was cleared.
 >
-> — cgkrazz
+> — Google review
 
 ### The Estimate, and What Changes It
 
@@ -303,7 +303,7 @@ Roof maintenance is on our list too, and it is mostly about the edges. Gutters p
 
 Hail, strong wind and fallen limbs can all damage a roof. Hail leaves bruises that wear the gritty surface off shingles. Wind can lift or crease them, and a limb can punch a hole. From the ground you can often see missing shingles or debris, but most damage is only visible up close, and walking on a wet or damaged roof is not safe. Photos from the ground, taken before anything is cleaned up, are useful for an insurance claim. Then call someone to look.
 
-Customers have also had us put an emergency cover on a damaged roof to stop a leak. We also offer a free damage assessment, and we coordinate directly with your insurance provider on the claim.
+One customer had us put an emergency cover on a damaged roof to stop a leak. We also offer a free damage assessment, and we coordinate directly with your insurance provider on the claim.
 
 > Brian came right out and did an emergency tarp job to prevent further leaks.
 >
@@ -311,7 +311,7 @@ Customers have also had us put an emergency cover on a damaged roof to stop a le
 
 ### Small and Unusual Repairs
 
-Not every repair is a leak. Customers have called us for a balcony roof that needed an unusual fix, and the job had to be finished before the weather turned.
+Not every repair is a leak. One customer called us for a balcony roof that needed an unusual fix, and the job had to be finished before the weather turned.
 
 > They came in, treated us like family, did some problem solving, got to work and completed the job before weather compromised our ability to fix it.
 >

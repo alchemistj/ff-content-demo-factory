@@ -15,8 +15,8 @@ We built K\&W the first five pages of that kind of website. More on that below.
 
 Some of your customers say K\&W got someone out within a day.
 
-They find the time to get someone here within 24 hours when I have an issue.
-— Taylor M.
+> They find the time to get someone here within 24 hours when I have an issue.
+> — Taylor M.
 
 Your home page answers "Do you offer emergency HVAC services?" with a yes, and never says 24/7.
 
@@ -143,19 +143,19 @@ K\&W Premier Heating and Air is built from the merger of two local businesses, a
 
 We work on furnaces, heat pumps, air conditioners, ductless mini-splits (wall-mounted units that need no ducts), thermostats, indoor air quality equipment, standby generators and commercial rooftop units (heating and cooling units that sit on the roof of a building). One company handles all of it, so you aren't hunting for a different number when the problem changes.
 
-Jake was a great service tech for sure\!\! Came out checked everything and was on his way\!\!
-— Helena L.
+> Jake was a great service tech for sure\!\! Came out checked everything and was on his way\!\!
+> — Helena L.
 
 ### A Technician Within a Day
 
 When you call, we ask what the system is doing and gather the details about your heating, cooling or generator setup, so the right technician heads your way. Our technician explains the best fix before the work starts and then does the repair or install. A repair that needs a part that has to be ordered can take longer.
 
-Quick, same day service. Good communication with technician as well as office. Would highly recommend anyone.
-— Thomas B.
+> Quick, same day service. Good communication with technician as well as office. Would highly recommend anyone.
+> — Thomas B.
 
 ### When It Quits at Night or on a Weekend
 
-Furnaces tend to fail on the coldest night, and air conditioners on the hottest afternoon. We offer 24/7 emergency service, and a technician can be headed your way after one call to (812) 589-9338.
+Furnaces tend to fail on the coldest night, and air conditioners on the hottest afternoon. We offer 24/7 emergency service, so call (812) 589-9338 at any hour.
 
 Evansville summers are hot and humid, and winters often drop below freezing for stretches. A house with no cooling in July or no heat in January is not a problem to leave until Monday, and for older residents or small children it can become a safety problem quickly.
 
@@ -165,8 +165,8 @@ We're certified dealers for Ruud and American Standard, which generally means th
 
 Instead of pushing a single brand, we match the equipment to your home, your budget and what you want from it over the long run.
 
-Best product, best price, timeliness, best installation. I eventually quit taking estimates
-— Ron A.
+> Best product, best price, timeliness, best installation. I eventually quit taking estimates
+> — Ron A.
 
 ### What We Do
 
@@ -195,12 +195,12 @@ We're based in Evansville and serve southern Indiana, western Kentucky and parts
 
 A repair price depends on the failed part and the labor. A replacement price depends on the size of the home, the system you pick and the ductwork it connects to. A number given before anyone has looked at the system is a guess.
 
-Absolutely amazing\! Great business model that promotes taking care of the customer at a very fair price.
-— Jonathan F.
+> Absolutely amazing\! Great business model that promotes taking care of the customer at a very fair price.
+> — Jonathan F.
 
 ### Questions Before You Call
 
-**What if my system quits at night?** Call (812) 589-9338, any hour, and a technician can be headed your way.
+**What if my system quits at night?** Call (812) 589-9338, any hour, and tell us what the system is doing.
 
 **Do you work on brands other than Ruud and American Standard?** Yes. We repair all major brands and install equipment from most major manufacturers.
 
@@ -224,8 +224,8 @@ We repair furnaces and heat pumps from all major brands. You don't need to have 
 
 Many Evansville homes are heated by a gas furnace, and others by an electric furnace or a heat pump. The cause of a no-heat call is usually different for each, which is why the first job is finding out which parts are working.
 
-Jake did a great job. He took the time to show me what he was looking at and explain how the safety features worked. Would definitely recommend\!\!
-— Suzanne
+> Jake did a great job. He took the time to show me what he was looking at and explain how the safety features worked. Would definitely recommend\!\!
+> — Suzanne
 
 ### What Happens When You Call About Your Furnace
 
@@ -266,8 +266,8 @@ A cracked heat exchanger, the part that separates combustion gases from the air 
 
 A new furnace is usually sized to the home's heat loss, not to the old unit, and an oversized furnace tends to cycle on and off and wear itself out. Furnace replacement estimates are free. Financing is available, and a member of our team can walk you through the plans.
 
-They arrived that morning at around 8:00am like they promised and got busy and went to work. They had the old furnace and a/c unit disconnected and removed and the new furnace and a/c installed in less than 8 hours.
-— K K.
+> They arrived that morning at around 8:00am like they promised and got busy and went to work. They had the old furnace and a/c unit disconnected and removed and the new furnace and a/c installed in less than 8 hours.
+> — K K.
 
 ### Heat Pumps and Thermostats
 
@@ -275,8 +275,8 @@ A heat pump heats and cools with one system, which suits Evansville's winters, s
 
 We also install programmable and smart thermostats, zoning controls (which let different rooms hold different temperatures), and replacements for controls that have stopped responding.
 
-Clint serviced my heat pump and moved my thermostat. He was personable, efficient, and knowledgeable. Price was very reasonable.
-— Palladian C.
+> Clint serviced my heat pump and moved my thermostat. He was personable, efficient, and knowledgeable. Price was very reasonable.
+> — Palladian C.
 
 ### A Fall Tune-Up Before the Cold
 
@@ -304,8 +304,8 @@ When the air conditioner quits on a humid Evansville afternoon, the house gets u
 
 When the air conditioner isn't cooling properly, makes unusual noises or stops running, our technicians diagnose the problem and make the right fix. We offer 24/7 emergency availability, and the first step is always finding what failed, so you know whether it's a small repair or a bigger decision.
 
-Really professional and quick came out on Saturday in 100 degree heat and fixed my issues in moments
-— Rodney H.
+> Really professional and quick came out on Saturday in 100 degree heat and fixed my issues in moments
+> — Rodney H.
 
 ### AC Problems and What Usually Causes Them
 
@@ -321,8 +321,8 @@ Really professional and quick came out on Saturday in 100 degree heat and fixed 
 
 An air conditioner doesn't use up refrigerant, so a unit that is low has usually leaked. Adding more without finding the leak means it escapes again and you pay twice. Handling refrigerant takes certification and the right equipment, which is one reason to leave it to a technician.
 
-Update needed to system which was sending false codes. System low on freon. Fixed promptly\!
-— Jim H.
+> Update needed to system which was sending false codes. System low on freon. Fixed promptly\!
+> — Jim H.
 
 ### Water Around the Indoor Unit and the Humid Summer
 
@@ -344,20 +344,20 @@ When it's time for a new system, we help you choose a high-efficiency air condit
 
 Size matters more than most people expect. In a humid climate, a system that is too large cools the air quickly and shuts off before it removes much moisture, leaving the house cool and clammy. A replacement is usually sized to the home's cooling load.
 
-Their price was most reasonable by far. K\&w had the unit installed within the week.
-— Jesse P.
+> Their price was most reasonable by far. K\&w had the unit installed within the week.
+> — Jesse P.
 
 ### Ductless Mini-Splits for Rooms the Ducts Don't Reach
 
 A ductless mini-split cools, and in many models heats, a single room or zone without ductwork. It suits homes without ducts, additions, finished attics and garages, and rooms that never get as cool as the rest of the house. We install mini-splits and maintain them.
 
-We had Daiken ductless heat/AC system installed for our pole barn. It works great and the install was very tidy looking and professional\! Thanks for a great job at a very reasonable price\!
-— Susan Z.
+> We had Daiken ductless heat/AC system installed for our pole barn. It works great and the install was very tidy looking and professional\! Thanks for a great job at a very reasonable price\!
+> — Susan Z.
 
 Like a central system, a mini-split makes water as it cools, and its drain line can clog. Cleaning those lines is part of keeping one running.
 
-Robert the technician came to clean out my mini splits drain lines. He was quick, efficient and polite. Great job guys\!
-— Faith R.
+> Robert the technician came to clean out my mini splits drain lines. He was quick, efficient and polite. Great job guys\!
+> — Faith R.
 
 ### Indoor Air Quality
 
@@ -408,8 +408,8 @@ kwheatingandair@gmail.com
 
 Once you've told us what the system is doing, we set a time for the visit.
 
-The company called quickly after requesting maintenance, the dates they had available were soon and the technician (Clint) came out exactly when they said he'd be here.
-— Addison E.
+> The company called quickly after requesting maintenance, the dates they had available were soon and the technician (Clint) came out exactly when they said he'd be here.
+> — Addison E.
 
 ### Our Address
 

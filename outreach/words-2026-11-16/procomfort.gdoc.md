@@ -10,9 +10,9 @@ Buttons: View the Demo Site / See What Changed
 ### Why we built this site
 Some of your customers braced for a new system and heard about something smaller. Chip P.:
 
-John listened closely to my explanation of the problems I was having. After testing my thermostat, he decided to test the batteries. Lo and behold, weak batteries were causing various symptoms. A set of new batteries quickly caused everything to work perfectly.
+> John listened closely to my explanation of the problems I was having. After testing my thermostat, he decided to test the batteries. Lo and behold, weak batteries were causing various symptoms. A set of new batteries quickly caused everything to work perfectly.
 
-— Chip P.
+> — Chip P.
 
 Your site never says that. It says your staff is "qualified to explain every aspect of your system", which could be any company's line. So the demo opens with HVAC Company in Fort Wayne, IN, and gives furnace repair and AC repair a page each.
 ### The demo, page by page
@@ -109,7 +109,7 @@ Earns their trust
 
 Turns visitors into calls
 
-  - Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range. Most visitors are on a phone, and a slow page lets them down.
+  - Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
   - A call-and-book bar that stays on screen on phones
   - A contact form that blocks spam
 
@@ -140,9 +140,9 @@ Strip: Veteran owned and operated · Same-day service to most customers · BBB a
 ### When the bill you expected is smaller
 Some customers call expecting to hear they need a whole new system. A system that quits often traces to one small, inexpensive part, so we look there first. We offer same-day service to most customers, and customers describe the heat back on the day it went out. One customer described how it went:
 
-My service person(John) was great! He found that I didn't need as much as first thought and saved me a big chunk of money! Very nice guy who knew his stuff!!!
+> My service person(John) was great! He found that I didn't need as much as first thought and saved me a big chunk of money! Very nice guy who knew his stuff!!!
 
-— Scott H.
+> — Scott H.
 ### What we repair
 We repair and service gas and oil furnaces, boilers, heat pumps, air conditioners, ductless mini-splits, thermostats and fireplaces, and we work on many central heating and cooling brands. Two of these have their own pages: Furnace Repair and AC Repair, which also covers mobile manufactured homes.
 
@@ -155,9 +155,9 @@ A few of the less familiar ones, in plain terms:
 
 We also replace boilers, which are the hot-water systems that heat a home through radiators or baseboard pipes.
 
-Braeden and his crew were professional and pleasant. They replaced my boiler with minimal disruption to my household. Jenny was wonderful through this whole process and dealt with a problematic insurance company. Thank you Jenny. I highly recommend Pro Comfort Heating & Cooling
+> Braeden and his crew were professional and pleasant. They replaced my boiler with minimal disruption to my household. Jenny was wonderful through this whole process and dealt with a problematic insurance company. Thank you Jenny. I highly recommend Pro Comfort Heating & Cooling
 
-— Debra G.
+> — Debra G.
 ### Ducts, filters and the air in your house
 We install, repair and clean air ducts and vents, and we clean dryer vents. A duct system is sheet metal built to fit the house, so we also fabricate sheet metal for ductwork, including for other heating and air professionals, and we install ducts over 30 feet tall. We replace air filters and install air purifiers and humidity controls.
 
@@ -173,9 +173,9 @@ Our maintenance plan covers year-round inspection, cleaning and repair for heati
 ### Who is on the other end of the phone
 We are a veteran owned and operated company. One customer noticed:
 
-I will use this company again. Kasey identified the problem and fixed it. My old HVAC company merged with another one and who they merged with did not have great reviews. So I was looking for another one that was honest and dependable. I love the fact that they are a veteran ran company. And am grateful for their service.
+> I will use this company again. Kasey identified the problem and fixed it. My old HVAC company merged with another one and who they merged with did not have great reviews. So I was looking for another one that was honest and dependable. I love the fact that they are a veteran ran company. And am grateful for their service.
 
-— Amy S.
+> — Amy S.
 
 We are BBB accredited. BBB is the Better Business Bureau, a nonprofit that lists businesses that agree to its standards. Our technicians are certified, background-checked and drug-free, and we carry insurance. NATE stands for North American Technician Excellence, an industry certification for HVAC technicians, and our technicians are NATE-certified.
 
@@ -183,15 +183,15 @@ License numbers, if you want to look them up: Allen County BD31623, Indianapolis
 
 We offer a satisfaction guarantee, and we guarantee our workmanship on thermostat projects. Call us for what it covers.
 
-John has always been honest & upfront. He explains things to me at my level so I actually understand what’s happening. He’s such a kind person. Everyone at ProComfort has been great towards my family and me. It’s the only company I recommend.
+> John has always been honest & upfront. He explains things to me at my level so I actually understand what’s happening. He’s such a kind person. Everyone at ProComfort has been great towards my family and me. It’s the only company I recommend.
 
-— Laine V.
+> — Laine V.
 ### For businesses
 We service commercial heating and cooling systems, large or small, on a project or a routine schedule. For light commercial customers (small offices, storefronts, doctor's offices and retail shops), we provide maintenance, repairs and installation, and we send a light commercial contract after the estimate.
 
-John and Jenny are WONDERFUL! We will always use Pro Comfort of any our HVAC needs. They are always willing to go above and beyond reasonable service expectations and always land a 5 star service experience. We have used them personally and professionally and they have always promised and delivered.
+> John and Jenny are WONDERFUL! We will always use Pro Comfort of any our HVAC needs. They are always willing to go above and beyond reasonable service expectations and always land a 5 star service experience. We have used them personally and professionally and they have always promised and delivered.
 
-— Brittany F.
+> — Brittany F.
 ### Where we work
 We serve Anderson, Auburn, Columbia City, Decatur, Fort Wayne, Leo-Cedarville, Marion, Monroeville, Muncie and New Haven, and the areas around them.
 
@@ -204,17 +204,17 @@ We repair furnaces, boilers and heat pumps for Fort Wayne homes and the towns ar
 
 Buttons: Call 260-310-7721 / Schedule Service
 
-We have a 30 year-old furnace that was not working. They were able to locate a universal logic board and replace it the same day.. knowledgeablefriendly tech and was able to do the repairs same day. Cost was reasonable I would recommend them
+> We have a 30 year-old furnace that was not working. They were able to locate a universal logic board and replace it the same day.. knowledgeablefriendly tech and was able to do the repairs same day. Cost was reasonable I would recommend them
 
-— Jeff S.
+> — Jeff S.
 ### When the furnace stops in a Fort Wayne winter
 Furnaces tend to quit on the coldest nights, after running almost nonstop for days. A house can lose several degrees an hour once the heat stops, depending on the insulation and the wind. If the cold lasts, water pipes along outside walls can freeze and split, so a no-heat call in a cold snap is worth making early instead of waiting to see whether the furnace restarts. We offer same-day service to most customers.
 
 Tell us what the furnace is doing: whether it runs at all, whether it blows warm or cold, any noise, and any number or light flashing on the control board inside the cabinet. Those details often narrow the cause before anyone drives out.
 
-Great service. Very fast. My heat went out in 0 degree weather. Braenden came out and fixed it. Life saver. Fast, friendly, excellent communication, and even liked my dogs! Lol. Highly recommend Pro Comfort Heating & Cooling.
+> Great service. Very fast. My heat went out in 0 degree weather. Braenden came out and fixed it. Life saver. Fast, friendly, excellent communication, and even liked my dogs! Lol. Highly recommend Pro Comfort Heating & Cooling.
 
-— Billie J.
+> — Billie J.
 ### How a repair visit goes
 We start with what you have, because furnaces, boilers and heat pumps each fail in their own ways. Then we pin down the problem: no heat at all, weak heat, a noise or a leak. We check the thermostat's setting and whether it works, then the air filter, since a clogged one restricts airflow and can cause trouble well beyond the filter. Last, we look the system over for loose or disconnected wires, leaking fluids and damaged parts.
 
@@ -226,9 +226,9 @@ If your furnace is a high-efficiency model, it probably vents through white plas
 
 If the furnace starts and then stops again, call us. Resetting it over and over rarely fixes the cause.
 
-The technician who fixed my issue explained the cause and told me how to best avoid a recurrence. We got a same day visit on a Friday, which kept us from having to freeze for a weekend. 100% satisfied.
+> The technician who fixed my issue explained the cause and told me how to best avoid a recurrence. We got a same day visit on a Friday, which kept us from having to freeze for a weekend. 100% satisfied.
 
-— Kent S.
+> — Kent S.
 ### Gas smell and carbon monoxide
 If you smell gas, don't touch a switch, lights included. Go outside, then call your gas utility or 911 from there.
 
@@ -244,15 +244,15 @@ On gas furnaces, a handful of parts cause most no-heat calls:
 
 Oil furnaces often stop for a different reason, a clogged nozzle or fuel filter, which is why they usually need cleaning every year.
 
-Had code 14 and 34 on my furnace. Their technician John not only arrived on time. He was very professional friendly. Had the furnace up and running and not even an hour's time their prices are very decent. Would definitely recommend them I will not use anybody else for my HVAC needs for now on. The office lady that called for me to pay my bill. I cannot remember her name but she was also very friendly and professional all around a great company to deal with
+> Had code 14 and 34 on my furnace. Their technician John not only arrived on time. He was very professional friendly. Had the furnace up and running and not even an hour's time their prices are very decent. Would definitely recommend them I will not use anybody else for my HVAC needs for now on. The office lady that called for me to pay my bill. I cannot remember her name but she was also very friendly and professional all around a great company to deal with
 
-— Nichole W.
+> — Nichole W.
 ### When the part has to be ordered
 Older furnaces sometimes need a part that isn't on the truck. In that case the technician can often get the heat running again for the time being while the part is ordered, which matters most when the forecast is below zero. Whether that works depends on which part failed.
 
-Our furnace went out during some of the coldest weather so far this winter and John came out and got my furnace fixed but found a blower motor was going bad. John ordered me a new one and I got it installed the next week. John did a FANTASTIC JOB for my family. Thank you John
+> Our furnace went out during some of the coldest weather so far this winter and John came out and got my furnace fixed but found a blower motor was going bad. John ordered me a new one and I got it installed the next week. John did a FANTASTIC JOB for my family. Thank you John
 
-— Gregory M.
+> — Gregory M.
 ### How old is too old to repair a furnace?
 Age alone doesn't decide it. A furnace commonly lasts 15 to 20 years, and an old one can still be worth repairing when what failed is an igniter, a motor or a control board. A rule of thumb is that when a repair costs about half the price of a new furnace and the furnace is already near the end of its life, replacing it makes more sense. Repeated repairs in one season point the same way.
 
@@ -264,17 +264,17 @@ A hot-water boiler fails differently. Low water pressure on its gauge, air trapp
 ### Humidifiers and the equipment around the furnace
 Many furnaces have a whole-house humidifier attached, which helps with the dry air of a heated house in winter. A humidifier that has stopped working is easy to miss, because the furnace itself still runs.
 
-… Casey also noticed the humidifier attached to the furnace was not functioning due to bad insulation from a previous company, she came the very next day after getting the needed parts to fix the humidifier. …
+> … Casey also noticed the humidifier attached to the furnace was not functioning due to bad insulation from a previous company, she came the very next day after getting the needed parts to fix the humidifier. …
 
-— Farah C.
+> — Farah C.
 
 We also repair, replace and maintain thermostats, and we handle air filters, so the parts that can fool a furnace, such as a thermostat that has lost its calibration, get looked at too.
 ### When a warranty is involved
 Home warranty companies often have their own rules about who can do the work and what they will approve. If you have a home warranty, have the plan paperwork handy when you call.
 
-I had a great experience with Pro Comfort and they worked with my warranty company and they had my furnace up and running the same day. We definitely will recommend your company and come back, if need anything again. …
+> I had a great experience with Pro Comfort and they worked with my warranty company and they had my furnace up and running the same day. We definitely will recommend your company and come back, if need anything again. …
 
-— Becky H.
+> — Becky H.
 ### A fall tune-up
 Fall, before the first hard freeze, is the time to have a furnace checked while it is still easy to book. A tune-up usually includes cleaning the burners and the flame sensor, testing the safety switches, checking the venting and testing for carbon monoxide. We do this as part of heating maintenance.
 
@@ -287,9 +287,9 @@ We repair central air conditioners, heat pumps in cooling mode and ductless mini
 
 Buttons: Call 260-310-7721 / Schedule Service
 
-We needed more Freon, they provide a replacement for r22. Casey did a great job. She took time to answer my questions and gave extra insight.
+> We needed more Freon, they provide a replacement for r22. Casey did a great job. She took time to answer my questions and gave extra insight.
 
-— jon S.
+> — jon S.
 ### When the air conditioner stops cooling in a Fort Wayne summer
 Indiana summers bring humid heat, and an air conditioner is also pulling moisture out of the air. When it stops, a house often turns clammy before it turns hot, and a long July run of 90-degree days is when a weak part usually gives out. Call and tell us what the system is doing: whether the outdoor unit is running, whether the air from the vents is cool or warm, and whether anything is dripping or frozen.
 ### Before you call
@@ -324,15 +324,15 @@ We service mobile manufactured homes. These homes often use a combined electric 
 ### Repair or replace?
 An air conditioner often lasts 12 to 15 years. A capacitor, contactor or fan motor is usually worth repairing at any age. A failed compressor or a leaking coil on an older unit is harder to justify, and R-22 makes it harder still. Many technicians suggest that a repair above half the price of a new system, on a unit past its midlife, leans toward replacing. A new outdoor unit usually has to match the indoor coil inside the house, so replacing only the outside half is rarely the cheaper answer.
 
-If I could give more stars I would. John and his team were extremely professional and a pleasure to work with. Not only did John give me the best estimate out of the 11 estimates I had done he also helped me get the right financing. He offered both an amazing cash price and an amazing financing price for a complete replacement of my furnace and central AC unit. He and his team also got my replacements scheduled as quickly as possible knowing the temps were going to be in the high 90s. I highly recommend him and his crew to everyone looking for heating and cooling work to get done.
+> If I could give more stars I would. John and his team were extremely professional and a pleasure to work with. Not only did John give me the best estimate out of the 11 estimates I had done he also helped me get the right financing. He offered both an amazing cash price and an amazing financing price for a complete replacement of my furnace and central AC unit. He and his team also got my replacements scheduled as quickly as possible knowing the temps were going to be in the high 90s. I highly recommend him and his crew to everyone looking for heating and cooling work to get done.
 
-— Crystal S.
+> — Crystal S.
 ### A spring tune-up
 Spring, before the first week of real heat, is the time for an air conditioner check. Our air conditioning maintenance includes calibrating the thermostat, clearing debris and dirt, tightening electrical connections, lubricating the parts that need it, cleaning the coils and replacing the filter, and we check the refrigerant level. It costs less than an emergency repair on the hottest weekend of the year, and loose connections and dirty coils are two of the things that most often shorten a unit's life.
 
-Casey performed an annual maintenance diagnosis on my heater and air conditioning system. What a knowledgeable person she is. The work was very thorough and efficient, and she answered all my questions. I highly recommend Casey.
+> Casey performed an annual maintenance diagnosis on my heater and air conditioning system. What a knowledgeable person she is. The work was very thorough and efficient, and she answered all my questions. I highly recommend Casey.
 
-— David C.
+> — David C.
 ## Contact — Contact Pro Comfort Heating & Cooling in Fort Wayne, IN
 # Contact Pro Comfort Heating & Cooling in Fort Wayne, IN
 Call 260-310-7721 or send the form. We're at 3020 Congressional Parkway, Suite G, Fort Wayne, IN 46808.
@@ -348,9 +348,9 @@ The form asks whether you're a new customer and what you need: a new system quot
   - Any number or light flashing on a furnace's control board, or any ice on an air conditioner.
   - For a new system, the size of the house and whether it has ducts.
 
-The office staff was very professional and nice! Also, Casey, the technician that came out was very nice very professional and quick I would 100% recommend them
+> The office staff was very professional and nice! Also, Casey, the technician that came out was very nice very professional and quick I would 100% recommend them
 
-— Tayler C.
+> — Tayler C.
 ### After you send it
 A form sent in the evening or on a weekend will most likely wait until the office opens on a weekday morning, so if the heat or air is out and it is urgent, call instead. Have your address and the best number to reach you on hand, and a recent service report or warranty paperwork if you have one. If you smell gas or a carbon monoxide alarm sounds, leave the house and call 911 before you call us.
 ### Where we work

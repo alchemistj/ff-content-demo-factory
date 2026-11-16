@@ -13,9 +13,9 @@ Proof line: "In the first month after we rebuilt SRA Roofing's website and Googl
 Why we built this site
 Your reviews already make your case. Mike W. put it this way:
 
-Amazing! Had a small plumbing issue and they fixed it same day, actually within two hours of calling! The tech was knowledgeable and efficient too.
+> Amazing! Had a small plumbing issue and they fixed it same day, actually within two hours of calling! The tech was knowledgeable and efficient too.
 
-— Mike W.
+> — Mike W.
 
 Your homepage says none of it. So the demo opens with what you do and where, with a page each for heating and AC and water heaters.
 The demo, page by page
@@ -106,7 +106,7 @@ A trust bar that shows what makes you different
 
 Turns visitors into calls
 
-Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range. Most visitors are on a phone, and a slow page lets them down.
+Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
 A call-and-book bar that stays on screen on phones
 A contact form that blocks spam
 
@@ -155,9 +155,9 @@ Before anything gets dug, we locate the line and run a camera through it to find
 
 One way to tell where the trouble is: if only one sink is slow, the clog is usually in that sink's own drain. If several fixtures back up together, the problem is often in the main line, and that's the time to call.
 
-Austin, of Action Plumbing, fixed an obstructed basement floor drain for me today. He was efficient and skilled. Of equal importance, Austin explained what he was doing and answered my numerous questions. He also gave me what I believe to be good advice regarding additional service for my nearly 70 year old sewer stack. Without reservation, I would recommend engaging Austin if you have similar needs.
+> Austin, of Action Plumbing, fixed an obstructed basement floor drain for me today. He was efficient and skilled. Of equal importance, Austin explained what he was doing and answered my numerous questions. He also gave me what I believe to be good advice regarding additional service for my nearly 70 year old sewer stack. Without reservation, I would recommend engaging Austin if you have similar needs.
 
-— Teri T.
+> — Teri T.
 Our Credentials, in Plain Words
 NATE-certified technicians. NATE is a nonprofit certification group for heating and cooling technicians. Ours are NATE-certified.
 BBB accredited since 1985, with an A+ rating. The Better Business Bureau grades a business on how it handles customer complaints.
@@ -172,26 +172,26 @@ Heating, AC and plumbing emergencies don't wait for office hours, so we offer 24
 
 Before a plumber arrives, you get a text with a short description of who is coming, including how many years they've been in the field.
 Questions Before You Call
-How fast can you get here? Customers describe same-day visits, some within a few hours.
+How fast can you get here? Customers describe same-day visits.
 
-Same day service. Austin explained everything well.
+> Same day service. Austin explained everything well.
 
-— Rich E.
+> — Rich E.
 
 How do I pay? We send an invoice by mail and email. You can pay online, call in with a card, send a check, or pay on site while we're still at your home. A 3% processing fee applies to credit card payments over $5,000.
 
 When We Get It Wrong
 Everyone makes a mistake sometimes. Here is how one customer saw the way Action handled one.
 
-Plumber made a mistake, but Action was quick to acknowledge it and did what I asked to resolve the issue.  We all make mistakes, but not all admit it.
+> Plumber made a mistake, but Action was quick to acknowledge it and did what I asked to resolve the issue.  We all make mistakes, but not all admit it.
 
-— Google review
+> — Google review
 Family-Owned, Started in a Garage
 Our founder, Jim, started ACTION from his garage, with seven children at home. The company is still a family business.
 
-Best in Lincoln! A large service company that still holds customers as important, and is also still family owned. Great service guys and even better prices. Fair and reliable.
+> Best in Lincoln! A large service company that still holds customers as important, and is also still family owned. Great service guys and even better prices. Fair and reliable.
 
-— Ken B.
+> — Ken B.
 Commercial Plumbing, HVAC, Electrical and Utilities
 Businesses get the same crews. We do commercial plumbing, HVAC, electrical and underground utility work, and we've completed 16 named projects in Lincoln. A few of them:
 
@@ -217,9 +217,9 @@ We carry Carrier equipment. Our shop can fabricate parts on site to fit a job, a
 
 Gage performed seasonal inspection of my heat pump and gas furnace. I’m ready for more summer now. Will see you in the fall for next inspection. Thanks, Gage.
 
-I’ve been calling Action HVAC since 1985!
+> I’ve been calling Action HVAC since 1985!
 
-— Steve F.
+> — Steve F.
 What a Visit Usually Looks Like
 You tell us what the system is doing. The technician usually looks for the cause before anything is replaced. Customers have also had the technician show them what failed. Then you choose: repair it, or price a replacement.
 Furnace Problems and What Usually Causes Them
@@ -233,9 +233,9 @@ A loud bang, a rumble or a squeal. A bang can come from delayed ignition, and a 
 
 A cracked heat exchanger. This is the metal part that keeps burning gases apart from the air you breathe. A crack is a safety problem, not a small repair, and the technician should tell you plainly.
 
-Ismael was my service tech and arrived right on time. He took the time to listen to my heating issue and once he found the problem,  showed me what it was and promptly fixed it. He also explained the concept of the heat pump, thermostat and humidifier in a way that I could understand how it works. He also suggested what type of filter to use and made sure that my lights were turned off downstairs after completing the service. Give this guy a raise! I would also like to thank the office staff for getting me serviced the next day. My heat went down on one of the coldest Thursdays in December. I will highly recommend this company to others!
+> Ismael was my service tech and arrived right on time. He took the time to listen to my heating issue and once he found the problem,  showed me what it was and promptly fixed it. He also explained the concept of the heat pump, thermostat and humidifier in a way that I could understand how it works. He also suggested what type of filter to use and made sure that my lights were turned off downstairs after completing the service. Give this guy a raise! I would also like to thank the office staff for getting me serviced the next day. My heat went down on one of the coldest Thursdays in December. I will highly recommend this company to others!
 
-— April B.
+> — April B.
 Gas Smell or Carbon Monoxide Alarm: What to Do First
 If you smell gas, leave the building right away and take everyone with you, pets included. Don't flip light switches or use your phone inside. From outside, call 911 and your gas utility.
 
@@ -251,9 +251,9 @@ Some rooms cool and others don't, or it turns on and off all day. Ducts can be t
 
 Fast service found issue with condenser unit a bad capacitor replaced with new one and started system back up.  On a hot humid "corn sweat"  day
 
-Kiddos  Action!!!
+> Kiddos  Action!!!
 
-— Corey C.
+> — Corey C.
 When It Quits After Hours
 A furnace that quits on a cold night or an air conditioner that quits in a heat wave can't wait for morning. We offer 24-hour heating and AC service. Call (402) 423-6960 and tell us what the system is doing and who is at home.
 Repair or Replace?
@@ -265,9 +265,9 @@ For new equipment we offer a free estimate or a trusted second opinion. The free
 
 Our guarantee: we clean up after ourselves, and we provide a standard two-year labor warranty on any complete system replacement.
 
-Excellent Service and the owners are stand up guys. We had to replace our heater and AC unit due to age and Action gave us the best quote of the 3 companies we called and installed it all fairly quickly. When a pretty big issue came up, one of the co-owners took action and solved it quickly, professionally and completely to our benefit, even at a small detriment to themselves. Would strongly recommend them for HVAC needs.
+> Excellent Service and the owners are stand up guys. We had to replace our heater and AC unit due to age and Action gave us the best quote of the 3 companies we called and installed it all fairly quickly. When a pretty big issue came up, one of the co-owners took action and solved it quickly, professionally and completely to our benefit, even at a small detriment to themselves. Would strongly recommend them for HVAC needs.
 
-— Jake R.
+> — Jake R.
 Yearly Check-Ups
 A check each year finds a weak part before it fails on the coldest night. Our Home Protection Plans start with heating and cooling.
 
@@ -294,9 +294,9 @@ Buttons: Call (402) 423-6960 / Request Service
 Repair, Replacement and New Installation
 We repair water heaters, replace them and install new ones, tank and tankless, and we do routine maintenance. A repair is often a pilot light problem, a faulty heating element or a leak. If the unit is near the end of its life, replacing it on your schedule beats waiting for it to fail and flood the basement.
 
-Replaced my old leaking water heater with a new efficient one. Great, quick service
+> Replaced my old leaking water heater with a new efficient one. Great, quick service
 
-— Randy E.
+> — Randy E.
 Repair or Replace a Water Heater?
 A tank water heater usually lasts somewhere around a decade or a bit more. A part such as a heating element or a gas control can often be repaired, and that's the smaller bill. A leak from the tank itself usually means replacement, because the tank can't be patched.
 
@@ -312,15 +312,15 @@ The right choice depends on how much hot water your household uses, how much roo
 Warranty Service on AO Smith, State and Bradford White
 A water heater that fails while it's under the maker's warranty is a different job from one that fails outside it. The paperwork, the parts and who pays all change. As Lincoln's authorized dealer and warranty repair center for these three makers, we do their warranty repairs.
 
-I bought an A O Smith Proline water heater from Action Plumbing and had them install it. This was my second time giving business to Action Plumbing. They are trustworthy professionals and I would do business with them again.
+> I bought an A O Smith Proline water heater from Action Plumbing and had them install it. This was my second time giving business to Action Plumbing. They are trustworthy professionals and I would do business with them again.
 
-— Google review
+> — Google review
 When It Quits After Hours
 No hot water, or a leaking water heater, doesn't wait until Monday. Our 24-hour plumbing service covers both. Call (402) 423-6960.
 
-Once again, Action was incredibly responsive. I left a message after hours about my broken hot water heater and Ken called me at 7:00 the next morning to tell me that Zack would arrive at 800 am to install my new water heater. I had hot water once again by noon. Thanks a million, Zack and Action!!
+> Once again, Action was incredibly responsive. I left a message after hours about my broken hot water heater and Ken called me at 7:00 the next morning to tell me that Zack would arrive at 800 am to install my new water heater. I had hot water once again by noon. Thanks a million, Zack and Action!!
 
-— Mark C.
+> — Mark C.
 A Leaking Water Heater: What to Do First
 Turn off the cold water supply to the heater, which is usually a valve on the pipe above it. For an electric unit, switch off its breaker. For a gas unit, don't touch the gas parts, and leave the building if you smell gas. If you're not sure where the main water shut-off is, tell us when you call.
 Rusty Water, Noise and Slow Hot Water
@@ -367,9 +367,9 @@ You can visit for an in-person talk with someone on our team.
 Where We Work
 Lincoln and the surrounding area, and now David City and Columbus too, for homes and for businesses.
 
-I’ve been using action plumbing and heating since I purchased my first house in 1997.   Over the years there have been many different reasons to have them come out and service our equipment.   Every single time they are professional from the time they pick up the phone till the service person leaves the house     The thing that sets them apart from other service people is that they are always kind and respectful, and they never make me feel stupid for not exactly understanding the process    And I’m not kidding they’re always smiling   :).
+> I’ve been using action plumbing and heating since I purchased my first house in 1997.   Over the years there have been many different reasons to have them come out and service our equipment.   Every single time they are professional from the time they pick up the phone till the service person leaves the house     The thing that sets them apart from other service people is that they are always kind and respectful, and they never make me feel stupid for not exactly understanding the process    And I’m not kidding they’re always smiling   :).
 
-— Michele K.
+> — Michele K.
 Call ACTION
 Call (402) 423-6960 and we'll set up your visit.
 Notes (not page copy)

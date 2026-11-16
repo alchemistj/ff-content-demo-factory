@@ -32,7 +32,7 @@ So the demo opens with Metal Roofing Contractor in Fort Wayne, IN, and gives sta
 **Current site problem**
 - The headline never says Fort Wayne.
 - "Travis still measures roofs" is on the About page, not here.
-- It says "350 reviews, 4.90." Google shows a different count and rating.
+- The review count and rating on your homepage don't match what Google shows.
 
 **What the demo fixes**
 - A headline that says Metal Roofing Contractor in Fort Wayne, IN.
