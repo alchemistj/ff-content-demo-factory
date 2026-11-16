@@ -112,6 +112,18 @@ tear-off, decking, flashing, ACV, RTUs, TPO, EPDM, coping, soffit, fascia: a pla
 - level: warn
 - regex: \b(tear-?off|decking|flashing|ACV|RTUs?|TPO|EPDM|coping|soft metals?|soffit|fascia)\b
 
+### R17: The closer "Want a website like this for your business?"
+Josh: delete it; "What we'd confirm" is the stronger close. End with "Book a no-obligation call and we'll walk you through this demo." (CT; CL 103)
+- pages: strategy
+- where: all
+- regex: want a website like this
+
+### R18: "Trust bar" said to the owner
+Insider web word. Josh: "they don't know what any of this stuff means." Say what it does: "a bar near the top of every page that shows what makes you different". (CT)
+- pages: strategy
+- where: body
+- regex: \btrust bar\b
+
 ### Judgment only (taste check and DOC-CHECK, no regex)
 - Vague "What the demo fixes" / "Current site problem" bullets; fixes that don't move the needle (CT).
 - A vague keyword line where a search-volume number exists (CT).

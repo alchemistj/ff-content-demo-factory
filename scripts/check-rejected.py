@@ -95,7 +95,7 @@ def main(paths):
             for r in rules:
                 if not applies(r, k):
                     continue
-                where = {"hero": hero, "heading": heads, "body": body}.get(r.get("where", "body"), body)
+                where = {"hero": hero, "heading": heads, "body": body, "all": heads + body}.get(r.get("where", "body"), body)
                 if "regex" in r:
                     for s in where:
                         m = re.search(r["regex"], s, re.I)

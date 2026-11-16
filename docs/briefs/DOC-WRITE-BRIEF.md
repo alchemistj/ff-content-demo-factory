@@ -73,6 +73,8 @@ Write five pages:
   - "What the demo fixes" bullets name the actual items (never "credentials in plain words"), or name the exact gap between what the reviews say and what the page says.
   - Length: about 1,000 words is a soft cap (Pro Comfort ~1,074 with "Why it matters" lines; ComfortTechs also runs over). Spirit over letter.
   - Put the call to action after "What we'd confirm with you", not before.
+  - **The closer:** no "Want a website like this for your business?" heading (Josh rejected it, REJECTED.md R17). After "What we'd confirm with you", end with the sentence "Book a no-obligation call and we'll walk you through this demo." and then `**[Book a no-obligation call]** · Text us: (417) 373-2773`.
+  - **Never say "trust bar"** to the owner. The full-build list says "A bar near the top of every page that shows what makes you different".
   - No generic lead-in. Bridge from the reviews to the page plan.
   - Check each page's own problems; keyword stuffing differs from page to page.
   - Every card has three verified problems and three matching fixes the demo really makes.
