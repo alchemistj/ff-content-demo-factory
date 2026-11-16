@@ -399,6 +399,18 @@
       "pulledAt": "2026-11-09T12:51:51.325Z"
     },
     {
+      "slug": "fortwayne-plumbing-borchelt",
+      "name": null,
+      "placeId": null,
+      "status": "invalid_request",
+      "counts": {
+        "listingTotal": null,
+        "withText": 0,
+        "ratingOnly": 0
+      },
+      "pulledAt": "2026-11-16T03:59:05.142Z"
+    },
+    {
       "slug": "greenway-exteriors",
       "name": "Greenway Exteriors",
       "placeId": "ChIJAQC8MrzhuocR5qvlgPmfobc",
