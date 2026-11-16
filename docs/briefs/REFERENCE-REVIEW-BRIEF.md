@@ -50,6 +50,16 @@ Edit nothing, send nothing, create no sessions, run no git.
 - The audience is consistent within each section (home vs property).
 - No service is covered twice on one page.
 - The footer at 390px is evenly spaced, with no empty bands.
+- **Strategy page checks (checklist items 77 to 85, Josh CT review 11/15):**
+  - Strategy page is in Josh's voice; business pages in the owner's voice.
+  - Proof block (SRA Maps plus stats) is unchanged template content.
+  - Jargon explained in plain words at first use (e.g. 404).
+  - No separate "SEO title" and "H1"; one plain homepage point, tab title called "homepage browser tab title" if mentioned.
+  - Keyword stuffing named as outdated, ignored by Google, and the fix removes it.
+  - A line bridges the reviews to the page plan.
+  - Every card: three problems, three matching fixes, each verified on its page and actually fixed by the demo.
+  - Only standard full-build lines; "the first five pages", never a full site.
+  - Every "Why it matters" line is true and supported.
 
 ## Also check
 - **Scope:** home, 2 service pages, contact and strategy. If either service page can't stand up on real material, say "TOO THIN" rather than "fix".

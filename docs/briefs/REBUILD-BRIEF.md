@@ -64,6 +64,18 @@ Work only in `/home/user/ff-content-demo-factory/prospects/<folder>/`. Write `us
 - `lead` (showScores false) or `offer`, from usp.md.
 - Don't claim anything about the business's site or its competitors that audit.md doesn't show.
 
+## Strategy page (Josh)
+From Josh's ComfortTechs review, 11/15 (checklist items 77 to 85).
+- The strategy page is in Josh's voice; business pages stay in the owner's voice. Voice guide: fluid-frame-marketing JOSH-VOICE.md and the ff2 guides (JOSH-VOICE.md is not on main yet).
+- The proof block (SRA Maps before/after plus stats) is fixed template content. Never rewrite it.
+- Explain jargon in plain words at first use. For a 404: the website links to pages that no longer exist, a bad signal to Google and a terrible one for a customer who clicks.
+- Never split "SEO title" and "H1" for an owner. One plain point: the homepage tells Google your name, not what you do or where. If the tab title comes up, call it the "homepage browser tab title"; it should target the main search phrase.
+- Keyword stuffing is an outdated practice Google ignores at best. Say so, and say plainly that the fix removes it.
+- Bridge from the reviews to the page plan, e.g. "...which is what Google needs from your homepage. More on that below."
+- Every card has three problems and three matching fixes. Verify each problem on the page it is listed under; the demo must actually fix what the card claims.
+- Only the standard full-build lines. The demo is "the first five pages". Fixed line: "We built {name} the first five pages of that kind of website. More on that below." (template change pending on the next build PR). Never claim a full site.
+- "Why it matters" lines must be true. No unsupported claims such as "people call the first company they reach".
+
 ## outreach.md
 Use the template in `outreach/form-message-template.md`, with these changes:
 - **the demo link is plain, with no `?utm_source`** (Josh's rule): `https://<astro-slug>.websitepreview.fluidframemarketing.com/`;
