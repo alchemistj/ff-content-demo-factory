@@ -1,0 +1,26 @@
+{
+  "kind": "google-prospect-scout-receipt",
+  "status": "ok",
+  "slug": "lincoln-electrical",
+  "request": {
+    "query": "electrician",
+    "location": "Lincoln, NE",
+    "maxPlaces": 40
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "dKMc8rAsO3zrv0f6F",
+    "datasetId": "e9ALEbigdhrabVQ4U",
+    "attempts": 1,
+    "usageUsd": 0.1202
+  },
+  "counts": {
+    "returned": 40,
+    "advertisements": 0
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T03:55:34.202Z",
+  "finishedAt": "2026-11-16T03:55:55.695Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43800967647"
+}
