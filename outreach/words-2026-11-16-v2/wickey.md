@@ -252,7 +252,7 @@ Veteran-owned and family-run, Wickey Plumbing sends Josh or Zach Wickey to your 
 
 We clear clogged toilets with a toilet auger, clogged kitchen sinks, garage floor drains and backed-up sewer lines, and we get to the root of the problem instead of treating the symptom. When a kitchen sink drain has failed, we re-plumb the drains under the sink, and when a main sewer line has failed from age, shifting soil or tree roots, we repair or replace it.
 
-One Fort Wayne-area customer's garage drain had been clogged for 30 years. Josh cleared it.
+Josh clears drains himself, garage floor drains included.
 
 > He got that drain taken care of and then went on to unclog a drain in the middle of the garage that had been clogged for the 30 years that I’ve lived here. Yay!
 >
@@ -368,5 +368,7 @@ Counts include headings, bullets and the H1, and leave out button lines, the Hom
 **Review use.** 9 quotes plus Kathy D. on Strategy, each once: Tina S., Michael C., Robert C. (Home); Bryan R., Aaron V., Glenn A. (Water Heater); greg F., Debra H., Craig V. (Drain); Kirsten G., Kim W. (Contact). None back to back; copy sits between all. No page has three sections in a row ending in a quote. Quotes were checked against reviews.json.
 
 **Facts to verify.** Indiana license and insurance; Josh's veteran status; membership price and terms; what the annual inspection covers; accrediting body behind the badge; whether a plumber answers at every hour; who goes out on most calls, Zach or Josh; whether the New Haven slab and camera job notes can be shown as examples; the warranty terms behind "satisfaction guarantee and warranty".
+
+**Drain page round 2.** Plural claims are backed by several notes: toilet auger clears (four job notes), kitchen sink drains re-plumbed (a review plus three notes), floor opened to reach a pipe (New Haven note and greg F.). Cut as non-results or anecdotes: camera job that could not reach the problem, toy in a toilet, the machine swap. The water softener drain material is now only Debra H.'s quote. Process steps come from the site's drain paragraph (explains in plain language, upfront pricing before we start) and reviews (visit timing, answers questions).
 
 **Speed claim.** "Same day or next morning" is stated plainly on Home (hero and emergency section) and the Water Heater page because many reviews show it (same day, next morning, day after, within an hour and a half).

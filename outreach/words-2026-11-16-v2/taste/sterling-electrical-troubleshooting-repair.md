@@ -2,57 +2,47 @@
 
 # Electrical Troubleshooting & Repair in Fort Wayne, IN — Sterling Electric
 
-Our licensed team has 17 years in the trade, and we find the real problem before we recommend a fix. A loose wire gets a loose-wire repair. A failed panel gets a new panel. We tell you which, and we don't sell you extras you didn't need.
+Sterling Electric's licensed team has 17 years in the trade and one rule: find the real problem first, then fix that. Call about power out, a sparking outlet or a fault nobody can pin down, and we're out the same day or within 24 hours, with a clear, upfront quote.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate
 
-### Find it, fix it, and keep you informed
+### What we've found and fixed in Fort Wayne homes
 
-Residential and commercial, we trace the fault, explain what we found, and repair it. We keep you informed from the first call to the final walkthrough. We work to current electrical codes, and we keep the job site tidy, wiring included.
-
-> They took time to diagnose the problem fix it and not upsell extras we didn't need.
->
-> — Renee S.
-
-Tell us what's happening and we'll give you a clear, upfront quote. **Call (260) 404-1802.**
-
-### What we repair
-
-- Power out in a room, a bathroom or part of the house
-- Sparking outlets
-- Loose or damaged wiring, including repairs after storm damage
-- Switch, outlet and light fixture replacements
-- Old wiring removed
-- Panels replaced and upgraded, and breakers labeled so you know what each one controls
-
-> Repairs included removing knob and tub wiring, replacing light fixtures, wiring repairs after a storm took out two rooms of a house, switch and outlet replacements, etc.
->
-> — Jackie M.
-
-### A fast call-out
-
-A dead room or a sparking outlet can't wait, so a Sterling electrician comes out the same day or within 24 hours of your call.
+We've restored power to bathrooms and to rooms knocked out by a storm. We've tracked down sparking outlets and faults that took real tracing. We've replaced switches, outlets and light fixtures, taken out old wiring and repaired wiring behind the walls.
 
 > I was in a pinch and needed quick service. Sterling came out same day and restored power to 3 rooms in my home!
 >
 > — Charlene R.
 
-Call (260) 404-1802 and tell us what you see.
+Power out somewhere in your house? **Call (260) 404-1802.**
 
-### Told you need a new panel? Get ours first
+### How a visit goes
 
-We replace and upgrade panels, and we say so when yours is the problem. When it isn't, we fix what is.
+1. You call and tell us what is happening. We schedule the electrician, and he arrives on time.
+2. We find the cause and answer your questions about it before we fix anything.
+3. You get a clear, upfront quote.
+4. We make the repair, keep you informed to the final walkthrough, and clean up after ourselves.
+
+> They took time to diagnose the problem fix it and not upsell extras we didn't need.
+>
+> — Renee S.
+
+### Quoted a big job? Get our diagnosis first
+
+Three customers came to us with a quote for a new panel, a new breaker box or a bigger job. Each found out the problem was smaller, or that the job wasn't needed.
 
 > Sterling sent an electrician with no middle man. Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes …
 >
 > — James A.
 
-We replaced a customer's whole panel, too.
+Panel upgrades and replacements are on our list too. When the panel is the fault, we replace it and label every breaker.
 
 > I needed my whole electric panel replaced and they were very easy to work with …
 >
 > — Ross N.
 
-**Call (260) 404-1802 or ask for an estimate.** One electrician, a clear answer and a clear, upfront quote.
+### Get a clear, upfront quote
+
+Residential or commercial, tell us what you see and we'll give you the answer and the price before the work starts. **Call (260) 404-1802** or ask for an estimate.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate

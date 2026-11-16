@@ -211,58 +211,48 @@ Call (260) 404-1802 and tell us what is happening, or email <sterlingwired@gmail
 
 # Electrical Troubleshooting & Repair in Fort Wayne, IN — Sterling Electric
 
-Our licensed team has 17 years in the trade, and we find the real problem before we recommend a fix. A loose wire gets a loose-wire repair. A failed panel gets a new panel. We tell you which, and we don't sell you extras you didn't need.
+Sterling Electric's licensed team has 17 years in the trade and one rule: find the real problem first, then fix that. Call about power out, a sparking outlet or a fault nobody can pin down, and we're out the same day or within 24 hours, with a clear, upfront quote.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate
 
-### Find it, fix it, and keep you informed
+### What we've found and fixed in Fort Wayne homes
 
-Residential and commercial, we trace the fault, explain what we found, and repair it. We keep you informed from the first call to the final walkthrough. We work to current electrical codes, and we keep the job site tidy, wiring included.
-
-> They took time to diagnose the problem fix it and not upsell extras we didn't need.
->
-> — Renee S.
-
-Tell us what's happening and we'll give you a clear, upfront quote. **Call (260) 404-1802.**
-
-### What we repair
-
-- Power out in a room, a bathroom or part of the house
-- Sparking outlets
-- Loose or damaged wiring, including repairs after storm damage
-- Switch, outlet and light fixture replacements
-- Old wiring removed
-- Panels replaced and upgraded, and breakers labeled so you know what each one controls
-
-> Repairs included removing knob and tub wiring, replacing light fixtures, wiring repairs after a storm took out two rooms of a house, switch and outlet replacements, etc.
->
-> — Jackie M.
-
-### A fast call-out
-
-A dead room or a sparking outlet can't wait, so a Sterling electrician comes out the same day or within 24 hours of your call.
+We've restored power to bathrooms and to rooms knocked out by a storm. We've tracked down sparking outlets and faults that took real tracing. We've replaced switches, outlets and light fixtures, taken out old wiring and repaired wiring behind the walls.
 
 > I was in a pinch and needed quick service. Sterling came out same day and restored power to 3 rooms in my home!
 >
 > — Charlene R.
 
-Call (260) 404-1802 and tell us what you see.
+Power out somewhere in your house? **Call (260) 404-1802.**
 
-### Told you need a new panel? Get ours first
+### How a visit goes
 
-We replace and upgrade panels, and we say so when yours is the problem. When it isn't, we fix what is.
+1. You call and tell us what is happening. We schedule the electrician, and he arrives on time.
+2. We find the cause and answer your questions about it before we fix anything.
+3. You get a clear, upfront quote.
+4. We make the repair, keep you informed to the final walkthrough, and clean up after ourselves.
+
+> They took time to diagnose the problem fix it and not upsell extras we didn't need.
+>
+> — Renee S.
+
+### Quoted a big job? Get our diagnosis first
+
+Three customers came to us with a quote for a new panel, a new breaker box or a bigger job. Each found out the problem was smaller, or that the job wasn't needed.
 
 > Sterling sent an electrician with no middle man. Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes …
 >
 > — James A.
 
-We replaced a customer's whole panel, too.
+Panel upgrades and replacements are on our list too. When the panel is the fault, we replace it and label every breaker.
 
 > I needed my whole electric panel replaced and they were very easy to work with …
 >
 > — Ross N.
 
-**Call (260) 404-1802 or ask for an estimate.** One electrician, a clear answer and a clear, upfront quote.
+### Get a clear, upfront quote
+
+Residential or commercial, tell us what you see and we'll give you the answer and the price before the work starts. **Call (260) 404-1802** or ask for an estimate.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate
 
@@ -270,56 +260,51 @@ We replaced a customer's whole panel, too.
 
 # Lighting Installation in Fort Wayne, IN — Sterling Electric
 
-Lampposts, motion lights, ceiling fans, switches and wafer lights, installed by Sterling Electric's licensed electricians. Fort Wayne homeowners get a clear, upfront quote, a crew that arrives on time, and work that leaves the walls and ceilings looking untouched.
+Sterling Electric's licensed team has 17 years in the trade. We start with what each room needs, lay out your options, give you a clear, upfront quote, and leave the work looking original to the house.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate
 
-### What we install
+### Lighting jobs we've done for Fort Wayne homeowners
 
-- Outdoor lighting: lampposts, motion lights and custom lighting packages
-- Ceiling fans
-- New switches, including a switch moved or added for a new light
-- Wafer lights, new or on an existing switch
-- Light fixtures, replaced or repaired
-- Outlets and a smoke alarm for a new room
-- Hot tub and light fixtures installed together
+We've moved, added and replaced switches, replaced light fixtures, installed wafer lights, put in ceiling fans, and installed a lamppost with motion lights. In a converted loft, we added the outlet and the smoke alarm along with the lights.
+
+> On time. Very efficient service..replaced three switches, replaced light fixture and fixed two other fixtures in an hour.
+>
+> — Darlene T.
+
+Tell us the room or the part of the yard. **Call (260) 404-1802.**
+
+### How a project goes
+
+1. You call and tell us the room or the part of the yard.
+2. We ask what you need and lay out your options, including options based on your budget.
+3. You get a clear, upfront quote.
+4. Our electrician arrives on time, works to current electrical codes and keeps you informed.
+5. We route the wiring neatly and clean up after ourselves.
+
+> I really like the service and the way they work through what's the best option for us. They also think how things will work for us down the road and prepare us for that.
+>
+> — Chad S.
+
+### Outdoor lighting
+
+Lampposts, motion lights and custom lighting packages are on our list for Fort Wayne homes.
 
 > … George did a great job installing our lamppost and motion lights!
 >
 > — wendy K.
 
-Tell us the room or the part of the yard and we'll give you a clear, upfront quote. **Call (260) 404-1802.**
+### New rooms, basements and additions
 
-### What's included on every job
-
-- Work to current electrical codes
-- A crew that arrives on time and keeps you informed to the final walkthrough
-- Tidy work areas, wiring included, so the job looks original to the house
-- A quote you understand before we start
+We've wired lighting, switches and outlets for a finished basement, a converted loft and a home addition. We plan the lights with the rest of the electrical, so you pay for one quote, not several.
 
 > We wanted a three-way switch added for our stairs, create a separate switch for new wafer lights, install wafer lighting on an existing switch, and make our outlets always live versus being on a switch. Job completed and looks great!
 >
 > — Brent S.
 
-### Planned around the rooms you use
+### Get your lighting priced
 
-Before we run a wire we ask what you need in each room, and we lay out the options. That works for one fixture or a whole converted loft.
-
-> We converted our loft to a 4th bedroom and needed a light switch moved, a smoke alarm installed and an outlet added. All work done as promised and on time. George was very friendly and knowledgeable. Would recommend!
->
-> — Mary H.
-
-Planning a basement, an addition or a new room? **Call (260) 404-1802** and we'll price the lighting with the rest of the electrical.
-
-### Fans, fixtures and hot tubs
-
-Two fans in one visit, a hot tub and a few fixtures in a day, three switches replaced in an hour. Our licensed team has done all three.
-
-> Right on time and very professional. 2 fans installed.
->
-> — Chad W.
-
-Ready when you are. **Call (260) 404-1802 or ask for an estimate.**
+Planning a basement, an addition or a new fixture? **Call (260) 404-1802** or ask for an estimate. You'll get the options and a clear, upfront quote.
 
 **Buttons:** Call (260) 404-1802 / Get an Estimate
 
@@ -365,8 +350,8 @@ Written from briefs @ 21550ef
 | :-: | :-: | :-: |
 | Strategy page | 1071 | 1099 |
 | Home | 568 | 685 |
-| Electrical Troubleshooting & Repair | 281 | 418 |
-| Lighting Installation | 287 | 410 |
+| Electrical Troubleshooting & Repair | 283 | 387 |
+| Lighting Installation | 266 | 394 |
 | Contact | 210 | 228 |
 
 Counts include headings, bullets and the H1, and leave out button lines.
@@ -377,14 +362,14 @@ Counts include headings, bullets and the H1, and leave out button lines.
 
 **Credentials (own-site claims only).** "Licensed team" and "17 years" (home, residential, commercial pages), defined once on Home and echoed in the Lighting and Repair heroes only as "licensed team". "Meets current electrical codes" is the site's "current safety codes", stated plainly. No license number, certifier or insurance claim anywhere; "insured" is only a site question with no answer.
 
-**Said once, and where.** Speed: Home strip (same-day visits) and Home timing section (within 24 hours); Repair "A fast call-out" section (both phrases, nowhere else on the page); Home hero, Lighting and Contact never say it. Smoke or flames to 911: Contact only. "Clear, upfront quote": the site's own line, in Home (businesses), Repair, Lighting and Contact as the short CTA. Panel and breaker are defined on Home; the Repair page defines breaker again because it is a separate page. Knob-and-tube, three-way switch and wafer lights are each defined once.
+**Said once, and where.** Speed: Home strip (same-day visits) and Home timing section (within 24 hours); Repair hero (both phrases, nowhere else on the page); Home hero, Lighting and Contact never say it. Smoke or flames to 911: Contact only. "Clear, upfront quote": the site's own line, in Home (businesses), Repair, Lighting and Contact as the short CTA. Panel and breaker are defined on Home only; the service pages use no trade explainers.
 
 **Inventory items left out, and why.**
 - Insured, emergency service, outdoor lighting and signage for businesses: site FAQ questions with no answers. Out of copy. After-hours (Tom S.) is a confirm question (2) and stays out of page copy, as does the posted-hours conflict.
 - The $225 minimum and any price talk: out of copy, confirm question (3). "Honest pricing" and "fair prices" not stated: two 3-star reviews dispute price. Not used: Sam E., Robert K., Karah W., Ross N.'s price words, Brett H., Blake C.
 - George as a named technician: only inside quotes (wendy K., Mary H.). Jim as owner: not named on any page; owner and staff names are not a confirm question here, but "Jim (owner)" is in reviews for the full build's owner page.
 - Unused quotes: Mark S. (same day), Monique V., Daniel J., Sadie B. (the home-addition line is paraphrased in one sentence, at one-review strength), Chad S., April M., isaiah G., Mike A. (supports the troops, one review), craig T. and others.
-- Review use: quotes or excerpts are Jaidyn M., Adam G., Mark W., Mengal K., Renee S., Jackie M., Charlene R., James A., Ross N. (Repair), wendy K., Brent S., Mary H., Chad W. (Lighting) and Renee B. (Contact); Sabine B. is on the strategy page. Each once, none back to back. Darlene T., Satwik K. and Sadie B. are one-line mentions at one-review strength, not quoted. John D. is unused.
+- Review use: quotes are Jaidyn M., Adam G., Mark W., Mengal K., Charlene R., Renee S., James A., Ross N. (Repair), Darlene T., Chad S., wendy K., Brent S. (Lighting) and Renee B. (Contact); Sabine B. is on the strategy page. Each once, none back to back. Plural claims on the service pages rest on three or more reviews (power restored: Charlene R., James A., Jackie M.; switches and fixtures: Darlene T., Jackie M., Mary H., Brent S.; big-job quotes found smaller or unneeded: Sabine B., James A., Jaidyn M.; options and needs first: Sadie B., Satwik K., Chad S.; cleanup: isaiah G., April M., mike K., Adam G.; on time: many). Fans (Chad W.), the lamppost (wendy K.) and the hot tub (Satwik K.) are single-customer jobs; fans and lamppost are named in the Lighting job list as jobs done, not as general offers. John D. and Mary H. are unused as quotes.
 - Commercial: the site names no specific job, so Home has one short "For businesses" section from the site's own commercial benefits. Riser replacements (residential page): not used, the term needs explaining and no review backs it.
 - Security cameras (Mengal K.) and the home-addition ask (Sadie B.): one customer each, written at that strength. Hot tub (Satwik K.): one sentence on the Lighting page, one customer's job, no quote. Whole-house rewire (Mark W.): Home.
 - Case studies and portfolio: the site has none.
@@ -392,3 +377,5 @@ Counts include headings, bullets and the H1, and leave out button lines.
 - Surge protection, panel labeling, meter base, outlets, fans, permits: Home.
 
 **Facts to verify.** Insurance and license number; whether hours extend past 8 to 4; the minimum charge and what it covers; towns served; whether Sterling handles permits (site lists "Electrical permit and inspection" only); whether cameras are an offered service; who can be named on the site.
+
+**Thin material, said plainly.** The site gives each of these pages a phrase or a line, and names no person. The only names are in reviews, so neither page names an owner or technician (confirm list and the full build's owner page). Both service pages stay near 300 words without quotes because that is what the site and reviews support; nothing was added to reach a number.
