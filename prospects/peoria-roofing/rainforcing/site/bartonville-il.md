@@ -1,6 +1,6 @@
 # https://www.rainforcingroofing.com/bartonville-il
 
-- Fetched: 2026-11-16T04:00:03.617Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:04:34.945Z (rendered in a real browser)
 - HTTP: 200
 - Title: #1 Roofing in Bartonville, IL | Rainforcing Roofing and Exteriors
 - H1: Roofing Company in Bartonville, IL

@@ -1,6 +1,6 @@
 # https://www.rainforcingroofing.com/roofers-in-manito
 
-- Fetched: 2026-11-16T04:00:28.679Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:04:57.912Z (rendered in a real browser)
 - HTTP: 200
 - Title: [Unmatched] Storm Restoration - Top 1 Roofers in Manito, IL
 - H1: Your First Choice for Roofers in Manito, IL
