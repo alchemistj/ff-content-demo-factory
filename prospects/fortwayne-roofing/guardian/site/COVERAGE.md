@@ -36,6 +36,10 @@ No menu, footer or sitemap page is missing after that save.
 
 ## 3. Verdict
 
-**COMPLETE.** All 26 pages (25 menu/footer pages plus /book-online.html) are in site/. Each returned HTTP 200. No CAPTCHA, login or error was hit. The form pages were not submitted.
+**COMPLETE.** All 28 pages are in site/: the 25 header-menu pages, privacy and accessibility from the footer, and /book-online.html from the sitemap. Each returned HTTP 200. No CAPTCHA, login or error was hit. The form pages were not submitted.
 
 Note for the inventory: the book-online page says "Sunday: Emergencies only" and "Storm emergencies: 24/7", while contact.html says Mon–Sat 7am–7pm and emergency-roofing.html says "usually within 24 hours". These are recorded as conflicts in inventory.md.
+
+## 4. FAQ and accordion answers missing from site/ files
+
+The site/*.md files hold only the visible text. Answers in collapsed FAQ accordions are not in them (for example, the services page questions appear without answers, and the contact page answers are not there). The answers were captured from the live DOM (Playwright textContent, 27 pages, 2026-11-16) and are used in inventory.md. Writers who read only site/*.md will miss these facts, including the insurer list, the licensing wording and the brand lists for metal and commercial. The raw capture is in /tmp/claude-0/-home-user/57631495-4bd1-5c8e-bdf1-716f94388210/scratchpad/faqall.txt.
