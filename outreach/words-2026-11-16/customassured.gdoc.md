@@ -7,7 +7,7 @@ Your site shapes your Google ranking, what AI says about your business, and how 
 
 [View the Demo Site] [See What Changed]
 ### Why we built this site
-Your Google reviews keep coming back to one thing: you come out twice a year, your office calls to book it, and it's often the same technician. Customers who have been with you for years say so. One put it in four words:
+Your Google reviews keep coming back to one thing: you come out twice a year, your office calls to book it, and it's often the same technician. One long-time customer put it in four words:
 
 > Lance is our guy.
 
@@ -40,7 +40,7 @@ Why it matters: maintenance is what your reviewers talk about most, and your sit
 
 **Current site problem**
 
-  - The Custom Priority Club is a few lines in the middle of Our Services, a page with no headline, so your most-praised service is easy to miss.
+  - The Custom Priority Club is a few lines in the middle of Our Services, so your most-praised service is easy to miss.
   - The site never says how often you service a system or who comes. Your reviews do, so new customers miss why members stay.
   - Spelling slips: "CPC Benifits" and "maintenances preformed," which suggest careless work.
 
@@ -112,13 +112,13 @@ Call and form tracking that shows which pages and towns your leads come from.
   - Updated when Google and AI tools change how they read websites
   - You never have to know what to ask for
 ### What we'd confirm with you
-Three things we'd ask you on a short onboarding call.
+On a short onboarding call, we'd confirm three things.
 
   - **Hours.** Contact says 9am to 4pm. Your homepage says service is "available around the clock." Which is right for a furnace that quits at night?
-  - **Credentials.** Your Our Company page says Rod has "certifications, accreditations, and training" but names none. Is there a license or certification we can look up and print?
-  - **Years.** Your Our Company page says 175 years of combined experience. We left it out until you tell us who it adds up from.
+  - **Credentials.** Your Our Company page says Rod has "certifications, accreditations, and training" but names none. Which can we look up and print?
+  - **Years.** Your Our Company page says 175 years of combined experience. Who does it add up from?
 ### Want a website like this for your business?
-Book a call and we'll walk you through this demo and what a full build adds.
+Book a call and we'll walk you through this demo.
 
 [Book a no-obligation call]
 
@@ -414,7 +414,7 @@ Our office is at 2630 Independence Drive, Fort Wayne, IN 46808, where Kim, Julie
 Rebuild reason: Both. The browser tab says only the company name with no trade or city and furnaces have no page, and the homepage also has a broken video, no phone number and no tap-to-call.
 ### Word counts (script count; buttons and headings included)
 | Page | Without quotes | With quotes |
-| Strategy | 1306 | 1315 |
+| Strategy | 1176 | 1185 |
 | Home | 764 | 1032 |
 | HVAC Maintenance | 950 | 1277 |
 | Furnace Replacement | 869 | 1031 |
