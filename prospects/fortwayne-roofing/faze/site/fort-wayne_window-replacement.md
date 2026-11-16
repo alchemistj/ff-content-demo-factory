@@ -1,6 +1,6 @@
 # https://www.fazeconstruction.com/fort-wayne/window-replacement
 
-- Fetched: 2026-11-16T06:06:28.800Z (rendered in a real browser)
+- Fetched: 2026-11-16T06:06:50.717Z (rendered in a real browser)
 - HTTP: 200
 - Title: Window Replacement for Energy Efficiency - Fort Wayne
 - H1: Fort Wayne Window Replacement

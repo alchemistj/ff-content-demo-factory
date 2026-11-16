@@ -180,7 +180,7 @@ On one Fort Wayne job, after we installed a 50-gallon natural gas water heater, 
 
 ### Plumbing services
 
-Two of our jobs have their own pages: [water heater repair and installation](#), and [drain cleaning and sewer lines](#). The rest of what we do:
+Two of our jobs have their own pages: [water heater repair and installation](about:blank), and [drain cleaning and sewer lines](about:blank). The rest of what we do:
 
 - **Gas line services.** Repair and installation of gas lines for water heaters, ranges, dryers, fireplaces and outdoor grills. Gas work has to be done safely and to code.
 - **Fixture repair and installation.** Faucets, toilets, sinks and other fixtures, whether you are fixing a drip or upgrading. A running toilet or dripping faucet can add to the water bill more than people expect. We have replaced a failing kitchen faucet in Fort Wayne and installed a customer-supplied kitchen sink with its faucet, drain and emergency stops, the small shutoff valves under a sink that let you stop the water to one fixture.

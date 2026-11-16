@@ -125,7 +125,7 @@ Some failures can wait. No cooling on a mild night usually can. No heat in freez
 
 We repair electric, gas and propane furnaces, heat pumps and boilers, and we repair and replace air conditioners. When a system is past repair, we replace it with a new one. We also install, repair and maintain home standby generators.
 
-Two of these have their own pages: [Air Conditioning Repair](/air-conditioning-repair-peoria-il/) and [Furnace Repair](/furnace-repair-peoria-il/).
+Two of these have their own pages: [Air Conditioning Repair](about:blank) and [Furnace Repair](about:blank).
 
 Not sure what size generator or HVAC system your house needs? We size it for you at no cost. Request a quote and we send a technician out to gather the information.
 

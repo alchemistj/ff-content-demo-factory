@@ -150,7 +150,7 @@ A system that stops working has often failed at one part, and looking for that p
 
 ### What we do
 
-**Heating and cooling.** We install, service and repair furnaces, air conditioners and boilers. A boiler is a hot-water heating system that warms a home through radiators or baseboard pipes. We also work on humidifiers, thermostats, electronic air cleaners and mini split units. A mini split is a small wall-mounted unit that heats and cools one room or zone without ductwork. Two of these services have their own pages: [AC and Furnace Repair](/ac-furnace-repair-fort-wayne-in/) and [Water Heaters](/water-heater-repair-fort-wayne-in/).
+**Heating and cooling.** We install, service and repair furnaces, air conditioners and boilers. A boiler is a hot-water heating system that warms a home through radiators or baseboard pipes. We also work on humidifiers, thermostats, electronic air cleaners and mini split units. A mini split is a small wall-mounted unit that heats and cools one room or zone without ductwork. Two of these services have their own pages: [AC and Furnace Repair](about:blank) and [Water Heaters](about:blank).
 
 **Plumbing.** We do minor plumbing repairs, toilet and faucet replacements, remodels, gas lines, water heaters and tankless water heaters. A tankless water heater heats water as it flows instead of storing a tankful.
 

@@ -192,8 +192,8 @@ Northeast Indiana has been good to us, and we give back with what we do best. We
 
 ### What we do
 
-- [Commercial Plumbing](/commercial-plumbing-fort-wayne-in/)
-- [Commercial HVAC](/commercial-hvac-fort-wayne-in/)
+- [Commercial Plumbing](about:blank)
+- [Commercial HVAC](about:blank)
 
 For a project or a service call, call (260) 341-0530.
 

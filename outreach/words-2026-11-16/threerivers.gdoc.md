@@ -614,15 +614,15 @@ Placeholder row (table body reads as "\\~" approximate counts per page):
 
 | Page | Words without quotes | Words with quotes |
 | :-: | :-: | :-: |
-| Strategy | \\~945 | \\~980 |
-| Home | \\~660 | \\~810 |
-| Electrical Panel Upgrades | \\~1,050 | \\~1,125 |
-| Whole-Home Rewiring & Breaker Repair | \\~910 | \\~1,115 |
-| Contact | \\~335 | \\~375 |
+| Strategy | \\\~1,025 | \\\~1,060 |
+| Home | \\\~660 | \\\~780 |
+| Electrical Panel Upgrades | \\\~1,050 | \\\~1,115 |
+| Whole-Home Rewiring & Breaker Repair | \\\~900 | \\\~1,070 |
+| Contact | \\\~325 | \\\~360 |
 
   
 
-Counts include headings and bullets and leave out button lines. Home and both service pages clear their minimums (550 / 700 / 700) without quotes; the strategy page is under 1,000.
+Counts include headings and bullets and leave out button lines. Home and both service pages clear their minimums (550 / 700 / 700) without quotes; the strategy page is about 1,000 (soft cap), the added length being the cost clause on each problem bullet.
 
   
 

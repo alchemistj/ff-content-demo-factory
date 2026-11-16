@@ -147,7 +147,7 @@ Jose looks at your roof and tells you what it needs. Amanda explains what follow
 
 When a roof is old, leaking or damaged past repair, replacing it is the sound decision. We tear off the old roof, replace the shingles and underlayment, and fix any rotted wood underneath. You get the schedule before we start, and we clean up when we finish.
 
-Our [roof replacement](/roof-replacement-peoria-il/) work covers houses, garages and the roofs on buildings for businesses.
+Our [roof replacement](about:blank) work covers houses, garages and the roofs on buildings for businesses.
 
 > Extremely happy with the service I received. Very easy to work with. Quick turnaround. Honest, fair, & extremely transparent.
 >
@@ -157,7 +157,7 @@ Our [roof replacement](/roof-replacement-peoria-il/) work covers houses, garages
 
 After hail or a storm you're dealing with a damaged roof and an insurance company at the same time. We are trained to work with insurance from start to finish, so you aren't working out the steps alone.
 
-Your insurance company decides what it covers. We help you through everything around that. Our [storm damage and insurance claims](/storm-damage-insurance-claims-peoria-il/) work starts with a look at your roof.
+Your insurance company decides what it covers. We help you through everything around that. Our [storm damage and insurance claims](about:blank) work starts with a look at your roof.
 
 ## Roof Repair
 

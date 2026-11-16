@@ -164,9 +164,9 @@ When the water heater quits, the furnace stops or a breaker keeps tripping, you 
 - **Indoor air quality:** duct cleaning, humidifiers, filters and air purifiers
 - **Water quality:** water testing, water softeners, drinking-water filtration, reverse osmosis (a filter that usually cleans drinking water at one tap), iron and sulfur removal, and well water treatment
 
-[**Heating & AC**](/heating-ac-lincoln-ne/) Furnaces, air conditioners, heat pumps and yearly check-ups.
+[**Heating & AC**](about:blank) Furnaces, air conditioners, heat pumps and yearly check-ups.
 
-[**Water Heaters**](/water-heater-replacement-lincoln-ne/) Repair, replacement and new installation, tank or tankless.
+[**Water Heaters**](about:blank) Repair, replacement and new installation, tank or tankless.
 
 ### We Dig Our Own Sewer and Water Line Repairs
 

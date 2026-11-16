@@ -149,7 +149,7 @@ Our own crew installs your windows and doors, so you know whose work is in your 
 
 ### Who is in your home
 
-The people who install your windows and doors are our own W-2 employees, not subcontractors. Tyler Moga is our installation manager. Our window and door crew includes window specialists such as Kole Wertman and Cristian Arias, and project managers such as John Hatfield and Jack Kahn. Jason Robertson is our measure technician. Brian Harter and Jared Lencke are the sales consultants who sit down with you first.
+The people who install your windows and doors are our own employees, not subcontractors. Tyler Moga is our installation manager, with a crew that includes window specialists, project managers and a measure technician.
 
 > Jack, Kole, Elijah and Phil.  They all did a great job installing our windows and doors.   I would highly recommend Bushey’s for quality and workmanship and most importantly the price was very reasonable.
 >
@@ -157,7 +157,7 @@ The people who install your windows and doors are our own W-2 employees, not sub
 
 ### What we install
 
-We sell two brands, and nothing else. Infinity by Marvin supplies our replacement windows and patio doors, and ProVia supplies our entry and storm doors. [Replacement windows](#) and [entry and storm doors](#) each have their own page, so here is the rest.
+We sell two brands, and nothing else. Infinity by Marvin supplies our replacement windows and patio doors, and ProVia supplies our entry and storm doors. [Replacement windows](about:blank) and [entry and storm doors](about:blank) each have their own page, so here is the rest.
 
 Patio doors come in four kinds. The Vivid Swinging door opens on hinges, like a pair of French doors, and the Vivid Sliding door glides along a track. Both are fiberglass inside and out. The Modern Sliding door has a fiberglass exterior and an aluminum interior, and the Ultimate Multi-Slide door has an aluminum exterior and a wood interior. A multi-slide door is usually built from several large panels that stack to one side, which opens a wide stretch of wall at once. Every Infinity patio door is made to order for your opening and comes in a choice of colors, finishes and hardware.
 
@@ -176,7 +176,7 @@ Patio doors come in four kinds. The Vivid Swinging door opens on hinges, like a 
 
 ### Finished before it ships
 
-Before your windows and doors leave our shop, they go through an automated spray finishing process. A machine applies each paint or stain, which gives a more consistent coat than hand finishing usually does. It also means you get units that arrive finished instead of waiting on a stain job after install. George Bowman and Kelly Bowman are our stain specialists, and Chris Reiter is our paint specialist. Donn Nichols is our inside design consultant.
+Before your windows and doors leave our shop, they go through an automated spray finishing process. A machine applies each paint or stain, which gives a more consistent coat than hand finishing usually does. It also means you get units that arrive finished instead of waiting on a stain job after install.
 
 > This is the 4th time we have used Busheys to replace windows and doors. They meet their estimated date of installation, everything comes stained and finished and this last job, everything was cleaned up and looked good.
 >
@@ -328,11 +328,11 @@ Legacy is made with 20-gauge steel, and gauge measures thickness, with a lower n
 
 ### Storm doors, and what each line adds
 
-A storm door adds insulation, helps with ventilation and protects your entry door through Northeast Indiana's winters and summers. We carry a full selection of ProVia storm doors, across five product lines.
+A storm door adds insulation, helps with ventilation and protects your entry door through Northeast Indiana's winters and summers. We carry ProVia storm doors. Here are three of the lines.
 
 - **SPECTRUM** comes in full-view, three-quarter-view and half-view aluminum styles. A retractable screen, called InVent, slides down out of sight, and ProVia says the aluminum is up to 20% thicker than the industry standard. There's a reinforced, rust-resistant panel along the bottom.
 - **DECORATOR** is full-view glass, with beveled and stained-glass designs. A spring-loaded lock mounted flush with the frame secures the glass, which ProVia says nearly eliminates rattles and air leaks. One style comes in an 8-foot height.
-- **DELUXE** offers the most styles of the three. It has a fiberglass screen made for a clearer view and better airflow, plus a color-matched bottom piece, hinges and closer.
+- **DELUXE** has the most styles of any ProVia storm door line. It has a fiberglass screen made for a clearer view and better airflow, plus a color-matched bottom piece, hinges and closer.
 
 > Busheys installed a new storm door for me.  It has a screen that slides down from the top.  There is no more carrying a heavy glass to install in the spring and fall.  It is a self storing screen.  The door is very strong & looks great
 >

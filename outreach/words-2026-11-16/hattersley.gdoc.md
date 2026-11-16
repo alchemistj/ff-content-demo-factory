@@ -18,7 +18,7 @@ We built A. Hattersley & Sons the first five pages of that kind of website. More
 
 Your best proof is the work itself. One reviewer already says it:
 
-Greatest (And Oldest 1856) mechanical contractor in the USA...specialize in courthouses , schools , hospitals
+> Greatest (And Oldest 1856) mechanical contractor in the USA...specialize in courthouses , schools , hospitals
 
 — Kenneth S.
 
@@ -32,11 +32,11 @@ Your site has the evidence behind that: a $9.2 million neurological center, a $6
 
 **Current site problem**
 
-  - The main headline is just "A. Hattersley & Sons". It doesn't say what you do or where. Google can't tell you're a commercial mechanical contractor in Fort Wayne.
+  - The main headline is just "A. Hattersley & Sons". It doesn't say what you do or where. Google can't tell you're a commercial mechanical contractor in Fort Wayne, so a facility manager searching for one may never see you.
 
-  - The homepage says "Over 160 Years", the Our Story page says "170+ years" and the Organization page says "over a century".
+  - The homepage says "Over 160 Years", the Our Story page says "170+ years" and the Organization page says "over a century", so a careful buyer sees three answers and wonders which to trust.
 
-  - Only three projects appear, all colleges, with one line each. No review appears.
+  - Only three projects appear, all colleges, with one line each. No review appears, so a visitor can't see that you do hospital and school work.
 
 **What the demo fixes**
 
@@ -54,11 +54,11 @@ Your site has the evidence behind that: a $9.2 million neurological center, a $6
 
 **Current site problem**
 
-  - The headline is the one word "Plumbing", and the page is about 125 words. It has no commercial and no Fort Wayne.
+  - The headline is the one word "Plumbing", and the page is about 125 words. It has no commercial and no Fort Wayne, so a search for commercial plumbers in Fort Wayne has little to match.
 
-  - Nine capabilities are listed with no explanation. An owner has to already know what a grease interceptor is.
+  - Nine capabilities are listed with no explanation. An owner has to already know what a grease interceptor is, and one who doesn't moves on.
 
-  - 24/7 emergency service has its own 47-word page, and the plumbing page shows no review or project.
+  - 24/7 emergency service has its own 47-word page, and the plumbing page shows no review or project, so the page that should win the call offers no proof.
 
 **What the demo fixes**
 
@@ -68,7 +68,7 @@ Your site has the evidence behind that: a $9.2 million neurological center, a $6
 
   - Monroe Primary School's renovation, a late-night emergency review, and after-hours help on the same page.
 
-**A full build would also add** Call and form tracking that shows which pages and towns your leads come from.
+**A full build would also add** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 **3. Commercial HVAC**
 
@@ -76,11 +76,11 @@ Your site has the evidence behind that: a $9.2 million neurological center, a $6
 
 **Current site problem**
 
-  - The headline is "HVAC", with no city and no building type, so Google can't place you in Fort Wayne.
+  - The headline is "HVAC", with no city and no building type, so Google can't place you in Fort Wayne and a manager searching nearby never finds you.
 
-  - Fifteen capabilities are listed, and ventilation and exhaust appear twice, as "ventilation and exhaust" and "exhaust and ventilation".
+  - Fifteen capabilities are listed, and ventilation and exhaust appear twice, as "ventilation and exhaust" and "exhaust and ventilation", so the list reads as careless and a reader can't tell what you do best.
 
-  - No project or review is on it, though your school and campus jobs are your strongest proof.
+  - No project or review is on it, though your school and campus jobs are your strongest proof, so a manager with an aging chiller sees no sign you have done it.
 
 **What the demo fixes**
 
@@ -100,9 +100,9 @@ Your site has the evidence behind that: a $9.2 million neurological center, a $6
 
   - Two phone numbers appear, (260) 341-0530 above the form and (260) 483-6473 under the map, with no label on the second. Someone with a burst pipe may not know which to call.
 
-  - The form's subjects are General Inquiry, Information Request and Other, not emergency or project.
+  - The form's subjects are General Inquiry, Information Request and Other, not emergency or project, so an urgent request lands in the same pile as a general question.
 
-  - Most of the page's words are drop-down lists of states and countries.
+  - Most of the page's words are drop-down lists of states and countries, so a visitor finds nothing on how to reach the right person.
 
 **What the demo fixes**
 
@@ -112,7 +112,7 @@ Your site has the evidence behind that: a $9.2 million neurological center, a $6
 
   - Emergencies, maintenance and new projects, split.
 
-**A full build would also add** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
+**A full build would also add** Call and form tracking that shows which pages and towns your leads come from.
 
 ### What a full build includes
 
@@ -130,9 +130,9 @@ Your site has the evidence behind that: a $9.2 million neurological center, a $6
 
   - Reviews on every page, matched to the service
 
-  - About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
+  - About and owner pages that show who does the work
 
-  - A strip at the top of every page with what makes you different, so a customer sees why to pick you right away
+  - A trust bar that shows what makes you different
 
 **Turns visitors into calls**
 
@@ -216,7 +216,7 @@ Design/build means one company handles engineering and design, pricing and estim
 
 We provide you with a dedicated advisor who explains the recommended work and helps you make informed decisions. Our mission puts integrity, open communication and efficiency first. On a commercial job the choices usually carry different first costs and running costs, so owners and facility managers often want one person who can lay out the trade-offs.
 
-Wonderful company to work with. Their customer service is fantastic and they are very thorough. They don't cut corners and get the job done very well and in the most economical way possible. We will definitely be working with them again in the future.
+> Wonderful company to work with. Their customer service is fantastic and they are very thorough. They don't cut corners and get the job done very well and in the most economical way possible. We will definitely be working with them again in the future.
 
 — Erin W.
 
@@ -292,9 +292,9 @@ Monroe Primary School in South Bend was a complete heating, cooling and plumbing
 
 When a pipe bursts or a drain backs up at night, the first call matters. One customer put it this way:
 
-They responded promptly to my late night emergency and were very professional and very friendly I would highly recommend them to anybody.
+> They responded promptly to my late night emergency and were very professional and very friendly I would highly recommend them to anybody.
 
-I called 13 emergency plumbers and A Hattersley were the only company who answered the phone and helped me.
+> I called 13 emergency plumbers and A Hattersley were the only company who answered the phone and helped me.
 
 — Brian T.
 
@@ -320,7 +320,7 @@ Hot water and heating systems, and hydronic heating and cooling, use water carri
 
 ### Moving and cleaning the air
 
-Rooftop units are self-contained heating and cooling units on the roof. Variable air volume, or VAV, systems adjust how much air each room gets instead of running at full flow all day, which usually saves energy. Ventilation and exhaust systems bring in fresh air and move out stale, hot or smelly air, in kitchens, labs and restrooms. Make-up air systems replace the air that exhaust fans remove, because a building that is pulled too far under outside pressure can make doors hard to open and equipment hard to run. Dedicated outdoor air systems handle the fresh air separately from room heating and cooling, and energy recovery systems use the outgoing air to warm or cool the incoming air before it enters.
+Rooftop units are the packaged systems described above. Variable air volume, or VAV, systems adjust how much air each room gets instead of running at full flow all day, which usually saves energy. Ventilation and exhaust systems bring in fresh air and move out stale, hot or smelly air, in kitchens, labs and restrooms. Make-up air systems replace the air that exhaust fans remove, because a building that is pulled too far under outside pressure can make doors hard to open and equipment hard to run. Dedicated outdoor air systems handle the fresh air separately from room heating and cooling, and energy recovery systems use the outgoing air to warm or cool the incoming air before it enters.
 
 ### Rooms that can't drift
 
@@ -364,7 +364,7 @@ Tell the person who answers the building's address, what is happening and where 
 
 ### Regular maintenance
 
-If you want regular inspections of chillers, boilers, rooftop units or other building equipment, tell us what you have, about how old it is, and whether anything has failed before. That helps us set up a schedule around how the building is used.
+If you want regular inspections of chillers, boilers, rooftop units or other building equipment, tell us what you have, about how old it is, and whether anything has failed before.
 
 ### A new project
 
@@ -383,13 +383,13 @@ Our office is at 3939 Mobile Ave in Fort Wayne, where the company has been since
 Reframed to commercial on FF's call (Nov 16).
 
 | Page | Words without quotes | Words with quotes |
-| Strategy | 970 | 988 |
+| Strategy | 1062 | 1080 |
 | Home | 889 | 935 |
 | Commercial Plumbing | 765 | 808 |
-| Commercial HVAC | 870 | 870 |
-| Contact | 299 | 299 |
+| Commercial HVAC | 866 | 866 |
+| Contact | 286 | 286 |
 
-Counts include headings, bullets and the H1, and leave out the button lines. Home 550+, each service 700+ and Strategy at or under 1,000 all hold without quotes. Quotes sit one per page, so none are back to back.
+Counts include headings, bullets and the H1, and leave out the button lines. Home 550+ and each service 700+ hold without quotes. Strategy runs about 60 words over the soft 1,000 because every problem bullet now ends with what it costs the owner; none of it is padding. Each quote is used once, so none are back to back.
 
 **Why it can be done.** The site's service pages are thin (Plumbing 125 words, HVAC 122), but the 52 pages include 30-plus real project pages. Each service page is built from the capability list, hedged general trade knowledge explained for a facilities manager or owner, and project facts. Neither page is padded.
 
@@ -405,7 +405,7 @@ Counts include headings, bullets and the H1, and leave out the button lines. Hom
 
   - 24 hours a day, 7 days a week: contact-us. Used on Contact only.
 
-**Reviews.** Three quotes, word for word, each used once, no two back to back: Strategy, Kenneth S.; Home, Erin W.; Plumbing, Brian T. Few of the 53 reviews fit commercial work (most are homes), so the pages lean on project facts from the site instead. Kenny S. (2020, "Best union mechanical contractor around...") is probably the same person as Kenneth S., so it is not used.
+**Reviews.** Three quotes, word for word, each used once, no two back to back: Strategy, Kenneth S.; Home, Erin W.; Plumbing, Brian T. Few of the reviews fit commercial work (most are homes), so the pages lean on project facts from the site instead. Kenny S. (2020, "Best union mechanical contractor around...") is probably the same person as Kenneth S., so it is not used.
 
 **Inventory items used.** Plumbing (all nine capabilities, Plumbing page), HVAC (all 15 capabilities, HVAC page), Piping, Fabrication, Design/Build (Home), Proactive Predictive Maintenance (HVAC and Contact), 24/7 Emergency (Plumbing and Contact), community work including NISBC Bright Green Business (Home). Projects used: Neurological Center, Parkview Orthopedic Hospital, Taylor Euler, IPFW, Regional Public Safety Academy, Innovation Center, Von Maur, Parkview Field, Sara Lee, King's Hawaiian (Home); Parkview Regional ONE, Monroe Primary (Plumbing); Carroll, Handley, Indiana Tech geothermal (HVAC); Bryan YMCA, Parkview YMCA splash park, Habitat, Taylor chapel (Home).
 
@@ -415,7 +415,7 @@ Counts include headings, bullets and the H1, and leave out the button lines. Hom
 
   - Residential reviews and every homeowner service (water heaters, sump pumps, toilets, softeners): the demo is commercial only on FF's call.
 
-  - Review themes: fast response (21 reviews) is used once (Brian T.); Brandon R. (8:15 call, 10:00 arrival) and similar are home calls, not used. Honest, no surprise costs: Erin W. only; others are home jobs. Named technician "Mark" (30 reviews): not on the site's staff pages, not used. Clean worksite (3 reviews): thin and mostly home jobs.
+  - Review themes: fast response is used once (Brian T.); Brandon R. (8:15 call, 10:00 arrival) and similar are home calls, not used. Honest, no surprise costs: Erin W. only; others are home jobs. Named technician "Mark": not on the site's staff pages, not used. Clean worksite: thin and mostly home jobs.
 
   - Negative reviews (Nathan S. "They only do commercial", Zachary A., blake S., Hanah S.): not used or answered.
 

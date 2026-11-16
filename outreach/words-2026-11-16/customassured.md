@@ -158,9 +158,9 @@ We offer Bryant heating and cooling products: furnaces, heat pumps, air conditio
 
 ### Maintenance, Furnaces and Repair
 
-**Maintenance.** Annual service agreements keep your equipment running at optimal performance, and Custom Priority Club members get priority service, discounts on services, emergency service and a call from our office. [HVAC Maintenance in Fort Wayne, IN](/hvac-maintenance)
+**Maintenance.** Annual service agreements keep your equipment running at optimal performance, and Custom Priority Club members get priority service, discounts on services, emergency service and a call from our office. [HVAC Maintenance in Fort Wayne, IN](about:blank)
 
-**Furnaces.** We repair, replace and maintain them. [Furnace Replacement in Fort Wayne, IN](/furnace-replacement) takes you from the quote to the installation.
+**Furnaces.** We repair, replace and maintain them. [Furnace Replacement in Fort Wayne, IN](about:blank) takes you from the quote to the installation.
 
 **Repair on any brand.** Whatever brand is on your furnace or air conditioner, we repair it. Call (260) 496-8400 and tell us what it is doing.
 

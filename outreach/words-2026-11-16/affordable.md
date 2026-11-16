@@ -192,11 +192,11 @@ Owens Corning's contractor directory for Fort Wayne lists us as a Preferred Cont
 
 ### Roof Replacement
 
-We take the old roof off down to the bare wood and put a new one on, with Owens Corning shingles. Our experienced crews do the installation. Our [roof replacement](/roof-replacement-fort-wayne-in/) page covers how a job goes, what changes the price and what the warranties are.
+We take the old roof off down to the bare wood and put a new one on, with Owens Corning shingles. Our experienced crews do the installation. Our [roof replacement](about:blank) page covers how a job goes, what changes the price and what the warranties are.
 
 ### Asphalt Shingle Roofing
 
-Asphalt shingles are the most common roof covering on homes, and Owens Corning Duration is the shingle we install most. We install Oakridge and other brands too. Our [asphalt shingle roofing](/asphalt-shingle-roofing-fort-wayne-in/) page explains the difference between the lines and how to choose a color.
+Asphalt shingles are the most common roof covering on homes, and Owens Corning Duration is the shingle we install most. We install Oakridge and other brands too. Our [asphalt shingle roofing](about:blank) page explains the difference between the lines and how to choose a color.
 
 ### Metal Roofing
 
@@ -398,7 +398,7 @@ A "lifetime" label describes the manufacturer's limited warranty on the shingles
 
 ### Ready to Choose a Shingle?
 
-Call (260) 402-3549 and we'll bring samples of both lines. If the whole roof is coming off, our [roof replacement](/roof-replacement-fort-wayne-in/) page covers the day itself and what changes the price.
+Call (260) 402-3549 and we'll bring samples of both lines. If the whole roof is coming off, our [roof replacement](about:blank) page covers the day itself and what changes the price.
 
 Buttons: Call (260) 402-3549 / Get a Free Estimate
 

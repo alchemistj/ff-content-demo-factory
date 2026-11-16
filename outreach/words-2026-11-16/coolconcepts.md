@@ -144,7 +144,7 @@ Heating and cooling repair and replacement for Lincoln homes and businesses, and
 
 ### When your heat or air conditioning stops
 
-Lincoln winters drop below zero and summer afternoons pass 100 degrees, and that is when furnaces and air conditioners fail, because they run the most. A stopped system can't wait for next week. We usually get a technician to your door within hours, and we often finish the fix on that first visit, whether it is a [furnace or air conditioner repair](/heating-ac-repair-lincoln-ne/) or a part we have to track down.
+Lincoln winters drop below zero and summer afternoons pass 100 degrees, and that is when furnaces and air conditioners fail, because they run the most. A stopped system can't wait for next week. We usually get a technician to your door within hours, and we often finish the fix on that first visit, whether it is a [furnace or air conditioner repair](about:blank) or a part we have to track down.
 
 > Got back from vacation and heat wasn’t working. Called and had servicemen out with in 45 min. Once they came back with the right part they had it up and running with in 15 min.
 >
@@ -160,7 +160,7 @@ Usually you leave knowing which part failed, what each option would involve, and
 
 ### Replacement and installation
 
-When a repair no longer makes sense, we [order and install a new furnace, air conditioner or heat pump](/heating-ac-replacement-lincoln-ne/), for a home or a business.
+When a repair no longer makes sense, we [order and install a new furnace, air conditioner or heat pump](about:blank), for a home or a business.
 
 ### Daikin and other brands
 

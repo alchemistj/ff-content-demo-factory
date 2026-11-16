@@ -166,7 +166,7 @@ A few checks are worth a minute, and they help whoever you call. Make sure the t
 
 ### Cooling
 
-When the summer heat hits, we fix [AC problems](/ac-repair-lincoln-ne/), from warm air to unusual noises. When a system can't be saved, we help you choose the right unit and handle a professional installation of your [new air conditioner](/air-conditioner-replacement-lincoln-ne/). AC tune-ups keep the system efficient and help prevent unexpected breakdowns.
+When the summer heat hits, we fix [AC problems](about:blank), from warm air to unusual noises. When a system can't be saved, we help you choose the right unit and handle a professional installation of your [new air conditioner](about:blank). AC tune-ups keep the system efficient and help prevent unexpected breakdowns.
 
 ### Maintenance and Memberships
 
@@ -280,7 +280,7 @@ Older systems may use a refrigerant that's no longer made. That can make a leak 
 
 ### If the AC Can't Be Saved
 
-Sometimes the diagnosis says the system is at the end of its life. We tell you straight, and we go through [replacement](/air-conditioner-replacement-lincoln-ne/) with you.
+Sometimes the diagnosis says the system is at the end of its life. We tell you straight, and we go through [replacement](about:blank) with you.
 
 ### Call Matt
 

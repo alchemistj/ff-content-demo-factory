@@ -147,7 +147,7 @@ There is no pressure to replace a roof that can still be repaired. You decide wh
 
 ## Roof Replacement
 
-A [roof replacement](/roof-replacement-fort-wayne-in/) here means stripping the old roof down to the wood deck, replacing any rotted boards, then installing a waterproof underlayer, metal edging and flashing (the metal strips that seal joints and edges), an adhesive ice-and-water membrane, and new shingles or metal. We install GAF Timberline HDZ shingles. We also install metal roofs, standing seam and corrugated, and we do roof repairs and gutter work in the same visit when the house needs it.
+A [roof replacement](about:blank) here means stripping the old roof down to the wood deck, replacing any rotted boards, then installing a waterproof underlayer, metal edging and flashing (the metal strips that seal joints and edges), an adhesive ice-and-water membrane, and new shingles or metal. We install GAF Timberline HDZ shingles. We also install metal roofs, standing seam and corrugated, and we do roof repairs and gutter work in the same visit when the house needs it.
 
 If solar panels are on the roof, we plan the removal and reinstall with the solar team before tear-off.
 

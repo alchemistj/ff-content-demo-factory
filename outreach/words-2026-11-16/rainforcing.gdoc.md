@@ -443,9 +443,33 @@ Miguel Rivera, our owner, is often the one you'll deal with. If you'd rather wri
 
 **Word counts** (by script; "without quotes" excludes blockquotes, buttons, trust bar and caption lines; "with" is everything on the page)
 
-  - Strategy page: about 1,000 without quotes (badge, headline, subheading and full-build list counted), recount before sending.
-  - Home — Roofing Company in P: 919 without quotes, 1090 with.
-  - Insurance Storm Restoration: 949 without quotes, 1123 with.
-  - Roof Replacement — Roof Rep: 963 without quotes, 1106 with.
-  - Contact — Contact Rainforci: 278 without quotes, 312 with.
-  - Strategy is at or under 1,000 words including the full-build list; home, both service pages and contact clear their minimums without quotes.
+  - Strategy page: about 1,100 without quotes (badge, headline, subheading and full-build list counted), recount before sending.
+  - Home — Roofing Company in P: 742 without quotes, 915 with.
+  - Insurance Storm Restoration: 863 without quotes, 1023 with.
+  - Roof Replacement — Roof Rep: 905 without quotes, 1030 with.
+  - Contact — Contact Rainforci: 236 without quotes, 257 with.
+  - Strategy is a little over the soft 1,000 cap because of the added cost clauses; home, both service pages and contact clear their minimums without quotes.
+
+**Credentials and sources**
+
+  - BBB: the A+ rating shows on bbb.org search results, but it is a rating, so it is not used on any page. "BBB accredited" is their own claim (one town page, /roofing-in-west-peoria-il/); the bbb.org listing does not confirm it, so it was removed from the home copy and is the fourth "What we'd confirm" question.
+  - GAF Certified: the business's own claim (/, /about-us/, /roof-replacement/). NOT confirmed: the GAF contractor locator returned 403. Used only as "GAF Certified", defined once on home as a manufacturer program. "GAF Certified Plus" (/miguel-rivera/, /roof-replacement/, /gutters/) is left out; the strategy page asks which is current. **Check the locator before this goes out.**
+  - Licensed, bonded and insured: the business's own claim. No license number or insurer on the site; not confirmed. Stated as their claim on home only, with plain definitions of insurance and bond (hedged general knowledge).
+  - 10-year workmanship warranty: their claim. Terms are not on the site. Used on the roof replacement page only.
+  - Free 5-year maintenance plan, "$3,000 value", projects over $25,000, "for a limited time": their claim with its own terms. The value is unverified. Replacement page only; worded "which we value at $3,000".
+  - GoodLeap financing, "$0 down", "no prepayment penalties", deductible coverage: their claim. Stated once on the roof replacement page.
+  - Free drone inspection, "free, no-obligation": their claim. Said in full on home (FAQ); the insurance page hero says "free inspection". Backport pass Nov 16: one strip only, on home (5 items: GAF Certified, licensed/bonded/insured, free drone inspection, customers describe same-day service, No-Mess Guarantee; towns are in the FAQ and on Contact). No-Mess Guarantee is their claim (site pages gutter-guards, roofers-in-princeton, roofers-in-la-salle, roofers-in-manito); FF asked for it in the strip. Strips removed from both service pages and contact. No ratings or review counts anywhere.
+  - Veteran incentives and priority scheduling: their claim (/about-us/). Size not stated, so the copy says "ask us what applies."
+  - Miguel Rivera as owner: confirmed on his own page (/miguel-rivera/) and by reviews. Used by first name on home and contact.
+
+**Inventory items left out, and why** (unchanged from the earlier pass: 24/7 emergency service, GAF Certified Plus, years in business, price-range and percent-off titles, second BBB location, Hopedale pages, buzzword inspection claims, and unused reviews.)
+
+**Facts to verify**
+
+  - Who answers after hours, and after-hours pricing (24/7 vs the hours block).
+  - GAF Certified vs Certified Plus.
+  - Founding year (2021 vs 2022) and the "over 20 years" line.
+  - License and insurance claims: license number, carrier, and bond.
+  - 5-year plan terms and the 10-year workmanship warranty terms; whether the plan offer is still running.
+  - Whether the BBB accreditation exists (the search result lists no accreditation); the home copy no longer claims it.
+  - Town list: copied from the site menu.

@@ -150,7 +150,7 @@ Some customers call expecting to hear they need a whole new system. Heating and 
 
 ### What we repair
 
-We repair and service gas and oil furnaces, boilers, heat pumps, air conditioners, ductless mini-splits, thermostats and fireplaces, and we work on many central heating and cooling brands. Two of these have their own pages: [Furnace Repair](/furnace-repair-fort-wayne-in/) and [AC Repair](/ac-repair-fort-wayne-in/), which also covers mobile manufactured homes.
+We repair and service gas and oil furnaces, boilers, heat pumps, air conditioners, ductless mini-splits, thermostats and fireplaces, and we work on many central heating and cooling brands. Two of these have their own pages: [Furnace Repair](about:blank) and [AC Repair](about:blank), which also covers mobile manufactured homes.
 
 A few of the less familiar ones, in plain terms:
 

@@ -153,11 +153,11 @@ Our goal is simple: you feel informed, comfortable and confident from the first 
 
 ## Roof Replacement
 
-When a roof is leaking in several places, keeps needing repairs or has reached the end of its life, [roof replacement](/roof-replacement-lincoln-ne/) is usually a better answer than another patch. Our replacements generally start by tearing the old roof off down to the bare wood, replacing any boards that are damaged, and building the new roof up from there.
+When a roof is leaking in several places, keeps needing repairs or has reached the end of its life, [roof replacement](about:blank) is usually a better answer than another patch. Our replacements generally start by tearing the old roof off down to the bare wood, replacing any boards that are damaged, and building the new roof up from there.
 
 ## Storm Damage and Insurance Claims
 
-After hail or a windstorm you have a damaged roof and an insurance company to deal with at the same time. We look at the roof, and Maria helps you through the claim. We can't promise what an insurer will pay, but you won't be working through the steps alone. [Storm damage and insurance claims](/storm-damage-insurance-claims-lincoln-ne/) starts with a look at your roof.
+After hail or a windstorm you have a damaged roof and an insurance company to deal with at the same time. We look at the roof, and Maria helps you through the claim. We can't promise what an insurer will pay, but you won't be working through the steps alone. [Storm damage and insurance claims](about:blank) starts with a look at your roof.
 
 ## Roof Repair and Leaks
 

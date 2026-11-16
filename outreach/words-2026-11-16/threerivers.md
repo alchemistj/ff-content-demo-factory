@@ -164,7 +164,7 @@ We take on a single outlet, a light switch or a ceiling fan as readily as a larg
 
 ### Electrical work for your home
 
-Two of the bigger jobs have their own pages. [Electrical panel upgrades](#), including moving from 100 amp to 200 amp service (amps measure how much electricity the house can draw at once) and replacing the meter base and riser, the outdoor box and pipe that bring power in, are for homes that have outgrown their service. [Whole-home rewiring and breaker repair](#) covers old wiring, tripping breakers and outlets that went dead.
+Two of the bigger jobs have their own pages. [Electrical panel upgrades](about:blank), including moving from 100 amp to 200 amp service (amps measure how much electricity the house can draw at once) and replacing the meter base and riser, the outdoor box and pipe that bring power in, are for homes that have outgrown their service. [Whole-home rewiring and breaker repair](about:blank) covers old wiring, tripping breakers and outlets that went dead.
 
 The rest of our residential work:
 

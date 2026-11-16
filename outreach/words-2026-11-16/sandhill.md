@@ -138,9 +138,9 @@ Our owner, Dusty Rieck, built the company on three things: honesty, integrity an
 
 ### What's Going On With Your Roof?
 
-**It leaks.** A leak doesn't always mean a new roof, and sometimes the roof isn't the cause. We find the source first, and if the roof is finished we do [roof replacement](#).
+**It leaks.** A leak doesn't always mean a new roof, and sometimes the roof isn't the cause. We find the source first, and if the roof is finished we do [roof replacement](about:blank).
 
-**A storm hit it.** Wind and heavy rain can damage the roof, siding and gutters together, and then you have an insurance company to deal with. We fix the damage and work with your insurance company on [storm damage repair](#).
+**A storm hit it.** Wind and heavy rain can damage the roof, siding and gutters together, and then you have an insurance company to deal with. We fix the damage and work with your insurance company on [storm damage repair](about:blank).
 
 **It's old.** You choose the material, from asphalt to steel to cedar shake, and we install it.
 
@@ -261,7 +261,7 @@ You should leave knowing what's wrong, what your options are and roughly what ea
 
 ### Who You'll Talk To
 
-Our owner, Dusty Rieck, answers your call and comes out to look at the roof himself. If hail or wind caused the damage, we also handle the insurance side as part of our [storm damage repair](#).
+Our owner, Dusty Rieck, answers your call and comes out to look at the roof himself. If hail or wind caused the damage, we also handle the insurance side as part of our [storm damage repair](about:blank).
 
 ### Ready for a Straight Answer?
 
