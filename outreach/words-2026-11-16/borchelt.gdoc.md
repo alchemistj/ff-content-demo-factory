@@ -4,6 +4,7 @@ Strategy page
 Free demo site built for W C Borchelt & Sons
 We already did the work. Here's a W C Borchelt & Sons website that tells Fort Wayne who you are and gets the phone ringing.
 Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
+We built W C Borchelt & Sons the first five pages of that kind of website. More on that below.
 
 Buttons: View the Demo Site / See What Changed
 Why we built this site
@@ -16,22 +17,24 @@ RJ was professional, efficient and I believe honest in his assessment and fair w
 Your site never says that. So the demo leads with repair, and says Fort Wayne where Google looks.
 The demo, page by page
 1. Homepage
+Why it matters: This is what Google reads to learn who you are and where you work.
 
 Current site problem
 
 The headline lists your trades, not your town, and the browser tab says "Home | Wc Borchelt." Neither says Fort Wayne. Noble County is listed twice.
 Its one review is a furnace installation, and your Google reviews never reach the page.
-"Family Owned and Operated since 1962" and the after-hours line sit on other pages.
+"Family Owned and Operated since 1962" sits on another page.
 
 What the demo fixes
 
 HVAC, Plumbing and Electrical in Fort Wayne, IN, in the headline and browser tab.
 Five reviews matched to the work, from an AC replacement to a new electrical panel.
-Your 1962 family story and after-hours line, in plain words.
+Your 1962 family story, in plain words.
 
 A full build would also add Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 2. AC and Furnace Repair
+Why it matters: Repair is the call people make when the system is already down.
 
 Current site problem
 
@@ -48,6 +51,7 @@ What usually fails, what to check, repair or replace, and what to do first on a 
 A full build would also add Call and form tracking that shows which pages and towns your leads come from.
 
 3. Water Heaters
+Why it matters: A dead or leaking water heater can't wait.
 
 Current site problem
 
@@ -63,6 +67,7 @@ What to do first when it leaks, repair or replace, tank or tankless, and your br
 A full build would also add Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 4. Contact
+Why it matters: It's where someone decides whether to call.
 
 Current site problem
 
@@ -77,7 +82,7 @@ When to call instead of texting.
 
 A full build would also add Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
 What a full build includes
-This demo is the first five pages. A full build starts with every service you offer, and what makes you different.
+A full build starts with every service you offer, and what makes you different.
 
 Gets you found
 
@@ -89,13 +94,13 @@ Built so Google and AI tools can read every page
 Earns their trust
 
 Reviews on every page, matched to the service
-About and owner pages that build your authority with Google and AI tools
-A strip at the top of every page with your rating and credentials, so customers see why to pick you.
+About and owner pages that show who does the work
+A trust bar that shows what makes you different
 
 Turns visitors into calls
 
-Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range
-A call-and-book bar that stays on screen on phones, where most visitors are. That's why the 91 matters: a slow page lets phone visitors down.
+Scores 91 or higher on Google’s mobile speed test at launch, in Google’s “good” range. Most visitors are on a phone, and a slow page lets them down.
+A call-and-book bar that stays on screen on phones
 A contact form that blocks spam
 
 Keeps working after launch
@@ -103,16 +108,17 @@ Keeps working after launch
 Mobile page speed tested every 30 minutes, with a re-check within 5 minutes if a page slows down.
 Your site watched around the clock for downtime.
 Google indexing and your Google visibility checked every day.
-Menus, contact links and forms tested in a real browser twice a day.
+Page links, buttons and contact forms tested in a real browser twice a day.
 Updated when Google and AI tools change how they read websites
 You never have to know what to ask for
 What we'd confirm with you
+On a short onboarding call, we'd confirm four things.
 After hours. Your Services page says call 260-485-3412; the top of the page says follow the prompts. Which is right?
 "Manablocks" is on your plumbing list with no explanation. What is it?
 PHCC is on your Brands and Community pages, not as a membership. Are you a member?
-A one-star review says a sump pump replacement was pushed when a $275 part fixed it. Will you answer it?
+Applicants email office@wcbsons.net, while your site is wcborcheltandsons.com. Which address should customers use?
 Want a website like this for your business?
-Book a no-obligation call.
+Book a call and we'll settle those four with you and walk you through this demo.
 
 Button: Book a no-obligation call
 
@@ -122,6 +128,7 @@ HVAC, Plumbing and Electrical in Fort Wayne, IN — W C Borchelt & Sons
 Heating, air conditioning, plumbing, electrical work and generators for homes and businesses in Fort Wayne and the counties around it. HVAC stands for heating, ventilation and air conditioning. We are a family owned and operated company, since 1962. Call 260-485-3412.
 
 Buttons: Call 260-485-3412 / Text 260-231-1794
+Strip: Family owned since 1962 · Heating, plumbing and electrical · Homes and businesses · Customers describe same-day visits
 When the answer is smaller than you feared
 A system that stops working has often failed at one part, and looking for that part first is usually the cheaper way to find out. If another company has quoted a full replacement, it is reasonable to ask which part failed and what a repair would cost. Standard replacement quotes from us are generally complimentary. One customer who asked us for a price after another company’s quote wrote:
 
@@ -171,7 +178,7 @@ As always, we received excellent service from Borchelt. Hayden Swanson was so pe
 
 — Becky C.
 Hours and where we work
-We are open Monday to Friday, 8:00 AM to 4:30 PM. Saturday and Sunday are for emergency calls only. After 4:30 PM, on a weekend or on a holiday, a skilled on-call technician takes emergency calls.
+We are open Monday to Friday, 8:00 AM to 4:30 PM. Saturday and Sunday are for emergency calls only.
 
 We serve Allen, DeKalb, Whitley, Wells, Noble, Adams, Huntington, LaGrange, Steuben and Kosciusko counties in Indiana. Outside the city, many homes use propane and well water, and we can talk through what that means for the equipment you have.
 Work with us
@@ -182,7 +189,7 @@ Heat, air, water or power not working? Call 260-485-3412.
 Buttons: Call 260-485-3412 / Text 260-231-1794
 AC and Furnace Repair — AC and Furnace Repair in Fort Wayne, IN — W C Borchelt & Sons
 AC and Furnace Repair in Fort Wayne, IN — W C Borchelt & Sons
-We repair air conditioners and furnaces for Fort Wayne homes and the counties around it, and we work on many brands, not only the ones we install. Call 260-485-3412 and tell us what the system is doing.
+We repair air conditioners and furnaces for Fort Wayne homes and the counties around it, and we work on many brands, not only the ones we install. Customers describe same-day visits. Call 260-485-3412 and tell us what the system is doing.
 
 Buttons: Call 260-485-3412 / Text 260-231-1794
 When the air conditioner stops on a hot day
@@ -245,19 +252,12 @@ Spring, before the first week of real heat, is the time for an air conditioner c
 Hayden Swanson was very friendly, professional, and informative. He came on time and wasted no time in getting our furnace serviced. He helped us make an important medical appointment by being so efficient with his work.
 
 — Joe R.
-Getting in quickly
-When the system is out, ask for the earliest visit. Same-day visits are not always possible, and a part that has to be ordered can add a second trip. One customer wrote:
-
-Excellent quick service. They got us in same day.
-
-— Andrew F.
-
 Furnace or air conditioner out? Call 260-485-3412.
 
 Buttons: Call 260-485-3412 / Text 260-231-1794
 Water Heaters — Water Heater Repair and Replacement in Fort Wayne, IN — W C Borchelt & Sons
 Water Heater Repair and Replacement in Fort Wayne, IN — W C Borchelt & Sons
-We repair and replace water heaters, tank and tankless, for Fort Wayne homes and the counties around it. Call 260-485-3412.
+We repair and replace water heaters, tank and tankless, for Fort Wayne homes and the counties around it. Customers describe quick visits, including a replacement finished within 3 hours. Call 260-485-3412.
 
 Buttons: Call 260-485-3412 / Text 260-231-1794
 When the hot water stops
@@ -339,10 +339,28 @@ Ready to talk? Call 260-485-3412.
 
 Buttons: Call 260-485-3412 / Text 260-231-1794
 Notes (not page copy)
-Current word counts after the check (without quotes / with quotes): Strategy page 968/992; Home 930/1173; AC and Furnace Repai 1198/1484; Water Heaters 978/1196; Contact 276/317. The table below predates the check.
+Current word counts after the check (without quotes / with quotes): approximate after this backport pass: Strategy about 1,000 with quotes; Home about 900 without quotes; AC and Furnace Repair about 1,100; Water Heaters about 980; Contact about 276. Backport changes (judgment pass): added the "first five pages" line under the strategy subhead and removed the repeated "This demo is the first five pages"; one "Why it matters" line per card; full-build list set to the approved lines (no rating in the trust bar); fourth confirm item changed to the email-domain question, with an intro and a CTA sentence; Home differentiators strip added; speed claim once per page; no FAQ blocks added, since each page already answers its questions in its sections; no ratings or review counts anywhere. The table below predates the check.
 
+Page
+Words without quotes
+Words with quotes
+Strategy
+952
+979
+Home
+901
+1205
+AC and Furnace Repair
+1207
+1499
+Water Heaters
+1032
+1248
+Contact
+258
+286
 
-Counts include headings, bullets and the H1 line, and leave out button lines. Strategy is held to 1,000 words or fewer, quotes included. Home needs 550+ and each service page 700+ without quotes; all pass. Both service pages reach 700+ on hedged trade knowledge tied to Fort Wayne (hard water, 30-year-old houses, winter cold, humid summers, propane and well water outside the city), not on padding. Business claims on those pages come only from the site and reviews: repairs on many brands, water heaters and tankless, gas lines, the brand list, and the after-hours line (Home only).
+Counts include headings, bullets and the H1 line, and leave out button lines. Strategy is held to 1,000 words or fewer, quotes included. Home needs 550+ and each service page 700+ without quotes; all pass. Both service pages reach 700+ on hedged trade knowledge tied to Fort Wayne (hard water, 30-year-old houses, winter cold, humid summers, propane and well water outside the city), not on padding. Business claims on those pages come only from the site and reviews: repairs on many brands, water heaters and tankless, gas lines, the brand list, with no after-hours line anywhere in the copy.
 
 Credentials (all the business's own claim; none checked at the source).
 
@@ -350,15 +368,15 @@ Family owned and operated since 1962, founder Wally, sons took over 1993, three 
 PHCC: on the Brands and Community pages only, never as a membership, and no chapter source names the business. Not stated in the copy.
 Licenses, insurance, bonding, NATE, EPA, warranties: none on the site, so none claimed. The hiring section mentions "licensed plumber" and "licensed electrician" only as job titles.
 Brand lists are product makes they install, not certifications. Used as makes (Trane, York, Mitsubishi, Generac, Eaton on Home; State, A. O. Smith, Bradford White, Navien on Water Heaters).
-Own-site offers, each used once: service plan, estimates and diagnostic-fee line, and Synchrony financing (Home); after-hours technician line (Home); "all brands" hedged to "many brands"; "top priority service" is in the plan.
+Own-site offers, each used once: service plan, estimates and diagnostic-fee line, and Synchrony financing (Home); "all brands" hedged to "many brands"; "top priority service" is in the plan.
 
-Review use. 19 quotes, each once across the document, none back to back, copy between all. Strategy: Kari G. Home: Danielle L., Joanna J., Wendy W., John O., Becky C. AC and Furnace Repair: Chuck A., Mark S., Kerstin R., Cat B., Priscilla C., Joe R., Andrew F. Water Heaters: Jennifer B., David T., Karen Z., Steve S. Contact: Joyce M. (shortened with an ellipsis). The lead "fix what's broken" rests on Kari G., Danielle L., Kerstin R. and Priscilla C., and is written as what customers said, not as policy, because the 1-star review (Josh C., sump pump, $700 versus $275, no owner reply) says the opposite. That review is not quoted; it is in "What we'd confirm". The 2-star review (Lightning G., speeding) is not used. Review-inferred details ("often" or "usually" only): second trip when a heater can't be repaired (Karen Z.), customers naming technicians (about 20 reviews).
+Review use. 18 quotes, each once across the document, none back to back, copy between all. Strategy: Kari G. Home: Danielle L., Joanna J., Wendy W., John O., Becky C. AC and Furnace Repair: Chuck A., Mark S., Kerstin R., Cat B., Priscilla C., Joe R. Water Heaters: Jennifer B., David T., Karen Z., Steve S. Contact: Joyce M. (shortened with an ellipsis). The lead "fix what's broken" rests on Kari G., Danielle L., Kerstin R. and Priscilla C., and is written as what customers said, not as policy, because the 1-star review (Josh C., sump pump, $700 versus $275, no owner reply) says the opposite. That review is not quoted and is not in "What we'd confirm" (it is not a single-question conflict). The 2-star review (Lightning G., speeding) is not used. Review-inferred details ("often" or "usually" only): second trip when a heater can't be repaired (Karen Z.), customers naming technicians (about 20 reviews).
 
 Inventory items left out, and why.
 
 "Manablocks": unexplained on the site. In "What we'd confirm".
 PHCC: see above.
-Speed theme ("on time", "same day", 28 reviews): used lightly (Chuck A., Andrew F.) and not promised as a standing practice. No response-time claim is made.
+Speed theme ("on time", "same day", 28 reviews): stated once per page and at review strength: the Home strip ("Customers describe same-day visits"), the AC and Furnace Repair hero, and the Water Heaters hero (the 3-hour replacement, Steve S.). Chuck A. is quoted once. The Andrew F. "same day" quote and its "Getting in quickly" section were cut as a repeat. No response-time promise is made.
 Named technicians (Cameron, Hayden, Mike, Seth, RJ, Chase): appear only inside quotes. No staff list, because only reviews name them and the site names no one.
 Respect for property (steven Z., Karen O.): Cat B. is used; the others are left out as thin.
 Community sponsorships: Foster Park Little League, St Joseph Catholic School golf outing, Big Turkey Lake Fireworks and Blue Jacket Fantasy of Lights are used. Allen Co. Right to Life, Aardvark Home Inspections and WaterOut are left out (a political cause and two other businesses, and the rules say no claims about other companies).
@@ -369,7 +387,7 @@ Text line 260-231-1794: used. The "emergency routing" conflict is in "What we'd 
 "OUR WORK" heading at the end of the Services page: empty on the live site, so there are no case studies or portfolio jobs to use.
 "© 2035 by Site Name" footer placeholder: not quoted on business pages.
 Hours "Sat & Sun - Emergency Calls Only": stated on Home and Contact as the site says it.
-Susan W. quote (site's own review) cut to keep Home from stacking quote-ended sections; Home now has no after-hours phone routing, to keep the Services/menu conflict out of copy.
+Susan W. quote (site's own review) cut to keep Home from stacking quote-ended sections; Home and the other pages carry no after-hours phone routing or on-call line, to keep the Services/menu conflict out of copy; it is in "What we'd confirm" only.
 
 Facts to verify.
 
