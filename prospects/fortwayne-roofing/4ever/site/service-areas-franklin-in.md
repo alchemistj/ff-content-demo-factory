@@ -1,0 +1,57 @@
+# https://www.4evermetalroofing.com/service-areas/franklin-in
+
+- Fetched: 2026-11-16T04:35:47.588Z (rendered in a real browser)
+- HTTP: 200
+- Title: Metal roofing in Franklin, IN — 4Ever
+- H1: Metal roofs in Franklin, Indiana
+- tel: links: tel:+18665042777, tel:+12602342252, tel:+13177650508
+- Words: 342
+
+---
+
+Home
+Service areas
+Indiana
+Johnson County
+Franklin
+JOHNSON COUNTY
+Metal roofs in Franklin, Indiana
+Metal roof installation in Franklin, Indiana: the age of the housing here, which systems suit it, and how to tell whether metal is the right call.
+What the housing here is
+9,591
+structures, 7,774 single-family
+1992
+median year built
+1
+ZIP codes we cover here
+Structure counts are FEMA's National Structure Inventory; year built and tenure are the Census ACS 5-year. We publish them because they are the honest way to say what a place is built of — not as a claim about your roof.
+Work here runs out of our Noblesville office. Same crews, same systems, either way.
+What that means for a roof
+The median structure here went up around 1992. That is newer stock — usually the original builder-grade asphalt coming off, with sound decking and modern framing underneath. The install is rarely the hard part here. The approval is: newer subdivisions are the ones with architectural guidelines.
+None of that decides your roof. Pitch, the details around chimneys and walls, and what you expect from the roof do — and those are things we look at rather than infer from a county average. The five systems each explain where they fail as well as where they fit.
+If the honest answer is that metal is the wrong call for your house, we would rather say so on the phone. This guide is how I think it through.
+IS YOUR ROOF A FIT?
+Send the address and a couple of photos and we will tell you which systems the roof allows — and whether metal is worth it on your house at all.
+Request a quote
+WHAT WE INSTALL
+Standing Seam Metal Roofing
+Interlocking Metal Shingle Roofing
+Stone-Coated Steel Roofing
+Exposed Fastener Metal Roofing
+Paint Systems & Coil Coatings
+NEARBY TOWNS
+Greenwood, IN
+Shelbyville, IN
+Beech Grove, IN
+Mooresville, IN
+Indianapolis, IN
+Columbus, IN
+WRITTEN UP IN DETAIL
+Greenwood, IN
+Indianapolis, IN
+Plainfield, IN
+Greenfield, IN
+Avon, IN
+Lawrence, IN
+McCordsville, IN
+Brownsburg, IN

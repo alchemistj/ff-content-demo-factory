@@ -1,10 +1,10 @@
 # https://www.actionlincoln.com/news/carrier-cool-cash-rebates-are-back
 
-- Fetched: 2026-11-16T04:28:28.377Z (rendered in a real browser)
+- Fetched: 2026-11-16T04:39:56.094Z (rendered in a real browser)
 - HTTP: 200
 - Title: Carrier Cool Cash Rebate | Save Up to $1,700 in Lincoln, NE
 - H1: Carrier Cool Cash Rebates are Back
-- tel: links: tel:+14025760708, tel:402-576-0708
+- tel: links: tel:+14024236960, tel:402-423-6960
 - Words: 679
 
 ---
