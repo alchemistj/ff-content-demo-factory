@@ -130,7 +130,7 @@ Book a no-obligation call · Text us: (417) 373-2773
 Home — Plumbing, Heating and AC in Lincoln, NE — Action Plumbing, Heating, A/C & Electrical
 Fact line: Plumbing · Heating · AC · Electrical
 Plumbing, Heating and AC in Lincoln, NE — Action Plumbing, Heating, A/C & Electrical
-Repairs, replacements and new installations for Lincoln homes and businesses, from one local company. Customers describe same-day visits. Call (402) 423-6960.
+Repairs, replacements and new installations for Lincoln homes and businesses, from one local company. Call (402) 423-6960.
 
 Buttons: Call (402) 423-6960 / Request Service
 
@@ -179,9 +179,6 @@ Same day service. Austin explained everything well.
 
 How do I pay? We send an invoice by mail and email. You can pay online, call in with a card, send a check, or pay on site while we're still at your home. A 3% processing fee applies to credit card payments over $5,000.
 
-Where do you work? Lincoln and the surrounding area, and now David City and Columbus too.
-
-Do you work on businesses? Yes. The same crews handle commercial plumbing, HVAC, electrical and underground utility work. Call and ask for a bid.
 When We Get It Wrong
 Everyone makes a mistake sometimes. Here is how one customer saw the way Action handled one.
 
@@ -285,7 +282,6 @@ I'm away from home a lot. What helps? A Wi-Fi thermostat lets you watch and chan
 
 What should I do while I wait for the technician? In the cold, keep everyone in one closed room and dress in layers. Never heat the house with a gas oven or stove. In a heat wave, close the blinds on the sunny side and check on anyone who struggles in the heat.
 
-How soon can someone come out? Customers describe same-day service, and one was serviced the next day after the heat went down on a cold December Thursday.
 Call ACTION
 If your heat or AC isn't working, call (402) 423-6960 and tell us what it's doing.
 Water Heaters — Water Heater Replacement in Lincoln, NE — Action Plumbing, Heating, A/C & Electrical
@@ -341,9 +337,6 @@ What does a maker's warranty usually cover? It usually covers the water heater i
 
 How do I know it's time to replace instead of repair? Age, repeated repairs and a leaking tank are the three clues. One repair on a young unit is usually worth making.
 
-How soon can you replace one? Customers describe same-day service, and one had a new water heater installed by noon after leaving a message the night before.
-
-Do you install tankless units? Yes. We repair, replace and install water heaters, tank and tankless.
 Call ACTION
 If your water heater isn't working, call (402) 423-6960 and tell us what it's doing.
 Contact — Contact Action Plumbing, Heating, A/C & Electrical in Lincoln, NE
@@ -364,9 +357,11 @@ The address of the job, and whether it's a home or a business
 
 A model number or a photo of the label helps a lot, but don't hold up the call to find one. If you smell gas or a carbon monoxide alarm is sounding, leave the building first and call from outside.
 What Happens Next
-After you describe the problem, we can usually tell you what we think it is and when a technician can come out, and it's often the same day. You decide what happens next.
+After you describe the problem, we can usually tell you what we think it is and when a technician can come out, and it's often the same day. The technician looks for the cause first, explains what failed and goes over your options, so you decide what happens next.
 Our Office
 4101 South 8th St, Lincoln, NE 68502
+
+You can visit for an in-person talk with someone on our team.
 
 Where We Work
 Lincoln and the surrounding area, and now David City and Columbus too, for homes and for businesses.
@@ -377,7 +372,7 @@ I’ve been using action plumbing and heating since I purchased my first house i
 Call ACTION
 Call (402) 423-6960 and we'll set up your visit.
 Notes (not page copy)
-Word counts: Strategy 992 (limit 1,000); Home 1024 with quotes, 869 without; Heating & AC 1447 with quotes, 1158 without; Water Heaters 1050 with quotes, 922 without; Contact 382 with quotes, 283 without. Counts are whitespace-separated words, headings, bullets, trust bar and buttons included; "without quotes" removes quote blocks and their captions.
+Word counts: Strategy 992 (limit 1,000); Home 998 with quotes, 855 without; Heating & AC 1414 with quotes, 1141 without; Water Heaters 1050 with quotes, 931 without; Contact 380 with quotes, 284 without. Counts are whitespace-separated words, headings, bullets, trust bar and buttons included; "without quotes" removes quote blocks and their captions. Backport changes: Home has a differentiators strip under the buttons (family-owned, 24-hour service, homes and businesses, warranty repair center, customers describe same-day visits; no rating or review count). Speed claim placement: Home strip and Home FAQ; Heating hero; Water Heater hero. The extra FAQ questions on Home (where we work, businesses), Heating (how soon) and Water Heaters (how soon, tankless) were removed because the pages already say them; each page keeps its single FAQ block with bold questions.
 
 Two services chosen: Heating & AC and Water Heaters, the two money services in inventory.md. inventory.md judged water heaters unable to reach 700 words without repeating facts, so the water heater page leans on hedged trade knowledge (gas vs electric, relief valve, rust, tank vs tankless, what a warranty claim changes). It makes no new business claims.
 

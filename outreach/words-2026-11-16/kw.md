@@ -19,7 +19,7 @@ Your customers say K&W shows up fast, again and again.
 >
 > — Taylor M.
 
-Your heating and AC pages never say how fast. The AC page says "prompt service" and stops there. Your emergency line is the other half of the story.
+Your 24/7 emergency line is the other half of the story.
 
 > When you trust you Furnance and AC with K&W no matter what the issue 24/7 the professionals got you covered
 >
@@ -36,13 +36,13 @@ So the demo puts your speed and your 24/7 line at the top, and gives furnace rep
 *Why it matters:* This is what Google reads to learn who you are.
 
 **Current site problem**
-- The name in your browser tab is "Reliable HVAC Services for Indiana, Kentucky & Illinois." Evansville isn't in it, and Evansville is where your customers search from.
-- The same four testimonials (Viola Johnson, Kevin Storey, Michael Molinet, Andrew Hayes) repeat on your home, heating, AC and About pages, three times down the page on the service pages. We couldn't find any of them on your Google profile.
+- Your browser tab says "Reliable HVAC Services for Indiana, Kentucky & Illinois." No Evansville, where your customers search from.
+- The same four testimonials (Viola Johnson, Kevin Storey, Michael Molinet, Andrew Hayes) repeat on your home, heating, AC and About pages. We couldn't find them on your Google profile.
 
 **What the demo fixes**
 - A browser tab name and headline that say HVAC Company in Evansville, IN.
-- A strip right under the call buttons: family-owned, 24/7 emergency service, free furnace replacement estimates, often the same day.
-- Your Google reviews, word for word, in place of the four repeated testimonials.
+- A strip under the call buttons: family-owned, 24/7 emergency service, free furnace replacement estimates, often the same day.
+- Your Google reviews, word for word, in place of the four.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
@@ -52,15 +52,13 @@ Google and AI tools can only repeat what's written down. We get every service, c
 *Why it matters:* Where furnace repair searches in Evansville land.
 
 **Current site problem**
-- The headline is "Heating Services – Furnaces, Heat Pumps, Maintenance & More," with no Evansville and no furnace repair. Google can't tell which town it's for.
-- Furnace repair gets two sentences, and nothing says what usually goes wrong or what happens when you call.
-- Nothing covers a gas smell or a furnace that quits at night, and the page never says how fast you get there. Your reviews do: same-day service, within 24 hours.
+- The headline is "Heating Services – Furnaces, Heat Pumps, Maintenance & More." No Evansville, no furnace repair.
+- Furnace repair gets two sentences. Nothing covers a gas smell or a furnace that quits at night, or how fast you get there. Your reviews do: same day, within 24 hours.
 
 **What the demo fixes**
 - A headline and browser tab name that say Furnace Repair in Evansville, IN.
-- What usually fails, and a repair-or-replace rule you can check yourself.
-- A gas smell and carbon monoxide section that says what to do first.
-- A speed line up top (usually within a day, often the same day) and your 24/7 emergency service said plainly.
+- What usually fails, a repair-or-replace rule, and a gas smell and carbon monoxide section.
+- A speed line up top (usually within a day, often the same day) and 24/7 service said plainly.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn't think to mention still get their own pages.
@@ -70,14 +68,13 @@ A check of what your competitors offer, so services you didn't think to mention 
 *Why it matters:* Where AC repair searches in Evansville land.
 
 **Current site problem**
-- The headline is "Air Conditioning Services – Repairs, Replacements, Maintenance & More." No Evansville, and no "AC repair."
-- AC repair gets two sentences. The page says "prompt service" and "24/7 emergency availability" but never how fast, though one customer had a tech out on a Saturday in 100-degree heat.
-- It names no part and no symptom, so a homeowner can't tell a weak capacitor from a clogged drain line.
+- The headline is "Air Conditioning Services – Repairs, Replacements, Maintenance & More." No Evansville, no "AC repair."
+- AC repair gets two sentences: "prompt service," never how fast, and no part or symptom named.
 
 **What the demo fixes**
 - A headline and browser tab name that say AC Repair in Evansville, IN.
-- What usually fails, with the parts named: capacitor, fan motor, low refrigerant, a clogged drain line in a humid summer.
-- A repair-or-replace rule and a ductless mini-split section, each with the customer review that fits it.
+- What usually fails, parts named: capacitor, fan motor, low refrigerant, a clogged drain line.
+- A repair-or-replace rule and a mini-split section, each with a customer review.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
@@ -87,14 +84,13 @@ Pages planned from what Google actually shows for each search, so every page tar
 *Why it matters:* It's where someone decides whether to call.
 
 **Current site problem**
-- It's 33 words: address, phone, email and a form. It never says you answer emergencies 24/7. That promise sits in a short list lower on the heating and AC pages.
-- It doesn't say where you work, so someone in Wadesville or across the river can't tell if you come out.
-- It never says what to have ready, so the first call turns into twenty questions.
+- It's 33 words: address, phone, email and a form. It never says you answer emergencies 24/7; that sits in a short list lower on other pages.
+- It doesn't say where you work, so someone in Wadesville or across the river can't tell if you come out, or what to have ready.
 
 **What the demo fixes**
 - 24/7 emergency service said first, with the number.
-- Address, phone and email together, with what to have ready when you call.
-- Your service area in words: Evansville, Wadesville, southern Indiana, western Kentucky and parts of Illinois.
+- Address, phone, email and what to have ready.
+- Your service area: Evansville, Wadesville, southern Indiana, western Kentucky and parts of Illinois.
 
 **A full build would also add**
 Call and form tracking that shows which pages and towns your leads come from.
@@ -142,17 +138,17 @@ Book a call and we'll walk you through this demo, settle these four, and show yo
 
 ## Home — HVAC Company in Evansville, IN — K&W Premier Heating and Air
 
-Furnace and AC repair, new systems, heat pumps, generators and commercial HVAC for homes and businesses in Evansville and across the Tri-State. We usually get a technician to you within a day, often the same day. Call (812) 589-9338.
+Furnace and AC repair, new systems, heat pumps, generators and commercial HVAC for homes and businesses in Evansville and across the Tri-State. (HVAC means heating, ventilation and air conditioning.) We usually get a technician to you within a day, often the same day. Call (812) 589-9338.
 
 **Buttons:** Call (812) 589-9338 · Request Service
 
-**Strip:** Family-owned · 24/7 emergency service · Free replacement estimates · Often the same day
+**Strip:** Family-owned · 24/7 emergency service · Free furnace replacement estimates · Often the same day
 
 ### Two Local Businesses, One Family-Owned Company
 
 K&W Premier Heating and Air is built from the merger of two local businesses, and it started with one van and a promise of honest, reliable HVAC service for Evansville and Wadesville. We're still family-owned, still based on Vogel Road in Evansville.
 
-We work on furnaces, heat pumps, air conditioners, ductless mini-splits, thermostats, indoor air quality equipment, standby generators and commercial rooftop units. One company handles all of it, so you aren't hunting for a different number when the problem changes.
+We work on furnaces, heat pumps, air conditioners, ductless mini-splits (wall-mounted units that need no ducts), thermostats, indoor air quality equipment, standby generators and commercial rooftop units (heating and cooling units that sit on the roof of a building). One company handles all of it, so you aren't hunting for a different number when the problem changes.
 
 > Jake was a great service tech for sure!! Came out checked everything and was on his way!!
 >
@@ -160,9 +156,7 @@ We work on furnaces, heat pumps, air conditioners, ductless mini-splits, thermos
 
 ### A Technician Within a Day, Often the Same Day
 
-When you call, we ask what the system is doing and gather the details about your heating, cooling or generator setup, so the right technician heads your way. Our technician explains the best fix before the work starts, does the repair or install, then tests the system and tidies the workspace.
-
-Appointments are usually within a day, and often the same day. A repair that needs a part that has to be ordered can take longer.
+When you call, we ask what the system is doing and gather the details about your heating, cooling or generator setup, so the right technician heads your way. Our technician explains the best fix before the work starts and then does the repair or install. A repair that needs a part that has to be ordered can take longer.
 
 > Quick, same day service. Good communication with technician as well as office. Would highly recommend anyone.
 >
@@ -178,7 +172,7 @@ Evansville summers are hot and humid, and winters often drop below freezing for 
 
 We're certified dealers for Ruud and American Standard, which generally means the manufacturer has authorized us to sell, install and service its systems. We also repair all major brands and are certified to install most major manufacturers, so you aren't limited to one label.
 
-Instead of pushing a single brand, we match the equipment to your home, your budget and what you want from it over the long run. Replacement estimates are free.
+Instead of pushing a single brand, we match the equipment to your home, your budget and what you want from it over the long run. Furnace replacement estimates are free.
 
 > Best product, best price, timeliness, best installation. I eventually quit taking estimates
 >
@@ -186,9 +180,9 @@ Instead of pushing a single brand, we match the equipment to your home, your bud
 
 ### What We Do
 
-- **Heating.** Furnace repair and replacement, heat pump repair and installation, seasonal tune-ups, and thermostats and zoning controls.
+- **Heating.** Furnace repair and replacement, heat pump repair and installation, seasonal tune-ups, and thermostats and controls that set different rooms to different temperatures.
 - **Air conditioning.** AC repair, tune-ups and replacement, ductless mini-split installation, and indoor air quality equipment such as air purifiers, UV lights and humidity control.
-- **Generators.** Whole-home standby generators from Generac and other brands, with installation, transfer switches, maintenance, load testing and repair.
+- **Generators.** Whole-home standby generators from Generac and other brands, with installation, transfer switches (the switch that moves your house onto generator power), maintenance, load testing and repair.
 - **Commercial.** Rooftop units, commercial heating, emergency repair and maintenance agreements for offices, restaurants, retail and warehouses.
 
 ### Backup Power for Winter and Summer Storms
@@ -209,7 +203,7 @@ We're based in Evansville and serve southern Indiana, western Kentucky and parts
 
 ### Prices Come After We've Looked
 
-A repair price depends on the failed part and the labor. A replacement price depends on the size of the home, the system you pick and the ductwork it connects to. We'd rather look before we quote, and replacement estimates are free.
+A repair price depends on the failed part and the labor. A replacement price depends on the size of the home, the system you pick and the ductwork it connects to. A number given before anyone has looked at the system is a guess.
 
 > Absolutely amazing! Great business model that promotes taking care of the customer at a very fair price.
 >
@@ -225,7 +219,7 @@ A repair price depends on the failed part and the labor. A replacement price dep
 
 **How long does a new system take to install?** Most heating or cooling system installs can be finished in one day. Larger or more complex jobs may take longer, and we'll keep you informed.
 
-**Do you charge for a replacement estimate?** No. Replacement estimates are free.
+**Do you charge for a furnace replacement estimate?** No. Furnace replacement estimates are free.
 
 ### Talk It Through
 
@@ -237,11 +231,11 @@ The furnace has stopped heating and the house is getting colder. We usually get 
 
 **Buttons:** Call (812) 589-9338 · Request Service
 
-**Strip:** Furnace repair · Heat pumps · Free replacement estimates · Often the same day
+**Strip:** Furnace repair · Heat pumps · Free furnace replacement estimates · Often the same day
 
 ### We Repair Furnaces and Heat Pumps, Whoever Installed Them
 
-We repair furnaces and heat pumps from all major brands. You don't need to have bought the furnace from us. Our technicians are licensed, and when we find the cause we tell you what failed and what it will take to fix, before the work starts.
+We repair furnaces and heat pumps from all major brands. You don't need to have bought the furnace from us. When we find the cause, we tell you what failed and what it will take to fix, before the work starts.
 
 Many Evansville homes are heated by a gas furnace, and others by an electric furnace or a heat pump. The cause of a no-heat call is usually different for each, which is why the first job is finding out which parts are working.
 
@@ -251,7 +245,7 @@ Many Evansville homes are heated by a gas furnace, and others by an electric fur
 
 ### What Happens When You Call About Your Furnace
 
-1. **You describe it.** Tell us what the furnace is doing, and we confirm an appointment and gather the details about your system. It's usually within a day, often the same day.
+1. **You describe it.** Tell us what the furnace is doing, and we confirm an appointment and gather the details about your system.
 2. **We arrive on time.** The technician looks at the furnace, then explains the best solution.
 3. **We repair it.** Common parts can often be handled in one visit. A part that has to be ordered may mean a second trip.
 4. **We test it.** Before we leave, we run the furnace and tidy up the workspace.
@@ -282,13 +276,11 @@ Four quick checks can save a trip: the thermostat is set to heat and above the r
 
 If the problem is an igniter, a sensor, a blower motor or a thermostat, repair is usually the smaller bill and the furnace keeps going. If the furnace is over 10 years old, breaks down often, or your energy bills keep rising, it may be time to consider a replacement. Gas furnaces commonly last 15 to 20 years, so a 12-year-old furnace with one cheap repair is usually not a replacement call.
 
-A cracked heat exchanger, the part that separates combustion gases from the air your family breathes, is the one repair that usually ends the conversation. We inspect your system and give you honest advice on the most cost-effective option.
+A cracked heat exchanger, the part that separates combustion gases from the air your family breathes, is the one repair that usually ends the conversation. We inspect the furnace and tell you which option costs less over time.
 
 ### Replacing a Furnace
 
-A new furnace is usually sized to the home's heat loss, not to the old unit, and an oversized furnace tends to cycle on and off and wear itself out. Replacement estimates are free. Financing is available, and a member of our team can walk you through the plans.
-
-Most installs can be finished in one day.
+A new furnace is usually sized to the home's heat loss, not to the old unit, and an oversized furnace tends to cycle on and off and wear itself out. Furnace replacement estimates are free. Financing is available, and a member of our team can walk you through the plans.
 
 > They arrived that morning at around 8:00am like they promised and got busy and went to work. They had the old furnace and a/c unit disconnected and removed and the new furnace and a/c installed in less than 8 hours.
 >
@@ -298,7 +290,7 @@ Most installs can be finished in one day.
 
 A heat pump heats and cools with one system, which suits Evansville's winters, since they are cold but often not far below freezing for long. Below freezing a heat pump works harder, and many are paired with backup heat. If you're considering one, ask what backs it up on the coldest nights. We repair heat pumps and install new ones.
 
-We also install programmable and smart thermostats, zoning controls, and replacements for controls that have stopped responding.
+We also install programmable and smart thermostats, zoning controls (which let different rooms hold different temperatures), and replacements for controls that have stopped responding.
 
 > Clint serviced my heat pump and moved my thermostat. He was personable, efficient, and knowledgeable. Price was very reasonable.
 >
@@ -308,15 +300,17 @@ We also install programmable and smart thermostats, zoning controls, and replace
 
 A seasonal tune-up for a furnace or heat pump means we clean, inspect and test the system. We recommend one at least once a year, ideally in the fall before the heating season begins. It helps prevent breakdowns, can extend the life of the furnace and keeps it running efficiently.
 
+A tune-up is also when the small parts get a look: the filter, the igniter and flame sensor, the blower, the thermostat, and the safety shutoffs that stop the furnace if something goes wrong. A part that is wearing out is far cheaper to replace on a calm October afternoon than on the first freezing night.
+
 ### Questions About Furnace Repair in Evansville
 
 **How can I lower my heating bills in the winter?** Replace filters regularly, seal drafts and use a programmable thermostat. For bigger savings, upgrading to a high-efficiency furnace or heat pump can significantly reduce energy costs.
 
-**What should I do while I wait for a technician?** Close the doors to one room, keep everyone in it and dress in layers. Never heat the house with a gas oven or stove.
+**How fast can you get here?** Usually within a day, and often the same day.
+
+**What should I do while I wait for a technician?** Close the doors to one room, keep everyone in it and dress in layers.
 
 **Is the emergency line really 24/7?** Yes. We offer 24/7 emergency service. Call (812) 589-9338.
-
-**Do you charge for a replacement estimate?** No, replacement estimates are free.
 
 ### Call K&W
 
@@ -358,11 +352,7 @@ An air conditioner doesn't use up refrigerant, so a unit that is low has usually
 
 ### Water Around the Indoor Unit and the Humid Summer
 
-Water near the indoor unit usually points to a clogged drain line, a frozen evaporator coil or a damaged drain pan. Southern Indiana summers are humid, so an air conditioner pulls a lot of water out of the air, and the drain line carries it away. A clog can back water up into the house, so don't ignore moisture around the unit.
-
-> Robert the technician came to clean out my mini splits drain lines. He was quick, efficient and polite. Great job guys!
->
-> — Faith R.
+Water near the indoor unit usually points to a clogged drain line, a frozen coil on the indoor unit or a damaged drain pan. Southern Indiana summers are humid, so an air conditioner pulls a lot of water out of the air, and the drain line carries it away. A clog can back water up into the house, so don't ignore moisture around the unit. Wiping it up and waiting rarely works, because the drain stays clogged and the water comes back.
 
 ### Before You Call
 
@@ -372,7 +362,7 @@ Set the thermostat to cool, a few degrees below the room temperature, and check 
 
 If it's a capacitor, a motor or a cleaned coil, repair is usually cheaper than a new system and can put off a replacement for years. If the unit is over 10 years old, breaking down frequently or your energy bills keep rising, it may be time to look at replacing it. Central air conditioners commonly last 10 to 15 years.
 
-Older units that use a refrigerant called R-22 are a special case. It was phased out in 2020, so it's scarce and costly to top up, and a leak on an old unit often tips the decision toward replacement. We'll inspect the system and give you honest advice on which option costs less over time.
+Older units that use a refrigerant called R-22 are a special case. It was phased out in 2020, so it's scarce and costly to top up, and a leak on an old unit often tips the decision toward replacement. We'll inspect the system and tell you which option costs less over time.
 
 ### Replacing an Air Conditioner
 
@@ -386,29 +376,37 @@ Size matters more than most people expect. In a humid climate, a system that is 
 
 ### Ductless Mini-Splits for Rooms the Ducts Don't Reach
 
-A ductless mini-split cools, and in many models heats, a single room or zone without ductwork. It suits homes without ducts, additions, finished attics and garages, and rooms that never get as cool as the rest of the house. We install mini-splits and maintain them, including cleaning the drain lines.
+A ductless mini-split cools, and in many models heats, a single room or zone without ductwork. It suits homes without ducts, additions, finished attics and garages, and rooms that never get as cool as the rest of the house. We install mini-splits and maintain them.
 
 > We had Daiken ductless heat/AC system installed for our pole barn. It works great and the install was very tidy looking and professional! Thanks for a great job at a very reasonable price!
 >
 > — Susan Z.
 
+Like a central system, a mini-split makes water as it cools, and its drain line can clog. Cleaning those lines is part of keeping one running.
+
+> Robert the technician came to clean out my mini splits drain lines. He was quick, efficient and polite. Great job guys!
+>
+> — Faith R.
+
 ### Indoor Air Quality
 
-We install air purifiers, UV lights and humidity control to reduce allergens and improve the air you breathe. Humidity is the one that matters most here, because a damp house in an Evansville summer can feel muggy even when the air conditioner is running, and humidity control works on that directly.
+We install air purifiers, UV lights and humidity control to reduce allergens and improve the air you breathe. Humidity is the one that matters most here, because a damp house in an Evansville summer can feel muggy even when the air conditioner is running, and humidity control works on that directly. Indoor humidity is usually comfortable somewhere between 30 and 50 percent, and much higher than that tends to encourage mold and dust mites. Air purifiers and UV lights are for the other complaint: a household with allergies or a stuffy, stale feel.
 
 ### A Spring Tune-Up Before the Heat
 
 AC maintenance includes cleaning, inspection and performance checks, so the system is ready for the summer heat. Routine tune-ups help it run efficiently, prevent costly breakdowns and extend its lifespan.
 
+Spring is the time to catch the things that fail on the first hot day: a weak capacitor, a dirty coil, a drain line that is starting to clog. Finding them in April means you don't learn about them in July, when everyone else's air conditioner is also acting up.
+
 ### Questions About AC Repair in Evansville
 
-**Why is my AC leaking water?** Usually a clogged drain line, a frozen evaporator coil or a damaged drain pan. Schedule a service call as soon as you notice moisture around the unit, because these problems can lead to bigger ones if ignored.
+**Why is my AC leaking water?** Usually a clogged drain line, a frozen coil or a damaged drain pan. Schedule a service call as soon as you notice moisture around the unit, because these problems can lead to bigger ones if ignored.
 
 **Why is my AC running but not cooling the house?** Low refrigerant, a frozen coil, dirty filters or an airflow restriction can all cause it. If basic troubleshooting doesn't fix it, we can diagnose it and prevent further damage.
 
 **What types of air conditioning systems do you install?** Central air conditioning systems, ductless mini-splits, heat pumps and high-efficiency cooling units, recommended for your layout and budget.
 
-**Is the emergency line really 24/7?** Yes. We offer 24/7 emergency service. Call (812) 589-9338.
+**How fast can you get here?** Usually within a day, and often the same day.
 
 ### Call K&W
 
@@ -439,7 +437,7 @@ kwheatingandair@gmail.com
 
 ### What Happens After You Call
 
-We confirm your appointment and gather the details we need about the system. A technician then arrives, explains the best solution and handles the work. Appointments are often within a day.
+Once you've told us what the system is doing, we set a time for the visit.
 
 > The company called quickly after requesting maintenance, the dates they had available were soon and the technician (Clint) came out exactly when they said he'd be here.
 >
@@ -460,19 +458,19 @@ Call (812) 589-9338 and we'll set up your visit.
 ## Notes (not page copy)
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip)
-- Strategy: 1250 without quotes, 1290 with (includes the fixed full-build list and four cards; over the ~1,000 soft cap, with the fixed lines about 450 of it).
-- Home: 922 without quotes, 992 with.
-- Furnace Repair: 951 without quotes, 1042 with.
-- Air Conditioning: 908 without quotes, 1020 with.
-- Contact: 291 without quotes, 320 with.
+- Strategy: 1147 without quotes, 1189 with (fixed full-build list and four cards; over the ~1,000 soft cap, with the fixed lines about 450 of it).
+- Home: 974 without quotes, 1073 with.
+- Furnace Repair: 1012 without quotes, 1130 with.
+- Air Conditioning: 1063 without quotes, 1203 with.
+- Contact: 286 without quotes, 324 with.
 
 **Credentials and sources** (none checked on a certifier's or manufacturer's own site; each is the business's claim, stated as theirs)
 - Certified dealers for Ruud and American Standard: `/about-us`. Not checked on the dealer locators. Defined once, on home, with a hedged plain meaning.
 - Certified to install and service most major manufacturers; repairs all major brands: `/faq/what-brands...`, `/heating`. Home only (service page says "all major brands" once for repair).
-- "Licensed technicians": generic on every service page. Used plainly on the heating page; no license number or body named.
+- "Licensed technicians": generic on every service page. Not used in copy (no license body named).
 - EPA-certified vs EPA-licensed: conflict, so neither is in copy. Strategy asks.
 - 24/7 emergency service: `/heating`, `/air-conditioning` bullets, and the business after-hours FAQ ("emergency line is answered 24/7"). Stated as their claim. Reviews: Scott S. ("24/7"), Rodney H. (Saturday in 100-degree heat).
-- Free replacement estimates: `/heating` (furnace replacement). Copy says "replacement estimates are free"; AC replacement's estimate is not stated on the site, so confirm it covers AC too.
+- Free replacement estimates: `/heating` (furnace replacement). Copy says "furnace replacement estimates are free"; AC replacement's estimate is not stated on the site, so confirm it covers AC too.
 - Financing: heating page, once ("financing is available"). No lender named, because the site contradicts itself.
 - Family-owned, built from two local businesses, one van: `/about-us`. The year 2018 is left out (conflict).
 - Rating and review count: not used (4.8 on the testimonials page vs 4.9 on Google). The strategy page uses no counts.
