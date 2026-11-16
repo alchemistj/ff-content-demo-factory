@@ -1,0 +1,28 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "fortwayne-plumbing-hattersley",
+  "request": {
+    "mapsUrl": "place_id:ChIJCYc3I3TjFYgRtapgUfbtrOA",
+    "maxReviews": 75,
+    "expectedPhone": "2604836473",
+    "expectedName": "Hattersley"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "gVGNQcc14xVzXcVS7",
+    "datasetId": "PBvb6gINa3Uhi0cQ6",
+    "attempts": 1,
+    "usageUsd": 0.036199999999999996
+  },
+  "counts": {
+    "listingTotal": 62,
+    "withText": 53,
+    "ratingOnly": 9
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T04:09:47.766Z",
+  "finishedAt": "2026-11-16T04:10:19.094Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43802350226"
+}

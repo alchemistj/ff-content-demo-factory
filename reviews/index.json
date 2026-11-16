@@ -411,6 +411,18 @@
       "pulledAt": "2026-11-16T04:07:48.089Z"
     },
     {
+      "slug": "fortwayne-plumbing-hattersley",
+      "name": "A Hattersley & Sons Inc",
+      "placeId": "ChIJCYc3I3TjFYgRtapgUfbtrOA",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 62,
+        "withText": 53,
+        "ratingOnly": 9
+      },
+      "pulledAt": "2026-11-16T04:10:19.094Z"
+    },
+    {
       "slug": "fortwayne-plumbing-wickey",
       "name": "Wickey Plumbing LLC",
       "placeId": "ChIJfRDGZy_0KYUR1Bto5wCrsR8",
