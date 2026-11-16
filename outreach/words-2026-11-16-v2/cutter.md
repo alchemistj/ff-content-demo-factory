@@ -20,6 +20,8 @@ Mike and Bryan Cutter are twin brothers, born and raised in Cedar Rapids. Your h
 >
 > — Cory H.
 
+So the demo opens with General Contractor in Cedar Rapids, IA, and gives masonry and decks a page each, because your reviews describe both in detail.
+
 **The demo, page by page**
 
 ### 1. Homepage

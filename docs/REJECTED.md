@@ -130,6 +130,12 @@ Length follows the real material (Josh's content rule). Under 450 words the chec
 - where: body
 - check: short-service-page
 
+### R20: Knocking other companies, even when their own site says it
+"We know the local roofing industry has many pitfalls, and that some roofing companies have unethical business practices." (Premium, Nov 16; FF cut the same line Nov 15.) No claims about other companies (DOC-WRITE-BRIEF hard rules). Say what this business does instead.
+- pages: business
+- where: body
+- regex: \b(other|some|many|most) (roofers|roofing companies|contractors|companies|plumbers|electricians)\b[^.\n]{0,80}\b(unethical|pitfalls|scam|cut corners|fail(ing)? to|can'?t be trusted|bad time)\b|\bpitfalls\b|\bunethical\b
+
 ### Judgment only (taste check and DOC-CHECK, no regex)
 - Vague "What the demo fixes" / "Current site problem" bullets; fixes that don't move the needle (CT).
 - A vague keyword line where a search-volume number exists (CT).

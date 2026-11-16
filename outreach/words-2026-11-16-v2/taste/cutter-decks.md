@@ -59,4 +59,4 @@ A covered deck with storage below is a design we work out with you.
 
 ### Plan Your Deck With a Trex Pro Platinum Crew
 
-Call 319-900-5497 for your deck estimate. Estimates are free on standard jobs.
+Call 319-900-5497 to schedule your consultation.
