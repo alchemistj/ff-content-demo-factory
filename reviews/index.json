@@ -675,6 +675,18 @@
       "pulledAt": "2026-10-23T17:38:02.396Z"
     },
     {
+      "slug": "lincoln-electrical-envision",
+      "name": "Envision Electric",
+      "placeId": "ChIJYVVb_Rq5locRy7rmNiBA9I0",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 127,
+        "withText": 54,
+        "ratingOnly": 21
+      },
+      "pulledAt": "2026-11-16T04:15:34.396Z"
+    },
+    {
       "slug": "lincoln-plumbing-action",
       "name": "Action Plumbing, Heating, A/C & Electrical",
       "placeId": "ChIJlyzgNdK_locRl2v2Fz5SSSA",
