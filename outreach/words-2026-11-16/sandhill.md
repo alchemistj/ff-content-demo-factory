@@ -39,7 +39,7 @@ So we led with what your reviews show: a roof looked at, a straight answer, and 
 
 - **Current site problem:**
   - Roofing is one section of a services page shared with four other services, so no page exists for "roof replacement in Lincoln".
-  - The heading over each section of that page is your phone number.
+  - The heading over five of that page's six sections is your phone number.
   - "When To Replace Your Roof" appears three times on the page, and the materials paragraph twice.
 - **What the demo fixes:**
   - A page of its own: "Roof Replacement in Lincoln, NE — Sandhill Roofing".

@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/hvac-faqs
 
-- Fetched: 2026-11-16T03:45:20.488Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:48:17.581Z (rendered in a real browser)
 - HTTP: 403
 - Title: Request blocked
 - H1: Request blocked

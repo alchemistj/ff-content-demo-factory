@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/about-us/blog
 
-- Fetched: 2026-11-16T03:45:18.370Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:48:15.488Z (rendered in a real browser)
 - HTTP: 403
 - Title: Request blocked
 - H1: Request blocked

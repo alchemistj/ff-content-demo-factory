@@ -1,6 +1,6 @@
 # https://www.myprocomfort.com/specials
 
-- Fetched: 2026-11-16T03:45:02.174Z (rendered in a real browser)
+- Fetched: 2026-11-16T03:47:59.697Z (rendered in a real browser)
 - HTTP: 403
 - Title: Request blocked
 - H1: Request blocked

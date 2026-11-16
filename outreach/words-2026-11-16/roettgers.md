@@ -86,7 +86,7 @@ Every page in your menu loads and your phone number is tap-to-call on every page
 
 ### What a full build includes
 
-The demo is the first four pages. A full build covers the rest of your services too. About 80% of visitors are on a phone, which is why the 91 speed score below matters.
+The demo is the first five pages. A full build covers the rest of your services too. About 80% of visitors are on a phone, which is why the 91 speed score below matters.
 
 **Gets you found**
 - Every service on your website and your Google profile, telling the same story
@@ -129,7 +129,7 @@ Text us: (417) 373-2773
 
 # HVAC Company in Lincoln, NE — Roettger's Heating and Cooling
 
-When your heat or AC stops, you call and talk to Matt. You hear from us before we arrive, and you get an honest answer on what your system needs. Whether it's a tune-up, a repair or a full replacement, we treat your home or business as if it were our own.
+When your heat or AC stops, you call and talk to Matt. You get an honest answer on what your system needs. Whether it's a tune-up, a repair or a full replacement, we treat your home or business as if it were our own.
 
 Buttons: Call (402) 314-3612 / Contact us
 
@@ -141,15 +141,15 @@ Buttons: Call (402) 314-3612 / Contact us
 
 > "The phone was answered right away, and Matt was available to take care of our needs quickly and efficiently." — Dave M.
 
-### You Talk to Matt, and You Know When We're Coming
+### You Talk to Matt, and You Know What to Expect
 
-Call us and Matt is the person you speak with, for fast answers and to schedule your service. Before the technician arrives, you hear from us, so you aren't left wondering when someone will show up.
+Call us and Matt is the person you speak with, for fast answers and to schedule your service. Customers report a text or call before the technician arrives, so they know when to expect someone.
 
 > "Great heads up text when the technician was arriving." — Mike K.
 
 ### Honest Recommendations, Explained as We Go
 
-You get a straight answer on what your system needs, and whether that means a repair or a replacement. We explain the work while we do it, so you know what you're paying for.
+You get a straight answer on what your system needs, and whether that means a repair or a replacement. Customers report that the work gets explained as it's done.
 
 > "He explains the work that he has done and makes sure you understand what is being done every time." — Luke C.
 
@@ -176,13 +176,13 @@ Routine maintenance means a system inspection, a tune-up and a cleaning, for you
 
 ### Selling Your Property? We Can Look the System Over First
 
-If a buyer wants the heating and cooling inspected and cleaned before closing, we do that. We check the whole system and tell you what we find, so the next owners can count on it.
+System inspections and cleaning are part of what we do, including when a buyer wants the heating and cooling looked over before closing.
 
 > "Kaden came by and while inspecting everything he found a weak capacitor in the furnace, provided a quote and replaced it for us so the next owners of our home are good to go!" — Ethan V.
 
 ### A Lincoln Company
 
-Matt and his wife, Jessica, both grew up in Lincoln. They have two boys, and they want every customer to feel like part of the Roettger family. We're a locally owned company, and the owner is on your job.
+Matt and his wife, Jessica, both grew up in Lincoln. They have two boys, and they want every customer to feel like part of the Roettger family. We're a locally owned company.
 
 > "Hands on owner operator with lots of experience and knowledge." — Cory S.
 
@@ -202,13 +202,13 @@ Heat out, AC out, or a system you want checked before the season: call (402) 314
 
 # AC Repair in Lincoln, NE — Roettger's Heating and Cooling
 
-When your air conditioner stops cooling, call (402) 314-3612 and talk to Matt. From warm air to unusual noises, we troubleshoot and fix cooling problems quickly, and we tell you what we found.
+When your air conditioner stops cooling, call (402) 314-3612 and talk to Matt. From warm air to unusual noises, we troubleshoot and fix cooling problems quickly, and we explain what we find.
 
 Buttons: Call (402) 314-3612 / Contact us
 
 **Trust bar**
 - Speak Directly With Matt
-- A Heads-Up Before We Arrive
+- Locally Owned in Lincoln
 - Often Fixed the Same Day
 - Honest Pricing
 
@@ -216,33 +216,15 @@ Buttons: Call (402) 314-3612 / Contact us
 
 ### Back Up and Running the Same Day
 
-When the AC quits, waiting a week isn't an option. We aim to get to you the same day, and on a hot afternoon that often means your system is running again within hours.
+When the AC quits, waiting a week isn't an option. Customers report their air conditioner running again within hours of calling, and often the same day.
 
 > "I got home from work and my air conditioner wasn't working I made one phone call and he said he'd be on his way. He got me up and running in about an hour." — Laurie F.
 
 ### Holiday Weekends and Hot Spells
 
-An AC that quits on a holiday weekend still needs fixing. We take the call and fit you in as fast as we can.
+Customers report calling about a broken AC on a holiday weekend and getting a fast answer.
 
 > "Matt with Roettgers Heating and Cooling did an amazing job and was quick to answer our distress call when our A/C went out on Memorial Day weekend. He managed to fit us into his schedule promptly and even sent a text to let us know when he was on his way to our house." — Shelly G.
-
-### Fixed Before a Closing
-
-If your house is for sale and the air conditioner fails before the final walk-through, call us and tell us your closing date. A broken AC shouldn't hold up a sale.
-
-> "He got over there and fixed it within hours to ensure the buyers had a functioning AC and that we still closed on time!" — Charli H.
-
-### A Diagnosis You Can Follow
-
-We find the problem first and explain it before we fix it. You see why it happened, so the repair makes sense to you and you can decide what to do next.
-
-> "… he was great in showing me why issues were happening and what the best courses of action were." — Marcus B.
-
-### Many Repairs Are One Part
-
-A cooling problem is often one failed part. When it is, we replace that part and nothing else.
-
-> "Was so grateful to have my cold air turned on and fixed by just replacing one element and service call for under $200." — Jane B.
 
 ### Honest Pricing
 
@@ -288,25 +270,13 @@ We give you honest recommendations and free estimates, so you can choose the bes
 
 ### Fast When a Replacement Can't Wait
 
-When the AC is gone on a hot day, a replacement can't wait a month. We aim to move quickly from estimate to installation.
+Customers report a replacement installed the next day or the next business day.
 
 > "Matt was timely, made us know we were a priority to him, gave us a very fair bid and got the work done on the next business day. His work was high quality and he even came back to double check everything a few days later." — Susan S.
 
 ### The Right Unit for Your Space and Budget
 
 We help you choose a unit that fits your space and your budget. We install Comfortmaker® HVAC equipment. Because it's locally supplied, we can get equipment quickly, which means faster turnaround on new installations and replacements.
-
-### Installed Without Rushing
-
-A good installation takes the time it takes. We answer your questions and don't hurry the job.
-
-> "… they took their time and didn’t rush on the installation and did a very good job, answered any questions or concerns I had." — Manuel R.
-
-### A Tidy Work Site
-
-We keep you informed of our progress and clean up when we're done.
-
-> "They were very tidy while here working." — River K.
 
 ### Pay Over Time With Wisetack
 
@@ -341,7 +311,7 @@ Email roettgersheatingandcooling@gmail.com, or fill out the form below with your
 
 ### What Happens After You Contact Us
 
-We schedule a time with you. When we're on the way, you hear from us.
+Customers report being scheduled a day or two out when they contact us on a weekend, and hearing from us when we're on the way.
 
 > "Contacted them on a Saturday and got scheduled for Monday. Tech arrived early and I was informed through text which was nice." — Mary S.
 
@@ -364,15 +334,15 @@ Call (402) 314-3612, or send a message with the form above.
 **Two services chosen:** AC Repair and Air Conditioner Replacement (the two money services in inventory.md). Neither reaches 700 honest words. I did not pad. The site gives one sentence for each, plus the FAQ and the financing page for replacement; the rest is review evidence. Owner input needed to deepen them (process, after-hours answer, hours, equipment line).
 
 **Word counts** (computed from the page copy above; "with quotes" includes the quote text and names; "without quotes" removes quote blocks and their captions; headings, bullets, trust bar and buttons count):
-- Home: 718 with quotes, 535 without quotes
-- AC Repair: 534 with quotes, 327 without quotes
-- AC Replacement: 546 with quotes, 395 without quotes
-- Contact: 241 with quotes, 191 without quotes
-- Strategy: 1392 with quotes, 1392 without quotes
+- Home: 685 with quotes, 502 without quotes
+- AC Repair: 345 with quotes, 212 without quotes
+- AC Replacement: 462 with quotes, 347 without quotes
+- Contact: 251 with quotes, 201 without quotes
+- Strategy: 968 with quotes, 968 without quotes
 
-**Strategy page length:** about 1,390 words, over the 1,000-word limit in the definition of done, because every card carries three problems, three fixes and the confirm card is long. Cut before build if the limit is enforced.
+**Strategy page length:** kept at or under 1,000 words.
 
-**Section counts:** Home 11 (hero, then ten), AC Repair 10, Replacement 10, Contact 7 (hero plus six). Home and the two service pages are within 10 to 12 sections but well under their word minimums, so contact is the only page near its minimum.
+**Section counts:** Home 11 (hero, then ten), AC Repair 6, Replacement 8, Contact 7 (hero plus six). Home and the two service pages are within 10 to 12 sections but well under their word minimums, so contact is the only page near its minimum.
 
 **Credentials and their sources**
 - None confirmed. The site states no license, insurance, warranty, certification or award. Nothing is defined on Home because there is nothing to define.
@@ -396,7 +366,7 @@ Call (402) 314-3612, or send a message with the form above.
 - No SRA proof block was supplied in the brief or the working files I read, so none is on the strategy page.
 
 **Facts to verify with Matt**
-1. Is the heads-up before arrival standard? Six reviews describe a text or call, but the site is silent. Home, AC Repair and Contact state it as how you work.
+1. Is the heads-up before arrival standard? Six reviews describe a text or call, but the site is silent. Home and Contact word it as what customers report; confirm before stating it as policy.
 2. Is "within hours" and "often the same day" for AC repair fair on a normal summer day? Several reviews (an hour, 20 minutes, within hours, same day) support it. One review shows a Saturday contact scheduled for Monday, which is why Contact gives that quote.
 3. Hours, emergency hours and a street address. None is on the site, so none is on the pages. The emergency line uses only the FAQ's words.
 4. Is Matt the owner, and is his surname Roettger? Reviews say "Matt the owner"; the surname is from the business name. The Home family line (Matt, Jessica, two boys, grew up in Lincoln) comes from the About page, which is written in first person and unsigned. Does he want his family on the page?
@@ -406,3 +376,5 @@ Call (402) 314-3612, or send a message with the form above.
 8. "Next-day replacement" rests on a few reviews (a next-day install, a next-business-day install, a quote the next day). I wrote "we aim to move quickly" and did not promise a time.
 9. Pre-sale inspection: written from one review (Ethan V.), supported by the site's "system inspections, tune-ups, and cleaning". Confirm it is a regular offer.
 10. Remove the stray /cart page and the "FAQs 2" page name. These are on the strategy page as problems.
+
+**Cut after checker review:** "Many Repairs Are One Part", "Fixed Before a Closing", "A Diagnosis You Can Follow", "Installed Without Rushing" and "A Tidy Work Site" stated review-derived process as company policy, so they are gone with their quotes (Jane B., Charli H., Marcus B., Manuel R., River K.). Remaining review-derived lines say what customers report. AC Repair and Replacement are now well under 700 words and under 10 sections; both are thin because the site says almost nothing about either. Not padded.

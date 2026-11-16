@@ -14,53 +14,43 @@ Your site shapes your Google ranking, what AI says about your business, and how 
 
 ### Why we built this site
 
-Your customers say the same three things on Google: someone picks up, the fix is fast, and nobody sells them what they don't need. One customer put the first one this way:
+Your customers say the same three things on Google: someone picks up, the fix is fast, and nobody sells them what they don't need. One put the first this way:
 
 > During the last heat wave TSI came right out on a Sunday. ( When no other company we called would pick up the phone.)
 >
 > — Brad S.
 
-Another wrote about the second and third:
-
-> Explained things to me in a way I can understand!
->
-> — Tina W.
-
-Your site doesn't say any of it. None of the customer quotes on your homepage is a night or weekend call, and the after-hours promise is "Emergency Repair 24/7" in the menu. So the demo starts with the call you get at 10 PM. It has five pages: this one, your homepage, air conditioning repair, furnace repair and contact.
+Your site doesn't say any of it. None of the homepage quotes is a night or weekend call, and the after-hours promise is "Emergency Repair 24/7" in the menu. So the demo starts with the call you get at 10 PM. It has five pages: this one, homepage, air conditioning repair, furnace repair and contact.
 
 ### The demo, page by page
 
 **1. Homepage**
 
-- **Current site problem:** The top headline is "Residential & Commercial HVAC in Central Illinois" and the browser tab says "HVAC Repair Central Illinois". Neither says Peoria, so a Peoria search gets a page that never calls itself one.
+- **Current site problem:** The top headline is "Residential & Commercial HVAC in Central Illinois" and the browser tab says "HVAC Repair Central Illinois". Neither says Peoria.
 - **Current site problem:** The maintenance agreement with no extra after-hours rates is two clicks from the homepage, and a night call is when the bill worries people most.
-- **What the demo fixes:** A headline that reads "HVAC Company in Peoria, IL — Thermal Services Inc", an after-hours section with a customer's own words, and the agreement terms in plain words.
+- **What the demo fixes:** A headline that reads "HVAC Company in Peoria, IL — Thermal Services Inc", an after-hours section with a customer's own words, and the agreement terms.
 - **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **2. Air Conditioning Repair**
 
 - **Current site problem:** The headline is the single word "Air Conditioning", and Peoria is not in the browser tab either.
-- **Current site problem:** The page says to inspect "at least once yearly", then says your team "provides thorough twice-annual maintenance". A reader can't tell what to book.
-- **Current site problem:** No customer review is on the page, and the A/C questions sit on a separate Q&A page.
+- **Current site problem:** The page says to inspect "at least once yearly", then says your team "provides thorough twice-annual maintenance". Which one?
+- **Current site problem:** No review is on the page, and the A/C questions sit on a separate Q&A page.
 - **What the demo fixes:** A "Peoria, IL" headline, one answer on timing (spring), four reviews and the Q&A answers.
 - **A full build would also add:** Call and form tracking that shows which pages and towns your leads come from.
 
 **3. Furnace Repair**
 
 - **Current site problem:** The headline is the single word "Heating". "Furnace" and "Peoria" are in neither it nor the browser tab.
-- **Current site problem:** Your repair-or-replace rule (over 20 years old, repair above 50% of a new one) gets two sentences, seven services get one sentence each, and no review is on the page.
+- **Current site problem:** Your repair-or-replace rule (over 20 years old, repair above 50% of a new one) gets two sentences, seven services get one each, and no review is on the page.
 - **What the demo fixes:** A "Peoria, IL" headline, the repair-or-replace rule with room, and furnaces, heat pumps and maintenance in their own sections with five reviews.
 - **A full build would also add:** A check of what your competitors offer, so services you didn’t think to mention still get their own pages.
 
 **4. Contact**
 
-- **Current site problem:** The form's one choice is "Residential" or "Commercial", and no town you serve is named, so a visitor in Mackinaw or Eureka can't tell if you come to them.
-- **What the demo fixes:** A form that asks for the service, and the towns you serve beside the phone number.
+- **Current site problem:** The form's one choice is "Residential" or "Commercial", and no town you serve is named, so a visitor in Mackinaw can't tell if you come to them.
+- **What the demo fixes:** A form that asks for the service, and your towns beside the phone number.
 - **A full build would also add:** Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say.
-
-### What else we found
-
-Your Promotions page says "Now through end of the year" with no year, so a visitor can't tell if the $500 and $250 offers are running now.
 
 ### What a full build includes
 
@@ -98,8 +88,8 @@ This demo is the first five pages. A full build starts by pulling every service 
 ### What we'd confirm with you
 
 1. **Phone number.** Your Google profile and your site's page code show (309) 699-3333, but in a browser a script swaps it for 309-324-5317. Which should customers see? We used (309) 699-3333.
-2. **Years in business.** Your homepage says "since 2004", five pages say "over 15 years" and Maintenance says "over a decade". Which is right? We left every year off.
-3. **Inspections and weekends.** Your A/C page says "at least once yearly" and "twice-annual", and "24/7" sits beside office hours of Monday to Friday, 7:30 AM to 4:30 PM. How often should customers inspect, and who answers on weekends? On our onboarding call we'd also settle the BBB, Ameren and license claims, financing and the owner's name.
+2. **Years in business.** Your homepage says "since 2004", five pages say "over 15 years" and Maintenance says "over a decade". Which is right? We left years off.
+3. **Inspections and weekends.** Your A/C page says "at least once yearly" and "twice-annual", and "24/7" sits beside office hours of Monday to Friday, 7:30 AM to 4:30 PM. How often should customers inspect, and who answers weekends? Is the $500 and $250 off, "Now through end of the year" with no year, still running? On our onboarding call we'd also settle the BBB, Ameren and license claims and the owner's name.
 
 ### Want a website like this for your business?
 
@@ -404,7 +394,7 @@ We serve homes in Peoria and the towns around it. For businesses, we work in Peo
 
 | Page | Words with quotes | Words without quotes |
 |---|---|---|
-| Strategy page | 1000 | 960 |
+| Strategy page | 999 | 974 |
 | Home | 926 | 507 |
 | Air Conditioning Repair | 719 | 509 |
 | Furnace Repair | 705 | 473 |
