@@ -831,6 +831,18 @@
       "pulledAt": "2026-11-16T04:16:44.026Z"
     },
     {
+      "slug": "peoria-roofing-gavlinski",
+      "name": "Gavlinski Roofing & Construction",
+      "placeId": "ChIJ1SCFEaVbCogRFttE39SxhJ0",
+      "status": "ok",
+      "counts": {
+        "listingTotal": 51,
+        "withText": 50,
+        "ratingOnly": 1
+      },
+      "pulledAt": "2026-11-16T05:28:12.422Z"
+    },
+    {
       "slug": "pioneer-peoria",
       "name": "Pioneer Roofing",
       "placeId": "ChIJbVmv0ztZCogR4RO0wHMGcZg",
