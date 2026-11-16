@@ -1,6 +1,6 @@
-# http://www.sycamoretreecare.com
+# https://www.sycamoretreecare.com
 
-- Fetched: 2026-11-16T05:46:25.691Z (rendered in a real browser)
+- Fetched: 2026-11-16T05:46:42.481Z (rendered in a real browser)
 - HTTP: 200
 - Title: Home | My Site
 - H1: (none)
