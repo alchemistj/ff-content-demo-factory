@@ -1,5 +1,9 @@
 # Brief: check ONE business's demo words (separate Sonnet)
 
+> "The architect's first job is QA: Josh is never deflated by what we call ready, and clients and prospects are never embarrassed by what they see. 'Passed the checks' is not 'ready'. Before a doc is called done, the architect reads it against the Lovable builds Josh QA'd, the client sites and Josh's comments, and asks whether Josh would be proud to send it." — Josh, Nov 16
+
+Checker: end your review by reading each page side by side with the closest Lovable build and client-site page; if Josh wouldn't be proud to send it, say BACK TO WRITER with why.
+
 You didn't write this. Check `/home/user/ff-content-demo-factory/outreach/words-2026-11-16/<slug>.md` against the same sources the writer used:
 - `docs/briefs/DOC-WRITE-BRIEF.md` (all of Josh's guidelines);
 - `docs/JOSH-CHECKLIST.md`;

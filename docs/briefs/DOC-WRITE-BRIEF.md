@@ -1,5 +1,7 @@
 # Brief: write ONE business's demo words, from scratch (Sonnet)
 
+> "The architect's first job is QA: Josh is never deflated by what we call ready, and clients and prospects are never embarrassed by what they see. 'Passed the checks' is not 'ready'. Before a doc is called done, the architect reads it against the Lovable builds Josh QA'd, the client sites and Josh's comments, and asks whether Josh would be proud to send it." — Josh, Nov 16
+
 You write words only, as one Markdown file that becomes a Google Doc. Edit only your output file. Run no git, send nothing, create no sessions.
 
 ## Read first, in full

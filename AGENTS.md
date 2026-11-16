@@ -1,5 +1,7 @@
 # AGENTS.md
 
+> "The architect's first job is QA: Josh is never deflated by what we call ready, and clients and prospects are never embarrassed by what they see. 'Passed the checks' is not 'ready'. Before a doc is called done, the architect reads it against the Lovable builds Josh QA'd, the client sites and Josh's comments, and asks whether Josh would be proud to send it." — Josh, Nov 16
+
 ## READ FIRST: the examples
 
 1. **The words of Josh's client websites are the model:** Window Dudes, SRA Roofing & Gutters and Greene Planet (Josh will name a 4th). Their copy is in ff-content-demo-factory `examples/approved-copy/`.
