@@ -1,0 +1,888 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "rockford-roofing-premium",
+  "place": {
+    "name": "Premium Roofing Solutions LLC",
+    "placeId": "ChIJKUsq_0_fZScRekE23zNlug8",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Premium%20Roofing%20Solutions%20LLC&query_place_id=ChIJKUsq_0_fZScRekE23zNlug8",
+    "address": "321 W State St #201, Rockford, IL 61101",
+    "phone": "(815) 296-1306",
+    "rating": 5,
+    "totalReviewCount": 88
+  },
+  "pulledAt": "2026-11-16T05:56:04.127Z",
+  "requestedMax": 150,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pZelVuZGxTV0U0U2tKdWNXVnlTVXBsUWpsb2RHYxAB",
+      "reviewer": "Natalie P.",
+      "rating": 5,
+      "text": "Wonderful experience.  We worked with Matt after a hail storm came through. Matt guided us through the whole process with our insurance company. He made sure he was here to meet with our adjuster and point out all the areas that got damaged. His expertise was invaluable.  He was extremely responsive, kind, and knowledgeable.<br>As for our roof and gutters--- they did an Amazing job! The crew was fast, efficient, hardworking. They made improvements across the board and we are just so happy with our experience and the outcome.",
+      "publishedAt": "2026-10-18T13:52:47.982Z",
+      "ownerResponse": "Natalie,<br>Thanks for taking the time to share your experience!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pZelVuZGxTV0U0U2tKdWNXVnlTVXBsUWpsb2RHYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOjYzUndlSWE4SkJucWVySUplQjlodGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CaFExcG5hRFZ5WTFwa1dHNHpYelpGV0dORVNHYxAB",
+      "reviewer": "Brian B.",
+      "rating": 5,
+      "text": "Dan from Premium was very good at project management and keeping us well informed. Moved our project forward within our desired timeframe. Was very thorough and professional at all times. We are very grateful for all of Dans support during the entire process.",
+      "publishedAt": "2026-10-17T21:06:29.564Z",
+      "ownerResponse": "Thanks, Brian! Your project came together so nicely!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CaFExcG5hRFZ5WTFwa1dHNHpYelpGV0dORVNHYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnBhQ1pnaDVyY1pkWG4zXzZFWGNESGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sVVZrUlBjMnQ2YkZOa2JFeG1PVlp3YzBsb2NVRRAB",
+      "reviewer": "Dennis R.",
+      "rating": 5,
+      "text": "After the storms in Lena this Spring, we had Premium install a new roof, siding and gutters. Scott, Brad and their team were very helpful getting us through the unknown of dealing with the insurance and getting us the most possible for our home. The crews did a wonderful job. We did have a couple of minor issues with some property scars, but Premium stood behind them and made it right. We would recommend Premium to anyone looking for a professional company.<br>Dennis and Gigi Rahn",
+      "publishedAt": "2026-10-09T20:09:33.557Z",
+      "ownerResponse": "Thanks, Dennis!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sVVZrUlBjMnQ2YkZOa2JFeG1PVlp3YzBsb2NVRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnlUVkRPc2t6bFNkbExmOVZwc0locUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sb1Vta3djMlV4YkZSVlFWRjZXa1phUTNFM2NGRRAB",
+      "reviewer": "Don H.",
+      "rating": 5,
+      "text": "Brad from Premium Roofing was wonderful to work with. Professional and personable, he moved things along smoothly, and got it all done in timely fashion. The new roof and skylights look great, and Premium got it done right.",
+      "publishedAt": "2026-09-27T09:06:15.962Z",
+      "ownerResponse": "Thanks, Don!  Brad is one of the best!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sb1Vta3djMlV4YkZSVlFWRjZXa1phUTNFM2NGRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOmloUmkwc2UxbFRVQVF6WkZaQ3E3cFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25wM1FrbGxhREZIY1hSM1JuQk1OMEZLYTFWUmVVRRAB",
+      "reviewer": "Kari S.",
+      "rating": 5,
+      "text": "We had to replace the roof and gutters on both our house and shed due to hail damage.  Tyler was amazing throughout the entire process.  He worked with our insurance company and communicated everything very thoroughly to us every step of the way.   He was on site each day making sure we were happy as the roof and gutters were being installed....sometimes even being attacked by mosquitos and bees!  So dedicated!!  We couldn't be happier with the end result and highly recommend Premium Roofing Solutions.  They made what can be a very stressful project, very easy.",
+      "publishedAt": "2026-09-24T18:58:45.967Z",
+      "ownerResponse": "Thanks, Kari!  This review is amazing! Glad we hit the mark!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wM1FrbGxhREZIY1hSM1JuQk1OMEZLYTFWUmVVRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnp3QkllaDFHcXR3RnBMN0FKa1VReUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21sZmIzVnNRbWxIUTJGV2IydFlaRE5ZTlRKTWRXYxAB",
+      "reviewer": "Gerry P.",
+      "rating": 5,
+      "text": "When selecting a contractor to replace a cedar roof following hail damage we had many to choose from.  I watched Premium Roofing replace my neighbor's roof and the professionalism and care they took convinced me to go with them. Gabe and Brad walked me through the entire claims process and what to expect on the phone and even though the process took quite a bit of time with my insurance company, they kept in touch and made sure I was ready. The outcome is fantastic with DaVinci composite cedar in a perfect color for our home. The installers were efficient and professional for both the gutters and the roof. I highly recommend Premium Roofing!",
+      "publishedAt": "2026-09-16T13:19:46.346Z",
+      "ownerResponse": "Gerry,<br>Your feedback means everything! What a wonderful project to be part of! Your home looks stunning!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21sZmIzVnNRbWxIUTJGV2IydFlaRE5ZTlRKTWRXYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOmlfb3VsQmlHQ2FWb2tYZDNYNTJMdWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2psalJFYzJjSFZGTlhkMFRISnZhRmhpWkZBME5VRRAB",
+      "reviewer": "Lisa Z.",
+      "rating": 5,
+      "text": "I am very satisfied with Premium Roofing Solutions they were above and beyond professional they did address all my concerns highly recommend them!",
+      "publishedAt": "2026-09-12T16:47:47.056Z",
+      "ownerResponse": "Thanks, Lisa!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2psalJFYzJjSFZGTlhkMFRISnZhRmhpWkZBME5VRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOjljREc2cHVFNXd0THJvaFhiZFA0NUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGbWEwbHVOVUZ3YmxKT1lUaDVWRW8zY2tsNlltYxAB",
+      "reviewer": "Tom C.",
+      "rating": 5,
+      "text": "2 thumbs up for Premium Roofing Solutions and project manager Tyler!!  Superb customer service and high quality installation of roofing and siding for my hail damaged house. And,  after the professional installation, the crew also then did a great clean-up job of the roof  and siding tear off debris.<br><br>I was especially impressed with Tyler who was my very knowledgeable project manager and work site supervisor. He was a real pleasure to work with - very patient and accommodating throughout my  prolonged siding and roofing material color/style deliberations -  (As an example - one day we had an appointment at my house for me to look at some new siding samples Tyler was bringing over..  As we went through various colors/styles Tyler noticed that one was missing - one I had liked from a  listing on the internet and wanted to see in person..  Tyler was a bit embarrassed (and a bit frustrated with a fellow worker who had used his truck earlier).. Anyway, Tyler immediately offered to drive to a local roofing supply company -  which he did  - and brought back the missing sample - outstanding customer service!  And actually that sample color was the one that I did end up having installed!!)<br>Tyler did a top notch professional job of keeping me well informed at every step of the whole process and was very prompt and informative with his responses to my text questions.<br>Once the work started, Tyler was a there a great deal of time as an on site monitor.. The excellent service didn't stop there. After all the work was done, there were a few things that I asked to be adjusted and Tyler readily arranged for - AND  - followed up to make sure I was satisfied.<br>And actually now that I think of it the great customer service actually started the day after the hail storm when Tyler drove up as I was in my front yard and he offered to give me an estimate.  I said sure - he came back down off the roof and said I had 2 holes punched through my ridge shingles.  He said he would come back and patch them - I asked how much that would cost - he said no charge and no obligation - just a good will gesture.. True to his word,  he did show up a few hours later and nailed some roofing material over both holes  - which I truly appreciated when it started to rain that night!  He patched my neighbor's roof as well!<br><br>So, I whole-heartedly recommend and thank Premium Roofing Service and their employee Tyler for a job well done!!<br><br>PS - one last accolade - Premium Roofing Services only uses top tier roofing and siding materials - this is important since some other companies scrimp in this area - especially if the work is being paid for with a set price by an insurance company.  The high quality (and hail resistance) level of my (Category 4) shingles was such that I got a discount from my insurance company for future coverage.<br><br>PSS - Recently while out in my front yard at various times, I have had several of my neighbors walk by and comment on how nice my roof and siding look now - this is somewhat unusual in that regrettably I don't live in a particularly close knit neighborhood and I haven't recognized any of the complementors - but unsolicited compliments are usually the most sincere so I thank them and then mention Premium Roofing Solutions ....",
+      "publishedAt": "2026-09-01T03:29:12.184Z",
+      "ownerResponse": "WOW! This review is amazing! Tyler is the best!  Thanks for allowing us to assist on your project!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGbWEwbHVOVUZ3YmxKT1lUaDVWRW8zY2tsNlltYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOkFma0luNUFwblJOYTh5VEo3ckl6Ymc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xWlZHNVNkMDkyTWs5NFYyNWxZMGhUVVhsdVdrRRAB",
+      "reviewer": "Abby B.",
+      "rating": 5,
+      "text": "Highly recommend Brad and team for your roofing needs! They worked with my insurance to get things sorted and were super helpful with answering all my questions. And my new roof looks great!",
+      "publishedAt": "2026-08-28T04:30:46.097Z",
+      "ownerResponse": "Thanks, Abby! Your feedback means everything to us and Brad!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xWlZHNVNkMDkyTWs5NFYyNWxZMGhUVVhsdVdrRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOm1ZVG5Sd092Mk94V25lY0hTUXluWkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSU2QxUlZUbTF6WDNOcGRrOUNSa1p6UjFaQ2NrRRAB",
+      "reviewer": "Kayla P.",
+      "rating": 5,
+      "text": "I cannot recommend Brad, our project manager and his team highly enough—they are a true 10 out of 10. As this was our very first homeowners claim, we were completely unfamiliar with the process, but Brad made everything seamless. His communication was exceptional, keeping us informed every step of the way. He went above and beyond to personally ensure we had the exact right materials and that every detail was executed thoroughly. Even after the work was completed and paid for, Brad stayed in touch to help navigate the insurance side of things. When an unexpected need came up a week later in our end, he was quick to reply and help without hesitation. That level of dedication and integrity is rare. I will be recommending Brad and Premium Roofing Solutions to all of my family and friends if the need arises.",
+      "publishedAt": "2026-08-20T15:28:19.441Z",
+      "ownerResponse": "Kayla, <br>Thank you so much for the kind and thoughtful feedback!  We are grateful to have Brad and are glad you are fully satisfied!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSU2QxUlZUbTF6WDNOcGRrOUNSa1p6UjFaQ2NrRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOkRSd1RVTm1zX3Npdk9CRkZzR1ZCckE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25aaVQyOVBVblZqZHpobFdqVlphM3B0TUZOMmExRRAB",
+      "reviewer": "Gale B.",
+      "rating": 5,
+      "text": "We had an emergency and they came and addressed it immediately .",
+      "publishedAt": "2026-08-01T03:52:57.193Z",
+      "ownerResponse": "We strive to be responsive, thank you for the recognition!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aaVQyOVBVblZqZHpobFdqVlphM3B0TUZOMmExRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnZiT29PUnVjdzhlWjVZa3ptMFN2a1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xwTWRqUllRVll3TVRCb2FETnZUa2xUTVZZeFkyYxAB",
+      "reviewer": "S. R.",
+      "rating": 5,
+      "text": "Tyler was fantastic as project manager on our new roof, and it showed right away that Premium Roofing Solutions has an excellent team. Finished roof looks great — the ridge vent now runs the full length of the roof and looks clean and finished, the shingles lay flat and spaced properly, and the new drip edge in the front really sharpened the look of the house. All the edges were sharply cut and finished cleanly.<br><br>Tyler’s communication was excellent at every step, even walking us through the contract line by line. He stayed on site on install day to make sure everything went smoothly and also helped us choose the right shingle color by bringing requested options. Install crew was organized, the yard was well protected and cleaned up, and all follow‑up work was handled quickly.<br><br>I had several positive interactions with the owners, Gabe and Mike, as well. It was obvious they were involved in the background and paying attention to the details, and they helped make sure we ended up with the roof that matched our home the best.<br><br>I would absolutely recommend Premium Roofing Solutions as a local roofing company. Thanks for the new roof!",
+      "publishedAt": "2026-07-28T14:38:14.554Z",
+      "ownerResponse": "Thanks for the thorough and meaningful review! It means a lot to us. We appreciate the opportunity to assist on your project!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xwTWRqUllRVll3TVRCb2FETnZUa2xUTVZZeFkyYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOlpMdjRYQVYwMTBoaDNvTklTMVYxY2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pWUldIbHVPSE5oY201TVdERXpiRTl1ZG1GUmFsRRAB",
+      "reviewer": "Yelena Y.",
+      "rating": 5,
+      "text": "Thank you Tyler and your team. You did , guys, very good job and so fast. God bless you all.",
+      "publishedAt": "2026-07-10T17:11:16.172Z",
+      "ownerResponse": "Tyler is amazing! We are glad you agree!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWUldIbHVPSE5oY201TVdERXpiRTl1ZG1GUmFsRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOjVRWHluOHNhcm5MWDEzbE9udmFRalE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkbExXVk1Oak4zWW10MlEwOWZkV3B1ZFd4WVRFRRAB",
+      "reviewer": "Dan G.",
+      "rating": 5,
+      "text": "Tyler and the team at Premium were a huge help throughout the process.",
+      "publishedAt": "2026-07-09T21:10:20.891Z",
+      "ownerResponse": "Thanks for taking the time to post some feedback!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkbExXVk1Oak4zWW10MlEwOWZkV3B1ZFd4WVRFRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOjdlLWVMNjN3Ymt2Q09fdWpudWxYTEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxeWVFZG1PVFkxTUY5UFUwZGpiR1JOTjBJMFRsRRAB",
+      "reviewer": "susan G.",
+      "rating": 5,
+      "text": "Tyler is very professional and easy to work with. He made sure I knew what was going on and gave me the price for everything. It was good.",
+      "publishedAt": "2026-07-09T18:44:10.505Z",
+      "ownerResponse": "Thank you, Susan!  Tyler is an asset to our team! We appreciate the chance to service your project!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxeWVFZG1PVFkxTUY5UFUwZGpiR1JOTjBJMFRsRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOi1yeEdmOTY1MF9PU0djbGRNN0I0TlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWZldrVlBiM0V3YzFWa1EzQmZNWFZNU0hSbGJVRRAB",
+      "reviewer": "Brenda F.",
+      "rating": 5,
+      "text": "After the beating Lena, IL took from a hailstorm in March 2026 and then a tornado in April 2026, our home and property was in need of some help. We chose Premium Roofing to do our repairs. They did are excellent, timely, and professional job on all the repairs. Their teams replaced all of our roofing and siding with quality Certainteed products. (Certainteed Asphalt Class 4 shingles, and Certainteed Double 4.5 Dutchlap siding), as well as all new gutters and down spouts, plus replaced 2 damaged sky lights. Their sales team of Brad and Scott were super to work with, with Brad leading the way on our project. Mike (owner) and Dave were great as well. Thank you Premium Roofing for helping us get things looking even better than before the storms.<br><br>Mike and Brenda Fox",
+      "publishedAt": "2026-07-07T22:38:57.023Z",
+      "ownerResponse": "Brenda,<br>This review is amazing and we appreciate you taking the time! Your home is gorgeous!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWZldrVlBiM0V3YzFWa1EzQmZNWFZNU0hSbGJVRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOlVfWkVPb3Ewc1VkQ3BfMXVMSHRlbUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KaGVrcDNjVGhPUVRaelIycDZTRXBFYldsSlgzYxAB",
+      "reviewer": "Cindy W.",
+      "rating": 5,
+      "text": "Scott Alexander and Premium Roofing Solutions went above and beyond to help us get a new roof. When our initial claim for hail damage was denied, Scott and Premium made sure we had all the support we needed to make sure our second adjustment report was accepted. The Premium crew was professional and efficient. Their workmanship excellent and the cleanup was very thorough.<br><br>We are extremely satisfied with our roof. We would highly recommend Premium Roofing to anyone needing a new roof or siding and gutter repair. Scott was very responsive to our requests and concerns.<br><br>We also asked Scott to inspect our church roof due to an internal water leak. Scott identified the problem and fixed it. No leak now. Thank you Scott and Premium.",
+      "publishedAt": "2026-06-27T14:45:28.574Z",
+      "ownerResponse": "Thanks for sharing your great experience with Scott!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KaGVrcDNjVGhPUVRaelIycDZTRXBFYldsSlgzYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnJhekp3cThOQTZzR2p6SEpEbWlJX3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tjNFgwVk9WSFpsTjFGbk4xVkNjWEZJU2tKSFNsRRAB",
+      "reviewer": "John W.",
+      "rating": 5,
+      "text": "Great service quality craftsmanship! Thanks guys!",
+      "publishedAt": "2026-06-17T01:52:39.843Z",
+      "ownerResponse": "Thanks, John!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tjNFgwVk9WSFpsTjFGbk4xVkNjWEZJU2tKSFNsRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOkc4X0VOVHZlN1FnN1VCcXFISkJHSlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT205RGRFUllNbkJZTjJ0MU1ESlRRMmhsTFRkcVlsRRAB",
+      "reviewer": "eddiedebbie E.",
+      "rating": 5,
+      "text": "Tyler and his team replaced our roof today. The entire process was a positive experience.  Tyler was prompt, knew his product and helped us navigate through the project.  Highly recommend these guys. Tear off, ice and water shield, shingles all in a day. Thanks.",
+      "publishedAt": "2026-06-03T00:26:52.000Z",
+      "ownerResponse": "Thanks, Eddie and Debbie!  We appreciate you taking some time to share your great experience with Tyler!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205RGRFUllNbkJZTjJ0MU1ESlRRMmhsTFRkcVlsRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOm9DdERYMnBYN2t1MDJTQ2hlLTdqYlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5WFkzTkRjVmRNWTE4MUxUVk5hMkppUTFjMFNYYxAB",
+      "reviewer": "James H.",
+      "rating": 5,
+      "text": "The absolute best experience from start to finish especially with Tommy Warmoth. I highly reccomend Premium Roofing Solutions and have been recommending them to all of my friends and neighbors. He was down to earth, very easy to talk to, and made sure everything we requested was in place. A+++",
+      "publishedAt": "2026-05-20T03:29:47.979Z",
+      "ownerResponse": "James, Thanks for taking the time to share your Premium Experience!  It was our pleasure to work on your gorgeous home!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5WFkzTkRjVmRNWTE4MUxUVk5hMkppUTFjMFNYYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOl9XY3NDcVdMY181LTVNa2JiQ1c0SXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT204MlNGUnpVelZoUmtkdlZFWmxWbGR5YkZwTlJtYxAB",
+      "reviewer": "Susan G.",
+      "rating": 5,
+      "text": "Premium Roofing did a fantastic job on my new roof, siding, gutters, and down spouts. My house looks crisp and brand new. Michael was amazing to work with, he was informative and took care of every detail. The teams were efficient, respectful, and highly qualified to perform their jobs. I highly recommend Premium Roofing Solutions!",
+      "publishedAt": "2026-05-03T18:45:18.156Z",
+      "ownerResponse": "Susan, Thank you so much for writing this thoughtful review!  It means a lot that you chose us for your project!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT204MlNGUnpVelZoUmtkdlZFWmxWbGR5YkZwTlJtYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOm82SFRzUzVhRkdvVEZlVldybFpNRmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSbFJHUkJjMVZxVHpkUFlVVkpXRk5PWW5neWNsRRAB",
+      "reviewer": "Mike S.",
+      "rating": 5,
+      "text": "Living just outside of Rockford, my roof takes a beating from tree branches and strong winds. Salesman Brad was very easy to work with. Not the typical pushy salesman, just laid back and knowledgeable. He was able to quote a nice package of asphalt shingles & new gutters. Listening to my concerns of wanting a quality long lasting shingle. He recommended the Certainteed ClimateFlex class 4 shingle. Notable because it is a better class than all other competition quoted. I felt comfortable Brad stayed onsite with his team all day to ensure no details were missed. The roofing team was very courteous and quick. Completing the job in a single day. I would highly recommend.",
+      "publishedAt": "2026-05-03T02:27:47.416Z",
+      "ownerResponse": "Mike<br>Brad is best in class! Thanks for sharing your amazing experience with him!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSbFJHUkJjMVZxVHpkUFlVVkpXRk5PWW5neWNsRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOjRlRGRBc1VqTzdPYUVJWFNOYngyclE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25NM1IzQjNUMjQyY1hVNVRESkxNa2RxZEZReWVGRRAB",
+      "reviewer": "Chad W.",
+      "rating": 5,
+      "text": "Mike and his team were very responsive, professional and explained the details clearly with me. I’m satisfied.",
+      "publishedAt": "2026-04-30T21:24:51.039Z",
+      "ownerResponse": "Chad, your home turned out gorgeous, thanks for posting your review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25NM1IzQjNUMjQyY1hVNVRESkxNa2RxZEZReWVGRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnM3R3B3T242cXU5TDJLMkdqdFQyeFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GQ2ExTlJSbHBSV2xKeWVIRmlPRE5rVEZOclUxRRAB",
+      "reviewer": "Alan S.",
+      "rating": 5,
+      "text": "Thank you for the prompt, professional, and efficient work on the commercial roof inspection. We needed an experienced team to thoroughly assess the condition of the roof, and CJ and his team at Premium Roofing Solutions delivered quickly and with great attention to detail. Highly recommend their services.",
+      "publishedAt": "2026-04-30T18:02:14.391Z",
+      "ownerResponse": "Thank you, Alan, for taking the time to provide the thoughtful review! <br><br>We strive for excellent in both results and experience!  <br>Glad we hit the mark here ✅🙏",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GQ2ExTlJSbHBSV2xKeWVIRmlPRE5rVEZOclUxRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnFCa1NRRlpRWlJyeHFiODNkTFNrU1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGa1IwRldaVUZvWTJoZmRHaHNkVVJUVnpoNFFWRRAB",
+      "reviewer": "Todd L.",
+      "rating": 5,
+      "text": "Tommy and his crew did a fabulous job replacing my roof. He was professional and informative through the process. The roof looks great. I would definitely recommend Tommy and his crew.",
+      "publishedAt": "2026-03-11T00:28:55.136Z",
+      "ownerResponse": "Thank you, Todd!<br>Tommy is a great asset to our team! It was a pleasure to replace your roof- it’s a gorgeous home in lovely south beloit!!  Appreciate you taking the time to post a review.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGa1IwRldaVUZvWTJoZmRHaHNkVVJUVnpoNFFWRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOlFkR0FWZUFoY2hfdGhsdURTVzh4QVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkSk0zRm9XREU1TUdkM2ExSTBYM1JqZVZSSE5VRRAB",
+      "reviewer": "Deborah H.",
+      "rating": 5,
+      "text": "I had my roof replaced in 2025, and I couldn’t be happier with the experience. From start to finish, the workmanship was top-notch. The crew was professional, efficient, and paid close attention to detail. The quality of the materials and the care they took during installation really showed.<br><br>What impressed me even more was the follow-up. After the project was completed, he personally checked back in to make sure everything was holding up well after the harsh winter and that I was still satisfied. That level of customer service and accountability is rare these days.",
+      "publishedAt": "2026-03-03T22:48:03.732Z",
+      "ownerResponse": "Deborah,<br>We are so appreciative of you taking some time to post this thorough and thoughtful review. Thank you! We strive for excellence and above all, your satisfaction, and it seems we have achieved both!!  We are grateful to have been able to replace your roofing system and so many others in the Edgerton area after that devastating storm last year! Reach out, anytime for further assistance.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkSk0zRm9XREU1TUdkM2ExSTBYM1JqZVZSSE5VRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOldJM3FoWDE5MGd3a1I0X3RjeVRHNUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT213MmJFd3daVXhVVVVGRVFrbHJWV1pEZVMxdlZtYxAB",
+      "reviewer": "Alisha S.",
+      "rating": 5,
+      "text": "Brad and his team were great. They were helpful through the process and very patient when we were having issues with our horrible insurance agent - State Farm. They even helped us with a referral for a better insurance company to purchase our coverage through.",
+      "publishedAt": "2026-03-01T17:29:06.158Z",
+      "ownerResponse": "Thank you, Alisha! <br>Brad is phenomenal and we are lucky  to have him as part of the team. 🙏<br><br>Thank you for allowing us to be a part of your home renovation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT213MmJFd3daVXhVVVVGRVFrbHJWV1pEZVMxdlZtYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOmw2bEwwZUxUUUFEQklrVWZDeS1vVmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSbVFTMXdVRVJzWTNjM2RVSnVMWHBzWjFwTE5uYxAB",
+      "reviewer": "Garey H.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions was awesome!! From the first day Brad and Todd came to our house to do the assessment, to the day we settled the account. New roof, new siding, new gutters and down spouts. New air conditioner, replaced damaged window flashings. Through all our tribulations with insurance and other parties, they helped us through it all. And now our home looks like a brand new house. Thank you to everyone at Premium.",
+      "publishedAt": "2026-02-23T17:50:29.919Z",
+      "ownerResponse": "Gary<br>Thank you so much for taking some time to write this meaningful review. It means everything!  We appreciate the opportunity!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pSbVFTMXdVRVJzWTNjM2RVSnVMWHBzWjFwTE5uYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOjRmQS1wUERsY3c3dUJuLXpsZ1pLNnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKaE5XNHRNMnR5ZGprdGNYa3RaVXRGVVVoa2QyYxAB",
+      "reviewer": "Marc S.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions defines integrity, honesty, professionalism, quality and responsiveness.  A recent hail storm left our condo complex needing new roofs, chimney caps, siding, gutters and downspouts.  PRS was definitely the right choice and should be yours too.<br><br>The owners, Mike and Gabe truly care about their customers, oversee every aspect of the project and work directly with the insurance company.  The sales team and project managers were very knowledgeable, attentive and took care of every jobsite request.  Their crews were timely, experienced, extremely hard working and left the property clean each night.<br><br>We are completely satisfied with the results and highly recommend PRS.",
+      "publishedAt": "2026-01-19T04:43:54.405Z",
+      "ownerResponse": "Marc<br>Thank you for your thorough review. We greatly appreciate the opportunity to restore your complexes!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKaE5XNHRNMnR5ZGprdGNYa3RaVXRGVVVoa2QyYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOkJhNW4tM2tydjktcXktZUtFUUhkd2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25ST2VuVm1hazh6U0ZaamJrMXZlbE0xZHpobmMxRRAB",
+      "reviewer": "Terri Y.",
+      "rating": 5,
+      "text": "Had a great experience with Tyler and his crew. Roofing siding and gutters.  They did an awesome job and did a great job of cleaning up the mess.  Tyler was always available to help with the process.  Highly recommended.",
+      "publishedAt": "2026-01-17T21:04:39.513Z",
+      "ownerResponse": "Terri,<br>Thank you for sharing your great experience! We agree, Tyler is the best!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ST2VuVm1hazh6U0ZaamJrMXZlbE0xZHpobmMxRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnROenVmak8zSFZjbk1velM1dzhnc1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ac1RuUndlak4yYkZaNFdqWlljeTFLVEdoV2FVRRAB",
+      "reviewer": "Ben M.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions was great to work with.  This was my first time having to go through a home claim process for Hail Damage and they made it very easy.  They did my roof, gutters, siding, and windows.  I would highly recommend them!",
+      "publishedAt": "2026-01-16T18:26:48.165Z",
+      "ownerResponse": "Ben,<br>Thank you for your trust in us to bring your home back to better than pre storm condition! <br><br>And thank you for the thorough and thoughtful review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ac1RuUndlak4yYkZaNFdqWlljeTFLVEdoV2FVRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOmZsTnRwejN2bFZ4WjZYcy1KTGhWaUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5VVluQmZaMmh1V0ZwM1RIUnJiV1ZVZG1oc1ZYYxAB",
+      "reviewer": "Nada C.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions replaced my roof.  Scott and the rest of the team were very professional and easy to work with. Communication and follow through were great throughout the entire process. I am very happy with my new roof and would highly recommend Premium Roofing Solutions.",
+      "publishedAt": "2026-01-14T19:48:35.081Z",
+      "ownerResponse": "Nada,<br>Thank you for leaving this meaningful review! We appreciate the opportunity to assist in the restoration of your home.  <br><br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5VVluQmZaMmh1V0ZwM1RIUnJiV1ZVZG1oc1ZYYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOk9UYnBfZ2huWFp3THRrbWVUdmhsVXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xJNGMzcDNVa1I1UjFoVGJVeFJVa2hrUTJ0SWVtYxAB",
+      "reviewer": "Jeffrey L.",
+      "rating": 5,
+      "text": "Anybody can put a roof on, but only Scott can make the experience painless and a true pleasure. He took care of us from start to finish and was conscious of all the little details that make all the difference. We are super happy with the result and couldn’t have had a better experience. Thank you to Scott and the all guys over at Premium!",
+      "publishedAt": "2026-01-12T15:16:30.277Z",
+      "ownerResponse": "Jeffrey<br>Thanks for posting the one worlds about Scott and Premium Roofing Solutions. We work around the clock in hopes the experience will be exactly this!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xJNGMzcDNVa1I1UjFoVGJVeFJVa2hrUTJ0SWVtYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOlI4c3p3UkR5R1hTbUxRUkhkQ2tIemc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xObmNVUnNiMGhCYVhJNFJEVXRSVU5OTlRFdFUzYxAB",
+      "reviewer": "Jordan S.",
+      "rating": 5,
+      "text": "Very knowledgeable and guide you through the process.",
+      "publishedAt": "2026-01-07T02:33:36.231Z",
+      "ownerResponse": "Thank you, Jordan! <br>We appreciate you taking sometime to share your experience! <br><br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xObmNVUnNiMGhCYVhJNFJEVXRSVU5OTlRFdFUzYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOlNncURsb0hBaXI4RDUtRUNNNTEtU3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xSU016ZEZVbTVQZFdKRmFFMU9WMko1WVd4S01YYxAB",
+      "reviewer": "linda B.",
+      "rating": 5,
+      "text": "Extremely professional and always had our best interest in mind. After a hail storms in our area and being super busy they were always on top of things and great communication. Great job by their whole team.",
+      "publishedAt": "2026-01-06T17:33:41.786Z",
+      "ownerResponse": "Linda<br>Thank you so much for taking some time to share your experience. We work diligently to ensure the outcome is the one you experienced. Happy new year!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xSU016ZEZVbTVQZFdKRmFFMU9WMko1WVd4S01YYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOlRSMzdFUm5PdWJFaE1OV2J5YWxKMXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5M1QyZFVablJtY25jNVdtcFROMmhyTFdsMldHYxAB",
+      "reviewer": "Ricky S.",
+      "rating": 5,
+      "text": "Amazing and prompt service with Premium Roofing Solutions. Hands down would recommend there services.",
+      "publishedAt": "2025-11-25T16:52:27.876Z",
+      "ownerResponse": "Ricky- Thank you for taking some time to share your experience!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5M1QyZFVablJtY25jNVdtcFROMmhyTFdsMldHYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOl93T2dUZnRmcnc5WmpTN2hrLWl2WGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25oYVJFeDZURGN3YURobFgxTnhSMlp4T0hRNFNsRRAB",
+      "reviewer": "Susan W.",
+      "rating": 5,
+      "text": "We were in the path of the Good Friday 2025 hail storm that hit southern WI and had quite a bit of damage to our home. I contacted Todd at Premium Roofing and he came to look over the property for damage then came back to do a walk around with our insurance adjuster to make sure she saw and recorded everything. Todd was very patient with me as I freaked out a couple of times during the process, owner Gabe also reached out to answer all of my many questions and to reassure me that it would be OK. The crews they sent out to replace the roof, siding and gutters were courteous and respectful and incredibly efficient. We are very happy with the end result and are very grateful to everyone at Premium!",
+      "publishedAt": "2025-11-24T20:40:12.016Z",
+      "ownerResponse": "Thank you so much for the opportunity to restore your home! It is gorgeous!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oYVJFeDZURGN3YURobFgxTnhSMlp4T0hRNFNsRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnhaREx6TDcwaDhlX1NxR2ZxOHQ4SlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xnNVMzcFdNR2RGVjJ4SlEzVm5kbDlvVkU0NUxXYxAB",
+      "reviewer": "Bill L.",
+      "rating": 5,
+      "text": "They did a great job on our roofs and siding. They got the insurance company to pay for most of the roof on our garage after they denied us coverage. Tyler was here for our roofs and siding jobs. He's been back multiple times to make sure everything was done correctly.",
+      "publishedAt": "2025-11-19T02:21:09.214Z",
+      "ownerResponse": "Thank you, Bill! We are beyond appreciative for the opportunity to assist in your restoration!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xnNVMzcFdNR2RGVjJ4SlEzVm5kbDlvVkU0NUxXYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOlg5S3pWMGdFV2xJQ3Vndl9oVE45LWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WS1FsVkpibkYzTjBSNE1Vc3hWSHBVWWtWT1gyYxAB",
+      "reviewer": "Brian L.",
+      "rating": 5,
+      "text": "Great experience, Gabe and Mike did a great job on our new roof! Very happy with the customer service beginning to end.",
+      "publishedAt": "2025-11-18T00:22:42.928Z",
+      "ownerResponse": "Thank you, Brian, for trusting us to update your amazing home!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25WS1FsVkpibkYzTjBSNE1Vc3hWSHBVWWtWT1gyYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnVKQlVJbnF3N0R4MUsxVHpUYkVOX2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ac2Rtd3dRbGxrTXpBMFNISnZXbGhoTW5wa2FXYxAB",
+      "reviewer": "Shawn C.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions was fantastic from start to finish! Gabe and Mike are outstanding owners - professional, honest, and truly care about their customers. Their team (Dan, Brad, and Scott in particular) communicated clearly throughout the entire process and made everything easy and stress-free. The crew showed up on time, worked efficiently, and left the job site spotless when they were done. I couldn’t be happier with the results. I highly recommend Premium Roofing Solutions to anyone needing roof work done right!",
+      "publishedAt": "2025-11-12T21:47:11.830Z",
+      "ownerResponse": "Thank you, Shawn!<br>We appreciate you taking the time to share your experience, we work diligently to ensure every one who works with us has an excellent experience!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21ac2Rtd3dRbGxrTXpBMFNISnZXbGhoTW5wa2FXYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOmZsdmwwQllkMzA0SHJvWlhhMnpkaWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsalUwNUdkbkpxT0ZJNFduaEJjRGxCVEc5RmFIYxAB",
+      "reviewer": "Steve S.",
+      "rating": 5,
+      "text": "Great experience beginning to end! Tyler was our project manager and addressed every concern and made adjustments where requested.  I highly recommend Premium Roofing!",
+      "publishedAt": "2025-11-12T21:00:05.828Z",
+      "ownerResponse": "Steve,<br>Thank you for taking the time to share your experience with Tyler and Premium Roofing Solutions!<br>It means everything to us that you chose us for your home restoration project! Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsalUwNUdkbkpxT0ZJNFduaEJjRGxCVEc5RmFIYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOkljU05GdnJqOFI4WnhBcDlBTG9FaHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxTmMxZzBSbGRqU1cxU1JWOW1VbTFVU2xST1QxRRAB",
+      "reviewer": "tim K.",
+      "rating": 5,
+      "text": "Premium Roofing was conseinciuos and professional throughout the process of repairing the hail damage. Ownership and staff, said what they would do, and more importantly did what they said.",
+      "publishedAt": "2025-11-09T19:14:10.547Z",
+      "ownerResponse": "Tim,<br>Thank you so much for allowing us to assist in your home restoration project. You have a beautiful home and it looks amazing!  Oh, and we love your dogs too!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2sxTmMxZzBSbGRqU1cxU1JWOW1VbTFVU2xST1QxRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOk1Nc1g0RldjSW1SRV9mUm1USlROT1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4QmMzQnRiWHBxY2s1RFUyTlBMVmxITmpoMmJWRRAB",
+      "reviewer": "Diane M.",
+      "rating": 5,
+      "text": "Premium roofing made the process of dealing with insurance and getting the job done so much easier and less stressful.  Highly recommend them!",
+      "publishedAt": "2025-10-20T14:39:37.292Z",
+      "ownerResponse": "Diann, thank you so much for taking some time to post your review here online. Thank you for trusting us to guide you through the process, to advocate on your behalf with your insurance carrier, and to restore your home to better than pre-storm conditions. <br><br>Your home is gorgeous!<br>It’s been great being a part of your project, thank you!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2t4QmMzQnRiWHBxY2s1RFUyTlBMVmxITmpoMmJWRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOkxBc3BtbXpqck5DU2NPLVlHNjh2bVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21GNWQyeFJSRnBrT1ZObWFFRnpRMDB4ZGpsVVVVRRAB",
+      "reviewer": "Frank R.",
+      "rating": 5,
+      "text": "Thanks again for executing a great customer focused project.<br><br>Your onsite team Al Gomez Project Manager, Brian the crew team leader and the crew were awesome to work with on the project.<br><br>The final result exceeded both Janet and my expectations.",
+      "publishedAt": "2025-09-20T17:46:17.640Z",
+      "ownerResponse": "Frank, thank you so much for allowing us to assist in the upgrading of your homes exterior! To say it’s a stunner would be an understatement. You and your wife have phenomenal taste and we are simply thankful to have played a part in your home’s evolution.  <br><br>Thank you!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21GNWQyeFJSRnBrT1ZObWFFRnpRMDB4ZGpsVVVVRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOmF5d2xRRFpkOVNmaEFzQ00xdjlUUUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21SbGQwUmFSVFpyTjNsTlYzVnBWa2R3Y1VScFpWRRAB",
+      "reviewer": "Holly M.",
+      "rating": 5,
+      "text": "I was happy with the work they did, the communication and ease of the project. I would recommend.",
+      "publishedAt": "2025-09-11T20:15:02.948Z",
+      "ownerResponse": "Thank you so much, Holly!<br><br>We aim to make things run smoothly and easily, so are very pleased to hear we hit the mark here! <br><br>Thank you for taking some time to post a review, it means everything!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21SbGQwUmFSVFpyTjNsTlYzVnBWa2R3Y1VScFpWRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOmRld0RaRTZrN3lNV3VpVkdwcURpZVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xOQ1FUQmFSa0l3TVZCamFFNXZUME5TWnkxYVVHYxAB",
+      "reviewer": "Elizabeth W.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions was great in helping to determine that my roof had hail damage, and what steps I needed to take to get this process started to get my roof replaced. They were supportive in helping me work my insurance, responsive even I had questions, and patient when I had to jump through a few additional hoops to schedule.  The came in today and completed my roof in about 8 hours!  The team that came to complete the roof worked hard and fast, and left everything looking spotless when they left.  The new roof looks great, and with their help, the whole process felt very easy.",
+      "publishedAt": "2025-08-29T03:03:38.596Z",
+      "ownerResponse": "Elizabeth, thank you for taking some time to post a thorough review. There is no better way for potential homeowners to understand how we operate and to hear it from you!<br><br>Thank you!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xOQ1FUQmFSa0l3TVZCamFFNXZUME5TWnkxYVVHYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOlNCQTBaRkIwMVBjaE5vT0NSZy1aUGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201VGRIRkxUVGRsT0RsblMybGlhMDlZZW5Gc2RsRRAB",
+      "reviewer": "Tom G.",
+      "rating": 5,
+      "text": "Our family is so happy we chose Premium Roofing Solutions for our roof replacement.  Scott and his team were onsite through the construction process and managed every detail of the installation.  Afterwards, there were a few spots that needed additional attention; PRS took care of them without me even having to mention.  Their attention to detail and professionalism is unmatched compared to other \"good\" contractors I have worked with through the years.  100% would recommend PRS to anyone looking to have their roof upgraded, they truly provide a premium experience!  Thanks guys!",
+      "publishedAt": "2025-08-28T15:02:39.654Z",
+      "ownerResponse": "Tom, thank you for sharing your experience with us here at Premium Roofing Solutions. Our goal is a premium experience for every customer every time and it sounds like we hit the mark here!<br><br>Details matter, and you’re not having to worry about those details, matters even more!<br><br>Your home looks gorgeous and we are thankful to have played a part in its restoration!<br><br>",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201VGRIRkxUVGRsT0RsblMybGlhMDlZZW5Gc2RsRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOm5TdHFLTTdlODlnS2lia09YenFsdlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25aS04yVktMVGMwT1VKVlQzQkRiRGhSUnpoSWMwRRAB",
+      "reviewer": "Mark T.",
+      "rating": 5,
+      "text": "Tyler and his crew did a great job. I would recommend them to anyone looking for gutters",
+      "publishedAt": "2025-08-20T19:17:32.543Z",
+      "ownerResponse": "Thank you, Mark for taking some time to share. You had a great experience with Tyler.! Tyler is phenomenal. We are thankful to have him as part of our team.<br><br>We are glad you’re satisfied, Thank you again!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aS04yVktMVGMwT1VKVlQzQkRiRGhSUnpoSWMwRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnZKN2VKLTc0OUJVT3BDbDhRRzhIc0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sa1ptRkhPQzB6Tm1oNVdsTm5jbGxRYTBGTVpVRRAB",
+      "reviewer": "Anthony P.",
+      "rating": 5,
+      "text": "Tommy did a great job assisting us with the planning of the roof project. He was very thorough and made sure the insurance approved the project. Well done.",
+      "publishedAt": "2025-08-09T18:24:03.674Z",
+      "ownerResponse": "Anthony, thank you for taking some time to share your experience with Tommy! Tommy is a key member of our team and we are very fortunate to have him representing us in the community. <br><br>Thank you for trusting us with your home. Restoration needs, it looks gorgeous.!!!<br><br>Thank you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sa1ptRkhPQzB6Tm1oNVdsTm5jbGxRYTBGTVpVRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnlkZmFHOC0zNmh5WlNncllQa0FMZUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25ocFdXZG9ZWFpDY1Zsa1UzTk1jbTh3WlRsRFgyYxAB",
+      "reviewer": "Alice S.",
+      "rating": 5,
+      "text": "I am so happy with Premium Roofing Solutions. Tyler, my project manager, went above and beyond for me and was there to guide me through every step - from dealing with the insurance to getting my new roof installed. He answered every question I had and left me feeling informed and confident in their abilities. I have had issues with other contractors in the past, but I will return to Premium for all of my exterior work without hesitation. Thank you to Tyler and the whole team!",
+      "publishedAt": "2025-08-08T02:33:07.054Z",
+      "ownerResponse": "Alice, thank you for taking some time to share your experience with Tyler! We feel Tyler is phenomenal And it sounds like you do too!<br><br>We’re here for you if you need us, your home looks gorgeous!!<br><br>Thanks for allowing us to assist!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25ocFdXZG9ZWFpDY1Zsa1UzTk1jbTh3WlRsRFgyYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnhpWWdoYXZCcVlkU3NMcm8wZTlDX2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pjeWJXNUpRM1V0UjB0WWJubENUbVYyTTJOd01XYxAB",
+      "reviewer": "Harvey F.",
+      "rating": 5,
+      "text": "My roof was leaking. I got ahold of Permium Roofing Solutions. They responded right away and guided me through the insurance process step by step. They made the whole process easy. My roof looks great and no more leaks. Thanks! I would recommend going with this company!",
+      "publishedAt": "2025-07-23T22:28:13.343Z",
+      "ownerResponse": "Harvey, thank you so much for taking some time to share your experience with Premium Roofing Solutions here online. Thank you for trusting us to advocate on your behalf with your insurance carrier and to restore your home to better than pre-storm conditions!<br><br>Thank you!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pjeWJXNUpRM1V0UjB0WWJubENUbVYyTTJOd01XYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOjcybW5JQ3UtR0tYbnlCTmV2M2NwMWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oeVJYWjFUMFl3TkVsR1dFWnNWMUJMZVhZNWJVRRAB",
+      "reviewer": "Jill T.",
+      "rating": 5,
+      "text": "Daniel was fabulous to work with. He answered all of our questions and responded to each of texts with promptness and clarity. If any questions or concerns arose he handled them with the utmost professionalism. We would recommend Premium Roofing Solutions to anyone needing work done on their home.",
+      "publishedAt": "2025-07-23T19:19:10.464Z",
+      "ownerResponse": "Jill, thank you so much for sharing your experience with Dan and Premium Roofing Solutions! Dan is anmazing and we appreciate you sharing your experience with him here!<br><br>Thank you so much!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oeVJYWjFUMFl3TkVsR1dFWnNWMUJMZVhZNWJVRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOmhyRXZ1T0YwNElGWEZsV1BLeXY5bUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25aNVRIUnBRMlpCY25kWVluRnZPVEYzWVZaaFpHYxAB",
+      "reviewer": "Martin J.",
+      "rating": 5,
+      "text": "Super great work and the whole process from start to finish was so efficient and streamlined!",
+      "publishedAt": "2025-07-22T17:39:20.126Z",
+      "ownerResponse": "Thank you, Marty, It was a pleasure working with you and restoring your home to better than pre-storm conditions!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25aNVRIUnBRMlpCY25kWVluRnZPVEYzWVZaaFpHYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOnZ5THRpQ2ZBcndYYnFvOTF3YVZhZGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGaFptaHJPVk5SU2tKeFVIWjZkMnhZVlVObk1WRRAB",
+      "reviewer": "Antonio S.",
+      "rating": 5,
+      "text": "Tyler did an amazing job with replacing our roof and gutters due to the hail storm we had. The work looks fantastic!",
+      "publishedAt": "2025-07-21T20:48:36.334Z",
+      "ownerResponse": "Antonio, thank you for sharing your experience with Tyler. He truly is fantastic. We pride ourselves on quality craftsmanship, and on providing excellent experience. <br><br>We appreciate you sharing your experience here, thank you!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGaFptaHJPVk5SU2tKeFVIWjZkMnhZVlVObk1WRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOjFhZmhrOVNRSkJxUHZ6d2xYVUNnMVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21FeVVGTlVRMFJwWVdGbGRIQmFXbFl6TFdwb01XYxAB",
+      "reviewer": "Colleen B.",
+      "rating": 5,
+      "text": "Great company! We had a lot of trust issues with contractors as we have been scammed and completely ditched in the past. When we met Tommy, the project manager, he made us feel like we could trust this company, especially because of his character. He was there for us every step of the way. He even checked in on us throughout the roofing process which was during his vacation. He was always reachable. Our house wasn't an easy job. We have a Queen Anne with a turret. The roofers worked so hard and were all so friendly. We are very pleased with our new roof and highly recommend this company.",
+      "publishedAt": "2025-06-18T20:49:47.478Z",
+      "ownerResponse": "Colleen, thank you so much for sharing your experience. It sends us to hear the way some of our competitors treat homeowners, and we are thankful that we connected with you and were able to provide you quality materials and craftsmanship to restore your home. <br><br>We appreciate you taking the time to share that experience here online. <br><br>Thank you!!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21FeVVGTlVRMFJwWVdGbGRIQmFXbFl6TFdwb01XYxAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CAIQACodChtycF9oOmEyUFNUQ0RpYWFldHBaWlYzLWpoMWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VMYko5T3lZa3JpLUxREAE",
+      "reviewer": "Shawn L.",
+      "rating": 5,
+      "text": "Tommy was great every step of the way. He scheduled an estimate for his next available time slot, answered any and all questions we had. Tommy was timely when responding to questions and was knowledgeable when it came to working with the insurance company. Tommy walked us through the process of using homeowners insurance as we have not had to experience that before.Tommy was able to give insight on what insurance companies are looking for when it comes to storm and hail damage. Overall could not have had a better experience.",
+      "publishedAt": "2025-05-21T04:15:13.966Z",
+      "ownerResponse": "Shawn, Thanks so much for the thorough review!  We appreciate you trusting us with your home's restoration project! Tommy is the best!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VMYko5T3lZa3JpLUxREAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKELbJ9OyYkri-LQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJX2U3ZWJEbktLZGxRRRAB",
+      "reviewer": "ruckam1",
+      "rating": 5,
+      "text": "I so appreciate Todd, Brad and all the crew from Premium Roofing Solutions! They made the process of replacing my roof only two weeks after hail damage as painless as possible. They were professional, efficient, great communicators, and left the worksite spotless!",
+      "publishedAt": "2025-05-20T13:47:01.185Z",
+      "ownerResponse": "Thank you so much for choosing our team and for taking the time to share your experience! Your home turned out gorgeous! Brad and Todd are a dynamic duo for sure!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJX2U3ZWJEbktLZGxRRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEI_e7ebDnKKdlQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNZeUotc3FBRRAB",
+      "reviewer": "Sejal J.",
+      "rating": 5,
+      "text": "We had our roof replaced recently, and the entire experience was excellent. The process was seamless from start to finish, with clear communication every step of the way. They took on the responsibility of communicating with the insurance company and made sure all logistics were completed on schedule. The staff was professional, knowledgeable, and easy to work with. The new roof looks great, and we couldn’t be happier with the results. Highly recommend!",
+      "publishedAt": "2025-04-30T19:15:21.631Z",
+      "ownerResponse": "Sejal! It was such a pleasure working on your home, and the outcome was truly stunning!!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNZeUotc3FBRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgMCYyJ-sqAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNZc0x1Z0xnEAE",
+      "reviewer": "Maureen P.",
+      "rating": 5,
+      "text": "Dan was wonderful to work with. Very professional, thorough and went over and above board to make sure this was an easy process. I was not inconvenienced or worried at all. Dan was very helpful in my color selection which turned out absolutely gorgeous.<br>He remembered everything and could answer any concerns. They were on time and cleaned up everything before they left. I highly recommend this company.",
+      "publishedAt": "2025-04-30T13:10:00.410Z",
+      "ownerResponse": "Maureen, Thank you for allowing us to support your storm restoration project!!! It turned out phenomenal!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNZc0x1Z0xnEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgMCYsLugLg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURvdDV5NXhRRRAB",
+      "reviewer": "Charles W.",
+      "rating": 5,
+      "text": "🗣Okay, buckle up, because these guys are rockstars! After a nasty storm ripped through Rockford, my roof looked like Swiss cheese. I filed an insurance claim, feeling pretty confident, only to get a flat-out denial. I was beyond frustrated and honestly didn't know where to turn.<br>That's when I called Premium Roofing Solutions. From the initial call, Mike was a breath of fresh air – knowledgeable, calm, and genuinely concerned. But what happened next truly blew me away.<br>🤷🏽‍♂️Mike didn't just shrug and say, \"Sorry about your luck.\" Instead, he meticulously reviewed my denial letter, asked insightful questions I hadn't even considered, and then put his network to work. He leveraged his understanding of insurance processes and his connections with other professionals – He even consulted with a public adjuster and other contractors.<br>⏳️While i waited for them to see what the result would be, many storms came. Mike or Dan would come and deal with leaky skylights and tarping my roof without knowing if they would win the claim!<br>👍🏽Long story short, thanks to Mike and his networks persistence, expertise, and incredible resourcefulness, my insurance company reversed their decision and covered the entire cost of the roof replacement! I was absolutely floored.<br>Premium Roofing Solutions didn't just fix my roof; they navigated a complex insurance battle on my behalf and won. Their attention to detail, their commitment to their clients, and Mike's sheer determination are unparalleled. If you're looking for a roofing company that goes above and beyond, especially when dealing with insurance headaches, look no further. These guys are the real deal – professional, trustworthy, and they get results!<br>1 year to get the claim completed and 1 day to install! Five stars doesn't even feel like enough! 🤝<br>GREAT FRICKIN' JOB!!⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️⭐️",
+      "publishedAt": "2025-04-30T00:25:06.793Z",
+      "ownerResponse": "Wow – thank you so much for the incredible review! 🙌 We're genuinely honored by your words and grateful that you trusted Premium Roofing Solutions during such a frustrating and uncertain time. It was a long road, but we’re thrilled that Mike, Dan, and the rest of the team could fight on your behalf and ultimately get the outcome you deserved. Your story is exactly why we do what we do — not just to fix roofs, but to be true advocates for our clients when things get tough.<br><br>It means the world to hear that our persistence, connections, and care made a difference. You were patient through it all, and we’re so glad we could deliver not just a new roof, but peace of mind.<br><br>Thanks again for taking the time to share your experience. We’re always here if you need anything – rain or shine!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURvdDV5NXhRRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgMDot5y5xQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURvMmZEOEN3EAE",
+      "reviewer": "Rita P.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions started and finished my roofing, plus Gutters and i am so pleased with the  work that was done - very professional and now I have a great new roof!!  They did such a great job for me!!",
+      "publishedAt": "2025-04-26T13:49:19.350Z",
+      "ownerResponse": "Thank you Rita!!  We appreciate your business and kind words.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURvMmZEOEN3EAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgMDo2fD8Cw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURvNUtySFVBEAE",
+      "reviewer": "Mary M.",
+      "rating": 5,
+      "text": "5 Stars for Premium Roofing! They've ALL been a major advocate for me in my roofing claim and extremely persistent in positively facilitating the claims process with the Claims Adjuster. (This was my first time ever filing a claim, so their extra help was a 10/10.) I also appreciate the expert advice and the physical roof color samples they brought to my home to help me plan next steps. Their finished work is as outstanding as their fantastic communication. Thanks, again!",
+      "publishedAt": "2025-04-22T03:31:09.771Z",
+      "ownerResponse": "Mary,  <br>Thank you for your business and wonderful review. We appreciate your kind words.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURvNUtySFVBEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgMDo5KrHUA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTURJbHA3bkl3EAE",
+      "reviewer": "Stefanie H.",
+      "rating": 5,
+      "text": "We were very pleased with Premium Roofing Solutions. We worked with Tommy W after recent high winds ripped some shingles off our roof. He responded quickly, got back to us timely, and professional. The crew did a great job on the repairs as well.",
+      "publishedAt": "2025-04-09T12:53:02.651Z",
+      "ownerResponse": "Thank you Stefanie for your kind words.  We appreciate your business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTURJbHA3bkl3EAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgMDIlp7nIw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUR3b00zN0RBEAE",
+      "reviewer": "Charles G.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions did a fantastic job on our new Class 4 roof, gutters with guards, and expanded downspouts—it truly feels like a worthwhile investment. I especially appreciated Mike's outstanding attention to detail. He followed up multiple times and was present on the job site before, during, and after to ensure everything was done with the highest quality. The best part was that there was no pressure; Mike understood exactly what we were looking for and made the entire process smooth and stress-free. Highly recommend!",
+      "publishedAt": "2025-03-22T16:07:36.753Z",
+      "ownerResponse": "Thank you so much Charles for the kind words and recommendation! We're thrilled to hear you're happy with your new Class 4 roof, gutter system, and downspouts — it’s a solid investment, and we’re glad it feels that way to you. We’re all about making the process smooth and pressure-free, and it was a pleasure working with you from start to finish. If you ever need anything in the future, we’re just a call away!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUR3b00zN0RBEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgMDwoM37DA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNBOXQ3dlhBEAE",
+      "reviewer": "Colin S.",
+      "rating": 5,
+      "text": "Premium Roofing did an excellent job! We needed not only a new roof but new decking on the entire structure. They handled a lot of surprise headaches, including rotten roofing and a leaky dormer and chimney. They got the job done quickly and were extremely professional and tidy.",
+      "publishedAt": "2025-01-31T19:30:27.811Z",
+      "ownerResponse": "Thank you, Colin!  It was our pleasure! Your home is gorgeous!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNBOXQ3dlhBEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgMCA9t7vXA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURfNXFuLUR3EAE",
+      "reviewer": "Brent H.",
+      "rating": 5,
+      "text": "Premium Roofing installed a new flat roof and gutters on our home.  Mike followed up several times after the job was completed just to make sure we were happy, which I greatly appreciated!  I’d highly recommend using them.",
+      "publishedAt": "2025-01-23T23:03:18.675Z",
+      "ownerResponse": "Thank you, Brent! We appreciate the opportunity to assist on your project!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfNXFuLUR3EAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgID_5qn-Dw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmcnB6cTlnRRAB",
+      "reviewer": "Kenitra S.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions provided a new roof after a tree had fallen onto it. The damage was severe but Premium Roofing Solutions supplied and quickly replaced a new and structurally sound roof. Best customer service and quality work in this industry.",
+      "publishedAt": "2025-01-06T18:03:40.925Z",
+      "ownerResponse": "Thank you for taking the time to leave us a review, Kenitra! You have a beautiful home! It was a pleasure working on it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmcnB6cTlnRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgIDfrpzq9gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNmal9iQk1BEAE",
+      "reviewer": "Jenny F.",
+      "rating": 5,
+      "text": "I can’t thank them enough for how quick and great their work was. Mike kept me updated throughout the whole process and got my roof done so quick! Will definitely use your company again for future projects!",
+      "publishedAt": "2025-01-02T17:00:17.196Z",
+      "ownerResponse": "Thank you, Jenny, it was our pleasure working on your project!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNmal9iQk1BEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgICfj_bBMA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNmajhLLWl3RRAB",
+      "reviewer": "Alex B.",
+      "rating": 5,
+      "text": "The whole team worked hard to push our insurance claim through!! Mike was in contact with me the whole time. In and out in one day on my roof. Left everything the way it was when they should up. Wouldn’t use anyone else for my roof!!",
+      "publishedAt": "2025-01-02T16:44:07.611Z",
+      "ownerResponse": "Much appreciated, Alex! Your home turned out beautiful!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmajhLLWl3RRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgICfj8K-iwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNQMU1YbUF3EAE",
+      "reviewer": "Brandon",
+      "rating": 5,
+      "text": "Premium Roofing Solutions was great. Mike handled my insurance claim, so I didn’t have to worry about a thing. He kept me in the loop the whole time, which was really helpful. The roof looks amazing.<br>I would highly recommend them and would use them again in the future.",
+      "publishedAt": "2024-11-21T21:08:28.747Z",
+      "ownerResponse": "Thank you, Brandon for taking the time to share your experience! It was our pleasure",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNQMU1YbUF3EAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgICP1MXmAw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYNWNLTldnEAE",
+      "reviewer": "Nicholas C.",
+      "rating": 5,
+      "text": "Highly recommended. Outstanding service and pricing.call them before making decision",
+      "publishedAt": "2024-10-29T17:54:08.967Z",
+      "ownerResponse": "Thank you, Nicholas, your home is gorgeous and we are honored to have been a part of the renovation team!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYNWNLTldnEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgIDX5cKNWg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURYM3I2ZFFnEAE",
+      "reviewer": "Derrick T.",
+      "rating": 5,
+      "text": "Before, during and after!!! (Gutters have also been installed)<br><br>If you have any roofing needs, Gabe and Mike are the best around!! You will not be disappointed! After a long 11 month battle with State Farm, Premium Roofing Solutions was able to make us happy homeowners. Insurance continuously stated it’s possible to repair a two layer shingled roof, but when they torn into the roof we had a surprise with 4 layers of shingles. Premium Roofing Solutions customer service skills are absolutely out of this world!! They will do absolutely everything in their power to help you battle any problem insurance throws your way!! They basically went to war for us and we came out on top 💯 Many company’s  are just chasing a buck and will promise you the world for a heafty load of cash and we never felt that with Premium Roofing!! There were a few hiccups along the way but Gabe and Mike continued to ensure we were happy with not only the work that was completed but the service that we received.",
+      "publishedAt": "2024-10-27T18:22:58.766Z",
+      "ownerResponse": "Thank you, Derrick! Your home is beautiful!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURYM3I2ZFFnEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgIDX3r6dQg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURYZ0pXTXZBRRAB",
+      "reviewer": "Adam C.",
+      "rating": 5,
+      "text": "We had our roof, gutters, and siding replaced last year. Premium did a fantastic job working with our insurance company, and facilitating the dance of a construction site.<br><br>Seamless communication and execution throughout the process!",
+      "publishedAt": "2024-10-22T16:05:21.993Z",
+      "ownerResponse": "Thank you, Adam! Your home is stunning after all of the hard work you have put into it!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURYZ0pXTXZBRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgIDXgJWMvAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNuM19QYUl3EAE",
+      "reviewer": "kimberly L.",
+      "rating": 5,
+      "text": "Was referred to premium roofing by a friend. I liked that the company is small and growing! they pay more attention to details. The team is very nice and friendly and very knowledgable. My house looks beautiful. Thank you guys again. Highly recommend them.",
+      "publishedAt": "2024-10-01T16:17:38.384Z",
+      "ownerResponse": "Much appreciated, Kimberly! We are beyond grateful you chose us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNuM19QYUl3EAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgICn3_PaIw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNuMTUtbDFRRRAB",
+      "reviewer": "Laura K.",
+      "rating": 5,
+      "text": "We found Premium Roofing Solutions after our prior contractor mismanaged our insurance claim. We could not be more grateful for Gabe and Mike - they were professional, honest, and fair. Super easy to work with, highly responsive, and their crew did an amazing job. Overall phenomenal customer service. One of the best we've worked with throughout our many years of homeownership, and we highly recommend!",
+      "publishedAt": "2024-10-01T02:39:55.809Z",
+      "ownerResponse": "Laura, thank you so much for allowing us to assist on your homes renovations. It is a stunner!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNuMTUtbDFRRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgICn15-l1QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ3MklyNVBnEAE",
+      "reviewer": "yi C.",
+      "rating": 5,
+      "text": "I had an exceptional experience with Premium Roofing Solutions. After dealing with multiple roofing companies that gave up because they couldn’t get enough money from my insurance company, I was getting frustrated. But this company was different, they showed incredible patience and dedication, working tirelessly with my insurance company for months to ensure we got the coverage we deserved. The workers were not only efficient but also very professional and respectful. They completed the job quickly and left everything clean and tidy. If you’re looking for a roofing company that truly cares about its customers and goes the extra mile, I highly recommend Premium Roofing Solutions. They exceeded all my expectations!",
+      "publishedAt": "2024-08-21T17:43:45.612Z",
+      "ownerResponse": "Yi, we are so thankful we were able to asit where anotehr local and popular contractor let you down. Not everyone has steh expereince to successfully work a challenging insurance claim. We are appreciateiv you allowed us to step in and get things back on track! A huge victory for you and us both!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3MklyNVBnEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgID72Ir5Pg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURibUpPMjl3RRAB",
+      "reviewer": "Barbara R.",
+      "rating": 5,
+      "text": "I don’t think words would be enough regarding this amazing company.<br>My situation was dire. I had storm chasers trying to scam me. I pulled up at a light behind the premium roofing truck. (Dan) was driving<br>I explained my roofing concerns from hail damage.<br>Mike came out the next day. Gave me a very fair price.<br>Completed the job in one day.<br>Worked with my insurance company.<br>I never write reviews however, this review was necessary.<br>Thank you Mike, Dan and all the guys for prompt, professional service.",
+      "publishedAt": "2024-08-01T19:20:02.110Z",
+      "ownerResponse": "Barbara- It is situations like yours that motivate us the most!  It is not always easy, but we will do the work! So thankful we were able to assist where others let you down!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURibUpPMjl3RRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgIDbmJO29wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNMdDZ6MTZ3RRAB",
+      "reviewer": "Rita R.",
+      "rating": 5,
+      "text": "I wish I could give more stars for this review. My experience was fantastic! I cannot recommend this business highly enough. After a storm my ceiling was leaking, this was on a Saturday night. I posted on a neighborhood site asking for roofing  recommendations. At 8 am on Sunday morning Sammy Celaya answered and offered to help. At 11 am on Sunday Michael Shuff, the owner came to my house, fixed the leak and checked the whole roof to be sure it was all okay. Then he refused any payment! So if you want honest and fair people and excellent work call this business, you will be very happy. I would never call anyone else. Thank you Mr. Celaya and Mr. Shuff for being so kind and helpful .",
+      "publishedAt": "2024-06-23T22:19:35.290Z",
+      "ownerResponse": "6 stars would be welcome of course LOL! Appreciate the kind words, your home is beautiful!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNMdDZ6MTZ3RRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgICLt6z16wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURqNllUV01nEAE",
+      "reviewer": "Bob F.",
+      "rating": 5,
+      "text": "From the very start I knew things were going to go great. The roofers got there first thing in the morning along with Dan Anderson. The day went awesome.<br>The second day the gutter guys were here first thing in the morning along with Dan Anderson. The day again went very well.<br>Dan Anderson came back to the house several times making sure all the nails were picked up of the ground.<br>I don't do this very often but I give this company a 5 star rating.<br>Thanks for everything.",
+      "publishedAt": "2024-05-04T21:22:46.169Z",
+      "ownerResponse": "Thank you, Bob for the detailed and kind review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqNllUV01nEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgIDj6YTWMg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNqc3N1eGN3EAE",
+      "reviewer": "Briana S.",
+      "rating": 5,
+      "text": "We had hail damage from a storm in the summer. We initially went through a different company. I had to take care of all the insurance details on my end. We found out we weren’t getting as much money back from insurance due to policy mistakes made by our agent unbeknownst to us when buying. Needless to say, I never heard from that company again. They completely bailed when they realized they couldn’t markup the job. Our neighbors had their roof done by Premium, and had nothing but good things to say. Enter Mike. He took care of every aspect of insurance, which was a breath of fresh air in comparison to my previous experience. He kept me updated throughout the entire process. I never once had to wonder what was going on or when. Roofing day came and went seamlessly. The project manager Dan was great. He walked me through everything going on that day. Every time I looked outside I saw him walking our yard and driveway scoping for nails. The crew was fantastic. My husband and I were floored when we got home that evening and the roof and cleanup were complete. Everything was done in one day. Gutters were installed the next day and also looked fabulous. I’ll be the first to admit I can be difficult to please, but I couldn’t be happier! I will recommend Premium Roofing to anyone and everyone!",
+      "publishedAt": "2024-04-19T19:26:15.856Z",
+      "ownerResponse": "Thank you, Brianna! We could not be more appreciative of you allowing us to step in and show you how we operate!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqc3N1eGN3EAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgICjssuxcw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNqakt2NTZRRRAB",
+      "reviewer": "Nick M.",
+      "rating": 5,
+      "text": "Mikey is good boy",
+      "publishedAt": "2024-04-18T12:21:50.425Z",
+      "ownerResponse": "Thanks, Nick! He tries his best :)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqakt2NTZRRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgICjjKv56QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNqNklDaWd3RRAB",
+      "reviewer": "tim B.",
+      "rating": 5,
+      "text": "Danny and the crew were very professional and did an amazing job on our roofs and gutters. I’d highly recommend this company for all you roofing needs.",
+      "publishedAt": "2024-04-17T11:54:20.994Z",
+      "ownerResponse": "Thank you, Tim!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNqNklDaWd3RRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgICj6ICigwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUREamE3SWRBEAE",
+      "reviewer": "Sabrina H.",
+      "rating": 5,
+      "text": "Imagine if, when your roof was damaged, it was quickly fixed without you having to do anything at all.  This is your experience with Michael at Premium Roofing Solutions.  If you like someone who keeps you informed every step of the way, then you will like working with Michael.",
+      "publishedAt": "2024-04-12T17:28:00.993Z",
+      "ownerResponse": "Thank you for recognizing our efforts!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUREamE3SWRBEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgIDDja7IdA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREallxVDVRRRAB",
+      "reviewer": "Mark M.",
+      "rating": 5,
+      "text": "Mike and the team were very professional. They consistently kept me updated, answered all my questions, and were very attention to detail. I would utilize Mike and his team again!!",
+      "publishedAt": "2024-04-12T17:13:47.618Z",
+      "ownerResponse": "We pride ourselves on communication, appreciate your recognizing that!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREallxVDVRRRAB!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgIDDjYqT5QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ5MDhlZkhBEAE",
+      "reviewer": "Jim D.",
+      "rating": 5,
+      "text": "Premium Roofing Solutions did a fantastic job on our new roof. Dan was very professional and did a great job of explaining all the steps his crew were taking to make sure we would have zero issues with our roof going forward. He made recommendations to improve the venting in the attic and explained the reasoning in detail. The roofing crew were prompt, fast, and did a wonderful job with cleanup. It was a great experience overall.",
+      "publishedAt": "2024-03-20T21:48:14.994Z",
+      "ownerResponse": "Thank you, Jim! We agree that Dan is outstanding!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ5MDhlZkhBEAE!2m1!1s0x0:0xfba6533df36417a!3m1!1s2@1:CIHM0ogKEICAgID908efHA%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0YVRWUlllVzFDVFdGWVUyRlVkbEYyU200MVpFRRAB",
+      "reviewer": "Colin G.",
+      "rating": 5,
+      "publishedAt": "2025-11-11T20:18:36.916Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w4MFJXeEtXalZxWkY5algwTjNZMFptYjFSa1NuYxAB",
+      "reviewer": "Ryan R.",
+      "rating": 5,
+      "publishedAt": "2025-08-10T00:01:50.896Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNQb1BTNUNBEAE",
+      "reviewer": "Amanda F.",
+      "rating": 5,
+      "publishedAt": "2024-11-20T17:45:06.892Z"
+    }
+  ]
+}
