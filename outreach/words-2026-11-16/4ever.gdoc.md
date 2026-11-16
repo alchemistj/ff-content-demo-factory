@@ -137,7 +137,7 @@ We install metal roofs on homes across northeast Indiana and nearby Ohio and Mic
 
 Buttons: Call (260) 234-2252 · Ask a Question
 
-Strip: Travis still measures roofs · Nearly 2,000 roofs since 2016 · Homes, barns and shops · Customers describe next-day visits · 4.8 on Google from 299 reviews
+Strip: Travis still measures roofs · Nearly 2,000 roofs since 2016 · Homes, barns and shops · Customers describe next-day visits
 Travis Sliger Still Measures Roofs
 I started 4Ever Metal Roofing in 2016, and I still measure roofs. Measuring is where a metal roof job is won or lost. Every valley, chimney and wall changes the work, and a quote that skips them is usually a guess. So the person who tells you what your roof needs is the person who has looked at it. I also try to be on site while the crew works.
 
