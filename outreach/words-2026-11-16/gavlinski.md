@@ -173,7 +173,7 @@ Roofs in older Peoria neighborhoods aren't always simple. They can be steep, cut
 
 ### Estimates, Prices and Insurance Claims
 
-Estimates are free. Two roofs of the same size can end up at very different prices, because slope, the number of corners, layers of old roofing and rotted wood underneath all change the work. If your roof was damaged in a storm, we offer a free damage assessment and coordinate directly with your insurer. Whether a claim is approved is up to them decision, and we won't tell you otherwise.
+Estimates are free. Two roofs of the same size can end up at very different prices, because slope, the number of corners, layers of old roofing and rotted wood underneath all change the work. If your roof was damaged in a storm, we offer a free damage assessment and coordinate directly with your insurer. Whether a claim is approved is up to the insurer, and we won't tell you otherwise.
 
 ### We Clean Up Before We Leave
 
@@ -324,6 +324,10 @@ Not every repair is a leak. Customers have called us for a balcony roof that nee
 >
 > — Mary C.
 
+### Maintenance Keeps Repairs Small
+
+Roof maintenance is on our list too, and it is mostly about the edges. Gutters packed with leaves hold water against the roof edge, where it can back up under the first row of shingles. Limbs that rub the roof wear the surface away, and a small loose area is usually cheap to secure before the next windstorm finds it. A look at the roof once a year, and after any big storm, usually catches these while they are still small.
+
 ### Winter on a Damaged Roof
 
 Central Illinois freezes and thaws all winter. Water that gets into a small crack freezes, expands and widens it, which is why an ignored leak often gets worse by spring. A repair made before the cold months is usually easier than one made in a freeze.
@@ -367,6 +371,10 @@ Gavlinski Roofing & Construction, 147 W Detweiller Dr, Peoria, IL 61615.
 
 Tell us the date of the storm and what you've seen. We offer a free damage assessment, and we work directly with your insurance company on the claim.
 
+### If Water Is Coming In
+
+Move what you can out of the way, set a bucket under the drip, and stay clear of a ceiling that sags or bulges, because it can hold a lot of water. Switch off power to any room where water is near light fixtures or outlets. Take photos of the stain and the damage, then call us.
+
 ### What Happens After You Call
 
 We usually come out to the house to look at the roof and talk through what we find, and you get an estimate for the work.
@@ -388,11 +396,11 @@ Call 309-922-5767 and tell us about the roof.
 **Rebuild reason: SEO.** The homepage's big headline is "Quality comes first," roofing and Peoria are only in the smaller line under it, and every service (24 sub-services) sits on one Services page, so Google can't match any one to a search. Design wasn't judged from the site text.
 
 **Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip; "with" is everything on the page)
-- Strategy: WC_STRAT.
-- Home: WC_HOME.
-- Complete Roof Replacement: WC_REPL.
-- Roof Repair and Storm Damage: WC_REPAIR.
-- Contact: WC_CONTACT.
+- Strategy: 1,128 without quotes, 1,146 with (the one quote; badge, headline, subheading and the full-build list counted). Over the soft 1,000 cap because of the fixed full-build list; the four cards and confirm questions are tight.
+- Home: 630 without quotes, 714 with.
+- Complete Roof Replacement: 841 without quotes, 949 with. Meets 700+.
+- Roof Repair and Storm Damage: 744 without quotes, 841 with. Meets 700+, with hedged trade knowledge and four review-backed sections (leak fixed at the cause, rot found early, a storm cover, an unusual balcony repair).
+- Contact: 260 without quotes, 280 with.
 
 **Credentials and sources**
 - None on the business's own site (no license, insurance statement, manufacturer certification or trade-association membership on any page). No credential claimed in copy.
