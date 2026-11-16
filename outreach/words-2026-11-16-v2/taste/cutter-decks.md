@@ -1,57 +1,62 @@
 ## Decks — Deck Builder in Cedar Rapids, IA — Cutter Construction
 
-Mike and Bryan Cutter's crews build decks in Cedar Rapids as Trex Pro Platinum Certified installers, the highest designation Trex offers its installers. New decks, rebuilds and resurfacing, from the first estimate to the very last hand rail. Call 319-900-5497.
+Our deck crews work for Bryan and Mike Cutter, twin brothers born and raised in Cedar Rapids, and we are Trex Pro Platinum Certified, the highest designation Trex offers its installers. We take your project from the first estimate to the very last hand rail. Call 319-900-5497.
 
 **Buttons:** Call 319-900-5497 · Request an Estimate
 
-### What We Build
+### New Decks, Rebuilds and Wood-to-Trex Swaps
 
-- New decks, in Trex composite or wood.
-- Old decks converted to maintenance-free boards, repaired, or added on to.
-- Railings and stairs.
-- A roof line over part of the deck or patio.
-- Porches, and enclosed storage under a raised deck.
+We tear down and rebuild old decks, including second-story ones, and we replace worn wood decks with Trex. We also build new decks, repair existing ones, convert them to maintenance-free boards and add on to them.
 
-We take care of your project from the first estimate to the last hand rail.
-
-> Cutter Construction did an outstanding job tearing down and rebuilding our second-story deck. From start to finish, they were professional, fairly priced, and delivered exceptional craftsmanship.
+> Andy and crew did a fantastic job replacing our deck! Night and day difference from before. They were great to work with, honest, reliable and reasonably priced.
 >
-> — Daniel H.
+> — Amanda B.
 
-Call 319-900-5497 and tell us what you're picturing.
+### How a Deck Job Runs
 
-### Trex, Our First Choice
+1. Andy comes out for your estimate and works with you on the design.
+2. You choose your boards, in Trex composite or in wood.
+3. The crew builds your deck and cleans up as it goes.
+4. The last hand rail goes on, and the job is done.
 
-Trex is our first choice for composite. Its boards carry a warranty against fading and staining of 25 years on the entry-level line, 35 on the middle line and 50 on the top line. We keep physical samples, so you see the colors and textures in person before you choose.
-
-> We knew Trex was a quality product, but installation is the Key. Use a Trex Pro!
->
-> — Lila T.
-
-Call 319-900-5497 to see the samples.
-
-### Railings and Finishing Touches
-
-We install composite railings in black or white, aluminum with round or square balusters, steel mesh, glass panels and cable. Add a cocktail rail, a wide flat cap for setting down a drink, and finish the deck with a picture-frame border of boards around the edge and along each step.
-
-Call 319-900-5497 to plan your railings.
-
-### Rebuilds and Resurfacing
-
-We rebuild old decks, resurface ones that are sound, and add on to existing ones.
+Old decks hide surprises, and we handle what turns up under the boards as part of the rebuild.
 
 > Our project had several unique challenges with the existing deck, including changing the joist layout, removing a window that was hidden under the deck, and incorporating picture frame framing into the new deck design, but Andy and team handled everything perfectly.
 >
 > — Bryce
 
-Call 319-900-5497 to talk about your old deck.
+Call 319-900-5497 and we'll start your estimate.
 
-### Covered Decks and Storage Below
+### Trex Pro Platinum Installation
 
-We add a roof line over a deck or patio, so the sun and rain don't end your evening, and we build enclosed storage under a raised deck.
+Trex is our first choice for composite. Its boards carry a warranty against fading and staining of 25 years on the entry-level line, 35 on the middle line and 50 on the top line.
+
+> We knew Trex was a quality product, but installation is the Key. Use a Trex Pro!
+>
+> — Lila T.
+
+### Railings, Covered Decks and Storage Below
+
+We install composite railings in black or white, aluminum with round or square balusters, steel mesh, glass panels and cable, with a cocktail rail if you want a flat cap for your drink. We build porches and railings, add a roof line over a deck or patio, and build enclosed storage under a raised deck.
+
+> Cutter Construction did a great job on our new Trex deck with deck railing and porch railing.
+>
+> — Dick W.
+
+A covered deck with storage below is a design we work out with you.
 
 > We worked with Andy to design a covered Trex deck with enclosed storage area below.
 >
 > — David M.
 
-Call 319-900-5497 to plan your deck.
+### Questions Buyers Ask
+
+**Do you build with wood as well as Trex?** Yes. Trex is our first choice, and we build in wood too.
+
+**Can I see the board colors before I choose?** Yes. We keep physical samples, so you see the colors and textures in person.
+
+**Can you convert my old deck to maintenance-free boards?** Yes. We convert existing decks, repair them and add on to them.
+
+### Plan Your Deck With a Trex Pro Platinum Crew
+
+Call 319-900-5497 for your deck estimate. Estimates are free on standard jobs.

@@ -1,64 +1,65 @@
 ## Concrete — Concrete Contractor in Cedar Rapids, IA — Cutter Construction
 
-Mike and Bryan Cutter's crews pour driveways, sidewalks, steps, patios and garage slabs in Cedar Rapids, and when you schedule your installation, we include the sealer free of charge. Call 319-900-5497.
+Our concrete crews work for Bryan and Mike Cutter, twin brothers born and raised in Cedar Rapids. We pour driveways, sidewalks, steps, patios and garage slabs, and when you schedule your installation, the sealer is free. Call 319-900-5497.
 
 **Buttons:** Call 319-900-5497 · Request an Estimate
 
-### What We Pour
+### Driveways, Sidewalks, Steps and Patios
 
-- Driveway replacements, and parking areas added beside an existing driveway.
-- Sidewalks and front steps.
-- Patios.
-- Garage slabs.
-- Custom outdoor basketball courts.
-- The sealer, free with your installation.
-
-We explain each step of the job and when it will happen, and our crew cleans up before it leaves each day.
-
-> Very professional and clean. The crew that did our concrete pad cleaned up before they left every day. Concrete looks great.
->
-> — David C.
-
-Call 319-900-5497 and tell us what you'd like poured.
-
-### Replacing Cracked and Sinking Driveways
-
-We take out the cracked or sinking driveway and pour a new one, and we do the sidewalk with it.
+Driveways are most of our concrete work. We replace cracked and sinking driveways and the sidewalks beside them, pour front steps and patios, and pour garage slabs. We add parking areas next to an existing driveway, and we build custom outdoor basketball courts.
 
 > Cutter crew replaced original cracked/sinking residential concrete driveway and sidewalk. Everything you would hope for in a contractor. 12/10 would recommend.
 >
 > — Christy
 
-Call 319-900-5497 for a driveway estimate.
+### How a Job Runs
 
-### Drainage
+1. You call 319-900-5497, and we put together your estimate.
+2. We schedule your pour and explain each step and when it will happen.
+3. The crew shows up on time and works through the job.
+4. Before the crew leaves each day, it cleans up.
+5. Your sealer comes with the installation.
 
-Iowa winters freeze and thaw the water that sits against a slab, which is why drainage matters on every pour.
-
-> We had numerous concrete slabs shifting due to improper drainage. They regraded the driveway and now have the water channeling away from our foundation.
+> The crew Cutter sent over was very considerate and efficient. Did my driveway and steps in two days.
 >
-> — Mark B.
+> — John C.
 
-Call 319-900-5497 if your slabs are shifting.
+Call 319-900-5497 and we'll start your estimate.
 
-### Your Yard and Your Old Driveway
+### Clean at the End of Every Day
 
-We protect what's already there while we pour.
+Our crews pick up the wood scraps, rock and dirt before they leave, including anything that spills onto your driveway or the street.
+
+> Very professional and clean. The crew that did our concrete pad cleaned up before they left every day. Concrete looks great.
+>
+> — David C.
+
+### Your Lawn and Your Old Driveway
+
+We keep the concrete truck off your existing driveway, and we lay plywood where equipment crosses your lawn.
 
 > Did an amazing job, was able to get to it quickly, and above all else didn't risk driving the concrete truck on my driveway and used concrete buggy's.
 >
 > — Seth H.
 
-Call 319-900-5497 to get on the schedule.
+### Water Away From Your House
 
-### The Free Sealer
+Shifting slabs often trace back to drainage. We regrade driveways so the water runs off and away from your foundation.
 
-Our sealer keeps out the water and salt that damage concrete. Schedule your installation with us and we include it free of charge.
-
-### Get on the Spring List
-
-> The estimate was done within a week and we were one of the first on the list this spring.
+> We had numerous concrete slabs shifting due to improper drainage. They regraded the driveway and now have the water channeling away from our foundation.
 >
-> — Deb W.
+> — Mark B.
 
-Call early in the year to get on the spring list. Call 319-900-5497.
+Call 319-900-5497 if your driveway holds water.
+
+### Questions Buyers Ask
+
+**Is the sealer really free?** Yes. Our sealer keeps out the water and salt that damage concrete, and when you schedule your installation we include it free of charge.
+
+**Can you replace an asphalt driveway with concrete?** Yes. We've taken out a 33-year-old asphalt driveway and poured concrete in its place.
+
+**Can you add parking beside my driveway?** Yes. Parking additions are part of our concrete work, along with custom outdoor basketball courts.
+
+### Schedule Your Pour, Get the Sealer Free
+
+Call 319-900-5497 and schedule your installation. The sealer is free, and estimates are free on standard jobs.

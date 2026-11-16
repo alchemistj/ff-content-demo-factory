@@ -19,7 +19,7 @@ Your reviews keep saying Zach explains the problem before he starts. One put it 
 >
 > — Kathy D.
 
-Your site says that once, in the drain paragraph. So the demo opens with Plumber in Fort Wayne, IN, and gives water heaters and drain cleaning a page each, built from your own words and your customers' jobs.
+Your site says that once, in the drain paragraph. So the demo opens with Plumber in Fort Wayne, IN, and gives water heaters and fixture repair and installation a page each, built from your own words and your customers' jobs.
 
 ### The demo, page by page
 
@@ -55,19 +55,19 @@ Your site says that once, in the drain paragraph. So the demo opens with Plumber
 
 **A full build would also add** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
-**3. Drain Cleaning & Sewer Lines**
+**3. Fixture Repair & Installation**
 
 **Current site problem**
 
-- Drain cleaning shares that same Services page, so nothing of its own shows for a clogged drain in Fort Wayne.
-- Gurgling drains and recurring clogs are called signs of a deeper problem, with no word on what, so a worried homeowner learns nothing.
-- Your New Haven concrete-floor pipe job and Fort Wayne camera inspection aren't on the page, so your hardest drain work goes unseen.
+- Fixture work shares that same Services page with seven other jobs, so nothing of its own shows for faucet or kitchen sink installation in Fort Wayne.
+- Your kitchen sink, faucet, disposal and tub filler installs sit on service-area pages, not on the services page, so a buyer never sees how much of it you do.
+- Its closing lines (licensed and insured, upfront pricing, serving Fort Wayne) are the same ones the other services use, so nothing tells a homeowner with a sink in a box why you.
 
 **What the demo fixes**
 
-- Its own page, Drain Cleaning & Sewer Lines in Fort Wayne, IN, built on your promise to get to the root of the problem.
-- Those two jobs and the kitchen drain you came back to fix, in plain words.
-- Drain reviews beside them.
+- Its own page, Fixture Repair & Installation in Fort Wayne, IN, built on your promise to fix a drip or a running toilet fast.
+- Your sink, faucet and disposal installs, the cracked-tub job and the two-estimate flange job, in plain words.
+- Fixture reviews beside the work.
 
 **A full build would also add** A check of what your competitors offer, so services you didn't think to mention still get their own pages.
 
@@ -240,53 +240,53 @@ Hot water out? Call (260) 409-5128. We offer after-hours emergency service.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 
-## Drain Cleaning & Sewer Lines — Drain Cleaning & Sewer Lines in Fort Wayne, IN — Wickey Plumbing
+## Fixture Repair & Installation — Fixture Repair & Installation in Fort Wayne, IN — Wickey Plumbing
 
-# Drain Cleaning & Sewer Lines in Fort Wayne, IN — Wickey Plumbing
+# Fixture Repair & Installation in Fort Wayne, IN — Wickey Plumbing
 
-Veteran-owned and family-run, Wickey Plumbing sends Josh or Zach Wickey to your backed-up drain the same day or the next morning, with the price before the work starts. Licensed and insured, for homes and businesses across Fort Wayne and Northeast Indiana.
+Veteran-owned and family-run, Wickey Plumbing installs the kitchen sink, faucet, disposal or toilet you bought and repairs the one you have, with the price up front. Zach Wickey does the work, licensed and insured, for homes and businesses across Fort Wayne and Northeast Indiana.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 
-### What we clear and fix
+### Bring the fixture, we install it
 
-We clear clogged toilets with a toilet auger, clogged kitchen sinks, garage floor drains and backed-up sewer lines, and we get to the root of the problem instead of treating the symptom. When a kitchen sink drain has failed, we re-plumb the drains under the sink, and when a main sewer line has failed from age, shifting soil or tree roots, we repair or replace it.
+We install kitchen faucets, kitchen sinks and garbage disposals that you bought yourself. We remove the old fixture, make the connections, test it for leaks, and re-plumb the drains under the sink as needed. On sink jobs we install new shutoff valves under the sink. Our licensed and insured plumbers do clean, careful work and stand behind it with our satisfaction guarantee.
 
-Josh clears drains himself, garage floor drains included.
-
-> He got that drain taken care of and then went on to unclog a drain in the middle of the garage that had been clogged for the 30 years that I’ve lived here. Yay!
+> Zach was fantastic and very professional, despite unexpected issues with installing Italian made sink. We would highly recommend his company's services.
 >
-> — Debra H.
+> — Andrzej H.
 
-Got a clog that keeps coming back? Call (260) 409-5128 and tell us what the drain is doing. We'll give you a free estimate.
+Got a sink, faucet or disposal in a box? Call (260) 409-5128 and tell us what you bought. We give free estimates.
 
-### When the pipe is under your floor
+### Repairs, from a drip to a toilet
 
-Some sewer problems are under the floor. We open the floor to reach the pipe, replace it, and put the floor back. In New Haven, a collapsed pipe under a concrete floor was causing serious drainage problems. We broke up the concrete, dug out the damaged pipe and replaced it, checked the line with a camera to confirm there were no other problems, backfilled the hole, poured new concrete and reset the toilet once the new floor was in.
+A dripping faucet or a running toilet adds up on your water bill, and we fix it fast. In Fort Wayne we replaced a failing kitchen faucet. For a running toilet, we replaced the fill valve and the flapper. In Leo-Cedarville we pulled and reset a toilet. We clear clogged toilets with a toilet auger, and in Fort Wayne we repaired a tub's waste and overflow.
 
-> Zack did an amazing job. I had more than your typical clogged drain. A tree root had broken my drain and he had to tear up our floor to get to the problem. He was professional and got it done quickly. His price was very reasonable and we are more than happy with the work he has done.
+> Zach did the repair needed on a toilet. He was on time, cost was fair. Would recommend for future plumbing repairs.
 >
-> — greg F.
+> — gary G.
 
-### How a drain call goes
+### Bathrooms, tubs and flanges
 
-1. You call (260) 409-5128 and tell us what the drain is doing.
-2. We come out the same day or the next morning.
-3. We find the cause and explain it in plain language, and we answer your questions.
-4. You get the price before we start.
-5. Then we do the work.
+When a toilet's cast iron flange broke, we gave the customer two estimates, one to repair it and one to replace it by breaking up the concrete, and installed the toilet once they chose. When a tub cracked, we removed the tub and surround, cut out the drywall, installed the new tub and surround, patched the drywall and reinstalled the trim, shower rod, towel bar and wall cabinet. A customer who supplied their own tub filler faucet had us install it.
 
-### Get the price before we start
+Planning a remodel or an upgrade? We handle full fixture installations for both.
 
-Call us with the clog, the gurgling drain or the sewage smell. You get a licensed, insured plumber, an upfront price and no pressure to buy more than the job needs. We also offer after-hours emergency service.
+### How an install goes
 
-One customer thanked Zach for more than the clog:
+1. You call (260) 409-5128 and tell us what you bought.
+2. We remove the old fixture and make the new connections.
+3. We test everything before we leave.
 
-> Zach is a class act. Not only did he unclog my drain in nanoseconds, but offered money-saving advice for 'the next time'.
+### Get an estimate
+
+Free estimates, a satisfaction guarantee and an honest price. We'll tell you what the job needs and not push you toward more.
+
+> If you’re having any type of plumbing issues contact Wickey Plumbing, Zack is the best! I had the tubular drains underneath the kitchen sink replaced with a disposal waste kit. He also found the disposal was not installed all the way and replaced the sink strainer. Zack did a great job and price is responsible.
 >
-> — Craig V.
+> — Marcia H.
 
-Call (260) 409-5128 or request a quote, and we'll be there.
+Call (260) 409-5128 or request a quote.
 
 **Buttons:** Call (260) 409-5128 / Request a Quote
 
@@ -326,25 +326,25 @@ Call (260) 409-5128.
 
 Written from briefs @ 21550ef
 
-**Rebuild reason:** SEO. All eight services share one Services page, so water heaters and drains have no page of their own, and the Contact browser tab says just "Contact Us".
+**Rebuild reason:** SEO. All eight services share one Services page, so water heaters and fixture work have no page of their own, and the Contact browser tab says just "Contact Us".
 
 | Page | Words without quotes | Words with quotes |
 |---|---|---|
 | Strategy page | 1064 | 1079 |
 | Home | 647 | 757 |
 | Water Heater Repair & Installation | 350 | 485 |
-| Drain Cleaning & Sewer Lines | 380 | 495 |
+| Fixture Repair & Installation | 387 | 484 |
 | Contact | 103 | 165 |
 
 Counts include headings, bullets and the H1, and leave out button lines, the Home strip line and quote attributions. Length follows the material; no word targets.
 
 **Rewrite basis.** Last night's version was cut as bloggy, and the first v2 pass failed the taste check as generic. Pages now lead with the speed and price-first claims, prove them with job notes stated as Wickey's work, and carry no trade explainers. All trade-knowledge sections are gone (hard water, tank life, roots, combined sewers, backwater valves, camera limits as a lecture). Home and both service pages are built from the site's own words (home, /services) with the service-area job notes and reviews as the fact check. Length follows the material, so both service pages are shorter than last night's.
 
-**Service pages.** Kept: water heaters and drain cleaning, the same pair. Water heaters have the most real material. Drains have one site paragraph, four job notes and three reviews, so that page is short; no stronger pair exists (gas line has one site paragraph and one review).
+**Service pages.** Swapped (FF call, Nov 16): water heaters and fixture repair and installation. Drain cleaning failed three taste checks because its own site paragraph is generic and its job notes are mostly one-offs. Fixtures have the deepest real material after water heaters: about fifteen job notes (kitchen faucet, kitchen sink and disposal installs, tub filler, toilet repairs, cracked tub, cast iron flange with two estimates), three reviews (Andrzej H., gary G., Marcia H.) and the site paragraph. Sump pumps (six notes, one detailed review on the site only) and water quality (five notes, no review) were the next candidates; gas line has one review. Plural claims on the Fixture page: kitchen faucets, sinks and disposals you bought yourself (eight or more notes), new shutoff valves under the sink (three notes), re-plumbed drains (three notes), toilet auger clears (four notes). Single jobs are written as single jobs. Original pair line follows, kept for history: Water heaters have the most real material. Drains have one site paragraph, four job notes and three reviews, so that page is short; no stronger pair exists (gas line has one site paragraph and one review).
 
 **Credentials and sources (stated once, on Home, as Wickey's own claims; none verified).**
 
-- Licensed and insured Indiana plumbing contractor: home, /services. Number asked in "What we'd confirm". The water heater page says "licensed and insured Indiana plumber" for installs (their /services words) and the drain page "licensed and insured team"; the full claim is defined on Home.
+- Licensed and insured Indiana plumbing contractor: home, /services. Number asked in "What we'd confirm". The water heater page says "licensed and insured Indiana plumber" for installs (their /services words) and the Fixture page uses their "licensed and insured plumbers" line; the full claim is defined on Home.
 - Josh Wickey, Christian, U.S. Army veteran, plumber since 2016: home. "Over 10 years" not used (disputed).
 - Veteran-owned, family-run, Christian-owned: home. Used in the Home strip only.
 - Free estimates, satisfaction guarantee, warranty: site claims. Free estimates appear in the Home strip and intro, and on the Contact page; no terms published, none given.
@@ -362,13 +362,15 @@ Counts include headings, bullets and the H1, and leave out button lines, the Hom
 - Blog: no article text captured. Not used.
 - Not on a page but logged: gas line, fixtures, repiping, sump and sewage pumps, water quality, maintenance each have a Home entry; none gets its own page (two service pages only).
 - Job notes used: Leo-Cedarville board and cut wire; Fort Wayne garage heater with expansion tank and heat tape; Fort Wayne power-vent heater; incorrectly installed 50-gallon electric heater; customer-supplied heaters in New Haven and Fort Wayne; New Haven collapsed pipe under the slab; Fort Wayne camera inspection; Fort Wayne clogged kitchen drain; Garrett toilet toy; Fort Wayne faucet and kitchen sink jobs; Huntertown sump and sewage pump; Leo-Cedarville softener and whole-house filter. Generic "diagnostic" notes not used.
-- Reviews not used: Jonah B. (2 stars, overpriced, AI texts; no pricing or no-spam claim is made), Stan J. (not a review of work), and the short or rating-only ones. Grace B. (heat tape) not quoted, to avoid tying it to the garage job. Price theme is mixed (one 2-star), so the Drain page says only that customers have named the price as fair, one source line.
+- Reviews not used: Jonah B. (2 stars, overpriced, AI texts; no pricing or no-spam claim is made), Stan J. (not a review of work), and the short or rating-only ones. Grace B. (heat tape) not quoted, to avoid tying it to the garage job. Price theme is mixed (one 2-star), so the price is stated only as upfront or free-estimate claims.
 - Staff-name spelling (Zach, Zack): quotes keep each reviewer's spelling; copy uses "Zach".
 
-**Review use.** 9 quotes plus Kathy D. on Strategy, each once: Tina S., Michael C., Robert C. (Home); Bryan R., Aaron V., Glenn A. (Water Heater); greg F., Debra H., Craig V. (Drain); Kirsten G., Kim W. (Contact). None back to back; copy sits between all. No page has three sections in a row ending in a quote. Quotes were checked against reviews.json.
+**Review use.** 9 quotes in the pages plus Kathy D. on Strategy, each once: Tina S., Michael C., Robert C. (Home); Bryan R., Aaron V., Glenn A. (Water Heater); Andrzej H., gary G., Marcia H. (Fixture); Kirsten G., Kim W. (Contact). None back to back; copy sits between all. No page has three sections in a row ending in a quote. Quotes were checked against reviews.json.
 
 **Facts to verify.** Indiana license and insurance; Josh's veteran status; membership price and terms; what the annual inspection covers; accrediting body behind the badge; whether a plumber answers at every hour; who goes out on most calls, Zach or Josh; whether the New Haven slab and camera job notes can be shown as examples; the warranty terms behind "satisfaction guarantee and warranty".
 
-**Drain page round 2.** Plural claims are backed by several notes: toilet auger clears (four job notes), kitchen sink drains re-plumbed (a review plus three notes), floor opened to reach a pipe (New Haven note and greg F.). Cut as non-results or anecdotes: camera job that could not reach the problem, toy in a toilet, the machine swap. The water softener drain material is now only Debra H.'s quote. Process steps come from the site's drain paragraph (explains in plain language, upfront pricing before we start) and reviews (visit timing, answers questions).
+**Retired Drain page.** Debra H., greg F. and Craig V. were not used after the swap and remain available.
+
+**Old Drain page notes (history).** Plural claims are backed by several notes: toilet auger clears (four job notes), kitchen sink drains re-plumbed (a review plus three notes), floor opened to reach a pipe (New Haven note and greg F.). Cut as non-results or anecdotes: camera job that could not reach the problem, toy in a toilet, the machine swap. The water softener drain material is now only Debra H.'s quote. Process steps come from the site's drain paragraph (explains in plain language, upfront pricing before we start) and reviews (visit timing, answers questions).
 
 **Speed claim.** "Same day or next morning" is stated plainly on Home (hero and emergency section) and the Water Heater page because many reviews show it (same day, next morning, day after, within an hour and a half).

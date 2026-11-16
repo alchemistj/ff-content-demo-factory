@@ -233,8 +233,6 @@ Driveways are most of our concrete work. We replace cracked and sinking driveway
 4. Before the crew leaves each day, it cleans up.
 5. Your sealer comes with the installation.
 
-Driveways and steps are work we finish in days, not weeks.
-
 > The crew Cutter sent over was very considerate and efficient. Did my driveway and steps in two days.
 >
 > — John C.
@@ -267,7 +265,7 @@ Shifting slabs often trace back to drainage. We regrade driveways so the water r
 
 Call 319-900-5497 if your driveway holds water.
 
-### Questions Before You Call
+### Questions Buyers Ask
 
 **Is the sealer really free?** Yes. Our sealer keeps out the water and salt that damage concrete, and when you schedule your installation we include it free of charge.
 
@@ -298,7 +296,7 @@ We tear down and rebuild old decks, including second-story ones, and we replace 
 1. Andy comes out for your estimate and works with you on the design.
 2. You choose your boards, in Trex composite or in wood.
 3. The crew builds your deck and cleans up as it goes.
-4. The last hand rail goes on, and you walk it with us.
+4. The last hand rail goes on, and the job is done.
 
 Old decks hide surprises, and we handle what turns up under the boards as part of the rebuild.
 
@@ -330,7 +328,7 @@ A covered deck with storage below is a design we work out with you.
 >
 > — David M.
 
-### Questions Before You Call
+### Questions Buyers Ask
 
 **Do you build with wood as well as Trex?** Yes. Trex is our first choice, and we build in wood too.
 
@@ -390,8 +388,8 @@ Written from briefs @ 21550ef
 
 - Strategy page: 1039 without quotes, 1061 with.
 - Home: 570 without quotes, 699 with.
-- Concrete: 227 without quotes, 361 with.
-- Decks: 301 without quotes, 417 with.
+- Concrete: 347 without quotes, 480 with.
+- Decks: 381 without quotes, 518 with.
 - Contact: 147 without quotes, 182 with.
 
 **Rewrite basis:** tone reset from the rejected Nov 16 evening version. Home and service pages now use the site's own words as the main material, with reviews as the fact check. The how-to and explainer sections of the earlier version (frost depth, permits, driveway steps, composite-vs-wood, which-boards-fit, FAQ) and the glossary asides are cut. Pages now lead with the Cutter twins, the Trex Pro claim and the free sealer, say what is included, use reviews only as quotes (never retold), and put a call to action after each section.
@@ -431,10 +429,11 @@ Written from briefs @ 21550ef
 - Site testimonials not in reviews.json (Floyd Van Auken, Rick Zettler, Deb Washburn and others): not quoted; quotes come only from reviews.json.
 - Trex colour names and railing product lines: brand names, left out. The which-boards-fit and composite-vs-wood explainers are cut.
 - Roofing, siding, masonry, additions, garages, basements, general contracting, residential projects, model home, snow removal: named on home; no own pages in this demo.
-- Review themes used (quotes only, once each): no surprises (Judy P.), garage addition (Tyler A.), roof and siding (Amanda B.), leak repair (Jim H.), clean-up (David C.), cracked driveway (Christy), drainage (Mark B.), truck and buggy (Seth H.), spring list (Deb W.), second-story rebuild (Daniel H.), Trex Pro (Lila T.), hidden window (Bryce), covered deck (David M.), Bryan (Marcillina B.), "born here" (Cory H., strategy). Not used: Dick W. railings, Floyd A. patio, Ken A. french doors, Todd J. brick repair, critical reviews (calls not returned; raised in "What we'd confirm").
+- Review themes used (quotes only, once each): no surprises (Judy P.), garage addition (Tyler A.), roof and siding (Amanda B.), leak repair (Jim H.), clean-up (David C.), cracked driveway (Christy), drainage (Mark B.), truck and buggy (Seth H.), spring list (Deb W.), replaced deck (Amanda B., #54), Trex Pro (Lila T.), hidden window (Bryce), covered deck (David M.), Bryan (Marcillina B.), "born here" (Cory H., strategy). Not used: Daniel H. second-story rebuild, Amanda B. clean-up (#50 is used on Home), Floyd A. patio, Ken A. french doors, Todd J. brick repair, critical reviews (calls not returned; raised in "What we'd confirm").
 - Home-page claims "keep you informed" rest on Judy P., Tyler A. and Diana P. (reviews 51, 38, 25); the "five masons" and "frame-to-finish" lines are the site's own claims.
-- Concrete page's one trade line: freeze and thaw (Drainage), general trade knowledge. "We explain each step and when it will happen" rests on several reviews (e.g. Steve T., Mark B.); "cleans up before it leaves each day" on 11 reviews.
-- Concrete and Decks are short because the site's own concrete and deck pages are short; length follows that material, nothing padded. Review-only job details (waterproofing, 113-year-old porch, 12 by 16 Trex swap, french doors, patio shapes) are left out so no review is retold. Every relevant site/ file (concrete, decks, Trex boards, railings) is used.
+- Concrete page: "you call and we put together your estimate", "we explain each step and when" (reviews 27, 56, 59), "on time" (reviews 15, 19, 22, 30, 48), "cleans up each day" (11 reviews), "truck off your driveway" (Seth H.) and "plywood over the lawn" (Floyd A.) are stated as claims; the last two rest on two reviews each, verify. "Shifting slabs often trace back to drainage" is a general trade fact; the regrade rests on Mark B. FAQ: sealer (site), asphalt (Steve T., one job, written as one job), parking and basketball court (site).
+- Concrete and Decks are short because the site's own pages are short; nothing padded. Review-only job details (waterproofing, 113-year-old porch, french doors, patio shapes) are left out so no review is retold. Every relevant site/ file (concrete, decks, Trex boards, railings) is used.
+- Decks page: "Andy comes out for your estimate and works with you on the design" rests on reviews 31 and 45 (verify his role); "rebuilds, including second-story, and wood-to-Trex swaps" on reviews 5, 9, 10, 31, 54; samples, conversion and "first estimate to the last hand rail" are the site's words. Quotes: Amanda B. (replacement), Bryce (hidden window), Lila T. (Trex Pro), Dick W. (railings), David M. (covered deck); Daniel H. no longer quoted.
 
 **Facts to verify**
 
