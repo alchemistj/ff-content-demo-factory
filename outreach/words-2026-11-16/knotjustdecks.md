@@ -4,69 +4,77 @@
 
 ## Strategy page
 
-**Built for Knot Just Decks**
+**Badge:** Free demo site built for Knot Just Decks
 
-### We built Knot Just Decks a clearer Fort Wayne website.
+**We already did the work. Here's a Knot Just Decks website that tells Fort Wayne who you are and gets the phone ringing.**
 
-Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here’s a demo of what yours could be.
+Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here's a demo of what yours could be.
 
-**Buttons:** View the Demo Site / See What Changed
+We built Knot Just Decks the first five pages of that kind of website. More on that below.
 
 ### Why we built this site
 
-Your Google reviews are about the people. Customers name who they worked with and say they were kept up to date, on decks, gutters, garage floors and flagpoles alike. One example:
+Customers name who they worked with and say they were kept up to date.
 
 > Mike and John were great at communicating all our options and keeping us up to date on the process and timeline.
 >
 > — Dana W.
 
-Your home page shows no review, and your headlines don't say what you build or where. So the demo starts with the customer's question, across five pages: this one, home, deck design and build, roofing and contact. Garage floors, gutters and flagpoles get their own sections on the home page.
+Your home page shows no review, and your headlines don't say what you build or where.
+
+So the demo opens with Exterior Contractor in Fort Wayne, IN, and gives deck design and build and roofing a page each.
 
 ### The demo, page by page
 
 **1. Homepage**
 
+*Why it matters:* This is what Google reads to learn who you are.
+
 *Current site problems*
 
-- Your top headline is "Fort Wayne's Premier Outdoor Living". It names no deck, roof, gutter or garage floor, so Google has to guess what you build.
-- No review appears on the home page. The five on your Reviews page show a town but no name, so a visitor has no one to trust.
+- Your top headline, "Fort Wayne's Premier Outdoor Living", names no deck, roof or gutter, so Google has to guess.
+- No review appears on the home page. The five on your Reviews page show no name, so a visitor has no one to trust.
 - Roofing is in your top menu but not in the home page's list of services, so a storm-damage customer may never find it.
 
 *What the demo fixes*
 
-- A headline that reads "Exterior Contractor in Fort Wayne, IN — Knot Just Decks".
-- Three reviews from named customers, in the sections on your people, garage floors and flagpoles.
+- A headline that reads "Exterior Contractor in Fort Wayne, IN".
+- Three named-customer reviews, on your people, garage floors and flagpoles.
 - Every service named, roofing included, and your Trex, Penntek, CertainTeed and flag-dealer credentials explained once.
 
 **A full build would also add:** Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 **2. Deck Design and Build**
 
+*Why it matters:* It's the page a homeowner compares you on before calling.
+
 *Current site problems*
 
-- Your headline is "Custom Deck Design & Build", with no town, and what a homeowner needs is spread over five short pages, so someone comparing composite and wood has to click back and forth.
-- "We build all year long" is on four pages, so they read as copies of each other.
-- The deck page shows photos but no customer review, though deck customers write some of your best.
+- Your headline, "Custom Deck Design & Build", has no town, and deck advice is spread over five short pages, so someone comparing has to click back and forth.
+- "We build all year long" is on four pages, so they read as copies.
+- The deck page shows photos but no customer review, so a visitor has no one vouching for the work.
 
 *What the demo fixes*
 
-- A headline that reads "Deck Design and Build in Fort Wayne, IN — Knot Just Decks".
-- One page that covers design, composite or wood, footings, drainage, the nine steps and replacing an old deck.
-- Three deck reviews and four questions answered: time, winter, permits and changes.
+- A headline that reads "Deck Design and Build in Fort Wayne, IN".
+- One page covering design, composite or wood, footings, drainage and the nine steps.
+- Three deck reviews and four questions answered.
 
 **A full build would also add:** Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 **3. Roof Replacement and Repair**
 
+*Why it matters:* It's where a storm-damage customer decides who to call.
+
 *Current site problems*
 
 - Your headline is just "Roofing", so the first thing a visitor reads doesn't say where you work.
-- "Since 1987" appears four times, while the page never explains repair versus replacement or what an inspection looks at.
+- "Since 1987" appears four times, while the page never explains repair versus replacement, so a homeowner can't tell which they need.
 - No review or job appears on the page, so a homeowner choosing a roofer has only your word.
 
 *What the demo fixes*
 
-- A headline that reads "Roof Replacement and Repair in Fort Wayne, IN — Knot Just Decks".
+- A headline that reads "Roof Replacement and Repair in Fort Wayne, IN".
 - Repair-or-replace, storm damage and insurance sections in place of the repeated history.
 - What an inspection covers, and four questions answered.
 
@@ -74,23 +82,23 @@ Your home page shows no review, and your headlines don't say what you build or w
 
 **4. Contact**
 
+*Why it matters:* It's where someone decides whether to call.
+
 *Current site problems*
 
-- Two email addresses, info@myknotjustdecks.com here and info@knotjustdecks.com on most pages, so a customer has to guess which one reaches you.
-- Contact says only "Fort Wayne, Indiana". Your street address is on the About page, so someone who wants to stop by has to hunt.
-- It promises a reply "within 24 hours"; your estimate page says "typically within one business day". Two answers to one question.
+- Two email addresses, so a customer has to guess which one reaches you.
+- Contact says only "Fort Wayne, Indiana". The street address is on the About page, so someone who wants to stop by has to hunt.
+- It promises a reply "within 24 hours"; your estimate page says "typically within one business day". Two answers.
 
 *What the demo fixes*
 
 - One email address, once you tell us which.
 - Your phone number and street address together.
-- What to have ready for a quote, and what happens after you ask for an estimate.
+- What to have ready for a quote, and what happens next.
 
 **A full build would also add:** Call and form tracking that shows which pages and towns your leads come from.
 
 ### What a full build includes
-
-This demo is the first five pages. About 80% of visitors are on a phone, which is why the 91 speed score below matters.
 
 **Gets you found**
 - Every service on your website and your Google profile, telling the same story
@@ -118,18 +126,18 @@ This demo is the first five pages. About 80% of visitors are on a phone, which i
 
 ### What we'd confirm with you
 
+On a short onboarding call, we'd confirm four things.
+
 1. **Email.** Which address do customers use, info@myknotjustdecks.com or info@knotjustdecks.com?
-2. **Flagpole warranty.** Your flagpole page says lifetime. A customer wrote about a five-year warranty. Which is right?
-3. **Garage coatings.** One of your pages says most homeowners choose polyurea and another says most prefer polyaspartic. Which do you install most?
-4. **Roofing.** It is in your top menu but not on your home page's list or most footers, and no Google review mentions a roof. How much of your business is roofing?
+2. **Flagpole warranty.** Your flagpole page says lifetime; a customer wrote five-year. Which is right?
+3. **Garage coatings.** One page says most homeowners choose polyurea, another says polyaspartic. Which do you install most?
+4. **Roofing.** It is in your menu but not your home page list or most footers, and no review mentions a roof. How much of your business is roofing?
 
 ### Want a website like this for your business?
 
-Four quick answers and we can finish these pages. Book a call and we'll go through them together.
+Book a call and we'll walk you through this demo.
 
-**Button:** Book a no-obligation call
-
-Text us: (417) 373-2773
+**[Book a no-obligation call]** · Text us: (417) 373-2773
 
 ## Home — Exterior Contractor in Fort Wayne, IN — Knot Just Decks
 
@@ -404,13 +412,13 @@ We review your project details and schedule a free consultation, in person or vi
 
 | Page | With quotes | Without quotes |
 |---|---|---|
-| Strategy page | 1088 | 1065 |
+| Strategy page | 1050 | 1027 |
 | Home | 827 | 767 |
 | Deck Design and Build | 1064 | 963 |
 | Roof Replacement and Repair | 927 | 927 |
 | Contact | 294 | 254 |
 
-**Services chosen.** Deck design and build (home to composite, wood, process and mistakes material, each fact said once) and roofing. Garage floor coatings was not chosen: the garage page plus the coating-comparison page total about 600 words of site material, so a 700-word page would be padding. Roofing is the other service the site can carry at 700+ words: its page has the most prose (about 615 words) and its trade knowledge is specific (hail and wind damage, insurance steps, tarping, shingles against metal). Roofing has no customer review, so that page has no quote. Suggested routes: /deck-design-build-fort-wayne-in/ and /roof-replacement-repair-fort-wayne-in/. Home owns "Exterior Contractor".
+**Services chosen.** Deck design and build (home to composite, wood, process and mistakes material, each fact said once) and roofing. Garage floor coatings was not chosen: the garage page plus the coating-comparison page total about 600 words of site material, so a 700-word page would be padding. Roofing is the other service the site can carry at 700+ words: its page has the most prose (about 615 words) and its trade knowledge is specific (hail and wind damage, insurance steps, tarping, shingles against metal). Roofing has no customer review, so that page has no quote; its site page (858 words, own claims on CertainTeed, process, storm and tarping) is real material, so it stays. Suggested routes: /deck-design-build-fort-wayne-in/ and /roof-replacement-repair-fort-wayne-in/. Home owns "Exterior Contractor".
 
 **Credentials and the business's own claims (stated as their claims; none confirmed on a certifier's site).**
 - Trex Pro Platinum, "Trex's highest contractor designation" (home, deck-design-build, composite-decking, why-choose-us): defined once on home. The site spells it three ways; copy uses "Trex Pro Platinum".
@@ -455,5 +463,4 @@ We review your project details and schedule a free consultation, in person or vi
 - "Typically within one business day" (free-estimate page).
 - The 50% deposit (step 2): site's own step; confirm it still applies.
 - General trade knowledge (frost depth about three feet, guard rails at about 30 inches, shingle life 20 to 30 years, metal against asphalt, ice dams, sealing strips in cold weather, tarp reimbursements, filing deadlines, adjuster and deductible) is not from the business. Have the owner read the two service pages and cut anything he would not say.
-- The 80% mobile figure and the 91 score come from the brief, not this business.
 - Monitoring lines are the canonical list only.

@@ -29,8 +29,8 @@ So the demo opens with Roofing Contractor in Peoria, IL, puts Brian up front, an
 *Why it matters:* This is what Google reads to learn who you are.
 
 **Current site problem**
-- The headline is "Quality comes first." Google has to dig for what you do and where.
-- Brian's name sits in a paragraph and a smaller box, with no customer's words beside it.
+- The headline is "Quality comes first." Google has to dig for what you do and where, so a Peoria homeowner searching for a roofer may never see you.
+- Brian's name sits in a paragraph and a smaller box, with no customer's words beside it, so a visitor never sees proof that he's on the job.
 
 **What the demo fixes**
 - A headline that says Roofing Contractor in Peoria, IL.
@@ -45,8 +45,8 @@ Google and AI tools can only repeat what's written down. We get every service, c
 
 **Current site problem**
 - "Complete Roof Replacement" is one line in a list of 24 services on a single page, so Google can't match it to someone searching for a new roof in Peoria.
-- Nothing says how a replacement goes, how long it takes or how the yard is left, though customers write about all three.
-- The page promises "premium materials" and never says what they are or why they matter.
+- Nothing says how a replacement goes, how long it takes or how the yard is left, though customers write about all three, so a homeowner has to call just to learn what the biggest job will be like.
+- The page promises "premium materials" and never says what they are or why they matter, so a buyer can't tell your roof from anyone else's.
 
 **What the demo fixes**
 - A page headlined Complete Roof Replacement in Peoria, IL.
@@ -60,9 +60,9 @@ Pages planned from what Google actually shows for each search, so every page tar
 *Why it matters:* After a storm or a leak, this is the page someone in Peoria needs fast.
 
 **Current site problem**
-- Repair and storm damage are two more lines in the same list, with no page and no Peoria in a headline.
-- The insurance block promises "fair assessments, timely repairs, and peace of mind" without saying what happens first.
-- Customers describe you finding the real cause of a leak. The page doesn't mention it.
+- Repair and storm damage are two more lines in the same list, with no page and no Peoria in a headline, so someone with a leak in Peoria has nothing to land on.
+- The insurance block promises "fair assessments, timely repairs, and peace of mind" without saying what happens first, so a worried homeowner still doesn't know the next step.
+- Customers describe you finding the real cause of a leak. The page doesn't mention it, so a visitor never learns you fix the cause, not just the spot.
 
 **What the demo fixes**
 - A page headlined Roof Repair and Storm Damage in Peoria, IL.
@@ -76,9 +76,9 @@ A check of what your competitors offer, so services you didn't think to mention 
 *Why it matters:* It's where someone decides whether to call.
 
 **Current site problem**
-- A form with four required boxes and a phone number. No address or email anywhere on the site.
-- Nothing says what to have ready or what happens after the call.
-- The service area reads "Peoria & Central Illinois" here and "greater Peoria area" on the homepage.
+- A form with four required boxes and a phone number. No address or email anywhere on the site, so a visitor who won't fill four boxes has no way to reach you but the phone.
+- Nothing says what to have ready or what happens after the call, so a caller can't tell what to expect and may put it off.
+- The service area reads "Peoria & Central Illinois" here and "greater Peoria area" on the homepage, so a customer can't tell whether you cover their town.
 
 **What the demo fixes**
 - 309-922-5767 first, then your address.
@@ -137,7 +137,7 @@ Brian Gavlinski leads our family roofing company, and he oversees our jobs himse
 
 ### Brian Works Beside the Crew
 
-Pat Gavlinski started this company, and his son Brian runs it now. Brian oversees the jobs himself and works with the crew on the roof. Roofing is a trade where small decisions made on the roof, like how a pipe is sealed or how an old patch is dealt with, decide whether you call anyone again in ten years. We think the person making those decisions should be the owner.
+Pat Gavlinski started this company, and his son Brian runs it now. Brian oversees the jobs himself and works with the crew on the roof. Roofing is a trade where small decisions made on the roof, like how a pipe is sealed or how an old patch is dealt with, decide whether you call anyone again in ten years.
 
 > Brian was on site, most of the time working side by side with the rest of the crew.
 >
@@ -145,7 +145,7 @@ Pat Gavlinski started this company, and his son Brian runs it now. Brian oversee
 
 ### Our Own Crew, No Sub-Crews
 
-The people on your roof work for us. That means the crew that starts your job is the crew that finishes it, and you know whose hands are on your house. Whoever you hire, it is worth asking one question before you sign: who exactly will be on my roof, and who answers if something looks wrong the next morning? We'd rather you ask us that than skip it.
+The people on your roof work for us. That means the crew that starts your job is the crew that finishes it, and you know whose hands are on your house. Whoever you hire, it is worth asking one question before you sign: who exactly will be on my roof, and who answers if something looks wrong the next morning?
 
 ### What We Do on a Roof
 
@@ -182,7 +182,7 @@ An old roof sheds nails, and a new one sheds offcuts. A crew usually has to swee
 
 **Do you look at a roof that isn't leaking yet?** Yes, roof inspections and assessments are on our list. An inspection usually covers the shingles, the edges, the places the roof meets chimneys and walls, and anything that sticks through the roof, such as pipes and vents. Catching a loose piece early is usually cheaper than a repair after water gets in.
 
-**Do you work on garages and other buildings?** Yes. Several customers have had us roof a garage, and one had us replace the roof on a church.
+**Do you work on garages and other buildings?** Yes. Customers have had us roof garages, and one had us replace the roof on a church.
 
 ### Call Brian's Team
 
@@ -257,7 +257,7 @@ You get a free estimate. What goes into it is the size and slope of the roof, th
 
 ### Questions About Replacement
 
-**Can new shingles go over the old ones?** Sometimes, depending on local rules, but it usually isn't a good idea. The old layer hides the wood underneath, and a second layer adds weight and can shorten the life of the new roof. Taking the old roof off lets the wood get checked.
+**Can new shingles go over the old ones?** Sometimes, depending on local rules, but it usually isn't a good idea. The old layer hides the wood underneath, and a second layer adds weight and can shorten the life of the new roof.
 
 **When is the best time of year to replace a roof?** Late spring to early fall is usually easiest, because shingles seal best in warm weather. A replacement can still be done in cooler months when there's a good weather window, and a roof that is leaking shouldn't wait for perfect weather.
 
@@ -325,9 +325,9 @@ Central Illinois freezes and thaws all winter. Water that gets into a small crac
 
 **Should I repair the roof or replace it?** It depends on how much of the roof is affected and how old it is. A repair usually makes sense when the damage is in one area and the rest of the roof is in good shape. When the roof is near the end of its life, or damage is spread across it, a replacement is often the better use of money. An inspection can sort that out.
 
-**How soon after a storm should I call?** Soon. A leak that lasts a few days can soak the wood and the insulation, and a roof with missing shingles is open to the next rain. Take photos from the ground first, then call.
+**How soon after a storm should I call?** Soon. A leak that lasts a few days can soak the wood and the insulation, and a roof with missing shingles is open to the next rain.
 
-**Can a roof be repaired in cold weather?** Often a temporary fix can stop the leak, since shingles seal best in warm weather and a lasting repair is easier then. A roof that is leaking shouldn't wait for spring.
+**Can a roof be repaired in cold weather?** Often a temporary fix can stop the leak, since shingles seal best in warm weather and a lasting repair is easier then.
 
 ### Call About the Damage
 
@@ -335,7 +335,7 @@ Call 309-922-5767 and tell us what happened. We'll set up a time to look.
 
 ## Contact — Contact Gavlinski Roofing & Construction, Peoria, IL
 
-Call us about a leak, a storm or a new roof. We're glad to look at a roof even if you aren't sure what you need.
+Call us about a leak, a storm or a new roof.
 
 **Buttons:** Call 309-922-5767 · Get a Free Estimate
 
@@ -385,11 +385,11 @@ Call 309-922-5767 and tell us about the roof.
 **Rebuild reason: SEO.** The homepage headline is "Quality comes first," with roofing and Peoria only in the smaller line under it, and all 24 services sit on one page, so Google can't match any to a search.
 
 **Word counts** (script count; "without quotes" excludes blockquotes, buttons and the strip)
-- Strategy: 1,024 without quotes, 1,042 with (trimmed from 1,128; the full-build list is untouched).
-- Home: 644 without quotes, 712 with.
-- Complete Roof Replacement: 846 without quotes, 957 with. Meets 700+.
-- Roof Repair and Storm Damage: 728 without quotes, 827 with. Meets 700+.
-- Contact: 240 without quotes, 254 with.
+- Strategy: 1,154 without quotes, 1,172 with (the full-build list is untouched).
+- Home: 600 without quotes, 659 with.
+- Complete Roof Replacement: 832 without quotes, 935 with. Meets 700+.
+- Roof Repair and Storm Damage: 710 without quotes, 800 with. Meets 700+.
+- Contact: 225 without quotes, 238 with.
 
 **Credentials and sources**
 - None on the business's own site (no license, insurance statement, manufacturer certification or trade-association membership on any page). No credential claimed in copy.
@@ -398,7 +398,7 @@ Call 309-922-5767 and tell us about the roof.
 - Free estimate, free damage assessment, insurance coordination, own crew, owner oversight: the site's own claims (`/`, `/about`, `/services`), written as theirs and hedged where absolute.
 
 **Thinner page, hedged knowledge**
-- The repair page has the least review material (about ten reviews on repairs), so it is the thinnest of the two service pages at 724 words, against 842 for replacement.
+- The repair page has the least review material, so it is the thinnest of the two service pages at 710 words, against 832 for replacement.
 - Much of it, such as where leaks usually start, hail and wind damage and winter freeze-thaw, is general trade knowledge written as hedged advice ("usually", "often"), not claims about Gavlinski. Only the review quotes and the free damage assessment come from the business. Josh should read it with that in mind.
 
 **Conflicts kept out of the copy**
@@ -409,7 +409,7 @@ Call 309-922-5767 and tell us about the roof.
 - Hours: none found; none stated. Address is from the Google listing only; verify.
 
 **Inventory items and why**
-- Services: Roof inspections, repair and maintenance, replacement, asphalt, metal, storm damage (home and service pages). Siding, gutters, windows, fascia and soffit, additions and remodeling are one FAQ answer on home. Siding can't honestly reach 700 words (two siding reviews, one bullet list), so it has no page.
+- Services: Roof inspections, repair and maintenance, replacement, asphalt, metal, storm damage (home and service pages). Siding, gutters, windows, fascia and soffit, additions and remodeling are one FAQ answer on home. Siding can't honestly reach 700 words (thin review material, one bullet list), so it has no page.
 - Differentiators: hands-on owner, no sub-crews, father-son family, free estimate, free damage assessment (home and strip). Since 1976 and "Proven Reputation" cut with the years conflict.
 - Unusual offers: slate, dormers and skylight (margaret B., home, quoted). Emergency tarp (Justin S., one quote, written at one-review strength). Insulation (ThatsAndrewJordan), out-of-state tear-off and the Brandon C. claim outcome left out: not on the site, one review each, or an outcome we can't promise.
 - Review themes: Brian on site (home), one-day jobs (hero, replacement), price holds (Dan S., Adrienne B.), cleanup (home, replacement), fixes what's under the problem (repair), communication (not a separate section; Contact, with preston S.). Case studies and portfolio: the gallery page has no text, so none to use.
