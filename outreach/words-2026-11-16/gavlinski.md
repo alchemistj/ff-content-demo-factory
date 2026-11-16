@@ -9,76 +9,68 @@
 
 Your site shapes your Google ranking, what AI says about your business, and how easy you are to reach. Here's a demo of what yours could be.
 
-We built Gavlinski the first five pages of that kind of website. More on that below.
+We built Gavlinski the first four pages of that kind of website.
 
 **Why we built this site**
 
-Your customers keep telling the same story: Brian is on the job, not just at the estimate.
+Your customers keep telling the same story: Brian is on the job.
 
 > Brian was at the job site every day, ensuring everything went smoothly and was done correctly.
 >
 > — Mary D.
 
-Your homepage opens with "Quality comes first." Roofing and Peoria show up in the smaller line under it, and Brian's name sits further down.
+Your homepage opens with "Quality comes first." Roofing and Peoria are in the smaller line under it, and Brian's name sits further down.
 
-So the demo opens with Roofing Contractor in Peoria, IL, puts Brian up front, and gives complete roof replacement and roof repair and storm damage a page each.
+So the demo opens with Roofing Contractor in Peoria, IL, puts Brian up front, and gives roof replacement and roof repair a page each.
 
 **The demo, page by page**
 
 ### 1. Homepage
 
-*Why it matters:* This is what Google reads to learn who you are.
-
 **Current site problem**
-- The big headline is "Quality comes first." Google has to dig for what you do and where.
-- Brian's name sits in a paragraph and a smaller box. No customer's words about him sit beside it.
-- The three testimonials don't match the reviews we pulled from Google, and "Over 40 Years in Business" sits next to a 1976 start.
+- The headline is "Quality comes first." Google has to dig for what you do and where.
+- Brian's name sits in a paragraph and a smaller box, with no customer's words beside it.
+- "Over 40 Years in Business" sits next to a 1976 start.
 
 **What the demo fixes**
 - A headline that says Roofing Contractor in Peoria, IL.
 - Brian up front, with a customer saying he works beside the crew.
-- Your own crew and your family story told in one place, without the "over 40 years" badge until you confirm it.
+- Your crew and family story in one place, without the "over 40 years" badge until you confirm it.
 
 **A full build would also add**
 Google and AI tools can only repeat what's written down. We get every service, credential and what makes you different out of your head and onto your site and Google profile, so they all tell the same story.
 
 ### 2. Complete Roof Replacement
 
-*Why it matters:* A new roof is your biggest job, and it has no page of its own.
-
 **Current site problem**
 - "Complete Roof Replacement" is one line in a list of 24 services on a single page, so Google can't match it to someone searching for a new roof in Peoria.
-- Nothing says how a replacement goes, how long it takes or how the yard is left, and your customers write about all three.
+- Nothing says how a replacement goes, how long it takes or how the yard is left, though customers write about all three.
 - The page promises "premium materials" and never says what they are or why they matter.
 
 **What the demo fixes**
 - A page headlined Complete Roof Replacement in Peoria, IL.
-- A replacement day, the wood under the old roof, and one-day jobs, with customers' words beside each.
-- Asphalt shingles and metal roofing explained in plain words, with colors.
+- A replacement day, the wood under the old roof and one-day jobs, with customers' words beside each.
+- Asphalt shingles and metal roofing in plain words, with colors.
 
 **A full build would also add**
 Pages planned from what Google actually shows for each search, so every page targets something people really look for.
 
 ### 3. Roof Repair and Storm Damage
 
-*Why it matters:* This is the call that comes with water in the house.
-
 **Current site problem**
 - Repair and storm damage are two more lines in the same list, with no page and no Peoria in a headline.
-- The insurance block promises "fair assessments, timely repairs, and peace of mind" and never says what happens first.
-- Customers describe you finding the real cause of a leak, and the page says nothing about it.
+- The insurance block promises "fair assessments, timely repairs, and peace of mind" without saying what happens first.
+- Customers describe you finding the real cause of a leak. The page doesn't mention it.
 
 **What the demo fixes**
 - A page headlined Roof Repair and Storm Damage in Peoria, IL.
-- Where leaks usually start, what's under the problem, and your free damage assessment in plain words.
+- Where leaks usually start, what's under the problem and your free damage assessment, in plain words.
 - Customers' words on a leak traced to a loose pipe collar and on rotted wood found early.
 
 **A full build would also add**
 A check of what your competitors offer, so services you didn't think to mention still get their own pages.
 
 ### 4. Contact
-
-*Why it matters:* It's where someone decides whether to call.
 
 **Current site problem**
 - A form with four required boxes and a phone number. No address or email anywhere on the site.
@@ -121,16 +113,14 @@ Keeps working after launch
 
 **What we'd confirm with you**
 
-On a short onboarding call, we'd confirm four things.
-
-- The seal at the very bottom of your pages links to the Better Business Bureau, and we couldn't check it there. Is Gavlinski BBB accredited?
+- The seal at the bottom of your pages links to the Better Business Bureau, and we couldn't check it there. Is Gavlinski BBB accredited?
 - Your pages say "Over 40 Years in Business" and "since 1976," which is about 50. Which should we use?
-- Ben R., Wendy S. and Jeff S. on your homepage don't match the reviews we pulled from Google. Where did those come from?
+- Ben R., Wendy S. and Jeff S. on your homepage aren't in the Google reviews we pulled. Where are they from?
 - What does your own workmanship warranty cover, apart from what a shingle maker covers?
 
 **Want a website like this for your business?**
 
-Book a call and we'll walk you through this demo, page by page, with Brian's name where customers look first.
+Book a call and we'll walk you through this demo page by page.
 
 **[Book a no-obligation call]** · Text us: (417) 373-2773
 
@@ -165,15 +155,15 @@ The people on your roof work for us. That means the crew that starts your job is
 
 ### Old, Steep and Unusual Roofs
 
-Roofs in older Peoria neighborhoods aren't always simple. They can be steep, cut up by dormers and chimneys, or made of materials that aren't common now. Customers have had us remove a slate roof, repair the openings underneath and add new windows in the roof.
+Roofs in older Peoria neighborhoods aren't always simple. They can be steep, cut up by dormer windows and chimneys, or made of materials that aren't common now. Customers have had us remove a slate roof, repair the openings underneath and add new windows in the roof.
 
 > We had an 106 year old slate roof; the Gavlinski roofing team removed that, repaired holes, put in 3 new dormer windows, and a skylight.
 >
 > — margaret B.
 
-### Estimates, Prices and Insurance Claims
+### Estimates and Prices
 
-Estimates are free. Two roofs of the same size can end up at very different prices, because slope, the number of corners, layers of old roofing and rotted wood underneath all change the work. If your roof was damaged in a storm, we offer a free damage assessment and coordinate directly with your insurer. Whether a claim is approved is up to the insurer, and we won't tell you otherwise.
+Estimates are free. Two roofs of the same size can end up at very different prices, because slope, the number of corners, layers of old roofing and rotted wood underneath all change the work. If your roof was damaged in a storm, we offer a free damage assessment and work directly with your insurance company. Whether a claim is approved is up to them.
 
 ### We Clean Up Before We Leave
 
@@ -205,7 +195,7 @@ A complete roof replacement means the old roof comes off, the wood underneath ge
 
 A replacement usually starts early. The crew covers the plants and the ground around the house, then strips the old shingles off in sections so the house is never open to the sky longer than it has to be. Once the old layer is gone, the wood underneath is checked, and anything soft gets replaced. Then a waterproof layer goes down, the new shingles go on, and the pieces around pipes, vents and chimneys get fitted.
 
-Many houses are done in a day. A bigger or more complicated roof can take two or three, and a rain delay stretches it. Customers have also told us a job finished sooner than they were told.
+Many houses are done in a day. A bigger or more complicated roof can take two or three, and a rain delay stretches it. One customer said the job was done a lot sooner than they were told.
 
 > completed the job as he told me he would which was in 1 day.
 >
@@ -302,19 +292,19 @@ A leak that runs for a long time soaks the wood under the shingles, and wet wood
 >
 > — Dan A.
 
+### Maintenance Keeps Repairs Small
+
+Roof maintenance is on our list too, and it is mostly about the edges. Gutters packed with leaves hold water against the roof edge, where it can back up under the first row of shingles. Limbs that rub the roof wear the surface away, and a small loose area is usually cheap to secure before the next windstorm finds it. A look at the roof once a year, and after any big storm, usually catches these while they are still small.
+
 ### After a Storm
 
 Hail, strong wind and fallen limbs can all damage a roof. Hail leaves bruises that wear the gritty surface off shingles. Wind can lift or crease them, and a limb can punch a hole. From the ground you can often see missing shingles or debris, but most damage is only visible up close, and walking on a wet or damaged roof is not safe. Photos from the ground, taken before anything is cleaned up, are useful for an insurance claim. Then call someone to look.
 
-Customers have also had us put an emergency cover on a damaged roof to stop a leak.
+Customers have also had us put an emergency cover on a damaged roof to stop a leak. We also offer a free damage assessment, and we coordinate directly with your insurance provider on the claim.
 
 > Brian came right out and did an emergency tarp job to prevent further leaks.
 >
 > — Justin S.
-
-### Free Damage Assessment and Insurance
-
-We offer a free damage assessment after a storm. We coordinate directly with your insurance provider on the claim. Whether a claim is approved, and for how much, is up to your insurer.
 
 ### Small and Unusual Repairs
 
@@ -323,10 +313,6 @@ Not every repair is a leak. Customers have called us for a balcony roof that nee
 > They came in, treated us like family, did some problem solving, got to work and completed the job before weather compromised our ability to fix it.
 >
 > — Mary C.
-
-### Maintenance Keeps Repairs Small
-
-Roof maintenance is on our list too, and it is mostly about the edges. Gutters packed with leaves hold water against the roof edge, where it can back up under the first row of shingles. Limbs that rub the roof wear the surface away, and a small loose area is usually cheap to secure before the next windstorm finds it. A look at the roof once a year, and after any big storm, usually catches these while they are still small.
 
 ### Winter on a Damaged Roof
 
@@ -373,7 +359,7 @@ Tell us the date of the storm and what you've seen. We offer a free damage asses
 
 ### If Water Is Coming In
 
-Move what you can out of the way, set a bucket under the drip, and stay clear of a ceiling that sags or bulges, because it can hold a lot of water. Switch off power to any room where water is near light fixtures or outlets. Take photos of the stain and the damage, then call us.
+Set a bucket under the drip and stay clear of a ceiling that sags or bulges, because it can hold a lot of water. Keep water away from light fixtures and outlets. Take photos, then call us.
 
 ### What Happens After You Call
 
@@ -393,20 +379,24 @@ Call 309-922-5767 and tell us about the roof.
 
 ## Notes (not page copy)
 
-**Rebuild reason: SEO.** The homepage's big headline is "Quality comes first," roofing and Peoria are only in the smaller line under it, and every service (24 sub-services) sits on one Services page, so Google can't match any one to a search. Design wasn't judged from the site text.
+**Rebuild reason: SEO.** The homepage headline is "Quality comes first," with roofing and Peoria only in the smaller line under it, and all 24 services sit on one page, so Google can't match any to a search.
 
-**Word counts** (script count, ignoring Markdown marks; "without quotes" excludes blockquotes, buttons and the strip; "with" is everything on the page)
-- Strategy: 1,128 without quotes, 1,146 with (the one quote; badge, headline, subheading and the full-build list counted). Over the soft 1,000 cap because of the fixed full-build list; the four cards and confirm questions are tight.
-- Home: 630 without quotes, 714 with.
-- Complete Roof Replacement: 841 without quotes, 949 with. Meets 700+.
-- Roof Repair and Storm Damage: 744 without quotes, 841 with. Meets 700+, with hedged trade knowledge and four review-backed sections (leak fixed at the cause, rot found early, a storm cover, an unusual balcony repair).
-- Contact: 260 without quotes, 280 with.
+**Word counts** (script count; "without quotes" excludes blockquotes, buttons and the strip)
+- Strategy: 1,017 without quotes, 1,036 with. (trimmed from 1,128; the full-build list is untouched)
+- Home: 623 without quotes, 685 with.
+- Complete Roof Replacement: 842 without quotes, 949 with. Meets 700+.
+- Roof Repair and Storm Damage: 724 without quotes, 818 with. Meets 700+.
+- Contact: 240 without quotes, 254 with.
 
 **Credentials and sources**
 - None on the business's own site (no license, insurance statement, manufacturer certification or trade-association membership on any page). No credential claimed in copy.
 - BBB seal at the bottom of the site: unconfirmed (profile blocked automated reads). In "What we'd confirm" only.
 - CertainTeed and "class 3 impact rated" appear only in Dan S.'s review; not stated as a credential. Copy mentions only that impact-rated shingles may earn an insurance discount, as general advice.
 - Free estimate, free damage assessment, insurance coordination, own crew, owner oversight: the site's own claims (`/`, `/about`, `/services`), written as theirs and hedged where absolute.
+
+**Thinner page, hedged knowledge**
+- The repair page has the least review material (about ten reviews on repairs), so it is the thinnest of the two service pages at 724 words, against 842 for replacement.
+- Much of it, such as where leaks usually start, hail and wind damage and winter freeze-thaw, is general trade knowledge written as hedged advice ("usually", "often"), not claims about Gavlinski. Only the review quotes and the free damage assessment come from the business. Josh should read it with that in mind.
 
 **Conflicts kept out of the copy**
 - Years: "Over 40 Years" (home), "over four decades" (about), "since 1976" (all). No year or years count appears in copy. Brian's "28 years" also left out.

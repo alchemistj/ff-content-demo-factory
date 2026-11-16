@@ -130,9 +130,9 @@ Earns their trust
 
 - Reviews on every page, matched to the service
 
-- About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
+- About and owner pages that show who does the work
 
-- A strip at the top of every page with your credentials, so a customer sees why to pick you right away
+- A trust bar that shows what makes you different
 
 Turns visitors into calls
 

@@ -1,0 +1,28 @@
+{
+  "kind": "google-review-pull-receipt",
+  "status": "ok",
+  "slug": "rockford-roofing-premium",
+  "request": {
+    "mapsUrl": "place_id:ChIJKUsq_0_fZScRekE23zNlug8",
+    "maxReviews": 150,
+    "expectedPhone": "8152961306",
+    "expectedName": "Premium Roofing Solutions"
+  },
+  "trigger": "workflow_dispatch",
+  "apify": {
+    "actor": "compass~crawler-google-places",
+    "runId": "Fn7T4ODhX9QrPmYDx",
+    "datasetId": "PpybOt04dBehs71nA",
+    "attempts": 1,
+    "usageUsd": 0.049199999999999994
+  },
+  "counts": {
+    "listingTotal": 88,
+    "withText": 85,
+    "ratingOnly": 3
+  },
+  "detail": null,
+  "startedAt": "2026-11-16T05:55:22.103Z",
+  "finishedAt": "2026-11-16T05:56:04.127Z",
+  "githubRunUrl": "https://github.com/alchemistj/ff-content-demo-factory/actions/runs/43813305859"
+}

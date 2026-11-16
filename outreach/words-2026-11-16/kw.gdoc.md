@@ -98,8 +98,8 @@ Gets you found
 
 Earns their trust
   - Reviews on every page, matched to the service
-  - About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
-  - A strip at the top of every page with your rating and credentials, so a customer sees why to pick you right away
+  - About and owner pages that show who does the work
+  - A trust bar that shows what makes you different
 
 Turns visitors into calls
   - Scores 91 or higher on Google's mobile speed test at launch, in Google's "good" range. Most visitors are on a phone, and a slow page lets them down.
