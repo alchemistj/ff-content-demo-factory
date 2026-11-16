@@ -22,7 +22,7 @@ Your reviews keep naming people: Taylor, Tyler, Kyle, Ryan, Luke. One put it thi
 
   
 
-Taylor and Luke were great\! Taylor answered all my questions, checked everything I asked them to look into, and answered all my questions thoroughly. I really appreciated their service.
+> Taylor and Luke were great\! Taylor answered all my questions, checked everything I asked them to look into, and answered all my questions thoroughly. I really appreciated their service.
 
   
 
@@ -52,9 +52,9 @@ Here's the details:
 
   
 
-  - The top says Reliable Service. Locally Owned. with no electrician and no Fort Wayne, so Google can't tell what you do or where.
-  - Five services appear as one-word tiles like Residential and Solar, with nothing on what's inside.
-  - No reviews appear, though customers praise your crew by name on Google.
+  - The top says Reliable Service. Locally Owned. with no electrician and no Fort Wayne, so Google can't tell what you do or where, and a Fort Wayne search for an electrician passes you by.
+  - Five services appear as one-word tiles like Residential and Solar, with nothing on what's inside, so a visitor can't tell whether you do their job.
+  - No reviews appear, though customers praise your crew by name on Google, so a visitor never sees that proof.
 
   
 
@@ -84,9 +84,9 @@ Here's the details:
 
   
 
-  - Panels are one of nine bullets on a page whose headline has no town.
-  - Meter base and riser are another bullet, with nothing on what they are.
-  - The only hint of when to replace is a panel that is 20+ years old.
+  - Panels are one of nine bullets on a page whose headline has no town, so a Fort Wayne panel search has little to find.
+  - Meter base and riser are another bullet, with nothing on what they are, so a homeowner can't tell if the job covers theirs.
+  - The only hint of when to replace is a panel that is 20+ years old, so an owner can't judge whether theirs needs it.
 
   
 
@@ -116,9 +116,9 @@ Here's the details:
 
   
 
-  - Rewires and breaker replacement are single bullets.
-  - "Outdated wiring" is on a list, with no word on what it is.
-  - Your reviews about outlets, breakers and a hard-to-wire house appear nowhere.
+  - Rewires and breaker replacement are single bullets, so someone with a tripping breaker finds nothing about their problem.
+  - "Outdated wiring" is on a list, with no word on what it is, so an owner can't tell if their house has it.
+  - Your reviews about outlets, breakers and a hard-to-wire house appear nowhere, so a visitor never sees you solve those problems.
 
   
 
@@ -148,9 +148,9 @@ Here's the details:
 
   
 
-  - No contact page; "Make an Appointment" opens a link outside your site.
-  - Your estimate fee isn't on the site, and one 1-star review is about it.
-  - Your address appears only in the name in your browser tab.
+  - No contact page; "Make an Appointment" opens a link outside your site, so a visitor is sent away just as they are ready to call.
+  - Your estimate fee isn't on the site, and a customer's review is about it, so a caller can be surprised by a charge.
+  - Your address appears only in the name in your browser tab, so a customer can't see where to find you.
 
   
 
@@ -187,8 +187,8 @@ Here's the details:
   
 
   - Reviews on every page, matched to the service
-  - About and owner pages that build your authority with Google and AI tools, so they know who stands behind the work
-  - A strip at the top of every page with your rating and credentials, so a customer sees why to pick you right away
+  - About and owner pages that show who does the work
+  - A trust bar that shows what makes you different
 
   
 
@@ -215,7 +215,7 @@ Here's the details:
 
 ### What we'd confirm with you
 
-1.  **Estimate fee.** Your reply to a 1-star review says you charge for estimates. What is the fee?
+1.  **Estimate fee.** Your reply to a customer review says you charge for estimates. What is the fee?
 2.  **Hours.** Your site posts none. Do you come out after hours?
 3.  **Energy Independence Fund.** Your site says you're one of the only approved contractors in Northeast Indiana. Are you still an approved contractor?
 4.  **Towns.** Your site says Northeast Indiana. Which towns do you want named?
@@ -244,7 +244,7 @@ Three Rivers Electric is a locally owned electrical company at 3020 Congressiona
 
   
 
-I highly recommend Three Rivers.  Their team is professional, courteous, knowledgeable, and communicates well every step of the way.
+> I highly recommend Three Rivers.  Their team is professional, courteous, knowledgeable, and communicates well every step of the way.
 
   
 
@@ -256,7 +256,7 @@ Nate Cardelli, PhD, is our president. Shelly Barton is our executive vice presid
 
   
 
-Great job\! Taylor and Tyler persisted until the repaired every break on the yard light connection.
+> Great job\! Taylor and Tyler persisted until the repaired every break on the yard light connection.
 
   
 
@@ -284,7 +284,7 @@ The rest of our residential work:
 
   
 
-They did a great job getting my EV charger set up. Everything was finished and looked very good.
+> They did a great job getting my EV charger set up. Everything was finished and looked very good.
 
   
 
@@ -292,7 +292,7 @@ They did a great job getting my EV charger set up. Everything was finished and l
 
   
 
-If your project isn't on the list, call. We'll tell you whether it's a fit.
+If your project isn't on the list, call.
 
 ### Lighting, inside and out
 
@@ -308,7 +308,7 @@ For existing businesses, new commercial spaces and housing developments, we hand
 
   
 
-Three Rivers is now my go-to company on all electrical problems for myself and a mobile home park that I run and manage. … I can't say enough for three rivers sending me help within 2 hours of a phone call.
+> Three Rivers is now my go-to company on all electrical problems for myself and a mobile home park that I run and manage. … I can't say enough for three rivers sending me help within 2 hours of a phone call.
 
   
 
@@ -320,11 +320,11 @@ Our low voltage team handles structured cabling (organized network and phone wir
 
 ### Solar, and ways to pay for it
 
-We install residential and commercial solar, including ground-mount, roof-mount and ballasted systems (weighted down instead of bolted through the roof), and larger solar fields. We also clean and maintain panels and inspect inverters, the equipment that turns what your panels make into power your house uses. We have also taken solar panels down for customers.
+We install residential and commercial solar, including ground-mount, roof-mount and ballasted systems (weighted down instead of bolted through the roof), and larger solar fields. We also clean and maintain panels and inspect inverters, the equipment that turns what your panels make into power your house uses. One customer also had us take solar panels off their roof.
 
   
 
-I had Solar panels removed from my house roof yesterday 2 very dependable polite young men were sent over & I’m very pleased with all.
+> I had Solar panels removed from my house roof yesterday 2 very dependable polite young men were sent over & I’m very pleased with all.
 
   
 
@@ -408,7 +408,7 @@ A visit usually starts with looking at the panel, the meter and the space around
 
   
 
-Given a 1 hour time frame for when they would arrive and they arrived right on time.
+> Given a 1 hour time frame for when they would arrive and they arrived right on time.
 
   
 
@@ -420,7 +420,7 @@ Electricians often explain what they find and what each part of the work involve
 
   
 
-This was the second time we had used this company.  They were recommended by our home warranty company.  Both times, the guys showed up online, used booties, installed and explained products, and then cleaned up afterward.  On top of that, they were charming, personable, and professional.   Will use them again.
+> This was the second time we had used this company.  They were recommended by our home warranty company.  Both times, the guys showed up online, used booties, installed and explained products, and then cleaned up afterward.  On top of that, they were charming, personable, and professional.   Will use them again.
 
   
 
@@ -454,7 +454,7 @@ Breakers also wear out. One that trips with almost nothing running, won't reset,
 
   
 
-Woke up to a breaker that tripped and no power to the master bath and garage. Located the problem quickly to an outdoor fixture and had the parts to fix it right there\!
+> Woke up to a breaker that tripped and no power to the master bath and garage. Located the problem quickly to an outdoor fixture and had the parts to fix it right there\!
 
   
 
@@ -474,7 +474,7 @@ An outlet that is warm, discolored or buzzing is a different matter. Heat usuall
 
   
 
-Three Rivers Electric was very responsive and was able to squeeze me in on short notice. The electrician, Kyle, resolved our problem with our outlets quickly and gave us a bit of education as to why some of our outlets went out.
+> Three Rivers Electric was very responsive and was able to squeeze me in on short notice. The electrician, Kyle, resolved our problem with our outlets quickly and gave us a bit of education as to why some of our outlets went out.
 
   
 
@@ -486,7 +486,7 @@ Wiring a replacement outlet is also easy to get wrong. A ground fault outlet has
 
   
 
-Fantastic service and very polite when explaining i wired the gfi outlet wrong.  Thank you\!
+> Fantastic service and very polite when explaining i wired the gfi outlet wrong.  Thank you\!
 
   
 
@@ -518,7 +518,7 @@ Current code requires ground fault and arc fault protection in many rooms. An ar
 
   
 
-They had a hard time with our house, not their fault at all. Ryan stuck with it and did a great job
+> They had a hard time with our house, not their fault at all. Ryan stuck with it and did a great job
 
   
 
@@ -526,11 +526,11 @@ They had a hard time with our house, not their fault at all. Ryan stuck with it 
 
 ### Breaker replacement
 
-A breaker replacement is not always the answer, and a new breaker on a circuit with a real problem will trip again. We look at why it tripped before changing it. When the breaker is the part that failed, replacing it is quick.
+A breaker replacement is not always the answer, and a new breaker on a circuit with a real problem will trip again. When the breaker is the part that failed, replacing it is quick.
 
   
 
-So grateful for three rivers electric company for fixing our breaker and the price was just right not to high and I would recommend this company thanks to Ryan and Kyle
+> So grateful for three rivers electric company for fixing our breaker and the price was just right not to high and I would recommend this company thanks to Ryan and Kyle
 
   
 
@@ -542,7 +542,7 @@ Condos and recently bought houses are where older wiring often turns up, since n
 
   
 
-The condo we bought for my son use use during college, came with some minor electrical issues in which Three Rivers Electric we friendly and thorough in their work.
+> The condo we bought for my son use use during college, came with some minor electrical issues in which Three Rivers Electric we friendly and thorough in their work.
 
   
 
@@ -584,7 +584,7 @@ Ask what the estimate covers when you call, so you know what to expect.
 
   
 
-Estimate was provided quickly. Team listened to my concerns and worked with me on solutions throughout the process. Communication was great\! Team provided excellent work\! I would recommend them to anyone looking for electrical work\!
+> Estimate was provided quickly. Team listened to my concerns and worked with me on solutions throughout the process. Communication was great\! Team provided excellent work\! I would recommend them to anyone looking for electrical work\!
 
   
 
@@ -596,7 +596,7 @@ If you see smoke or flames, or smell something burning, get everyone outside and
 
   
 
-If you're not sure your project fits, call us and we'll sort it out on the phone.
+If you're not sure your project fits, call us.
 
   
 
@@ -634,7 +634,7 @@ Counts include headings and bullets and leave out button lines. Home and both se
 
   
 
-**Estimate fee.** Source is the owner's reply to Andrew P. (1 star); the $75 figure is the reviewer's, so no amount is used. Not stated in the copy (it is a confirm item); Contact only says to ask what the estimate covers. Andrew P.'s review is not quoted.
+**Estimate fee.** Source is the owner's reply to Andrew P.; the $75 figure is the reviewer's, so no amount is used. Not stated in the copy (it is a confirm item); Contact only says to ask what the estimate covers. Andrew P.'s review is not quoted.
 
   
 
@@ -651,7 +651,7 @@ Counts include headings and bullets and leave out button lines. Home and both se
   - Insurance and warranty claim work (Denice B., MidnightRain38, Karen R.): only Karen R.'s quote mentions a home warranty company; not claimed as a service.
   - Crew-tracking text (John N., one review): left out of copy; his breaker quote stops before it.
   - Case studies and portfolio jobs: the site has none; review jobs are used instead.
-  - Unused reviews: Teri J., Thomas P., Mary G., Scott B., Joe G., tim H., Timothy S., Crissy M., Steve B., Brad Q., and the other short or rating-only ones. The 3-star (Jessica B.) and 4-star (Terry F.) reviews are not quoted; both involve disputes.
+  - Unused reviews: Teri J., Thomas P., Mary G., Scott B., Joe G., tim H., Timothy S., Crissy M., Steve B., Brad Q., and the other short or rating-only ones. Jessica B.'s and Terry F.'s reviews are not quoted; both involve disputes.
 
   
 
