@@ -1,0 +1,102 @@
+{
+  "kind": "google-prospect-scout",
+  "version": 1,
+  "slug": "ozark-barbers",
+  "query": "barber shop",
+  "location": "Ozark, MO",
+  "maxPlaces": 15,
+  "scrapedAt": "2026-11-16T05:19:10.917Z",
+  "places": [
+    {
+      "rank": 4,
+      "name": "Big Hair Full Beards Salon & Barber Shop",
+      "placeId": "ChIJvRxsu_zNz4cRJFlOLpC30-Y",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Big%20Hair%20Full%20Beards%20Salon%20%26%20Barber%20Shop&query_place_id=ChIJvRxsu_zNz4cRJFlOLpC30-Y",
+      "categoryName": "Barber shop",
+      "categories": [
+        "Barber shop",
+        "Hair salon"
+      ],
+      "rating": 5,
+      "reviewsCount": 4,
+      "website": null,
+      "phone": "(417) 989-6158",
+      "address": "17 Smoketree Ln, Theodosia, MO 65761",
+      "city": "Theodosia",
+      "state": "Missouri",
+      "permanentlyClosed": false,
+      "temporarilyClosed": false,
+      "isAdvertisement": false,
+      "claimThisBusiness": false,
+      "ownerUpdates": null
+    },
+    {
+      "rank": 19,
+      "name": "Southern Roots llc",
+      "placeId": "ChIJ-2aFnKEr0IcR6GzjFLXM3ok",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Southern%20Roots%20llc&query_place_id=ChIJ-2aFnKEr0IcR6GzjFLXM3ok",
+      "categoryName": "Barber shop",
+      "categories": [
+        "Barber shop",
+        "Hair salon"
+      ],
+      "rating": 4.7,
+      "reviewsCount": 15,
+      "website": null,
+      "phone": null,
+      "address": "34 Court Sq, Gainesville, MO 65655",
+      "city": "Gainesville",
+      "state": "Missouri",
+      "permanentlyClosed": false,
+      "temporarilyClosed": false,
+      "isAdvertisement": false,
+      "claimThisBusiness": false,
+      "ownerUpdates": null
+    },
+    {
+      "rank": 2,
+      "name": "The Hair Shop & Tanning",
+      "placeId": "ChIJS_sQmnwr0IcRlv68H5AvIOE",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=The%20Hair%20Shop%20%26%20Tanning&query_place_id=ChIJS_sQmnwr0IcRlv68H5AvIOE",
+      "categoryName": "Beauty salon",
+      "categories": [
+        "Beauty salon"
+      ],
+      "rating": 4.6,
+      "reviewsCount": 9,
+      "website": "https://www.facebook.com/Hairshop417",
+      "phone": "(308) 383-2382",
+      "address": "355 Main St, Gainesville, MO 65655",
+      "city": "Gainesville",
+      "state": "Missouri",
+      "permanentlyClosed": false,
+      "temporarilyClosed": false,
+      "isAdvertisement": false,
+      "claimThisBusiness": false,
+      "ownerUpdates": null
+    },
+    {
+      "rank": 2,
+      "name": "Michelle’s Shear Artistry",
+      "placeId": "ChIJVSDNGIcr0IcRo6tJp1DangE",
+      "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Michelle%E2%80%99s%20Shear%20Artistry&query_place_id=ChIJVSDNGIcr0IcRo6tJp1DangE",
+      "categoryName": "Hair salon",
+      "categories": [
+        "Hair salon",
+        "Beauty salon"
+      ],
+      "rating": 4.8,
+      "reviewsCount": 30,
+      "website": "https://www.facebook.com/share/14NZdjdYin1/",
+      "phone": "(417) 989-0112",
+      "address": "430 Third St, Gainesville, MO 65655",
+      "city": "Gainesville",
+      "state": "Missouri",
+      "permanentlyClosed": false,
+      "temporarilyClosed": false,
+      "isAdvertisement": false,
+      "claimThisBusiness": false,
+      "ownerUpdates": null
+    }
+  ]
+}
