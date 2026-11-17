@@ -11,7 +11,8 @@
 //     "entries": [ { "slug": "rivercity", "company": "River City Roofing", "prospect": "prospects/wichita-roofing/rivercity",
 //                    "formUrl": "https://...", "frame": "powr.io" (optional: iframe URL part when the form is embedded),
 //                    "approved": false, "subject": "optional subject line" } ] }
-// The message is the "## Message (paste as is)" block of <prospect>/outreach.md, sent word for word.
+// The message is the "## Message (paste as is)" block of <prospect>/outreach.md (or the file named by
+// --message-file, e.g. ask.md for the audit-and-ask message), sent word for word.
 //
 // Rules (docs/josh-working-rules.md in ff-architect):
 //   - Never try to defeat a CAPTCHA. A visible check ("I'm not a robot", hCaptcha, Turnstile) is a hand send, always.
@@ -61,11 +62,14 @@ const domainOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, "")
 const sameBusiness = (a, entry) => a.domain === domainOf(entry.formUrl) || (a.company && a.company.toLowerCase() === entry.company.toLowerCase());
 const NO_SOLICIT = /no solicit|solicitors? (are )?not|not (accept|want)(ing)? solicitations|solicitations? (are )?not (accepted|welcome)|do not (send|contact us with) (sales|marketing|solicitations)|no (sales|marketing) (calls|emails|inquiries|pitches)|vendors? (and|or) solicit/i;
 
+// --message-file ask.md reads the message from another file in the prospect folder (default outreach.md).
+const MESSAGE_FILE = argVal("--message-file") ?? "outreach.md";
+
 function readMessage(prospect, heading = "Message") {
-  const md = fs.readFileSync(path.join(root, prospect, "outreach.md"), "utf8");
+  const md = fs.readFileSync(path.join(root, prospect, MESSAGE_FILE), "utf8");
   const m = md.match(new RegExp(`## ${heading}[^\\n]*\\n([\\s\\S]*?)(?=\\n## |\\s*$)`));
   if (!m && heading !== "Message") return null;
-  if (!m) throw new Error(`no "## Message (paste as is)" block in ${prospect}/outreach.md`);
+  if (!m) throw new Error(`no "## Message (paste as is)" block in ${prospect}/${MESSAGE_FILE}`);
   return m[1].trim();
 }
 
