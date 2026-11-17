@@ -1,0 +1,962 @@
+{
+  "day": "2026-11-17",
+  "mode": "dry-run",
+  "results": [
+    {
+      "slug": "ballinger",
+      "company": "Ballinger Electric",
+      "formUrl": "https://www.ballingerelectric.com/contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "Type of Service",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Name:",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Email:",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone:",
+          "value": "4173732773"
+        },
+        {
+          "label": "Message:",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/ballinger-filled.png"
+      ],
+      "time": "2026-11-17T22:25:13.779Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Ballinger Electric team,\n\nI looked at your website and noticed two things: on a phone, your page is wider than the screen, so the menu and headline get cut off, and your phone number is plain text, not a button people can tap to call. Your 158 Google reviews at 5 stars are great, so the site should make it easy for people to reach you.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the form.",
+        "subject": "A website mockup for Ballinger Electric"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "brockmeyer",
+      "company": "Brockmeyer Inc.",
+      "formUrl": "https://www.brockmeyerinc.com/contact-us",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "Name",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone",
+          "value": "4173732773"
+        },
+        {
+          "label": "Service",
+          "value": "(left alone)"
+        },
+        {
+          "label": "How may we help you?",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/brockmeyer-filled.png"
+      ],
+      "time": "2026-11-17T22:25:18.117Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Brockmeyer Inc. team,\n\nI looked at your website and noticed two things: your pages scroll sideways on a phone, and the \"What Our Customers Are Saying\" section is empty, with only a link that says \"Free Google Reviews Widget.\" Your 4.8 stars on Google are strong, so your site is hiding your best selling point.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the form.",
+        "subject": "A website mockup for Brockmeyer Inc."
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "bybee",
+      "company": "Bybee Electric",
+      "formUrl": "https://www.bybeeelectric.com/contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "Name*",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Email*",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone*",
+          "value": "4173732773"
+        },
+        {
+          "label": "Message",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/bybee-filled.png"
+      ],
+      "time": "2026-11-17T22:25:21.722Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Bybee Electric team,\n\nI looked at your website and noticed two things: your Reviews page shows only 2 ratings, and the top of every page says you serve \"the State of Kansas\" instead of Wichita. You have 101 Google reviews at 4.7 stars, so your site is hiding your best selling point.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the form.",
+        "subject": "A website mockup for Bybee Electric"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "plumbcrazy",
+      "company": "Plumb Crazy",
+      "formUrl": "https://www.plumbcrazykansas.com/contact-us/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "Name(required)",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Email(required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone Number",
+          "value": "4173732773"
+        },
+        {
+          "label": "Required Services(required)",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/plumbcrazy-filled.png"
+      ],
+      "time": "2026-11-17T22:25:30.357Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Plumb Crazy team,\n\nI looked at your website and noticed two things: your menu says \"SERVER SERVICE\" where it should say \"Sewer Service,\" and none of your pages show a single customer review. You have 75 Google reviews at 4.7 stars, so your site is hiding your best selling point.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the form.",
+        "subject": "A website mockup for Plumb Crazy"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "yokes",
+      "company": "Yoke's Master Plumbing and Remodeling",
+      "formUrl": "https://yokesmasterplumbing.com/contact/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "First",
+          "value": "Josh"
+        },
+        {
+          "label": "Last",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email (required) *",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Subject *",
+          "value": "A website mockup for Yoke's Master Plumbing and Remodeling"
+        },
+        {
+          "label": "How may we help you? *",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/yokes-filled.png"
+      ],
+      "time": "2026-11-17T22:25:35.630Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Yokes Master Plumbing team,\n\nI looked at your website and noticed two things: every \"MORE\" button on your homepage just opens your contact page, so no single service has its own page, and your site never shows a street address, only \"Wichita, KS and surrounding area\". Your Google reviews are strong, so the site should show off your work the way your customers do.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "None needed: the form has no message length cap, so the full message fits.",
+        "subject": "A website mockup for Yoke's Master Plumbing and Remodeling"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "cooks",
+      "company": "Cook's Heating and Cooling",
+      "formUrl": "https://www.cookshvac.com/contact/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "name name name *",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "email email email *",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "comment comment message*",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/cooks-filled.png"
+      ],
+      "time": "2026-11-17T22:25:41.509Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Cook's Heating and Cooling team,\n\nI looked at your website and noticed two things: the bottom of every page says copyright 2016, which makes the business look closed, and none of your customer reviews appear on your homepage. You have 67 Google reviews, so your site is hiding your best selling point.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "None needed: the form has no message length cap, so the full message fits.",
+        "subject": "A website mockup for Cook's Heating and Cooling"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "integrity",
+      "company": "Integrity Heating and Cooling",
+      "formUrl": "https://integrityheatingandcooling.net/contact/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "could not fill the form: the site shows a bot check before the form (never bypassed)",
+      "fields": [],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/integrity-error.png"
+      ],
+      "time": "2026-11-17T22:25:44.118Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Integrity Heating and Cooling team,\n\nI looked at your website and noticed two things: your service pages promise 24/7 emergency service, but your contact page says weekdays 8am to 5pm and \"call for quote\" on weekends, and your site never shows a street address, only \"Greater Wichita Area\" and Kechi. Your Google reviews are all five stars, so the site should be as clear as your customers are.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "None needed: the form has no message length cap, so the full message fits.",
+        "subject": "A website mockup for Integrity Heating and Cooling"
+      }
+    },
+    {
+      "slug": "aircapital",
+      "company": "Air Capital Heating and Air",
+      "formUrl": "https://aircapitalheatingandair.com/contact-us",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "Name *",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Phone *",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Service Address",
+          "value": "(left blank)"
+        },
+        {
+          "label": "Service Needed",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Message",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/aircapital-filled.png"
+      ],
+      "time": "2026-11-17T22:26:05.169Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Air Capital Heating and Air team,\n\nI looked at your website and noticed two things: on your homepage, four of the five \"Learn More\" buttons open your contact form instead of a page about the service, and there is no page for ductless mini splits even though your homepage lists them as a service. Your Google reviews are strong, so a customer who wants details should get them.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "None needed: the form has no message length cap, so the full message fits.",
+        "subject": "A website mockup for Air Capital Heating and Air"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "comforttechs",
+      "company": "ComfortTechs",
+      "formUrl": "https://www.comforttechs.com/contact-us",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "First Name(required)",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name(required)",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email Address(required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Subject(required)",
+          "value": "A website mockup for ComfortTechs"
+        },
+        {
+          "label": "Message(required)",
+          "value": "(the message)"
+        },
+        {
+          "label": "Phone",
+          "value": "4173732773"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/comforttechs-filled.png"
+      ],
+      "time": "2026-11-17T22:26:10.007Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey ComfortTechs team,\n\nI looked at your website and noticed two things: three links on your homepage lead to pages that don't exist, and the bottom of your site still says Copyright 2022. Your Google reviews are strong (4.8 stars from 69 reviews), so your site should look as current as your customers say you are.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the message box.",
+        "subject": "A website mockup for ComfortTechs"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "pioneer",
+      "company": "Pioneer Roofing",
+      "formUrl": "https://roofingpeoria.net/contact-us/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "could not fill the form: no message box found on the form",
+      "fields": [],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/pioneer-error.png"
+      ],
+      "time": "2026-11-17T22:26:14.247Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Pioneer Roofing team,\n\nI looked at your website and noticed two things: on your town pages, the PHONE button dials a different number than the one shown on the page, and there are no customer reviews on your homepage. Your Google reviews are strong (5.0 stars from 48 reviews), so your site is hiding your best selling point.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the message box.",
+        "subject": "A website mockup for Pioneer Roofing"
+      }
+    },
+    {
+      "slug": "electricraft",
+      "company": "ElectriCraft",
+      "formUrl": "https://www.electricraftks.com/contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First Name",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name",
+          "value": "Lenz"
+        },
+        {
+          "label": "Phone",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Message",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/electricraft-filled.png"
+      ],
+      "time": "2026-11-17T22:26:15.947Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey ElectriCraft team,\n\nI looked at your website and noticed two things: on a phone, your menu runs off the edge of the screen, and the site says you're available 24/7 for emergencies while the hours say closed Saturday and Sunday. Your 63 Google reviews at 5 stars are a big selling point, so the site should be as clear as your reviews.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the form.",
+        "subject": "A website mockup for ElectriCraft"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "alpha",
+      "company": "Alpha HVAC & Plumbing",
+      "formUrl": "https://alpha-heatair.com/contact-us/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First Name",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name",
+          "value": "Lenz"
+        },
+        {
+          "label": "Phone Number",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email Address",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Message",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/alpha-filled.png"
+      ],
+      "time": "2026-11-17T22:26:20.744Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Alpha HVAC & Plumbing team,\n\nI looked at your website and noticed two things: on a phone there is no call button at the top of the page, so people have to open the menu to find your number, and the review box on your homepage says 48 Google reviews when Google shows 131. Your Google reviews are strong, so your site is selling you short.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "None needed: the form has no message length cap, so the full message fits.",
+        "subject": "A website mockup for Alpha HVAC & Plumbing"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "dreammakers",
+      "company": "Dream Makers Heating and Cooling",
+      "formUrl": "https://heatingandcooling.online/contact-us/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "your-name your name",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "your-email your email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "text-723 phone",
+          "value": "4173732773"
+        },
+        {
+          "label": "your-message your message",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/dreammakers-filled.png"
+      ],
+      "time": "2026-11-17T22:26:24.227Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Dream Makers team,\n\nI looked at your website and noticed two things: the service buttons on your homepage open pages about Fort Worth, Texas, and the phone number in the top bar of your site calls a Texas (817) number, not your Wichita line. Your Google reviews are strong, so those calls should land with you.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "None needed: the form has no message length cap, so the full message fits.",
+        "subject": "A website mockup for Dream Makers Heating and Cooling"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "douglas-fry",
+      "company": "Douglas Fry Roofing",
+      "formUrl": "https://www.douglasfryroofing.com/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "ogf7w0ci_1684159942580 *first name",
+          "value": "Josh"
+        },
+        {
+          "label": "qxslvrpd_1684159942580 *email address",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "mrehap9q_1684159942580 *message enter text",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/douglas-fry-filled.png"
+      ],
+      "time": "2026-11-17T22:26:30.511Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Douglas Fry Roofing team,\n\nI looked at your website and noticed two things: on a phone your page is wider than the screen, so the Call button and most of the menu are cut off, and your footer still says 2017. Your Google reviews are strong, so those phone visitors are exactly the people you want to reach.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": null,
+        "subject": "A website mockup for Douglas Fry Roofing"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "ict-roofing",
+      "company": "ICT Roofing & Exteriors",
+      "formUrl": "https://www.ict-roofing.com/contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First Name(required)",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name(required)",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email(required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Subject(required)",
+          "value": "A website mockup for ICT Roofing & Exteriors"
+        },
+        {
+          "label": "Message(required)",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/ict-roofing-filled.png"
+      ],
+      "time": "2026-11-17T22:27:03.877Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey ICT Roofing team,\n\nI looked at your website and noticed two things: the browser tab on every page says 'Your Site Title' instead of your company name, and the Roofing 'Learn More' button opens a hotel page with rooms at $100 a night. Your Google reviews are strong, so your site should be showing a roofing company.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": null,
+        "subject": "A website mockup for ICT Roofing & Exteriors"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "rivercity",
+      "company": "River City Roofing",
+      "formUrl": "https://rivercity-roofing.com/contact/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First",
+          "value": "Josh"
+        },
+        {
+          "label": "Last",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email(Required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Comments(Required)",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/rivercity-filled.png"
+      ],
+      "time": "2026-11-17T22:27:09.172Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey River City Roofing team,\n\nI looked at your website and noticed two things: when someone taps your phone number it calls 123-456-7890, and your windows page says 'our experienced painters'. Your Google rating is five stars, so every caller you lose to that number is a lost job.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Use this one (form caps the box at 600 characters; this is 393, full message is 597).\n\nHey River City Roofing team,\n\nI noticed two things on your site: when someone taps your phone number it calls 123-456-7890, and your windows page says 'our experienced painters'. Want a free homepage mockup that fixes both? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "subject": "A website mockup for River City Roofing"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "creekmore",
+      "company": "Creekmore Plumbing",
+      "formUrl": "https://creekmoreplumbing.com/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "could not fill the form: no message box found on the form",
+      "fields": [],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/creekmore-error.png"
+      ],
+      "time": "2026-11-17T22:27:13.362Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Creekmore Plumbing team,\n\nI looked at your website and noticed two things: all your services (water heaters, toilets, backflow testing and more) sit on one long page with no page of their own, and the bottom of the site still says \"Copyright 2025.\" Your 56 Google reviews at 4.7 stars are strong, so the site should show off each thing you do.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the form.",
+        "subject": "A website mockup for Creekmore Plumbing"
+      }
+    },
+    {
+      "slug": "customassured",
+      "company": "Custom Assured Mechanical",
+      "formUrl": "https://customassured.com/contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First Name(required)",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name(required)",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email(required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Sign up for news and updates",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Subject(required)",
+          "value": "A website mockup for Custom Assured Mechanical"
+        },
+        {
+          "label": "Message(required)",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/customassured-filled.png"
+      ],
+      "time": "2026-11-17T22:27:39.555Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Custom Assured Mechanical team,\n\nI looked at your website and noticed two things: your homepage doesn't show a phone number, and nothing on the site can be tapped to call on a phone, and the video on your homepage shows an error message instead of playing. Your Google reviews are strong (5.0 stars from 90 reviews), so the site should be working as hard as your customers are.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the message box.",
+        "subject": "A website mockup for Custom Assured Mechanical"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "coolconcepts",
+      "company": "Cool Concepts",
+      "formUrl": "https://coolconceptsne.com/contact/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "required dropdown \"How did you find us?*\" needs a choice",
+      "fields": [
+        {
+          "label": "First",
+          "value": "Josh"
+        },
+        {
+          "label": "Last",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email*",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone*",
+          "value": "4173732773"
+        },
+        {
+          "label": "How did you find us?*",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Message*",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/coolconcepts-filled.png"
+      ],
+      "time": "2026-11-17T22:27:42.908Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Cool Concepts team,\n\nI looked at your website and noticed two things: the Request An Estimate button on your contact page leads to a page that doesn't exist, and the video on your homepage shows an error message instead of playing. Your Google reviews are strong (5.0 stars), so your site should make it easy for those customers' neighbors to reach you.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the message box.",
+        "subject": "A website mockup for Cool Concepts"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "roettgers",
+      "company": "Roettger's Heating and Cooling",
+      "formUrl": "https://www.roettgersheatingandcooling.com/contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First Name(required)",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name(required)",
+          "value": "Lenz"
+        },
+        {
+          "label": "Phone(required)",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email(required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Message(required)",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/roettgers-filled.png"
+      ],
+      "time": "2026-11-17T22:27:48.687Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Roettger's team,\n\nI looked at your website and noticed two things: there are no customer reviews anywhere on your website, and your business hours aren't listed on any page. Your Google reviews are strong (5.0 stars from 169 reviews), so your site is hiding your best selling point.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the message box.",
+        "subject": "A website mockup for Roettger's Heating and Cooling"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "thermal",
+      "company": "Thermal Services, Inc. (TSI)",
+      "formUrl": "https://www.tsipeoria.com/contact-us",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "First Name",
+          "value": "Josh"
+        },
+        {
+          "label": "Last Name",
+          "value": "Lenz"
+        },
+        {
+          "label": "Phone",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Service Type",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Message",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/thermal-filled.png"
+      ],
+      "time": "2026-11-17T22:27:51.101Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Thermal Services team,\n\nI looked at your website and noticed two things: your promotions say \"now through the end of the year\" with no year, so visitors can't tell if they're still good, and the copyright line at the bottom of your site is blank, just a lone symbol with no year or name. Your Google reviews are strong (4.9 stars from 51 reviews), so your site should look as current as your customers say you are.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the message box.",
+        "subject": "A website mockup for Thermal Services, Inc. (TSI)"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "jgroofing",
+      "company": "JG Roofing and Company",
+      "formUrl": "https://www.jgroofingco.com/peoria",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "could not fill the form: no message box found on the form",
+      "fields": [],
+      "shots": [
+        "outreach-runs/2026-11-17/ask-2026-11-17/dry-run/jgroofing-error.png"
+      ],
+      "time": "2026-11-17T22:27:56.027Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey JG Roofing team,\n\nI looked at your website and noticed two things: your website scrolls sideways on a phone, so part of each page is cut off, and your site shows one phone number on the page but the Call or Text button dials a different one. Your Google reviews are strong (4.9 stars from 64 reviews), so your site should work as well as your customers say you do.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)\n\nJosh, Fluid Frame Marketing\n\nP.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.",
+        "shortMessage": "Not needed. No length cap on the message box.",
+        "subject": "A website mockup for JG Roofing and Company"
+      }
+    }
+  ]
+}
