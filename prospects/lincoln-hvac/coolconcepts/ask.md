@@ -16,11 +16,11 @@ Hey Cool Concepts team,
 
 I looked at your website and noticed two things: the Request An Estimate button on your contact page leads to a page that doesn't exist, and the video on your homepage shows an error message instead of playing. Your Google reviews are strong (5.0 stars), so your site should make it easy for those customers' neighbors to reach you.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the message box.

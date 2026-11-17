@@ -17,11 +17,11 @@ Hey ComfortTechs team,
 
 I looked at your website and noticed two things: three links on your homepage lead to pages that don't exist, and the bottom of your site still says Copyright 2022. Your Google reviews are strong (4.8 stars from 69 reviews), so your site should look as current as your customers say you are.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the message box.

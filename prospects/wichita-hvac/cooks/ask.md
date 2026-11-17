@@ -17,11 +17,11 @@ Hey Cook's Heating and Cooling team,
 
 I looked at your website and noticed two things: the bottom of every page says copyright 2016, which makes the business look closed, and none of your customer reviews appear on your homepage. You have 67 Google reviews, so your site is hiding your best selling point.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 None needed: the form has no message length cap, so the full message fits.

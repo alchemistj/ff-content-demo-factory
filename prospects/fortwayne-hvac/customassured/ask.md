@@ -17,11 +17,11 @@ Hey Custom Assured Mechanical team,
 
 I looked at your website and noticed two things: your homepage doesn't show a phone number, and nothing on the site can be tapped to call on a phone, and the video on your homepage shows an error message instead of playing. Your Google reviews are strong (5.0 stars from 90 reviews), so the site should be working as hard as your customers are.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the message box.

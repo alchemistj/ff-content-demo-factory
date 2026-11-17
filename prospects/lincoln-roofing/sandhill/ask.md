@@ -17,11 +17,11 @@ Hey Sandhill Roofing team,
 
 I looked at your website and noticed two things: there are no customer reviews anywhere on your website, and each of your services has no page of its own, they're all squeezed into one long page. Your Google reviews are strong (5.0 stars from 101 reviews), so your site is hiding your best selling point.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the message box.

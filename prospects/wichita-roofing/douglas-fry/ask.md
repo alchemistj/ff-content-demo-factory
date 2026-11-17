@@ -11,11 +11,11 @@ Hey Douglas Fry Roofing team,
 
 I looked at your website and noticed two things: on a phone your page is wider than the screen, so the Call button and most of the menu are cut off, and your footer still says 2017. Your Google reviews are strong, so those phone visitors are exactly the people you want to reach.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Checks
 Desktop = 1440x900, phone = 390x844 (phone emulation).

@@ -17,11 +17,11 @@ Hey Dream Makers team,
 
 I looked at your website and noticed two things: the service buttons on your homepage open pages about Fort Worth, Texas, and the phone number in the top bar of your site calls a Texas (817) number, not your Wichita line. Your Google reviews are strong, so those calls should land with you.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 None needed: the form has no message length cap, so the full message fits.

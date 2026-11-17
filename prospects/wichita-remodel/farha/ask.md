@@ -17,11 +17,11 @@ Hey Farha HomeTrends team,
 
 I looked at your website and noticed two things: the phone number on your homepage is plain text, so a phone visitor cannot tap it to call, and the phone menu has no Contact link and no call button. Your Google reviews are all five stars, so a visitor should be able to reach you in one tap.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 None needed: the form has no message length cap, so the full message fits.

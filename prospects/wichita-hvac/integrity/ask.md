@@ -17,11 +17,11 @@ Hey Integrity Heating and Cooling team,
 
 I looked at your website and noticed two things: your service pages promise 24/7 emergency service, but your contact page says weekdays 8am to 5pm and "call for quote" on weekends, and your site never shows a street address, only "Greater Wichita Area" and Kechi. Your Google reviews are all five stars, so the site should be as clear as your customers are.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 None needed: the form has no message length cap, so the full message fits.

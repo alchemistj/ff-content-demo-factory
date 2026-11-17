@@ -17,11 +17,11 @@ Hey Epic Heating & Cooling team,
 
 I looked at your website and noticed two things: your "Preventive Maintenance Plans" page is really about when to replace an air conditioner, with no plan on it, and your site never shows a street address. Your Google reviews are strong, so the site should be as clear as your customers are.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 None needed: the form has no message length cap, so the full message fits.

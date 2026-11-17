@@ -11,11 +11,11 @@ Hey Modern Glass Structures team,
 
 I looked at your website and noticed two things: nothing on your site taps to call, so a phone visitor has to copy your number from the bottom of the page, and the whole site is one page, with no page for shower doors, mirrors or storefronts. Your Google reviews are strong, so people who find you are ready to call and should not have to hunt.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Checks
 Desktop = 1440x900, phone = 390x844 (phone emulation).

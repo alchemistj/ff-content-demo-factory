@@ -18,11 +18,11 @@ Hey Up To Code Plumbing team,
 
 I looked at your website and noticed two things: on a phone the page is wider than the screen, so the menu overlaps and some words are cut off, and your homepage shows no customer reviews, just a small Google badge. Your Google rating is 4.9 stars, so your site is hiding your best selling point.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 None needed: the form has no message length cap, so the full message fits.

@@ -16,11 +16,11 @@ Hey Creekmore Plumbing team,
 
 I looked at your website and noticed two things: all your services (water heaters, toilets, backflow testing and more) sit on one long page with no page of their own, and the bottom of the site still says "Copyright 2025." Your 56 Google reviews at 4.7 stars are strong, so the site should show off each thing you do.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the form.

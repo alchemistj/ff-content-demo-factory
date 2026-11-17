@@ -15,48 +15,54 @@
       "company": "Ballinger Electric",
       "prospect": "prospects/wichita-electrical/ballinger",
       "formUrl": "https://www.ballingerelectric.com/contact",
-      "approved": false,
-      "subject": "A website mockup for Ballinger Electric"
+      "approved": true,
+      "subject": "A website mockup for Ballinger Electric",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "brockmeyer",
       "company": "Brockmeyer Inc.",
       "prospect": "prospects/wichita-electrical/brockmeyer",
       "formUrl": "https://www.brockmeyerinc.com/contact-us",
-      "approved": false,
-      "subject": "A website mockup for Brockmeyer Inc."
+      "approved": true,
+      "subject": "A website mockup for Brockmeyer Inc.",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "bybee",
       "company": "Bybee Electric",
       "prospect": "prospects/wichita-electrical/bybee",
       "formUrl": "https://www.bybeeelectric.com/contact",
-      "approved": false,
-      "subject": "A website mockup for Bybee Electric"
+      "approved": true,
+      "subject": "A website mockup for Bybee Electric",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "plumbcrazy",
       "company": "Plumb Crazy",
       "prospect": "prospects/wichita-plumbing/plumbcrazy",
       "formUrl": "https://www.plumbcrazykansas.com/contact-us/",
-      "approved": false,
-      "subject": "A website mockup for Plumb Crazy"
+      "approved": true,
+      "subject": "A website mockup for Plumb Crazy",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "yokes",
       "company": "Yoke's Master Plumbing and Remodeling",
       "prospect": "prospects/wichita-plumbing/yokes",
       "formUrl": "https://yokesmasterplumbing.com/contact/",
-      "approved": false,
-      "subject": "A website mockup for Yoke's Master Plumbing and Remodeling"
+      "approved": true,
+      "subject": "A website mockup for Yoke's Master Plumbing and Remodeling",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "cooks",
       "company": "Cook's Heating and Cooling",
       "prospect": "prospects/wichita-hvac/cooks",
       "formUrl": "https://www.cookshvac.com/contact/",
-      "approved": false,
-      "subject": "A website mockup for Cook's Heating and Cooling"
+      "approved": true,
+      "subject": "A website mockup for Cook's Heating and Cooling",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "integrity",
@@ -71,8 +77,9 @@
       "company": "Air Capital Heating and Air",
       "prospect": "prospects/wichita-hvac/aircapital",
       "formUrl": "https://aircapitalheatingandair.com/contact-us",
-      "approved": false,
-      "subject": "A website mockup for Air Capital Heating and Air"
+      "approved": true,
+      "subject": "A website mockup for Air Capital Heating and Air",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "comforttechs",
@@ -95,24 +102,27 @@
       "company": "ElectriCraft",
       "prospect": "prospects/wichita-electrical/electricraft",
       "formUrl": "https://www.electricraftks.com/contact",
-      "approved": false,
-      "subject": "A website mockup for ElectriCraft"
+      "approved": true,
+      "subject": "A website mockup for ElectriCraft",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "alpha",
       "company": "Alpha HVAC & Plumbing",
       "prospect": "prospects/wichita-hvac/alpha",
       "formUrl": "https://alpha-heatair.com/contact-us/",
-      "approved": false,
-      "subject": "A website mockup for Alpha HVAC & Plumbing"
+      "approved": true,
+      "subject": "A website mockup for Alpha HVAC & Plumbing",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "dreammakers",
       "company": "Dream Makers Heating and Cooling",
       "prospect": "prospects/wichita-hvac/dreammakers",
       "formUrl": "https://heatingandcooling.online/contact-us/",
-      "approved": false,
-      "subject": "A website mockup for Dream Makers Heating and Cooling"
+      "approved": true,
+      "subject": "A website mockup for Dream Makers Heating and Cooling",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
     },
     {
       "slug": "douglas-fry",

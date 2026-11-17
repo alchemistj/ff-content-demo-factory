@@ -17,11 +17,11 @@ Hey Yokes Master Plumbing team,
 
 I looked at your website and noticed two things: every "MORE" button on your homepage just opens your contact page, so no single service has its own page, and your site never shows a street address, only "Wichita, KS and surrounding area". Your Google reviews are strong, so the site should show off your work the way your customers do.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 None needed: the form has no message length cap, so the full message fits.

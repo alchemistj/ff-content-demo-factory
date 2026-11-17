@@ -16,11 +16,11 @@ Hey Bybee Electric team,
 
 I looked at your website and noticed two things: your Reviews page shows only 2 ratings, and the top of every page says you serve "the State of Kansas" instead of Wichita. You have 101 Google reviews at 4.7 stars, so your site is hiding your best selling point.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the form.

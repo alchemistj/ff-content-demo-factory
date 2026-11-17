@@ -14,11 +14,11 @@ Hey JD Kuhn team,
 
 I looked at your website and noticed two things: your website scrolls sideways on a phone, so part of each page is cut off, and your Happy Clients section has no actual customer reviews in it, just one general sentence. Your Google reviews are strong (4.9 stars from 175 reviews), so your site is hiding your best selling point.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the message box.

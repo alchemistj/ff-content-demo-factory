@@ -16,11 +16,11 @@ Hey Brockmeyer Inc. team,
 
 I looked at your website and noticed two things: your pages scroll sideways on a phone, and the "What Our Customers Are Saying" section is empty, with only a link that says "Free Google Reviews Widget." Your 4.8 stars on Google are strong, so your site is hiding your best selling point.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the form.

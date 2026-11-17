@@ -17,11 +17,11 @@ Hey Griffin HVAC team,
 
 I looked at your website and noticed two things: your website scrolls sideways on a phone, so part of each page is cut off, and your business hours say 6 pm on most pages but 5 pm on your contact page. Your Google reviews are strong (4.9 stars from 444 reviews), so your site should be as dependable as your customers say you are.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the message box.

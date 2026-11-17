@@ -17,11 +17,11 @@ Hey Thermal Services team,
 
 I looked at your website and noticed two things: your promotions say "now through the end of the year" with no year, so visitors can't tell if they're still good, and the copyright line at the bottom of your site is blank, just a lone symbol with no year or name. Your Google reviews are strong (4.9 stars from 51 reviews), so your site should look as current as your customers say you are.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the message box.

@@ -16,11 +16,11 @@ Hey Enegren Electric team,
 
 I looked at your website and noticed two things: your electrical service pages show no phone number and no way to request service, and the form on your homepage says "we will be touch" instead of "we will be in touch." Your 93 Google reviews at 5 stars are strong, so the site should make it easy for new customers to reach you.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the form.

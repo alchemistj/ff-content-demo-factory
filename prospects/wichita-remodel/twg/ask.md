@@ -11,11 +11,11 @@ Hey TWG Construction team,
 
 I looked at your website and noticed two things: your website shows the phone number 316.776.4748 but your Google listing shows (316) 685-1010, and your menu links (Services, About, Contact) only scroll down the same page, so there is no page for roofing or any other service. Your Google reviews are strong, so people who find you should reach the right number and the right page.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Checks
 Desktop = 1440x900, phone = 390x844 (phone emulation).

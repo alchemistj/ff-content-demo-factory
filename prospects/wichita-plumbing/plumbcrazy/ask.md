@@ -16,11 +16,11 @@ Hey Plumb Crazy team,
 
 I looked at your website and noticed two things: your menu says "SERVER SERVICE" where it should say "Sewer Service," and none of your pages show a single customer review. You have 75 Google reviews at 4.7 stars, so your site is hiding your best selling point.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the form.

@@ -16,11 +16,11 @@ Hey Pioneer Roofing team,
 
 I looked at your website and noticed two things: on your town pages, the PHONE button dials a different number than the one shown on the page, and there are no customer reviews on your homepage. Your Google reviews are strong (5.0 stars from 48 reviews), so your site is hiding your best selling point.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the message box.

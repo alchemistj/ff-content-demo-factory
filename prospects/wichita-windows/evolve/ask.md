@@ -11,11 +11,11 @@ Hey Evolve Exteriors team,
 
 I looked at your website and noticed two things: when someone taps your phone number on a phone it dials 1234567890, and the email link at the bottom of your page opens info@mysite.com. Your Google reviews are perfect, so the callers and emailers you lose here are the ones you worked to earn.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Checks
 Desktop = 1440x900, phone = 390x844 (phone emulation).

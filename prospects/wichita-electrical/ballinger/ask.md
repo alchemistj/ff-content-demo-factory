@@ -16,11 +16,11 @@ Hey Ballinger Electric team,
 
 I looked at your website and noticed two things: on a phone, your page is wider than the screen, so the menu and headline get cut off, and your phone number is plain text, not a button people can tap to call. Your 158 Google reviews at 5 stars are great, so the site should make it easy for people to reach you.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the form.

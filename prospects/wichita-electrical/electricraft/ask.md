@@ -16,11 +16,11 @@ Hey ElectriCraft team,
 
 I looked at your website and noticed two things: on a phone, your menu runs off the edge of the screen, and the site says you're available 24/7 for emergencies while the hours say closed Saturday and Sunday. Your 63 Google reviews at 5 stars are a big selling point, so the site should be as clear as your reviews.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Not needed. No length cap on the form.

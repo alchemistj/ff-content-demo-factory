@@ -11,22 +11,22 @@ Hey River City Roofing team,
 
 I looked at your website and noticed two things: when someone taps your phone number it calls 123-456-7890, and your windows page says 'our experienced painters'. Your Google rating is five stars, so every caller you lose to that number is a lost job.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Short message
 Use this one (form caps the box at 600 characters; this is 393, full message is 597).
 
 Hey River City Roofing team,
 
-I noticed two things on your site: when someone taps your phone number it calls 123-456-7890, and your windows page says 'our experienced painters'. Want a free homepage mockup that fixes both? :)
+I noticed two things on your site: when someone taps your phone number it calls 123-456-7890, and your windows page says 'our experienced painters'. Want a free homepage mockup that fixes both?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Checks
 Desktop = 1440x900, phone = 390x844 (phone emulation).

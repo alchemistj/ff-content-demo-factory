@@ -11,11 +11,11 @@ Hey ICT Roofing team,
 
 I looked at your website and noticed two things: the browser tab on every page says 'Your Site Title' instead of your company name, and the Roofing 'Learn More' button opens a hotel page with rooms at $100 a night. Your Google reviews are strong, so your site should be showing a roofing company.
 
-We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one? :)
+We build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through.
+P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
 
 ## Checks
 Desktop = 1440x900, phone = 390x844 (phone emulation).
