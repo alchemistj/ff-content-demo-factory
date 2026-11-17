@@ -2,7 +2,7 @@
 
 Every value is in its own box so you can copy it with one tap. Open the link, then copy and paste each box into the field with the same name, then the message.
 
-Our address, for forms that require one: Fluid Frame's address on file in GoHighLevel (1650 E Battlefield Rd, Springfield, MO 65804). Tell me if you'd rather use another one.
+Our address, for forms that require one: 3010 S National Ave, Springfield, MO 65804.
 
 Sorted easiest first: the top ones need only your name, email and phone plus a checkbox or dropdown; further down, some also want an address, city or zip, or take a few clicks.
 
@@ -191,7 +191,7 @@ josh@fluidframemarketing.com
 **Street Address**
 
 ```
-1650 E Battlefield Rd, Springfield, MO 65804
+3010 S National Ave, Springfield, MO 65804
 ```
 
 **Phone Number**
@@ -509,7 +509,7 @@ josh@fluidframemarketing.com
 **Address**
 
 ```
-1650 E Battlefield Rd, Springfield, MO 65804
+3010 S National Ave, Springfield, MO 65804
 ```
 
 **Subject** (only if the form has one)
@@ -561,7 +561,7 @@ josh@fluidframemarketing.com
 **Address**
 
 ```
-1650 E Battlefield Rd, Springfield, MO 65804
+3010 S National Ave, Springfield, MO 65804
 ```
 
 **How Did You Hear About Farha HomeTrends?**
