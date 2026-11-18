@@ -17,7 +17,9 @@ const form = (extra = "") => `<!doctype html><html><body><h1>Contact us</h1>${ex
 <label for="n">Name *</label><input id="n" name="name" required>
 <label for="e">Email *</label><input id="e" name="email" type="email" required>
 <label for="p">Phone</label><input id="p" name="phone" type="tel">
-<label for="m">Message *</label><textarea id="m" name="message" required></textarea>
+<label for="m">Message *</label><label for="s">Type of Service *</label><select id="s" name="service" required><option value="">Select</option><option>Residential</option><option>Commercial</option><option>Other</option></select>
+<label for="s2">Project size</label><select id="s2" name="size"><option value="">Select</option><option>Small</option><option>Large</option></select>
+<textarea id="m" name="message" required></textarea>
 <input name="hp_trap" style="position:absolute;left:-9999px" tabindex="-1">
 <button type="submit">Send</button></form></body></html>`;
 
@@ -81,6 +83,8 @@ const first = await run();
 const out1 = first.stdout + first.stderr;
 check(/ok: sent/.test(out1), "plain form is submitted and confirmed");
 check(received.length === 1 && received[0].body.email === sender.email && /Fluid Frame/.test(received[0].body.message), "the form got Josh's real email and the message");
+check(received[0] && received[0].body.service === "Other", "a required dropdown with no choice falls back to Other");
+check(received[0] && !received[0].body.size, "an optional dropdown with no choice is left alone");
 check(received[0] && !received[0].body.hp_trap, "the spam trap field was left empty");
 check(/nosolicit: skipped .*solicitations/.test(out1), "a site that says no solicitations is skipped");
 check(/dnc: skipped .*do-not-contact/.test(out1), "a business on the do-not-contact list is skipped");

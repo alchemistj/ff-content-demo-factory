@@ -1,0 +1,108 @@
+{
+  "day": "2026-11-18",
+  "mode": "dry-run",
+  "results": [
+    {
+      "slug": "ballinger",
+      "company": "Ballinger Electric",
+      "formUrl": "https://www.ballingerelectric.com/contact",
+      "mode": "dry-run",
+      "approved": true,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "Type of Service",
+          "value": "Other (Please Specify)"
+        },
+        {
+          "label": "Name:",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Email:",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone:",
+          "value": "4173732773"
+        },
+        {
+          "label": "Message:",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-18/ask-2026-11-17/dry-run/ballinger-filled.png"
+      ],
+      "time": "2026-11-18T14:38:03.514Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Ballinger Electric team,\n\nI looked at your website and noticed two things: on a phone, your page is wider than the screen, so the menu and headline get cut off, and your phone number is plain text, not a button people can tap to call. Your 158 Google reviews at 5 stars are great, so the site should make it easy for people to reach you.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?\n\nJosh, Fluid Frame Marketing\n\nP.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.",
+        "shortMessage": "Not needed. No length cap on the form.",
+        "subject": "A website mockup for Ballinger Electric"
+      },
+      "dropdowns": [
+        "Type of Service"
+      ],
+      "captcha": "invisible"
+    },
+    {
+      "slug": "brockmeyer",
+      "company": "Brockmeyer Inc.",
+      "formUrl": "https://www.brockmeyerinc.com/contact-us",
+      "mode": "dry-run",
+      "approved": true,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "Name",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Email",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone",
+          "value": "4173732773"
+        },
+        {
+          "label": "Service",
+          "value": "Commercial Electrician"
+        },
+        {
+          "label": "How may we help you?",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-18/ask-2026-11-17/dry-run/brockmeyer-filled.png"
+      ],
+      "time": "2026-11-18T14:38:07.956Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Brockmeyer Inc. team,\n\nI looked at your website and noticed two things: your pages scroll sideways on a phone, and your \"Watt Our Customers Are Saying!\" section has a heading but no reviews under it. Your 4.8 stars on Google are strong, so your site is hiding your best selling point.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?\n\nJosh, Fluid Frame Marketing\n\nP.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.",
+        "shortMessage": "Not needed. No length cap on the form.",
+        "subject": "A website mockup for Brockmeyer Inc."
+      },
+      "dropdowns": [
+        "Service"
+      ],
+      "captcha": "invisible"
+    }
+  ]
+}

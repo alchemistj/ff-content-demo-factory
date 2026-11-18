@@ -17,7 +17,8 @@
       "formUrl": "https://www.ballingerelectric.com/contact",
       "approved": true,
       "subject": "A website mockup for Ballinger Electric",
-      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)",
+      "choices": { "type of service": "Other" }
     },
     {
       "slug": "brockmeyer",
@@ -26,7 +27,8 @@
       "formUrl": "https://www.brockmeyerinc.com/contact-us",
       "approved": true,
       "subject": "A website mockup for Brockmeyer Inc.",
-      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)",
+      "choices": { "service": "Commercial Electrician" }
     },
     {
       "slug": "bybee",

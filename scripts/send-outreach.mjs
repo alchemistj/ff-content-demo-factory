@@ -10,7 +10,8 @@
 //   { "sender": { "firstName": "Josh", "lastName": "...", "email": "...", "phone": "4173732773", "company": "Fluid Frame Marketing" },
 //     "entries": [ { "slug": "rivercity", "company": "River City Roofing", "prospect": "prospects/wichita-roofing/rivercity",
 //                    "formUrl": "https://...", "frame": "powr.io" (optional: iframe URL part when the form is embedded),
-//                    "approved": false, "subject": "optional subject line" } ] }
+//                    "approved": false, "subject": "optional subject line",
+//                    "choices": { "type of service": "Other" } (optional: dropdown label pattern, case-insensitive substring -> exact option text to pick) } ] }
 // The message is the "## Message (paste as is)" block of <prospect>/outreach.md (or the file named by
 // --message-file, e.g. ask.md for the audit-and-ask message), sent word for word.
 //
@@ -124,7 +125,8 @@ async function describeFields(scope) {
         const label = (id?.textContent || wrap?.textContent || "").trim();
         return {
           i, tag: el.tagName.toLowerCase(), type: (el.getAttribute("type") || "").toLowerCase(),
-          label, group: group.trim(), maxLength: el.maxLength > 0 ? el.maxLength : null, required: el.required || el.getAttribute("aria-required") === "true" || /\*/.test(label),
+          label, group: group.trim(), maxLength: el.maxLength > 0 ? el.maxLength : null, required: el.required || el.getAttribute("aria-required") === "true" || /\*/.test(label) || /(^|\s)required(\s|$)/i.test(el.closest("[class*=required]")?.className.split(/\s+/).find((c) => c.toLowerCase() === "required") || ""),
+          options: el.tagName === "SELECT" ? [...el.options].map((o) => o.text.trim()) : null,
           desc: [label, el.name, el.id, el.placeholder, el.getAttribute("aria-label"), group].filter(Boolean).join(" ").toLowerCase(),
         };
       }),
@@ -190,8 +192,27 @@ for (const entry of queue.entries) {
     for (const f of fields) {
       const key = keyFor(f.desc, f.type, f.tag);
       const el = scope.locator(`[data-ff-field="${f.i}"]`);
-      if (f.type === "checkbox" || f.type === "radio" || f.tag === "select") {
-        if (f.required) problems.push(`required ${f.tag === "select" ? "dropdown" : f.type} "${f.label || f.desc}" needs a choice`);
+      if (f.tag === "select") {
+        // Pick by the entry's "choices" (label pattern -> option text), else "Other" when required, else leave it.
+        const lbl = f.label || f.group || f.desc;
+        const pat = Object.keys(entry.choices || {}).find((k) => f.desc.includes(k.toLowerCase()));
+        const want = pat ? String(entry.choices[pat]).trim().toLowerCase() : null;
+        // Exact option text first; else an option that starts with it and continues in parentheses ("Other (Please Specify)").
+        const pick = (w) => f.options.find((o) => o.trim().toLowerCase() === w) || f.options.find((o) => o.trim().toLowerCase().startsWith(`${w} (`));
+        let chosen = want ? pick(want) : null;
+        if (!chosen && f.required) chosen = pick("other");
+        if (chosen) {
+          await el.selectOption({ label: chosen }, { timeout: 8000 }); // fires input and change events
+          r.fields.push({ label: lbl, value: chosen });
+          (r.dropdowns ||= []).push(lbl);
+        } else {
+          if (f.required) problems.push(`required dropdown "${f.label || f.desc}" needs a choice`);
+          r.fields.push({ label: lbl, value: "(left alone)" });
+        }
+        continue;
+      }
+      if (f.type === "checkbox" || f.type === "radio") {
+        if (f.required) problems.push(`required ${f.type} "${f.label || f.desc}" needs a choice`);
         r.fields.push({ label: f.label || f.desc, value: "(left alone)" });
         continue;
       }
@@ -267,8 +288,8 @@ for (const entry of queue.entries) {
 await browser.close();
 
 fs.writeFileSync(path.join(outDir, "log.json"), JSON.stringify({ day, mode: SEND ? "send" : "dry-run", results }, null, 2) + "\n");
-const lines = [`# Outreach ${SEND ? "send" : "dry run"}, ${day} (Central)`, "", "| Prospect | Result | Why | Screenshots |", "|---|---|---|---|"];
-for (const r of results) lines.push(`| ${r.company} | ${r.status} | ${r.reason || ""} | ${r.shots.map((s) => path.basename(s)).join(", ")} |`);
+const lines = [`# Outreach ${SEND ? "send" : "dry run"}, ${day} (Central)`, "", "| Prospect | Result | Why | Screenshots | Dropdowns |", "|---|---|---|---|---|"];
+for (const r of results) lines.push(`| ${r.company} | ${r.status} | ${r.reason || ""} | ${r.shots.map((s) => path.basename(s)).join(", ")} | ${r.fields.filter((x) => r.dropdowns?.includes(x.label)).map((x) => `${x.label}: ${x.value}`).join("; ")} |`);
 fs.writeFileSync(path.join(outDir, "log.md"), lines.join("\n") + "\n");
 const hand = results.filter((r) => r.status === "hand send" || (!SEND && r.captcha === "visible"));
 const pack = [`# Hand-send pack, ${day}`, "", "Josh sends these himself. Paste each value into the form, then the message.", ""];
