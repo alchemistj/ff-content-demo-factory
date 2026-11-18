@@ -1,0 +1,627 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "comforttechs-lincoln",
+  "place": {
+    "name": "COMFORTTECHS",
+    "placeId": "ChIJbS3QcJi_locRFO4zrEhUpoQ",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=COMFORTTECHS&query_place_id=ChIJbS3QcJi_locRFO4zrEhUpoQ",
+    "address": "540 Blue Heron Dr, Lincoln, NE 68522",
+    "phone": "(402) 465-0000",
+    "rating": 4.8,
+    "totalReviewCount": 69
+  },
+  "pulledAt": "2026-11-15T03:13:33.279Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21aSlVrVTBTVGRIUWxCM2RVZFVaekppWkVKSmFuYxAB",
+      "reviewer": "Dustin J.",
+      "rating": 5,
+      "text": "Unexpected HVAC issues are never fun. Our A/C at our business went out due to mechanical failure. Luckily, the team at Comfort Techs got to the problem right away.<br>They kept great communication before and during the work. Our A/C was back up and running quickly.<br>I am very satisfied with the services of Comfort Techs. I will recommend Comfort Techs to all of my family and friends, also anyone reading this review.<br>Thank you Jory and the Team!<br><br>3D Wellness",
+      "publishedAt": "2026-09-11T16:02:17.645Z",
+      "ownerResponse": "Thank you Dustin!  We know how important it is to keep a Business open when an ac goes down. Thanks for trusting us and also for leaving a review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21aSlVrVTBTVGRIUWxCM2RVZFVaekppWkVKSmFuYxAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CAIQACodChtycF9oOmZJUkU0STdHQlB3dUdUZzJiZEJJanc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2w5c0xUVmhZVVJQYUhGMGJWTnpaVEJYZVVwWU5FRRAB",
+      "reviewer": "Paul J.",
+      "rating": 5,
+      "text": "New home installation. Great quality equipment, modern accessories, all standard on a contractor construction build.",
+      "publishedAt": "2026-07-01T14:18:25.469Z",
+      "ownerResponse": "Thanks Paul!  We enjoyed working on your beautiful home.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2w5c0xUVmhZVVJQYUhGMGJWTnpaVEJYZVVwWU5FRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CAIQACodChtycF9oOl9sLTVhYURPaHF0bVNzZTBXeUpYNEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25wMkxVMURlalIyWVZOQ2FXcG9lV0ZoTVV0ek1IYxAB",
+      "reviewer": "Cheryl F.",
+      "rating": 5,
+      "text": "For my needs comforttechs have been extremely helpful,  professional,  on time,  very pleasant and honorable.  As a fairly recent Lincoln resident I'm so grateful to have found them. I can recommend them without reservation. I felt the techs were very knowledgeable and the repair costs were very reasonable.",
+      "publishedAt": "2026-01-23T20:20:55.320Z",
+      "ownerResponse": "Thank you Cheryl!  We are happy you found us!   We appreciate you taking the time to give us a 5 star review. It means alot.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25wMkxVMURlalIyWVZOQ2FXcG9lV0ZoTVV0ek1IYxAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CAIQACodChtycF9oOnp2LU1DejR2YVNCaWpoeWFhMUtzMHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25kT1dHSkRlRU5zYlhSSmRGSjVVRUpJZVV3eVEyYxAB",
+      "reviewer": "Matt A.",
+      "rating": 5,
+      "text": "These guys are the absolute best, never going to call anyone else in Lincoln. Our geothermal unit was acting up on a very hot day and after not hearing back from other shops in town, I called ComfortTechs and they were at our front door within an hour. Our service tech, Ian was so amazing, super friendly, explained everything clearly and genuinely cared about fixing our issue and making sure everything was perfect before he left. Cannot recommend these guys enough! 10/10 service!",
+      "publishedAt": "2025-07-11T16:28:57.850Z",
+      "ownerResponse": "Hi Matt!    We really appreciate customers like you that take the time to recognize the great experiences with a business.  Thanks for giving us the opportunity!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25kT1dHSkRlRU5zYlhSSmRGSjVVRUpJZVV3eVEyYxAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CAIQACodChtycF9oOndOWGJDeENsbXRJdFJ5UEJIeUwyQ2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VMN2tsdG1FZ3FUUVhnEAE",
+      "reviewer": "King",
+      "rating": 5,
+      "text": "Called at 0800 my A/C was not working on to be a 90 degree weekend. I live 40 miles from them.  By 0930 a guy was at my house fixed my air conditioning. Amazing service!!",
+      "publishedAt": "2025-06-13T23:58:53.974Z",
+      "ownerResponse": "So glad we were able to get you up and running again!  Thanks for the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VMN2tsdG1FZ3FUUVhnEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEL7kltmEgqTQXg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURvc2Z2YWl3RRAB",
+      "reviewer": "Mike S.",
+      "rating": 5,
+      "text": "The gentlemen at comforttechs are awesome that came out on time and quickly figured out my problem, thanks guys!!",
+      "publishedAt": "2025-04-26T02:13:34.320Z",
+      "ownerResponse": "Thank you Mike!  We appreciate the opportunity and the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURvc2Z2YWl3RRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgMDosfvaiwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR2eV96a0JREAE",
+      "reviewer": "Joanie M.",
+      "rating": 5,
+      "text": "I heard a very loud noise from my furnace, it shook my walls, and Les came out that same morning of my call. He explained what could’ve caused the noise and explained what he did to fix it, putting my mind at ease. He also had time to replace the thermostat and explained my in home humidifier. Great service and reasonable price!<br>Thanks Comfort Techs.",
+      "publishedAt": "2024-12-24T04:00:57.256Z",
+      "ownerResponse": "Thank you Joanie!  We appreciate the time to give us a great review. Les is an excellent tech ans we are lucky to have him. Happy Holidays!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR2eV96a0JREAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDvy_zkBQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURyNk1pRlZnEAE",
+      "reviewer": "Ashley H.",
+      "rating": 5,
+      "text": "10/10 recommend this company! Kevin was fantastic! Ac stopped working on hot summer Saturday. I called and he was here within 30 mins and had it running within 5.",
+      "publishedAt": "2024-07-13T21:37:32.078Z",
+      "ownerResponse": "Thank you for the review Ashley!  We appreciate your Business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURyNk1pRlZnEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDr6MiFVg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNsX3J6dUlBEAE",
+      "reviewer": "steve G.",
+      "rating": 5,
+      "text": "Quality of install and and all follow-up has been excellent.",
+      "publishedAt": "2023-11-19T16:45:17.110Z",
+      "ownerResponse": "Thank You for your business and the great review Steve!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNsX3J6dUlBEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICl_rzuIA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN4Nk5fUnFRRRAB",
+      "reviewer": "Brendan M.",
+      "rating": 5,
+      "text": "Comfortechs is a great local company. We had them out to service our aging heat pump that ultimately needed to be replaced. We never felt pressured from anyone on next steps and all options were clearly outlined. They had us up and running with a new unit extremely quickly. The install team was extremely communicative about what they were doing and the install shows great workmanship. We've been extremely pleased with everything after install as well. Highly recommend Comfortechs for all HVAC needs!",
+      "publishedAt": "2023-05-09T19:37:48.779Z",
+      "ownerResponse": "Thank you Brendan!  We appreciate you trusting in us as your hvac company. Leaving us a review means alot. Contact us for anything day or night with questions or concerns with your system.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4Nk5fUnFRRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICx6N_RqQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNCb0pPemJBEAE",
+      "reviewer": "charity H.",
+      "rating": 5,
+      "text": "Amazing job and great prices. They are very professional and knowledgeable. Definitely recommend!!",
+      "publishedAt": "2022-12-14T13:09:10.096Z",
+      "ownerResponse": "Thank you for taking the time to give us a review!  You have a great system that will last you many trouble free years. We appreciate the business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCb0pPemJBEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICBoJOzbA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQtcFpUQ1dnEAE",
+      "reviewer": "John H.",
+      "rating": 5,
+      "text": "They are easy to work with.  They will work with your schedule.  I had my ac and furnace both replaced.  They had everything installed in one day and cleaned up after themselves.  I got a tutorial on how to operate the equipment by one of their professionals.  They tested the equipment and made sure everything was operational.  I highly recommend their service.  They are very reasonable.",
+      "publishedAt": "2022-12-05T01:44:47.701Z",
+      "ownerResponse": "Thank you for the great review John!  We appreciate your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQtcFpUQ1dnEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgID-pZTCWg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR1Ni1XV0ZBEAE",
+      "reviewer": "Rodney F.",
+      "rating": 5,
+      "text": "Just a great company to do business with. They installed my ac and furnace in one day. The installers were professional and friendly. They left my place cleaner than when they arrived.",
+      "publishedAt": "2022-08-30T01:54:30.009Z",
+      "ownerResponse": "Thank you for taking the time to give us a review Rod. The guys enjoyed working at your home today and the great lunch was very much Appreciated!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR1Ni1XV0ZBEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDu6-WWFA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN1azVlaDhnRRAB",
+      "reviewer": "Darwin A.",
+      "rating": 5,
+      "text": "Service is amazing and answer all concerns I have had...highly appreciated and will always be recommended as the go to contractors for anyone needing Hvac services.   Much thanks again!",
+      "publishedAt": "2022-08-05T14:11:11.721Z",
+      "ownerResponse": "Thanks Darwin!  We appreciate it very much!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN1azVlaDhnRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICuk5eh8gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMycG9iM1hREAE",
+      "reviewer": "Nick A.",
+      "rating": 5,
+      "text": "Comforttechs staff are punctual and professional.  They resolved our issues with no need to a follow up.",
+      "publishedAt": "2022-04-19T13:53:19.704Z",
+      "ownerResponse": "Thanks for taking the time to give us a review Nick!  Greatly appreciate the 5 stars!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMycG9iM1hREAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC2pob3XQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyX0lxSUl3EAE",
+      "reviewer": "Tracy R.",
+      "rating": 5,
+      "text": "Jory and his team at Comfortechs are the best in Lincoln - fast/friendly/efficient/honest - we like to say they are \"small town friendly but Wall Street smart\" when it comes to their knowledge of HVAC and customer needs!  Ron & Tracy Rohde",
+      "publishedAt": "2022-04-15T18:12:55.609Z",
+      "ownerResponse": "What an amazing review you guys!  Thank you for taking the time to do it. It means alot!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyX0lxSUl3EAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC2_IqIIw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMydkt6Tk5nEAE",
+      "reviewer": "Justyn P.",
+      "rating": 5,
+      "text": "Very good service handled in a timely manner!",
+      "publishedAt": "2022-04-15T13:27:12.848Z",
+      "ownerResponse": "Thank you Justyn!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMydkt6Tk5nEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC2vKzNNg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMybkxpc1RBEAE",
+      "reviewer": "Dingo O.",
+      "rating": 5,
+      "text": "Comforttechs are the best in Lincoln! We always have prompt service and will continue to use their services in the future!",
+      "publishedAt": "2022-04-15T01:51:13.285Z",
+      "ownerResponse": "Thank you for the great review and 5 stars!  We will always be here when you need us!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMybkxpc1RBEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC2nLisTA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyclBfdVV3EAE",
+      "reviewer": "Rex C.",
+      "rating": 5,
+      "text": "They do great work there on time and I would recommend this company to anyone.",
+      "publishedAt": "2022-04-14T19:52:17.211Z",
+      "ownerResponse": "Thank you so much Rex!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyclBfdVV3EAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC2rP_uUw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyclBTWFRBEAE",
+      "reviewer": "Lori M.",
+      "rating": 5,
+      "text": "I have used Comforttechs for many years, and I've always been impressed by the quality of their work, their responsiveness, the professionalism of their office staff and techs, and their trustworthiness. I would highly recommend them for all your HVAC needs!!",
+      "publishedAt": "2022-04-14T16:07:10.357Z",
+      "ownerResponse": "Thank you for being a long time customer of ours Lori!  It's been a pleasure working with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMyclBTWFRBEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC2rPSXTA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMyelBIWHdRRRAB",
+      "reviewer": "Cynthia H.",
+      "rating": 5,
+      "text": "ComfortTechs are both a customer and a vendor! We use them for our business HVAC needs and also most of us use them for our home needs. We recommend them without reservation. All of the guys are great and we love working with you!",
+      "publishedAt": "2022-04-14T13:33:55.929Z",
+      "ownerResponse": "Thank you Cynthia!  We absolutely Love working with you all as well!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMyelBIWHdRRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC2zPHXwQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMydE1UZXlBRRAB",
+      "reviewer": "Andy S.",
+      "rating": 5,
+      "text": "The team did a great job and the equipment is very quiet and efficient.",
+      "publishedAt": "2022-04-13T18:15:12.578Z",
+      "ownerResponse": "Thank you Andy!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMydE1UZXlBRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC2tMTeyAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURXdllDQ3h3RRAB",
+      "reviewer": "Phil A.",
+      "rating": 5,
+      "text": "Professional, on time service. Just a great overall experience. I would highly recommend them to anyone needing HVAC service.",
+      "publishedAt": "2022-04-01T15:27:08.408Z",
+      "ownerResponse": "Thank you for the 5 stars Phil!   We appreciate your business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURXdllDQ3h3RRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDWvYCCxwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxaVBqbzlBRRAB",
+      "reviewer": "Rachel T.",
+      "rating": 5,
+      "text": "Called Comforttechs from a friend's recommendation, Bryan came after hours due to AC no longer cooling and worked until AC was cooling until late and in the dark on one of the hottest days this year. Jory came back the next day to check on everything as it was dark the night before. I would highly recommend them as they were professional, fair and had reasonable rates.",
+      "publishedAt": "2021-06-26T15:32:32.831Z",
+      "ownerResponse": "Thank you for the 5 stars Rachel. It was great doing business with you!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxaVBqbzlBRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDqiPjo9AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNxeTRHNEt3EAE",
+      "reviewer": "Savannah K.",
+      "rating": 5,
+      "text": "They came to my house last week and fixed the issues promptly.   However, due to the extreme heat my AC quit working properly again.  They promptly sent someone out, didn't charge for service fees since they were just here, and fixed the problem.   I was only charged for the part and it was a VERY affordable price.  Very thankful for their services during excessive heat!",
+      "publishedAt": "2021-06-18T20:19:47.438Z",
+      "ownerResponse": "Thank you Savannah! We appreciate the business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNxeTRHNEt3EAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICqy4G4Kw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURLNHQydGVBEAE",
+      "reviewer": "Gini R.",
+      "rating": 5,
+      "text": "Super impressed with Kalin!  He was knowledgeable, helpful, courteous, and professional.  We are very happy with the service he provided and will continue to use Comforttechs.",
+      "publishedAt": "2021-05-05T16:44:24.901Z",
+      "ownerResponse": "Thanks so much for the review, Gini Russell! Kalin is a great technician and we are lucky to have him!  Feel free to text this number any time and we'll respond ASAP.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURLNHQydGVBEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDK4t2teA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN5el95cnNRRRAB",
+      "reviewer": "Miranda M.",
+      "rating": 5,
+      "text": "I called them in a dire situation needed for my twin daughter’s residence and he was very responsive and awesome! He came quickly and did the much needed repairs and got my twin daughter furnace up and running for them. It’s been extremely cold and they were using electric heaters. I am one very grateful and very appreciative mother to Comfort Techs for being there for us! I couldn’t ask for a more professional and caring company. Thank you, thank you, I am forever appreciative for your services.",
+      "publishedAt": "2021-02-17T18:01:01.640Z",
+      "ownerResponse": "It was truly our pleasure to help in your situation. And also feels good when a previous company said it couldnt be fixed and left. Thank you for the great review Miranda!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN5el95cnNRRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICyz_yrsQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN5bmVlUUt3EAE",
+      "reviewer": "Carole W.",
+      "rating": 5,
+      "text": "Cold winter & very busy for them, but Comfort Techs helped our issue AND our understanding of our home HVAC’s setup & equipment. After visit, they followed up next day to make sure system was working ok (it was). Very much appreciate their expertise, quick response and customer care, along with a solution that was affordable. Good company to do business with!",
+      "publishedAt": "2021-02-09T20:24:43.728Z",
+      "ownerResponse": "Thanks for choosing us for your heating service Carole!   Appreciate the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5bmVlUUt3EAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICyneeQKw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNpaUttbDJRRRAB",
+      "reviewer": "Dylyn H.",
+      "rating": 5,
+      "text": "I've used this company 2 times. Once for my father, once for myself. Every time they were respectful, kind, and honest. Never tried to charge me for more than what I absolutely needed. Accomodations made to my issues specifically. They even helped me find an electrician when things were going wrong in the house. I worked with 2 Zach's one repairman, one installation man & was very impressed with both. I recommend their services to all friends and family.",
+      "publishedAt": "2020-10-19T13:51:13.229Z",
+      "ownerResponse": "Thank you so much for the great review!  I promise we will always be fair and respectful each and every time!  Appreciate your business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNpaUttbDJRRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICiiKml2QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURDMW9MYUdREAE",
+      "reviewer": "Dewey P.",
+      "rating": 5,
+      "text": "Could not recommend this company enough! Anyone with issues regarding a geothermal unit or replacement/repair of heat pumps look no further. The knowledge,professionalism and sense of urgency of the customers needs not only are met by this company but exceeded. Would highly recommend Kalin (service tech) very knowledgeable and always willing to help out anyway he can!",
+      "publishedAt": "2020-09-25T21:00:55.292Z",
+      "ownerResponse": "Thank you so much for the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURDMW9MYUdREAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDC1oLaGQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ4ei1PUHBRRRAB",
+      "reviewer": "Karen E.",
+      "rating": 5,
+      "text": "My AC went out in July in 90+ degree weather.  After getting 2 bids from other companies  that did not impress me, my third bid was a no show. A friend recommended Comforttechs.  I called them and they were out within 2 hours to give me a bid. 2 hours later I had 3 bids and detailed explanations of all the equipment . Today they installed my new furnace and AC units. They arrived promptly at 0800 and were finished at 1430. In a 100 year old house with ancient furnace and AC, I expected all sorts of problems, but they handled it with ease and I am grateful!",
+      "publishedAt": "2020-08-03T21:58:40.505Z",
+      "ownerResponse": "Karen,<br>It means so much to have a customer take the time to tell her positive experience. You purchased a great system and with some basic maintenance, should last an extremely long time!  Thank you Karen!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4ei1PUHBRRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgID8z-OPpQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4d2RqUmZnEAE",
+      "reviewer": "Caleb S.",
+      "rating": 5,
+      "text": "Called to have someone look at a broken gas fireplace and to service our AC and furnace. Had a tech at our house within an hour of making the phone call. While working on the fireplace the tech accidentally broke one of the little decorative ceramic logs that sits in the fireplace - he came and showed me right away and was very apologetic, and did not charge us for the service fee on the fireplace. And after cleaning/servicing the HVAC he cleaned up the closet the equipment was in to a level much better than it was before he came.<br><br>Fast, honest, responsive, professional. You've earned a customer for life.",
+      "publishedAt": "2020-07-08T21:45:32.717Z",
+      "ownerResponse": "Thank you Caleb!  Honest, quality service is the only way!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4d2RqUmZnEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC8wdjRfg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM4eXRidUlREAE",
+      "reviewer": "Amy S.",
+      "rating": 5,
+      "text": "Nathan is the best.  He went above and beyond to make sure everything is as it should be.  We are so pleased with him and the job he does.  Kuddos Nathan. Would highly recommend him to everyone",
+      "publishedAt": "2020-07-01T16:20:40.410Z",
+      "ownerResponse": "Thanks Amy!  We are very proud to have Nate on our side.  Not only is he an amazing worker, but a joy to be around everyday.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM4eXRidUlREAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC8ytbuIQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMwMkpLMGtnRRAB",
+      "reviewer": "Kim H.",
+      "rating": 5,
+      "text": "The team at Comfort Techs is AMAZING! We had issues arise with our furnace and so our a/c stopped working. Another company in town told us we would be spending a minimum of $2,000 to just fix it and they really thought a whole new system would be more appropriate. After having Comfort Techs come look at problem, the issue was resolved for a small fraction of the cost the other company had quoted us. We are SO thankful for the honest, hardworking, and trustworthy people at Comfort Techs! From now on they will be our first and only call if an issue arises! I would recommend them to anyone and everyone!",
+      "publishedAt": "2020-01-14T23:48:54.158Z",
+      "ownerResponse": "Hi Kim!  I assure you,  our approach will always be the honest one. Thank you so much for taking the time to write a review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMwMkpLMGtnRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC02JK0kgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURNeEphSTdBRRAB",
+      "reviewer": "Robin B.",
+      "rating": 5,
+      "text": "ComfortTechs installed a new Am Standard furnace and a/c 3 years ago.   Today came home from work on a cold December day.  Furnace not running, temp 61 degrees in house.  Was after hours but I called and received a call back in just a few minutes.  Very nice man named Zach helped diagnose the problem over the phone.  He then stayed on the line for a good half hour while I cleaned a part he directed me to.  Fixed the problem right away, saving me a service call.  Zach was very pleasant and helpful. This was excellent “service after the sale”    Thanks Zach - really appreciate it!   Joe Bath",
+      "publishedAt": "2019-12-17T03:22:41.139Z",
+      "ownerResponse": "Thanks for the great review Joe!  We are available 24/7 for reasons just like this. Glad you are up and running again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURNeEphSTdBRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDMxJaI7AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNNazdDZWF3EAE",
+      "reviewer": "steven M.",
+      "rating": 5,
+      "text": "great service really took care of my needs",
+      "publishedAt": "2019-12-03T22:45:13.451Z",
+      "ownerResponse": "Thank you Steve!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNazdDZWF3EAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICMk7Ceaw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQwLVl5eE13EAE",
+      "reviewer": "Andrew A.",
+      "rating": 5,
+      "text": "We received bids from several different companies. After reviewing my bid with John from comfort techs I knew instantly we made the right decision. From install to completion the process couldn’t have been better. Two installers put a new furnace in not leaving a ounce of dust debris or anything on my floor or in the utility room. The installers were so knowledgeable and polite that they could’ve been sales reps it was truly unbelievable. The greatest thing John from comfort techs  was almost half of the price of next lowest company. Hats off to comfort techs and their knowledgeable staff!!!",
+      "publishedAt": "2019-11-12T00:01:35.949Z",
+      "ownerResponse": "Thank you for the great review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQwLVl5eE13EAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgID0-YyxMw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VQYno1NW1SaXVEQThRRRAB",
+      "reviewer": "Charity H.",
+      "rating": 5,
+      "text": "Excellent service! Friendly and arrived within 30 minutes for a heating emergency in the winter. Would recommend!!",
+      "publishedAt": "2019-11-01T17:01:11.125Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VQYno1NW1SaXVEQThRRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEPbz55mRiuDA8QE%7C%7C?hl=en-US"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMwcFpfLVJREAE",
+      "reviewer": "L U.",
+      "rating": 1,
+      "text": "I've been trying to get one of the owners to come and look at some issues with their installation for over 3 months.  After being strung along many times I finally realized what a low priority I am, even after spending over $30K with them.",
+      "publishedAt": "2019-10-04T13:46:44.155Z",
+      "ownerResponse": "Hi, I'm so sorry to hear this. I am unaware of this and I always handle things asap. Please contact me and I assure you, it will get handled. 4024994518<br><br>Oct 24th. As the owner, I have never been contacted by this individual. Obviously not even our customer or has the wrong company.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMwcFpfLVJREAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC0pZ_-RQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VOdXk5Y240ak1IS1hBEAE",
+      "reviewer": "Jonathan L.",
+      "rating": 5,
+      "text": "Same day service and a lot more affordable than I thought it would be!",
+      "publishedAt": "2019-06-12T18:52:28.261Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VOdXk5Y240ak1IS1hBEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKENuy9cn4jMHKXA%7C%7C?hl=en-US"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM0ck5QSW13RRAB",
+      "reviewer": "Clinton N.",
+      "rating": 5,
+      "text": "These guys at Comfort Techs are amazing. I have had them out twice, once for my furnace and another for my ac unit. Both times the techs have not only fixed the problem, but they have showed me tips and tricks to save me money. I will only use these guys for my heating and ac needs.",
+      "publishedAt": "2019-06-04T21:03:49.527Z",
+      "ownerResponse": "Happy to have you as a customer Clinton!  Appreciate the great review and thanks for the business!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM0ck5QSW13RRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIC4rNPImwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURZODUyMFNBEAE",
+      "reviewer": "Mary A.",
+      "rating": 5,
+      "text": "I have been using Comforttech for over 15 years .  I appreciate their integrity and quality of work they do.  We love the new HVAC they installed in our home.",
+      "publishedAt": "2019-05-22T11:40:16.879Z",
+      "ownerResponse": "Thanks Mary!!  We appreciate having you as a customer and will do whatever it takes to keep you happy with our service!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURZODUyMFNBEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDY8520SA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VKN2gzLWJRZ0xXLWVREAE",
+      "reviewer": "Sovida T.",
+      "rating": 5,
+      "text": "Had them come out to handle a AC unit not working, they came out the next day and worked with my and my wife's very erratic schedules. Made the repairs for a fair fee. Will use them again.",
+      "publishedAt": "2019-05-21T18:31:58.801Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VKN2gzLWJRZ0xXLWVREAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEJ7h3-bQgLW-eQ%7C%7C?hl=en-US"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURZaEppVGhnRRAB",
+      "reviewer": "Joe C.",
+      "rating": 1,
+      "text": "After allowing the first repair I found out that the service of 271 was worth about 57 dollars. They then tried to claim that I needed a repair of 263 for a electric issue that has been present for before I bought the house 8 years ago and had to put that on report report unless I allowed them to repair it. These people are a rip off. Never use them",
+      "publishedAt": "2019-04-29T15:01:35.885Z",
+      "ownerResponse": "Hi Joe, I apologize we don't normally have complaints or issues like this and as a matter of fact you are our first public complaint since I started the company in 2006. I have tried everything to find out from your name, when we did work for you and where but had no luck finding you in our system. I assure you, if you would of called with an issue, it would of been handled. I would love to be able to make this right with you if it was in fact our company. Please reach out to me so I can look into it and help you out. Thank you. 4024650000.<br><br>Update 5/24/19  This is not our customer.   We have no record of him in our system and is obviously a fake account/competitor trying to hurt a business.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURZaEppVGhnRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDYhJiThgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNJNGFUOHRBRRAB",
+      "reviewer": "Sandy L.",
+      "rating": 5,
+      "text": "I have been utilizing ComfortTechs services for over 13 years. They have installed a/c units in two different homes and also a furnace and humidifier. They have performed the emergency maintenance for me when needed. Each person I have had the pleasure of working with has been professional, knowledgeable, and friendly. I highly recommend them.",
+      "publishedAt": "2018-11-20T02:43:39.735Z",
+      "ownerResponse": "Thank You Sandy!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNJNGFUOHRBRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICI4aT8tAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURBLWVYc2d3RRAB",
+      "reviewer": "Eric J.",
+      "rating": 5,
+      "text": "I cannot begin to describe my level of satisfaction with this company.  From start to finish A++++ work and service! If you need HVAC work, call ComfortTechs!!",
+      "publishedAt": "2018-01-19T21:02:28.665Z",
+      "ownerResponse": "Thank you Eric!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURBLWVYc2d3RRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDA-eXsgwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURnNG9Pd3dnRRAB",
+      "reviewer": "Bryce R.",
+      "rating": 5,
+      "text": "Hands down great service, they did not give up on my furnace and tell me I needed a new one like another local company did. I will not name that company as they do not deserve the credit of even being mentioned. Comforttechs found the problem to my furnace called saying what was going on, had to order the part and would be in the next day. That next day they called right away saying the part was in and would be out to install it. These guys went above and beyond to fix, inspect and take care of my furnace! Much thank you!",
+      "publishedAt": "2017-03-01T05:10:09.486Z",
+      "ownerResponse": "Thanks so much Bryce!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURnNG9Pd3dnRRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDg4oOwwgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN3a3NpV2NBEAE",
+      "reviewer": "Clint M.",
+      "rating": 5,
+      "text": "These guys are the real deal. They installed my Geo Thermal unit in my new home 3 years ago. Works flawlessly, May's electric bill was 95 dollars. This is with a 25 charge county charge. Super efficient and keeps my 2,300 sq. feet ranch so comfortable. Highest bill just broke 200.00 Awesome Top of the line service and  easy to work with.",
+      "publishedAt": "2016-06-17T02:33:30.340Z",
+      "ownerResponse": "Thank You Clint!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3a3NpV2NBEAE!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgICwksiWcA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURRc05UNXd3RRAB",
+      "reviewer": "Heather S.",
+      "rating": 5,
+      "text": "I can't say enough great things about this company.  They were the 3rd bid I had gotten for a new furnace in an old house with lots of issues.  They helped problem solve and came in with a plan that was 10,000 dollars cheaper than everyone else.  I was worried that the final product would be less and it isn't.  We are saving money every month on our gas bill and they were incredibly nice and professional.  Don't do a new furnace without having them come in and do a bid!",
+      "publishedAt": "2013-12-30T18:33:19.141Z",
+      "ownerResponse": "Thank you Heather!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURRc05UNXd3RRAB!2m1!1s0x0:0x84a65448ac33ee14!3m1!1s2@1:CIHM0ogKEICAgIDQsNT5wwE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNJZ2ZlV3dRRRAB",
+      "reviewer": "Mitchell F.",
+      "rating": 5,
+      "publishedAt": "2025-04-02T13:37:15.971Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNibDhTVi1nRRAB",
+      "reviewer": "Ryan",
+      "rating": 5,
+      "publishedAt": "2024-07-30T18:47:20.764Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR4Ny1pN2R3EAE",
+      "reviewer": "Karen K.",
+      "rating": 5,
+      "publishedAt": "2023-06-17T14:16:37.533Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN1ay1laFR3EAE",
+      "reviewer": "Lynda S.",
+      "rating": 5,
+      "publishedAt": "2022-08-05T14:09:28.943Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMybnNtaU5BEAE",
+      "reviewer": "Tyler D.",
+      "rating": 5,
+      "publishedAt": "2022-04-21T15:37:12.409Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyN1BpV1R3EAE",
+      "reviewer": "Katherine B.",
+      "rating": 5,
+      "publishedAt": "2022-04-14T20:27:23.274Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyN0tpLUtnEAE",
+      "reviewer": "Susan H.",
+      "rating": 5,
+      "publishedAt": "2022-04-14T20:16:22.425Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMyN0tEMnJRRRAB",
+      "reviewer": "Bruce H.",
+      "rating": 5,
+      "publishedAt": "2022-04-14T19:58:01.114Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyck9IS0dBEAE",
+      "reviewer": "Joe R.",
+      "rating": 5,
+      "publishedAt": "2022-04-14T17:35:58.056Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMycklhYzlnRRAB",
+      "reviewer": "glothrop",
+      "rating": 5,
+      "publishedAt": "2022-04-14T16:57:35.754Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyck9xNFNnEAE",
+      "reviewer": "Debra H.",
+      "rating": 5,
+      "publishedAt": "2022-04-14T16:46:50.902Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyekxHM1lnEAE",
+      "reviewer": "RD H.",
+      "rating": 5,
+      "publishedAt": "2022-04-14T13:31:13.279Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMyOU1McUhnEAE",
+      "reviewer": "Judy K.",
+      "rating": 5,
+      "publishedAt": "2022-04-14T00:47:10.782Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMydE5md193RRAB",
+      "reviewer": "Kelly Y.",
+      "rating": 5,
+      "publishedAt": "2022-04-13T22:15:36.549Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMydE5UZ29nRRAB",
+      "reviewer": "Jay S.",
+      "rating": 5,
+      "publishedAt": "2022-04-13T18:22:45.015Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMydFBqNUhnEAE",
+      "reviewer": "Meghan S.",
+      "rating": 5,
+      "publishedAt": "2022-04-13T18:11:47.146Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMydEtqekp3EAE",
+      "reviewer": "Phillip V.",
+      "rating": 5,
+      "publishedAt": "2022-04-13T18:01:05.735Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLaWVYRjdRRRAB",
+      "reviewer": "Gary H.",
+      "rating": 4,
+      "publishedAt": "2021-04-09T20:12:24.658Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURjcU5qZGVREAE",
+      "reviewer": "Rhonda O.",
+      "rating": 5,
+      "publishedAt": "2020-05-19T14:34:52.671Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURNbk02eUFREAE",
+      "reviewer": "JT",
+      "rating": 1,
+      "publishedAt": "2019-12-20T19:33:55.119Z"
+    }
+  ]
+}

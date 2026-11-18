@@ -1,0 +1,601 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "JG Roofing and Company",
+    "slug": "jgroofing-peoria",
+    "city": "Peoria",
+    "state": "IL",
+    "companyType": "Roofer",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Main",
+        "display": "(309) 567-8236",
+        "tel": "+13095678236"
+      }
+    ],
+    "email": "amanda@jgroofingco.com",
+    "hours": "Monday to Saturday, 7:00 AM to 7:00 PM",
+    "address": "1010 W Northcrest Ave, Peoria, IL 61614",
+    "serviceArea": {
+      "summary": "Peoria and Central Illinois",
+      "towns": [
+        "Peoria"
+      ]
+    }
+  },
+  "trustBar": [
+    "Free Roofing Estimates",
+    "Roofs, Siding and Gutters",
+    "Open Monday to Saturday"
+  ],
+  "services": [
+    {
+      "name": "Roof Replacement",
+      "route": "/roof-replacement-peoria-il/",
+      "blurb": "A new roof in asphalt shingle or metal, with Jose's look at the roof first and Amanda on the claim."
+    },
+    {
+      "name": "Roof Repair",
+      "route": null,
+      "blurb": "Leaks and failed seals around vents, found and fixed."
+    },
+    {
+      "name": "Storm and Hail Damage",
+      "route": null,
+      "blurb": "Amanda walks you through the claim while the roof gets looked at."
+    },
+    {
+      "name": "Siding",
+      "route": null,
+      "blurb": "New siding, on its own or along with the roof."
+    },
+    {
+      "name": "Gutters and Gutter Guards",
+      "route": null,
+      "blurb": "New gutters and gutter guards."
+    },
+    {
+      "name": "Metal Roofs",
+      "route": null,
+      "blurb": "Metal roofing, alongside traditional asphalt shingles."
+    },
+    {
+      "name": "Fascia and Soffit",
+      "route": null,
+      "blurb": "Replaced along with the roof."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "roofer Peoria IL",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Peoria, IL · 1010 W Northcrest Ave",
+        "h1": "Roofer in Peoria, IL — JG Roofing and Company",
+        "sub": "Hail, age or a leak that keeps coming back. Jose looks at the roof, and Amanda walks you through the claim one step at a time. Call (309) 567-8236 for a free estimate.",
+        "primaryCta": {
+          "label": "Call (309) 567-8236",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "new-roof-ranch",
+          "alt": "Ranch-style home with a newly finished roof",
+          "brief": "ranch-style house with a freshly finished roof on the right of the frame, lawn and driveway leading off to the left, clear sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Amanda and Jose took the time to explain every single step, kept us updated constantly, and helped us understand exactly what was happening with our insurance company the whole way through.",
+          "name": "Daniel G."
+        },
+        {
+          "type": "prose",
+          "heading": "Hail Last Night, a Letter This Week, and No Idea What Comes Next",
+          "body": [
+            "Picture the morning after a bad storm. You can see a few shingles in the yard, and a neighbor already has a ladder against his house. Your insurance company has sent a form, and you don't know what the adjuster looks for or who is supposed to tell you the next step.",
+            "This is the moment to call someone who has already walked other Peoria homeowners through it. Nobody should have to learn roofing and insurance in the same week."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Jose Looks at the Roof. Amanda Walks You Through the Claim.",
+          "body": [
+            "Jose comes out, looks over the roof and explains what it needs.",
+            "Amanda explains each step of the claim and what to expect while the work is scheduled, and she works with your insurance company or agent.",
+            "We can't tell you what your insurance company will decide. We can make sure you know what is happening while they decide."
+          ],
+          "list": [
+            "A free estimate for roofing work",
+            "Roofs, siding, gutters, fascia and soffit from one team",
+            "Open Monday to Saturday, 7:00 AM to 7:00 PM"
+          ],
+          "listStyle": "checks",
+          "image": {
+            "slot": "owner-inspecting",
+            "alt": "Roofer looking over a shingle roof with a homeowner standing nearby",
+            "brief": "one roofer crouched on a pitched shingle roof pointing at a section, homeowner visible at the edge of the frame, daytime, no readable text"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Absolutely the best experience … Getting work on the house is stressful and Amanda and Jose make it as stress free as possible.",
+          "name": "Christopher L."
+        },
+        {
+          "type": "split",
+          "heading": "One Storm Can Hit the Roof, the Siding and the Gutters",
+          "body": [
+            "JG Roofing installs siding and gutters along with roofs, and replaces fascia and soffit with the roof. A storm job that reaches more than the shingles can stay with one company."
+          ],
+          "image": {
+            "slot": "gutter-roof-edge",
+            "alt": "Gutter and fascia along the edge of a shingle roof",
+            "brief": "close view of a gutter, fascia board and the shingle edge of a roof on a brick home, soft daylight, no people, no readable text"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "Our home had siding that was no longer manufactured and Amanda was able to have the proper research done in order to prove that so that our home would not be repaired in a way that it would have mismatched siding!",
+          "name": "Bert S."
+        },
+        {
+          "type": "services",
+          "heading": "What We Do in Peoria",
+          "intro": "Roof replacement, repairs, siding, gutters and metal roofs."
+        },
+        {
+          "type": "prose",
+          "heading": "What Brings Peoria Homeowners to the Phone",
+          "body": [
+            "Any of these is a good reason to ask for a free look."
+          ],
+          "items": [
+            {
+              "title": "A storm went through and nobody has looked at the roof",
+              "text": "Call for a free roofing estimate, and Jose looks at the roof."
+            },
+            {
+              "title": "A stain on the ceiling after a heavy rain",
+              "text": "Jose comes out to look at the roof."
+            },
+            {
+              "title": "A cracked seal around a vent pipe",
+              "text": "Fixing a vent seal is a job we do."
+            },
+            {
+              "title": "A letter from your insurance company",
+              "text": "Call us, and Amanda can explain the steps that come next."
+            },
+            {
+              "title": "A roof that has simply gotten old",
+              "text": "Jose tells you where yours stands."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Jose actually came to inspect our roof three times. The first when we were thinking of replacing it, the second after a hail storm … Should this Illinois weather damage my roof again, I know who I am calling.",
+          "name": "Robert T."
+        },
+        {
+          "type": "split",
+          "heading": "Insurance Claims: What to Expect",
+          "body": [
+            "Amanda explains the claim process and what to expect, so you know what to ask.",
+            "Coverage and settlement stay between you and your insurance company, and your agent is the right person for questions about your policy."
+          ],
+          "image": {
+            "slot": "adjuster-meeting",
+            "alt": "Homeowner and a contractor reviewing paperwork beside a house",
+            "brief": "two people at a driveway edge looking over a clipboard of papers, a house with a roof behind them, daytime, no readable text"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Jose and his team completed the work in a day. They even were kind enough to do an extra few sweeps around the house to make sure there were no nails left behind for our dog to step on.",
+          "name": "Kayla T."
+        },
+        {
+          "type": "steps",
+          "heading": "How a Job Goes, From the First Call",
+          "items": [
+            {
+              "title": "You call.",
+              "text": "Call (309) 567-8236 and tell us what the roof is doing. Roofing estimates are free."
+            },
+            {
+              "title": "Jose looks at the roof.",
+              "text": "He tells you what he sees and what the roof needs."
+            },
+            {
+              "title": "Amanda covers the rest.",
+              "text": "When a storm is involved, she takes you through the claim. Either way, she answers questions as they come up."
+            },
+            {
+              "title": "The crew does the work.",
+              "text": "Customers describe roofs finished in a day and a yard cleaned up afterward."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Peoria and the Rest of Central Illinois",
+          "body": [
+            "We work for homeowners throughout Peoria and Central Illinois. Our office is at 1010 W Northcrest Ave in Peoria, and we're open Monday to Saturday, 7:00 AM to 7:00 PM."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Hail, Claims and Estimates",
+          "items": [
+            {
+              "q": "Is the estimate free?",
+              "a": "Yes, for roofing work. Call (309) 567-8236 and we'll set a time for Jose to come out."
+            },
+            {
+              "q": "Do you work with insurance companies?",
+              "a": "Yes. Amanda walks you through the claim and works with your insurance company or agent. Coverage is up to your insurer, so ask them what your policy includes."
+            },
+            {
+              "q": "Does the roof need replacing?",
+              "a": "Jose looks at the roof and tells you what it needs. Call (309) 567-8236 to set a time."
+            },
+            {
+              "q": "Can you do the siding and gutters at the same time?",
+              "a": "Yes. We install siding, gutters and gutter guards, and we replace fascia and soffit along with the roof."
+            },
+            {
+              "q": "How long does a replacement take?",
+              "a": "Several customers describe the work finished in a day. Call (309) 567-8236 and ask about your roof."
+            },
+            {
+              "q": "What kind of roofs do you install?",
+              "a": "Traditional asphalt shingle roofs and metal roofs."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Jose and Amanda About Your Roof",
+          "text": "Tell us what the roof is doing, or what your insurance company just sent you. We'll set a time to look. (309) 567-8236"
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/roof-replacement-peoria-il/",
+      "navLabel": "Roof Replacement",
+      "keyword": "roof replacement Peoria IL",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Roof replacement, Peoria",
+        "h1": "Roof Replacement in Peoria, IL — JG Roofing and Company",
+        "sub": "Age, hail or a leak that keeps coming back usually starts this search. Jose tells you what the roof needs once he has looked at it. Amanda takes you through the rest, including the claim if there is one.",
+        "primaryCta": {
+          "label": "Call (309) 567-8236",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "new-roof-twostory",
+          "alt": "Two-story home with a newly replaced roof",
+          "brief": "two-story house with a newly replaced roof on the right half of the frame, tree and lawn to the left, calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Amanda came and patiently explained the claim process and what to expect during the replacement process. She  responded to all of my questions. Jose and his crew did a wonderful job.  The roof was torn off, replaced and cleaned up in the timeframe that Amanda gave me.",
+          "name": "Rose H."
+        },
+        {
+          "type": "split",
+          "heading": "Replace It or Repair It?",
+          "body": [
+            "JG Roofing does roof repairs and full replacements. Jose looks over the whole roof and says which one yours needs."
+          ],
+          "image": {
+            "slot": "repair-flashing",
+            "alt": "Metal flashing sealed around a vent pipe on a shingle roof",
+            "brief": "close view of flashing around a roof vent pipe with shingles around it, daylight, no people, no readable text"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "split",
+          "heading": "After Hail or Wind, There Is a Claim Running Beside the Roof",
+          "body": [
+            "Amanda explains each step of the claim and what to expect while the work is scheduled.",
+            "Coverage and settlement are between you and your insurance company, and we don't guess at what they will decide."
+          ],
+          "image": {
+            "slot": "hail-damage-roof",
+            "alt": "Shingle roof surface with scattered hail bruises",
+            "brief": "close view of a shingle roof showing dark bruised spots from hail, gutter at the lower edge, daylight, no people, no readable text"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "They helped navigate the insurance claims process, were able to begin and finish work promptly after the claim approval, and were super accommodating with anything that came up along the way.",
+          "name": "Timothy H."
+        },
+        {
+          "type": "steps",
+          "heading": "A Roof Replacement, Start to Finish",
+          "items": [
+            {
+              "title": "A free look at the roof",
+              "text": "Jose comes out and looks at the roof. Roofing estimates cost nothing."
+            },
+            {
+              "title": "The claim, if there is one",
+              "text": "Explaining the process, answering questions and working with your insurance company or agent is Amanda's part."
+            },
+            {
+              "title": "Old roof off, new roof on",
+              "text": "The crew strips the old roofing and puts the new roof on. Several customers describe the work finished in one day."
+            },
+            {
+              "title": "Cleanup",
+              "text": "Customers mention a cleaned-up yard when the crew left."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Had my roof replaced after some hail damage, and they were outstanding every step of the way. … Not only was it great work, but they were able to do it all in one day which was awesome!",
+          "name": "Giovanni G."
+        },
+        {
+          "type": "prose",
+          "heading": "Shingle or Metal Roofs",
+          "body": [
+            "We install traditional asphalt shingle roofs and metal roofs."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were timely, worked fast, and cleaned up well. They were also helpful in finding a roof that met my needs.",
+          "name": "Shannon R."
+        },
+        {
+          "type": "split",
+          "heading": "Gutters, Siding, Fascia and Soffit Along With the Roof",
+          "body": [
+            "Gutters and gutter guards can be installed with the roof, and fascia and soffit can be replaced too.",
+            "If the siding needs work as well, we install siding."
+          ],
+          "image": {
+            "slot": "gutter-roof-edge",
+            "alt": "Gutter and fascia at the edge of a newly finished roof",
+            "brief": "gutter, fascia and soffit along the roof edge of a brick home, clean new shingle edge, soft daylight, no people, no readable text"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "They were so attentive, quick to respond and extremely helpful walking us through the whole process of getting a roof redone. The actual work was done so quickly, despite the not ideal weather the week of.",
+          "name": "Michael M."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Replacing a Roof",
+          "items": [
+            {
+              "q": "How do I get an estimate?",
+              "a": "Roofing estimates are free. Call (309) 567-8236 and we'll set a time to come out."
+            },
+            {
+              "q": "Will my insurance pay for a new roof?",
+              "a": "That is between you and your insurance company, and your agent can tell you what your policy includes. We explain the claim steps and what to expect along the way."
+            },
+            {
+              "q": "Can the gutters be replaced at the same time?",
+              "a": "Yes. Gutters, gutter guards, fascia and soffit can be done with the roof."
+            },
+            {
+              "q": "How soon can you start?",
+              "a": "Call (309) 567-8236, and we'll tell you where the schedule stands."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Get a Free Look at Your Roof",
+          "text": "Tell us how old the roof is and what you've noticed. Jose will come out and tell you where it stands. (309) 567-8236"
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact JG Roofing and Company Peoria IL",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Call or email",
+        "h1": "Contact JG Roofing and Company",
+        "sub": "The easiest way to reach us is to call. Tell us what the roof is doing and we'll set a time to come look.",
+        "primaryCta": {
+          "label": "Call (309) 567-8236",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-porch-roofline",
+          "alt": "Front porch and roofline of a house",
+          "brief": "front porch and roofline of a single-family house seen from the walkway, daylight, no people, no readable text"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Phone, Email and Address",
+          "body": [
+            "**Phone:** (309) 567-8236",
+            "**Email:** amanda@jgroofingco.com",
+            "**Address:** 1010 W Northcrest Ave, Peoria, IL 61614",
+            "**Hours:** Monday to Saturday, 7:00 AM to 7:00 PM"
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Jose came quickly to assess the situation on our roof and repaired it fast! Great service!!",
+          "name": "Cat W."
+        },
+        {
+          "type": "prose",
+          "heading": "What Helps When You Call About Your Roof",
+          "body": [
+            "You don't need to know what's wrong. Tell us what you can see, and we'll work out the rest from there. A few details make the first call easier:"
+          ],
+          "list": [
+            "Your address",
+            "What you're seeing: a stain on the ceiling, lifted or missing shingles, or damage from a storm",
+            "Whether you've contacted your insurance company yet, and if there is a claim number",
+            "Anything you know about the roof's age or past repairs"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "After You Hang Up",
+          "body": [
+            "Jose comes out to look at the roof and tells you what it needs. If a storm is involved, Amanda explains the claim process and what to expect from here.",
+            "You can also call about siding and gutters, or just ask whether a leak is a repair or something bigger."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Ready to Talk About the Roof",
+          "text": "Call (309) 567-8236, Monday to Saturday, 7:00 AM to 7:00 PM. Our email is amanda@jgroofingco.com."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "JG Roofing and Company is a roofing company at 1010 W Northcrest Ave in Peoria, IL. It installs and repairs roofs, siding and gutters, and works with your insurance company on storm damage.",
+    "why": [
+      "A free estimate for roofing work",
+      "Roofs, siding and gutters from one team",
+      "Open Monday to Saturday, 7:00 AM to 7:00 PM"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your Peoria page has a clear headline, \"Roofing Contractor in Peoria, IL\". Your About page is 119 words with no headline of its own, and every service sits on one 251-word page.",
+      "Your customers fill in what the site leaves out. They write about Amanda explaining the claim, Jose looking at the roof and a yard left clean. Your site doesn't tell the claim walk-through or the clean-up story in your customers' words.",
+      "On a phone it is worse: each page runs more than three times wider than the screen, so people scroll sideways to read it. We built a site around what your customers already say, with Amanda on the claim, Jose on the roof and a page of its own for roof replacement."
+    ],
+    "cardsHeading": "Be the Roofer People Find on Google",
+    "cardsIntro": "Each card is one page: what your site does today and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "On a phone the page runs more than three times wider than the screen, so people scroll sideways to read it, and many leave.",
+          "Your Peoria page shows five testimonials, but the claim walk-through and the clean-up your Google reviews describe aren't told in your customers' words."
+        ],
+        "fixes": [
+          "A page that fits a phone, with the call button one tap away.",
+          "A headline that says roofer in Peoria, IL, right at the top, followed by the claim walk-through your customers describe."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      },
+      {
+        "route": "/roof-replacement-peoria-il/",
+        "title": "Roof Replacement",
+        "why": "Your biggest job, and today it shares one short page with six other things.",
+        "problems": [
+          "Roofing, siding, metal roofs, gutters, the warranty and storm damage all sit on one 251-word page, so no page is about roof replacement in Peoria.",
+          "The headline on that page names Peoria and the services as a group, not the one job people search for."
+        ],
+        "fixes": [
+          "One page for roof replacement in Peoria, IL: the claim, the steps and the gutters and siding that go with it.",
+          "Reviews placed beside the part of the job they describe."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a homeowner with a leak or a letter from the insurance company decides to call.",
+        "problems": [
+          "Your contact block shows (309) 567-8236, while the Call or Text button dials 309-316-3652, so two callers can reach two different lines.",
+          "Contact in your menu goes to the home page instead of a page of its own."
+        ],
+        "fixes": [
+          "A contact page with one number that matches your Google listing, plus your address, hours and email.",
+          "A short list of what to have ready when you call."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great roofing company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Fits a phone screen",
+        "status": "Missing"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Good"
+      },
+      {
+        "label": "One phone number that matches your Google listing",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "About page says who does the work",
+        "status": "Needs work"
+      },
+      {
+        "label": "Every menu link goes somewhere",
+        "status": "Good"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe how you work: Jose on the roof, Amanda on the claim, a clean yard at the end. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your contact block and your Google listing show (309) 567-8236, while your Call or Text button dials (309) 316-3652, so which number is live, and who answers each one? This demo uses the Google number.",
+        "Your About page says BBB A+ accredited, while we found no BBB profile for you, so is the accreditation current, and should it go on your listings?",
+        "A search result for your Angi listing says you don't offer emergency service, while your site says nothing either way, so what should every listing say about after-hours calls?"
+      ]
+    },
+    "offer": {
+      "heading": "The offer we'd build with you",
+      "text": "This is a proposal for you to decide on, not something JG Roofing does today. It is a one-page claim and job timeline, handed to the homeowner before the tear-off, with each step in order. As far as we found, none of the three competitor sites we could read offers one.",
+      "points": [
+        "Amanda already explains the claim step by step. Put the steps on one page the homeowner keeps: the adjuster visit, what the insurance company sends, and who to call with a question.",
+        "Add the date, the timeframe and the cleanup on the same page, so the week of the work holds no surprises.",
+        "Say plainly what the page leaves out: coverage and settlement belong to the insurance company. Terms are yours to set."
+      ]
+    }
+  }
+}

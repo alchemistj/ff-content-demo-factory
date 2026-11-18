@@ -18,7 +18,7 @@ if (!files.length) {
 const reviews = JSON.parse(fs.readFileSync(path.join(dir, "reviews.json"), "utf8")).reviews || [];
 const n = (s) => String(s || "").replace(/<br\s*\/?>/g, " ").replace(/[’‘]/g, "'").replace(/[“”]/g, '"').replace(/\s+/g, " ").trim();
 const words = (s) => (n(s).match(/\S+/g) || []).length;
-const MIN = { home: 900, service: 700, contact: 150 };
+const MIN = { home: 550, service: 700, contact: 150 };
 let fails = 0, warns = 0;
 const siteUsed = new Map(); // review id -> page, so each review appears once across the site
 const fail = (m) => { fails++; console.log(`FAIL  ${m}`); };

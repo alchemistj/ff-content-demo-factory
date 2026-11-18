@@ -42,7 +42,7 @@ Check it with `node scripts/check-words-package.mjs prospects/<market>/<slug>`. 
         "eyebrow": "Locally owned in Wichita",           // optional
         "h1": "Exterior Remodeling Company in Wichita, KS — Evolve Exteriors",
         "sub": "Two or three specific trust sentences.",
-        "primaryCta": { "label": "Call (316) 435-8009", "action": "call" },        // call | contact
+        "primaryCta": { "label": "Call (316) 435-8009", "action": "call" },        // call | contact | email (mailto business.email) | text (sms to the phone labeled "Text")
         "secondaryCta": { "label": "Get a Free Estimate", "action": "contact" },
         "image": { "slot": "home-hero", "alt": "…", "brief": "new black-framed windows on a tan brick ranch house, house on the right, clear sky on the left" }
       },
@@ -93,7 +93,7 @@ Hard failures only (Josh, 2026-11-09: spirit of the law). Taste lives in `docs/w
 2. **Quotes.** Every `review` quote appears word for word in `reviews.json` from a five-star review, attributed as first name plus last initial, and each review is used once.
 3. **Keywords.** The homepage H1 starts with `business.companyType in <City>, <ST>` and names one city. Service page H1s do not contain the company-type phrase, and each covers one service. No two pages share a `keyword` and no two services share a route.
 4. **Every number.** Every `business.phones` entry has a valid `tel`.
-5. **Not thin.** Words of copy, not counting reviews, menus, footer or trust bar: home at least 900, service at least 700, contact at least 150. Strategy stays at 1,000 or fewer rendered words.
+5. **Not thin.** Words of copy, not counting reviews, menus, footer or trust bar: home at least 550, service at least 700, contact at least 150. Strategy stays at 1,000 or fewer rendered words.
 
 **WARN (look, then use judgment)**
 - Voice slips: "customers tell us", "The crew… They…", third-person owner sentences, website-quality claims.

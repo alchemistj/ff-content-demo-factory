@@ -1,0 +1,597 @@
+{
+ "schema": "words-package/v1",
+ "business": {
+  "name": "Custom Assured Mechanical",
+  "slug": "customassured-fortwayne",
+  "city": "Fort Wayne",
+  "state": "IN",
+  "companyType": "HVAC Company",
+  "owners": [
+   "Rod"
+  ],
+  "phones": [
+   {
+    "label": "Fort Wayne",
+    "display": "(260) 496-8400",
+    "tel": "+12604968400"
+   }
+  ],
+  "email": "julie@customassured.com",
+  "hours": "Office: Monday to Friday, 9:00 AM to 4:00 PM",
+  "address": "2630 Independence Drive, Fort Wayne, IN 46808",
+  "serviceArea": {
+   "summary": "Fort Wayne, IN",
+   "towns": [
+    "Fort Wayne"
+   ],
+   "label": "Location"
+  }
+ },
+ "trustBar": [
+  "Bryant Heating and Cooling Products",
+  "100% Satisfaction Guarantee on Sales",
+  "Deal Directly with the Owner",
+  "Financing With Approved Credit",
+  "Annual Service Agreements"
+ ],
+ "services": [
+  {
+   "name": "HVAC Maintenance",
+   "route": "/hvac-maintenance-fort-wayne-in/",
+   "blurb": "Maintenance for furnaces and air conditioners, with annual service agreements."
+  },
+  {
+   "name": "Furnaces",
+   "route": null,
+   "blurb": "Sale, installation and service of furnaces."
+  },
+  {
+   "name": "Air Conditioning",
+   "route": null,
+   "blurb": "Sale, installation and service of air conditioners."
+  },
+  {
+   "name": "Heat Pumps",
+   "route": null,
+   "blurb": "For total electric homes and dual fuel setups."
+  },
+  {
+   "name": "Thermostats",
+   "route": null,
+   "blurb": "Thermostats."
+  },
+  {
+   "name": "Air Cleaners",
+   "route": null,
+   "blurb": "Air cleaners. Ask the office."
+  },
+  {
+   "name": "Custom Priority Club",
+   "route": null,
+   "blurb": "A maintenance membership. Ask the office whether it is offered today."
+  },
+  {
+   "name": "New Construction HVAC",
+   "route": null,
+   "blurb": "Heating and air conditioning for new builds, planned with the house."
+  }
+ ],
+ "pages": [
+  {
+   "role": "home",
+   "route": "/home/",
+   "navLabel": "Home",
+   "keyword": "hvac company fort wayne in",
+   "seo": null,
+   "hero": {
+    "eyebrow": "Fort Wayne, Indiana · Sales, installation and service",
+    "h1": "HVAC Company in Fort Wayne, IN — Custom Assured Mechanical",
+    "sub": "We sell, install and service heating and air conditioning in Fort Wayne. Two customers mention the same technician coming back, and the office calling when service is due. Call (260) 496-8400 to talk about service.",
+    "primaryCta": {
+     "label": "Call (260) 496-8400",
+     "action": "call"
+    },
+    "secondaryCta": {
+     "label": "Contact us",
+     "action": "contact"
+    },
+    "image": {
+     "slot": "home-hero",
+     "alt": "Technician carrying a toolbag toward the door of a house",
+     "brief": "HVAC pool: home-hero (one photo, desktop and phone crops)"
+    }
+   },
+   "sections": [
+    {
+     "type": "review",
+     "quote": "Lance is our guy. He knows our system and is very thorough with his inspection and cleaning of the system. He's very personable, conscientious, more like a member of our family.",
+     "name": "Linda R."
+    },
+    {
+     "type": "split",
+     "heading": "Two Customers Mention the Same Technician Coming Back",
+     "body": [
+      "A furnace and an air conditioner have quirks. Where the filter sits, what the blower sounds like, what was replaced two falls ago. When a different person shows up each time, you explain it again. When the same one comes back, you don't.",
+      "Two customers say the same technician comes back, and that the office calls them when a visit is due. Ask the office how scheduling works for your system."
+     ],
+     "list": [
+      "Annual service agreements for heating and air conditioning",
+      "Two customers say the office calls when service is due",
+      "Two customers mention the same technician",
+      "Repair on any brand of HVAC equipment"
+     ],
+     "listStyle": "checks",
+     "image": {
+      "slot": "tech-at-door",
+      "alt": "Technician talking with a homeowner at the front door",
+      "brief": "HVAC pool photo: tech-at-door"
+     },
+     "imageSide": "right"
+    },
+    {
+     "type": "prose",
+     "heading": "Why a Visit Before Each Season",
+     "body": [
+      "Furnaces and air conditioners fail at the worst times because the small problems are quiet. A dirty filter, a plugged drain or dust caked on a coil won't announce themselves in April. Instead they surface on the first hot afternoon or the first cold night.",
+      "A check before heating season and another before cooling season finds those problems on a calm day, with the answers to your questions in the same visit."
+     ],
+     "link": {
+      "label": "See how maintenance works",
+      "route": "/hvac-maintenance-fort-wayne-in/"
+     }
+    },
+    {
+     "type": "prose",
+     "heading": "Small Problems That Don't Announce Themselves",
+     "body": [
+      "Most breakdowns start as something small and easy to miss. Here is what we mean."
+     ],
+     "items": [
+      {
+       "title": "A clogged air filter",
+       "text": "Air has to move through the system. A clogged filter makes the blower work harder and can leave rooms uncomfortable long before anything fails."
+      },
+      {
+       "title": "A plugged condensate drain",
+       "text": "An air conditioner pulls water out of the air. When the drain backs up, that water has nowhere to go."
+      },
+      {
+       "title": "Dust on the coil",
+       "text": "A dirty coil makes an air conditioner run longer to do less."
+      },
+      {
+       "title": "A worn part nobody has looked at",
+       "text": "Parts wear out slowly, and a technician who is looking at the whole system sees them before they quit."
+      }
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "We have them come out twice a year to keep our air and furnace running efficiently. I never have to worry about calling them to schedule as they contact me. A nice company to do business with!",
+     "name": "Susan M."
+    },
+    {
+     "type": "services",
+     "heading": "What We Sell, Install and Service",
+     "intro": "Heating and air conditioning for homes, businesses and new construction, all from one Fort Wayne office."
+    },
+    {
+     "type": "prose",
+     "heading": "A Husband-and-Wife Shop, and You Deal With the Owner",
+     "body": [
+      "I'm Rod Schaefer. My wife Kim and I are the husband-wife team behind Custom Assured. Kim handles the scheduling of service calls, billing, accounting and payroll. I started in the HVAC trade over 35 years ago, and we started operations in 1998.",
+      "When you call, you're dealing directly with the owner of the company. Our team is Jacob D, Jacob W, Dave, Logan, Kevin, Lance and Casey."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "We have been using them for about 3 years and will continue to do so. We have them come out twice a year before each item gets turned on. They are very dependable, family friendly, and actually take the time to explain and walk through each step with you.",
+     "name": "Montana S."
+    },
+    {
+     "type": "prose",
+     "heading": "New Systems and New Builds",
+     "body": [
+      "Not every job is a service call. We sell and install complete systems, and we tailor each job to residential, commercial or new construction work. A new build needs its heating and cooling planned with the house. A replacement needs to fit what's already there.",
+      "Heat pumps are on the list too, for total electric homes and for dual fuel setups."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "Installed New HVAC at our home 22 years ago, great maintenance & service since! Kudos to Casey & Logan who we met today!",
+     "name": "Bob D."
+    },
+    {
+     "type": "prose",
+     "heading": "Bryant Equipment, a 100% Satisfaction Guarantee on Sales, and Financing",
+     "body": [
+      "We're proud to offer Bryant heating and cooling products. All of our sales are backed by the Custom Assured 100% Satisfaction Guarantee, and financing options are available with approved credit.",
+      "Call and ask about lenders and terms."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "… Their expertise has been a tremendous help with our last two homes both with HVAC design as well as our maintenence.",
+     "name": "Ken M."
+    },
+    {
+     "type": "faq",
+     "heading": "Before You Get on the Schedule",
+     "items": [
+      {
+       "q": "How do I ask about maintenance?",
+       "a": "Call (260) 496-8400 and say you'd like maintenance for your furnace and air conditioner. Ask how the schedule works."
+      },
+      {
+       "q": "Do you only work on Bryant equipment?",
+       "a": "No. We repair any brand of HVAC equipment, and we're proud to offer Bryant products."
+      },
+      {
+       "q": "What is the Custom Priority Club?",
+       "a": "Our site describes it as a maintenance membership with priority service, discounts and emergency service. Call and ask whether it's offered today and what it includes."
+      },
+      {
+       "q": "Do you do new construction?",
+       "a": "Yes. We work with residential, commercial and new construction clients, so homes and businesses are both on our list."
+      },
+      {
+       "q": "Do you offer financing?",
+       "a": "Yes, with approved credit. Ask about it when you call."
+      },
+      {
+       "q": "What do I do if the system quits and it's not an office-hours problem?",
+       "a": "Call the office number and ask about emergency service."
+      }
+     ]
+    },
+    {
+     "type": "callBand",
+     "heading": "Get Your Furnace and Air Conditioner on a Maintenance Schedule",
+     "text": "Call (260) 496-8400 to talk with the Custom Assured office. We'll tell you how maintenance works and what's included, and we'll take it from there."
+    }
+   ]
+  },
+  {
+   "role": "service",
+   "route": "/hvac-maintenance-fort-wayne-in/",
+   "navLabel": "HVAC Maintenance",
+   "keyword": "hvac maintenance fort wayne in",
+   "seo": null,
+   "hero": {
+    "eyebrow": "Furnace and air conditioner service, Fort Wayne",
+    "h1": "HVAC Maintenance in Fort Wayne, IN — Custom Assured Mechanical",
+    "sub": "Maintenance for the furnace and the air conditioner, with annual service agreements and the Custom Priority Club. Call (260) 496-8400 to ask about it.",
+    "primaryCta": {
+     "label": "Call (260) 496-8400",
+     "action": "call"
+    },
+    "secondaryCta": {
+     "label": "Contact us",
+     "action": "contact"
+    },
+    "image": {
+     "slot": "furnace-detail",
+     "alt": "Technician inspecting a furnace with the panel open",
+     "brief": "HVAC pool: furnace-detail"
+    }
+   },
+   "sections": [
+    {
+     "type": "review",
+     "quote": "They call us when it is time to service our furnace and A/C. … In fact, I believe we have had the same technician for the entire 7 years.",
+     "name": "Gina W."
+    },
+    {
+     "type": "split",
+     "heading": "What a Visit Looks Like",
+     "body": [
+      "Customers describe a maintenance visit that cleans the heating and air equipment. Ask the office what a visit includes.",
+      "Ask what you want to know. How old is the system? Is that noise normal? Should you plan to replace anything in a few years?",
+      "Ask the technician what was checked, what was cleaned and what to keep an eye on before the next visit."
+     ],
+     "image": {
+      "slot": "airflow-vent",
+      "alt": "Ceiling air vent in a quiet room",
+      "brief": "HVAC pool photo: airflow-vent"
+     },
+     "imageSide": "left"
+    },
+    {
+     "type": "prose",
+     "heading": "Heating in the Fall, Cooling in the Spring",
+     "body": [
+      "The two visits have different jobs. Each one gets the system ready for the season ahead."
+     ],
+     "items": [
+      {
+       "title": "Before the heating season",
+       "text": "Customers describe a furnace visit in the fall, while the weather is still mild. If something is worn, you find out when you can still wait a few days for a part."
+      },
+      {
+       "title": "Before the cooling season",
+       "text": "Customers describe an air conditioner visit in the spring. A plugged drain or a dirty coil is easier to deal with in May than in July."
+      },
+      {
+       "title": "In between",
+       "text": "If something acts up between visits, you already know who to call, and the technician has seen the system recently."
+      }
+     ],
+     "tail": [
+      "Ask the office about heat pumps, thermostats and air cleaners."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "We have used Custom Assured Mechanical since we moved to this area. Almost Four years ago. Service has been great. They come twice a year and inspect the equipment and clean the drains, answer our questions and replace the air filter. We could not be happier with their service.",
+     "name": "Fred K."
+    },
+    {
+     "type": "prose",
+     "heading": "The Custom Priority Club",
+     "body": [
+      "Our site describes the Custom Priority Club as a maintenance membership with priority service, discounts and emergency service.",
+      "Call the office and ask whether it's offered today, what it includes and what it costs."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "Always on time, always courteous, always professional",
+     "name": "Dennis G."
+    },
+    {
+     "type": "prose",
+     "heading": "Meet the Team Before They Meet Your Furnace",
+     "body": [
+      "Maintenance is a relationship, so it helps to know who's coming. Our team is Jacob D, Jacob W, Dave, Logan, Kevin, Lance, Casey and Rod.",
+      "Two customers mention seeing the same technician. Call the office and ask how visits are scheduled."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "I signed up for the yearly service plan and it has totally paid off with twice a year maintenance on heating and air.",
+     "name": "Anne B."
+    },
+    {
+     "type": "prose",
+     "heading": "Who Belongs on the Schedule",
+     "body": [
+      "Ask the office who can sign up. A system that's getting older is one reason to ask.",
+      "If you own more than one property, ask the office how that works."
+     ]
+    },
+    {
+     "type": "prose",
+     "heading": "Furnaces, Air Conditioners, Heat Pumps and More",
+     "body": [
+      "We repair any brand of HVAC equipment, so you don't have to own a Bryant to be on the schedule. Furnaces and air conditioners are on our list; ask the office about heat pumps, thermostats and air cleaners.",
+      "If you're not sure what's on your equipment list, the office can help you sort it out when you call."
+     ]
+    },
+    {
+     "type": "faq",
+     "heading": "Questions Before Signing Up for Maintenance",
+     "items": [
+      {
+       "q": "How often does maintenance happen?",
+       "a": "Customers describe a visit twice a year, once before the heating season and once before the cooling season. Ask the office how your agreement is set up."
+      },
+      {
+       "q": "Will I get the same technician each time?",
+       "a": "Two customers say they have. Ask the office what to expect."
+      },
+      {
+       "q": "Do I need to call when it's due?",
+       "a": "Two customers say the office calls them when it's time. Ask the office how reminders work."
+      },
+      {
+       "q": "Does it cover furnaces and air conditioners?",
+       "a": "Yes, both. For heat pumps, thermostats and air cleaners, ask the office."
+      },
+      {
+       "q": "Is maintenance worth it on a new system?",
+       "a": "Ask the office whether maintenance makes sense on a new system."
+      },
+      {
+       "q": "What does it cost?",
+       "a": "Call the office at (260) 496-8400 and ask."
+      }
+     ]
+    },
+    {
+     "type": "callBand",
+     "heading": "Put Your System on a Maintenance Schedule",
+     "text": "Call (260) 496-8400 to talk about maintenance for your furnace and air conditioner. Tell us what you have, and the office will take it from there."
+    }
+   ]
+  },
+  {
+   "role": "contact",
+   "route": "/contact/",
+   "navLabel": "Contact",
+   "keyword": "contact custom assured mechanical fort wayne in",
+   "seo": null,
+   "hero": {
+    "eyebrow": "2630 Independence Drive, Fort Wayne",
+    "h1": "Contact Custom Assured Mechanical",
+    "sub": "The quickest way to reach the office is to call. Tell us what you have and what it's doing, and we'll go from there.",
+    "primaryCta": {
+     "label": "Call (260) 496-8400",
+     "action": "call"
+    },
+    "image": {
+     "slot": "contact-hero",
+     "alt": "Service van parked in the driveway of a house",
+     "brief": "HVAC pool: contact-hero"
+    }
+   },
+   "sections": [
+    {
+     "type": "prose",
+     "heading": "Call the Office",
+     "body": [
+      "(260) 496-8400",
+      "Call to book maintenance, ask about a new system or talk through a problem. If you're already a customer, tell us which address and which system."
+     ]
+    },
+    {
+     "type": "prose",
+     "heading": "Write to Us",
+     "body": [
+      "julie@customassured.com",
+      "Send your address, a phone number and what the system is doing. Mention if you'd like to ask about maintenance."
+     ]
+    },
+    {
+     "type": "split",
+     "heading": "What Helps Us Help You",
+     "list": [
+      "Whether it's a furnace, an air conditioner or a heat pump, and the brand if you can see it.",
+      "Roughly how old it is, and when it was last serviced.",
+      "Whether it's a home, a business or a new build.",
+      "Whether you'd like to ask about maintenance."
+     ],
+     "image": {
+      "slot": "thermostat",
+      "alt": "Hand adjusting a wall thermostat",
+      "brief": "HVAC pool photo: thermostat"
+     },
+     "imageSide": "right"
+    },
+    {
+     "type": "prose",
+     "heading": "Find the Office on Independence Drive",
+     "body": [
+      "Custom Assured Mechanical is at 2630 Independence Drive, Fort Wayne, IN 46808. Office hours are Monday to Friday, 9:00 AM to 4:00 PM."
+     ]
+    },
+    {
+     "type": "callBand",
+     "heading": "Tell the Office What You Have",
+     "text": "Call (260) 496-8400 or write to julie@customassured.com. We'll find a time that works."
+    }
+   ]
+  }
+ ],
+ "footer": {
+  "about": "Custom Assured Mechanical is a Fort Wayne heating and air conditioning company run by Rod Schaefer and his wife Kim. We sell, install and service systems for homes, businesses and new construction.",
+  "why": [
+   "Two customers mention the same technician",
+   "Two customers say the office calls when service is due",
+   "Deal directly with the owner",
+   "Bryant products and financing with approved credit"
+  ]
+ },
+ "strategy": {
+  "whyHeading": "Why we built this site",
+  "why": [
+   "Your homepage shows no phone number, and the number on your Contact page is plain text with no tap-to-call link, so a visitor on a phone has to type it. A video block on the homepage says \"Video is not available or format is not supported.\" Your Our Services page is 471 words of generic copy, and your twice-a-year service has no page of its own.",
+   "Your customers already describe the company you are. Samantha R. wrote \"They try to send the same technicians out every time.\" Nicole S. wrote \"They are great with follow ups for yearly maintenance services.\" Today those words sit on Google, not on your site.",
+   "So the demo opens with HVAC company in Fort Wayne, IN, leads with what customers say about the same technician coming back, and gives HVAC maintenance its own page."
+  ],
+  "cardsHeading": "Be the HVAC Company People Find on Google",
+  "cardsIntro": "Each card is one page of the demo.",
+  "cards": [
+   {
+    "route": "/home/",
+    "title": "Homepage",
+    "why": "Where Google learns who you are and where you work.",
+    "problems": [
+     "Your headline is \"We earn our customers for a lifetime, not just a single job,\" with no HVAC company and no Fort Wayne, so Google can't tell what you are or where.",
+     "The homepage has no phone number and a video block that doesn't play.",
+     "Four pages (Our Services, Financing, Bill Pay and Cart) have no H1."
+    ],
+    "fixes": [
+     "A headline that says HVAC company in Fort Wayne, IN, at the very top.",
+     "Your number in the first screen, tap to call.",
+     "One clear H1 on every page."
+    ],
+    "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. From that we plan how many pages, in how many towns, so Google and AI tools can find you for every service."
+   },
+   {
+    "route": "/hvac-maintenance-fort-wayne-in/",
+    "title": "HVAC Maintenance",
+    "why": "Maintenance is where customers stay for years, so it's the page to build first.",
+    "problems": [
+     "Your maintenance program shows up in a testimonial and a membership paragraph, not on a page of its own.",
+     "Our Services has \"maintenances preformed\" and \"CPC Benifits,\" and it has no H1."
+    ],
+    "fixes": [
+     "A page for HVAC maintenance in Fort Wayne, IN, with what a visit covers and how the schedule works.",
+     "Clean copy, with the Custom Priority Club named the way your customers say it."
+    ],
+    "alsoAdd": "Furnace, air conditioner, heat pump and new construction pages, each built for its own search."
+   },
+   {
+    "route": "/contact/",
+    "title": "Contact",
+    "why": "Where a customer with a dead system decides to call.",
+    "problems": [
+     "Your phone number is plain text, with no tap-to-call link anywhere on the site.",
+     "Your Contact page heading is your street address, not a headline, and an empty shopping cart icon shows on every page."
+    ],
+    "fixes": [
+     "Your number, email, address and hours together on one page, with tap to call.",
+     "A clear Contact headline, and no cart icon."
+    ],
+    "alsoAdd": "Call and form tracking that shows which pages and which Fort Wayne searches your leads come from."
+   }
+  ],
+  "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+  "reportCard": [
+   {
+    "label": "Page fits a phone screen without sideways scrolling",
+    "status": "Good"
+   },
+   {
+    "label": "Headline says what you do and where",
+    "status": "Missing"
+   },
+   {
+    "label": "Each money service has its own page",
+    "status": "Missing"
+   },
+   {
+    "label": "Phone number one tap away",
+    "status": "Missing"
+   }
+  ],
+  "closing": {
+   "heading": "Want a website like this for your business?",
+   "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we'll walk you through this demo and what a full build adds."
+  },
+  "confirm": {
+   "heading": "What we'd confirm with you",
+   "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+   "items": [
+    "Your homepage says your service department is available around the clock, while your Contact page lists office hours of Monday to Friday, 9 to 4, so which hours should Google and AI tools show?",
+    "Your Our Services page calls it the Custom Priority Club, while your customers call it a yearly service plan, a maintenance program and the annual priority club agreement, so which name and terms should every listing use, and is it still offered?",
+    "Your site doesn't name the cities or counties you serve beyond your Independence Drive office in Fort Wayne, so which towns should every listing cover?"
+   ]
+  },
+  "lead": {
+   "heading": "Why we led with what customers say about the same technician",
+   "text": "The scariest moment for a Fort Wayne homeowner is a furnace dying in January with nobody who knows the system. We led with it because it rests on what Google can't find anywhere else: your customers' own accounts. Please tell us whether it's how you work, so the site can say it as yours.",
+   "showScores": false,
+   "rows": [
+    {
+     "claim": "Customers say the same technician comes back, and the office calls when service is due",
+     "score": 16,
+     "appeal": 4,
+     "exclusivity": 4
+    },
+    {
+     "claim": "Customers stay for decades, with some dating their service back more than 20 years",
+     "score": 12,
+     "appeal": 3,
+     "exclusivity": 4
+    },
+    {
+     "claim": "New builds, system design help and furnaces in hard-to-reach spots",
+     "score": 12,
+     "appeal": 3,
+     "exclusivity": 4
+    }
+   ]
+  }
+ }
+}

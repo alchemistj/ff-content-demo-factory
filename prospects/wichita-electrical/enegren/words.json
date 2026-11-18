@@ -1,0 +1,759 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Enegren Electric",
+    "slug": "enegren",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Electrician",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 613-4400",
+        "tel": "+13166134400"
+      }
+    ],
+    "email": "msaucedo@enegrenelectric.com",
+    "hours": null,
+    "address": "3815 S Midco St, Wichita, KS 67215",
+    "serviceArea": {
+      "summary": "West Wichita and the towns around it",
+      "towns": [
+        "Wichita",
+        "Derby",
+        "Haysville",
+        "Newton",
+        "Goddard",
+        "Andover",
+        "Cheney",
+        "Garden Plain",
+        "Maize",
+        "Valley Center",
+        "Park City",
+        "Kechi",
+        "Bel Aire",
+        "Clearwater",
+        "Colwich",
+        "Andale"
+      ]
+    }
+  },
+  "trustBar": [
+    "Family-Owned",
+    "Homes and Businesses",
+    "Name and Photo Sent Ahead",
+    "Serving 15 Towns Around Wichita",
+    "Online Booking"
+  ],
+  "services": [
+    {
+      "name": "Electrical Repair",
+      "route": "/electrical-repair-wichita-ks/",
+      "blurb": "Tripped breakers, a room with no power, and troubleshooting for what is behind it."
+    },
+    {
+      "name": "Electrical Panel Upgrade",
+      "route": "/electrical-panel-upgrade-wichita-ks/",
+      "blurb": "Electrical service upgrades for homes, and an old small breaker box swapped for a bigger one."
+    },
+    {
+      "name": "Lighting, Inside and Out",
+      "route": null,
+      "blurb": "Interior, exterior and landscape lighting, including pendant lights and cabinet lighting."
+    },
+    {
+      "name": "Whole House Surge Protection",
+      "route": null,
+      "blurb": "A whole house surge protector, and the call you make after lightning hits the house."
+    },
+    {
+      "name": "Outlets and Switches",
+      "route": null,
+      "blurb": "Work on outlets, and new switches explained before we leave."
+    },
+    {
+      "name": "Generators, EV Chargers and Appliance Circuits",
+      "route": null,
+      "blurb": "Backup generators, EV chargers, hot tub wiring, smoke detector and carbon monoxide alarms, and circuits for new appliances, air conditioners and furnaces."
+    },
+    {
+      "name": "Commercial Electrical",
+      "route": null,
+      "blurb": "New construction, troubleshooting, maintenance, inspections and LED, parking lot and security lighting for businesses and churches."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "electrician wichita ks",
+      "seo": {
+        "title": "Electrician in Wichita, KS | Enegren Electric",
+        "description": "Enegren Electric, a family-owned Wichita electrician. We find the cause, explain it in plain words and give you options. Call (316) 613-4400."
+      },
+      "hero": {
+        "eyebrow": "West Wichita and 15 towns around it",
+        "h1": "Electrician in Wichita, KS — Enegren Electric",
+        "sub": "A tripped breaker, a lightning strike, a room that went dark. Customers wrote that the crew found the cause and explained it. Call (316) 613-4400.",
+        "primaryCta": {
+          "label": "Call (316) 613-4400",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Electrician at an open electrical panel in a garage",
+          "brief": "electrical pool: home-hero",
+          "desktopPosition": "right 15%"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Trevor was marvelous! He explained every step of his work, gave me options, and let me choose.",
+          "name": "Michael K."
+        },
+        {
+          "type": "split",
+          "heading": "New Switches, and a Walk Through How They Work",
+          "imageSide": "right",
+          "body": [
+            "Maricar H. had new switches installed, and the electrician made sure she knew how to use them before he left. She would call again for future needs. Jacob J. had us work on his outlets and called the job quick and very professional.",
+            "Circuits for new appliances, air conditioners and furnaces go in too. If you are adding one, call and tell us what it is."
+          ],
+          "image": {
+            "slot": "outlet-repair",
+            "alt": "Homeowner's hand on a wall outlet cover plate in a Wichita kitchen",
+            "brief": "electrical pool: outlet-repair"
+          }
+        },
+        {
+          "type": "split",
+          "heading": "Shown the Work, Not Just Told It Was Done",
+          "imageSide": "left",
+          "body": [
+            "Darwin R. called Marcus professional, fast and on task, and said everything was done to perfection. What he stressed was that he was shown the work in detail.",
+            "Christina C. wrote that the tech walked her through what he needed to do and was clear on which materials were needed. Joshua H. wrote that the team walked through different ideas on how to proceed before executing the job."
+          ],
+          "image": {
+            "slot": "inspection",
+            "alt": "Electrician testing a circuit at an open electrical panel",
+            "brief": "electrical pool: inspection"
+          }
+        },
+        {
+          "type": "split",
+          "heading": "You Should Know Who Is Coming Into Your House",
+          "imageSide": "right",
+          "body": [
+            "Before the visit, we send you the electrician's name and a photo. When you are home alone, or can't be there at all, the person at the door matters as much as the repair.",
+            "Marcus Saucedo is our Master Electrician, Trevor Bradley is a Residential Journeyman Electrician and Tyler Powell is an electrician. Patricia J. asked for Trevor by name on her second visit, and he is on her list of people to ask for."
+          ],
+          "image": {
+            "slot": "arrival",
+            "alt": "Electrician seen from behind at a brick house front door, tool bag in hand",
+            "brief": "electrical pool: arrival"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "As a woman home alone, I especially loved that they sent me the name of the technician along with a picture. … Tyler was incredibly respectful, knowledgeable and friendly. He explained things to me and was able to fix day off.",
+          "name": "Catie M."
+        },
+        {
+          "type": "prose",
+          "heading": "Scheduled Around a Move, Changed on Short Notice",
+          "body": [
+            "Doug B. was in the middle of a move, and wrote that the team accommodated his schedule. Ryan R. praised the communication, and the way we made changes on short notice.",
+            "Kodjo E. had Trevor out twice. He wrote that our customer service department was courteous on the phone and got him scheduled as soon as possible based on his needs."
+          ]
+        },
+        {
+          "type": "services",
+          "heading": "From One Outlet to a New Building",
+          "intro": "Homes and businesses in Wichita and the 15 towns around it."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Power Is Out in One Room",
+          "body": [
+            "Tripped breakers, rooms with no power and problems people have lived with for years. The repair page has the customers' own stories."
+          ],
+          "link": {
+            "label": "See electrical repair in Wichita",
+            "route": "/electrical-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Old Boxes, Meter Changes and Bigger Panels",
+          "body": [
+            "An old small box swapped for a bigger one, a panel and meter changed out in a day. The panel page tells how those jobs went."
+          ],
+          "link": {
+            "label": "See electrical panel upgrades in Wichita",
+            "route": "/electrical-panel-upgrade-wichita-ks/"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "Pendants Hung, Cabinets Lit",
+          "body": [
+            "Kim S. had Tyler hang her new pendant lights, and wrote that he was on time, professional and did a great job. Jack J. had Trevor install cabinet lighting, and wrote that Trevor stayed in constant communication with him and his wife as he worked."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Marcus, Derek, and Tyler were a pleasure to work with! We updated our living room, bedroom, and kitchen with new, and better, lighting. … I will absolutely use them in future projects in and around the house!",
+          "name": "Brad J."
+        },
+        {
+          "type": "prose",
+          "heading": "Electricity for a Shed 100 Feet From the House",
+          "body": [
+            "Carson M. hired us to get electricity to an outdoor shed about 100 feet from the house. He found the crew quick, responsive and affordable, and said we will be his go-to electricians for any future electrical work."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "New Construction, First Homes and Remodels",
+          "body": [
+            "Easton had us on a first home project, and wrote that we walked him through the electrical work he would need and suggested options he did not know existed.",
+            "John G. has used us for several client projects, and wrote that his clients have been happy with our staff at all levels. He plans to keep using us for his remodels."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "People Who Keep Calling Back",
+          "body": [
+            "Nico C. has worked with us multiple times, and credits our communication and on-time arrival, along with superbly clean work at a good price. Marcus B. has had help with multiple issues and calls Marcus Saucedo personable, timely and affordable."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "One Company for the Business and the House",
+          "body": [
+            "For businesses: new construction, troubleshooting and repairs, inspections, remodel and relocation work, LED lighting, equipment and machine wiring, parking lot, security and exterior lighting, backup generators, surge protection and maintenance.",
+            "Joseph S. wrote that his business uses Enegren for its electrical. Deven P. called us for service for a customer of his, and wrote that his client's feedback was extremely exceptional."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They have done electrical work for us at both our business and our home, and we couldn’t be happier with their service.",
+          "name": "Zac K."
+        },
+        {
+          "type": "prose",
+          "heading": "From West Wichita to Derby, Newton and Andale",
+          "body": [
+            "We're based in West Wichita, at 3815 S Midco St. We also serve Derby, Haysville, Newton, Goddard, Andover, Cheney, Garden Plain, Maize, Valley Center, Park City, Kechi, Bel Aire, Clearwater, Colwich, Andale and the communities nearby.",
+            "Tell us where you are when you call and we'll tell you whether we can get to you."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Can Someone Come Today, and What Will It Cost?",
+          "items": [
+            {
+              "q": "Can you come today?",
+              "a": "Call (316) 613-4400, tell us what's going on and where you are, and we'll tell you when we can get someone there."
+            },
+            {
+              "q": "What will it cost?",
+              "a": "The number depends on what we find. Call and tell us what's happening."
+            },
+            {
+              "q": "Can I book without calling?",
+              "a": "Yes. Use the online booking link on our contact page to pick a time."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Tell Us What's Happening. Call (316) 613-4400",
+          "text": "Tell us what's happening and where you are, and we'll send one of our electricians to find the cause. Enegren Electric, 3815 S Midco St, Wichita."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/electrical-repair-wichita-ks/",
+      "navLabel": "Electrical Repair",
+      "keyword": "electrical repair wichita ks",
+      "seo": {
+        "title": "Electrical Repair in Wichita, KS | Enegren Electric",
+        "description": "Tripping breakers, warm outlets and dead circuits in Wichita. Enegren Electric finds the cause and gives you options. Call (316) 613-4400."
+      },
+      "hero": {
+        "eyebrow": "Electrical repair · Homes and businesses",
+        "h1": "Electrical Repair in Wichita, KS — Enegren Electric",
+        "sub": "Tripped breakers, rooms with no power, and problems you have put up with for years. Call (316) 613-4400.",
+        "primaryCta": {
+          "label": "Call (316) 613-4400",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "outlet-repair",
+          "alt": "Electrician replacing a worn outlet in a Wichita home",
+          "brief": "electrical pool: outlet-repair"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "These folks came to the rescue and were able to get my services restored in a flash.",
+          "name": "Todd K."
+        },
+        {
+          "type": "split",
+          "heading": "Lights Out in Both Bathrooms",
+          "imageSide": "right",
+          "body": [
+            "Sean C. lost power in both of his bathrooms. Enegren showed up, troubleshot all of the electrical issues, fixed the problem and cleaned up after the work."
+          ],
+          "image": {
+            "slot": "inspection",
+            "alt": "Electrician checking wiring at an open electrical panel",
+            "brief": "electrical pool: inspection"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "The electrician, Tylor, was responsible in conducting a detailed inspection to eliminate a tripped circuit breaker situation. He successfully identified the problem which caused the short circuit and corrected the faulty wiring problem.",
+          "name": "Save T."
+        },
+        {
+          "type": "prose",
+          "heading": "A Lightning Strike Call, and the Surge Protector After It",
+          "body": [
+            "Shawn C. called about a lightning strike and the electrical damage it did. He wrote that the price was fair and that Marcus does a great job with the work.",
+            "Trevor installed a whole house surge protector for the customer who wrote below."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They explained what must have happened, how to fix it, and what we could do to prevent if from happening again.",
+          "name": "Robin A."
+        },
+        {
+          "type": "prose",
+          "heading": "A Kitchen Exhaust, a Damper and a Delicate Issue",
+          "body": [
+            "3hhutchis wrote that Marcus wired their kitchen exhaust and make up air system, and resolved an issue they had with a damper. They called it a great experience and outcome.",
+            "Marybeth L. and her family had trouble with what she called a delicate issue. She wrote that Marcus was exceptionally intelligent with their problem, and that when he left everything was taken care of very professionally."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Marcus was the only one to figure out that we didn't have the right equipment for our bathroom heater and exhaust. … Installation was thorough and clean up was great.",
+          "name": "Tina A."
+        },
+        {
+          "type": "prose",
+          "heading": "Right to the Problem, and the Next One Too",
+          "body": [
+            "Bob G. wrote that our guys always get right to the problem and fix it. JD H. wrote that we got right to work, finished very quickly and checked another problem without hesitation."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Enegrwn came out the same day and fixed my immediate problem and is scheduled to come out on Monday to bid the larger systemic issue. I was thrilled they came out the same day.",
+          "name": "Shannon R."
+        },
+        {
+          "type": "prose",
+          "heading": "A Tenant Who Had the Repair Visit Herself",
+          "body": [
+            "Rosalie G. was the tenant at her address and had the repair visit herself. She wrote that the tech explained everything that needed fixing and was very efficient. Sadie B. wrote that we were quick to come out and get the job done, at fair prices."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Marcus was wonderful. He replaced the transformer, troubleshot my existing chimes and old doorbell.  Fixed a problem i have been living with for years!",
+          "name": "Vanessa B."
+        },
+        {
+          "type": "review",
+          "quote": "Derek identified the problem immediately, and was polite and efficient! We will absolutely be using Enegren in the future (the price was also very reasonable).",
+          "name": "Courtney S."
+        },
+        {
+          "type": "review",
+          "quote": "Marcus was quick to locate the problem and was quick to fix the problem. He was very professional and the cost was very fair.",
+          "name": "Jeffrey F."
+        },
+        {
+          "type": "prose",
+          "heading": "Holly D. Saw Two Electricians Come and Go Politely",
+          "body": [
+            "Holly D. wrote that Marcus and Trevor were kind, respectful and polite, and that they did their job and left.",
+            "Alex Z. wrote that Marcus is quick and efficient. Anita W. called Derek polite, knowledgeable and efficient, and Everetta A. called us fast, friendly and affordable."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "If the Repair Points at Your Breaker Box",
+          "body": [
+            "Some repairs lead to the panel. The [electrical panel upgrade](/electrical-panel-upgrade-wichita-ks/) page covers those jobs."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "What Do I Say if It's One Dead Room or a Tripped Breaker?",
+          "items": [
+            {
+              "q": "Can you inspect the wiring before I decide on a repair?",
+              "a": "Yes. Home electrical inspections are part of what we do. Call and tell us what you want looked at."
+            },
+            {
+              "q": "Do you handle repairs for businesses?",
+              "a": "Yes. Commercial electrical troubleshooting and repairs, and electrical maintenance, are part of the work."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Tell Us What You're Seeing",
+          "text": "Call (316) 613-4400. Tell us what trips, what has gone dark and where in the house it is."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/electrical-panel-upgrade-wichita-ks/",
+      "navLabel": "Electrical Panel Upgrade",
+      "keyword": "electrical panel upgrade wichita ks",
+      "seo": {
+        "title": "Electrical Panel Upgrade in Wichita, KS | Enegren Electric",
+        "description": "Old, full or undersized breaker box? Enegren Electric replaces panels for Wichita homes and businesses and lays out your options. Call (316) 613-4400."
+      },
+      "hero": {
+        "eyebrow": "Electrical service upgrades · Homes and businesses",
+        "h1": "Electrical Panel Upgrade in Wichita, KS — Enegren Electric",
+        "sub": "Bryan J. had an old small breaker box swapped for a much bigger one, and Kyle P.'s was changed out in one afternoon. We look at yours, explain what we see and give you options. Call (316) 613-4400.",
+        "primaryCta": {
+          "label": "Call (316) 613-4400",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Get a Free Quote",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "panel-upgrade",
+          "alt": "Open electrical breaker panel with labeled circuits",
+          "brief": "electrical pool: panel-upgrade"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Marcus and his team helped me by changing out an old small breaker box and got a much bigger much safer box installed! high recommend !!",
+          "name": "Bryan J."
+        },
+        {
+          "type": "split",
+          "heading": "A Kitchen Circuit and GFCI Breakers",
+          "imageSide": "right",
+          "body": [
+            "Andres M. had Broc and Steven come to his home to replace several standard circuit breakers with GFCI breakers, add a circuit to better distribute the load in his kitchen, and install a couple of GFCI outlets in other areas of the house.",
+            "He described both as friendly, courteous, neat and professional. They kept him informed of the challenges they ran into, explained what they were doing and made sure the job was completed properly. What impressed him most was their attitude and work ethic, and he wrote that Marcus, the owner, conducts himself with great professionalism."
+          ],
+          "image": {
+            "slot": "ev-charger",
+            "alt": "Electric vehicle charger mounted on a garage wall beside a parked car",
+            "brief": "electrical pool: ev-charger"
+          }
+        },
+        {
+          "type": "prose",
+          "heading": "A Panel and Meter Changed Out in a Day",
+          "body": [
+            "Shaun M.'s job came with obstacles. Derek and the crew came in on a Friday and still did a complete panel and meter change out by the end of the day, getting his family back in the house.",
+            "He wrote that Derek and Marcus communicated clearly, that everyone on the job was professional and pleasant, and that the quality of the work looks great. He plans to call Enegren again for new RV electrical."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They came out and gave me an estimate, gave me multiple options to choose from. They explained everything perfectly, patched up the wall for me, labeled my panel, and I couldn't be happier.",
+          "name": "Nathan R."
+        },
+        {
+          "type": "prose",
+          "heading": "Efficient, Affordable and Cleaned Up",
+          "body": [
+            "John D. wrote that Marcus and his team were efficient and affordable, and that they cleaned up the mess after the job was done. Jim V. wrote that our pricing is very competitive and that we were timely and professional.",
+            "Steve L. called us reasonably priced and very nice, and said we explained everything in a way he and his wife could understand."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Marcus was prompt, efficient and got our electrical box changed out in one afternoon.",
+          "name": "Kyle P."
+        },
+        {
+          "type": "prose",
+          "heading": "A Property Manager Who Keeps Calling",
+          "body": [
+            "Tyler H. manages properties and wrote that Marcus and Enegren Electric continue to show up on time."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Marcus and Enegren Electric continue to show up on time and perform extremely great electrical work for the properties that I manage.",
+          "name": "Tyler H."
+        },
+        {
+          "type": "review",
+          "quote": "Trevor was friendly and professional and explained the way they charge for services, no surprises at the end.",
+          "name": "Brenda B."
+        },
+        {
+          "type": "prose",
+          "heading": "Information and Guidance Along the Way",
+          "body": [
+            "Diane H. wrote that she received the work promised plus extra, and appreciated all the information and guidance. Dennis R. wrote that Trevor knew what to do, how to get it done, and completed the job efficiently.",
+            "Linda H. called our people very professional and knowledgeable, and said she will call again when she has an electrical need. Lora P. called us very efficient, friendly and knowledgeable. Rosemary C. and Paula B. each called us very professional, and Paula added that the work is excellent. Tyler S. wrote that Marcus and his team are truly experts and that he fully trusts them to provide excellent work."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "A Panel and Meter in One Day: What Will Yours Take?",
+          "items": [
+            {
+              "q": "What will a panel upgrade cost?",
+              "a": "It depends on what we find, so we won't guess at a number here. Nathan R. wrote that he got an estimate with multiple options to choose from. Call and tell us what you have."
+            },
+            {
+              "q": "Can you inspect my electrical before I decide?",
+              "a": "Yes. Home electrical inspections are part of what we do, so your panel and wiring can be looked at before you decide anything. Tell us what you would like checked."
+            },
+            {
+              "q": "Do you replace panels for businesses?",
+              "a": "Yes. We do electrical panel service upgrades for commercial buildings as well as homes."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Tell Us What Your Panel Looks Like",
+          "text": "Call (316) 613-4400. Tell us what your panel looks like and what you want to add."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact enegren electric wichita ks",
+      "seo": {
+        "title": "Contact Enegren Electric | Wichita, KS",
+        "description": "Call Enegren Electric at (316) 613-4400, book online or request a quote. West Wichita, serving Derby, Haysville, Newton and more."
+      },
+      "hero": {
+        "eyebrow": "Contact Enegren Electric",
+        "h1": "Contact Enegren Electric in Wichita, KS",
+        "sub": "The fastest way to reach us is to call. Tell us what's going on and one of our electricians will help you from there.",
+        "primaryCta": {
+          "label": "Call (316) 613-4400",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Enegren Electric service van parked outside a Wichita home",
+          "brief": "electrical pool: contact-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Tell Us What's Going On and Where You Are",
+          "body": [
+            "(316) 613-4400",
+            "We'll ask where you are and what's happening, then tell you when we can get someone there."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Not a Good Time to Talk?",
+          "body": [
+            "[Book a time online](https://book.housecallpro.com/book/Enegren-Electric/64d6b72fb3114112871444e220f167be?v2=true), or email msaucedo@enegrenelectric.com with your name, phone number, address, whether it's a home or a business, and a short description."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "What Tripped, What's Warm, Where It Is",
+          "imageSide": "right",
+          "image": {
+            "slot": "outlet-repair",
+            "alt": "Wall outlet and light switch in a Wichita home",
+            "brief": "electrical pool: outlet-repair"
+          },
+          "list": [
+            "What you're seeing: what trips, what's warm, what's not working, or what you want installed",
+            "Where in the house or building it is",
+            "The address where the work is",
+            "Whether it's a home or a business"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "3815 S Midco St, and 15 Towns Around It",
+          "body": [
+            "**Address.** 3815 S Midco St, Wichita, KS 67215, in West Wichita.",
+            "**Area.** We serve Wichita, Derby, Haysville, Newton, Goddard, Andover, Cheney, Garden Plain, Maize, Valley Center, Park City, Kechi, Bel Aire, Clearwater, Colwich, Andale and the communities nearby."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Enegren Electric",
+          "text": "Tell us what's happening and where you are. We'll help from there."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Enegren Electric is a family-owned electrical company in West Wichita. Marcus, Trevor, Tyler and the team do residential and commercial electrical work, from repairs and lighting to panel upgrades and new construction.",
+    "why": [
+      "Family-owned, based in West Wichita",
+      "Cause found and explained first",
+      "We clean up after the job"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your homepage headline, “Wichita Residential & Commercial Electricians,” and the Get a Free Quote button are both hidden on the live site. The first screen shows a team photo and a menu, and nothing that says what you do.",
+      "Your Google reviews say the same thing about Marcus, Trevor, Tyler and Derek: they find the cause, explain it and give options. Michael K.: “explained every step of his work, gave me options, and let me choose.” Your site shows no reviews at all.",
+      "So the demo opens with Electrician in Wichita, KS, leads with that visit, and gives electrical repair and panel upgrades a page each. Today both live inside one bullet list."
+    ],
+    "cardsHeading": "Be the Electrician People Find on Google",
+    "cardsIntro": "Each card is one page of the demo.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your headline is hidden on the live site, so Google and visitors see no words about what you do or where.",
+          "Your four pages show none of the reviews on your Google profile."
+        ],
+        "fixes": [
+          "A headline that says Electrician in Wichita, KS, right at the top.",
+          "Your best reviews next to the people they praise."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. From that we plan how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/electrical-repair-wichita-ks/",
+        "title": "Electrical Repair",
+        "why": "When a breaker won't stay on or an outlet is warm, people call the first electrician they find.",
+        "problems": [
+          "Repairs are one bullet, “Residential electrical repairs and maintenance,” so “electrical repair Wichita KS” has no page built for it.",
+          "Your service pages have no phone number and no form."
+        ],
+        "fixes": [
+          "A page for electrical repair in Wichita, KS, covering breakers, warm outlets and power loss.",
+          "Your number and a way to request a quote on the page."
+        ]
+      },
+      {
+        "route": "/electrical-panel-upgrade-wichita-ks/",
+        "title": "Electrical Panel Upgrade",
+        "why": "The big job, and the one where people want to know they're being told the truth.",
+        "problems": [
+          "Panel work shows up as “Electrical service upgrades,” one line in a list.",
+          "Someone searching “Wichita panel upgrade electrician” has no page to land on."
+        ],
+        "fixes": [
+          "A page for electrical panel upgrades in Wichita, KS, with the signs, the steps and the options.",
+          "The same plain-words promise as the repair page."
+        ],
+        "alsoAdd": "EV Charger Installation and Backup Generator pages, each built for its own search."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with a warm outlet decides to call.",
+        "problems": [
+          "Your /contact/ address returns a “Page not found.”",
+          "The only form sits at the bottom of the homepage, and it says “we will be touch.”"
+        ],
+        "fixes": [
+          "One contact page with your number, address and booking path together.",
+          "Plain instructions on what to have ready."
+        ]
+      }
+    ],
+    "reportCardHeading": "What great electrician websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Reviews on the site",
+        "status": "Missing"
+      },
+      {
+        "label": "A phone number and a form on every page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Online booking",
+        "status": "Good"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your homepage says you've done business in Kansas since 1989, while one reviewer calls this branch of Enegren “newer,” so which founding story should every listing tell?",
+        "Your site title says “Licensed Electrician” and the van in your gallery photo shows license number 10825, but we found no public Sedgwick County lookup to match it, so which license name and number should every listing show?",
+        "Your site lists no hours and Google shows only “Closes 5 PM” for today, so what are your weekly hours, and does anyone answer after hours?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with cause first, then your choice",
+      "text": "Google can find “licensed, honest, family-owned” on any electrician’s site. It can’t find what your customers wrote: Michael K. said Trevor “explained every step of his work, gave me options, and let me choose.” A lead built on real reviews like that gives Google something only Enegren has.",
+      "showScores": true,
+      "rows": [
+        {
+          "claim": "Finds the cause, explains it in plain words, gives options and lets you choose",
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
+        },
+        {
+          "claim": "Sends the electrician's name and photo before the visit",
+          "score": 12,
+          "appeal": 4,
+          "exclusivity": 3
+        },
+        {
+          "claim": "Explains the cause of a lightning strike and how to prevent the next one",
+          "score": 12,
+          "appeal": 4,
+          "exclusivity": 3
+        }
+      ]
+    }
+  }
+}

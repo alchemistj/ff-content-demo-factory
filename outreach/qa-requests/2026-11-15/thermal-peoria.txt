@@ -1,0 +1,38 @@
+QA REQUEST: thermal-peoria (peoria-hvac/thermal)
+
+Preview (not live yet; becomes https://thermal-peoria.websitepreview.fluidframemarketing.com/ after merge):
+- Strategy page: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/
+- /home/: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/home/
+- /ac-repair-peoria-il/: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/ac-repair-peoria-il/
+- /contact/: https://ff-astro-demos-muezeje6b-josh-lenzs-projects.vercel.app/__ff-preview/thermal-peoria/contact/
+
+Source and facts (the only allowed source of claims):
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-hvac/thermal/facts.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-hvac/thermal/reviews.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-hvac/thermal/audit.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-hvac/thermal/words.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-hvac/thermal/usp.md
+
+Outreach message (route: - **Contact form:** https://www.tsipeoria.com/contact-us):
+---
+Hey Thermal Services team,
+
+A few of your reviews describe a call that couldn't wait. One customer called at 10 PM, and the person who answered talked them through a few things to try, and flipping a switch fixed it. We build websites for service businesses, so we made you a mockup built around it:
+
+https://thermal-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
+
+Note: It'll look a lot better with your logo and images on it! Lol
+
+The preview walks through why each page is built the way it is. One thing we'd fix: your homepage headline and page title say "Central Illinois" and never name Peoria, so someone searching for an HVAC company in Peoria has little to match.
+
+We built your homepage and your AC repair page as examples, and we'd love to build the rest.
+
+How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
+
+Josh
+Fluid Frame Marketing
+---
+
+Please check on phone and desktop, then reply PASS or a MUST FIX list.

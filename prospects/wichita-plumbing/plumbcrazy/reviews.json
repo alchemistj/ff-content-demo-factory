@@ -1,0 +1,729 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "plumbcrazy-wichita",
+  "place": {
+    "name": "Plumb Crazy",
+    "placeId": "ChIJ7ye8perhuocRcx4ydI15DXk",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Plumb%20Crazy&query_place_id=ChIJ7ye8perhuocRcx4ydI15DXk",
+    "address": "836 S Broadview St, Wichita, KS 67218",
+    "phone": "(316) 871-3006",
+    "rating": 4.7,
+    "totalReviewCount": 75
+  },
+  "pulledAt": "2026-11-13T21:12:22.995Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201WFUzUnlZMHhSZW1SelUxcERNMnBFVTIxYVkyYxAB",
+      "reviewer": "Matt B.",
+      "rating": 5,
+      "text": "Fantastic same day service, even on a non-emergent repair. Went the extra mile on the repair and explained how I could do it myself next time. He'll be the only call going forward.",
+      "publishedAt": "2026-09-21T19:08:28.057Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201WFUzUnlZMHhSZW1SelUxcERNMnBFVTIxYVkyYxAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOm5XU3RyY0xRemRzU1pDM2pEU21aY2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xCeWFsRTBTSE5qTTNSTmJ6VlRVbHAxV210RVFsRRAB",
+      "reviewer": "Don G.",
+      "rating": 5,
+      "text": "I had three different companies quote me for a new sanitary sewer line. Brandon came in at the best price (by far) and also had the best idea on how to do the job. His crew was very professional and efficient. I strongly (very strongly!) suggest you get him to look at your situation before hiring someone",
+      "publishedAt": "2026-08-21T22:17:53.451Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xCeWFsRTBTSE5qTTNSTmJ6VlRVbHAxV210RVFsRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOlByalE0SHNjM3RNbzVTUlp1WmtEQlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21abVdIRlNibUZJVDBrMkxWbHhORmw2ZEZORVlrRRAB",
+      "reviewer": "Tricia W.",
+      "rating": 5,
+      "text": "I have used Brandon for several years. He does a great job, and is fairly priced. He is also available to take a look at most jobs with in 24 hours.",
+      "publishedAt": "2026-05-05T18:55:37.471Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21abVdIRlNibUZJVDBrMkxWbHhORmw2ZEZORVlrRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOmZmWHFSbmFIT0k2LVlxNFl6dFNEYkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaNU1raERUMnRCUm01ak5EaFJNRVZWU2xoZk5rRRAB",
+      "reviewer": "Christy F.",
+      "rating": 5,
+      "text": "In the real estate business, my team deals with a lot of contractors. Brandon has been one of stand out contractors that we've met in the last several months. He is where he says he will be when he says he will be there, he communicates clearly and frequently, he's extremely reasonably priced, and he always has customer service top of mind. He has saved us at the last minute on several transactions recently when others have let us down or just not taken the job seriously. 10/10 would use this contractor over and over again!",
+      "publishedAt": "2026-05-04T18:45:35.220Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaNU1raERUMnRCUm01ak5EaFJNRVZWU2xoZk5rRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOlZ5MkhDT2tBRm5jNDhRMEVVSlhfNkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sRGRTMVZYMkpPTVMxU2NGQlROMjR5V0ZwWGFrRRAB",
+      "reviewer": "Michele",
+      "rating": 5,
+      "text": "Recently hired this Plumber and couldn’t be more satisfied with the experience. They arrived on time, were professional and courteous, and clearly explained the issue before starting any work. The repair was done efficiently, and a fair price, with no surprises. They also made sure everything was clean and working perfectly before leaving. It’s not easy to find someone this reliable and honest these days – highly recommend!",
+      "publishedAt": "2026-05-04T15:46:28.194Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sRGRTMVZYMkpPTVMxU2NGQlROMjR5V0ZwWGFrRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOnlDdS1VX2JOMS1ScFBTN24yWFpXakE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xka2IwMVNhMjh0UlZGSWRsRmpRa2w2WW5kUmJuYxAB",
+      "reviewer": "Amy M.",
+      "rating": 5,
+      "text": "Prompt, fair, courteous. Will be calling them back to do the plumbing work on my house.",
+      "publishedAt": "2026-04-23T15:12:55.712Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xka2IwMVNhMjh0UlZGSWRsRmpRa2w2WW5kUmJuYxAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOldkb01Sa28tRVFIdlFjQkl6YndRbnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pORGRsWkhlblF0UVMxUk9GQTVTa3hvTXpOemEyYxAB",
+      "reviewer": "Gale T.",
+      "rating": 5,
+      "text": "Brandon of Plumb Crazy of Cheney Kansas is one of the nicest guys and treats his customers with the most respect. His pricing is very reasonable and hard to beat. He is very busy because is customers are treated so well. He is old school and gives you a hand shake when he leaves. You won't be disappointed.",
+      "publishedAt": "2026-03-12T12:28:12.146Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pORGRsWkhlblF0UVMxUk9GQTVTa3hvTXpOemEyYxAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOjNDdlZHenQtQS1ROFA5SkxoMzNza2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GclZGaHpkblp5Vm5kNmRWOXBSMlZRTVhkVllsRRAB",
+      "reviewer": "Brandon Y.",
+      "rating": 5,
+      "text": "I originally thought I was going to have to replace my water heater and Brandon fixed my water heater for a fraction of the cost in no time at all. He also improved the water pressure in my shower, gave me a free drain seal, and advice for free. He’ll go the extra mile without nickle and dime’ing you. He’s got my business for the future!",
+      "publishedAt": "2026-01-19T19:16:48.395Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GclZGaHpkblp5Vm5kNmRWOXBSMlZRTVhkVllsRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOnFrVFhzdnZyVnd6dV9pR2VQMXdVYlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGVGVIQlNiV3hHVEdwTFVWTXRVbTVEWlZBMk1VRRAB",
+      "reviewer": "Joe K.",
+      "rating": 5,
+      "text": "He's my go-to. Great.",
+      "publishedAt": "2025-12-30T14:57:27.296Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pGVGVIQlNiV3hHVEdwTFVWTXRVbTVEWlZBMk1VRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOjFTeHBSbWxGTGpLUVMtUm5DZVA2MUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21OZmQyRkJaWGhVVFZkb1RHWjZPVVpNV2pKZlVVRRAB",
+      "reviewer": "David D.",
+      "rating": 5,
+      "text": "Excellent service and very friendly and well mannered.",
+      "publishedAt": "2025-12-15T16:41:50.307Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OZmQyRkJaWGhVVFZkb1RHWjZPVVpNV2pKZlVVRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOmNfd2FBZXhUTVdoTGZ6OUZMWjJfUUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xScE1tOUpXazh5YVhsWlFuQktXbUpoU25SaGIzYxAB",
+      "reviewer": "Michael W.",
+      "rating": 5,
+      "text": "I am quick to complain and quick to give praise. As someone in the service business, I can't recommend Brandon at Plumb Crazy enough. Answered a call on a Sunday. Was by the house and done on Monday before Noon. Super professional and experienced. Fairly priced. Brandon will have my loyalty moving forward! And should have yours too!",
+      "publishedAt": "2025-12-08T17:49:48.450Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xScE1tOUpXazh5YVhsWlFuQktXbUpoU25SaGIzYxAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CAIQACodChtycF9oOlRpMm9JWk8yaXlZQnBKWmJhSnRhb3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VMZU05S2pab3UtckVBEAE",
+      "reviewer": "Ines M.",
+      "rating": 5,
+      "text": "First time using.  Brandon was quick at figuring out the problem and very friendly. Will definitely use him in the future.",
+      "publishedAt": "2025-05-29T16:10:22.756Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VMZU05S2pab3UtckVBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKELeM9KjZou-rEA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJYnBwX1RJZ1pEdzVRRRAB",
+      "reviewer": "A.W. W.",
+      "rating": 5,
+      "text": "Fixed our toilet which had major issues. Very nice and personable. Where other companies would have raked me over the coals, Brandon did excellent and timely work and at a lower cost. When it comes to families and their toilets, he gives a crap. Would definitely recommend and will use again.",
+      "publishedAt": "2025-05-27T18:53:06.874Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJYnBwX1RJZ1pEdzVRRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEIbpp_TIgZDw5QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VLX282UFRFeGZ1NFhBEAE",
+      "reviewer": "Troy T.",
+      "rating": 5,
+      "text": "Absolute best plumbing company I've worked with. Came in, assessed the job, and completed on time and at a very competitive price. Great to talk to as well as they took the time to explain the options for me. I'll be a repeat customer going forward.",
+      "publishedAt": "2025-05-09T17:09:07.855Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VLX282UFRFeGZ1NFhBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEK_o6PTExfu4XA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTURnN2JmVTBBRRAB",
+      "reviewer": "Lauren N.",
+      "rating": 5,
+      "text": "Brandon did an awesome job! He was so polite and helpful despite having to work on the coldest day of the year",
+      "publishedAt": "2025-02-26T17:45:15.629Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTURnN2JmVTBBRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgMDg7bfU0AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNnMHVfSzdnRRAB",
+      "reviewer": "Vanessa F.",
+      "rating": 5,
+      "text": "Great to work ; timely, reliable, and trustworthy. Another company told me I had to pay thousand of dollars to fix the sewer line, \"had to be done.\" Brandon to the rescue. He came and found an alternative solution that was affordable.",
+      "publishedAt": "2025-02-15T16:43:13.197Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNnMHVfSzdnRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgMCg0u_K7gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNBZzd6OFN3EAE",
+      "reviewer": "Paul",
+      "rating": 5,
+      "text": "Brandon and his son were prompt, courteous, and professional. Cleanest install I've ever seen. Exceptional service and at a very reasonable rate. I recommend Plumb Crazy with the highest possible regards.",
+      "publishedAt": "2025-02-03T15:57:04.739Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNBZzd6OFN3EAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgMCAg7z8Sw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNBaXZhS25BRRAB",
+      "reviewer": "Brian N.",
+      "rating": 5,
+      "text": "Called them for a clogged main line due to tree roots. They were quick, professional, and very reasonably priced.<br>I'll absolutely call them again in the future for all our plumbing needs!",
+      "publishedAt": "2025-01-30T19:32:54.555Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnTUNBaXZhS25BRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgMCAivaKnAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURfNElpZkRBEAE",
+      "reviewer": "Dustin B.",
+      "rating": 5,
+      "text": "Brandon was super nice, attentive, fast and fair priced. I will continue to use him for any plumbing needs.",
+      "publishedAt": "2025-01-20T17:30:26.776Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURfNElpZkRBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgID_4IifDA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURmMWFhVFNBEAE",
+      "reviewer": "Mark A.",
+      "rating": 5,
+      "text": "Brandon has been our plumber for a long time.  He is always reliable, does a great job, easily answers any questions you have.  He makes sure his work is done and done properly every time.  I just can't say enough good things about him.",
+      "publishedAt": "2025-01-08T21:01:07.857Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmMWFhVFNBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDf1aaTSA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VOcU85OXpLekt5dTl3RRAB",
+      "reviewer": "Eric W.",
+      "rating": 5,
+      "text": "He did a great job and it was very affordable.  I would definitely recommend them to everyone. 👍👍",
+      "publishedAt": "2025-01-06T17:50:39.528Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VOcU85OXpLekt5dTl3RRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKENqO99zKzKyu9wE%7C%7C?hl=en-US"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmcVBLUXB3RRAB",
+      "reviewer": "Marty B.",
+      "rating": 5,
+      "text": "Have been using Brandon for over 10 years on my own home and rentals I own and manage.  His prices are great and have never had a complaint. I use him most for sewer blockages, sewer line replacements and water heater installs, but he's done anything plumbing related for us.  He always gets to our jobs in a timely manner and does a good job! Highly recommended!",
+      "publishedAt": "2025-01-03T17:17:53.905Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURmcVBLUXB3RRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDfqPKQpwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURmcU5TbElBEAE",
+      "reviewer": "Cindy M.",
+      "rating": 5,
+      "text": "We have used Plumb Crazy several times for sewer line clean out, as well as leaking under the sink. He always gives us good advice and prompt service. Bonus:  He always gave our little dog attention!",
+      "publishedAt": "2025-01-03T17:13:16.303Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURmcU5TbElBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDfqNSlIA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2X0xfaW53RRAB",
+      "reviewer": "Derby L.",
+      "rating": 5,
+      "text": "1000% recommended!! So far he has done for us: gas line connection, toilet replacement, water heater installation, and sewer cleaning! And every single time, Brandon completed the job in a timely manner, his prices are fair, and he does an amazing job!",
+      "publishedAt": "2024-12-18T17:45:40.363Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2X0xfaW53RRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDv_L_inwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2b0pya19nRRAB",
+      "reviewer": "Anthony M.",
+      "rating": 5,
+      "text": "Helped me move some drains in concrete. installed new waterlines and plumbing for my basement bathroom and did a amazing job at a really affordable price. Would recommend.",
+      "publishedAt": "2024-12-16T15:01:25.359Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUR2b0pya19nRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDvoJrk_gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMzb0xmdWhnRRAB",
+      "reviewer": "Alia H.",
+      "rating": 1,
+      "text": "Very rude. Hung up in my face.",
+      "publishedAt": "2024-11-01T20:38:15.204Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMzb0xmdWhnRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIC3oLfuhgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM3eE1tejhRRRAB",
+      "reviewer": "Samuel M.",
+      "rating": 5,
+      "text": "Never have I ever had a better experience with a tradesman than I have with Brandon at Plumb Crazy. Every time I've called him, he's been prompt to respond. He's always been able to quickly fix my plumbing problems, the work is great, and he always comes in at or under budget. I trust him to be fair and honest. I won't call any other plumber.",
+      "publishedAt": "2024-08-12T15:54:26.007Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM3eE1tejhRRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIC7xMmz8QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNydi0ySEtnEAE",
+      "reviewer": "Travis M.",
+      "rating": 5,
+      "text": "Showed up bright and early. Both the plumber and his assistant showed great respect and rapport. To myself as well as my doggo. Diagnosed and fixed the problem super quick and I'm on with my day. Absolutely recommend.",
+      "publishedAt": "2024-07-12T14:25:17.308Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNydi0ySEtnEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICrv-2HKg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURqcGRpTExBEAE",
+      "reviewer": "Anthony B.",
+      "rating": 1,
+      "text": "Disrespectful as soon as he walked in to the time he quit the job even called me out into my front lawn wanting to fight me",
+      "publishedAt": "2024-05-05T14:43:54.453Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURqcGRpTExBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDjpdiLLA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNqOHJ6UkJnEAE",
+      "reviewer": "Gwendolyn G.",
+      "rating": 5,
+      "text": "I had a bust in my main water line and Brandon and his team was able to fix it with ease and taught me a few things as well. :) Very professional, courteous and a better price than other quotes in the market. Yaye for running water again. Thank you Plumb Crazy team!",
+      "publishedAt": "2024-04-19T20:21:19.196Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNqOHJ6UkJnEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICj8rzRBg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUREc1lyaXZRRRAB",
+      "reviewer": "Camryn G.",
+      "rating": 5,
+      "text": "Excellent service; came right out and cleaned out a clog in an hour. Also gave some good advice to avoid it happening in the future and some information to do it myself next time! All for a really good price! Will call again if needed.",
+      "publishedAt": "2024-04-11T00:42:31.910Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUREc1lyaXZRRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDDsYrivQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR0MDhlNEt3EAE",
+      "reviewer": "Justin H.",
+      "rating": 5,
+      "text": "Couldn't ask for more. Prompt, efficient, friendly, and 30% less expensive than everywhere else. No need to look further.",
+      "publishedAt": "2024-02-06T20:57:15.928Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR0MDhlNEt3EAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDt08e4Kw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMxMHN1Z2NnEAE",
+      "reviewer": "Monisa F.",
+      "rating": 5,
+      "text": "Plumb Crazy did a great job unclogging a partially clogged drain in my kitchen. Brandon and Zach were friendly, courteous, professional and very knowledgeable. They made sure the clog was completely open before putting all the pipes back together and cleaned up any mess completely. Their prices were very fair and reasonable. I would highly recommend them.",
+      "publishedAt": "2023-12-26T20:06:59.391Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUMxMHN1Z2NnEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIC10sugcg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURWaTQ2S0dBEAE",
+      "reviewer": "Cassie R.",
+      "rating": 1,
+      "text": "I was referred to this company and I contacted them through the website for an appointment, through the phone by calling and leaving texts and NOTHING.<br>If you need services whether emergency or something that could wait a day, definitely use other local plumbers who'd answer your calls and requests quickly.",
+      "publishedAt": "2023-12-16T00:11:14.061Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURWaTQ2S0dBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDVi46KGA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURsXzhxVGV3EAE",
+      "reviewer": "Yoon R.",
+      "rating": 5,
+      "text": "My main sewer line in the basement got clogged up due to tree roots.  Found his number on the website and called him. He gave me a flat price(very good price, compared to other businesses) and came out within an hour and got the drain unclogged even use the camera to show me what was going on inside the sewer line without any extra charge. Thank you again Brandon and team.",
+      "publishedAt": "2023-12-04T19:06:22.335Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURsXzhxVGV3EAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDl_8qTew%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN4dE9Yd3JBRRAB",
+      "reviewer": "Crystal F.",
+      "rating": 5,
+      "text": "I was very pleased with the results. I called in a panic because our sump pump wasn’t working and that is a bad thing at my house. Brandon was on another assignment but he took my call and returned it later. He made time to come by to see what could be done. He was back early the next morning and installed a new sump pump in record time. Very reasonably priced and I was very impressed when he said he had checked the forecast and knew I couldn’t wait through the weekend. I will definitely use Plumb Crazy again!!  Thanks so much!",
+      "publishedAt": "2023-05-11T16:41:16.323Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4dE9Yd3JBRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICxtOXwrAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNCaUtlRUN3EAE",
+      "reviewer": "Manieca M.",
+      "rating": 5,
+      "text": "Being a first time homeowner is tough! But Brandon and his son were amazing to say the least. Answered my call right away and were at my door within the hour… they weren’t too pushy about my decision and even gave me good advice about other questions I had about my home. I will be sure to recommend them to everyone I know",
+      "publishedAt": "2022-12-15T17:11:30.005Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCaUtlRUN3EAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICBiKeECw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURldmJPLTJnRRAB",
+      "reviewer": "R B.",
+      "rating": 5,
+      "text": "Prompt response and extremely courteous, would highly recommend their service.",
+      "publishedAt": "2022-10-17T16:11:46.770Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURldmJPLTJnRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDevbO-2gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURtNExUWENBEAE",
+      "reviewer": "Carl F.",
+      "rating": 5,
+      "text": "I called on a Saturday with a problem with my water heater.  Working thru text message, they determined that my gas valve needed to be reset, and texted instructions on how to do that myself, saving me the cost of a visit.  I could not be more appreciative.  Will be using them for any future plumbing needs.  Thank you.",
+      "publishedAt": "2022-01-15T18:42:26.573Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURtNExUWENBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDm4LTXCA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLbVAyYnpnRRAB",
+      "reviewer": "Justin B.",
+      "rating": 5,
+      "text": "Definitely was good. They fit us in and was nice neat and was way better priced then any other in will for sure recommend to anyone.",
+      "publishedAt": "2021-03-27T08:10:19.481Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLbVAyYnpnRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICKmP2bzgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNTa29HbWp3RRAB",
+      "reviewer": "Trish C.",
+      "rating": 5,
+      "text": "He came out to take of a problem with our line last week. He was prompt and courteous and made quick work of fixing the problems. Highly recommend if you need plumbing help.",
+      "publishedAt": "2020-12-15T17:53:26.831Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNTa29HbWp3RRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICSkoGmjwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURpeGNlZ1BREAE",
+      "reviewer": "Hart J.",
+      "rating": 5,
+      "text": "He came out immediately to assist me and my family. He was very kind and asked questions before he started to insure the correct procedure is done to fix the issue. He worked quick and completed the job flawlessly, insuring everything worked. The price for the job was very well priced and will definitely use again if any plumbing jobs are needed at my house. Thank you again!",
+      "publishedAt": "2020-12-09T22:45:24.268Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURpeGNlZ1BREAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDixcegPQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURpck5ibnlRRRAB",
+      "reviewer": "Marcee L.",
+      "rating": 5,
+      "text": "When our tank water heater went out I called around to get quotes for converting to a tankless system. Brandon was super responsive and honest about the pros and cons compared to a tank system. He ended up quoting quite a bit less than some of the others I called and got it installed quickly. I will definitely keep his info handy for any future plumbing needs. Highly recommend!",
+      "publishedAt": "2020-11-27T18:10:02.996Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURpck5ibnlRRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDirNbnyQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ4amNIRm1RRRAB",
+      "reviewer": "melissa M.",
+      "rating": 5,
+      "text": "This is the only place to call when u need a plumber.They are quick,affordable,professional and very knowledgeable.",
+      "publishedAt": "2020-07-24T17:27:09.367Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ4amNIRm1RRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgID8jcHFmQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNNeGZLZ1NREAE",
+      "reviewer": "Abu F.",
+      "rating": 5,
+      "text": "Honest professional plumber. Brandon did an excellent job to clean the main drain at my house. Not only that but he also corrected bad work from previous plumber when he put the toilet back. Called Redi Rooter and they charged me $50 to come in and tell me it will cost me and arm and a leg to fix my issue. Will definitely call Brandon again for any plumbing needs and will refer him to family and friends.",
+      "publishedAt": "2019-11-27T16:43:38.188Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNNeGZLZ1NREAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICMxfKgSQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQweExUbWFBEAE",
+      "reviewer": "Randy L.",
+      "rating": 5,
+      "text": "Friendly, on time, efficient, .. Tks, Brandon !!",
+      "publishedAt": "2019-10-23T02:11:02.125Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQweExUbWFBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgID0xLTmaA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQweUpQSEFREAE",
+      "reviewer": "Michelle C.",
+      "rating": 5,
+      "text": "Very professional, fast but got the job done in a timely manner and made FAR LESS of a mess than I thought he was going to make, best part is that it DIDN'T cost me an arm and a leg to fix the problem I will DEFINITELY recommend him to others and will have hire him if I ever need anything else done in the future",
+      "publishedAt": "2019-10-20T13:39:53.420Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQweUpQSEFREAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgID0yJPHAQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNVOGUzX1J3EAE",
+      "reviewer": "Jessica M.",
+      "rating": 5,
+      "text": "Called him on a whim because we had had trouble with our dishwasher installation. Home Depot had tried to deliver twice and both times had issues so we had been without a dish washer for two months! Called Brandon so we could get a valve replaced and then reschedule our delivery.<br><br>He came over shortly after we called to replace the valve, but then offered to install the dishwasher for us too because he had some spare time. He did a great job explaining what he was doing while he was doing it also and we now have a dishwasher and don’t have to worry about the installation company anymore!",
+      "publishedAt": "2019-07-27T14:56:43.607Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVOGUzX1J3EAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICU8e3_Rw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNvaHVLVUlBEAE",
+      "reviewer": "Greg G.",
+      "rating": 5,
+      "text": "Did a great job was on time. Very friendly.",
+      "publishedAt": "2019-02-12T19:24:35.290Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNvaHVLVUlBEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICohuKUIA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBMEtLQWtnRRAB",
+      "reviewer": "Mathew B.",
+      "rating": 1,
+      "text": "Very poor customer service and ridiculously expensive. Rude employees.",
+      "publishedAt": "2018-08-17T20:41:24.035Z",
+      "ownerResponse": "Based on the location of your other reviews, I'm assuming you're trying to review Plumb Crazy Systems in Hockley, TX, or Plumb Krazy Plumbing in Center, Texas.  We're Plumb Crazy, LLC in Wichita, Kansas - not affiliated with either of the businesses mentioned. :-)",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBMEtLQWtnRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICA0KKAkgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNRcTVLZ2R3EAE",
+      "reviewer": "Ashleigh K.",
+      "rating": 5,
+      "text": "BRIAN CAME OUT AND FIXED MY BROKEN WATER LINE. CALLED HIM ON A FRIDAY AND HE CAME ON MONDAY. VERY PROFESSIONAL AND GOOD WITH WHAT HE DOES! VERY HAPPY WITH HIS WORK SO FAR!! A+++ SERVICE",
+      "publishedAt": "2018-07-24T18:41:34.823Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNRcTVLZ2R3EAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICQq5Kgdw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN3bk1TX3ZBRRAB",
+      "reviewer": "Lance A.",
+      "rating": 5,
+      "text": "Just gotta love this company name! (Wonder who came up with it?) ;)",
+      "publishedAt": "2018-05-15T02:12:39.388Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN3bk1TX3ZBRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICwnMS_vAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNnM3VPZzFRRRAB",
+      "reviewer": "Candi R.",
+      "rating": 5,
+      "text": "Called Brandon this afternoon to come look at our hot water heater that was leaking. (We saw he had great reviews online AND open until 11pm.) He was able to come right out and help us. It was a last minute call so we werent sure how much he would be able to do but he was so kind and actually replaced our hot water heater. Hes very knowledgeable and reasonably priced. Will definitely call again with any issues that may arise! Thank you!",
+      "publishedAt": "2018-04-23T23:32:28.668Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnM3VPZzFRRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICg3uOg1QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNROXNEMzB3RRAB",
+      "reviewer": "Pamela P.",
+      "rating": 5,
+      "text": "Amazing service! 2nd time I have called  Brandon. Both experiences... Friendly, prompt, respectable, polite and neat. Fixed our issues in a jiffy at a reasonable rate. I will definately use Plumb Crazy again!",
+      "publishedAt": "2017-12-31T18:51:51.911Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNROXNEMzB3RRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICQ9sD30wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURBek9iRk93EAE",
+      "reviewer": "Courtney B.",
+      "rating": 5,
+      "text": "I had some leaks in my bathtub faucet and knobs which I had been quoted some crazy prices and misinformation to get fixed from another company. Brandon was able to see that they were due to some cheap parts and bad seals and got those replace and got all the leaks stopped very quickly. Very friendly, low pressure, and very fairly priced.",
+      "publishedAt": "2017-11-14T18:45:43.789Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBek9iRk93EAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDAzObFOw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNncE5yeWlBRRAB",
+      "reviewer": "Jason G.",
+      "rating": 5,
+      "text": "Brandon is my \"go-to\" plumber for both my personal needs and the needs of my real estate clients. He always goes above and beyond, does quality work, and treats people with care and respect.",
+      "publishedAt": "2017-10-11T16:49:34.441Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNncE5yeWlBRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICgpNryiAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNRb0tPaGpnRRAB",
+      "reviewer": "Tyler L.",
+      "rating": 5,
+      "text": "Brandon did great work and was more than accommodating. I originally had him out to fix a leak in my main sewer line. While he was there he was also kind enough to look at a couple other items that came up unexpectedly. The morning he was due to come out he got an emergency call to another customer. Rather than just pushing my appointment off Brandon was forward thinking and asked to reschedule to an earlier time. I really appreciated Brandon squeezing me in even with higher priority services being requested. I would absolutely recommend him again!",
+      "publishedAt": "2017-10-09T19:22:34.750Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRb0tPaGpnRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICQoKOhjgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBLU9Tdjh3RRAB",
+      "reviewer": "Chad S.",
+      "rating": 5,
+      "text": "As a contractor I won’t let anyone but Brandon plumb my projects...Prompt, fair, and honest...can’t ask for more than that!",
+      "publishedAt": "2017-09-27T19:41:33.197Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBLU9Tdjh3RRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICA-OSv8wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNBMVlQRjRBRRAB",
+      "reviewer": "Nick H.",
+      "rating": 5,
+      "text": "Brandon, with Plumb Crazy, LLC is our #1 plumbing service for years.  He has done numerous commercial and residential services for us.  We have always been extremely satisfied with Brandon's services.  He is thorough, trustworthy and reasonably priced.  I don't call anyone else.",
+      "publishedAt": "2017-04-24T23:15:10.025Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNBMVlQRjRBRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICA1YPF4AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN3aEtQUFBnEAE",
+      "reviewer": "Janeene C.",
+      "rating": 1,
+      "text": "Do not hire Plumb Crazy!!!<br>Brandon is a one man show that will cost you more money in the long run if you use him!!!<br>Because of his shoddy work, he cost me an  additional $2100 in repairs, clean up and damages!<br>Caveat Emptor - Let the buyer beware!",
+      "publishedAt": "2017-03-16T17:49:50.820Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN3aEtQUFBnEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICwhKPPPg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNRaUxtanpRRRAB",
+      "reviewer": "Daniel W.",
+      "rating": 5,
+      "text": "Great work! Fast and with minimal removal of existing obstacles (drywall and kitchen cabinets. Very fairly priced. I will certainly recommend Plumb Crazy to my friends and family.",
+      "publishedAt": "2016-11-29T18:29:28.769Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNRaUxtanpRRRAB!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICQiLmjzQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNBaU9PdmRnEAE",
+      "reviewer": "Matt M.",
+      "rating": 5,
+      "text": "Plumber came on time and was very pleasant to work with. I would highly recommend him to anyone that needed a reliable plumber.",
+      "publishedAt": "2016-08-17T02:14:31.591Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBaU9PdmRnEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICAiOOvdg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNBOXREdkJnEAE",
+      "reviewer": "Keaton B.",
+      "rating": 5,
+      "text": "I've hired plumb crazy for multiple sewer and water line replacements as well as routine household plumbing items. Brandon is prompt, courteous and gets the job done right. I highly recommend Plumb Crazy!",
+      "publishedAt": "2016-07-12T00:43:09.158Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBOXREdkJnEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICA9tDvBg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURBanVHSEZREAE",
+      "reviewer": "Big D.",
+      "rating": 5,
+      "text": "Brandon has done work at both my home and my office.  Always on time, always done right.  If you need a good, inexpensive, quality plumber, I highly recommend Plumb Crazy.",
+      "publishedAt": "2016-07-11T14:57:04.572Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURBanVHSEZREAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgIDAjuGHFQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNBNDg3cURnEAE",
+      "reviewer": "Leah H.",
+      "rating": 5,
+      "text": "Brandon has done multiple jobs for me and the work is of the greatest quality.  I know that when I call Brandon for a job, I am not going to have to worry about it after he fixes it.  He was able to rebuild my faucets when I thought they would need replaced which saved me a ton of money.  He replaced my Hot water heater so I was not with out hot water for even 1 day!  He also fixed on of my bathtubs so that it drained better.  He was able to find and fix a leak in my wall and you can not even tell he had to get into the wall!  I would recommend him to anyone!! Plumb Crazy is the way to go for any plumbing needs!",
+      "publishedAt": "2016-07-11T04:26:14.697Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNBNDg3cURnEAE!2m1!1s0x0:0x790d798d74321e73!3m1!1s2@1:CIHM0ogKEICAgICA487qDg%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SUWNWOXlVblp3VFdsbVRtVXljalpVUXpCWWMyYxAB",
+      "reviewer": "DJH",
+      "rating": 5,
+      "publishedAt": "2025-11-09T20:08:38.127Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poNVRuWXRORFZzTWt0NlRGQkZVV3B5WTNCdFFsRRAB",
+      "reviewer": "Earl G.",
+      "rating": 5,
+      "publishedAt": "2025-08-13T14:13:21.702Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNfcEtQdVdREAE",
+      "reviewer": "Oscar G.",
+      "rating": 5,
+      "publishedAt": "2025-01-13T01:43:37.205Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMxMEtibU1BEAE",
+      "reviewer": "tiffany B.",
+      "rating": 5,
+      "publishedAt": "2023-12-20T20:27:22.155Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURXNi0yM3hRRRAB",
+      "reviewer": "Kitty P.",
+      "rating": 5,
+      "publishedAt": "2022-04-04T19:35:18.681Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURHMEtyZEJREAE",
+      "reviewer": "Joe H.",
+      "rating": 5,
+      "publishedAt": "2021-11-15T19:36:22.015Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURDN0tlNlBnEAE",
+      "reviewer": "twoquickII",
+      "rating": 5,
+      "publishedAt": "2020-09-18T00:24:18.482Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUMwdGI3V0FREAE",
+      "reviewer": "Denice T.",
+      "rating": 5,
+      "publishedAt": "2019-10-05T14:51:38.050Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURvaDRHNm5RRRAB",
+      "reviewer": "Abe",
+      "rating": 5,
+      "publishedAt": "2019-03-23T12:24:17.405Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNRLWM3bDJ3RRAB",
+      "reviewer": "Candice W.",
+      "rating": 5,
+      "publishedAt": "2016-07-07T15:49:38.233Z"
+    }
+  ]
+}

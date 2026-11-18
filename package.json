@@ -43,7 +43,8 @@
     "google-docs:write-publish-summary": "node --import tsx src/google-docs/cli.ts write-publish-summary",
     "google-docs:assert-publish-run": "node --import tsx src/google-docs/cli.ts assert-publish-run",
     "google-docs:push-secrets": "node --import tsx src/google-docs/cli.ts push-secrets",
-    "google-docs:live-verify": "node --import tsx src/google-docs/cli.ts live-verify"
+    "google-docs:live-verify": "node --import tsx src/google-docs/cli.ts live-verify",
+    "gate": "node scripts/gate.mjs"
   },
   "dependencies": {
     "google-auth-library": "^10.5.0"

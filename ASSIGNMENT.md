@@ -1,5 +1,14 @@
 # Content Factory assignment
 
+## READ FIRST: the examples
+
+1. **The words of Josh's client websites are the model:** Window Dudes, SRA Roofing & Gutters and Greene Planet (Josh will name a 4th). Their copy is in ff-content-demo-factory `examples/approved-copy/`.
+2. **The 12 Lovable builds are the model for demos.** A human QA'd every one of them heavily. They're listed, with live .lovable.app URLs, in ff-content-demo-factory `docs/reference-sites.md`.
+3. **The rules are in ff-astro-demos `docs/demo-definition-of-done.md`:** home 550+ words, each service page 700+, no fact said twice, and everything else in that file.
+4. **Every writer reads all three before writing. Every reviewer compares each page side by side with the closest example and fails anything weaker.** Never use other Astro demos (Wichita or any other) as models.
+
+---
+
 This file is the **one repository entry point** for a newly started model. Provider-specific files (`AGENTS.md`, `CLAUDE.md`, `.github/copilot-instructions.md`) point here. They do not keep a second copy of the policy.
 
 Read this file first, then the runtime documents it names. Do not load historical prospect folders (`barones-heat-air/`, `kingdom-roofing-and-construction/`, `sheres-construction-handyman/`) as competing instructions. Those packages are finished examples of past work, not the active factory.
@@ -51,10 +60,36 @@ Canonical craft-guide wording and the Springfield example library live in `docs/
 ## Demo outreach (Josh's standing rules)
 
 - **Contact form only (for now).** Outreach goes through each prospect's own website contact form, not email. Claude or a Sonnet fills and sends it, with honest name and reply details, and keeps a screenshot of the confirmation. When a send is blocked (CAPTCHA, bot check, login, no form, form error), never try to get around it: add the prospect to Josh's hand-send list with the message ready to paste, and Josh sends those himself.
-- Send the demo through the business's own website contact form when it has one, with a line like: "By the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it." Say solicitation or sales pitch, never spam.
-- Demo links go out plain. Never add `?utm_source=email` or any other tracking query to a link the owner will read.
+- Send the demo through the business's own website contact form when it has one. (The "our contact form system would have recognized this as a solicitation" line was dropped on 2026-11-15; every message now ends with a one-line opt-out instead. See `outreach/form-message-template.md`.)
+- Demo links go out plain. Never add `?utm_source=email` or any other tracking query to a link the owner will read. (Note 2026-11-15: the Fort Wayne / Lincoln / Peoria messages were written with `?utm_source=` links against this rule. They are on hold and will be fixed before any send.)
 - Offer call times from Josh's real openings: the "Book a Call with Josh" calendar in Go High Level (Fluid Frame Legacy location), not guesses.
 - When Josh states a rule for future work, write it into the repo's notes right away. Don't ask first.
+
+## Demo copy (Josh's standing rules, 2026-11-15)
+
+**Single source of truth: `docs/JOSH-CHECKLIST.md`.** It merges every Josh lesson: the Wichita definition of done and PRs #41–#64 (Nov 10–12), the Nov 15 notes and the ComfortTechs notes. Each item is a pass/fail test per page. Writers load it before writing. The reviewer answers every item per page with a quote as evidence. One FAIL means NOT YET. The bullets below are a summary; if they ever differ from the checklist, fix both the same day. References (the only models): `docs/reference-sites.md` (4 client sites + 12 Lovable builds). Never use other Astro demos as models.
+
+Josh's review of the Fort Wayne / Lincoln / Peoria batch: QA checked facts and rules, not whether the page sells. These are **automatic fails** for every future demo, whatever else passes:
+
+- **No review summaries.** Never "customers mention…", "customers describe…", "reviewers say…", "one customer said…". Quote a real review word for word, or leave it out.
+- **The paragraph covers what its heading promises.** No furnace-only paragraph under "Heating, Cooling and Geothermal". Either the text covers every item in the heading or list above it, or the heading is narrowed.
+- **At least 2 service pages per demo:** the business's two main money services. If the business's own material can't fill 2 strong service pages, flag the prospect as too thin. Never pad.
+- **Scope:** homepage, 2 service pages, contact and the strategy page. Only real material from the business.
+- **Every service page says plainly why to hire this company for this job.** No half-blog explainer pages.
+- **No forced metaphors** ("Houses don't climb…").
+- **Lead with what the customer wants, not with fees.** Don't open a homepage on after-hours cost. Don't mention a plan price before the plan is explained.
+- **No advice that ignores how the trade works**, for example telling the customer to ask what the fix costs before the company has looked.
+- **Photos:** no stock photo with a big blank prop (blank clipboard, blank cardboard sign), and never a photo Josh has rejected before. The banned list is in `docs/demo-gates.md`.
+- **The quality bar is the 16 reference sites** (12 Lovable builds Josh QA'd by hand, plus 4 client sites), listed in `docs/reference-sites.md`. Writers read them for voice and structure, and the reviewer compares each page side by side with the closest one: "Is this as good as the reference? Would Josh want to send this?" Anything weaker fails.
+- **Explain every credential in one plain sentence** (Josh, after ComfortTechs round 3). When a demo uses a certification or rating (NATE, BBB, a manufacturer program), add one short line saying what it is, taken from the certifying body's own site and cited in facts.md. Josh hadn't heard of NATE; learning it is an independent, not-for-profit certification is what made it compelling.
+- **The owner's voice, always.** Every line reads as the owner would say it ("We're A+ rated with the Better Business Bureau"), never third-person or report-style ("BBB lists ComfortTechs, Inc. … with an A+ rating").
+- **Never talk about the website itself.** No "each has its own page", "on this page", "our site lists". Link naturally inside a sentence instead.
+- **Brand lists are complete and truthful.** If a line says "any make", end the list with "and more". Name every brand the business's own site shows it installs (for example American Standard, Mitsubishi Electric and WaterFurnace), not just one.
+- **Keep the audience consistent within a section.** A section about "home or business" can't end on "your home's configuration"; use "your property" or "your building".
+- **Never cover a service twice on one page.** No small section about a service right above its card in the services grid. Keep the cards, and fold or drop the section.
+- **The footer must read evenly on a phone.** Linked and unlinked rows are spaced the same, with no empty bands. The rendered review checks it at 390px.
+- **Writers work from the business's full page text, never notes.** Before any words are written, run `node scripts/fetch-site-text.mjs prospects/<city>-<trade>/<slug> <site-url>`. It saves the visible text of every own-site page, rendered in a real browser, to `<folder>/site/`. Writers and the thin check read those files. Claims the business makes on its own site (certifications, years, guarantees, how it works) are usable in its voice when quoted or closely followed from those files. Generic efficiency or statistic claims copied from manufacturers are not. (FF Architect, 2026-11-15: the ComfortTechs rebuild came out thin because the writer only had notes.)
+- **Who does what:** Sonnet writes; Opus doesn't write copy. A separate Sonnet reviews against the references. Cursor builds.
 
 ## Prospect picking (Josh's standing rules)
 

@@ -15,7 +15,7 @@ The finished model for a multi-service homepage is [examples/approved-copy/evolv
 5. **They let reviews prove a point.** Pick the review that proves the paragraph right above it, and let it run long enough to tell its story. Two to five reviews on a page, each placed where it earns its spot. A review is never a spacer between sections.
 6. **They are specific to this business.** If a sentence could sit on any competitor's site after you swap the name and city, make it specific or cut it.
 7. **They use short paragraphs.** One to three sentences, usually one or two lines on a phone. Break a long block wherever the thought turns. Lists are fine when the content is a list; reasoning stays in sentences.
-8. **They have depth.** A homepage that teaches runs about 900 to 1,300 words of copy, not counting reviews, menus or footer. A service page about 700 to 1,100. Length comes from teaching and answering, never from padding.
+8. **They have depth.** A homepage that teaches runs about 550 to 1,300 words of copy, not counting reviews, menus or footer. A service page about 700 to 1,100. Length comes from teaching and answering, never from padding.
 
 Voice is the business speaking as "we" to one visitor as "you". Owners speak in the first person ("We're Colton and Riley").
 

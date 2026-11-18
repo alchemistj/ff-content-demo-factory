@@ -1,0 +1,706 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "fortwayne-electrical-sterling",
+  "place": {
+    "name": "Sterling Electric",
+    "placeId": "ChIJ42_cKd38FYgRKkxGaetV7rM",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Sterling%20Electric&query_place_id=ChIJ42_cKd38FYgRKkxGaetV7rM",
+    "address": "6814 St Joe Rd, Fort Wayne, IN 46835",
+    "phone": "(260) 404-1802",
+    "rating": 4.9,
+    "totalReviewCount": 146
+  },
+  "pulledAt": "2026-11-16T04:11:28.573Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xka1FuaHdUWFZDU2tkSVdGWTFkbGhNUTBodFMyYxAB",
+      "reviewer": "Davieon W.",
+      "rating": 5,
+      "text": "Great work!",
+      "publishedAt": "2026-11-10T16:43:36.996Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xka1FuaHdUWFZDU2tkSVdGWTFkbGhNUTBodFMyYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOldkQnhwTXVCSkdIWFY1dlhMQ0htS2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21NemRERjBNR1JsV0Rkb1JqRmpTUzFIUVRSSlJVRRAB",
+      "reviewer": "Erica R.",
+      "rating": 5,
+      "text": "I am so happy with the service outcomes. George was my technician and he was kind, efficient, and helped me with all my questions. Im so grateful to have my home up to par now!",
+      "publishedAt": "2026-11-09T22:49:37.357Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21NemRERjBNR1JsV0Rkb1JqRmpTUzFIUVRSSlJVRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOmMzdDF0MGRlWDdoRjFjSS1HQTRJRUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xGdFpXMDVXazV6VW5KdFJEVktMWFJzZUhkWU0yYxAB",
+      "reviewer": "Stephen S.",
+      "rating": 5,
+      "text": "The crew that did the work were professional and wasted no time.",
+      "publishedAt": "2026-11-01T18:39:46.673Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xGdFpXMDVXazV6VW5KdFJEVktMWFJzZUhkWU0yYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOlFtZW05Wk5zUnJtRDVKLXRseHdYM2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2twbVlVeDBOMDVPUkhWRWFqaHhSR00xTVdWaVRrRRAB",
+      "reviewer": "Renee B.",
+      "rating": 5,
+      "text": "I was on the phone and in person they were extremely helpful",
+      "publishedAt": "2026-10-19T20:33:52.210Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2twbVlVeDBOMDVPUkhWRWFqaHhSR00xTVdWaVRrRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOkpmYUx0N05ORHVEajhxRGM1MWViTkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25SaWFHWmpjRzF6WVhVeWVEUjRWR0pZUm0xNlgxRRAB",
+      "reviewer": "Matt S.",
+      "rating": 5,
+      "text": "Professional crew, fast work, good price. Looking forward to working with this company again.",
+      "publishedAt": "2026-10-17T17:35:35.097Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25SaWFHWmpjRzF6WVhVeWVEUjRWR0pZUm0xNlgxRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnRiaGZjcG1zYXUyeDR4VGJYRm16X1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkSlFubG9XWEpOVFVKTFgySnJNRGxHY0RFeE5tYxAB",
+      "reviewer": "Jaidyn M.",
+      "rating": 5,
+      "text": "Sterling Electric has absolutely blown me away by their level of attention to detail, prompt response, and incredible customer service- and I’ve not even hired them for a job yet! Because of their wonderful customer service and integrity, I ended up saving a good chunk of money I was otherwise prepared to flush down to toilet.<br>Within a hours of calling them for a competitive quote, I learned that not only was the original quote overinflated, but also not necessary.<br>Jim (owner) despite knowing he likely wouldn’t get paid for the job, still went above and beyond to make sure I was not financially taken advantage of and got me a quote with less than a weeks turnaround. As much as I would have loved to go through Jim and his team, I was elated find out that wasn’t necessary. If I ever find myself in need of calling an electrician, they will be at the top of my list, and should be at the top of yours too.",
+      "publishedAt": "2026-09-21T15:02:29.015Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xkSlFubG9XWEpOVFVKTFgySnJNRGxHY0RFeE5tYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOldJQnloWXJNTUJLX2JrMDlGcDExNmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GdFkzaDNaREJQUm5oVk9XTmxWazVKY0c5NGVsRRAB",
+      "reviewer": "Mark S.",
+      "rating": 5,
+      "text": "We called and Adam was out the same day!  He was very prompt and thorough. Excellent service!! Highly reccomend!!",
+      "publishedAt": "2026-09-17T11:24:07.127Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GdFkzaDNaREJQUm5oVk9XTmxWazVKY0c5NGVsRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnFtY3h3ZDBPRnhVOWNlVk5JcG94elE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21KT2NEVm5SRkJpVUd0bGJtSXRRME52VUdkMmNrRRAB",
+      "reviewer": "Jim S.",
+      "rating": 5,
+      "text": "Our project was completed on schedule and at quoted price. Everyone was professional and attentive to detail. A+",
+      "publishedAt": "2026-08-28T13:47:20.208Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21KT2NEVm5SRkJpVUd0bGJtSXRRME52VUdkMmNrRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOmJOcDVnRFBiUGtlbmItQ0NvUGd2ckE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2poSlRucFJSekJWYVRGdlVUVTJUVm93U1ZWNlYyYxAB",
+      "reviewer": "Mark S.",
+      "rating": 5,
+      "text": "Sterling electric is a great electric company.  Very helpful, clear communication and great pricing.  Very friendly and reliable service.  Highly recommend!",
+      "publishedAt": "2026-08-26T18:06:41.402Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2poSlRucFJSekJWYVRGdlVUVTJUVm93U1ZWNlYyYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOjhJTnpRRzBVaTFvUTU2TVowSVV6V2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2prNVdqVmhka1ZGT1dWaWJWQm9VVTQ0YVdoWmFIYxAB",
+      "reviewer": "Daniel J.",
+      "rating": 5,
+      "text": "Great service, Always fixs our issues and we have some wild ones at times!. Highly recommend.",
+      "publishedAt": "2026-07-30T11:43:13.443Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2prNVdqVmhka1ZGT1dWaWJWQm9VVTQ0YVdoWmFIYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOjk5WjVhdkVFOWVibVBoUU44aWhZaHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25CTVdEazBiM2xPYkdoSE5GcENRMlZZWjIxbWFrRRAB",
+      "reviewer": "Lois T.",
+      "rating": 5,
+      "text": "Good job, thank you.",
+      "publishedAt": "2026-07-29T11:55:05.043Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25CTVdEazBiM2xPYkdoSE5GcENRMlZZWjIxbWFrRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnBMWDk0b3lObGhHNFpCQ2VYZ21makE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21OVmJubFZlbGg0UWtWWFEwSnhhVlp1TW01TldXYxAB",
+      "reviewer": "Mike A.",
+      "rating": 5,
+      "text": "These guys do the best work no short cuts all done perfect and they support the troops",
+      "publishedAt": "2026-07-18T00:37:05.046Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21OVmJubFZlbGg0UWtWWFEwSnhhVlp1TW01TldXYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOmNVbnlVelh4QkVXQ0JxaVZuMm5NWWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xWSWJsTlJNRGxLZG0xaGQwTTVValpRUzE4NE1GRRAB",
+      "reviewer": "Chad S.",
+      "rating": 5,
+      "text": "I really like the service and the way they work through what's the best option for us. They also think how things will work for us down the road and prepare us for that.",
+      "publishedAt": "2026-07-13T11:46:06.550Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xWSWJsTlJNRGxLZG0xaGQwTTVValpRUzE4NE1GRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOlVIblNRMDlKdm1hd0M5UjZQS184MFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaWFVHOVBRVkk1V1ZOWWRIVnVPVkIwZGs1TWRsRRAB",
+      "reviewer": "April M.",
+      "rating": 5,
+      "text": "George was great.  Arrived on time, worked efficiently, and cleaned up after himself.  Super nice man!",
+      "publishedAt": "2026-07-03T19:46:53.126Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaWFVHOVBRVkk1V1ZOWWRIVnVPVkIwZGs1TWRsRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOlZXUG9PQVI5WVNYdHVuOVB0dk5MdlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2kxRWRsZGpSMnQyWlVOM1ZsOUNTRFI0UzNCcVRWRRAB",
+      "reviewer": "Mengal K.",
+      "rating": 5,
+      "text": "Phil did an excellent job installing our cameras. He was very patient throughout the entire process, took the time to explain everything clearly, and made sure we understood how to use the camera system. He helped set everything up and answered all of our questions. We really appreciated his professionalism, patience, and attention to detail. Highly recommended!",
+      "publishedAt": "2026-06-23T16:18:15.271Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2kxRWRsZGpSMnQyWlVOM1ZsOUNTRFI0UzNCcVRWRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOi1EdldjR2t2ZUN3Vl9CSDR4S3BqTVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KV1NrMXRTRnBwUjNkU1QwaE1XVUY0UkRkTmVsRRAB",
+      "reviewer": "James A.",
+      "rating": 5,
+      "text": "We had power out in the bathrooms after a plumber was working behind the wall. Another company sent a sales man that wanted to sell us a 7k breaker box or a new line, then that wanted to charge $1000 for a diagnostic(that would need scheduled). After sending them away, we researched and found Sterling. Sterling sent an electrician with no middle man. Once he showed up he diagnosed the loose wire and had it fixed in 30 minutes for a quarter of the price of the other companies diagnostic. ($225 service call)",
+      "publishedAt": "2026-06-11T19:52:07.305Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KV1NrMXRTRnBwUjNkU1QwaE1XVUY0UkRkTmVsRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnJWSk1tSFppR3dST0hMWUF4RDdNelE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pWWVlUbDBaRGxNYmtkTFZERTRNVEZrZEU5clVIYxAB",
+      "reviewer": "David L.",
+      "rating": 5,
+      "text": "Sterling Electric has been super helpful, responsive and reasonably priced on many of the projects I have used them for over the years!  Highly recommend using them for your electrical needs!",
+      "publishedAt": "2026-06-10T11:29:28.423Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pWWVlUbDBaRGxNYmtkTFZERTRNVEZrZEU5clVIYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOjVYYTl0ZDlMbkdLVDE4MTFkdE9rUHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xodVZHNW1PVEZ4VFdaQlFtZExhQzB3TVcxUllYYxAB",
+      "reviewer": "Kyle B.",
+      "rating": 5,
+      "text": "2nd time was as good as the first experience thank you ! Great price and great work !",
+      "publishedAt": "2026-06-01T22:14:40.165Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xodVZHNW1PVEZ4VFdaQlFtZExhQzB3TVcxUllYYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOlhuVG5mOTFxTWZBQmdLaC0wMW1RYXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25vdGJtMXhjbkExYUVjd1VsZGFOakpVV1hseWVuYxAB",
+      "reviewer": "Jillian M.",
+      "rating": 5,
+      "text": "Electricians you can trust.",
+      "publishedAt": "2026-05-29T17:31:40.940Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25vdGJtMXhjbkExYUVjd1VsZGFOakpVV1hseWVuYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnotbm1xcnA1aEcwUldaNjJUWXlyenc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25GeGNtZGxaM1JYWjNKMlpGRTRhelphTkZKSGExRRAB",
+      "reviewer": "Sadie B.",
+      "rating": 5,
+      "text": "Sterling did a great job from start to finish. We were doing a home addition and they were very thorough by asking what all our needs were and by sharing options. Then, they were very prompt to get the work done at a very reasonable price. They were professional and kind and well educated.",
+      "publishedAt": "2026-05-27T19:41:45.681Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25GeGNtZGxaM1JYWjNKMlpGRTRhelphTkZKSGExRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnFxcmdlZ3RXZ3J2ZFE4azZaNFJHa1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSTVZVMTZVbDk1VW5sZllUbFhUWGx1YldORU5YYxAB",
+      "reviewer": "isaiah G.",
+      "rating": 5,
+      "text": "Highly recommend. Very good work and they clean up after themselves very well.",
+      "publishedAt": "2026-05-18T21:19:18.944Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSTVZVMTZVbDk1VW5sZllUbFhUWGx1YldORU5YYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOkRMVU16Ul95UnlfYTlXTXlubWNENXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tKM2EyNXNUV2c1UVZWSmFXUlpjRFJHZEdOSGQzYxAB",
+      "reviewer": "Sabine B.",
+      "rating": 5,
+      "text": "I was told by two companies I needed a new electrical panel.  Adam from Sterling came out and found fed my electrical issue for the service call fee.  These guys are honest and have done good work.",
+      "publishedAt": "2026-05-18T18:10:09.804Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tKM2EyNXNUV2c1UVZWSmFXUlpjRFJHZEdOSGQzYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOkJ3a25sTWg5QVVJaWRZcDRGdGNHd3c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURldlplMjNRRRAB",
+      "reviewer": "Meredith L.",
+      "rating": 5,
+      "text": "Great team of electricians, fast and competent work. Appreciate their service.",
+      "publishedAt": "2026-05-16T17:36:07.506Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURldlplMjNRRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgIDevZe23QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xNNVMwNTRPVXgzTVdOTVF5MUJVa3BNZVZSbVNuYxAB",
+      "reviewer": "wendy K.",
+      "rating": 5,
+      "text": "Fantastic service experience and reasonable pricing. Would highly recommend, George did a great job installing our lamppost and motion lights!",
+      "publishedAt": "2026-05-09T18:04:11.323Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xNNVMwNTRPVXgzTVdOTVF5MUJVa3BNZVZSbVNuYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOlM5S054OUx3MWNMQy1BUkpMeVRmSnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT205clZYSlBPRzVLUzBKQ2JUQklOSFJ6TUdOdlZsRRAB",
+      "reviewer": "mike K.",
+      "rating": 5,
+      "text": "Guys were here on time,courteous,friendly and knowledgeable and clean, we got our moneys worth !!!",
+      "publishedAt": "2026-05-07T19:43:13.119Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT205clZYSlBPRzVLUzBKQ2JUQklOSFJ6TUdOdlZsRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOm9rVXJPOG5KS0JCbTBINHRzMGNvVlE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGWmQyNHhha05aTFVvMWQxUmtVMDVwV1U1NGNHYxAB",
+      "reviewer": "Adam G.",
+      "rating": 5,
+      "text": "These guys did a great job. Made extra effort to keep wire routing as clean as possible. Their work looks like it was original to the house.",
+      "publishedAt": "2026-05-06T22:02:04.651Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGWmQyNHhha05aTFVvMWQxUmtVMDVwV1U1NGNHYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOkFZd24xakNZLUo1d1RkU05pWU54cGc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pVeWRIRXRiVXh1U1dSUFpsWjRVbmRQYldkUE5VRRAB",
+      "reviewer": "Kimbra D.",
+      "rating": 5,
+      "text": "Great company<br>Always satisfied",
+      "publishedAt": "2026-05-01T21:27:38.470Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pVeWRIRXRiVXh1U1dSUFpsWjRVbmRQYldkUE5VRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOjUydHEtbUxuSWRPZlZ4UndPbWdPNUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201VlZFRmlZMGN0U21GM1VUQmxURXhQZEdRMVZGRRAB",
+      "reviewer": "Chad W.",
+      "rating": 5,
+      "text": "Right on time and very professional. 2 fans installed.",
+      "publishedAt": "2026-04-27T22:14:07.621Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201VlZFRmlZMGN0U21GM1VUQmxURXhQZEdRMVZGRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOm5VVEFiY0ctSmF3UTBlTExPdGQ1VFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT20xblYxbDFWRzFNVVdKbmNVaEZWMDU0UzA1blExRRAB",
+      "reviewer": "craig T.",
+      "rating": 5,
+      "text": "Great company for professional electrical work. I fit about as many odd jobs around the house as I could think of and George got it all knocked out in a day. This was my 3rd time choosing Sterling Electric and I will be turning to them again for any future electric work I need done. A wonderful local company to support! Thanks for the job well done and a chance to learn a few tips from a pro.",
+      "publishedAt": "2026-04-23T02:05:48.899Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT20xblYxbDFWRzFNVVdKbmNVaEZWMDU0UzA1blExRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOm1nV1l1VG1MUWJncUhFV054S05nQ1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tObGQwOXJVekJHZDIxMVMyZFdZVk4zZWxKcmNtYxAB",
+      "reviewer": "John D.",
+      "rating": 5,
+      "text": "Jim arrived soon after my initial call.  He immediately got to work tracking down what turned out to be a tricky problem.   He got it repaired quickly.<br><br>We are really glad that we called Sterling Electric.",
+      "publishedAt": "2026-04-15T18:51:11.917Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tObGQwOXJVekJHZDIxMVMyZFdZVk4zZWxKcmNtYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOkNld09rUzBGd211S2dWYVN3elJrcmc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taSFJqSjBhMmRXV1dOVE9FbEtTVGhtTFc5S1FrRRAB",
+      "reviewer": "Mary H.",
+      "rating": 5,
+      "text": "We converted our loft to a 4th bedroom and needed a light switch moved, a smoke alarm installed and an outlet added.  All work done as promised and on time.  George was very friendly and knowledgeable.  Would recommend!",
+      "publishedAt": "2026-04-13T17:33:36.323Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2taSFJqSjBhMmRXV1dOVE9FbEtTVGhtTFc5S1FrRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOkZHRjJ0a2dWWWNTOElKSThmLW9KQkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25sRU5VNXlOV1JRUzNGbWVFNVphRTFRTkV3eGFrRRAB",
+      "reviewer": "Darlene T.",
+      "rating": 5,
+      "text": "On time. Very efficient service..replaced three switches, replaced light fixture and fixed two other fixtures in an hour.",
+      "publishedAt": "2026-04-04T17:45:01.855Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25sRU5VNXlOV1JRUzNGbWVFNVphRTFRTkV3eGFrRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnlENU5yNWRQS3FmeE5ZaE1QNEwxakE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214cFlUUnhaSFZtZVVSU1NtNDNaMmw2UWpGbFZWRRAB",
+      "reviewer": "Allison G.",
+      "rating": 5,
+      "text": "Quick and great service! Would recommend for any electric work.",
+      "publishedAt": "2026-04-02T13:15:38.477Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214cFlUUnhaSFZtZVVSU1NtNDNaMmw2UWpGbFZWRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOmxpYTRxZHVmeURSSm43Z2l6QjFlVVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21jNVp6UnJWRUZWYzNOSWNVUkpUM1IzU2xCVlRWRRAB",
+      "reviewer": "James M.",
+      "rating": 5,
+      "text": "George did great. From squeezing into the crawl space to answering all my questions? A very pleasent experience. The price was half other quotes. These are now my go-to-guys for any electrical needs going forward.",
+      "publishedAt": "2026-03-27T13:32:34.574Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21jNVp6UnJWRUZWYzNOSWNVUkpUM1IzU2xCVlRWRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOmc5ZzRrVEFVc3NIcURJT3R3SlBVTVE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSTldIbG9OVzE0VUd4TFNtdzBkVXRXU2tGdWExRRAB",
+      "reviewer": "Mark W.",
+      "rating": 5,
+      "text": "I recommend Sterling Electric very highly and without reservation. All service was prompt and professional. I have a hundred year old house with knob and tube wiring that needed a whole house rewire. They did a great job of minimizing the number of holes needed to access the old wiring. They worked quickly and cheerfully and always listened carefully to any questions that I had.",
+      "publishedAt": "2026-03-15T11:36:43.371Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSTldIbG9OVzE0VUd4TFNtdzBkVXRXU2tGdWExRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOkRNWHloNW14UGxLSmw0dUtWSkFua1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT214WVoyOVBiRFU0UlRZeU0zcERlbG90V21GSGFsRRAB",
+      "reviewer": "Jeremy C.",
+      "rating": 5,
+      "text": "On time. Professional. Saw the job through to the end. Will hire again.",
+      "publishedAt": "2026-03-12T11:39:38.548Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT214WVoyOVBiRFU0UlRZeU0zcERlbG90V21GSGFsRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOmxYZ29PbDU4RTYyM3pDelotWmFHalE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25OUVpGZEpZMmxHYlhsT1VYTk1hbkUwZVU0emJuYxAB",
+      "reviewer": "scott H.",
+      "rating": 5,
+      "text": "Very knowledgeable,  great price to fix the issue and repaired other issues. Would highly recommend to call first.",
+      "publishedAt": "2026-03-09T14:00:56.959Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25OUVpGZEpZMmxHYlhsT1VYTk1hbkUwZVU0emJuYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnNQZFdJY2lGbXlOUXNManE0eU4zbnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25neWJqTmlOa3gyTm1Sb2JIRmtjMGhtT1cxeldFRRAB",
+      "reviewer": "T. C.",
+      "rating": 5,
+      "text": "Arrival on time.   Very knowledgeable.  Diagnosed the problems.  Extremely professional!   What a  pleasure dealing with Sterling Electrical!!  Especially George!!",
+      "publishedAt": "2026-02-25T14:43:29.206Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25neWJqTmlOa3gyTm1Sb2JIRmtjMGhtT1cxeldFRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOngybjNiNkx2NmRobHFkc0hmOW1zWEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaWVpUQkpVelJqYmxoSGVqZzJTalJWTUU1MU1uYxAB",
+      "reviewer": "Robert K.",
+      "rating": 3,
+      "text": "Technician came out, ran a test on our dryer outlet. Showed no problem. He left after about 8 minutes.  $225.",
+      "publishedAt": "2026-02-24T19:12:58.361Z",
+      "ownerResponse": "Most service providers have minimum charges, we believe our minimum pricing of $225 to be fair and average for the market. A stop of 8 minutes of job site time cost plenty more than 8 minutes of technician time. Hope you understand.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaWVpUQkpVelJqYmxoSGVqZzJTalJWTUU1MU1uYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOlZYZTBJUzRjblhHejg2SjRVME51Mnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tsYWEyRm1ZMTlJTVV4ellWZHdWa3g2WTBRNGNYYxAB",
+      "reviewer": "Jackie M.",
+      "rating": 5,
+      "text": "I've used Sterling Electric for several jobs over the last few years.  They are extremely knowledgeable and work efficiently.  Repairs included removing knob and tub wiring, replacing light fixtures, wiring repairs after a storm took out two rooms of a house, switch and outlet replacements, etc.  I couldn't ask for a better group of professionals.   Prices are fair.  I'm not looking for free or cheap, I look for reliable service that's not overpriced.",
+      "publishedAt": "2026-02-23T15:31:57.478Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team truly appreciates your trust and support over the years.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tsYWEyRm1ZMTlJTVV4ellWZHdWa3g2WTBRNGNYYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOklaa2FmY19IMUxzYVdwVkx6Y0Q4cXc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25scmRtSmhjVjlVTjA0elVHeDBWbVprV0hOT09GRRAB",
+      "reviewer": "Lonnie W.",
+      "rating": 5,
+      "text": "I’ve used them for a couple years now and they are by far one of the best.",
+      "publishedAt": "2026-02-16T23:07:37.626Z",
+      "ownerResponse": "Thanks so much for your kind words and continued support! Our team truly appreciates it.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25scmRtSmhjVjlVTjA0elVHeDBWbVprV0hOT09GRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnlrdmJhcV9UN04zUGx0VmZkWHNOOFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pkSE56TTJhV1F6T0Y5TE9XUTFaVEJETlcxa1UwRRAB",
+      "reviewer": "Brent S.",
+      "rating": 5,
+      "text": "Sterling Electric sent George, Adam, and Sam completed a great service in our basement. We knew George from previous work needing to be completed by Sterling Electric, which was a significant reason for providing them with the bigger project. We wanted a three-way switch added for our stairs, create a separate switch for new wafer lights, install wafer lighting on an existing switch, and make our outlets always live versus being on a switch. Job completed and looks great!",
+      "publishedAt": "2026-02-12T18:29:04.342Z",
+      "ownerResponse": "Thanks so much for your awesome review! George, Adam, and Sam are thrilled to hear you’re happy with the work.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2pkSE56TTJhV1F6T0Y5TE9XUTFaVEJETlcxa1UwRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOjdHNzM2aWQzOF9LOWQ1ZTBDNW1kU0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGMVExbHVOVVZ2WTBsaU1scGlNVTlOYTA4eGRGRRAB",
+      "reviewer": "Tom S.",
+      "rating": 5,
+      "text": "They came and fixed my problem outside normal hours. Tech was very knowledgeable.",
+      "publishedAt": "2026-02-04T21:49:16.631Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is always here to help, no matter the time.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tGMVExbHVOVVZ2WTBsaU1scGlNVTlOYTA4eGRGRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOkF1Q1luNUVvY0liMlpiMU9Na08xdFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KVGFpMVNUVFpWUkZoTFZuZzNPVE50VW1kbFoxRRAB",
+      "reviewer": "Ross N.",
+      "rating": 5,
+      "text": "Very friendly staff and did great quality work! I needed my whole electric panel replaced and they were very easy to work with and very reasonable prices for the great quality work they did!",
+      "publishedAt": "2026-01-30T20:55:58.156Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled to hear you’re happy with the work and service.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KVGFpMVNUVFpWUkZoTFZuZzNPVE50VW1kbFoxRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnJTai1STTZVRFhLVng3OTNtUmdlZ1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25oclJuVXdNamRwVjAxMGJVMDNNVkpMVFVoMWEwRRAB",
+      "reviewer": "Sam E.",
+      "rating": 3,
+      "text": "Scheduling with Sterling Electric has always been easy and efficient and the staff has been nice.  Unfortunately, they do seem overpriced. I recently had one, single light switch replaced and it cost $270, $225 of which was the service fee and first hour of labor. Then an additional 1/3 of an hour for labor, which cost $41 was charged. I was quoted $230 on the phone and expected the possibility of a minor difference once the electrician full assessed the issue but not $40 more for a simple repair. I have had other work completed by them and the price seemed high but the work was good enough that I didn’t mind. However, this time the price was too high and I’ll be exploring other electricians in the area for future work.",
+      "publishedAt": "2026-01-30T19:57:18.819Z",
+      "ownerResponse": "This customer lives outside of town. The roads were quite bad this day due to a snow storm. We picked up a replacement fixture on the way to the project. All things considered we had over an hour of time in this, adding to our cost. The customer never reached out to discuss. Sorry for the disappointment we strive to provide good service. We find our pricing to be average for the market.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25oclJuVXdNamRwVjAxMGJVMDNNVkpMVFVoMWEwRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOnhrRnUwMjdpV010bU03MVJLTUh1a0E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s1MlZteDVTVzVDV1ZKUlpsRnhiVlF0Vm1SclJXYxAB",
+      "reviewer": "Debbie D.",
+      "rating": 5,
+      "text": "George was so kind and professional. Will definitely use Sterling Electric in the future.",
+      "publishedAt": "2026-01-28T13:58:38.786Z",
+      "ownerResponse": "Thanks so much for your kind words! Our team is thrilled George made a great impression. Looking forward to helping you again!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s1MlZteDVTVzVDV1ZKUlpsRnhiVlF0Vm1SclJXYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOk52Vmx5SW5CWVJRZlFxbVQtVmRrRWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201M1dUUkJlVWRxU0hsNU1FbFZiR1I2Um5ocldFRRAB",
+      "reviewer": "Kelli B.",
+      "rating": 5,
+      "text": "Always do a great job! Good prices and very nice people.",
+      "publishedAt": "2026-01-26T18:56:48.584Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team is thrilled to hear you’re happy with our service.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201M1dUUkJlVWRxU0hsNU1FbFZiR1I2Um5ocldFRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOm53WTRBeUdqSHl5MElVbGR6RnhrWEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xVd01FRldNWGxoU0V3NFl6UlRMWFZEU1U5S1QxRRAB",
+      "reviewer": "Drew W.",
+      "rating": 5,
+      "text": "Sterling Electric is an outstanding company. They are affordable, reliable, and deliver excellent workmanship. From start to finish, they took the time to listen to our ideas, talk through each project, and make sure everything was done right. Jim runs a first-class operation, and it really shows in the quality of his team.<br><br>We had the pleasure of working with George, one of their electricians, and he exceeded every expectation. Not only is he a highly skilled electrician, but he’s also an incredibly respectful, kind, and trustworthy person—someone you feel completely comfortable having in your home.<br><br>Sterling Electric went above and beyond for us, and I would confidently recommend them to anyone looking for electrical work. If you want a company that cares about both the job and the customer, this is it.",
+      "publishedAt": "2025-09-19T19:25:54.781Z",
+      "ownerResponse": "Thank you so much for your kind words! Our team at Sterling Electric is thrilled to hear about your positive experience. We take great pride in delivering affordable, reliable, and excellent workmanship. George is truly a gem, and we are delighted that he exceeded your expectations. It was a pleasure working with you, and we appreciate your recommendation. Remember, our team is always here for any of your electrical needs.",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xVd01FRldNWGxoU0V3NFl6UlRMWFZEU1U5S1QxRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOlUwMEFWMXlhSEw4YzRTLXVDSU9KT1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT201aFlWRmtjRWg2VUVkTlJ6UkdaMUE0YnpKRFFrRRAB",
+      "reviewer": "Renee S.",
+      "rating": 5,
+      "text": "We're very satisfied with Sterling Electric. They are very professional, efficient and affordable. They took time to diagnose the problem fix it and not upsell extras we didn't need.",
+      "publishedAt": "2025-09-17T16:30:40.853Z",
+      "ownerResponse": "Thank you for your kind words! Our team is thrilled to hear about your positive experience. We always strive to be professional, efficient, and transparent with our customers. We're glad we could help diagnose and fix the issue without any unnecessary upselling. Let us know if you need anything else in the future!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT201aFlWRmtjRWg2VUVkTlJ6UkdaMUE0YnpKRFFrRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOm5hYVFkcEh6UEdNRzRGZ1A4bzJDQkE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tSTFQzVkVRMDEyYm10MGFtUmxhSFZHYWtjNVltYxAB",
+      "reviewer": "Karah W.",
+      "rating": 5,
+      "text": "We are so happy with the work done by Sterling Electric. The work was both affordable and completed quicker than I expected. The electrician was very personable. We will not hesitate to contact them for any future electrical needs.",
+      "publishedAt": "2025-08-21T12:47:31.164Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tSTFQzVkVRMDEyYm10MGFtUmxhSFZHYWtjNVltYxAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CAIQACodChtycF9oOkRLT3VEQ012bmt0amRlaHVGakc5Ymc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNvbGFfUUtnEAE",
+      "reviewer": "Olivia D.",
+      "rating": 5,
+      "text": "Fast, friendly, affordable service! Highly recommend!",
+      "publishedAt": "2025-04-18T20:09:30.714Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNvbGFfUUtnEAE!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgMCola_QKg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUNRcnRQTUl3EAE",
+      "reviewer": "Bryan T.",
+      "rating": 5,
+      "text": "Great service and affordable!",
+      "publishedAt": "2025-03-04T12:32:07.884Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnTUNRcnRQTUl3EAE!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgMCQrtPMIw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNmZzRMX3FRRRAB",
+      "reviewer": "Brett H.",
+      "rating": 5,
+      "text": "I've used Sterling Electric twice now and both times I've been very satisfied with the quality of work these guys do. Very reasonable pricing, very professional electricians, and they do the job right the first time without cutting corners. If/when I need an electrician again, Sterling Electric will be my go-to.",
+      "publishedAt": "2025-01-01T01:30:36.292Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNmZzRMX3FRRRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgICfg4L_qQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURIdF8zVHR3RRAB",
+      "reviewer": "J J.",
+      "rating": 5,
+      "text": "I highly recommend Sterling Electric for any job. They are very knowledgeable. They are top notch and do great work!",
+      "publishedAt": "2024-09-20T21:35:04.289Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURIdF8zVHR3RRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgIDHt_3TtwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ3dXZmM1pBEAE",
+      "reviewer": "Charlene R.",
+      "rating": 5,
+      "text": "I was in a pinch and needed quick service. Sterling came out same day and restored power to 3 rooms in my home! Excellent service provided by all personnel involved in the process from start to finish.",
+      "publishedAt": "2024-08-23T17:18:07.330Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ3dXZmM1pBEAE!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgID7uvf3ZA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURMbXN5UHB3RRAB",
+      "reviewer": "Monique V.",
+      "rating": 5,
+      "text": "Great customer service and excellent timing and quality! I called for a sparking outlet, and he came right out the same day after a scheduled appointment in the pouring rain and completed the service! Fast and efficient! I would definitely recommend your electrical services!",
+      "publishedAt": "2024-06-27T00:44:19.477Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURMbXN5UHB3RRAB!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgIDLmsyPpwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR6clp1NFVnEAE",
+      "reviewer": "Brianna S.",
+      "rating": 5,
+      "text": "I called to see if someone could come out and look into an issue, and within 24 hours they were here, solved the problem, AND at a great price. Would 10/10 use again!",
+      "publishedAt": "2024-06-11T15:15:47.235Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR6clp1NFVnEAE!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgIDzrZu4Ug%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNOdDUtT1pBEAE",
+      "reviewer": "Blake C.",
+      "rating": 5,
+      "text": "I have used Sterling on at least 4 separate jobs. Solid work and competitive pricing. 100% recommend giving them a call.",
+      "publishedAt": "2024-01-18T21:56:13.480Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNOdDUtT1pBEAE!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgICNt5-OZA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUM1ME02UWNnEAE",
+      "reviewer": "Satwik K.",
+      "rating": 5,
+      "text": "Had a great experience with Jim at Sterling Electric. We had to install our hot tub and a few light fixtures. Jim explained the entire process in details and gave a couple of options based on our budget. The project took a day and it all went pretty smooth.<br>Would recommend 10/10",
+      "publishedAt": "2023-10-09T14:34:12.555Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUM1ME02UWNnEAE!2m1!1s0x0:0xb3ee55eb69464c2a!3m1!1s2@1:CIHM0ogKEICAgIC50M6Qcg%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xRNE9HRkxlRWt5UTJSc1FrWk5TalJwY0hFMFMyYxAB",
+      "reviewer": "John C.",
+      "rating": 5,
+      "publishedAt": "2026-11-14T01:52:09.062Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoQmNsOUpla1ptU1ZBeE1rWnJVRjk2YmxJNFZHYxAB",
+      "reviewer": "Benjamin W.",
+      "rating": 5,
+      "publishedAt": "2026-10-13T22:05:17.221Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pGRmFHRnVhMmx6VFVWM2VETlRWa2RyWTFsS1oxRRAB",
+      "reviewer": "Mark M.",
+      "rating": 5,
+      "publishedAt": "2026-07-21T18:48:37.819Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT213M1ZXaG1RbGx5VjE5dlNYWlZhMkpTVEhCUWJuYxAB",
+      "reviewer": "Blake G.",
+      "rating": 5,
+      "publishedAt": "2026-07-08T14:18:18.770Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGVFJ6ZEllRWRyZVZsdVZEUkJNVzFyUlY5alJVRRAB",
+      "reviewer": "Jayendra P.",
+      "rating": 5,
+      "publishedAt": "2026-07-02T23:24:13.416Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pOak5VbFJVV3hVUkVkdlRqRmtlRUV6ZDJrelRuYxAB",
+      "reviewer": "Matthew S.",
+      "rating": 5,
+      "publishedAt": "2026-06-13T16:24:06.736Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oNGVrMVFUVTR0VFVsaVlYWjRjR2RYYms1MVQyYxAB",
+      "reviewer": "William D.",
+      "rating": 5,
+      "publishedAt": "2026-05-17T14:21:40.950Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tGRlExVnZXVloyTTBGMGJtNXVObGt3ZGs5aGIxRRAB",
+      "reviewer": "Wild I.",
+      "rating": 5,
+      "publishedAt": "2026-05-12T21:50:09.458Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pSYWNVUlhTa1JqT1RCR1lXVjZWMnczTVVkVWNVRRAB",
+      "reviewer": "Tara R.",
+      "rating": 5,
+      "publishedAt": "2026-05-12T13:33:54.672Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pKUVZrTjNaSFpGYm5Ca2FrVTBkbmxrWlV0R1RFRRAB",
+      "reviewer": "vincent V.",
+      "rating": 5,
+      "publishedAt": "2026-05-01T15:19:55.118Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25Cek1qTlFNRlpZYVZaa2FUQnRiMGhXY2tGb01sRRAB",
+      "reviewer": "Clydia E.",
+      "rating": 5,
+      "publishedAt": "2026-04-23T00:05:33.113Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25BMk16QkphRjlKWVhSa2NqaE9UMmRhYkhvMVZYYxAB",
+      "reviewer": "michael S.",
+      "rating": 4,
+      "publishedAt": "2026-04-05T20:32:36.713Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21ONVV6ZFZlak0zWWsxdlNHaExlRk51Vld4SmVrRRAB",
+      "reviewer": "Brandon B.",
+      "rating": 5,
+      "publishedAt": "2026-03-22T19:36:54.198Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21NM2FWTkhXalZCUjFkTk5HWjVTekJKVGpOaU5YYxAB",
+      "reviewer": "Todd W.",
+      "rating": 5,
+      "publishedAt": "2026-02-03T11:49:34.919Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNqaGQyWUZREAE",
+      "reviewer": "Nancy F.",
+      "rating": 5,
+      "publishedAt": "2024-04-23T22:23:08.320Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNGeDVtcDNBRRAB",
+      "reviewer": "Ghost K.",
+      "rating": 1,
+      "publishedAt": "2023-11-03T14:19:44.805Z"
+    }
+  ]
+}

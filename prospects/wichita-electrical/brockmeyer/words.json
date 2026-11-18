@@ -1,0 +1,673 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Brockmeyer Inc.",
+    "slug": "brockmeyer",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Electrician",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 262-1440",
+        "tel": "+13162621440"
+      }
+    ],
+    "email": "office@brockmeyerinc.com",
+    "hours": "Monday to Friday, 7:30 a.m. to 4:00 p.m.",
+    "address": "408 S Ida, Wichita, KS 67211",
+    "serviceArea": {
+      "summary": "Greater Wichita area",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Free Estimates",
+    "408 S Ida, Wichita",
+    "Weekdays 7:30 to 4:00",
+    "Licensed Electricians"
+  ],
+  "services": [
+    {
+      "name": "Power Restoration and Troubleshooting",
+      "route": null,
+      "blurb": "When the power is out or part of the house isn't working, we track down where the problem is."
+    },
+    {
+      "name": "Outlet Repair",
+      "route": "/outlet-repair-wichita-ks/",
+      "blurb": "Outlets that are dead, loose or warm, plus switch and fixture repairs."
+    },
+    {
+      "name": "Lighting Installation",
+      "route": "/lighting-installation-wichita-ks/",
+      "blurb": "Dimmers, fixtures, ceiling fans and backyard lights for homes, plus lighting installation and repairs, emergency and security lighting and retrofits for businesses."
+    },
+    {
+      "name": "Remodel and Addition Wiring",
+      "route": null,
+      "blurb": "New lines and circuits for remodels, additions and construction."
+    },
+    {
+      "name": "More Home Electrical Work",
+      "route": null,
+      "blurb": "Wiring replacement and circuit grounding, panel replacement, surge protection, ceiling fans, pool and hot tub repairs, code violation corrections."
+    },
+    {
+      "name": "Commercial Electrical",
+      "route": null,
+      "blurb": "Lighting, panels, high and low voltage, emergency lighting and data cabling for businesses. Backup generators too."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "electrician Wichita KS",
+      "seo": {
+        "title": "Electrician in Wichita, KS | Brockmeyer Inc.",
+        "description": "Brockmeyer Inc. is an electrician in Wichita, KS for homes and businesses. Call (316) 262-1440 or ask for a free estimate."
+      },
+      "hero": {
+        "eyebrow": "Wichita, KS · Residential and Commercial",
+        "h1": "Electrician in Wichita, KS — Brockmeyer Inc.",
+        "sub": "A parent's house, a remodel, a panel, an office: licensed electricians in Wichita.",
+        "primaryCta": {
+          "label": "Call (316) 262-1440",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Ask for a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Electrician checking a panel in a Wichita home while the homeowner looks on",
+          "brief": "electrical pool: home-hero",
+          "desktopPosition": "right 15%"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I hired Brockmeyer to do some general electrical repairs. It was for my elderly moms house and they did an amazing job! The tech that came out was very professional and very knowledgeable! He treated my mother with a lot of respect which I appreciate! …",
+          "name": "Katherine A."
+        },
+        {
+          "type": "split",
+          "heading": "Repairs and Maintenance, Down to the Pool and Hot Tub",
+          "body": [
+            "We handle power restoration and troubleshooting, wiring replacement and circuit grounding, switch, outlet and fixture repairs, pool, hot tub and spa electrical repairs, and code violation corrections.",
+            "Surge protection, ceiling fan installations, panel replacements and wiring for a new addition are part of the work too, all done by licensed journeymen electricians here in Wichita."
+          ],
+          "image": {
+            "slot": "outlet-repair",
+            "alt": "A wall outlet with a cover plate that looks slightly discolored",
+            "brief": "electrical pool: outlet-repair"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "review",
+          "quote": "Called these folks in an emergency for my mom and they came the next day, resolved the issue within an hour, and charged us less than their original quote after seeing the project in person. These are truly honest people with good hearts and excellent skills. …",
+          "name": "Olivia V."
+        },
+        {
+          "type": "prose",
+          "heading": "A Remodel Needing New Lines, Old Wiring Needing an Upgrade",
+          "body": [
+            "Rebecca H. needed new electrical lines run for a remodel. We responded quickly with a visit and did a wonderful job just as she requested, she wrote, and we are now on her to-call list for further electrical work.",
+            "Old wiring needed an upgrade at Andrew P.'s house. He found the price incredible compared with the quality of work and customer service he received, and he will forever recommend Brockmeyer."
+          ],
+          "link": {
+            "label": "See outlet repair in Wichita",
+            "route": "/outlet-repair-wichita-ks/"
+          }
+        },
+        {
+          "type": "split",
+          "heading": "Jeremy Did the House, and the Same Company Does the Business",
+          "body": [
+            "Douglas S. found that Brockmeyer professionals handle both commercial and residential jobs. Jeremy took care of his residential tasks quickly and treated the details as if they were being completed on his own home.",
+            "On the commercial side: new electrical installations, lighting installation and repairs, emergency and security lighting, breakers, panels and switches, high and low voltage systems, DC power plants and conduit systems, and data, telephone and cable wiring. Backup generators, lighting retrofits and transformers too."
+          ],
+          "image": {
+            "slot": "panel-upgrade",
+            "alt": "Open electrical panel with labeled breakers and wiring",
+            "brief": "electrical pool: panel-upgrade"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "services",
+          "heading": "From a Warm Outlet to a New Panel",
+          "intro": "Repairs, upgrades and new wiring for homes and businesses across the greater Wichita area."
+        },
+        {
+          "type": "split",
+          "heading": "A Friend's Recommendation, and Follow-Up That Went Further",
+          "body": [
+            "A friend's recommendation brought Scott R. to Brockmeyer. We met all their expectations, he wrote, and exceeded them in the follow-up required, explained the issues and were always friendly and professional.",
+            "They will use us for their future electrical needs, he wrote."
+          ],
+          "image": {
+            "slot": "inspection",
+            "alt": "Electrician testing a wall outlet while a homeowner watches",
+            "brief": "electrical pool: inspection"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "review",
+          "quote": "In my line of work I get asked for referrals for various types of jobs all the time, Brockmeyer is the only company that I am comfortable sending my people to. Not the only electrician, mind you, the only company period. …",
+          "name": "Aaron Y."
+        },
+        {
+          "type": "prose",
+          "heading": "Adam Was Great and the Cost Was Beyond Reasonable",
+          "body": [
+            "Adam was great and super professional, Shiro wrote, and the cost was beyond reasonable. Shiro will use us from here on out.",
+            "Collin V. called us professional and fair on the price after some electrical work around his home. Andrew T., who has worked with dozens of electricians, singled out great communication and pricing."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Two Jobs, and Crews That Keep You in the Loop",
+          "body": [
+            "Twice now, Amfyoyo D. has hired Brockmeyer. The crews are courteous and thorough and keep the homeowner in the loop with changes, he wrote, and they get the job done right the first time.",
+            "Josephine S. said their electrical jobs are done by Brockmeyer and are always done satisfactorily.",
+            "Kathy S. hired Brockmeyer for electrical trenching, and the young men who came out were able to answer her questions and were good with her dogs."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Come By 408 S Ida, Weekdays 7:30 to 4:00",
+          "body": [
+            "Brockmeyer Inc. is at 408 S Ida in Wichita, and we serve homeowners across the greater Wichita area. [[confirm: Serving [towns] and nearby]]",
+            "The office is open Monday to Friday, 7:30 AM to 4:00 PM. [[confirm: [XX] years serving Wichita]]",
+            "Call for a free estimate. [[confirm: [X]-year warranty on our work]]"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Can You Come Today? Can You Fix What the Inspector Wrote Up?",
+          "items": [
+            {
+              "q": "Can you come today?",
+              "a": "Call (316) 262-1440 and tell us what's going on. If anything is smoking, hot to the touch or smells like burning, call 911 first."
+            },
+            {
+              "q": "Can you fix what the inspector wrote up?",
+              "a": "Yes. Code violation corrections are part of our repair work. Call and tell us what the inspector wrote up."
+            },
+            {
+              "q": "What will it cost?",
+              "a": "It depends on the job. Ask for a free estimate."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "A Parent's House, a Remodel, a Panel: Call",
+          "text": "Call (316) 262-1440, or ask for a free estimate. Brockmeyer Inc., 408 S Ida, Wichita."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/outlet-repair-wichita-ks/",
+      "navLabel": "Outlet Repair",
+      "keyword": "outlet repair Wichita KS",
+      "seo": {
+        "title": "Outlet Repair in Wichita, KS | Brockmeyer Inc.",
+        "description": "Warm, loose or dead outlet? Brockmeyer Inc. does outlet repair in Wichita, KS. Call (316) 262-1440 or ask for a free estimate."
+      },
+      "hero": {
+        "eyebrow": "Outlets and switches, Wichita",
+        "h1": "Outlet Repair in Wichita, KS — Brockmeyer Inc.",
+        "sub": "Worn outlets, a dimmer switch, added plugs, a warm plate. Call (316) 262-1440 and tell us what it's doing.",
+        "primaryCta": {
+          "label": "Call (316) 262-1440",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Ask for a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "outlet-repair",
+          "alt": "Electrician replacing a worn wall outlet in a Wichita home",
+          "brief": "electrical pool: outlet-repair"
+        }
+      },
+      "sections": [
+        {
+          "type": "split",
+          "heading": "Several Worn Outlets and a Dimmer, Diagnosed and Fixed",
+          "body": [
+            "Laurie O. needed several worn-out outlets and a dimmer switch replaced. She had never heard of Brockmeyer before that day and wished she had known about us sooner.",
+            "Shawn contacted her the same day she requested service. Will arrived earlier than anticipated and diagnosed all the issues. Polite, knowledgeable and experienced, she called him, and he went over and above."
+          ],
+          "image": {
+            "slot": "inspection",
+            "alt": "Electrician testing a wall outlet while a homeowner watches",
+            "brief": "electrical pool: inspection"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Flickering Lights, Frequent Breaker Trips",
+          "body": [
+            "Flickering lights and frequent breaker trips are the signs to watch for. If an outlet or a breaker is doing either, call and tell us which one it is.",
+            "Plugging too many devices into the same circuit can overheat wiring and raise the risk of electrical fires, so spread appliances out and use heavy-duty surge protectors when needed."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Added Plugs on a Second Job",
+          "body": [
+            "For the second time, tony H. hired Brockmeyer, this time to have plugs added. We did everything we said we would, on time, he wrote.",
+            "Dimmer, socket and switch installations and repairs, plus switch, outlet and fixture repairs, are all part of the work, so a repair and an added plug can be one conversation."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Outdoor Outlets and Weatherproof Covers",
+          "body": [
+            "Outdoor outlets must be weatherproof and up to code, with weatherproof covers on all of them. If the outlet by your patio or pool has no cover, tell us when you call.",
+            "Pool, hot tub and spa electrical repairs are part of our work, and so are wiring replacement and circuit grounding."
+          ],
+          "image": {
+            "slot": "old-panel",
+            "alt": "Older electrical panel in a Wichita basement",
+            "brief": "electrical pool: old-panel"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "faq",
+          "heading": "Do You Replace Switches and Dimmers Too?",
+          "items": [
+            {
+              "q": "Do you replace switches and dimmers too?",
+              "a": "Yes. Switch, outlet and fixture repairs are part of our residential work."
+            },
+            {
+              "q": "Do you work on pool and hot tub electrical?",
+              "a": "Yes. We repair electrical for pools, hot tubs and spas."
+            },
+            {
+              "q": "What if an inspector wrote up an outlet?",
+              "a": "We do code violation corrections. Call and tell us what was written up."
+            },
+            {
+              "q": "What does an estimate cost?",
+              "a": "Estimates are free. Call (316) 262-1440 and tell us which outlet or switch it is and which room it's in."
+            },
+            {
+              "q": "Are you open on weekends?",
+              "a": "The office is closed on weekends, so call on a weekday between 7:30 AM and 4:00 PM."
+            },
+            {
+              "q": "Do you do outlets and panels in a business?",
+              "a": "Yes. Commercial work includes breakers, panels and switches, and new electrical installations. Call and describe the building."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "A Worn Outlet or a Dimmer? Call.",
+          "text": "Call (316) 262-1440 and say what the dimmer or outlet is doing."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/lighting-installation-wichita-ks/",
+      "navLabel": "Lighting Installation",
+      "keyword": "lighting installation Wichita KS",
+      "seo": {
+        "title": "Lighting Installation in Wichita, KS | Brockmeyer Inc.",
+        "description": "Lighting installation in Wichita, KS from Brockmeyer Inc. Dimmers, fixtures and backyard lights. Call (316) 262-1440 or ask for a free estimate."
+      },
+      "hero": {
+        "eyebrow": "Lighting, Wichita",
+        "h1": "Lighting Installation in Wichita, KS — Brockmeyer Inc.",
+        "sub": "Dimmers, fixtures, a pool table light, string lights in the backyard. Call (316) 262-1440 and tell us which room.",
+        "primaryCta": {
+          "label": "Call (316) 262-1440",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Ask for a Free Estimate",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "lighting",
+          "alt": "Pendant lights glowing over a kitchen island in a Wichita home",
+          "brief": "electrical pool: lighting"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Great and fast service,  Shawn and Adam were wonderful to work with and did a great installation on my pool table light.",
+          "name": "Chris C."
+        },
+        {
+          "type": "split",
+          "heading": "Dimmers, Sockets and Switches, Installed and Repaired",
+          "body": [
+            "Dimmer, socket and switch installations and repairs are part of the residential work, next to switch, outlet and fixture repairs.",
+            "Ceiling fan installations too, so mention the fan when you call about the light."
+          ],
+          "image": {
+            "slot": "inspection",
+            "alt": "Electrician testing a wall switch while a homeowner watches",
+            "brief": "electrical pool: inspection"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Backyard Lights, Pools and Spas",
+          "body": [
+            "Outdoor lighting must be weatherproof and up to code, and all lighting should be rated for outdoor use to prevent corrosion and electrical hazards.",
+            "The job can be as simple as an outlet addition for your string lights or as large as complete wiring for pools, spas or outdoor kitchens. Professional installation is key to protecting your family and property."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Emergency, Security and Retrofit Lighting for Businesses",
+          "body": [
+            "For businesses we do lighting installation and repairs, emergency and security lighting, and lighting retrofits.",
+            "They sit beside breakers, panels and switches, high and low voltage systems, and data, telephone and cable wiring. Maintenance covers preventative maintenance, electrical troubleshooting and repairs, backup power and generator installations, lightning protection and environmental controls, and power quality studies and electrical system audits."
+          ],
+          "image": {
+            "slot": "generator",
+            "alt": "Backup generator beside a commercial building in Wichita",
+            "brief": "electrical pool: generator"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "prose",
+          "heading": "Weekdays 7:30 to 4:00 at 408 S Ida",
+          "body": [
+            "The office at 408 S Ida is open Monday to Friday, 7:30 AM to 4:00 PM, and closed on weekends. Call (316) 262-1440 and ask for a free estimate.",
+            "Tell us the room or the yard, and whether you have a fixture, a dimmer or a run of lights in mind."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Do You Install Dimmers and Light Businesses?",
+          "items": [
+            {
+              "q": "Do you install dimmers?",
+              "a": "Yes. Dimmer, socket and switch installations and repairs are part of our residential work."
+            },
+            {
+              "q": "Do you light a business?",
+              "a": "Yes: lighting installation and repairs, plus emergency and security lighting. Call and tell us about the building."
+            },
+            {
+              "q": "Do you work on pool and spa electrical?",
+              "a": "Yes. We repair pool, hot tub and spa electrical, and can wire pools, spas and outdoor kitchens."
+            },
+            {
+              "q": "What does an estimate cost?",
+              "a": "Estimates are free. Tell us the fixture, the room or the part of the yard when you call."
+            },
+            {
+              "q": "Can you come on a weekend?",
+              "a": "The office is closed Saturday and Sunday, so call Monday to Friday."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Lights to Add or a Dimmer to Fix? Call.",
+          "text": "Call (316) 262-1440 and tell us which part of the house or yard."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Brockmeyer Inc. Wichita",
+      "seo": {
+        "title": "Contact Brockmeyer Inc. | Electrician in Wichita, KS",
+        "description": "Call Brockmeyer Inc. at (316) 262-1440 or email for a free estimate. Office at 408 S Ida, Wichita, open Monday to Friday, 7:30 AM to 4:00 PM."
+      },
+      "hero": {
+        "eyebrow": "Contact Brockmeyer Inc.",
+        "h1": "Contact Brockmeyer Inc.",
+        "sub": "The fastest way to reach us is to call. If you'd rather write, email office@brockmeyerinc.com and ask for a free estimate.",
+        "primaryCta": {
+          "label": "Call (316) 262-1440",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Email for a Free Estimate",
+          "action": "email"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Electrician's service van parked in the driveway of a Wichita home",
+          "brief": "electrical pool: contact-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call, and Tell Us Where It Is",
+          "body": [
+            "(316) 262-1440",
+            "Tell us what the problem is, where it is and who will be there."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Not a Good Time to Talk? Email",
+          "body": [
+            "Email office@brockmeyerinc.com and ask for a free estimate. Include your name, a phone number, the address and whether it's a home or a business."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "A Warm Plate, a Dead Outlet, a Tripped Breaker",
+          "image": {
+            "slot": "inspection",
+            "alt": "Homeowner pointing out a wall outlet to an electrician",
+            "brief": "electrical pool: inspection"
+          },
+          "imageSide": "right",
+          "list": [
+            "What's happening: no power, a dead outlet, a warm plate, a flicker, a tripped breaker.",
+            "Where it is in the building, and whether it's a home or a business.",
+            "Who will be there, and the best number to reach them.",
+            "Anything you've already tried, like resetting a breaker or a GFCI."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Office Hours and the Address on S Ida",
+          "body": [
+            "**Hours.** Monday to Friday, 7:30 AM to 4:00 PM. The office is closed Saturday and Sunday.",
+            "**Address.** Brockmeyer Inc., 408 S Ida, Wichita, KS 67211. We serve homeowners across the greater Wichita area.",
+            "If you see smoke or flames, leave the building and call 911 before anything else."
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Brockmeyer Inc. is an electrical contractor in Wichita. We do repairs, upgrades and new wiring for homes and businesses.",
+    "why": [
+      "Free estimates",
+      "Licensed electricians",
+      "Homes and businesses",
+      "Weekdays 7:30 to 4:00"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your site has a real page for homes, one for businesses, a blog, and a phone number one tap away. So this isn't a rescue. It's what a full build adds, from our audit.",
+      "Your headlines are slogans. The homepage says “From Dim to Dazzling – We've Got the Wiring Right.” The residential page says “Powering Homes, One Wire at a Time!” The contact page has no headline at all.",
+      "On a phone, every page is laid out 768 pixels wide inside a 390-pixel screen, so it scrolls sideways. And 58 of the 61 images on your homepage have no alt text.",
+      "Two of your Google reviews are about a mom: one says the tech treated her elderly mother with a lot of respect, the other called you in an emergency for her mom. The review block on your site showed no text when we checked. The demo opens with electrician in Wichita, KS, gives outlet repair and lighting installation a page each, and puts your customers' words on the page."
+    ],
+    "cardsHeading": "Be the Electrician People Find on Google",
+    "cardsIntro": "One card per page.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your homepage headline is a slogan, “From Dim to Dazzling – We've Got the Wiring Right.” It names no electrician and no Wichita.",
+          "58 of the 61 images on your homepage have no alt text, so Google and screen readers can't tell what they show.",
+          "The review block on your homepage showed no text when we checked."
+        ],
+        "fixes": [
+          "A headline that says electrician in Wichita, KS, right at the top.",
+          "Every photo described in plain words.",
+          "Your reviews written onto the page."
+        ],
+        "alsoAdd": "Panel replacement, whole-home rewiring, surge protection and commercial electrical pages, each built for its own search."
+      },
+      {
+        "route": "/outlet-repair-wichita-ks/",
+        "title": "Outlet Repair",
+        "why": "When an outlet goes warm, people search for the repair.",
+        "problems": [
+          "Outlet repair is one line, “Switch, Outlet & Fixture Repairs,” in a list on your residential page, so “outlet repair Wichita KS” has no page built for it.",
+          "That page's headline is “Powering Homes, One Wire at a Time!”, which names no service."
+        ],
+        "fixes": [
+          "A page for outlet repair in Wichita, KS, covering what a warm or dead outlet means.",
+          "A headline that names the service and the city."
+        ]
+      },
+      {
+        "route": "/lighting-installation-wichita-ks/",
+        "title": "Lighting Installation",
+        "why": "People planning new lights or a dimmer search for an installer.",
+        "problems": [
+          "Lighting installation is not a page on your site. “Dimmer, Socket & Switch Installations & Repairs” is one line in your residential list, and “Lighting Installation & Repairs” is one line in your commercial list.",
+          "Nobody searching for lighting installation in Wichita can find that you do it."
+        ],
+        "fixes": [
+          "A page for lighting installation in Wichita, KS, covering dimmers, fixtures, backyard lights and business lighting."
+        ]
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with a warm outlet decides to call.",
+        "problems": [
+          "Your contact page has no headline, only a “Contact Us” subheading.",
+          "On a phone it scrolls sideways by 378 pixels, like every page on your site.",
+          "Your form has no required fields."
+        ],
+        "fixes": [
+          "Your number, hours and address together on one page.",
+          "A layout that fits a phone screen, so nothing scrolls sideways.",
+          "A short list of what to have ready for the call."
+        ]
+      }
+    ],
+    "reportCardHeading": "What great electrician websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Missing"
+      },
+      {
+        "label": "Works on a phone without sideways scrolling",
+        "status": "Missing"
+      },
+      {
+        "label": "Photos described for Google and screen readers",
+        "status": "Needs work"
+      },
+      {
+        "label": "Customer reviews shown on the page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Good"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we'll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site says “Since 2005,” while a Wichita State alumni list says the company was founded in 1988, so which year should every listing use?",
+        "Your site and directories list (316) 262-1440, while two BBB listings show 316-771-0064 and 316-308-4488, so which number should every listing use, and are the others still yours?",
+        "Your site and directories list 408 S Ida, while another listing shows 225 S Ida St #102, so which address should every listing use?",
+        "Kathy S. mentions electrical trenching in one of your reviews and a blog post describes outdoor wiring, so which outdoor and underground jobs do you do?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with the electrician you can send to your mom's house",
+      "text": "We led with the mom's-house call because two customers wrote about their mothers' homes, and nobody else on the web has those reviews. Add 408 S Ida and your weekday hours, and Google has a reason to show you for a search a generic electrician page can't answer.",
+      "showScores": false,
+      "rows": [
+        {
+          "claim": "The electrician you can send to your mom's house",
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
+        },
+        {
+          "claim": "A bill that came in under the quote after the job was seen in person",
+          "score": 12,
+          "appeal": 4,
+          "exclusivity": 3
+        },
+        {
+          "claim": "The company a referrer sends their own people to",
+          "score": 12,
+          "appeal": 3,
+          "exclusivity": 4
+        }
+      ]
+    },
+    "unverified": {
+      "heading": "What we couldn't verify, and why it matters",
+      "intro": "We marked these on the demo as yellow \"to confirm\" tags instead of guessing, because we won't put a claim on your site we can't back up. Your pages and the listings online don't agree on a few of them, and others have no answer at all.",
+      "items": [
+        {
+          "fact": "Years in business",
+          "why": "Your site says \"Since 2005\" and another listing says 1988, and a son or daughter handing a parent's house to a stranger wants a number that holds up."
+        },
+        {
+          "fact": "Service area towns",
+          "why": "\"Greater Wichita area\" doesn't tell someone across town whether you'll come to their mom's street."
+        },
+        {
+          "fact": "Warranty on the work",
+          "why": "Your site doesn't mention one, and a person who can't be at the house will ask what happens if the fix doesn't hold."
+        }
+      ],
+      "closing": "This is what our onboarding call nails down. Fifteen minutes, and every tag becomes a real, true line."
+    }
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Pioneer Roofing",
+    "slug": "pioneer-peoria",
+    "city": "Peoria",
+    "state": "IL",
+    "companyType": "Roofer",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Main",
+        "display": "(309) 865-5471",
+        "tel": "+13098655471"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": "202 SW Center St, Peoria, IL 61605",
+    "serviceArea": {
+      "summary": "Peoria and nearby towns",
+      "towns": [
+        "Bartonville",
+        "Bellevue",
+        "Canton",
+        "Chillicothe",
+        "Creve Coeur",
+        "Danvers",
+        "Delavan",
+        "Dunlap",
+        "East Peoria",
+        "Elmwood",
+        "Eureka",
+        "Farmington",
+        "Germantown Hills",
+        "Glasford",
+        "Hanna City",
+        "Heritage Lake",
+        "Lacon",
+        "Lake Camelot",
+        "Mackinaw",
+        "Manito",
+        "Marquette Heights",
+        "Metamora",
+        "Minier",
+        "Morton",
+        "Norris",
+        "North Pekin",
+        "North Peoria",
+        "Pekin",
+        "Peoria",
+        "Peoria Heights",
+        "Princeville",
+        "Richmond",
+        "Roanoke",
+        "Rome",
+        "South Pekin",
+        "Walnut"
+      ]
+    }
+  },
+  "trustBar": [
+    "Metal Roofing Specialists",
+    "Residential and Commercial",
+    "Standing Seam and Corrugated"
+  ],
+  "services": [
+    {
+      "name": "Metal Roofing",
+      "route": "/metal-roofing-peoria-il/",
+      "blurb": "Metal roofs for homes and commercial buildings, in panels, metal shingles and specialty coated systems."
+    },
+    {
+      "name": "Residential Metal Roofing",
+      "route": null,
+      "blurb": "Panels, metal shingles or specialty coated systems for a house."
+    },
+    {
+      "name": "Commercial Metal Roofing",
+      "route": null,
+      "blurb": "Metal roofs for commercial buildings."
+    },
+    {
+      "name": "Standing Seam Metal Roofs",
+      "route": null,
+      "blurb": "Standing seam metal roofing."
+    },
+    {
+      "name": "Corrugated Metal Roofs",
+      "route": null,
+      "blurb": "Corrugated metal roofing."
+    },
+    {
+      "name": "Metal Roof Installation and Design",
+      "route": null,
+      "blurb": "Metal roof installation and design."
+    },
+    {
+      "name": "Roof Repair",
+      "route": null,
+      "blurb": "Roof repairs, alongside new metal roofs."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "roofer Peoria IL",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Peoria, IL · 202 SW Center St",
+        "h1": "Roofer in Peoria, IL — Pioneer Roofing",
+        "sub": "Metal roofs for homes and commercial buildings, standing seam and corrugated included, plus repairs. Call (309) 865-5471 and tell us what your roof needs.",
+        "primaryCta": {
+          "label": "Call (309) 865-5471",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "new-roof-ranch",
+          "alt": "Ranch-style home with a newly finished roof",
+          "brief": "ranch-style house with a freshly finished roof on the right of the frame, lawn and driveway leading off to the left, clear sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Very responsive company makes you feel like your appreciated",
+          "name": "Jb G."
+        },
+        {
+          "type": "split",
+          "heading": "Metal Roofing Is the Work We Do",
+          "body": [
+            "Pioneer Roofing installs metal roofs on homes and on commercial buildings. That covers standing seam and corrugated panels, and for houses, metal shingles and specialty coated systems.",
+            "Metal roof installation and design is part of the work too."
+          ],
+          "list": [
+            "Residential and commercial metal roofs",
+            "Standing seam and corrugated panels",
+            "Repairs as well as new roofs"
+          ],
+          "listStyle": "checks",
+          "image": {
+            "slot": "new-roof-twostory",
+            "alt": "Two-story home with a finished roof",
+            "brief": "two-story house with a finished roof on the right half of the frame, tree and lawn to the left, calm sky behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Repairs as Well as New Roofs",
+          "body": [
+            "Pioneer Roofing also handles roof repairs."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "They were extremely professional, sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully! I am exceptionally grateful for Pioneer roofing, and for such a job WELL DONE!",
+          "name": "AIRJuWAUN A."
+        },
+        {
+          "type": "services",
+          "heading": "Metal Roofing Services in Peoria",
+          "intro": "Metal roofing comes first, for homes and for commercial buildings. Repairs follow."
+        },
+        {
+          "type": "review",
+          "quote": "Great people to do business with very fair and transparent",
+          "name": "Marty B."
+        },
+        {
+          "type": "prose",
+          "heading": "Peoria and the Towns Around It",
+          "body": [
+            "Our office is at 202 SW Center St in Peoria. We work in Peoria and in the towns around it: Bartonville, Bellevue, Canton, Chillicothe, Creve Coeur, Danvers, Delavan, Dunlap, East Peoria, Elmwood, Eureka, Farmington, Germantown Hills, Glasford, Hanna City, Heritage Lake, Lacon, Lake Camelot, Mackinaw, Manito, Marquette Heights, Metamora, Minier, Morton, Norris, North Pekin, North Peoria, Pekin, Peoria Heights, Princeville, Richmond, Roanoke, Rome, South Pekin and Walnut."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Metal Roofs in Peoria",
+          "items": [
+            {
+              "q": "What kinds of metal roofs do you install?",
+              "a": "Standing seam and corrugated panels, plus metal shingles and specialty coated systems for houses, and commercial metal roofing."
+            },
+            {
+              "q": "Do you work on commercial buildings?",
+              "a": "Yes. Commercial metal roofing is part of what Pioneer Roofing does."
+            },
+            {
+              "q": "Do you repair roofs, or only install new ones?",
+              "a": "Both. Repairs are part of the work."
+            },
+            {
+              "q": "Which towns do you work in?",
+              "a": "Peoria and the towns around it, from Canton and Lacon to Eureka and Morton. The full list is above."
+            },
+            {
+              "q": "Where is Pioneer Roofing?",
+              "a": "Our office is at 202 SW Center St in Peoria, IL 61605."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call About Your Metal Roof",
+          "text": "Tell us whether it is a house or a commercial building, what the roof is doing and what you would like done. (309) 865-5471"
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/metal-roofing-peoria-il/",
+      "navLabel": "Metal Roofing",
+      "keyword": "metal roofing Peoria IL",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Metal roofing, Peoria",
+        "h1": "Metal Roofing in Peoria, IL — Pioneer Roofing",
+        "sub": "Standing seam, corrugated and metal shingles for homes, and metal roofing for commercial buildings. Call (309) 865-5471 and tell us what you are roofing.",
+        "primaryCta": {
+          "label": "Call (309) 865-5471",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "new-roof-twostory",
+          "alt": "Two-story home with a finished roof",
+          "brief": "two-story house with a finished roof on the right half of the frame, tree and lawn to the left, calm sky behind the text side, no readable text, no people"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Great customer service, friendly and very knowledgeable.",
+          "name": "Jose V."
+        },
+        {
+          "type": "split",
+          "heading": "Metal Roofs on Peoria Homes and Commercial Buildings",
+          "body": [
+            "Pioneer Roofing installs metal roofs for houses and for commercial buildings. On a house that can mean panels, metal shingles or specialty coated systems.",
+            "We also do metal roof installation and design."
+          ],
+          "image": {
+            "slot": "new-roof-ranch",
+            "alt": "Ranch-style home with a newly finished roof",
+            "brief": "ranch-style house with a freshly finished roof on the right of the frame, lawn and driveway leading off to the left, clear sky behind the text side, no readable text, no people"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Kinds of Metal Roof We Install",
+          "body": [
+            "Pioneer Roofing has a page for each of these on its site:"
+          ],
+          "list": [
+            "Standing seam metal roofs",
+            "Corrugated metal roofs",
+            "Residential metal roofing: panels, metal shingles or specialty coated systems",
+            "Commercial metal roofing"
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Metal Roofing in Peoria",
+          "items": [
+            {
+              "q": "Do you install metal roofs on commercial buildings?",
+              "a": "Yes, along with residential metal roofs."
+            },
+            {
+              "q": "Can you do standing seam and corrugated?",
+              "a": "Yes. Both are part of our metal roofing work."
+            },
+            {
+              "q": "Which towns do you cover?",
+              "a": "Peoria and the towns around it. The list is on our homepage."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Ask About a Metal Roof for Your Building",
+          "text": "Tell us what you are roofing and what you want from it. (309) 865-5471"
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact Pioneer Roofing Peoria IL",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Call us",
+        "h1": "Contact Pioneer Roofing",
+        "sub": "The way to reach us is by phone. Tell us what you are roofing and what it needs.",
+        "primaryCta": {
+          "label": "Call (309) 865-5471",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-street",
+          "alt": "Street of single-family homes",
+          "brief": "residential street with single-family houses and their rooflines, daylight, no people, no readable text"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Phone and Address",
+          "body": [
+            "**Phone:** (309) 865-5471",
+            "**Address:** 202 SW Center St, Peoria, IL 61605",
+            "Calling is the way to reach us. Tell us what kind of building it is and what the roof is doing, and we will talk it through."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What to Say When You Call About a Metal Roof",
+          "body": [
+            "You do not need the right words. A few details help us understand the job:"
+          ],
+          "list": [
+            "Whether it is a house or a commercial building",
+            "Whether you want a new metal roof, a repair, or a question answered first",
+            "The kind of metal you are picturing, if you have one in mind: standing seam, corrugated or metal shingles",
+            "The town the building is in"
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Towns We Cover Near Peoria",
+          "body": [
+            "We work in Peoria and in towns around it, including East Peoria, Pekin, Morton, Dunlap, Chillicothe and Canton. If your town is not on that short list, call and ask."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call About Your Roof",
+          "text": "Call (309) 865-5471 and tell us what the roof is doing."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Pioneer Roofing is a metal roofing company at 202 SW Center St in Peoria, IL. It installs residential and commercial metal roofs and handles repairs, for Peoria and nearby towns.",
+    "why": [
+      "Metal roofing is the specialty",
+      "Residential and commercial roofs",
+      "Standing seam and corrugated panels"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your site has real metal roofing pages for homes, commercial buildings, standing seam, corrugated and installation and design. Their headlines say METAL ROOFS and STANDING SEAM METAL ROOFS with no city, so someone searching for a metal roof in Peoria has nothing built for that phrase.",
+      "At least 36 town pages each say \"Pioneer Roofing Experts in\" a town, and they are one page with the town name swapped, so Google reads the same words again and again. The Phone button on every one we checked dials (321) 399-2147, not the (309) 865-5471 printed everywhere else.",
+      "So we built a site around the work your site leads with: metal roofing in Peoria on a page of its own, the towns you serve on the homepage, and one phone number."
+    ],
+    "cardsHeading": "Be the Roofer People Find on Google",
+    "cardsIntro": "Each card is one page: what your site does today and what we changed.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "The page Google reads to learn who you are and where you work.",
+        "problems": [
+          "Your headline says Roofing Contractor Peoria, IL but never says metal, so a homeowner looking for a metal roof can't tell it is what you do best.",
+          "The Services item in your menu goes nowhere when clicked; it only opens a list, so there is no page that explains what you do."
+        ],
+        "fixes": [
+          "A headline that says roofer in Peoria, IL, with metal roofing in the first lines under it.",
+          "Your services and your towns told on the homepage itself."
+        ],
+        "alsoAdd": "Every page set up behind the scenes so Google and AI tools like ChatGPT know exactly what you do, where you work, and what your customers say."
+      },
+      {
+        "route": "/metal-roofing-peoria-il/",
+        "title": "Metal Roofing",
+        "why": "Metal roofing is your specialty, and today it is spread over six short pages.",
+        "problems": [
+          "Each metal page runs about 260 to 300 words, and none of the headlines names Peoria, so a search for metal roofing in Peoria, IL doesn't match them.",
+          "A homeowner has to open six pages to see which kinds of metal roof you install."
+        ],
+        "fixes": [
+          "One page for metal roofing in Peoria, IL, covering homes, commercial buildings and the kinds of metal roof you install.",
+          "A call to action on the page, with one phone number."
+        ],
+        "alsoAdd": "Pages planned from what Google actually shows for each search, so every page targets something people really look for."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where someone with a roof question decides to call.",
+        "problems": [
+          "The Phone button on your town pages dials (321) 399-2147, an area code that isn't Peoria's, so a caller from one of those pages reaches a different line.",
+          "Your contact page is 79 words: a headline and a form, with no address written on it."
+        ],
+        "fixes": [
+          "A contact page with your address and the one number that matches your Google listing.",
+          "A short list of what to say when you call."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great roofing company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Fits a phone screen",
+        "status": "Good"
+      },
+      {
+        "label": "Headline says what you do and where",
+        "status": "Needs work"
+      },
+      {
+        "label": "Every phone button dials the same number",
+        "status": "Missing"
+      },
+      {
+        "label": "Each money service has a page named for Peoria",
+        "status": "Needs work"
+      },
+      {
+        "label": "Real reviews shown",
+        "status": "Missing"
+      },
+      {
+        "label": "Contact page says who and where you are",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "One customer calls you responsive, and another calls you fair and transparent. Book a strategy call with Fluid Frame and we'll walk you through this demo and plan your new site."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site and your Google listing show (309) 865-5471, while the Phone button on your town pages dials (321) 399-2147, so which number is live, and why is there a second one? This demo uses the Google number.",
+        "Your town pages say \"experienced and certified professionals\" without naming a certification, so which manufacturer or program certifications can we name, and where do we show proof?",
+        "Search results for \"Pioneer Roofing\" turn up other companies of that name, including a commercial listing on GAF and profiles on BBB in other states, so which listings are yours?"
+      ]
+    },
+    "offer": {
+      "heading": "The offer we'd build with you",
+      "text": "This is a proposal for you to decide on, not something Pioneer Roofing does today. It is a one-page metal roof spec handed to the owner before the work starts: the kind of panel and finish, how it is fastened, what goes underneath, how the edges, valleys and vents are handled, and what you and the manufacturer each stand behind. As far as we found, none of the three competitor sites we could read offers a sheet like it.",
+      "points": [
+        "The sheet is filled in for the owner's actual roof, one line for each of those details.",
+        "A homeowner can set that sheet beside any other bid, shingle or metal.",
+        "Terms and what you put in writing are yours to set."
+      ]
+    }
+  }
+}

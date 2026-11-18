@@ -1,0 +1,204 @@
+{
+  "sender": {
+    "firstName": "Josh",
+    "lastName": "Lenz",
+    "fullName": "Josh Lenz",
+    "email": "josh@fluidframemarketing.com",
+    "phone": "4173732773",
+    "company": "Fluid Frame Marketing",
+    "zip": "65804"
+  },
+  "messageFile": "ask.md",
+  "entries": [
+    {
+      "slug": "ballinger",
+      "company": "Ballinger Electric",
+      "prospect": "prospects/wichita-electrical/ballinger",
+      "formUrl": "https://www.ballingerelectric.com/contact",
+      "approved": true,
+      "subject": "A website mockup for Ballinger Electric",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)",
+      "choices": { "type of service": "Other" }
+    },
+    {
+      "slug": "brockmeyer",
+      "company": "Brockmeyer Inc.",
+      "prospect": "prospects/wichita-electrical/brockmeyer",
+      "formUrl": "https://www.brockmeyerinc.com/contact-us",
+      "approved": true,
+      "subject": "A website mockup for Brockmeyer Inc.",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)",
+      "choices": { "service": "Commercial Electrician" }
+    },
+    {
+      "slug": "bybee",
+      "company": "Bybee Electric",
+      "prospect": "prospects/wichita-electrical/bybee",
+      "formUrl": "https://www.bybeeelectric.com/contact",
+      "approved": true,
+      "subject": "A website mockup for Bybee Electric",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+    },
+    {
+      "slug": "plumbcrazy",
+      "company": "Plumb Crazy",
+      "prospect": "prospects/wichita-plumbing/plumbcrazy",
+      "formUrl": "https://www.plumbcrazykansas.com/contact-us/",
+      "approved": true,
+      "subject": "A website mockup for Plumb Crazy",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+    },
+    {
+      "slug": "yokes",
+      "company": "Yoke's Master Plumbing and Remodeling",
+      "prospect": "prospects/wichita-plumbing/yokes",
+      "formUrl": "https://yokesmasterplumbing.com/contact/",
+      "approved": true,
+      "subject": "A website mockup for Yoke's Master Plumbing and Remodeling",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+    },
+    {
+      "slug": "cooks",
+      "company": "Cook's Heating and Cooling",
+      "prospect": "prospects/wichita-hvac/cooks",
+      "formUrl": "https://www.cookshvac.com/contact/",
+      "approved": true,
+      "subject": "A website mockup for Cook's Heating and Cooling",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+    },
+    {
+      "slug": "integrity",
+      "company": "Integrity Heating and Cooling",
+      "prospect": "prospects/wichita-hvac/integrity",
+      "formUrl": "https://integrityheatingandcooling.net/contact/",
+      "approved": false,
+      "subject": "A website mockup for Integrity Heating and Cooling"
+    },
+    {
+      "slug": "aircapital",
+      "company": "Air Capital Heating and Air",
+      "prospect": "prospects/wichita-hvac/aircapital",
+      "formUrl": "https://aircapitalheatingandair.com/contact-us",
+      "approved": true,
+      "subject": "A website mockup for Air Capital Heating and Air",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+    },
+    {
+      "slug": "comforttechs",
+      "company": "ComfortTechs",
+      "prospect": "prospects/lincoln-hvac/comforttechs",
+      "formUrl": "https://www.comforttechs.com/contact-us",
+      "approved": false,
+      "subject": "A website mockup for ComfortTechs"
+    },
+    {
+      "slug": "pioneer",
+      "company": "Pioneer Roofing",
+      "prospect": "prospects/peoria-roofing/pioneer",
+      "formUrl": "https://roofingpeoria.net/contact-us/",
+      "approved": false,
+      "subject": "A website mockup for Pioneer Roofing"
+    },
+    {
+      "slug": "electricraft",
+      "company": "ElectriCraft",
+      "prospect": "prospects/wichita-electrical/electricraft",
+      "formUrl": "https://www.electricraftks.com/contact",
+      "approved": true,
+      "subject": "A website mockup for ElectriCraft",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+    },
+    {
+      "slug": "alpha",
+      "company": "Alpha HVAC & Plumbing",
+      "prospect": "prospects/wichita-hvac/alpha",
+      "formUrl": "https://alpha-heatair.com/contact-us/",
+      "approved": true,
+      "subject": "A website mockup for Alpha HVAC & Plumbing",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+    },
+    {
+      "slug": "dreammakers",
+      "company": "Dream Makers Heating and Cooling",
+      "prospect": "prospects/wichita-hvac/dreammakers",
+      "formUrl": "https://heatingandcooling.online/contact-us/",
+      "approved": true,
+      "subject": "A website mockup for Dream Makers Heating and Cooling",
+      "approvedBy": "Josh, 2026-11-17: turn on tomorrow 7:30am (wave 1)"
+    },
+    {
+      "slug": "douglas-fry",
+      "company": "Douglas Fry Roofing",
+      "prospect": "prospects/wichita-roofing/douglas-fry",
+      "formUrl": "https://www.douglasfryroofing.com/",
+      "approved": false,
+      "subject": "A website mockup for Douglas Fry Roofing",
+      "frame": "powr.io"
+    },
+    {
+      "slug": "ict-roofing",
+      "company": "ICT Roofing & Exteriors",
+      "prospect": "prospects/wichita-roofing/ict-roofing",
+      "formUrl": "https://www.ict-roofing.com/contact",
+      "approved": false,
+      "subject": "A website mockup for ICT Roofing & Exteriors"
+    },
+    {
+      "slug": "rivercity",
+      "company": "River City Roofing",
+      "prospect": "prospects/wichita-roofing/rivercity",
+      "formUrl": "https://rivercity-roofing.com/contact/",
+      "approved": false,
+      "subject": "A website mockup for River City Roofing"
+    },
+    {
+      "slug": "creekmore",
+      "company": "Creekmore Plumbing",
+      "prospect": "prospects/wichita-plumbing/creekmore",
+      "formUrl": "https://creekmoreplumbing.com/",
+      "approved": false,
+      "subject": "A website mockup for Creekmore Plumbing"
+    },
+    {
+      "slug": "customassured",
+      "company": "Custom Assured Mechanical",
+      "prospect": "prospects/fortwayne-hvac/customassured",
+      "formUrl": "https://customassured.com/contact",
+      "approved": false,
+      "subject": "A website mockup for Custom Assured Mechanical"
+    },
+    {
+      "slug": "coolconcepts",
+      "company": "Cool Concepts",
+      "prospect": "prospects/lincoln-hvac/coolconcepts",
+      "formUrl": "https://coolconceptsne.com/contact/",
+      "approved": false,
+      "subject": "A website mockup for Cool Concepts"
+    },
+    {
+      "slug": "roettgers",
+      "company": "Roettger's Heating and Cooling",
+      "prospect": "prospects/lincoln-hvac/roettgers",
+      "formUrl": "https://www.roettgersheatingandcooling.com/contact",
+      "approved": false,
+      "subject": "A website mockup for Roettger's Heating and Cooling"
+    },
+    {
+      "slug": "thermal",
+      "company": "Thermal Services, Inc. (TSI)",
+      "prospect": "prospects/peoria-hvac/thermal",
+      "formUrl": "https://www.tsipeoria.com/contact-us",
+      "approved": false,
+      "subject": "A website mockup for Thermal Services, Inc. (TSI)"
+    },
+    {
+      "slug": "jgroofing",
+      "company": "JG Roofing and Company",
+      "prospect": "prospects/peoria-roofing/jgroofing",
+      "formUrl": "https://www.jgroofingco.com/peoria",
+      "approved": false,
+      "subject": "A website mockup for JG Roofing and Company",
+      "frame": "filesusr.com"
+    }
+  ]
+}

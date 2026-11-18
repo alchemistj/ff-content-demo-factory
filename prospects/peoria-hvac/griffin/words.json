@@ -1,0 +1,607 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Griffin HVAC",
+    "slug": "griffin-peoria",
+    "city": "Peoria",
+    "state": "IL",
+    "companyType": "HVAC Company",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Peoria",
+        "display": "(309) 676-0808",
+        "tel": "+13096760808"
+      }
+    ],
+    "email": "douggriffinheatcool@gmail.com",
+    "hours": null,
+    "address": "1007 W Detweiller Dr, Peoria, IL 61615",
+    "serviceArea": {
+      "summary": "Peoria area",
+      "towns": [
+        "Peoria",
+        "Dunlap",
+        "Pekin",
+        "Washington",
+        "Chillicothe",
+        "Metamora",
+        "Creve Coeur",
+        "Edwards",
+        "Hopewell",
+        "Peoria Heights",
+        "Morton",
+        "Germantown Hills",
+        "Princeville",
+        "Edelstein",
+        "East Peoria",
+        "Elmwood",
+        "Mackinaw",
+        "Mapleton",
+        "Bartonville",
+        "Brimfield",
+        "Tremont",
+        "Hanna City",
+        "Trivoli",
+        "Marquette Heights",
+        "West Peoria"
+      ]
+    }
+  },
+  "trustBar": [
+    "Serving the Peoria Area Since 1963, Current Owner Since 2019",
+    "24/7 Emergency Service",
+    "Furnace and AC Repair",
+    "GoodLeap Financing",
+    "Two Clean-and-Check Visits a Year"
+  ],
+  "services": [
+    {
+      "name": "Furnace Repair",
+      "route": "/furnace-repair-peoria-il/",
+      "blurb": "Heat back on when the furnace quits, with emergency service available 24/7."
+    },
+    {
+      "name": "AC Repair",
+      "route": "/ac-repair-peoria-il/",
+      "blurb": "Cooling back on when the air conditioner quits on a hot day."
+    },
+    {
+      "name": "Maintenance Plan",
+      "route": null,
+      "blurb": "Two clean-and-check visits a year, one in spring and one in fall."
+    },
+    {
+      "name": "New Furnace and AC Installation",
+      "route": null,
+      "blurb": "A new system when the old one is done, with GoodLeap financing if you want it."
+    },
+    {
+      "name": "Emergency Service",
+      "route": null,
+      "blurb": "24/7 emergency service for the repairs that can't wait for a convenient time."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "hvac company peoria il",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Peoria, IL · Heating and Cooling",
+        "h1": "HVAC Company in Peoria, IL — Griffin HVAC",
+        "sub": "Furnace or air conditioner not working? Griffin HVAC repairs both, installs new systems, and offers emergency service 24/7. Serving the Peoria area since 1963.",
+        "primaryCta": {
+          "label": "Call (309) 676-0808",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "HVAC technician at an outdoor unit beside a Peoria home",
+          "brief": "HVAC technician with a tool bag at an outdoor condenser beside a brick house, soft afternoon light"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Why Peoria Homeowners Call Griffin HVAC",
+          "body": [
+            "We repair furnaces and air conditioners, install new systems, and take emergency calls 24/7. Call (309) 676-0808 and tell us what the system is doing."
+          ],
+          "items": [
+            {
+              "title": "Repair",
+              "text": "Furnaces and air conditioners, with emergency service 24/7."
+            },
+            {
+              "title": "New systems",
+              "text": "New furnaces and air conditioners, with GoodLeap financing if you want it."
+            },
+            {
+              "title": "Maintenance plan",
+              "text": "Two clean-and-check visits a year."
+            },
+            {
+              "title": "Booking",
+              "text": "Book online, or call (309) 676-0808 if the schedule doesn't show a time you want."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Our technician (Josh) was knowledgeable and thorough. He was quickly able to locate the root cause of the problem and recommend a solution and did not try and upsell us on anything.",
+          "name": "Joseph M."
+        },
+        {
+          "type": "services",
+          "heading": "Heating and Cooling Services in Peoria",
+          "intro": "The furnace and air conditioner pages cover each repair in full."
+        },
+        {
+          "type": "review",
+          "quote": "It is rare to receive such excellent service and customer care at every level of a HVAC purchase and installation and follow up service and maintenance",
+          "name": "Patti F."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Furnace or Air Conditioner Quits",
+          "body": [
+            "Call (309) 676-0808 and say what the system is doing: no heat, no cooling, a noise, or it runs and the house doesn't change. Emergency services are available 24/7.",
+            "For the specifics, see [furnace repair in Peoria](/furnace-repair-peoria-il/) and [AC repair in Peoria](/ac-repair-peoria-il/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "New Furnace or Air Conditioner, With Financing",
+          "body": [
+            "When a furnace or air conditioner is past repair, we install the replacement. If you want to finance it, we've partnered with GoodLeap, which uses a soft credit check until funding."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We had a great experience with Griffin HVAC. We needed our furnace replaced after it went out and they were fast and easy to get us a great quote. Did not feel like they were trying to up sell us at all, just get us what we need which was refreshing.",
+          "name": "Reed S."
+        },
+        {
+          "type": "prose",
+          "heading": "The Griffin Maintenance Plan",
+          "body": [
+            "Our maintenance plan is a one-year agreement with two clean-and-check visits, one in spring and one in fall. Each visit has its own list.",
+            "Clean-and-check visits are scheduled on weekdays."
+          ],
+          "items": [
+            {
+              "title": "Spring visit",
+              "text": "Condenser coil, electrical, refrigerant pressures, drains and thermostat."
+            },
+            {
+              "title": "Fall visit",
+              "text": "Burners, flame sensor, safeties, gas pressures, flue and humidifier."
+            },
+            {
+              "title": "Priority scheduling",
+              "text": "Plan members get priority scheduling."
+            },
+            {
+              "title": "10% off parts",
+              "text": "Members get 10% off any parts during service or a clean and check."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What the Plan Costs",
+          "body": [
+            "A one-year agreement is $160.00 for a home with 1 system (furnace and air conditioning), and $260.00 for a home with 2 systems. An extra $100.00 is added if your home has more than 2 systems.",
+            "Members never pay after-hours, weekend or holiday rates, only $75.00 for any service call."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Josh cleaned my HVAC unit including the blower which was filled with drywall dust from renovations. I was so impressed and have signed up for their yearly maintenance plan.",
+          "name": "Michelle C."
+        },
+        {
+          "type": "prose",
+          "heading": "Where Griffin HVAC Works",
+          "body": [
+            "We serve Peoria, Dunlap, Pekin, Washington, Chillicothe, Metamora, Creve Coeur, Edwards, Hopewell, Peoria Heights, Morton, Germantown Hills, Princeville, Edelstein, East Peoria, Elmwood, Mackinaw, Mapleton, Bartonville, Brimfield, Tremont, Hanna City, Trivoli, Marquette Heights and West Peoria."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About Griffin HVAC",
+          "items": [
+            {
+              "q": "Do you take emergency calls at night and on weekends?",
+              "a": "Emergency services are available 24/7. Call (309) 676-0808."
+            },
+            {
+              "q": "Can I book a clean-and-check on a Saturday?",
+              "a": "No. Requests for a/c or furnace maintenance clean and checks can only be scheduled during the week."
+            },
+            {
+              "q": "What if the online schedule doesn't show a time I want?",
+              "a": "Call (309) 676-0808. The online schedule isn't a true reflection of our actual schedule."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Talk to Griffin HVAC",
+          "text": "Tell us what the furnace or air conditioner is doing at (309) 676-0808."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/furnace-repair-peoria-il/",
+      "navLabel": "Furnace Repair",
+      "keyword": "furnace repair peoria il",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Heating · Peoria, IL",
+        "h1": "Furnace Repair in Peoria, IL — Griffin HVAC",
+        "sub": "When the furnace quits, call Griffin HVAC. Emergency service is available 24/7.",
+        "primaryCta": {
+          "label": "Call (309) 676-0808",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "thermostat",
+          "alt": "Hand adjusting a wall thermostat",
+          "brief": "hand adjusting a wall thermostat in a living room, soft indoor light"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Furnace went out 4:30 pm on New Years Eve. Called Griffin. Josh showed up at 5:10 pm. knew exactly how to fix and was done by 5:45 pm. … It needed a new igniter and had the part with him.",
+          "name": "Bob R."
+        },
+        {
+          "type": "prose",
+          "heading": "Why Call Griffin HVAC for a Furnace Repair",
+          "body": [
+            "We repair furnaces, take emergency calls 24/7, and replace the furnace when it is past repair. The reviews on this page come from Peoria homeowners who called us when theirs quit. Phone (309) 676-0808 and say what the furnace is doing."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Techs at Griffin do a great job. Furnace went out right when it started to get cold. Josh got it back up and running in no time. Highly recommend.",
+          "name": "Kevin S."
+        },
+        {
+          "type": "review",
+          "quote": "Josh was great. A professional and explained everything he observed and what would be needed to resolve the problem.",
+          "name": "David R."
+        },
+        {
+          "type": "review",
+          "quote": "Josh was very professional. I appreciate the picture of the person coming to service our furnace prior to his arrival. He was on time. He explained what he needed to do.",
+          "name": "Marolyn W."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Furnace Needs Replacing",
+          "body": [
+            "Some furnaces are past repair. When yours is, we quote a new one, and GoodLeap financing is available if you want it. GoodLeap runs a soft credit check until funding."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Thankful for a quick response time for an assessment, and quickly provided an estimate as well as a date for replacement.",
+          "name": "Chelsea W."
+        },
+        {
+          "type": "faq",
+          "heading": "Furnace Repair Questions",
+          "items": [
+            {
+              "q": "Do you take emergency furnace calls?",
+              "a": "Yes. Emergency services are available 24/7, so call (309) 676-0808 when the furnace stops."
+            },
+            {
+              "q": "Do you replace a furnace that can't be repaired?",
+              "a": "Yes. We install new furnaces, with GoodLeap financing if you want it."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Furnace Not Working?",
+          "text": "Call Griffin HVAC at (309) 676-0808 and say what the furnace is doing."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/ac-repair-peoria-il/",
+      "navLabel": "AC Repair",
+      "keyword": "ac repair peoria il",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Cooling · Peoria, IL",
+        "h1": "AC Repair in Peoria, IL — Griffin HVAC",
+        "sub": "Air conditioner down on a hot day? Call Griffin HVAC, with emergency service available 24/7.",
+        "primaryCta": {
+          "label": "Call (309) 676-0808",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "ac-repair-hero",
+          "alt": "Technician at an outdoor air conditioner unit beside a house",
+          "brief": "HVAC technician servicing an outdoor condenser unit beside a house, daytime"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "My A/C went out at the start of a very hot Labor Day weekend and Doug from Griffin HVAC was able to come out that Saturday. He was able to quickly diagnose and fix the issue and get my A/C unit working again. Great service!",
+          "name": "Kristopher H."
+        },
+        {
+          "type": "prose",
+          "heading": "Why Call Griffin HVAC for an AC Repair",
+          "body": [
+            "We repair air conditioners, take emergency calls 24/7, and install a new one when the old unit is past repair. The reviews on this page come from Peoria homeowners who called us on hot days. Phone (309) 676-0808 and say what the air conditioner is doing."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Called in the morning and Josh arrived in the afternoon. He was great! Arrived on time and fixed my AC in a couple of hours on the hot and humid day.",
+          "name": "JL X."
+        },
+        {
+          "type": "review",
+          "quote": "Call Griffin HVAC today morning to check the weird noise coming from my outside AC unit. Doug (owner) and Garrett came out and resolved the issue at a very reasonable cost.",
+          "name": "Jigar P."
+        },
+        {
+          "type": "review",
+          "quote": "We are new homeowners in an older home and had no A/C in hot weather. He checked the system completely and explained how our system worked. He also showed us how to work our Nest thermostat.",
+          "name": "Judith G."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Air Conditioner Needs Replacing",
+          "body": [
+            "Some air conditioners are past repair. When yours is, we install a new one, and you can finance it through GoodLeap."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "AC Repair Questions",
+          "items": [
+            {
+              "q": "Do you take emergency AC calls?",
+              "a": "Yes. Emergency services are available 24/7, so call (309) 676-0808 when the air conditioner stops."
+            },
+            {
+              "q": "Do you replace an air conditioner that can't be repaired?",
+              "a": "Yes. We install new air conditioners, with GoodLeap financing if you want it."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Air Conditioner Not Cooling?",
+          "text": "Call Griffin HVAC at (309) 676-0808 and say what the air conditioner is doing."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact griffin hvac peoria il",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact Griffin HVAC",
+        "h1": "Contact Griffin HVAC in Peoria, IL",
+        "sub": "The fastest way to reach Griffin HVAC is to call. Say what the system is doing. Emergency services are available 24/7.",
+        "primaryCta": {
+          "label": "Call (309) 676-0808",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Service van parked at the curb of a Peoria home",
+          "brief": "white service van at the curb of a suburban house, front door behind it, daytime"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Email Griffin HVAC",
+          "body": [
+            "(309) 676-0808",
+            "Prefer to write? Email douggriffinheatcool@gmail.com and say what the system is doing and where the house is. For anything that can't wait, call instead."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "What to Tell Us When You Call",
+          "list": [
+            "What the system is doing: no heat, no cooling, a noise, a smell, ice, a tripped breaker.",
+            "Whether it's a furnace or an air conditioner.",
+            "Roughly how old the system is, and any repairs you remember.",
+            "Whether you're on Griffin's maintenance plan."
+          ],
+          "image": {
+            "slot": "thermostat",
+            "alt": "Hand adjusting a wall thermostat",
+            "brief": "hand adjusting a wall thermostat in a living room, soft indoor light"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Where to Find Griffin HVAC in Peoria",
+          "body": [
+            "**Address.** 1007 W Detweiller Dr, Peoria, IL 61615.",
+            "**Hours.** Monday to Friday, opening at 8:00 AM. Maintenance clean-and-checks are booked during the week. Emergency services are available 24/7.",
+            "**Area.** Peoria, Dunlap, Pekin, Washington, Chillicothe, Metamora, Creve Coeur, Edwards, Hopewell, Peoria Heights, Morton, Germantown Hills, Princeville, Edelstein, East Peoria, Elmwood, Mackinaw, Mapleton, Bartonville, Brimfield, Tremont, Hanna City, Trivoli, Marquette Heights and West Peoria."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Griffin HVAC",
+          "text": "Tell us what the system is doing."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Griffin HVAC is a Peoria heating and cooling company that has served the area since 1963, and has had its current owner since 2019. It repairs and installs furnaces and air conditioners, and offers a maintenance plan with two clean-and-check visits a year.",
+    "why": [
+      "24/7 emergency service",
+      "Furnace and AC repair",
+      "GoodLeap financing",
+      "Two clean-and-check visits a year"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your homepage headline reads “Please call if the online schedule doesn't show a time you want.” That is a notice, not an answer to what you do or where, and three different pages carry the title “Heating Services.” On a phone, every page is 768 pixels wide on a 390-pixel screen, so visitors scroll sideways, and the header shows Book Online and Log In but no phone number.",
+      "You have no furnace page and no AC page, and those are the two repairs your customers call about. Your maintenance plan page is a strong page: a price, two visit checklists and member rates. Today it sits behind the menu label “Maintenance Plan Agreement.”",
+      "So the demo opens with HVAC company in Peoria, IL and your 24/7 emergency service, gives furnace repair and AC repair a page each, and explains the plan before it gives the price."
+    ],
+    "cardsHeading": "Be the HVAC Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your headline is an online-schedule notice, and your page title leads with “Heating Services,” a title shared by three pages.",
+          "The raw page carries “Slide title” template filler 15 times, which sits in the page code where Google can read it."
+        ],
+        "fixes": [
+          "A headline that says HVAC company in Peoria, IL, with emergency service and your phone in the first screen.",
+          "A homepage that tells your services, your towns and your plan, explained first and priced after."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. From that we plan how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/furnace-repair-peoria-il/",
+        "title": "Furnace Repair",
+        "why": "When the heat is out, people call the first company they reach.",
+        "problems": [
+          "You have no furnace repair page, so a search for furnace repair in Peoria has nothing built for it.",
+          "Your plan page, your homepage and your video page share one title, “Heating Services.”"
+        ],
+        "fixes": [
+          "A page for furnace repair in Peoria, IL, with why to call Griffin and your customers' own words about furnace calls."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+      },
+      {
+        "route": "/ac-repair-peoria-il/",
+        "title": "AC Repair",
+        "why": "On a hot day, people call the first company they reach.",
+        "problems": [
+          "You have no AC repair page, so a search for AC repair in Peoria has nothing built for it."
+        ],
+        "fixes": [
+          "A page for AC repair in Peoria, IL, with why to call Griffin and your customers' own words about hot-day calls."
+        ]
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with a dead system decides to call.",
+        "problems": [
+          "Your contact page is 114 words, is titled “Heating Maintenance,” and puts a visible reCAPTCHA in front of the form.",
+          "Your homepage says Monday to Friday, 8:00 to 6:00, and your contact page says 8:00 to 5:00."
+        ],
+        "fixes": [
+          "One number, one email, one address and one set of hours together on one page.",
+          "What to tell us when you call, so the first minute of the call counts."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Pages fit a phone screen",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number one tap away on a phone",
+        "status": "Needs work"
+      },
+      {
+        "label": "Hours told one way on every page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Plan price and terms easy to find",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your plan page already prints a price, two visit checklists and member rates. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your homepage, financing page and plan page say Monday to Friday, 8:00 to 6:00, while your contact page says 8:00 to 5:00, so what closing time should every listing show?",
+        "Your About page says you have served the Peoria area since 1963 and also says the current owner took over in 2019, so which should lead on every listing?",
+        "Your homepage says the online schedule isn't a true reflection of your actual schedule, while your maintenance visits are weekday-only, so do you want online booking on the site or call-only?"
+      ]
+    },
+    "lead": {
+      "heading": "Where the plan sits on the page",
+      "text": "Your strongest printed claim is the maintenance plan, with two listed visits and member rates. A homeowner with a dead furnace is looking for a company to call, not a plan, so the homepage leads with who you are and emergency service. The plan comes after that, with its visits, member benefits and price in that order. That rests on your own plan page.",
+      "showScores": false,
+      "rows": [
+        {
+          "claim": "Plan members pay $75 for any service call, with no after-hours, weekend or holiday rates",
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
+        },
+        {
+          "claim": "Emergency calls answered on holidays and hot weekends",
+          "score": 15,
+          "appeal": 5,
+          "exclusivity": 3
+        },
+        {
+          "claim": "No upsell, with the root cause explained",
+          "score": 15,
+          "appeal": 5,
+          "exclusivity": 3
+        }
+      ]
+    }
+  }
+}

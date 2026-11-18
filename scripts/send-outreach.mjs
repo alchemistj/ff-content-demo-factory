@@ -10,8 +10,10 @@
 //   { "sender": { "firstName": "Josh", "lastName": "...", "email": "...", "phone": "4173732773", "company": "Fluid Frame Marketing" },
 //     "entries": [ { "slug": "rivercity", "company": "River City Roofing", "prospect": "prospects/wichita-roofing/rivercity",
 //                    "formUrl": "https://...", "frame": "powr.io" (optional: iframe URL part when the form is embedded),
-//                    "approved": false, "subject": "optional subject line" } ] }
-// The message is the "## Message (paste as is)" block of <prospect>/outreach.md, sent word for word.
+//                    "approved": false, "subject": "optional subject line",
+//                    "choices": { "type of service": "Other" } (optional: dropdown label pattern, case-insensitive substring -> exact option text to pick) } ] }
+// The message is the "## Message (paste as is)" block of <prospect>/outreach.md (or the file named by
+// --message-file, e.g. ask.md for the audit-and-ask message), sent word for word.
 //
 // Rules (docs/josh-working-rules.md in ff-architect):
 //   - Never try to defeat a CAPTCHA. A visible check ("I'm not a robot", hCaptcha, Turnstile) is a hand send, always.
@@ -20,6 +22,14 @@
 //   - Screenshots: the filled form before submit, and the page after submit.
 // Output: outreach-runs/<YYYY-MM-DD>/<mode>/ with screenshots, log.json, log.md and hand-send.md.
 // GoHighLevel logging (demo-sent tag plus a "Demo sent" note) is done from log.json after a --send run.
+//
+// Josh's rules (FF Architect, 2026-11-15), enforced here:
+//   - One submission per business, ever: outreach/sent-ledger.json (keyed by the site's domain) is checked before
+//     every entry and written after every confirmed send (business, URL, time, message, screenshots).
+//   - Honor "stop": a business in outreach/do-not-contact.json is never contacted (add it the day they reply stop).
+//   - Skip any site that says it doesn't want solicitations.
+//   - Real identity only (the queue's sender), never bypass a CAPTCHA (see above).
+//   --ledger <file> / --dnc <file> point at other lists (the test run uses its own, so it never touches the real ledger).
 import fs from "node:fs";
 import path from "node:path";
 import { createRequire } from "node:module";
@@ -33,6 +43,7 @@ if (!queuePath) { console.error("usage: send-outreach.mjs <queue.json> [--send] 
 const SEND = args.includes("--send");
 const onlyArg = args[args.indexOf("--only") + 1];
 const only = args.includes("--only") && onlyArg ? new Set(onlyArg.split(",")) : null;
+const argVal = (flag) => (args.includes(flag) ? args[args.indexOf(flag) + 1] : null);
 
 const root = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
 const queue = JSON.parse(fs.readFileSync(queuePath, "utf8"));
@@ -42,11 +53,24 @@ const queueName = path.basename(queuePath, ".json").replace(/^queue-/, "");
 const outDir = path.join(root, "outreach-runs", day, queueName, SEND ? "send" : "dry-run");
 fs.mkdirSync(outDir, { recursive: true });
 
+// One submission per business, ever, and the stop list.
+const ledgerPath = path.resolve(argVal("--ledger") ?? path.join(root, "outreach", "sent-ledger.json"));
+const dncPath = path.resolve(argVal("--dnc") ?? path.join(root, "outreach", "do-not-contact.json"));
+const readList = (p) => { try { return JSON.parse(fs.readFileSync(p, "utf8")); } catch { return []; } };
+const ledger = readList(ledgerPath);
+const dnc = readList(dncPath);
+const domainOf = (u) => { try { return new URL(u).hostname.replace(/^www\./, "").toLowerCase(); } catch { return String(u).toLowerCase(); } };
+const sameBusiness = (a, entry) => a.domain === domainOf(entry.formUrl) || (a.company && a.company.toLowerCase() === entry.company.toLowerCase());
+const NO_SOLICIT = /no solicit|solicitors? (are )?not|not (accept|want)(ing)? solicitations|solicitations? (are )?not (accepted|welcome)|do not (send|contact us with) (sales|marketing|solicitations)|no (sales|marketing) (calls|emails|inquiries|pitches)|vendors? (and|or) solicit/i;
+
+// --message-file ask.md reads the message from another file in the prospect folder (default outreach.md).
+const MESSAGE_FILE = argVal("--message-file") ?? "outreach.md";
+
 function readMessage(prospect, heading = "Message") {
-  const md = fs.readFileSync(path.join(root, prospect, "outreach.md"), "utf8");
+  const md = fs.readFileSync(path.join(root, prospect, MESSAGE_FILE), "utf8");
   const m = md.match(new RegExp(`## ${heading}[^\\n]*\\n([\\s\\S]*?)(?=\\n## |\\s*$)`));
   if (!m && heading !== "Message") return null;
-  if (!m) throw new Error(`no "## Message (paste as is)" block in ${prospect}/outreach.md`);
+  if (!m) throw new Error(`no "## Message (paste as is)" block in ${prospect}/${MESSAGE_FILE}`);
   return m[1].trim();
 }
 
@@ -101,7 +125,8 @@ async function describeFields(scope) {
         const label = (id?.textContent || wrap?.textContent || "").trim();
         return {
           i, tag: el.tagName.toLowerCase(), type: (el.getAttribute("type") || "").toLowerCase(),
-          label, group: group.trim(), maxLength: el.maxLength > 0 ? el.maxLength : null, required: el.required || el.getAttribute("aria-required") === "true" || /\*/.test(label),
+          label, group: group.trim(), maxLength: el.maxLength > 0 ? el.maxLength : null, required: el.required || el.getAttribute("aria-required") === "true" || /\*/.test(label) || /(^|\s)required(\s|$)/i.test(el.closest("[class*=required]")?.className.split(/\s+/).find((c) => c.toLowerCase() === "required") || ""),
+          options: el.tagName === "SELECT" ? [...el.options].map((o) => o.text.trim()) : null,
           desc: [label, el.name, el.id, el.placeholder, el.getAttribute("aria-label"), group].filter(Boolean).join(" ").toLowerCase(),
         };
       }),
@@ -130,8 +155,12 @@ const context = await browser.newContext({
 
 for (const entry of queue.entries) {
   if (only && !only.has(entry.slug)) continue;
-  const r = { slug: entry.slug, company: entry.company, formUrl: entry.formUrl, mode: SEND ? "send" : "dry-run", approved: !!entry.approved, status: "", reason: "", fields: [], shots: [] };
+  const r = { slug: entry.slug, company: entry.company, formUrl: entry.formUrl, mode: SEND ? "send" : "dry-run", approved: !!entry.approved, status: "", reason: "", fields: [], shots: [], time: new Date().toISOString() };
   results.push(r);
+  if (SEND && (queue.hold || entry.hold)) { r.status = "skipped"; r.reason = "on hold in the queue (do not send)"; console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }
+  if (dnc.some((d) => sameBusiness(d, entry))) { r.status = "skipped"; r.reason = "on the do-not-contact list (they asked us to stop)"; console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }
+  const prior = ledger.find((l) => sameBusiness(l, entry));
+  if (prior) { r.status = "skipped"; r.reason = `already contacted ${prior.time} (one submission per business, ever)`; console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }
   let message;
   let shortMessage = null;
   try { message = readMessage(entry.prospect); shortMessage = readMessage(entry.prospect, "Short message"); } catch (e) { r.status = "not sent"; r.reason = e.message; continue; }
@@ -152,6 +181,8 @@ for (const entry of queue.entries) {
     if (await challenged()) throw new Error("the site shows a bot check before the form (never bypassed)");
     const down = await page.evaluate(() => { const t = (document.body?.innerText || "").trim(); return t.length < 200 && /upstream|bad gateway|502|503|504|service unavailable|error/i.test(t) ? t.slice(0, 60) : ""; }).catch(() => "");
     if (down) throw new Error(`the site didn't load ("${down}"); try again later`);
+    const pageText = await page.evaluate(() => document.body?.innerText || "").catch(() => "");
+    if (NO_SOLICIT.test(pageText)) { r.status = "skipped"; r.reason = "the site says it doesn't want solicitations"; await page.close(); console.log(`${entry.slug}: ${r.status} (${r.reason})`); continue; }
     await page.waitForLoadState("networkidle", { timeout: 10000 }).catch(() => {});
     const { scope, frameEl, error } = await findFormScope(page, entry);
     if (error) throw new Error(error);
@@ -161,8 +192,27 @@ for (const entry of queue.entries) {
     for (const f of fields) {
       const key = keyFor(f.desc, f.type, f.tag);
       const el = scope.locator(`[data-ff-field="${f.i}"]`);
-      if (f.type === "checkbox" || f.type === "radio" || f.tag === "select") {
-        if (f.required) problems.push(`required ${f.tag === "select" ? "dropdown" : f.type} "${f.label || f.desc}" needs a choice`);
+      if (f.tag === "select") {
+        // Pick by the entry's "choices" (label pattern -> option text), else "Other" when required, else leave it.
+        const lbl = f.label || f.group || f.desc;
+        const pat = Object.keys(entry.choices || {}).find((k) => f.desc.includes(k.toLowerCase()));
+        const want = pat ? String(entry.choices[pat]).trim().toLowerCase() : null;
+        // Exact option text first; else an option that starts with it and continues in parentheses ("Other (Please Specify)").
+        const pick = (w) => f.options.find((o) => o.trim().toLowerCase() === w) || f.options.find((o) => o.trim().toLowerCase().startsWith(`${w} (`));
+        let chosen = want ? pick(want) : null;
+        if (!chosen && f.required) chosen = pick("other");
+        if (chosen) {
+          await el.selectOption({ label: chosen }, { timeout: 8000 }); // fires input and change events
+          r.fields.push({ label: lbl, value: chosen });
+          (r.dropdowns ||= []).push(lbl);
+        } else {
+          if (f.required) problems.push(`required dropdown "${f.label || f.desc}" needs a choice`);
+          r.fields.push({ label: lbl, value: "(left alone)" });
+        }
+        continue;
+      }
+      if (f.type === "checkbox" || f.type === "radio") {
+        if (f.required) problems.push(`required ${f.type} "${f.label || f.desc}" needs a choice`);
         r.fields.push({ label: f.label || f.desc, value: "(left alone)" });
         continue;
       }
@@ -197,16 +247,32 @@ for (const entry of queue.entries) {
     else if (!entry.approved) { r.status = "not sent"; r.reason = "not approved in the queue"; }
     else {
       const before = page.url();
+      const bodyText = async () => (await scope.evaluate(() => document.body.innerText).catch(() => "")) + " " + (await page.evaluate(() => document.body.innerText).catch(() => ""));
+      const CONFIRM = /thank you|thanks for|message (has been |was )?(sent|received)|we('ll| will) (be in touch|get back)|submission (was )?(received|successful)|successfully/gi;
+      const confirmCount = (t) => (t.match(CONFIRM) || []).length;
+      const beforeConfirms = confirmCount(await bodyText());
       const submit = scope.locator(`form:has([data-ff-field]) [type=submit], form:has([data-ff-field]) button:not([type=button])`).first();
       await submit.click({ timeout: 8000 });
       await Promise.race([page.waitForNavigation({ timeout: 20000 }).catch(() => {}), page.waitForTimeout(12000)]);
-      const text = (await scope.evaluate(() => document.body.innerText).catch(() => "")) + " " + (await page.evaluate(() => document.body.innerText).catch(() => ""));
+      const text = await bodyText();
+      // A visible CAPTCHA challenge after submit means nothing was sent (2026-11-18: ElectriCraft showed an image
+      // challenge while a "Thanks for stopping by!" pop-up matched the confirmation words).
+      const challenge = await page.evaluate(() => [...document.querySelectorAll("iframe")].some((f) => {
+        const src = f.src || ""; const r = f.getBoundingClientRect(); const st = getComputedStyle(f);
+        return /recaptcha\/api2\/bframe|recaptcha\/enterprise\/bframe|hcaptcha\.com.*challenge|challenges\.cloudflare\.com/.test(src) && r.width > 50 && r.height > 50 && st.visibility !== "hidden" && st.display !== "none";
+      })).catch(() => false);
       const confirmShot = path.join(outDir, `${entry.slug}-after-submit.png`);
       await page.screenshot({ path: confirmShot, fullPage: false });
       r.shots.push(path.relative(root, confirmShot));
-      const ok = /thank you|thanks for|message (has been |was )?(sent|received)|we('ll| will) (be in touch|get back)|submission (was )?(received|successful)|successfully/i.test(text);
+      // Confirmation words must be new since the submit click (not a pop-up or footer that was already there).
+      const ok = !challenge && (confirmCount(text) > beforeConfirms || page.url() !== before && confirmCount(text) > 0);
       const err = /captcha|robot|verification failed|spam|error|required/i.test(text) && !ok;
-      if (ok) { r.status = "sent"; }
+      if (ok) {
+        r.status = "sent";
+        ledger.push({ domain: domainOf(entry.formUrl), company: entry.company, slug: entry.slug, formUrl: entry.formUrl, time: new Date().toISOString(), message: values.message, usedShort: !!r.usedShort, shots: r.shots });
+        fs.writeFileSync(ledgerPath, JSON.stringify(ledger, null, 2) + "\n");
+      }
+      else if (challenge) { r.status = "hand send"; r.reason = "a CAPTCHA challenge appeared after submit (never bypassed)"; }
       else { r.status = "hand send"; r.reason = err ? "the form showed an error or a bot check after submit" : `no confirmation after submit (stayed on ${page.url() === before ? "the same page" : page.url()})`; }
     }
   } catch (e) {
@@ -222,8 +288,8 @@ for (const entry of queue.entries) {
 await browser.close();
 
 fs.writeFileSync(path.join(outDir, "log.json"), JSON.stringify({ day, mode: SEND ? "send" : "dry-run", results }, null, 2) + "\n");
-const lines = [`# Outreach ${SEND ? "send" : "dry run"}, ${day} (Central)`, "", "| Prospect | Result | Why | Screenshots |", "|---|---|---|---|"];
-for (const r of results) lines.push(`| ${r.company} | ${r.status} | ${r.reason || ""} | ${r.shots.map((s) => path.basename(s)).join(", ")} |`);
+const lines = [`# Outreach ${SEND ? "send" : "dry run"}, ${day} (Central)`, "", "| Prospect | Result | Why | Screenshots | Dropdowns |", "|---|---|---|---|---|"];
+for (const r of results) lines.push(`| ${r.company} | ${r.status} | ${r.reason || ""} | ${r.shots.map((s) => path.basename(s)).join(", ")} | ${r.fields.filter((x) => r.dropdowns?.includes(x.label)).map((x) => `${x.label}: ${x.value}`).join("; ")} |`);
 fs.writeFileSync(path.join(outDir, "log.md"), lines.join("\n") + "\n");
 const hand = results.filter((r) => r.status === "hand send" || (!SEND && r.captcha === "visible"));
 const pack = [`# Hand-send pack, ${day}`, "", "Josh sends these himself. Paste each value into the form, then the message.", ""];

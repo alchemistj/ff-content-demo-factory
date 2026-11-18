@@ -1,0 +1,604 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "fortwayne-plumbing-hattersley",
+  "place": {
+    "name": "A Hattersley & Sons Inc",
+    "placeId": "ChIJCYc3I3TjFYgRtapgUfbtrOA",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=A%20Hattersley%20%26%20Sons%20Inc&query_place_id=ChIJCYc3I3TjFYgRtapgUfbtrOA",
+    "address": "3939 Mobile Ave, Fort Wayne, IN 46805",
+    "phone": "(260) 483-6473",
+    "rating": 4.7,
+    "totalReviewCount": 62
+  },
+  "pulledAt": "2026-11-16T04:10:19.094Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KdGFtSk5OV2xHUmpadFUwNVVVVkJ5VlRNNWExRRAB",
+      "reviewer": "Nathan S.",
+      "rating": 1,
+      "text": "They only do commercial. Don’t care about the little guy.",
+      "publishedAt": "2026-07-02T18:33:59.661Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT25KdGFtSk5OV2xHUmpadFUwNVVVVkJ5VlRNNWExRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CAIQACodChtycF9oOnJtamJNNWlGRjZtU05UUVByVTM5a1E%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNOdlBQUzlRRRAB",
+      "reviewer": "Hanah S.",
+      "rating": 1,
+      "text": "Driver training needed. Snow storm this afternoon and evening, 1.12.24, with poor road conditions. Driver of company van from I-69 to west bound on US 33 near Cook Road tailgates me and blocks and break checks me at light at Washington Center. Then proceeds to drive not wear the other tires have carved out but just slightly off to the right so that my car gets all this snow and slush hurled at it. Almost got ran of the road because of the careless driving. We all want to get home, safely.",
+      "publishedAt": "2024-01-12T23:00:31.208Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNOdlBQUzlRRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICNvPPS9QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNaMWRtNUFnEAE",
+      "reviewer": "Emma H.",
+      "rating": 5,
+      "text": "I’m new to the area and am so happy to have an honest and fair company like  Hattersley  . We were about to attempt to fix the toilet ourselves by ripping it out of the floor and are so happy we did not!! Hattersley not only fixed the problem without any invasive or damaging solutions  but taught me exactly what to try in case we ever have a similar issue . They have a the heart of a teacher !",
+      "publishedAt": "2023-09-14T23:37:57.815Z",
+      "ownerResponse": "Thank you for leaving this kind review, Emma! We are glad to hear that you had such a positive experience with our services!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNaMWRtNUFnEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICZ1dm5Ag%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURwckp6M0ZnEAE",
+      "reviewer": "Christopher L.",
+      "rating": 5,
+      "text": "Great experience working with this company. Had a fairly extensive whole-house filtration system installed. Mark took the time to understand the system before providing an estimate. His crew were very personable and professional in getting the job done to a high standard.",
+      "publishedAt": "2023-08-17T14:27:23.447Z",
+      "ownerResponse": "We are so glad to hear you had a great experience with us, Christopher! Thank you for the kind review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURwckp6M0ZnEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDprJz3Fg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNwa0lYVjV3RRAB",
+      "reviewer": "Carol P.",
+      "rating": 5,
+      "text": "A big thank you to Josh H for completely taking the best care and coming out so fast. He was very kind and did a super job. Thank you again Josh",
+      "publishedAt": "2023-07-26T21:55:16.772Z",
+      "ownerResponse": "We are happy to hear about your experience and glad Josh was able to assist you so efficiently. Thank you for the kind review, Carol!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNwa0lYVjV3RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICpkIXV5wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUN4M2ZMYi13RRAB",
+      "reviewer": "Zachary A.",
+      "rating": 1,
+      "text": "Rude and mean for absolutely no reason.",
+      "publishedAt": "2023-05-23T23:25:27.039Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUN4M2ZMYi13RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICx3fLb-wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURScWRIZWFnEAE",
+      "reviewer": "Mike S.",
+      "rating": 5,
+      "text": "A. Hattersley & Sons just installed a new tankless water heater for me. They did an outstanding job. I highly recommend Mark and his well trained residential team for any project that needs done by real professionals. They were courteous and took special care to make my wife and I comfortable while doing their work. They truly are a 5 Star company!",
+      "publishedAt": "2023-04-28T12:34:35.077Z",
+      "ownerResponse": "We're so glad to hear you had a great experience, Mike! Thank you for the kind words and the recommendation!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURScWRIZWFnEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDRqdHeag%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURSdUtqeF9nRRAB",
+      "reviewer": "Tim D.",
+      "rating": 5,
+      "text": "Just a big thank you for Hattersley & Son along with Springfield Restoration for the work they performed at Tim Didier Meats at 3205 N. Wells. Mark Hollenbaugh and team were exceptional. We had a very difficult time obtaining anyone to assist until we called Hattersley. What you want is someone to care and be responsive as well as competitive pricing and commitment to quality....they were all of those things. Thanks for your support! Chris Didier-Coffman",
+      "publishedAt": "2023-04-17T12:40:09.199Z",
+      "ownerResponse": "We're so happy to hear you had a great experience, thank you for the kind review!",
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURSdUtqeF9nRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDRuKjx_gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNoOGZhLVpBEAE",
+      "reviewer": "G G.",
+      "rating": 5,
+      "text": "Going through a large remodel we have dealt with multiple contractors and subs--It has been a process finding ones that we trust and provide good work. Mark and everyone at A Hattersley have exceeded expectations at every turn. Not only are the professional, meet every deadline, have great communication but the quality of work is unmatched. My only regret is that they weren't the first plumbing company we called.",
+      "publishedAt": "2023-02-15T19:30:44.456Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNoOGZhLVpBEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICh8fa-ZA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURCNktxZjB3RRAB",
+      "reviewer": "Scott S.",
+      "rating": 5,
+      "text": "Maybe a bit pricey starting out but excellent top drawer service. I think it is appropriate to say quality is remembered long after price. Management assured everything was left in perfect condition. I would recommend them highly.",
+      "publishedAt": "2023-01-10T17:17:32.914Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURCNktxZjB3RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDB6Kqf0wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNCdHRYM21nRRAB",
+      "reviewer": "Patti M.",
+      "rating": 5,
+      "text": "We woke up Christmas Eve to a very cold house as our heater was no longer working.  I called a number of companies with little success.  When I contacted A. Hattersley they informed me that they could work us in. It was not long before Mark arrived and determined that our furnace line was frozen.  He was able to get it thawed out enough to get the heater running again. We felt bad that he had to be out in this weather to correct the problem but grateful that he was able to identify the problem. He also explained the issue with how the line was installed.  We will be looking in to having the line reworked once the weather warms up so we don’t run into this issue every time the weather gets this cold.  We much appreciate the quick response on a holiday weekend.",
+      "publishedAt": "2022-12-25T03:24:31.816Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNCdHRYM21nRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICBttX3mgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNCMW9hREh3EAE",
+      "reviewer": "CS F.",
+      "rating": 5,
+      "text": "Best service in Fort Wayne!",
+      "publishedAt": "2022-12-24T17:22:42.051Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNCMW9hREh3EAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICB1oaDHw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQtM3VESTZBRRAB",
+      "reviewer": "Minor B.",
+      "rating": 5,
+      "text": "Its real simple people . Ive used alot of folks over the years. These guys r GR8! Pro's! Prompt! Personable! They got all the 3Ps i was taught about in college 30 years ago :)",
+      "publishedAt": "2022-11-30T16:26:31.208Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQtM3VESTZBRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgID-3uDI6AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUMtbm91T21RRRAB",
+      "reviewer": "Alexis P.",
+      "rating": 5,
+      "text": "I am very appreciative of Mark and Doug for the professionalism and knowledge displayed while replacing my sewage line. I have no doubt that I will be contacting A Hattersley for any future services as they are committed to their customers and take pride in their work.",
+      "publishedAt": "2022-11-04T20:53:41.291Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUMtbm91T21RRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIC-nouOmQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURlMFpidWF3EAE",
+      "reviewer": "Jeanie H.",
+      "rating": 5,
+      "text": "Mark came to repair a problem accidentally caused by a city worker.   He was prompt,  efficient and took the time to point out and explain some other issues he noticed that needed attention. I will most definitely have him back. What a great asset he is to Hattersley!",
+      "publishedAt": "2022-10-12T17:22:10.647Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURlMFpidWF3EAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDe0Zbuaw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURPcTV1OWtRRRAB",
+      "reviewer": "Darren C.",
+      "rating": 5,
+      "text": "Excellent business to work with. Came out same day to fix a valve that had broken shut and left my house without water. They coordinated with the City Water utility so I didn't have to. Technician who came on site was incredibly friendly, professional, and completed the job very quickly. I would not hesitate to call them for any of my plumbing needs in the future! A++",
+      "publishedAt": "2022-07-14T12:20:58.672Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURPcTV1OWtRRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDOq5u9kQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQyMjhMVkhnEAE",
+      "reviewer": "Holly D.",
+      "rating": 5,
+      "text": "Called today with a sump pump issue and the problem was resolved the same day after hours with a new American made, which I appreciate, sump pump. The premium for overtime service was not exponential. Mark was very knowledgeable, personable, and seemingly efficient. Took time to explain the situation to me and how the new one work in an easily receivable manner. Should I have any other home issues come up, that they can handle under their umbrella of available services, I'll be calling them.",
+      "publishedAt": "2022-05-25T23:31:51.396Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQyMjhMVkhnEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgID228LVHg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURXZzZ6WENBEAE",
+      "reviewer": "Brian T.",
+      "rating": 5,
+      "text": "They responded promptly to my late night emergency and were very professional and very friendly I would highly recommend them to anybody.<br>I called 13 emergency plumbers and A Hattersley were the only company who answered the phone and helped me.",
+      "publishedAt": "2022-04-02T04:31:39.489Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURXZzZ6WENBEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDWg6zXCA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNXcXR2SWRnEAE",
+      "reviewer": "Crystal B.",
+      "rating": 5,
+      "text": "Thank you so much for coming out in less then a few hours of the first call and then getting our new water heater in the next morning we can't thank you enough!",
+      "publishedAt": "2022-02-23T19:10:39.199Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNXcXR2SWRnEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICWqtvIdg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURtcHBqOHN3RRAB",
+      "reviewer": "Brandon R.",
+      "rating": 5,
+      "text": "I called Hattersley at 8:15am and someone was at my house at 10am. I thought I had a furnace issue, Ricky found out it was a sump pump issues...I know that sounds strange, but glad Ricky was able to determine the problem and provide professional advice to help get our problem resolve. I highly recommend them for any HVAC or plumbing needs!",
+      "publishedAt": "2022-01-26T19:54:11.804Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURtcHBqOHN3RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDmppj8swE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNtdzRmTS1BRRAB",
+      "reviewer": "Lisa K.",
+      "rating": 5,
+      "text": "Responded quickly and took care of the problem. Explained everything and gave recommendations to prevent future problems. I will use this company for all my home needs.",
+      "publishedAt": "2022-01-07T17:01:21.067Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtdzRmTS1BRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICmw4fM-AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNtb3BtWDFRRRAB",
+      "reviewer": "Sharon F.",
+      "rating": 5,
+      "text": "Mark & Ron did a fantastic job! I now have a toilet that works!!  And Mark helped me save a lot of money by having me call my Insurance company I never would have thought of! I appreciate all that they did for me and it didn’t cost me anything!!! Until we get to the Allstate claim, that’s gonna be $1000.00 deductible for thousands of dollars it will cost to repair everything! I’m happy happy with their work!!",
+      "publishedAt": "2021-12-22T19:03:59.537Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtb3BtWDFRRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICmopmX1QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNtd3VMYTZRRRAB",
+      "reviewer": "Anna",
+      "rating": 5,
+      "text": "Mark was extremely nice, honest and helpful. Highly recommend this place for any plumbing needs.",
+      "publishedAt": "2021-12-22T13:09:32.745Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNtd3VMYTZRRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICmwuLa6QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNHOTlfVE93EAE",
+      "reviewer": "nanci E.",
+      "rating": 5,
+      "text": "Ron and mark were excellent! Seriously, couldn’t ask for a better company to do work on my brand new home! They were very professional, answered all my questions and didn’t leave until I understood What they installed. Highly recommend! Amazing work! I’m very very pleased with the work preformed from start to finish! -Nanci",
+      "publishedAt": "2021-11-12T19:14:16.155Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNHOTlfVE93EAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICG99_TOw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUQ2M29mTGJnEAE",
+      "reviewer": "Kathleen L.",
+      "rating": 5,
+      "text": "I called A. Hattersley based on a recommendation from a friend at church.  I spoke with Mark Hollenbaugh over the phone and explained that I thought I had a water leak.  Mark called me in the evening (7:15 pm) and spoke with me for 45 minutes.  He came out and looked at the area I suspected had a leak.  No leak!!!  But he took the time to do a walk through my home and discovered a few other small issues that I had that I didn't even know about.  Mark and Ricky came to my home today and completed all the work under the supervision of my two cats..LOL.   All this work was done while I was at work and everything was cleaned up when I got home.  I have never met Mark in person.  We've spoken several times on the phones and he truly cares about his clients.  Especially his clients who are widows, like I am.<br>The cost of the repairs were a bit steep but I had a lot done so that was to be expected.<br>This company has been around for a long time.  A nice family-owned company.",
+      "publishedAt": "2021-09-30T19:43:46.998Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUQ2M29mTGJnEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgID63ofLbg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUQ2NW82eXh3RRAB",
+      "reviewer": "Rollin T.",
+      "rating": 5,
+      "text": "I had a issue with plumbing i knew the company im a member with would be well lol , so i called mark an he was on it here in mins an hours b4 my own company, he saved me time an $ , we need more people like him in this country , hard working, no bs , an 1 of the nicest most helpful people ive met , this is rare now adays , an i cant thank him enough, if u need something they do , give mark a call , u wont regret their work ethic an skill level , infinite stars , thanks mark , ur time an know how was much appreciated !",
+      "publishedAt": "2021-09-28T12:34:05.418Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUQ2NW82eXh3RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgID65o6yxwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM2aWJDaXJBRRAB",
+      "reviewer": "Allayna B.",
+      "rating": 5,
+      "text": "Mark and Ricky were very professional and friendly! Answered all of our questions, got us up and running, and a game plan for the future! Highly recommend!",
+      "publishedAt": "2021-09-07T16:41:50.890Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2aWJDaXJBRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIC6ibCirAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM2b1pYTXJBRRAB",
+      "reviewer": "Steve M.",
+      "rating": 5,
+      "text": "Great place<br>Good folks to work with",
+      "publishedAt": "2021-09-06T15:24:33.335Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM2b1pYTXJBRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIC6oZXMrAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURhcHBxMVdnEAE",
+      "reviewer": "Lisa C.",
+      "rating": 5,
+      "text": "We recently installed a water softener that was not producing soft water right away.  I was skeptical on which company to call but once I read the reviews on Hattersley I immediately called.  Mark came out the next day to check the connections and test the water.   Mark is very personable, professional and explained what was going on in layman's terms which is important to me since I don't know a lot about water softeners and plumbing.  I would highly recommend Hattersley!  We will definitely be calling to get a quote on our next project.",
+      "publishedAt": "2021-08-20T11:41:45.612Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURhcHBxMVdnEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDappq1Wg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxeXB6RGN3EAE",
+      "reviewer": "Nick H.",
+      "rating": 5,
+      "text": "Mark was very responsive when I called and told him my AC was out. It was supposed to be a hot humid weekend and he meet me first thing Friday morning to fix me up. Would recommend to anyone.",
+      "publishedAt": "2021-07-04T20:24:07.260Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxeXB6RGN3EAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDqypzDcw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxbklIbzV3RRAB",
+      "reviewer": "Kym C.",
+      "rating": 5,
+      "text": "Amazing customer service!!! Mark H. was very professional and courteous and told me exactly was was going on all the way through the process. I also had a water softener installed in a very tight footprint and he was able to make it all work! Would recommend them again and again!",
+      "publishedAt": "2021-07-01T17:58:40.487Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxbklIbzV3RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDqnIHo5wE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxakxIMDdnRRAB",
+      "reviewer": "Amy G.",
+      "rating": 5,
+      "text": "Mark was contacted to assess our damages and came out the very same day, although it wasn't even an emergency. He was polite, professional and very thorough on his assessment of damages. He repaired our problem and we were back in business the very next day!",
+      "publishedAt": "2021-06-30T18:42:28.553Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxakxIMDdnRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDqjLH07gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURxNklDOG53RRAB",
+      "reviewer": "Brenda P.",
+      "rating": 5,
+      "text": "Job done good and fast",
+      "publishedAt": "2021-06-27T10:40:09.148Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURxNklDOG53RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDq6IC8nwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURxd0phZWZ3EAE",
+      "reviewer": "Alyssa L.",
+      "rating": 5,
+      "text": "Mark was extremely competent, honest, and thorough. We’ll definitely be calling him for our future plumbing needs!",
+      "publishedAt": "2021-06-24T22:49:09.961Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURxd0phZWZ3EAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDqwJaefw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxNzc3Nm9RRRAB",
+      "reviewer": "Kyle J.",
+      "rating": 5,
+      "text": "Mark and Nate spent the day with a boring crew at my house yesterday to bore in utility lines for my new building. In all, they ran a sewer line, a water line, and two conduits for electrical service. Mark and Nate were friendly, professional, and very helpful throughout the whole process. They left a clean worksite free of debris. I had a good experience and would recommend them.",
+      "publishedAt": "2021-06-23T14:14:28.405Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxNzc3Nm9RRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICq7776oQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxazlLY253RRAB",
+      "reviewer": "AJ J.",
+      "rating": 5,
+      "text": "I called and got their residential field foreman Mark out for a bid on a job recently and he was great. Very responsive, respectful, informative, and professional. He really cares about the customer and his work. While I didn't end up going with Hattersley for the job this time, I will certainly be contacting Mark for future work I have planned in the near future.",
+      "publishedAt": "2021-06-17T15:21:06.876Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNxazlLY253RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICqk9KcnwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURLNm9HTW5nRRAB",
+      "reviewer": "Tanya L.",
+      "rating": 5,
+      "text": "Mark was absolutely amazing at getting our septic fixed pipes fixed",
+      "publishedAt": "2021-05-07T21:13:18.312Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURLNm9HTW5nRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDK6oGMngE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNLOHFPTTRRRRAB",
+      "reviewer": "Amy K.",
+      "rating": 5,
+      "text": "Will 100% use again. Service was amazing. Almost like a friend or family was fixing our furnace.",
+      "publishedAt": "2021-03-31T22:14:29.283Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNLOHFPTTRRRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICK8qOM4QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR5eV9qSUlBEAE",
+      "reviewer": "Donna A.",
+      "rating": 5,
+      "text": "My husband and I had a tankless water heater installed by  A Hattersley & Sons and our installers (Mark and Josh) did a wonderful and thorough job, he was also very pleasant and cared about our questions and any concerns we may of had.  We used them before when we had our toilettes  changed out and they did a wonderful job with them as well.....in fact we have them do our yearly maintenance checks.  Great people!",
+      "publishedAt": "2021-03-17T13:49:55.721Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5eV9qSUlBEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDyy_jIIA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR5bEptRkpBEAE",
+      "reviewer": "Nathanael J.",
+      "rating": 5,
+      "text": "After accidentally cutting through a 3/4” pipe, I called Hattersly and they responded within an hour to my request for a residential plumber. Mark came and repaired the pipe, and even assessed other plumbing issues in my house as a courtesy. Very friendly, timely, and helpful. Would highly recommend.",
+      "publishedAt": "2021-02-25T12:41:03.505Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUR5bEptRkpBEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDylJmFJA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUN5MUppNkNnEAE",
+      "reviewer": "Kate R.",
+      "rating": 5,
+      "text": "Mark is very thorough and explains everything. Excellent work and he is great with my dog Bo too.",
+      "publishedAt": "2021-01-20T22:02:30.979Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUN5MUppNkNnEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICy1Ji6Cg%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURDajZXU213RRAB",
+      "reviewer": "Kenny S.",
+      "rating": 5,
+      "text": "Best union mechanical contractor around and one of the oldest... started in 1856",
+      "publishedAt": "2020-10-16T00:11:36.965Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURDajZXU213RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDCj6WSmwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM4czhUSjBnRRAB",
+      "reviewer": "Jamie G.",
+      "rating": 5,
+      "text": "Wonderful customer service. The job was done well and quickly!<br>Would most definitely recommend!",
+      "publishedAt": "2020-07-13T16:26:41.490Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUM4czhUSjBnRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIC8s8TJ0gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURjalBiMHFnRRAB",
+      "reviewer": "Kenneth S.",
+      "rating": 5,
+      "text": "Greatest (And Oldest 1856) mechanical contractor in the USA...specialize in courthouses , schools , hospitals",
+      "publishedAt": "2020-05-27T11:25:40.976Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURjalBiMHFnRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDcjPb0qgE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNNbzdleXVRRRAB",
+      "reviewer": "Amanda B.",
+      "rating": 5,
+      "text": "Absolutely wonderful service! We needed plumbing work done and we were in a time crunch and Mark came to the rescue! I will never choose another plumbing company after I saw the quality of work Mark did for us. This is an honest company and mark is extremely knowledgeable in his field. I highly recommend, 5 stars!!",
+      "publishedAt": "2019-12-03T15:37:15.126Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNNbzdleXVRRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICMo7eyuQE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURVbzUyZUd3EAE",
+      "reviewer": "Anthony J.",
+      "rating": 5,
+      "text": "Had Mark come and fix my heat pump. He had it figured out and back working in no time. I've had Mark work on stuff before when he was with other companies he worked for. He knows his stuff and works very hard at finding and fixing the problem and has a solution in no time. A Hattersley & Sons should be very thankful and proud to have such a great worker and person on their team! Highly recommended Mark for anything you have an issue with.",
+      "publishedAt": "2019-09-02T17:04:41.295Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSURVbzUyZUd3EAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDUo52eGw%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURVMm9DSHp3RRAB",
+      "reviewer": "Texas H.",
+      "rating": 5,
+      "text": "Mark recently installed new kitchen faucets for us including an instant hot water dispenser. He found a leak in one of the water lines in the process and fixed it all up good as new. I'm sure he saved us from future water damage. We appreciate Mark's superior skills and his kind and friendly personality! He has worked on many other projects in our home and has never failed to deliver quality and dependable service. Look no further...he is the BEST!!!",
+      "publishedAt": "2019-08-20T17:49:34.627Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVMm9DSHp3RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDU2oCHzwE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURVOHAyTDBRRRAB",
+      "reviewer": "Joni L.",
+      "rating": 5,
+      "text": "Whenever I have a plumbing issue in my house, I know I can call Mark and he will respond right away.   He takes care of the problem and I never need to worry about whether it was done right or if the problem was resolved.  Reliable.  Dependable.  Knowledgeable.  Why call anyone else?",
+      "publishedAt": "2019-08-19T13:05:04.467Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSURVOHAyTDBRRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgIDU8p2L0QE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNVbDVyRUtBEAE",
+      "reviewer": "Nanci E.",
+      "rating": 5,
+      "text": "Mark did an amazing job. Have always been pleased with his work! Communicates very well to make sure you understand the process and all that needed fixed or done! Couldn’t recommend a better person!",
+      "publishedAt": "2019-08-07T17:10:17.657Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVbDVyRUtBEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICUl5rEKA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNVbDRyRWVBEAE",
+      "reviewer": "Erin W.",
+      "rating": 5,
+      "text": "Wonderful company to work with. Their customer service is fantastic and they are very thorough. They don't cut corners and get the job done very well and in the most economical way possible. We will definitely be working with them again in the future.",
+      "publishedAt": "2019-08-07T17:01:05.503Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVbDRyRWVBEAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICUl4rEeA%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNVNjYyT3FBRRAB",
+      "reviewer": "Joanna S.",
+      "rating": 5,
+      "text": "Mark has gone above & beyond for our family. We couldn’t be happier with the service provided & will be life-long customers because of it! Mark is friendly & has a lot of experience at his job. He has saved the day for us many times & we highly recommend him!",
+      "publishedAt": "2019-08-05T13:10:58.618Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNVNjYyT3FBRRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICU662OqAE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNVMWZUTlFREAE",
+      "reviewer": "Patricia G.",
+      "rating": 5,
+      "text": "This is the best plumbing, heating and A/C company in Fort Wayne: they do everything plumbing. drain,  heating, A/C and electrical.. The residential  tech I had was Mark,  he is  honest, reliable and dependable. He bends over backwards to find a solution he goes above and beyond what is required of him. He is very polite he answers all my questions without making me feel stupid because I don’t know much about plumbing and heating but he takes the time to explain so that I know what’s going on. If there is a problem he gives me options . He is upfront about the costs there are no hidden charges. I have dealt with other companies similar to this in the past and this is by far the best one that I have ever found and Mark is the best tech that has ever worked on my equipment. He is very trustworthy as is A. Hattersley & Sons INC.<br>A. Hattersley & Sons INC. has been in this community for 160 years. A. Hattersley & Sons is Fort Wayne, Indiana's oldest, most respected and most experienced mechanical and electrical contractor in this community. They are still here because they are  the best and their mission is to serve this community.<br>A. Hattersley and Sons is beginning a residential department dedicated to residential customers. It will be the best in<br>the state of Indiana!",
+      "publishedAt": "2019-07-30T21:20:30.499Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChZDSUhNMG9nS0VJQ0FnSUNVMWZUTlFREAE!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICU1fTNQQ%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNnNHFyamd3RRAB",
+      "reviewer": "blake S.",
+      "rating": 3,
+      "text": "The guys are A##holes to deal with",
+      "publishedAt": "2018-05-16T12:31:23.199Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNnNHFyamd3RRAB!2m1!1s0x0:0xe0acedf65160aab5!3m1!1s2@1:CIHM0ogKEICAgICg4qrjgwE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUM5aFk3aDVnRRAB",
+      "reviewer": "Joshua S.",
+      "rating": 3,
+      "publishedAt": "2024-03-07T12:07:35.749Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURadE9HYzh3RRAB",
+      "reviewer": "III I.",
+      "rating": 5,
+      "publishedAt": "2023-09-25T12:27:24.217Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNPdmV1VlBBEAE",
+      "reviewer": "Deb E.",
+      "rating": 5,
+      "publishedAt": "2022-06-17T16:13:44.820Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNtak5YY1d3EAE",
+      "reviewer": "Elizabeth D.",
+      "rating": 5,
+      "publishedAt": "2021-12-20T13:41:41.196Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURHeGFibHhnRRAB",
+      "reviewer": "Dee E.",
+      "rating": 5,
+      "publishedAt": "2021-12-04T01:30:12.256Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNxMjd6aGhRRRAB",
+      "reviewer": "Craig W.",
+      "rating": 4,
+      "publishedAt": "2021-06-19T19:53:42.350Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURLaXBIX1FBEAE",
+      "reviewer": "Leigh L.",
+      "rating": 5,
+      "publishedAt": "2021-05-07T00:45:10.524Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURLaUxuOGdnRRAB",
+      "reviewer": "Tom H.",
+      "rating": 5,
+      "publishedAt": "2021-04-27T21:58:12.714Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNRNUx5NmVREAE",
+      "reviewer": "David C.",
+      "rating": 5,
+      "publishedAt": "2017-09-20T10:59:27.618Z"
+    }
+  ]
+}

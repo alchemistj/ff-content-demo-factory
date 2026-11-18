@@ -1,0 +1,36 @@
+# Reference sites: Wichita demos after Josh's feedback
+
+> **Not models (Josh, Nov 15): never use other Astro demos, Wichita included, as models.** This file is history only: where some of the lessons in `docs/JOSH-CHECKLIST.md` came from. The models are the 4 client sites and the 12 Lovable builds in `docs/reference-sites.md`.
+
+Status: lookup, 2026-11-15. Sits beside the 16 references in `docs/reference-sites.md`. These are the Wichita demos in `ff-astro-demos` (origin/main, head b9f4eb1) that Josh's review loop shaped in PRs #41 to #64. Compare a page against its trade's demo here as well as against the 16, and check it with `docs/JOSH-CHECKLIST.md` (item numbers below point there).
+
+Each demo is a folder `clients/<slug>` with the words file at `clients/<slug>/content/words.json`. Live URL pattern: `https://<slug>.websitepreview.fluidframemarketing.com/` (registered in `shared-demo-host/demos-host.config.json`). Every demo has five pages: strategy at `/`, home at `/home/`, two service pages, and `/contact/`.
+
+Approval status: no commit message or doc in ff-astro-demos says "Josh approved" for any demo. Integrity is marked approved because it is the demo that went through every round of the loop and ends on the last fix (#64). All others are marked "final state after Josh's fixes (approval not recorded)".
+
+Caution: these demos predate Josh's 2026-11-15 rules in places. Integrity's homepage still leads with the after-hours price (item 19 now forbids a fee-first lead), and some pages predate item 45 (no review summaries) and item 8 (credentials explained). Use them for structure and fixes, not as proof a line is allowed today.
+
+Commits after #64 (#65 to #74: per-demo score switch, ICT v2, rebuilds of River City, Flawless, Douglas Fry, Cook's, Air Capital and Dream Makers on a single claim, offer card) are in the current files. They are outside the #41 to #64 review loop and I read only their titles.
+
+Wichita clients changed by #41 to #64: exactly these eight. Evolve Exteriors (`clients/evolve-template`) was not touched.
+
+| Demo | Client folder | Words file | Live URL | Pages | Status |
+|---|---|---|---|---|---|
+| Integrity Heating and Cooling | `clients/integrity` | `clients/integrity/content/words.json` | https://integrity.websitepreview.fluidframemarketing.com/ | `/`, `/home/`, `/ac-repair-wichita-ks/`, `/furnace-repair-wichita-ks/`, `/contact/` | Approved after feedback (final fix in the review loop, #64) |
+| Air Capital Heating and Air | `clients/aircapital` | `clients/aircapital/content/words.json` | https://aircapital.websitepreview.fluidframemarketing.com/ | `/`, `/home/`, `/ac-repair-wichita-ks/`, `/ac-replacement-wichita-ks/`, `/contact/` | Final state after Josh's fixes (approval not recorded) |
+| Cook's Heating and Cooling | `clients/cooks` | `clients/cooks/content/words.json` | https://cooks.websitepreview.fluidframemarketing.com/ | `/`, `/home/`, `/hvac-installation-wichita-ks/`, `/maintenance-plans-wichita-ks/`, `/contact/` | Final state after Josh's fixes (approval not recorded) |
+| Dream Makers Heating and Cooling | `clients/dreammakers` | `clients/dreammakers/content/words.json` | https://dreammakers.websitepreview.fluidframemarketing.com/ | `/`, `/home/`, `/heater-installation-wichita-ks/`, `/hvac-parts-replacement-wichita-ks/`, `/contact/` | Final state after Josh's fixes (approval not recorded) |
+| River City Roofing | `clients/rivercity` | `clients/rivercity/content/words.json` | https://rivercity.websitepreview.fluidframemarketing.com/ | `/`, `/home/`, `/roof-replacement-wichita-ks/`, `/roof-repair-wichita-ks/`, `/contact/` | Final state after Josh's fixes (approval not recorded) |
+| Flawless Roofing Co | `clients/flawless` | `clients/flawless/content/words.json` | https://flawless.websitepreview.fluidframemarketing.com/ | same four business paths as River City | Final state after Josh's fixes (approval not recorded) |
+| ICT Roofing & Exteriors | `clients/ictroofing` | `clients/ictroofing/content/words.json` | https://ictroofing.websitepreview.fluidframemarketing.com/ | same four business paths as River City | Final state after Josh's fixes (approval not recorded) |
+| Douglas Fry Roofing | `clients/douglasfry` | `clients/douglasfry/content/words.json` | https://douglasfry.websitepreview.fluidframemarketing.com/ | same four business paths as River City | Final state after Josh's fixes (approval not recorded) |
+
+Business names are from each words file (`business.name`). I did not open the live URLs.
+
+## What each embodies
+
+- **Integrity (HVAC).** The longest loop: warmer owner line "call us and we'll make it right" (#42); staff-name line removed (#45); owner's voice (#43); company-first service pages with a checkable repair rule (#47); rebuilt on a way-of-working idea (#48); model-site fundamentals, checkmark list and problem blocks, blank-prop photos gone (#49); the photo of "Sam" is a man, one photo cropped for desktop and phone (#50); a named review in place of a username (#54); "What we'd confirm" card and bolder strategy voice (#55); footer hours wrap (#56); copy led by the scored claim with a "Why we led with" paragraph (#58); trust bar claim replaced (#59); one after-hours section, New AC and New Furnace Installation named in the full-build line, white-polo furnace photos replaced (#62); shorter section and 4:3 split photos (#63); "Tuesday night, not Saturday" and no score table on the strategy page (#64). Checklist items 10, 11, 15, 19 (caution), 31, 35, 42, 43, 50, 51, 52, 53, 60, 66.
+- **Air Capital (HVAC).** Real FAQ sections instead of raw `###`, and no rating or review counts (#46); company-first pages, restored "A New Company, and We Say So" section (#47); rebuilt idea and darker heroes (#48); female technician photo swapped for a man (#50); strategy fixes and "What we'd confirm" card (#54, #55); the spliced brick-condenser hero rejected and the van hero put back (#57). Items 3, 9, 33, 50, 53, 54, 60, 61.
+- **Cook's (HVAC).** Voice pass (#43); company-first install and maintenance pages, say each point once, lifespan figures fixed (#47); blank-clipboard photo replaced (#49); female technician photo swapped for a man (#50); "What we'd confirm" card (#55). Items 13, 31, 42, 50, 52.
+- **Dream Makers (HVAC).** Strategy built from the real audit (#41); company-first pages (#47); shorter trust strip and landlord advice dropped from the renter section (#48); blank-clipboard photo replaced (#49); legal "LLC" dropped from the name everywhere, and "That's how reviewers describe it" wording (#56). Items 7, 20, 35, 52.
+- **River City, Flawless, ICT Roofing, Douglas Fry (roofing).** Built from the factory words (#52); their own roofing image pool with measured text zones, men only or no people, no blank props (#51); real pool photos, none repeated across the four, and star ratings and review counts removed from strategy pages (#53); strategy-page audit fixes (#54), "What we'd confirm with you" card on each (#55); QA round 1 wording fixes ("up to 15 years", flat roofs not denied) (#56). ICT's copy was then led by a scored claim, "We stay in it when insurance offers less" (#61), and its score table dropped (#64). Items 3, 5, 9, 53, 56, 57, 60, 61, 63.

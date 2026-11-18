@@ -1,0 +1,38 @@
+QA REQUEST: pioneer-peoria (peoria-roofing/pioneer)
+
+Preview (not live yet; becomes https://pioneer-peoria.websitepreview.fluidframemarketing.com/ after merge):
+- Strategy page: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/
+- /home/: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/home/
+- /metal-roofing-peoria-il/: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/metal-roofing-peoria-il/
+- /contact/: https://ff-astro-demos-x8dakj98u-josh-lenzs-projects.vercel.app/__ff-preview/pioneer-peoria/contact/
+
+Source and facts (the only allowed source of claims):
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-roofing/pioneer/facts.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-roofing/pioneer/reviews.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-roofing/pioneer/audit.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-roofing/pioneer/words.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/peoria-roofing/pioneer/usp.md
+
+Outreach message (route: - **Contact form:** https://roofingpeoria.net/contact-us/):
+---
+Hey Pioneer Roofing team,
+
+One customer wrote that you "sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully!" We build websites for service businesses, so we made you a mockup:
+
+https://pioneer-peoria.websitepreview.fluidframemarketing.com/?utm_source=form
+
+Note: It'll look a lot better with your logo and images on it! Lol
+
+The preview walks through why each page is built the way it is. One thing we'd fix: the Phone button on your town pages dials (321) 399-2147, while the rest of your site shows (309) 865-5471, so a caller from a town page reaches a different number.
+
+We built your homepage and your metal roofing page as examples, and we'd love to build the rest.
+
+How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
+
+Josh
+Fluid Frame Marketing
+---
+
+Please check on phone and desktop, then reply PASS or a MUST FIX list.

@@ -1,0 +1,232 @@
+{
+  "day": "2026-11-14",
+  "mode": "dry-run",
+  "results": [
+    {
+      "slug": "ballinger",
+      "company": "Ballinger Electric",
+      "formUrl": "https://www.ballingerelectric.com/contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "invisible reCAPTCHA: will submit normally, hand send if blocked",
+      "fields": [
+        {
+          "label": "Type of Service",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Name:",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Email:",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone:",
+          "value": "4173732773"
+        },
+        {
+          "label": "Message:",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/wichita-first5/dry-run/ballinger-filled.png"
+      ],
+      "time": "2026-11-15T02:50:52.740Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Ben and the Ballinger team,\n\nYour reviews say you'll come look at an electrical mess when others won't give people the time of day (Elena W. says it in her review). My daughter and I build websites for service businesses, so we made you a mockup that leads with it: the electrician who comes to look at the hard ones.\n\nhttps://ballinger.websitepreview.fluidframemarketing.com/\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: on a phone your current site is laid out almost twice as wide as the screen, so people have to scroll sideways to read it.\n\nWe built your electrical repair and lighting installation pages as examples, and we'd love to build the rest. How often do people call you after another electrician turned them down?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": null,
+        "subject": "A website mockup for Ballinger Electric"
+      },
+      "captcha": "invisible"
+    },
+    {
+      "slug": "enegren",
+      "company": "Enegren Electric",
+      "formUrl": "https://enegrenelectric.com/#contact",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "required field \"Address *\" has no value of ours; required radio \"Commercial\" needs a choice; required radio \"Residential\" needs a choice",
+      "fields": [
+        {
+          "label": "First",
+          "value": "Josh"
+        },
+        {
+          "label": "Last",
+          "value": "Lenz"
+        },
+        {
+          "label": "Phone *",
+          "value": "4173732773"
+        },
+        {
+          "label": "Email *",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Address *",
+          "value": "(left blank)"
+        },
+        {
+          "label": "Commercial",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Residential",
+          "value": "(left alone)"
+        },
+        {
+          "label": "Description of problem or need *",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/wichita-first5/dry-run/enegren-filled.png"
+      ],
+      "time": "2026-11-15T02:50:57.837Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Enegren team,\n\nYour reviews say your electricians find the cause, explain it in plain words and give people options to choose from. My daughter and I build websites for service businesses, so we made you a mockup that leads with it.\n\nhttps://enegren.websitepreview.fluidframemarketing.com/\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a recent case study, then breaks down why each page is built the way it is. One thing we'd fix: the headline and quote button at the top of your homepage are hidden when the page loads, so the first screen shows a photo and a menu and no words about what you do.\n\nWe built your electrical repair and panel upgrade pages as examples, and we'd love to build the rest. Who's on the crew right now? Your reviews name Marcus, Trevor, Tyler and Derek.\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": null,
+        "subject": "A website mockup for Enegren Electric"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "creekmore",
+      "company": "Creekmore Plumbing",
+      "formUrl": "https://creekmoreplumbing.com/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "hand send",
+      "reason": "could not fill the form: no message box found on the form",
+      "fields": [],
+      "shots": [
+        "outreach-runs/2026-11-14/wichita-first5/dry-run/creekmore-error.png"
+      ],
+      "time": "2026-11-15T02:51:24.297Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Creekmore team,\n\nYour Google reviews show families passing your number down, like Jane K., whose son told her about you and who now calls you for her three grown sons. Your site says third generation. My daughter and I build websites for service businesses, so we made you a mockup that leads with it, \"Family Plumbers. Honest Fix First.\":\n\nhttps://creekmore.websitepreview.fluidframemarketing.com/\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with Richard W.'s review, then walks through why each page is built the way it is. One thing we'd fix: the \"See What Our Customers Are Saying\" section on your homepage shows a heading and no reviews, so your best proof isn't on the page.\n\nWe built your water heater replacement and toilet repair pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": null,
+        "subject": "A website mockup for Creekmore Plumbing"
+      }
+    },
+    {
+      "slug": "yokes",
+      "company": "Yokes Master Plumbing",
+      "formUrl": "https://yokesmasterplumbing.com/contact/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "First",
+          "value": "Josh"
+        },
+        {
+          "label": "Last",
+          "value": "Lenz"
+        },
+        {
+          "label": "Email (required) *",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Subject *",
+          "value": "A website mockup for Yokes Master Plumbing"
+        },
+        {
+          "label": "How may we help you? *",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/wichita-first5/dry-run/yokes-filled.png"
+      ],
+      "time": "2026-11-15T02:51:50.486Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Yokes team,\n\nTwo of your reviews describe a leak that was hard to find, and then you found it. One was a gas leak the gas company couldn't locate. The other was an unidentified leak in the pipes leaving the house. That's the story we built a mockup around, \"Found It. Fixed It.\":\n\nhttps://yokes.websitepreview.fluidframemarketing.com/\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a customer's own words, then walks through why each page is built the way it is. One thing we'd fix: all five \"MORE\" buttons on your homepage go to your contact page, so there are no service pages for anyone to land on.\n\nWe built your leak detection and water heater replacement pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": null,
+        "subject": "A website mockup for Yokes Master Plumbing"
+      },
+      "captcha": "none"
+    },
+    {
+      "slug": "plumbcrazy",
+      "company": "Plumb Crazy",
+      "formUrl": "https://www.plumbcrazykansas.com/contact-us/",
+      "mode": "dry-run",
+      "approved": false,
+      "status": "dry run: filled, not submitted",
+      "reason": "",
+      "fields": [
+        {
+          "label": "Name(required)",
+          "value": "Josh Lenz"
+        },
+        {
+          "label": "Email(required)",
+          "value": "josh@fluidframemarketing.com"
+        },
+        {
+          "label": "Phone Number",
+          "value": "4173732773"
+        },
+        {
+          "label": "Required Services(required)",
+          "value": "(the message)"
+        }
+      ],
+      "shots": [
+        "outreach-runs/2026-11-14/wichita-first5/dry-run/plumbcrazy-filled.png"
+      ],
+      "time": "2026-11-15T02:51:56.678Z",
+      "values": {
+        "firstName": "Josh",
+        "lastName": "Lenz",
+        "fullName": "Josh Lenz",
+        "email": "josh@fluidframemarketing.com",
+        "phone": "4173732773",
+        "company": "Fluid Frame Marketing",
+        "zip": "65804",
+        "message": "Hey Plumb Crazy team,\n\nTwo of your reviews tell the same story: someone expected a big bill, then Brandon found a smaller fix. One customer thought the water heater had to be replaced. The other was told a sewer line \"had to be done.\" My daughter and I build websites for service businesses, so we made you a mockup that leads with it: before you pay for the big fix, you hear about the smaller one.\n\nhttps://plumbcrazy.websitepreview.fluidframemarketing.com/\n\nNote: It'll look a lot better with your logo and images on it! Lol\n\nThe preview opens with a customer's own words, then breaks down why each page is built the way it is. One thing we'd fix: your About page shows a \"page missing\" message, so nobody can find out who you are.\n\nWe built your water heater repair and sewer line replacement pages as examples, and we'd love to build the rest. Which brands or manufacturers are you certified with?\n\nBy the way, our contact form system would have recognized this as a solicitation, and you wouldn't have even seen it.\n\nHow'd we do on your company vibe?\n\nJosh\nFluid Frame Marketing",
+        "shortMessage": null,
+        "subject": "A website mockup for Plumb Crazy"
+      },
+      "captcha": "none"
+    }
+  ]
+}

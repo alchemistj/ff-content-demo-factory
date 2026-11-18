@@ -1,0 +1,38 @@
+QA REQUEST: sandhill-lincoln (lincoln-roofing/sandhill)
+
+Preview (not live yet; becomes https://sandhill-lincoln.websitepreview.fluidframemarketing.com/ after merge):
+- Strategy page: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/
+- /home/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/home/
+- /roof-replacement-lincoln-ne/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/roof-replacement-lincoln-ne/
+- /contact/: https://ff-astro-demos-crgq5r2hv-josh-lenzs-projects.vercel.app/__ff-preview/sandhill-lincoln/contact/
+
+Source and facts (the only allowed source of claims):
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-roofing/sandhill/facts.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-roofing/sandhill/reviews.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-roofing/sandhill/audit.md
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-roofing/sandhill/words.json
+- https://github.com/alchemistj/ff-content-demo-factory/blob/claude/weekend-batch/prospects/lincoln-roofing/sandhill/usp.md
+
+Outreach message (route: https://contact.sandhillroofing.com/ — **hand send**. The form has a required "I'm not a robot" checkbox (a native checkbox, not a reCAPTCHA, hCaptcha or Turnstile widget). Treat it as a bot check: do not submit it by script.):
+---
+Hey Sandhill Roofing team,
+
+Your reviews tell the same story: Dusty tells you what the roof needs and what it doesn't. One customer thanked him for an honest second opinion: a clear explanation of the condition of the roof, and no push for unnecessary work. We build websites for service businesses, so we made you a mockup built around it:
+
+https://sandhill-lincoln.websitepreview.fluidframemarketing.com/?utm_source=form
+
+Note: It'll look a lot better with your logo and images on it! Lol
+
+The preview walks through why each page is built the way it is. One thing we'd fix: the five service headings on your services page are your phone number, (402) 890-6460, so Google reads a phone number where each service name should be.
+
+We built your homepage and roof replacement page as examples, and we'd love to build the rest.
+
+How'd we do on your company vibe?
+
+Not interested? Reply "no thanks" and you won't hear from me again.
+
+Josh
+Fluid Frame Marketing
+---
+
+Please check on phone and desktop, then reply PASS or a MUST FIX list.

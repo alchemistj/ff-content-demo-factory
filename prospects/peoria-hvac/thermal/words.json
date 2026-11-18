@@ -1,0 +1,569 @@
+{
+ "schema": "words-package/v1",
+ "business": {
+  "name": "Thermal Services Inc",
+  "slug": "thermal-peoria",
+  "city": "Peoria",
+  "state": "IL",
+  "companyType": "HVAC Company",
+  "owners": [],
+  "phones": [
+   {
+    "label": "Peoria",
+    "display": "(309) 699-3333",
+    "tel": "+13096993333"
+   }
+  ],
+  "email": null,
+  "hours": "Monday to Friday, 7:30 AM to 4:30 PM",
+  "address": "2200 W Altorfer Drive, Peoria, IL 61615",
+  "serviceArea": {
+   "summary": "Peoria and central Illinois",
+   "towns": [
+    "Peoria",
+    "East Peoria",
+    "Peoria Heights",
+    "Bartonville",
+    "Dunlap",
+    "Morton",
+    "Pekin",
+    "Washington",
+    "Germantown Hills",
+    "Chillicothe"
+   ]
+  }
+ },
+ "trustBar": [
+  "Locally Owned and Operated",
+  "In Business Since 2004",
+  "Service for All Makes and Models",
+  "A Proud Ameren Energy Efficiency Partner",
+  "After-Hours Emergency Service"
+ ],
+ "services": [
+  {
+   "name": "AC Repair",
+   "route": "/ac-repair-peoria-il/",
+   "blurb": "Cooling back on for Peoria homes and businesses, with the problem explained in plain words."
+  },
+  {
+   "name": "Heating and Furnace Repair",
+   "route": null,
+   "blurb": "Furnace and heating repair, from no-start calls to heat exchangers and geothermal systems."
+  },
+  {
+   "name": "System Replacement",
+   "route": null,
+   "blurb": "A new furnace or air conditioner when repair stops making sense. Sizing is free, by quote and technician visit."
+  },
+  {
+   "name": "Maintenance",
+   "route": null,
+   "blurb": "Spring and fall inspections, the twice-a-year schedule TSI recommends."
+  },
+  {
+   "name": "Commercial HVAC",
+   "route": null,
+   "blurb": "Heating and cooling service for businesses."
+  },
+  {
+   "name": "Generators",
+   "route": null,
+   "blurb": "Generator service, with free sizing by quote and technician visit."
+  },
+  {
+   "name": "Special Equipment",
+   "route": null,
+   "blurb": "Humidifiers, air purifiers, boiler systems, chillers, home energy controls, geothermal repair and air compressors."
+  }
+ ],
+ "pages": [
+  {
+   "role": "home",
+   "route": "/home/",
+   "navLabel": "Home",
+   "keyword": "hvac company peoria il",
+   "seo": null,
+   "hero": {
+    "eyebrow": "Heating and cooling · Peoria, IL",
+    "h1": "HVAC Company in Peoria, IL — Thermal Services Inc",
+    "sub": "Your AC quits after hours. You want a person on the phone. Here is what one customer heard when they called TSI at 10 PM. Then call (309) 699-3333 and ask for yourself.",
+    "primaryCta": {
+     "label": "Call (309) 699-3333",
+     "action": "call"
+    },
+    "secondaryCta": {
+     "label": "Contact us",
+     "action": "contact"
+    },
+    "image": {
+     "slot": "home-hero",
+     "alt": "Technician checking an outdoor air conditioner at a Peoria home",
+     "brief": "HVAC technician with gauges at an outdoor condenser beside a brick house, late afternoon light, desktop and phone crops"
+    }
+   },
+   "sections": [
+    {
+     "type": "review",
+     "quote": "At 10 PM I called TSI. The gentleman that answered was so helpful & patient. He talked me through a few things to do to try to find the problem. … After flipping the switch again, all was good.",
+     "name": "Linda K."
+    },
+    {
+     "type": "split",
+     "heading": "The House Is Climbing and You Need Someone to Answer",
+     "body": [
+      "The AC quits after the office has closed. The thermostat has crept up all afternoon, somebody in the house is cranky, and you want somebody to answer.",
+      "TSI's office is open Monday to Friday, 7:30 AM to 4:30 PM, and TSI lists after-hours emergency service. Call and say what the system is doing."
+     ],
+     "list": [
+      "Office open Monday to Friday, 7:30 AM to 4:30 PM",
+      "After-hours emergency service for when it can't wait",
+      "Service for all makes and models",
+      "Homes, shops and commercial buildings"
+     ],
+     "listStyle": "checks",
+     "image": {
+      "slot": "thermostat",
+      "alt": "Wall thermostat in a Peoria home showing a rising indoor temperature",
+      "brief": "close view of a wall thermostat reading a warm indoor temperature, living room blurred behind it"
+     },
+     "imageSide": "right"
+    },
+    {
+     "type": "review",
+     "quote": "During the last heat wave TSI came right out on a Sunday.",
+     "name": "Brad S."
+    },
+    {
+     "type": "prose",
+     "heading": "A Straight Answer on Repair or Replace",
+     "body": [
+      "Nobody wants to hear \"you need a whole new unit\" without knowing why. So ask it out loud: what failed, what would fixing it cost, and what would a new one cost next to it?",
+      "If it does come to replacing, sizing for a new HVAC system is free, by quote and technician visit. Until then, a repair that gets you through the season is a perfectly good answer."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "What I appreciated most was their honesty. They didn’t try to upsell me on anything I didn’t need and were very conscientious about my budget. It’s clear they care about doing the job right and making sure their customers understand their options.",
+     "name": "Ian B."
+    },
+    {
+     "type": "services",
+     "heading": "Heating, Cooling and the Equipment Around Them",
+     "intro": "One call covers the furnace, the air conditioner and the specialty equipment, for houses and for businesses."
+    },
+    {
+     "type": "prose",
+     "heading": "New Equipment, and What Ameren Helps With",
+     "body": [
+      "TSI replaces furnaces and air conditioners as well as repairing them, and it services special equipment such as humidifiers, air purifiers and boiler systems. Sizing for a new HVAC system or a generator is free, by quote and technician visit, so you know what fits before you spend anything.",
+      "TSI is a proud Ameren Energy Efficiency Partner and a registered Program Ally in the Ameren Illinois Energy Efficiency Program. Incentives are listed for smart thermostats, central air conditioners, 95% efficient furnaces, heat pump water heaters and duct air source heat pumps. Ask which ones apply to your job."
+     ]
+    },
+    {
+     "type": "prose",
+     "heading": "One Company for the House and the Shop",
+     "body": [
+      "TSI works on residential and commercial systems. That means a furnace in a Peoria house as well as heating and cooling in a business. Customers mention a warehouse building and a walk-in cooler.",
+      "Residential service covers Peoria, East Peoria, Peoria Heights, Bartonville, Dunlap, Morton, Pekin, Washington, Germantown Hills and Chillicothe. Commercial work reaches further, across Illinois."
+     ]
+    },
+    {
+     "type": "prose",
+     "heading": "What to Say When You Call at Night",
+     "body": [
+      "Say what the system is doing and who is home. Then ask two things: does this need a visit tonight, or can it wait?",
+      "Those two questions turn a scary call into a decision you make."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "Our furnace would not start, within a couple hours TSI was here, found the problem and fixed it.",
+     "name": "LaVonne S."
+    },
+    {
+     "type": "prose",
+     "heading": "Twice a Year, Spring and Fall",
+     "body": [
+      "TSI's own advice is simple: have the system inspected twice a year, in spring and in fall, and rotate the filter every month.",
+      "A spring check lands before the first hot week and a fall check lands before the first cold snap. Small problems get caught while they are still small, and you choose the day instead of the weather choosing it for you."
+     ]
+    },
+    {
+     "type": "prose",
+     "heading": "Locally Owned, Since 2004",
+     "body": [
+      "TSI is locally owned and operated, and the office sits at 2200 W Altorfer Drive, Peoria, IL 61615. The company services all makes and models, for homes and for businesses.",
+      "Reviews name the people who come to the door, and they name them often: Luke, Jeff, Heath, Derek, Darrell and more. You are calling a company where a customer remembers the technician by first name."
+     ]
+    },
+    {
+     "type": "faq",
+     "heading": "Questions Before You Book",
+     "items": [
+      {
+       "q": "Can someone come if it quits after hours?",
+       "a": "TSI lists after-hours emergency service. The office is open Monday to Friday, 7:30 AM to 4:30 PM, so outside that window, call and say what the system is doing."
+      },
+      {
+       "q": "Will you tell me if I need a whole new system?",
+       "a": "Ask what failed and what the repair would cost next to a new system. If a new system makes sense, sizing is free, by quote and technician visit."
+      },
+      {
+       "q": "Do you work on my brand?",
+       "a": "TSI services all makes and models, for homes and for businesses."
+      },
+      {
+       "q": "Do you service geothermal and specialty equipment?",
+       "a": "Yes. Geothermal repair is on the list, along with humidifiers, air purifiers, boiler systems, chillers and air compressors."
+      },
+      {
+       "q": "How often should the system be checked?",
+       "a": "Twice a year, in spring and fall. Rotate the filter every month in between."
+      }
+     ]
+    },
+    {
+     "type": "callBand",
+     "heading": "Call TSI in Peoria",
+     "text": "Call (309) 699-3333 and say what the system is doing. Thermal Services Inc, 2200 W Altorfer Drive, Peoria."
+    }
+   ]
+  },
+  {
+   "role": "service",
+   "route": "/ac-repair-peoria-il/",
+   "navLabel": "AC Repair",
+   "keyword": "ac repair peoria il",
+   "seo": null,
+   "hero": {
+    "eyebrow": "Air conditioning · Peoria, IL",
+    "h1": "AC Repair in Peoria, IL — Thermal Services Inc",
+    "sub": "The AC has quit and the house is warming up. Call TSI and say what the unit is doing.",
+    "primaryCta": {
+     "label": "Call (309) 699-3333",
+     "action": "call"
+    },
+    "secondaryCta": {
+     "label": "Contact us",
+     "action": "contact"
+    },
+    "image": {
+     "slot": "ac-repair-hero",
+     "alt": "Outdoor air conditioner beside a Peoria home with a technician crouched at the unit",
+     "brief": "technician kneeling at an outdoor air conditioner condenser, brick ranch house behind, clear summer sky"
+    }
+   },
+   "sections": [
+    {
+     "type": "review",
+     "quote": "We called about 8 am and Jeff Corey with TSI had our A/C back up and running by 10:30 am. Amazing responsiveness, very thorough and professional service … He was straightforward about the problem and did not try to up sell me anything unnecessary.",
+     "name": "Ben T."
+    },
+    {
+     "type": "split",
+     "heading": "Four Things You Can Check Before You Call",
+     "body": [
+      "Check what you safely can. Is the thermostat set to cool, with fresh batteries if it takes them? Is the breaker for the outdoor unit on? Is the air filter clogged? Is the outdoor fan turning?",
+      "If you see ice on the copper line or water around the indoor unit, switch the system off and call. Running a struggling air conditioner can turn a small repair into a bigger one.",
+      "The TSI office is open Monday to Friday, 7:30 AM to 4:30 PM. TSI lists after-hours emergency service, so if the AC quits outside those hours, call and ask."
+     ],
+     "image": {
+      "slot": "airflow-vent",
+      "alt": "Ceiling air vent in a quiet living room",
+      "brief": "ceiling supply vent in a living room, warm light, a hand held up beneath it checking for airflow"
+     },
+     "imageSide": "left"
+    },
+    {
+     "type": "prose",
+     "heading": "What Usually Goes Wrong With a Central Air Conditioner",
+     "body": [
+      "The house won't cool, the air from the vents is lukewarm, or the outdoor fan sits still while the unit hums. Finding which part has failed is the first job."
+     ],
+     "items": [
+      {
+       "title": "A weak capacitor",
+       "text": "The capacitor gives the fan motor and compressor the jolt they need to start. When it weakens, the unit hums and the fan won't spin."
+      },
+      {
+       "title": "A clogged filter or a dirty coil",
+       "text": "Dust cuts airflow, and with too little airflow a coil can freeze over. Cleaning it is the fix, and the reason it clogged is worth knowing too."
+      },
+      {
+       "title": "Low refrigerant",
+       "text": "An air conditioner doesn't use refrigerant up. If it's low, something is leaking, and topping it off without finding the leak only delays the next call."
+      },
+      {
+       "title": "A tired fan motor",
+       "text": "A squeal, a rattle or a slow fan is an early warning worth a call."
+      },
+      {
+       "title": "A failed compressor",
+       "text": "This is the big one. When the compressor has failed, ask for the repair and the replacement numbers side by side."
+      }
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "Our family was in a tough situation with our AC unit. TSI was understanding of the situation and prompt with their response. From start to finish, they were professional and never made me feel uncomfortable when asking probably too many questions.",
+     "name": "Nick H."
+    },
+    {
+     "type": "prose",
+     "heading": "Repair It or Replace It: Ask for Both Numbers",
+     "body": [
+      "Ask the technician which it is: a part such as a capacitor, a motor or a coil, or a failed compressor on an older unit. That tells you whether to price a new system.",
+      "Ask for both numbers, the repair and the replacement, and put them next to each other. TSI lists free sizing for a new system, by quote and technician visit.",
+      "Central air conditioners are among the incentives in the Ameren Illinois Energy Efficiency Program, and TSI is a registered Program Ally in it. Ask what applies to your job."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "TSI has done some maintenance and repair work on my A/C and furnace. They were very responsive and professional. Additionally when seeking quotes on possible additional services TSI staff has been very helpful in providing details and quotes for various options to help make an informed decision.",
+     "name": "Travis W."
+    },
+    {
+     "type": "review",
+     "quote": "Darrell replaced my ac-unit. … It was clear that both men took no shortcuts and did honest and straightforward work. … gave me options and perspective when I asked them to talk me through decisions.",
+     "name": "Joe M."
+    },
+    {
+     "type": "prose",
+     "heading": "A Spring Cleaning Before the First Hot Week",
+     "body": [
+      "TSI's advice is to have the system inspected twice a year, spring and fall, and to rotate the filter monthly. For the air conditioner, spring is the one that counts. A check before the heat catches a weak part on a mild day, when nobody is waiting on you.",
+      "The monthly filter rotation protects the coil from the dust problem described above."
+     ]
+    },
+    {
+     "type": "review",
+     "quote": "Had them do a AC unit cleaning and check up. Tech was on time and very friendly! He did a great job! Having them give my furnace a check up in the fall also! Highly recommend!",
+     "name": "Bill D."
+    },
+    {
+     "type": "prose",
+     "heading": "Air Conditioning for Businesses Too",
+     "body": [
+      "TSI works on commercial buildings as well as houses. If the shop, the office or the warehouse is the place that is warm, the same phone number gets you the same company, and the commercial side of the business reaches across Illinois."
+     ]
+    },
+    {
+     "type": "faq",
+     "heading": "Questions When the AC Is Down",
+     "items": [
+      {
+       "q": "Can someone come after hours?",
+       "a": "TSI lists after-hours emergency service. Office hours are Monday to Friday, 7:30 AM to 4:30 PM, so after that, call and ask when someone can get there."
+      },
+      {
+       "q": "Do you work on my brand of air conditioner?",
+       "a": "TSI services all makes and models."
+      },
+      {
+       "q": "Is it a small part or the whole system?",
+       "a": "Nobody can tell from the phone, and a good technician won't guess. Describe what the unit is doing, let the technician find the cause, and ask for the repair price next to the replacement price."
+      },
+      {
+       "q": "How often should my AC be serviced?",
+       "a": "Twice a year, spring and fall, is TSI's recommendation."
+      },
+      {
+       "q": "Which towns do you cover?",
+       "a": "Residential service covers Peoria, East Peoria, Peoria Heights, Bartonville, Dunlap, Morton, Pekin, Washington and Chillicothe."
+      }
+     ]
+    },
+    {
+     "type": "callBand",
+     "heading": "Call TSI About Your AC",
+     "text": "Call (309) 699-3333 and tell us what the unit is doing. We're at 2200 W Altorfer Drive in Peoria."
+    }
+   ]
+  },
+  {
+   "role": "contact",
+   "route": "/contact/",
+   "navLabel": "Contact",
+   "keyword": "contact thermal services inc peoria il",
+   "seo": null,
+   "hero": {
+    "eyebrow": "Contact Thermal Services Inc",
+    "h1": "Contact Thermal Services Inc in Peoria, IL",
+    "sub": "If your heat or air has quit, the fastest way to reach TSI is to call. Say what the system is doing.",
+    "primaryCta": {
+     "label": "Call (309) 699-3333",
+     "action": "call"
+    },
+    "image": {
+     "slot": "contact-hero",
+     "alt": "Service van parked in the driveway of a Peoria home",
+     "brief": "white service van at the curb of a suburban Peoria house, front door in the background, daytime"
+    }
+   },
+   "sections": [
+    {
+     "type": "prose",
+     "heading": "Reach TSI by Phone",
+     "body": [
+      "(309) 699-3333",
+      "The office is open Monday to Friday, 7:30 AM to 4:30 PM. TSI lists after-hours emergency service. Call and ask."
+     ]
+    },
+    {
+     "type": "split",
+     "heading": "What to Tell Us When You Call",
+     "list": [
+      "What the system is doing: no heat, no cooling, a noise, a smell, ice, a tripped breaker.",
+      "Whether it's a furnace, an air conditioner, a geothermal unit or another piece of equipment.",
+      "The make, if you can read it on the unit. TSI services all makes and models.",
+      "Whether the call is for a house or a commercial building."
+     ],
+     "image": {
+      "slot": "tech-at-door",
+      "alt": "HVAC technician at a front door talking with a homeowner",
+      "brief": "technician in work shirt at a front door speaking with a homeowner, clipboard in hand, porch in daylight"
+     },
+     "imageSide": "right"
+    },
+    {
+     "type": "prose",
+     "heading": "Where to Find TSI in Peoria",
+     "body": [
+      "**Address.** 2200 W Altorfer Drive, Peoria, IL 61615.",
+      "**Residential area.** Peoria, East Peoria, Peoria Heights, Bartonville, Dunlap, Morton, Pekin, Washington, Germantown Hills and Chillicothe.",
+      "**Commercial area.** Businesses across Illinois."
+     ]
+    },
+    {
+     "type": "callBand",
+     "heading": "Call Thermal Services Inc",
+     "text": "Call and tell us what the system is doing."
+    }
+   ]
+  }
+ ],
+ "footer": {
+  "about": "Thermal Services Inc (TSI) is a locally owned and operated HVAC company in Peoria, IL. In business since 2004. It services residential and commercial heating, cooling and generators.",
+  "why": [
+   "Locally owned and operated",
+   "After-hours emergency service",
+   "Service for all makes and models",
+   "Free sizing by quote and technician visit"
+  ]
+ },
+ "strategy": {
+  "whyHeading": "Why we built this site",
+  "why": [
+   "Your homepage headline says “Residential & Commercial HVAC in Central Illinois,” and the page title says “HVAC Repair Central Illinois.” Neither names Peoria, so someone searching for an HVAC company in Peoria has little to match. Two menu pages are close to empty: /services is 68 words under one heading, and /gallery is 61.",
+   "Your customers already write what a company page can't. Brad S.: “TSI came right out on a Sunday.” Linda K. wrote about calling at 10 PM and being talked through a fix. Today those words sit on Google, not on your site.",
+   "So the demo tells one story everywhere: what happens when someone calls after hours, as your customers describe it. It opens with HVAC company in Peoria, IL, and gives AC repair a page of its own."
+  ],
+  "cardsHeading": "Be the HVAC Company People Find on Google",
+  "cardsIntro": "Each card is one page of the demo.",
+  "cards": [
+   {
+    "route": "/home/",
+    "title": "Homepage",
+    "why": "Where Google learns who you are and where you work.",
+    "problems": [
+     "Your headline and title say Central Illinois, with no Peoria, so Google can't tell which city you answer for.",
+     "Your gallery and services pages are 61 and 68 words, and the promotions page has no year on its end date."
+    ],
+    "fixes": [
+     "A headline that says HVAC company in Peoria, IL, right at the top.",
+     "Your services, your towns and your after-hours call told on the homepage, in your customers' words."
+    ],
+    "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. From that we plan how many pages, in how many towns, so Google and AI tools can find you for every service."
+   },
+   {
+    "route": "/ac-repair-peoria-il/",
+    "title": "AC Repair",
+    "why": "When the AC quits in a Peoria summer, people call the first company they find.",
+    "problems": [
+     "Your A/C page is titled “A/C Repair Central Illinois,” so a search for AC repair in Peoria has nothing built for it.",
+     "Your A/C page heading is just “Air Conditioning,” with no city."
+    ],
+    "fixes": [
+     "A page for AC repair in Peoria, IL, with what usually fails and what happens when you call.",
+     "Office hours and after-hours service told plainly, so a caller knows what to ask."
+    ],
+    "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+   },
+   {
+    "route": "/contact/",
+    "title": "Contact",
+    "why": "Where a customer with a dead system decides to call.",
+    "problems": [
+     "Your site gives 2200 W Altorfer Drive, and Google adds Ste D1."
+    ],
+    "fixes": [
+     "Your number, address, hours and after-hours service together on one page.",
+     "What to tell us when you call, so the first minute of the call counts."
+    ],
+    "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+   }
+  ],
+  "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+  "reportCard": [
+   {
+    "label": "Headline says what you do and where (yours names Central Illinois, not Peoria)",
+    "status": "Needs work"
+   },
+   {
+    "label": "Page titles name your city (home and AC titles say Central Illinois)",
+    "status": "Needs work"
+   },
+   {
+    "label": "Every menu page has real content",
+    "status": "Needs work"
+   },
+   {
+    "label": "Each money service has its own page",
+    "status": "Good"
+   },
+   {
+    "label": "Phone number one tap away on a phone",
+    "status": "Good"
+   }
+  ],
+  "closing": {
+   "heading": "Want a website like this for your business?",
+   "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+  },
+  "confirm": {
+   "heading": "What we'd confirm with you",
+   "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+   "items": [
+    "Your site gives 2200 W Altorfer Drive with no suite, while Google lists 2200 W Altorfer Dr Ste D1, so which address format should every listing use?",
+    "Your site says 24/7 after-hours emergency service and gives office hours of Monday to Friday, 7:30 AM to 4:30 PM, with weekends not stated, so is the emergency line the same number, and what should Google show for hours?",
+    "Your promotions page says its offers run “Now through end of the year” with no year printed, so are those offers still running?"
+   ]
+  },
+  "lead": {
+   "heading": "Why we led with the after-hours call",
+   "text": "We led with the after-hours call because it rests on things Google can't find anywhere else: your customers' own accounts of calling you at night. Please tell us if a night call doesn't go the way Linda K. described.",
+   "showScores": false,
+   "rows": [
+    {
+     "claim": "Night call answered and talked through a fix, per one customer",
+     "score": 16,
+     "appeal": 4,
+     "exclusivity": 4
+    },
+    {
+     "claim": "Came out on a Sunday during a heat wave, per one customer",
+     "score": 15,
+     "appeal": 5,
+     "exclusivity": 3
+    },
+    {
+     "claim": "No upsell, with the repair and the options explained",
+     "score": 15,
+     "appeal": 5,
+     "exclusivity": 3
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,348 @@
+{
+  "kind": "google-review-pull",
+  "version": 1,
+  "slug": "pioneer-peoria",
+  "place": {
+    "name": "Pioneer Roofing",
+    "placeId": "ChIJbVmv0ztZCogR4RO0wHMGcZg",
+    "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pioneer%20Roofing&query_place_id=ChIJbVmv0ztZCogR4RO0wHMGcZg",
+    "address": "202 SW Center St, Peoria, IL 61605",
+    "phone": "(309) 865-5471",
+    "rating": 5,
+    "totalReviewCount": 48
+  },
+  "pulledAt": "2026-11-15T03:27:28.469Z",
+  "requestedMax": 75,
+  "reviews": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21wTWNVWkpVM3BGWjJWc04zWnJWa2hsWjBwaFFuYxAB",
+      "reviewer": "JOSE V.",
+      "rating": 5,
+      "text": "Great customer service, friendly and very knowledgeable.",
+      "publishedAt": "2026-01-08T20:01:37.308Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21wTWNVWkpVM3BGWjJWc04zWnJWa2hsWjBwaFFuYxAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CAIQACodChtycF9oOmpMcUZJU3pFZ2VsN3ZrVkhlZ0phQnc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xaS1oxTnphR0pvT0RSV2NWaFpTa1JXTkdsVFpVRRAB",
+      "reviewer": "Marty B.",
+      "rating": 5,
+      "text": "Great people to do business with very fair and transparent",
+      "publishedAt": "2025-12-29T13:26:51.798Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xaS1oxTnphR0pvT0RSV2NWaFpTa1JXTkdsVFpVRRAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CAIQACodChtycF9oOlZKZ1NzaGJoODRWcVhZSkRWNGlTZUE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xVdFQycHZMV1JRTjNrM01XZzFTa2xJVlZwT1VGRRAB",
+      "reviewer": "AIRJuWAUN A.",
+      "rating": 5,
+      "text": "Pioneer Roofing got the job done and done right! They were extremely professional, sat down with me, informed me of what needed to be done with my attic venting repairs and the job was done wonderfully! I am exceptionally grateful for Pioneer roofing, and for such a job WELL DONE! Thank you for your service!",
+      "publishedAt": "2025-12-20T01:42:07.937Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xVdFQycHZMV1JRTjNrM01XZzFTa2xJVlZwT1VGRRAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CAIQACodChtycF9oOlUtT2pvLWRQN3k3MWg1SklIVVpOUFE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s5VFkwMDRVM2xXT0RWNmVEUXpTWFJQYjJjemNFRRAB",
+      "reviewer": "Therapist I.",
+      "rating": 5,
+      "text": "My roof has a leak and the job pioneer roofing provided made a strong foundation and secured inevitably... Thank you pioneer roofing your team is beyond recognition...",
+      "publishedAt": "2025-07-30T03:00:41.474Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2s5VFkwMDRVM2xXT0RWNmVEUXpTWFJQYjJjemNFRRAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CAIQACodChtycF9oOk9TY004U3lWODV6eDQzSXRPb2czcEE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoNlprTmZVVzFvWXpGNlNIY3hiMWxSVEc1cldIYxAB",
+      "reviewer": "Adrian V.",
+      "rating": 5,
+      "text": "To go guys.",
+      "publishedAt": "2025-07-04T03:04:13.872Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2xoNlprTmZVVzFvWXpGNlNIY3hiMWxSVEc1cldIYxAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CAIQACodChtycF9oOlh6ZkNfUW1oYzF6SHcxb1lRTG5rWHc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21oMWEyazBTbE5OVTNNMVJrOVpTblI2VFhjNWNXYxAB",
+      "reviewer": "Tyrand N.",
+      "rating": 5,
+      "text": "Great Service",
+      "publishedAt": "2025-07-03T17:09:41.996Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT21oMWEyazBTbE5OVTNNMVJrOVpTblI2VFhjNWNXYxAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CAIQACodChtycF9oOmh1a2k0SlNNU3M1Rk9ZSnR6TXc5cWc%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2tzelFubGhRbVpaZFZNM1NrWjFNSGx4ZUc0d1gyYxAB",
+      "reviewer": "Jb G.",
+      "rating": 5,
+      "text": "Very responsive company makes you feel like your appreciated",
+      "publishedAt": "2025-06-27T22:49:17.485Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sCi9DQUlRQUNvZENodHljRjlvT2tzelFubGhRbVpaZFZNM1NrWjFNSGx4ZUc0d1gyYxAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CAIQACodChtycF9oOkszQnlhQmZZdVM3SkZ1MHlxeG4wX2c%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VNWHlrYWZHMjlpLS1nRRAB",
+      "reviewer": "Javier L.",
+      "rating": 5,
+      "text": "Excellent!",
+      "publishedAt": "2025-05-20T15:11:41.886Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VNWHlrYWZHMjlpLS1nRRAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CIHM0ogKEMXykafG29i--gE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNfck5fMi1BRRAB",
+      "reviewer": "Miko",
+      "rating": 5,
+      "text": "Good",
+      "publishedAt": "2025-01-13T18:15:43.410Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfck5fMi1BRRAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CIHM0ogKEICAgIC_rN_2-AE%7C%7C?hl=en-US",
+      "language": "en"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNfclBUTy13RRAB",
+      "reviewer": "Ernest R.",
+      "rating": 5,
+      "text": "This company is definitely determine get the job done",
+      "publishedAt": "2025-01-13T16:45:45.674Z",
+      "ownerResponse": null,
+      "reviewUrl": "https://www.google.com/maps/reviews/data=!4m8!14m7!1m6!2m5!1sChdDSUhNMG9nS0VJQ0FnSUNfclBUTy13RRAB!2m1!1s0x0:0x98710673c0b413e1!3m1!1s2@1:CIHM0ogKEICAgIC_rPTO-wE%7C%7C?hl=en-US",
+      "language": "en"
+    }
+  ],
+  "ratingOnly": [
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2swd2RrcDJZbHB1ZFVaVlYzcFFORk4xV0dGZmRGRRAB",
+      "reviewer": "Dagem M.",
+      "rating": 5,
+      "publishedAt": "2025-12-27T00:49:12.150Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xseWVqZE5RakoxTTE5VVFrSlJjRkV0UzBsa2RtYxAB",
+      "reviewer": "Robert S.",
+      "rating": 5,
+      "publishedAt": "2025-12-22T04:38:04.907Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2sxQlduSTBVbEp4YWpodFFVRTVOR3hOZWtacVUxRRAB",
+      "reviewer": "Tony J.",
+      "rating": 5,
+      "publishedAt": "2025-12-20T02:45:54.380Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0WGNGWk9PRmd3TVV4dmMzWXRjMjkxTURsc2IwRRAB",
+      "reviewer": "Abraham P.",
+      "rating": 5,
+      "publishedAt": "2025-07-29T14:14:12.643Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4SVJIcEljazgxTW13NGJUbEhTamRhUTNkR2JYYxAB",
+      "reviewer": "Mark C.",
+      "rating": 5,
+      "publishedAt": "2025-07-26T01:38:00.774Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT205VVprTTNNM2RzWjFaNWRtWTFiVjlDWkhBelVIYxAB",
+      "reviewer": "PDOG35TH",
+      "rating": 5,
+      "publishedAt": "2025-07-26T01:36:07.175Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25WeFdsZENkemxNTFd0M2IxVnhjMUV4YlU0d1pWRRAB",
+      "reviewer": "Albert C.",
+      "rating": 5,
+      "publishedAt": "2025-07-26T01:34:26.102Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xkM2FubHdOV2swVjNsU04xVnhaemxRVlV0VGRGRRAB",
+      "reviewer": "Hannah B.",
+      "rating": 5,
+      "publishedAt": "2025-07-26T00:21:40.540Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2pOc2RIWndUMEpwYkRWVFEwaEhjWE53VEVwaWEwRRAB",
+      "reviewer": "Jose M.",
+      "rating": 5,
+      "publishedAt": "2025-07-25T16:37:13.435Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xoSWRTMDNiSGhUWlc0eVRGUlZablZoT1dOTk1VRRAB",
+      "reviewer": "Chill S.",
+      "rating": 5,
+      "publishedAt": "2025-07-07T20:32:37.587Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT21walRtcEJNMmhEWW04eFdYZGhNMlJFVVRaT1FYYxAB",
+      "reviewer": "MVP M.",
+      "rating": 5,
+      "publishedAt": "2025-07-07T16:16:45.743Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2taek9YVmphRmxOUjJwRmNGRTJkams1T1hoQlEyYxAB",
+      "reviewer": "Kingcalbo",
+      "rating": 5,
+      "publishedAt": "2025-07-07T02:25:32.824Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t0b1NISjNiMWx4VjJWaldYSnlNbmN0WTJKU1JrRRAB",
+      "reviewer": "Julius P.",
+      "rating": 5,
+      "publishedAt": "2025-07-01T13:34:56.032Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2t4SE1tMURlbnAyUlhnd09GcGhXV05KYUdwVVdXYxAB",
+      "reviewer": "Senter A.",
+      "rating": 5,
+      "publishedAt": "2025-07-01T13:07:23.820Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25KMFJFWnBaMDB0Ym1KQk5XWkdaek0wYVVkMVZXYxAB",
+      "reviewer": "Tito C.",
+      "rating": 5,
+      "publishedAt": "2025-06-30T02:03:35.225Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2s0dFVuTnRUMGgzV1Zvd1pGZEZjbEp3VkhBdGFWRRAB",
+      "reviewer": "Mike",
+      "rating": 5,
+      "publishedAt": "2025-06-30T02:03:17.340Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT2xOdE4yUXphelYzYkRrNU1EUkZVbEpWVGtwWmFFRRAB",
+      "reviewer": "tomas S.",
+      "rating": 5,
+      "publishedAt": "2025-06-30T01:41:29.087Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25JMFpHZG5hWGRsWlhSelkzWlZiV1pLUWxwSVkxRRAB",
+      "reviewer": "Moises G.",
+      "rating": 5,
+      "publishedAt": "2025-06-27T17:39:48.517Z"
+    },
+    {
+      "id": "Ci9DQUlRQUNvZENodHljRjlvT25oNlJWVnBOM2RVTVhaTFpHWXliRU5uWDBaRWJrRRAB",
+      "reviewer": "Micheal N.",
+      "rating": 5,
+      "publishedAt": "2025-06-27T17:11:53.310Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VLVEc1YUxsajRueEJ3EAE",
+      "reviewer": "Chauncey M.",
+      "rating": 5,
+      "publishedAt": "2025-05-17T16:04:56.283Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VOaUV3cEQ4d2VTT2xRRRAB",
+      "reviewer": "Chauncey M.",
+      "rating": 5,
+      "publishedAt": "2025-05-17T16:04:40.261Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJSzE0NERpbmNtd21RRRAB",
+      "reviewer": "Ohaji W.",
+      "rating": 5,
+      "publishedAt": "2025-05-15T23:04:14.826Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnTUN3eW9tYmZnEAE",
+      "reviewer": "BC D.",
+      "rating": 5,
+      "publishedAt": "2025-03-18T01:39:27.280Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNRdk4zRzR3RRAB",
+      "reviewer": "Alex C.",
+      "rating": 5,
+      "publishedAt": "2025-03-03T02:18:48.629Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnTUNBenFPZ2lnRRAB",
+      "reviewer": "Kevin G.",
+      "rating": 5,
+      "publishedAt": "2025-01-31T23:09:12.857Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURfaUptNmpRRRAB",
+      "reviewer": "Devin B.",
+      "rating": 5,
+      "publishedAt": "2025-01-21T02:51:53.048Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNfOTgySEt3EAE",
+      "reviewer": "C.S",
+      "rating": 5,
+      "publishedAt": "2025-01-19T23:27:45.833Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNfa2JueFhnEAE",
+      "reviewer": "asif A.",
+      "rating": 5,
+      "publishedAt": "2025-01-16T23:26:03.111Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUNfMXRqUkhREAE",
+      "reviewer": "Sidney W.",
+      "rating": 5,
+      "publishedAt": "2025-01-15T23:10:27.573Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUNfeXY2SHRRRRAB",
+      "reviewer": "Nando C.",
+      "rating": 5,
+      "publishedAt": "2025-01-15T00:09:41.710Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSURmMGVyRXNBRRAB",
+      "reviewer": "Madison H.",
+      "rating": 5,
+      "publishedAt": "2025-01-07T13:30:20.714Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSURmZ2FINUF3EAE",
+      "reviewer": "Chad A.",
+      "rating": 5,
+      "publishedAt": "2025-01-07T04:51:19.826Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2Z29fRTR3RRAB",
+      "reviewer": "Abner R.",
+      "rating": 5,
+      "publishedAt": "2024-12-18T19:21:43.481Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR2X09fY1R3EAE",
+      "reviewer": "Joe V.",
+      "rating": 5,
+      "publishedAt": "2024-12-18T17:42:57.418Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR2blBDWERREAE",
+      "reviewer": "edwin S.",
+      "rating": 5,
+      "publishedAt": "2024-12-18T10:53:58.216Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2OU55Z3dnRRAB",
+      "reviewer": "KingTvell P.",
+      "rating": 5,
+      "publishedAt": "2024-12-18T03:59:16.670Z"
+    },
+    {
+      "id": "ChZDSUhNMG9nS0VJQ0FnSUR2eE9PdmFBEAE",
+      "reviewer": "Green R.",
+      "rating": 5,
+      "publishedAt": "2024-12-17T17:32:49.208Z"
+    },
+    {
+      "id": "ChdDSUhNMG9nS0VJQ0FnSUR2eExLeXVnRRAB",
+      "reviewer": "Levelle B.",
+      "rating": 5,
+      "publishedAt": "2024-12-17T16:47:16.274Z"
+    }
+  ]
+}

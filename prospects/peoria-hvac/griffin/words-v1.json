@@ -1,0 +1,601 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Griffin HVAC",
+    "slug": "griffin-peoria",
+    "city": "Peoria",
+    "state": "IL",
+    "companyType": "HVAC Company",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Peoria",
+        "display": "(309) 676-0808",
+        "tel": "+13096760808"
+      }
+    ],
+    "email": "douggriffinheatcool@gmail.com",
+    "hours": null,
+    "address": "1007 W Detweiller Dr, Peoria, IL 61615",
+    "serviceArea": {
+      "summary": "Peoria area",
+      "towns": [
+        "Peoria",
+        "Dunlap",
+        "Pekin",
+        "Washington",
+        "Chillicothe",
+        "Metamora",
+        "Morton",
+        "East Peoria",
+        "Peoria Heights",
+        "Germantown Hills"
+      ]
+    }
+  },
+  "trustBar": [
+    "Serving the Peoria Area Since 1963, Current Owner Since 2019",
+    "24/7 Emergency Service",
+    "Maintenance Plan from $160 a Year",
+    "GoodLeap Financing",
+    "Two Clean-and-Check Visits a Year"
+  ],
+  "services": [
+    {
+      "name": "Furnace Repair",
+      "route": "/furnace-repair-peoria-il/",
+      "blurb": "Heat back on when the furnace quits, with emergency service available 24/7."
+    },
+    {
+      "name": "AC Repair",
+      "route": null,
+      "blurb": "Cooling back on when the air conditioner quits on a hot day."
+    },
+    {
+      "name": "Maintenance Plan",
+      "route": null,
+      "blurb": "Two clean-and-check visits a year, from $160 for a home with one system."
+    },
+    {
+      "name": "New Furnace and AC Installation",
+      "route": null,
+      "blurb": "A new system when the old one is done, with GoodLeap financing if you want it."
+    },
+    {
+      "name": "Humidifier Check",
+      "route": null,
+      "blurb": "The humidifier is checked as part of the fall clean-and-check visit."
+    },
+    {
+      "name": "Emergency Service",
+      "route": null,
+      "blurb": "24/7 emergency service for the repairs that can't wait for a convenient time."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "hvac company peoria il",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Peoria, IL · Heating and Cooling",
+        "h1": "HVAC Company in Peoria, IL — Griffin HVAC",
+        "sub": "The furnace quits after hours. Members of Griffin's maintenance plan never pay after-hours, weekend or holiday rates, only $75 for any service call. That is the service-call fee, not the repair. The plan is $160 a year for a home with one system. Call (309) 676-0808.",
+        "primaryCta": {
+          "label": "Call (309) 676-0808",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "HVAC technician at an outdoor unit beside a Peoria home",
+          "brief": "HVAC technician with a tool bag at an outdoor condenser beside a brick house, soft afternoon light, desktop and phone crops"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "They are the most accommodating and adaptable company. I know I can expect the best communication coupled with their capability.",
+          "name": "Jeremy G."
+        },
+        {
+          "type": "split",
+          "heading": "What Does a Service Call Cost After Hours?",
+          "body": [
+            "Heating and cooling equipment rarely quits at a convenient time, and the price of the call is the part people wonder about first.",
+            "Griffin's maintenance plan settles the service-call fee ahead of time. Plan members pay $75 for any service call, with no after-hours, weekend or holiday rates, plus 10% off parts and priority scheduling."
+          ],
+          "list": [
+            "Two clean-and-check visits a year, spring and fall",
+            "Plan members pay $75 for any service call",
+            "10% off parts during service or a clean and check",
+            "Priority scheduling"
+          ],
+          "listStyle": "checks",
+          "image": {
+            "slot": "tech-at-door",
+            "alt": "HVAC technician greeting a homeowner at the front door",
+            "brief": "technician in a work shirt at a front door talking with a homeowner, porch in daylight, clipboard in hand"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "The Plan, Line by Line",
+          "body": [
+            "A one-year agreement is $160 for a home with one system, meaning a furnace and an air conditioner together. A home with two systems is $260, and a home with more than two adds $100 on top of that."
+          ],
+          "items": [
+            {
+              "title": "The spring visit",
+              "text": "Condenser coil, electrical, refrigerant pressures, drains and the thermostat."
+            },
+            {
+              "title": "The fall visit",
+              "text": "Burners, flame sensor, safeties, gas pressures, flue and humidifier."
+            },
+            {
+              "title": "Scheduling",
+              "text": "Clean-and-check visits are booked during the week only. Emergency services are available 24/7."
+            }
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Josh cleaned my HVAC unit including the blower which was filled with drywall dust from renovations. I was so impressed and have signed up for their yearly maintenance plan.",
+          "name": "Michelle C."
+        },
+        {
+          "type": "prose",
+          "heading": "Furnace or AC Down? Start With the Cause",
+          "body": [
+            "Griffin offers 24/7 emergency service. When you call, say what the system is doing and ask what failed and what the fix would cost.",
+            "A technician who can name the broken part can explain what comes next."
+          ],
+          "link": {
+            "label": "See furnace repair in Peoria",
+            "route": "/furnace-repair-peoria-il/"
+          }
+        },
+        {
+          "type": "review",
+          "quote": "He was quickly able to locate the root cause of the problem and recommend a solution and did not try and upsell us on anything. He was helpful in letting us know how to prevent similar issues in the future.",
+          "name": "Joseph M."
+        },
+        {
+          "type": "services",
+          "heading": "Heating and Cooling for Peoria Homes, From Repair to a New System",
+          "intro": "One call covers the furnace, the air conditioner and the plan that keeps them running."
+        },
+        {
+          "type": "prose",
+          "heading": "Why the Spring Visit Starts at the Outdoor Coil",
+          "body": [
+            "The spring clean-and-check covers the condenser coil, electrical, refrigerant pressures, drains and the thermostat. Each one is a place an air conditioner fails on a hot day.",
+            "A dirty condenser coil makes the unit work harder to shed heat. Weak electrical parts keep a motor from starting, and a clogged drain can leave water where you don't want it. A spring check looks at each of them before the first hot week."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "When It's Time for Something New",
+          "body": [
+            "When the old system is done, Griffin installs new ones. For anyone who wants financing, Griffin has partnered with GoodLeap.",
+            "GoodLeap uses a soft credit check until funding, and the highest score from all 3 bureaus to see if you qualify. Ask about rates and terms when you call."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We are new homeowners in an older home and had no A/C in hot weather. He checked the system completely and explained how our system worked. He also showed us how to work our Nest thermostat.",
+          "name": "Judith G."
+        },
+        {
+          "type": "prose",
+          "heading": "Who Runs Griffin HVAC",
+          "body": [
+            "Griffin has served the Peoria area since 1963, and the current owner took over in 2019. Griffin heating, cooling and home services is now Griffin HVAC.",
+            "Griffin is at 1007 W Detweiller Dr, Peoria, IL 61615, and you can reach it at (309) 676-0808 or at douggriffinheatcool@gmail.com."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "From Peoria Heights to Princeville",
+          "body": [
+            "Griffin works in Peoria, Dunlap, Pekin, Washington, Chillicothe, Metamora, Creve Coeur, Edwards, Hopewell, Peoria Heights, Morton, Germantown Hills, Princeville, Edelstein, East Peoria, Elmwood, Mackinaw, Mapleton, Bartonville, Brimfield, Tremont, Hanna City, Trivoli, Marquette Heights and West Peoria.",
+            "Don't see your town? Call and ask."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Questions About the Plan and the Call",
+          "items": [
+            {
+              "q": "What does the maintenance plan cost?",
+              "a": "A one-year agreement is $160 for a home with one system, $260 for a home with two, and $100 more if the home has more than two."
+            },
+            {
+              "q": "Do plan members pay extra at night or on a holiday?",
+              "a": "No. After-hours, weekend and holiday rates don't apply to members. For members, a service call is $75 and parts are 10% off."
+            },
+            {
+              "q": "Who is the maintenance plan right for?",
+              "a": "Anyone who would rather pay for a check on a mild day than a call on a bad one. A home with one furnace and one air conditioner is $160 a year, and the plan covers both."
+            },
+            {
+              "q": "Can I book a clean-and-check on a weekend?",
+              "a": "Maintenance clean-and-checks are scheduled during the week only, so if the weekend is the only time that works, call and ask what's open."
+            },
+            {
+              "q": "The online schedule doesn't show a time I want. What now?",
+              "a": "Call (309) 676-0808. The online schedule isn't a true reflection of the actual schedule, so a phone call is the way to see what is open."
+            },
+            {
+              "q": "Does Griffin do emergency repairs?",
+              "a": "Yes. Emergency services are available 24/7, and plan members pay $75 for a service call."
+            },
+            {
+              "q": "Does Griffin work on both furnaces and air conditioners?",
+              "a": "Yes. Griffin repairs and installs both, and the plan's two visits cover the furnace in fall and the air conditioner in spring."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Griffin HVAC in Peoria",
+          "text": "Call (309) 676-0808 to ask about the maintenance plan, a repair or an emergency. Griffin HVAC, 1007 W Detweiller Dr, Peoria."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/furnace-repair-peoria-il/",
+      "navLabel": "Furnace Repair",
+      "keyword": "furnace repair peoria il",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Heating · Peoria, IL",
+        "h1": "Furnace Repair in Peoria, IL — Griffin HVAC",
+        "sub": "The furnace has quit and the house is cooling off. Call Griffin HVAC. Emergency service is available 24/7, and plan members pay $75 for a service call.",
+        "primaryCta": {
+          "label": "Call (309) 676-0808",
+          "action": "call"
+        },
+        "secondaryCta": {
+          "label": "Contact us",
+          "action": "contact"
+        },
+        "image": {
+          "slot": "furnace-hero",
+          "alt": "Gas furnace with a steady blue flame at the burners",
+          "brief": "close view of gas furnace burners lit with a steady blue flame, utility room, warm light"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Techs at Griffin do a great job. Furnace went out right when it started to get cold. Josh got it back up and running in no time. Highly recommend.",
+          "name": "Kevin S."
+        },
+        {
+          "type": "split",
+          "heading": "Four Things to Check Before You Call About the Furnace",
+          "body": [
+            "Check what you can do safely. Is the thermostat set to heat, with fresh batteries if it takes them? Is the furnace switch on? Is the breaker on? Is the filter packed with dust?",
+            "If the furnace still won't run, call Griffin HVAC at (309) 676-0808."
+          ],
+          "image": {
+            "slot": "furnace-detail",
+            "alt": "Furnace access panel open showing the igniter and burner area",
+            "brief": "furnace cabinet with the access panel removed, burner assembly and wiring visible, utility basement lighting"
+          },
+          "imageSide": "left"
+        },
+        {
+          "type": "prose",
+          "heading": "What Usually Stops a Furnace",
+          "body": [
+            "The thermostat calls for heat and nothing happens, the furnace clicks and never lights, or it runs a minute and shuts down. A furnace goes through several steps before the house warms up, and a failure at any one of them stops the rest."
+          ],
+          "items": [
+            {
+              "title": "A worn igniter",
+              "text": "The igniter lights the burner. When it cracks or weakens, the furnace tries to start and can't."
+            },
+            {
+              "title": "A dirty flame sensor",
+              "text": "This small rod tells the furnace the flame is lit. Residue on it can shut the furnace down after a few seconds."
+            },
+            {
+              "title": "A clogged filter",
+              "text": "Too little airflow makes a furnace overheat and shut itself off."
+            },
+            {
+              "title": "An inducer or blower motor",
+              "text": "The inducer pulls exhaust out, and the blower pushes warm air through the house. When either fails, the heat doesn't arrive."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "The Furnace Runs but the House Stays Cold",
+          "body": [
+            "A furnace that runs and still leaves the rooms cold is a different problem from one that won't start. The cause might be airflow, a blower that isn't moving the warm air, or a thermostat telling the furnace the wrong thing.",
+            "Describe it the way you'd tell a neighbor: which rooms are cold, whether you can hear the blower, and how long it's been going on. That tells a technician where to start."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Furnace went out 4:30 pm on New Years Eve. Called Griffin. Josh showed up at 5:10 pm. knew exactly how to fix and was done by 5:45 pm. … It needed a new igniter and had the part with him.",
+          "name": "Bob R."
+        },
+        {
+          "type": "prose",
+          "heading": "What the Fall Visit Looks At",
+          "body": [
+            "Griffin's fall clean-and-check covers burners, flame sensor, safeties, gas pressures, flue and humidifier. The burners and the flame sensor are two of the usual suspects when a furnace won't stay lit.",
+            "That's the point of a check in October rather than a call in January. Whatever it finds, you find out on a mild day with time to decide, not on the first cold night."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "First time they were here. Did a great job inspecting the furnace. Top notch work. Signed up for spring HVAC check as well.",
+          "name": "Joy K."
+        },
+        {
+          "type": "prose",
+          "heading": "Repair or New Furnace: Ask for Both Prices",
+          "body": [
+            "Ask the technician what failed: an igniter, a sensor or a motor, or a major part like the blower. That tells you whether a new furnace is worth pricing.",
+            "Ask for the repair price and the replacement price side by side. If you replace, GoodLeap financing is there if you want it."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "We needed our furnace replaced after it went out and they were fast and easy to get us a great quote. Did not feel like they were trying to up sell us at all, just get us what we need which was refreshing.",
+          "name": "Reed S."
+        },
+        {
+          "type": "prose",
+          "heading": "A Furnace Plan Before the Next Cold Snap",
+          "body": [
+            "For a plan member, a service call is $75 and parts during service or a clean and check are 10% off. The fall visit is the one that matters for the furnace.",
+            "Plan members also get priority scheduling."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Josh was very professional. I appreciate the picture of the person coming to service our furnace prior to his arrival. He was on time. He explained what he needed to do.",
+          "name": "Marolyn W."
+        },
+        {
+          "type": "faq",
+          "heading": "Questions When the Furnace Is Out",
+          "items": [
+            {
+              "q": "Can someone come after hours or on a holiday?",
+              "a": "Emergency services are available 24/7. Call (309) 676-0808 and say what the furnace is doing."
+            },
+            {
+              "q": "What does the plan do for a furnace call?",
+              "a": "Plan members pay $75 for a service call, with no after-hours, weekend or holiday rates, and get priority scheduling."
+            },
+            {
+              "q": "When should the furnace be checked?",
+              "a": "The fall visit is the furnace check. Plan visits are booked during the week, and the plan includes two a year."
+            },
+            {
+              "q": "Does Griffin install new furnaces?",
+              "a": "Yes. Griffin installs new furnaces, and has partnered with GoodLeap for financing."
+            },
+            {
+              "q": "Does the fall visit include the humidifier?",
+              "a": "Yes. The fall clean-and-check lists the humidifier among the things it covers."
+            },
+            {
+              "q": "How do I know whether it's the thermostat or the furnace?",
+              "a": "Start with the thermostat: set it to heat, check the batteries, and see if the display is blank or the furnace responds at all. If the thermostat looks fine and the furnace stays silent, or it clicks and never lights, call and tell us which."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Griffin About Your Furnace",
+          "text": "If the furnace isn't heating, call (309) 676-0808 and tell us what it's doing. We're at 1007 W Detweiller Dr in Peoria."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact griffin hvac peoria il",
+      "seo": null,
+      "hero": {
+        "eyebrow": "Contact Griffin HVAC",
+        "h1": "Contact Griffin HVAC in Peoria, IL",
+        "sub": "The fastest way to reach Griffin HVAC is to call. Say what the system is doing. Emergency services are available 24/7.",
+        "primaryCta": {
+          "label": "Call (309) 676-0808",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Service van parked at the curb of a Peoria home",
+          "brief": "white service van at the curb of a suburban house, front door behind it, daytime"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call or Email Griffin HVAC",
+          "body": [
+            "(309) 676-0808",
+            "Prefer to write? Email douggriffinheatcool@gmail.com and say what the system is doing and where the house is. For anything that can't wait, call instead."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "What to Tell Us When You Call",
+          "list": [
+            "What the system is doing: no heat, no cooling, a noise, a smell, ice, a tripped breaker.",
+            "Whether it's a furnace or an air conditioner.",
+            "Roughly how old the system is, and any repairs you remember.",
+            "Whether you're on the maintenance plan, so we know the $75 service call applies."
+          ],
+          "image": {
+            "slot": "thermostat",
+            "alt": "Hand adjusting a wall thermostat",
+            "brief": "hand adjusting a wall thermostat in a living room, soft indoor light"
+          },
+          "imageSide": "right"
+        },
+        {
+          "type": "prose",
+          "heading": "Where to Find Griffin HVAC in Peoria",
+          "body": [
+            "**Address.** 1007 W Detweiller Dr, Peoria, IL 61615.",
+            "**Hours.** Monday to Friday, opening at 8:00 AM. Maintenance clean-and-checks are booked during the week. Emergency services are available 24/7.",
+            "**Area.** Peoria, Dunlap, Pekin, Washington, Morton and East Peoria."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Call Griffin HVAC",
+          "text": "Tell us what the system is doing, and ask about the maintenance plan while you're on the phone."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Griffin HVAC is a Peoria heating and cooling company that has served the area since 1963, and has had its current owner since 2019. It repairs and installs furnaces and air conditioners, and sells a maintenance plan from $160 a year.",
+    "why": [
+      "Plan members pay $75 for a service call",
+      "24/7 emergency service",
+      "GoodLeap financing",
+      "Two clean-and-check visits a year"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your homepage headline reads “Please call if the online schedule doesn't show a time you want.” That is a notice, not an answer to what you do or where, and three different pages carry the title “Heating Services.” On a phone, every page is 768 pixels wide on a 390-pixel screen, so visitors scroll sideways, and the header shows Book Online and Log In but no phone number.",
+      "Your maintenance plan page is a strong page. It prints a price, two visit checklists and a $75 service call with no after-hours, weekend or holiday rates. Today it hides behind the menu label “Maintenance Plan Agreement.”",
+      "So the demo leads with the plan, tells it the same way on every page, and opens with HVAC company in Peoria, IL. Furnace repair gets a page of its own, because it is where your customers and your plan meet."
+    ],
+    "cardsHeading": "Be the HVAC Company People Find on Google",
+    "cardsIntro": "Each card is one page of the demo.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your headline is an online-schedule notice, and your page title leads with “Heating Services,” a title shared by three pages.",
+          "The raw page carries “Slide title” template filler 15 times, which sits in the page code where Google can read it."
+        ],
+        "fixes": [
+          "A headline that says HVAC company in Peoria, IL, with your plan's $75 service call in the first screen.",
+          "A homepage that tells your services, your towns and your plan in your customers' words."
+        ],
+        "alsoAdd": "On day one, we sit down with you to get what makes you the obvious choice, every service you offer and every town you work in. From that we plan how many pages, in how many towns, so Google and AI tools can find you for every service."
+      },
+      {
+        "route": "/furnace-repair-peoria-il/",
+        "title": "Furnace Repair",
+        "why": "When the heat is out, people call the first company they reach.",
+        "problems": [
+          "You have no furnace repair page, so a search for furnace repair in Peoria has nothing built for it.",
+          "Your plan page, your homepage and your video page share one title, “Heating Services.”"
+        ],
+        "fixes": [
+          "A page for furnace repair in Peoria, IL, covering what goes wrong, the fall visit and when to replace.",
+          "Your plan's service-call rate told next to the repair, where a caller needs it."
+        ],
+        "alsoAdd": "A check of what your competitors offer, so services you didn’t think to mention still get their own pages."
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with a dead system decides to call.",
+        "problems": [
+          "Your contact page is 114 words, is titled “Heating Maintenance,” and puts a visible reCAPTCHA in front of the form.",
+          "Your homepage says Monday to Friday, 8:00 to 6:00, and your contact page says 8:00 to 5:00."
+        ],
+        "fixes": [
+          "One number, one email, one address and one set of hours together on one page.",
+          "What to tell us when you call, so the first minute of the call counts."
+        ],
+        "alsoAdd": "Call and form tracking that shows which pages and towns your leads come from."
+      }
+    ],
+    "reportCardHeading": "What great HVAC company websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Headline says what you do and where",
+        "status": "Missing"
+      },
+      {
+        "label": "Pages fit a phone screen",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number one tap away on a phone",
+        "status": "Needs work"
+      },
+      {
+        "label": "Hours told one way on every page",
+        "status": "Needs work"
+      },
+      {
+        "label": "Plan price and terms easy to find",
+        "status": "Needs work"
+      },
+      {
+        "label": "Each money service has its own page",
+        "status": "Needs work"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your plan page already prints a price, two visit checklists and a service-call fee. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your homepage, financing page and plan page say Monday to Friday, 8:00 to 6:00, while your contact page says 8:00 to 5:00, so what closing time should every listing show?",
+        "Your About page says you have served the Peoria area since 1963 and also says the current owner took over in 2019, so which should lead on every listing?",
+        "Your homepage says the online schedule isn't a true reflection of your actual schedule, while your maintenance visits are weekday-only, so do you want online booking on the site or call-only?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with the plan's service-call rate",
+      "text": "A furnace that quits after hours is a bad time to be asking about rates. Your plan speaks to that: plan members pay $75 for any service call, with no after-hours, weekend or holiday rates, and you print the price. That rests on things Google can't find anywhere else, your own plan terms and your customers' accounts of calling you in the cold.",
+      "showScores": false,
+      "rows": [
+        {
+          "claim": "Plan members pay $75 for any service call, with no after-hours, weekend or holiday rates",
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
+        },
+        {
+          "claim": "Emergency calls answered on holidays and hot weekends",
+          "score": 15,
+          "appeal": 5,
+          "exclusivity": 3
+        },
+        {
+          "claim": "No upsell, with the root cause explained",
+          "score": 15,
+          "appeal": 5,
+          "exclusivity": 3
+        }
+      ]
+    }
+  }
+}

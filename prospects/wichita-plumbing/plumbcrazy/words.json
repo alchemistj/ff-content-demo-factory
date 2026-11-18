@@ -1,0 +1,722 @@
+{
+  "schema": "words-package/v1",
+  "business": {
+    "name": "Plumb Crazy",
+    "slug": "plumbcrazy",
+    "city": "Wichita",
+    "state": "KS",
+    "companyType": "Plumber",
+    "owners": [],
+    "phones": [
+      {
+        "label": "Wichita",
+        "display": "(316) 871-3006",
+        "tel": "+13168713006"
+      }
+    ],
+    "email": null,
+    "hours": null,
+    "address": null,
+    "serviceArea": {
+      "summary": "Wichita and a 30 mile radius around Sedgwick County",
+      "towns": [
+        "Wichita"
+      ]
+    }
+  },
+  "trustBar": [
+    "Homes, Rentals and Businesses",
+    "Seven Days a Week",
+    "No Emergency Rates",
+    "30 Miles Around Sedgwick County"
+  ],
+  "services": [
+    {
+      "name": "Water Heater Repair",
+      "route": "/water-heater-repair-wichita-ks/",
+      "blurb": "A cold shower doesn't always mean a new tank."
+    },
+    {
+      "name": "Sewer Line Replacement",
+      "route": "/sewer-line-replacement-wichita-ks/",
+      "blurb": "Sewer and water service lines replaced."
+    },
+    {
+      "name": "Water Heater Replacement",
+      "route": null,
+      "blurb": "Leaking heaters replaced."
+    },
+    {
+      "name": "Drain Cleaning",
+      "route": null,
+      "blurb": "Slow and blocked drains cleared, from a kitchen sink to the main line."
+    },
+    {
+      "name": "Sewer Cleaning",
+      "route": null,
+      "blurb": "Backed-up sewer lines cleared, including the ones clogged by tree roots."
+    },
+    {
+      "name": "Water Service Repair",
+      "route": null,
+      "blurb": "A broken water line between the city main and the house, found and fixed."
+    },
+    {
+      "name": "Water Service Replacement",
+      "route": null,
+      "blurb": "A water service line that's past repair, replaced."
+    },
+    {
+      "name": "Sump Pumps",
+      "route": null,
+      "blurb": "A new sump pump installed the next morning, in Crystal F.'s case."
+    },
+    {
+      "name": "Toilets and Faucets",
+      "route": null,
+      "blurb": "Toilet, kitchen sink, bathroom sink and tub or shower faucet replacement."
+    },
+    {
+      "name": "Rental and Commercial Plumbing",
+      "route": null,
+      "blurb": "Plumbing repairs for rentals and commercial buildings, as well as homes."
+    }
+  ],
+  "pages": [
+    {
+      "role": "home",
+      "route": "/home/",
+      "navLabel": "Home",
+      "keyword": "plumber wichita ks",
+      "hero": {
+        "eyebrow": "Wichita, KS · Plumbing Repairs and Replacements",
+        "h1": "Plumber in Wichita, KS — Plumb Crazy",
+        "sub": "Got a big quote? Tell us what it was for. Call (316) 871-3006.",
+        "primaryCta": {
+          "label": "Call (316) 871-3006",
+          "action": "call"
+        },
+        "image": {
+          "slot": "home-hero",
+          "alt": "Plumber checking the pipes under a kitchen sink in a Wichita home",
+          "brief": "plumbing pool: home-hero",
+          "desktopPosition": "right 18%"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "Every time I've called him, he's been prompt to respond. He's always been able to quickly fix my plumbing problems, the work is great, and he always comes in at or under budget. I trust him to be fair and honest.",
+          "name": "Samuel M."
+        },
+        {
+          "type": "prose",
+          "heading": "When the Water Won't Stop",
+          "body": [
+            "It's Sunday. There's water on the garage floor, the main is shut off, and you're standing there with your phone in your hand. You want a real person, a time, and no speech about how busy everybody is.",
+            "We work seven days a week, and we don't charge emergency rates."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "A Big Quote, Then a Smaller Fix",
+          "image": {
+            "slot": "leak",
+            "alt": "Water dripping from a pipe joint under a kitchen sink",
+            "brief": "plumbing pool: leak"
+          },
+          "imageSide": "right",
+          "body": [
+            "Another company quoted Courtney B. what she called crazy prices and misinformation for leaks in her bathtub faucet and knobs. Brandon traced them to cheap parts and bad seals, replaced those, and the leaks stopped quickly.",
+            "We treat every customer fairly: no funny business, and no fake “code upgrades.”"
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Two Opinions on a Main Drain",
+          "image": {
+            "slot": "sewer",
+            "alt": "Sewer cleanout cap in the grass beside a house",
+            "brief": "plumbing pool: sewer"
+          },
+          "imageSide": "left",
+          "body": [
+            "Abu F. was charged $50 by another company to come in and say it would cost an arm and a leg to fix his issue.",
+            "Brandon cleaned the main drain at his house. When he put the toilet back, he also corrected bad work from a previous plumber."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "I have used Brandon for several years. He does a great job, and is fairly priced. He is also available to take a look at most jobs with in 24 hours.",
+          "name": "Tricia W."
+        },
+        {
+          "type": "services",
+          "heading": "Water Heaters to Sewer Lines Across Sedgwick County",
+          "intro": "From a dripping faucet to a failed sewer line, for homes, rentals and commercial buildings."
+        },
+        {
+          "type": "review",
+          "quote": "I am quick to complain and quick to give praise. … Answered a call on a Sunday. Was by the house and done on Monday before Noon. Super professional and experienced. Fairly priced.",
+          "name": "Michael W."
+        },
+        {
+          "type": "prose",
+          "heading": "A Sump Pump, a Dishwasher and a Clog: Jobs Behind the Reviews",
+          "body": [
+            "A few of the jobs behind the reviews, each in the customer's own telling."
+          ],
+          "items": [
+            {
+              "title": "A sump pump that stopped working",
+              "text": "Brandon took Crystal F.'s panicked call, returned it later, came by, and was back early the next morning to install a new pump."
+            },
+            {
+              "title": "A dishwasher nobody could install",
+              "text": "Two months without a dishwasher ended for Jessica M. when Brandon came to replace a valve, then installed the dishwasher too, since he had some spare time."
+            },
+            {
+              "title": "A clog cleared in an hour",
+              "text": "Camryn G. had a clog cleaned out in an hour, along with advice on keeping it from coming back."
+            },
+            {
+              "title": "A toilet with major issues",
+              "text": "The toilet got fixed at a lower cost, A.W. W. wrote, and the work was excellent and timely."
+            },
+            {
+              "title": "Drains moved in concrete",
+              "text": "Anthony M. had drains moved in concrete and new waterlines run for a basement bathroom."
+            },
+            {
+              "title": "A sewer clean out and a leak",
+              "text": "A sewer line clean out and a leak under the sink brought Cindy M. back to Plumb Crazy several times. The dog got attention too."
+            }
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Derby L. Had Four Jobs Done, Every One on Time",
+          "body": [
+            "Gas line connection, toilet replacement, water heater installation and sewer cleaning: Derby L. has hired Brandon for all four, and each came in on time at a fair price.",
+            "We replace water heaters, water service lines and [sewer lines](/sewer-line-replacement-wichita-ks/)."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Less Mess Than Expected",
+          "body": [
+            "Brandon made far less of a mess for Michelle C. than she thought he would, and it didn't cost her an arm and a leg.",
+            "Daniel W.'s job took minimal removal of existing obstacles, meaning drywall and kitchen cabinets, and he found it very fairly priced."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Funny Name, Serious Plumbing",
+          "body": [
+            "Yes, Plumb Crazy is a funny name. Lance A. wrote, “Just gotta love this company name!”",
+            "Gale T. says Brandon treats customers with the most respect, and gives you a handshake when he leaves."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "For Landlords, Property Managers and Realtors",
+          "body": [
+            "We work on homes, rentals and commercial buildings. Jason G. calls Brandon his go-to plumber, for his own needs and for his real estate clients.",
+            "Nick H. has had numerous commercial and residential services done by Brandon, and wrote that he doesn't call anyone else."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "… He is where he says he will be when he says he will be there, he communicates clearly and frequently, he's extremely reasonably priced, and he always has customer service top of mind.",
+          "name": "Christy F."
+        },
+        {
+          "type": "review",
+          "quote": "Fantastic same day service, even on a non-emergent repair. Went the extra mile on the repair and explained how I could do it myself next time. He'll be the only call going forward.",
+          "name": "Matt B."
+        },
+        {
+          "type": "prose",
+          "heading": "Prompt, Plain and Explained",
+          "body": [
+            "Michele had the problem explained before any work started, and everything was clean and working when the plumber left.",
+            "Troy T. says Plumb Crazy assessed the job, finished on time and took the time to explain the options."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Will You Come on a Sunday?",
+          "items": [
+            {
+              "q": "Can you come on a weekend?",
+              "a": "Yes, any day. Michael W. called on a Sunday and had the work done before noon on Monday."
+            },
+            {
+              "q": "What will it cost, and does all of it need doing?",
+              "a": "Customers keep using the word fair. Have the quote you already have in hand when you call, along with what it was for."
+            },
+            {
+              "q": "Do you work on rentals and commercial buildings?",
+              "a": "Yes. We do residential, commercial and rental plumbing repairs."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Got a Big Quote? Call Before You Sign",
+          "text": "Call (316) 871-3006 before you sign."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/water-heater-repair-wichita-ks/",
+      "navLabel": "Water Heater Repair",
+      "keyword": "water heater repair wichita ks",
+      "hero": {
+        "eyebrow": "Water heaters, Wichita",
+        "h1": "Water Heater Repair in Wichita, KS — Plumb Crazy",
+        "sub": "A cold shower doesn't always mean a new tank. Call (316) 871-3006 and describe what you see at the tank.",
+        "primaryCta": {
+          "label": "Call (316) 871-3006",
+          "action": "call"
+        },
+        "image": {
+          "slot": "water-heater",
+          "alt": "Gas water heater in a basement utility corner",
+          "brief": "plumbing pool: water-heater"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I called on a Saturday with a problem with my water heater. Working thru text message, they determined that my gas valve needed to be reset, and texted instructions on how to do that myself, saving me the cost of a visit. I could not be more appreciative.",
+          "name": "Carl F."
+        },
+        {
+          "type": "prose",
+          "heading": "Expecting a New Heater, Getting a Repair",
+          "body": [
+            "Brandon Y. assumed his water heater had to be replaced. Brandon fixed it for a fraction of the cost, in no time at all.",
+            "The shower's water pressure got better too, he got a free drain seal, and the advice was free. He wrote that Brandon goes the extra mile without nickel-and-diming you."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Hot Water Back Within the Day",
+          "image": {
+            "slot": "water-heater-close",
+            "alt": "Base of a water heater tank with a drain valve and a small puddle on the floor",
+            "brief": "plumbing pool: water-heater-close"
+          },
+          "imageSide": "right",
+          "body": [
+            "Leah H. wasn't without hot water for even one day. Brandon replaced her water heater, and she has hired him for several jobs since.",
+            "He rebuilt her faucets when she thought they would need replacing, and she wrote that it saved her a ton of money. He also fixed one of her bathtubs so it drained better."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "A Last-Minute Call With a Leaking Tank",
+          "body": [
+            "Candi R. called Brandon in the afternoon about a hot water heater that was leaking. It was a last-minute call, and she wasn't sure how much he could do that day.",
+            "Brandon came right out, and he replaced the heater. She found him kind, knowledgeable and reasonably priced."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "Brandon was super responsive and honest about the pros and cons compared to a tank system. He ended up quoting quite a bit less than some of the others I called and got it installed quickly.",
+          "name": "Marcee L."
+        },
+        {
+          "type": "split",
+          "heading": "Water Heaters in the Rentals He Manages",
+          "image": {
+            "slot": "fixture",
+            "alt": "Hand turning on a bathroom faucet with steam rising",
+            "brief": "plumbing pool: fixture"
+          },
+          "imageSide": "left",
+          "body": [
+            "Landlords call about water heaters too. Marty B. has used Brandon for over 10 years, on his own home and on the rentals he owns and manages.",
+            "Sewer blockages, sewer line replacements and water heater installs are the jobs he uses him for most, though Brandon has done anything plumbing related for him. Marty wrote that Brandon always gets to the jobs in a timely manner."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Licensed Master Plumbers",
+          "body": [
+            "Water heaters are a job for a properly licensed plumber, and we are fully licensed master plumbers. [[confirm: license numbers for the plumbers]]",
+            "We also replace toilets and faucets: kitchen sink, bathroom sink, and tub or shower."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Do I Need a Whole New Water Heater?",
+          "items": [
+            {
+              "q": "Does a cold shower mean I need a new tank?",
+              "a": "Not always. A gas valve that only needs resetting is a free fix over text message, as Carl F. found on a Saturday."
+            },
+            {
+              "q": "Do you replace water heaters too?",
+              "a": "Yes. Water heater replacement is among our plumbing services, and Candi R.'s leaking heater was replaced the afternoon she called."
+            },
+            {
+              "q": "Can you switch me to a tankless system?",
+              "a": "Marcee L. made that switch with Brandon, who went over the pros and cons against a tank system first."
+            },
+            {
+              "q": "How long will I be without hot water?",
+              "a": "Leah H. had a replacement in without losing hot water for even one day."
+            },
+            {
+              "q": "Do you work on rentals and businesses?",
+              "a": "Yes. We do residential, commercial and rental plumbing."
+            },
+            {
+              "q": "What will it cost?",
+              "a": "Brandon Y. wrote that his water heater was fixed for a fraction of the cost he expected."
+            },
+            {
+              "q": "Do you work outside Wichita?",
+              "a": "Yes, within a 30 mile radius around Sedgwick County."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Cold Shower? Call",
+          "text": "Call (316) 871-3006 about the tank."
+        }
+      ]
+    },
+    {
+      "role": "service",
+      "route": "/sewer-line-replacement-wichita-ks/",
+      "navLabel": "Sewer Line Replacement",
+      "keyword": "sewer line replacement wichita ks",
+      "hero": {
+        "eyebrow": "Sewer lines, Wichita",
+        "h1": "Sewer Line Replacement in Wichita, KS — Plumb Crazy",
+        "sub": "Replacing a sewer line is one of the biggest jobs a house can face, so the first question is whether you need one. Call (316) 871-3006.",
+        "primaryCta": {
+          "label": "Call (316) 871-3006",
+          "action": "call"
+        },
+        "image": {
+          "slot": "sewer",
+          "alt": "Trench open beside a house exposing an old sewer line",
+          "brief": "plumbing pool: sewer"
+        }
+      },
+      "sections": [
+        {
+          "type": "review",
+          "quote": "I had three different companies quote me for a new sanitary sewer line. Brandon came in at the best price (by far) and also had the best idea on how to do the job. His crew was very professional and efficient.",
+          "name": "Don G."
+        },
+        {
+          "type": "split",
+          "heading": "Tree Roots in the Main Line",
+          "image": {
+            "slot": "drain",
+            "alt": "Basement floor drain beside a washer and utility sink",
+            "brief": "plumbing pool: drain"
+          },
+          "imageSide": "right",
+          "body": [
+            "Brian N. called about a clogged main line caused by tree roots. The crew was quick, professional and very reasonably priced, he wrote.",
+            "He plans to call again for all their plumbing needs, and he wasn't the only one with roots in the line."
+          ]
+        },
+        {
+          "type": "review",
+          "quote": "He gave me a flat price(very good price, compared to other businesses) and came out within an hour and got the drain unclogged even use the camera to show me what was going on inside the sewer line without any extra charge.",
+          "name": "Yoon R."
+        },
+        {
+          "type": "prose",
+          "heading": "Told It Had to Be Done",
+          "body": [
+            "Another company told Vanessa F. she would have to pay thousands of dollars to fix her sewer line, and that it \"had to be done.\"",
+            "Brandon came and found an alternative solution that was affordable. She called him timely, reliable and trustworthy."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Replacements, More Than Once",
+          "body": [
+            "Keaton B. has hired Brandon for multiple sewer and water line replacements, along with routine household plumbing.",
+            "He describes Brandon as prompt and courteous, and as someone who gets the job done right."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Clearing the Line Instead of Replacing It",
+          "body": [
+            "Sewer cleaning is part of our work, right beside replacement, so clearing a line is a real option for a backup.",
+            "Our replacement crew includes three excavators with over 60 years of combined experience."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Squeezed In Before an Emergency Call",
+          "body": [
+            "Tyler L. had Brandon out for a leak in his main sewer line. An emergency call came in on the morning of his appointment, and Brandon asked to move him earlier instead of pushing him off.",
+            "Tyler appreciated being squeezed in. Brandon was also kind enough to look at a couple of other items that came up while he was there."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "Water Service Lines Too",
+          "body": [
+            "The water line between the city main and the house gets repaired and replaced by us as well.",
+            "Gwendolyn G. had a bust in her main water line. Brandon and his team fixed it with ease and taught her a few things, at a better price than the other quotes she found."
+          ]
+        },
+        {
+          "type": "faq",
+          "heading": "Is the Whole Line Really Gone?",
+          "items": [
+            {
+              "q": "Can the clog just be cleared?",
+              "a": "Sometimes, yes. Sewer cleaning is part of our work, next to replacement."
+            },
+            {
+              "q": "Can I see what's wrong inside the line?",
+              "a": "Yoon R. was shown the inside of his sewer line on a camera, with no extra charge."
+            },
+            {
+              "q": "Do you replace water lines too?",
+              "a": "Yes. We repair and replace water service lines."
+            },
+            {
+              "q": "Do you work on rentals?",
+              "a": "Yes. Rental plumbing repairs are part of our work."
+            },
+            {
+              "q": "I have a quote already. Should I get a second look?",
+              "a": "Don G. had three companies quote his new sewer line before he picked Brandon. Have your own quote and what it covers in hand when you call."
+            },
+            {
+              "q": "Will the crew work around my schedule?",
+              "a": "Tyler L.'s appointment was moved earlier, not later, when an emergency call came in."
+            },
+            {
+              "q": "Do you come out to my part of town?",
+              "a": "We work in Wichita and the surrounding area, including a 30 mile radius around Sedgwick County."
+            }
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Told You Need a New Sewer Line?",
+          "text": "Call (316) 871-3006 before you sign."
+        }
+      ]
+    },
+    {
+      "role": "contact",
+      "route": "/contact/",
+      "navLabel": "Contact",
+      "keyword": "contact plumb crazy wichita ks",
+      "hero": {
+        "eyebrow": "Contact Plumb Crazy",
+        "h1": "Contact Plumb Crazy",
+        "sub": "If water is where it shouldn't be, the fastest way to reach us is to call.",
+        "primaryCta": {
+          "label": "Call (316) 871-3006",
+          "action": "call"
+        },
+        "image": {
+          "slot": "contact-hero",
+          "alt": "Plumbing service van parked in the driveway of a Wichita home",
+          "brief": "plumbing pool: contact-hero"
+        }
+      },
+      "sections": [
+        {
+          "type": "prose",
+          "heading": "Call, Any Day of the Week",
+          "body": [
+            "(316) 871-3006",
+            "We work seven days a week."
+          ]
+        },
+        {
+          "type": "split",
+          "heading": "Got a Quote in Hand? Bring It.",
+          "image": {
+            "slot": "fixture",
+            "alt": "Shutoff valve under a bathroom sink",
+            "brief": "plumbing pool: fixture"
+          },
+          "imageSide": "right",
+          "list": [
+            "Where the water is coming from, or what the fixture is doing.",
+            "Whether it's a home, a rental or a commercial building.",
+            "Anything you've already been quoted, and what it was for."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "What the First Call Looked Like",
+          "body": [
+            "Brandon and his son answered Manieca M.'s call right away and were at her door within the hour. Hart J. had Brandon come out immediately to help him and his family."
+          ]
+        },
+        {
+          "type": "prose",
+          "heading": "30 Miles Around Sedgwick County",
+          "body": [
+            "We work in Wichita, Kansas and the surrounding area, including a 30 mile radius around Sedgwick County."
+          ]
+        },
+        {
+          "type": "callBand",
+          "heading": "Water Where It Shouldn't Be?",
+          "text": "Call (316) 871-3006."
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "about": "Plumb Crazy is a plumbing company serving Wichita, Kansas and the area around it, for homes, rentals and commercial buildings. Funny name, serious plumbing.",
+    "why": [
+      "Seven days a week, no emergency rates",
+      "Homes, rentals and commercial buildings",
+      "30 miles around Sedgwick County",
+      "No funny business"
+    ]
+  },
+  "strategy": {
+    "whyHeading": "Why we built this site",
+    "why": [
+      "Your About page returns a “page missing” message, so a visitor can't find out who you are.",
+      "Your customers already describe the plumber you are. Vanessa F.: “Another company told me I had to pay thousand of dollars to fix the sewer line… Brandon to the rescue.” Today those words sit on Google, not on your site.",
+      "So the demo tells one story everywhere: look for the smaller fix first. It opens with plumber in Wichita, KS, and gives water heater repair and sewer line replacement a page each."
+    ],
+    "cardsHeading": "Be the Plumber People Find on Google",
+    "cardsIntro": "Each card is one page of the demo.",
+    "cards": [
+      {
+        "route": "/home/",
+        "title": "Homepage",
+        "why": "Where Google learns who you are and where you work.",
+        "problems": [
+          "Your site shows photos pulled from Wikipedia, with “Photo credit: Wikipedia” captions, and several don't load.",
+          "Two menu items, “WATER SERVICE” and “SERVER SERVICE,” link to “#” and do nothing, and one is misspelled.",
+          "No reviews appear on the site, though customers write them on Google."
+        ],
+        "fixes": [
+          "Real reviews beside the sections they prove.",
+          "One clear story at the top: the smaller fix, found first.",
+          "Menus where every label goes somewhere."
+        ]
+      },
+      {
+        "route": "/water-heater-repair-wichita-ks/",
+        "title": "Water Heater Repair",
+        "why": "When the hot water quits, people call the first plumber they find.",
+        "problems": [
+          "Water heater replacement is one line on your Plumbing Services page, so “water heater repair Wichita KS” has no page built for it.",
+          "Your water heater blog post is dated March 2016."
+        ],
+        "fixes": [
+          "A page for water heater repair in Wichita, KS, built on what customers say was done.",
+          "A repair story and a replacement story on the same page."
+        ],
+        "alsoAdd": "Pages for drain cleaning, sewer cleaning, water service repair, water service replacement, sump pumps and water heater replacement, each built for its own search with the city in the heading."
+      },
+      {
+        "route": "/sewer-line-replacement-wichita-ks/",
+        "title": "Sewer Line Replacement",
+        "why": "A big sewer quote is the moment people look for a second opinion.",
+        "problems": [
+          "On a desktop, the heading on your sewer replacement page is hidden, so it opens on a blank band.",
+          "Your service headings don't name Wichita, though your page titles do."
+        ],
+        "fixes": [
+          "A heading that shows and says sewer line replacement in Wichita, KS.",
+          "A cleared main line and a replaced one, in customers' own words."
+        ]
+      },
+      {
+        "route": "/contact/",
+        "title": "Contact",
+        "why": "Where a customer with water on the floor decides to call.",
+        "problems": [
+          "Your site shows no street address and no hours.",
+          "Your footer reads “Copyright ©2026 Copyright 2022,” with two company names."
+        ],
+        "fixes": [
+          "Your number, service area and what to have ready on one page.",
+          "One footer line that says one thing."
+        ]
+      }
+    ],
+    "reportCardHeading": "What great plumbing websites get right, and how yours measures up.",
+    "reportCard": [
+      {
+        "label": "Each page's heading shows and says what and where",
+        "status": "Missing"
+      },
+      {
+        "label": "An About page that opens",
+        "status": "Missing"
+      },
+      {
+        "label": "Real photos of your own work",
+        "status": "Missing"
+      },
+      {
+        "label": "Reviews on the site",
+        "status": "Missing"
+      },
+      {
+        "label": "Phone number one tap away",
+        "status": "Good"
+      }
+    ],
+    "closing": {
+      "heading": "Want a website like this for your business?",
+      "text": "Your customers already describe the company you are. Book a strategy call with Fluid Frame and we’ll walk you through this demo and what a full build adds."
+    },
+    "confirm": {
+      "heading": "What we'd confirm with you",
+      "intro": "Google and AI tools see different answers about your business in different places. We wrote this demo from your reviews and your site. On a short onboarding call, we'd confirm these so everything says the same thing.",
+      "items": [
+        "Your site says you serve Wichita and a 30 mile radius around Sedgwick County, your Google listing puts you at 836 S Broadview St in Wichita, and a Birdeye listing and one Google review say Cheney, so which address should every listing use?",
+        "Your page titles say Plumb Crazy, LLC while your footer says Plumb Crazy Kansas, LLC, so which name should every listing use?",
+        "Your drain cleaning page says 17 years of experience and your sewer cleaning page says over 16 years, with no founding year anywhere, so which number should every listing use?",
+        "Your reviews describe a smaller fix found before a big quote, and this demo leads with that, so is that how your team works, and how would you put it?"
+      ]
+    },
+    "lead": {
+      "heading": "Why we led with the smaller fix first",
+      "text": "The scariest moment for a Wichita homeowner is being handed a big quote and told it has to be done. We led with the smaller fix because it rests on things Google can't find anywhere else: your customers' own accounts, your seven days a week with no emergency rates, and the Wichita-area details on your pages. That is also why it can help you rank, and please tell us if it isn't how you work.",
+      "showScores": false,
+      "rows": [
+        {
+          "claim": "Looks for the smaller fix before the big quote",
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
+        },
+        {
+          "claim": "Seven days a week, no emergency rates",
+          "score": 16,
+          "appeal": 4,
+          "exclusivity": 4
+        },
+        {
+          "claim": "Reviews describe same-day or next-morning visits, not stated as policy",
+          "score": 15,
+          "appeal": 5,
+          "exclusivity": 3
+        }
+      ]
+    }
+  }
+}

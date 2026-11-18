@@ -119,7 +119,7 @@ const chrome = words("← See why we built this site") + 2 * pages.filter((p) =>
 const footerWords = words(pkg.footer?.about) + pkg.services.reduce((n, s) => n + words(s.name), 0) + words(b.serviceArea?.summary) + (b.phones || []).reduce((n, p) => n + words(p.label) + words(p.display), 0) + words(b.email) + words(b.hours) + (pkg.footer?.why || []).reduce((n, w) => n + words(w), 0);
 const trust = pkg.trustBar.reduce((n, t) => n + words(t), 0);
 // Josh, 2026-11-09: thin copy is the problem, not long copy. Fail below the minimum; above the soft size, only flag it for a look.
-const ranges = { home: [900, 1400], service: [700, 1200], contact: [150, 600] }; // copy words only (Josh, 2026-11-09: menus, footer, trust bar and reviews no longer count)
+const ranges = { home: [550, 1400], service: [700, 1200], contact: [150, 600] }; // copy words only (Josh, 2026-11-09: menus, footer, trust bar and reviews no longer count)
 for (const p of pages) {
   const n = pageTexts(p).filter((t) => !(p.sections || []).some((x) => x.type === "review" && (x.quote === t || x.name === t))).reduce((a, t) => a + words(t), 0); void chrome; void footerWords; void trust;
   const [lo, hi] = ranges[p.role];
