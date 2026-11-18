@@ -22,7 +22,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 
 ## Short message
 None needed: the form has no message length cap, so the full message fits.

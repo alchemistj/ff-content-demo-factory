@@ -55,7 +55,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** Tick "I'm not a robot", then Submit.
@@ -101,7 +101,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** Tick "I'm not a robot", then Submit.
@@ -159,7 +159,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** The message goes in "Details". Tick "I'm not a robot", then Submit.
@@ -217,7 +217,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** Tick "I'm not a robot", then Submit.
@@ -269,7 +269,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** "What can we help you with?" dropdown: choose Other. Our sender saw a bot check before the form; if you get one, just complete it.
@@ -327,7 +327,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** "How did you find us?" dropdown: choose Other, then fill the Other box above.
@@ -379,7 +379,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** The message goes in "Job Description/Details". Solar question: No.
@@ -425,7 +425,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** Tap "GET A FREE QUOTE!" near the bottom of the homepage; the form pops up. Leave Address blank. The site was flaky yesterday; reload if it errors.
@@ -471,7 +471,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** The message goes in "Project Details". Then Send.
@@ -529,7 +529,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** Service Type: choose Commercial. The message goes in "Description of Problem or Need". Complete the security check if it shows one.
@@ -587,7 +587,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** The message goes in "Tell Us About Your Potential Remodeling Project".
@@ -651,7 +651,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** The form is in the Contact Us section near the bottom of the page.
@@ -709,7 +709,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** One question per screen. For type of work, pick the closest or Other. The message goes in the project details box.
@@ -743,7 +743,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 ```
 
 **Then:** Their only form is a booking page behind a security check, so email this one instead.

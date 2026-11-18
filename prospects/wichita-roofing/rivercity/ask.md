@@ -15,7 +15,7 @@ We build websites for service businesses. If you'd like, we'll make you a free m
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 
 ## Short message
 Use this one (form caps the box at 600 characters; this is 393, full message is 597).
@@ -26,7 +26,7 @@ I noticed two things on your site: when someone taps your phone number it calls 
 
 Josh, Fluid Frame Marketing
 
-P.S. If you were on our website system, you wouldn't even be seeing this message. We flag every solicitation, so they never get through. :)
+P.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.
 
 ## Checks
 Desktop = 1440x900, phone = 390x844 (phone emulation).
