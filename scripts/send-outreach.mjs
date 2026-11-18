@@ -226,20 +226,32 @@ for (const entry of queue.entries) {
     else if (!entry.approved) { r.status = "not sent"; r.reason = "not approved in the queue"; }
     else {
       const before = page.url();
+      const bodyText = async () => (await scope.evaluate(() => document.body.innerText).catch(() => "")) + " " + (await page.evaluate(() => document.body.innerText).catch(() => ""));
+      const CONFIRM = /thank you|thanks for|message (has been |was )?(sent|received)|we('ll| will) (be in touch|get back)|submission (was )?(received|successful)|successfully/gi;
+      const confirmCount = (t) => (t.match(CONFIRM) || []).length;
+      const beforeConfirms = confirmCount(await bodyText());
       const submit = scope.locator(`form:has([data-ff-field]) [type=submit], form:has([data-ff-field]) button:not([type=button])`).first();
       await submit.click({ timeout: 8000 });
       await Promise.race([page.waitForNavigation({ timeout: 20000 }).catch(() => {}), page.waitForTimeout(12000)]);
-      const text = (await scope.evaluate(() => document.body.innerText).catch(() => "")) + " " + (await page.evaluate(() => document.body.innerText).catch(() => ""));
+      const text = await bodyText();
+      // A visible CAPTCHA challenge after submit means nothing was sent (2026-11-18: ElectriCraft showed an image
+      // challenge while a "Thanks for stopping by!" pop-up matched the confirmation words).
+      const challenge = await page.evaluate(() => [...document.querySelectorAll("iframe")].some((f) => {
+        const src = f.src || ""; const r = f.getBoundingClientRect(); const st = getComputedStyle(f);
+        return /recaptcha\/api2\/bframe|recaptcha\/enterprise\/bframe|hcaptcha\.com.*challenge|challenges\.cloudflare\.com/.test(src) && r.width > 50 && r.height > 50 && st.visibility !== "hidden" && st.display !== "none";
+      })).catch(() => false);
       const confirmShot = path.join(outDir, `${entry.slug}-after-submit.png`);
       await page.screenshot({ path: confirmShot, fullPage: false });
       r.shots.push(path.relative(root, confirmShot));
-      const ok = /thank you|thanks for|message (has been |was )?(sent|received)|we('ll| will) (be in touch|get back)|submission (was )?(received|successful)|successfully/i.test(text);
+      // Confirmation words must be new since the submit click (not a pop-up or footer that was already there).
+      const ok = !challenge && (confirmCount(text) > beforeConfirms || page.url() !== before && confirmCount(text) > 0);
       const err = /captcha|robot|verification failed|spam|error|required/i.test(text) && !ok;
       if (ok) {
         r.status = "sent";
         ledger.push({ domain: domainOf(entry.formUrl), company: entry.company, slug: entry.slug, formUrl: entry.formUrl, time: new Date().toISOString(), message: values.message, usedShort: !!r.usedShort, shots: r.shots });
         fs.writeFileSync(ledgerPath, JSON.stringify(ledger, null, 2) + "\n");
       }
+      else if (challenge) { r.status = "hand send"; r.reason = "a CAPTCHA challenge appeared after submit (never bypassed)"; }
       else { r.status = "hand send"; r.reason = err ? "the form showed an error or a bot check after submit" : `no confirmation after submit (stayed on ${page.url() === before ? "the same page" : page.url()})`; }
     }
   } catch (e) {

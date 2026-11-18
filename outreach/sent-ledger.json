@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "domain": "yokesmasterplumbing.com",
+    "company": "Yoke's Master Plumbing and Remodeling",
+    "slug": "yokes",
+    "formUrl": "https://yokesmasterplumbing.com/contact/",
+    "time": "2026-11-18T13:32:36.845Z",
+    "message": "Hey Yokes Master Plumbing team,\n\nI looked at your website and noticed two things: every \"MORE\" button on your homepage just opens your contact page, so no single service has its own page, and your site never shows a street address, only \"Wichita, KS and surrounding area\". Your Google reviews are strong, so the site should show off your work the way your customers do.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?\n\nJosh, Fluid Frame Marketing\n\nP.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.",
+    "usedShort": false,
+    "shots": [
+      "outreach-runs/2026-11-18/ask-2026-11-17/send/yokes-filled.png",
+      "outreach-runs/2026-11-18/ask-2026-11-17/send/yokes-after-submit.png"
+    ]
+  },
+  {
+    "domain": "aircapitalheatingandair.com",
+    "company": "Air Capital Heating and Air",
+    "slug": "aircapital",
+    "formUrl": "https://aircapitalheatingandair.com/contact-us",
+    "time": "2026-11-18T13:33:28.653Z",
+    "message": "Hey Air Capital Heating and Air team,\n\nI looked at your website and noticed two things: on your homepage, four of the five \"Learn More\" buttons open your contact form instead of a page about the service, and there is no page for ductless mini splits even though your homepage lists them as a service. Your Google reviews are strong, so a customer who wants details should get them.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?\n\nJosh, Fluid Frame Marketing\n\nP.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.",
+    "usedShort": false,
+    "shots": [
+      "outreach-runs/2026-11-18/ask-2026-11-17/send/aircapital-filled.png",
+      "outreach-runs/2026-11-18/ask-2026-11-17/send/aircapital-after-submit.png"
+    ]
+  },
+  {
+    "domain": "heatingandcooling.online",
+    "company": "Dream Makers Heating and Cooling",
+    "slug": "dreammakers",
+    "formUrl": "https://heatingandcooling.online/contact-us/",
+    "time": "2026-11-18T13:34:27.838Z",
+    "message": "Hey Dream Makers team,\n\nI looked at your website and noticed two things: the service buttons on your homepage open pages about Fort Worth, Texas, and the phone number in the top bar of your site calls a Texas (817) number, not your Wichita line. Your Google reviews are strong, so those calls should land with you.\n\nWe build websites for service businesses. If you'd like, we'll make you a free mockup of your homepage that fixes both. Want me to send you one?\n\nJosh, Fluid Frame Marketing\n\nP.S. On one of our websites, this message never would have reached you. We filter out solicitations, including ours.",
+    "usedShort": false,
+    "shots": [
+      "outreach-runs/2026-11-18/ask-2026-11-17/send/dreammakers-filled.png",
+      "outreach-runs/2026-11-18/ask-2026-11-17/send/dreammakers-after-submit.png"
+    ]
+  }
+]
